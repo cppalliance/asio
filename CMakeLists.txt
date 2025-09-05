@@ -8,6 +8,13 @@ cmake_minimum_required(VERSION 3.8...3.20)
 
 project(boost_asio VERSION "${BOOST_SUPERPROJECT_VERSION}" LANGUAGES CXX)
 
+set(BOOST_ASIO_IS_ROOT OFF)
+if (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+    set(BOOST_ASIO_IS_ROOT ON)
+endif ()
+
+option(BOOST_ASIO_MRDOCS_BUILD "Build the target for MrDocs: see mrdocs.yml" OFF)
+
 # core functionality
 
 add_library(boost_asio_core INTERFACE)
@@ -86,8 +93,22 @@ if (BOOST_SUPERPROJECT_VERSION AND NOT CMAKE_VERSION VERSION_LESS 3.13)
   )
 endif()
 
+if (BOOST_ASIO_MRDOCS_BUILD)
+  if (BOOST_ASIO_IS_ROOT)
+    # From Boost Package
+    find_package(Boost REQUIRED)
+  endif()
+
+  file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/mrdocs.cpp" "#include <boost/asio.hpp>\n")
+  add_library(boost_asio_mrdocs "${CMAKE_CURRENT_BINARY_DIR}/mrdocs.cpp")
+  target_include_directories(boost_asio_mrdocs PUBLIC include)
+  target_link_libraries(boost_asio_mrdocs PUBLIC Boost::headers)
+  return()
+endif()
+
 if(BUILD_TESTING AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/test/CMakeLists.txt")
 
   add_subdirectory(test)
 
 endif()
+

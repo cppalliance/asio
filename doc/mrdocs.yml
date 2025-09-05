@@ -1,0 +1,41 @@
+# Input
+source-root: ..
+# Directories that contain documented source files
+input:
+  - ../include
+# Patterns to filter out the source-files in the directories
+file-patterns:
+  - '*.hpp'
+exclude:
+  - '../include/boost/asio/impl'
+
+# Filters
+include-symbols:
+  - 'boost::asio::**'
+implementation-defined:
+  - 'boost::asio::detail'
+  - 'boost::asio::**::detail'
+
+# Metadata Extraction
+private-bases: false
+
+# Generator
+generate: adoc
+base-asio: https://www.github.com/boostorg/asio/blob/develop/ # boost/asio.hpp
+
+# Style
+verbose: true
+multipage: true
+
+# The target for MrDocs simply includes all symbols defined in all
+# headers with the appropriate compilation options.
+# Nothing else should be included in the MrDocs configuration or 
+# would be useful to MrDocs.
+#
+# This single source file not only includes all symbols (the source
+# files do not collectively include all headers) but also makes MrDocs
+# run much faster than relying on the entire library.
+#
+# The BOOST_ASI_MRDOCS_BUILD=ON is the only option we usually need
+# here.
+cmake: '-D BOOST_ASIO_MRDOCS_BUILD=ON'
