@@ -1,0 +1,20 @@
+site:
+  title: Boost.ASIO
+  start_page: asio::index.adoc
+  robots: allow
+  keys:
+    repo_url: 'https://github.com/boostorg/asio'
+
+content:
+  sources:
+  - url: ..
+    start_path: doc
+    branches: HEAD
+
+output:
+  dir: html
+
+ui:
+  bundle:
+    url: https://github.com/boostorg/website-v2-docs/releases/download/ui-master/ui-bundle.zip
+    snapshot: true

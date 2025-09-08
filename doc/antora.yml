@@ -1,0 +1,6 @@
+name: asio
+version: ~
+title: Boost.ASIO
+nav:
+  - modules/ROOT/nav.adoc
+start_page: index.adoc
