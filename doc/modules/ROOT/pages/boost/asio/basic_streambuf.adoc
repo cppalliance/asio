@@ -1,0 +1,93 @@
+[#boost-asio-basic_streambuf]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;streambuf
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator = std::allocator&lt;char&gt;&gt;
+class basic&lowbar;streambuf
+    : public std::streambuf
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::streambuf`
+| 
+|===
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/basic_streambuf/const_buffers_type.adoc[`const&lowbar;buffers&lowbar;type`] 
+| xref:boost/asio/basic_streambuf/mutable_buffers_type.adoc[`mutable&lowbar;buffers&lowbar;type`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_streambuf/2constructor.adoc[`basic&lowbar;streambuf`]         [.small]#[constructor]#
+| Construct a basic&lowbar;streambuf object&period;
+| xref:boost/asio/basic_streambuf/capacity.adoc[`capacity`] 
+| Get the current capacity of the basic&lowbar;streambuf&period;
+| xref:boost/asio/basic_streambuf/commit.adoc[`commit`] 
+| Move characters from the output sequence to the input sequence&period;
+| xref:boost/asio/basic_streambuf/consume.adoc[`consume`] 
+| Remove characters from the input sequence&period;
+| xref:boost/asio/basic_streambuf/data.adoc[`data`] 
+| Get a list of buffers that represents the input sequence&period;
+| xref:boost/asio/basic_streambuf/max_size.adoc[`max&lowbar;size`] 
+| Get the maximum size of the basic&lowbar;streambuf&period;
+| xref:boost/asio/basic_streambuf/prepare.adoc[`prepare`] 
+| Get a list of buffers that represents the output sequence, with the given size&period;
+| xref:boost/asio/basic_streambuf/size.adoc[`size`] 
+| Get the size of the input sequence&period;
+|===
+
+== Protected Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/basic_streambuf/_04enum.adoc[`Unnamed enum`] 
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_streambuf/overflow.adoc[`overflow`]  [.small]#[virtual]#
+| Override std&colon;&colon;streambuf behaviour&period;
+| xref:boost/asio/basic_streambuf/reserve.adoc[`reserve`] 
+| 
+| xref:boost/asio/basic_streambuf/underflow.adoc[`underflow`]  [.small]#[virtual]#
+| Override std&colon;&colon;streambuf behaviour&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/read_size_helper.adoc[boost::asio::read&lowbar;size&lowbar;helper]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

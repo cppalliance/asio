@@ -1,0 +1,35 @@
+[#boost-asio-buffered_stream-lowest_layer-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_stream.adoc[buffered&lowbar;stream]::lowest&lowbar;layer
+:relfileprefix: ../../../
+:mrdocs:
+
+`lowest&lowbar;layer` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;stream&period;hpp&gt;`
+
+Get a reference to the lowest layer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffered_stream/lowest_layer_type.adoc[lowest&lowbar;layer&lowbar;type]&
+xref:boost/asio/buffered_stream/lowest_layer-0a.adoc[lowest&lowbar;layer]();
+----
+
+[.small]#xref:boost/asio/buffered_stream/lowest_layer-0a.adoc[_» more&period;&period;&period;_]#
+
+Get a const reference to the lowest layer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffered_stream/lowest_layer_type.adoc[lowest&lowbar;layer&lowbar;type] const&
+xref:boost/asio/buffered_stream/lowest_layer-0b.adoc[lowest&lowbar;layer]() const;
+----
+
+[.small]#xref:boost/asio/buffered_stream/lowest_layer-0b.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

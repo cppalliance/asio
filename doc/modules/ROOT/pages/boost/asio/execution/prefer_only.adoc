@@ -1,0 +1,64 @@
+[#boost-asio-execution-prefer_only]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::prefer&lowbar;only
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;prefer&lowbar;only&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename InnerProperty&gt;
+struct prefer&lowbar;only
+    : &sol;&ast; implementation-defined &ast;&sol;
+    , &sol;&ast; implementation-defined &ast;&sol;
+    , &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution/prefer_only/2constructor.adoc[`prefer&lowbar;only`]         [.small]#[constructor]#
+| Construct from `InnerProperty`
+|===
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/prefer_only/is_requirable.adoc[`is&lowbar;requirable`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution/query-01.adoc[boost::asio::execution::query]`
+| 
+| `xref:boost/asio/execution/prefer.adoc[boost::asio::execution::prefer]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

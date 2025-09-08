@@ -1,0 +1,27 @@
+[#boost-asio-io_context-poll]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::poll
+:relfileprefix: ../../../
+:mrdocs:
+
+Run the io&lowbar;context object&apos;s event processing loop to execute ready handlers&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/io_context/count_type.adoc[count&lowbar;type]
+poll();
+----
+
+== Description
+
+The poll() function runs handlers that are ready to run, without blocking, until the io&lowbar;context has been stopped or there are no more ready handlers&period;
+
+== Return Value
+
+The number of handlers that were executed&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,27 @@
+[#boost-asio-io_context-stopped]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::stopped
+:relfileprefix: ../../../
+:mrdocs:
+
+Determine whether the io&lowbar;context object has been stopped&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+stopped() const;
+----
+
+== Description
+
+This function is used to determine whether an io&lowbar;context object has been stopped, either through an explicit call to stop(), or due to running out of work&period; When an io&lowbar;context object is stopped, calls to run(), run&lowbar;one(), poll() or poll&lowbar;one() will return immediately without invoking any handlers&period;
+
+== Return Value
+
+`true` if the io&lowbar;context object is stopped, otherwise `false&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

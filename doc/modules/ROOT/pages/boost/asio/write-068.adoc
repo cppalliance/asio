@@ -1,0 +1,70 @@
+[#boost-asio-write-068]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::write
+:relfileprefix: ../../
+:mrdocs:
+
+Write all of the supplied data to a stream before returning&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;write&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+write(
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    int = 0,
+    int = 0);
+----
+
+== Description
+
+This function is used to write a certain number of bytes of data to a stream&period; The call will block until one of the following conditions is true&colon;
+
+* All of the data in the supplied dynamic buffer sequence has been written&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the stream&apos;s write&lowbar;some function&period;
+
+[NOTE]
+This overload is equivalent to calling&colon;
+
+[,cpp]
+----
+boost::asio::write(
+    s, buffers,
+    boost::asio::transfer_all()); 
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes transferred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream to which the data is to be written&period; The type must support the SyncWriteStream concept&period;
+| *buffers*
+| The dynamic buffer sequence from which data will be written&period; Successfully written data is automatically consumed from the buffers&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

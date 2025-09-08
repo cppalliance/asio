@@ -1,0 +1,33 @@
+[#boost-asio-basic_serial_port-close-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::close
+:relfileprefix: ../../../
+:mrdocs:
+
+Close the serial port&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+close(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to close the serial port&period; Any asynchronous read or write operations will be cancelled immediately, and will complete with the boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted error&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

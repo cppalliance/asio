@@ -1,0 +1,51 @@
+[#boost-asio-basic_socket-shutdown-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::shutdown
+:relfileprefix: ../../../
+:mrdocs:
+
+Disable sends or receives on the socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+shutdown(
+    xref:boost/asio/socket_base/shutdown_type.adoc[shutdown&lowbar;type] what,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to disable send operations, receive operations, or both&period;
+
+== Example
+Shutting down the send side of the socket&colon;
+
+[,cpp]
+----
+boost::asio::ip::tcp::socket socket(my_context);
+...
+boost::system::error_code ec;
+socket.shutdown(boost::asio::ip::tcp::socket::shutdown_send, ec);
+if (ec)
+{
+  // An error occurred.
+}
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *what*
+| Determines what types of operation will no longer be allowed&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

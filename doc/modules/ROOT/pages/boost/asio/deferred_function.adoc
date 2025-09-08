@@ -1,0 +1,39 @@
+[#boost-asio-deferred_function]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;function
+:relfileprefix: ../../
+:mrdocs:
+
+Wraps a function object so that it may be used as an element in a deferred composition&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Function&gt;
+class deferred&lowbar;function;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_function/2constructor.adoc[`deferred&lowbar;function`]         [.small]#[constructor]#
+| Constructor&period;
+| xref:boost/asio/deferred_function/operator_call-0b.adoc[`operator()`] 
+| Function call operators
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/deferred_function/function_.adoc[`function&lowbar;`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

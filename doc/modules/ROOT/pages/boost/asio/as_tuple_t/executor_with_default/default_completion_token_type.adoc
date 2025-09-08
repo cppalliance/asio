@@ -1,0 +1,18 @@
+[#boost-asio-as_tuple_t-executor_with_default-default_completion_token_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/as_tuple_t.adoc[as&lowbar;tuple&lowbar;t]::xref:boost/asio/as_tuple_t/executor_with_default.adoc[executor&lowbar;with&lowbar;default]::default&lowbar;completion&lowbar;token&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+Specify `as&lowbar;tuple&lowbar;t` as the default completion token type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;as&lowbar;tuple&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/as_tuple_t.adoc[as&lowbar;tuple&lowbar;t] default&lowbar;completion&lowbar;token&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

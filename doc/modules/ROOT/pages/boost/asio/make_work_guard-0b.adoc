@@ -1,0 +1,110 @@
+[#boost-asio-make_work_guard-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::make&lowbar;work&lowbar;guard
+:relfileprefix: ../../
+:mrdocs:
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;executor&lowbar;work&lowbar;guard&period;hpp&gt;`
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;associated&lowbar;executor&lt;T&gt;::type&gt;]
+xref:boost/asio/make_work_guard-08.adoc[make&lowbar;work&lowbar;guard](T const& t);
+----
+
+[.small]#xref:boost/asio/make_work_guard-08.adoc[_» more&period;&period;&period;_]#
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;ExecutionContext::executor&lowbar;type&gt;]
+xref:boost/asio/make_work_guard-0f.adoc[make&lowbar;work&lowbar;guard](
+    ExecutionContext& ctx,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/make_work_guard-0f.adoc[_» more&period;&period;&period;_]#
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;Executor&gt;]
+xref:boost/asio/make_work_guard-02.adoc[make&lowbar;work&lowbar;guard](
+    Executor const& ex,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/make_work_guard-02.adoc[_» more&period;&period;&period;_]#
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor&gt;
+xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;associated&lowbar;executor&lowbar;t&lt;T, Executor&gt;&gt;]
+xref:boost/asio/make_work_guard-03.adoc[make&lowbar;work&lowbar;guard](
+    T const& t,
+    Executor const& ex,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/make_work_guard-03.adoc[_» more&period;&period;&period;_]#
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename ExecutionContext&gt;
+xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;associated&lowbar;executor&lowbar;t&lt;T, ExecutionContext::executor&lowbar;type&gt;&gt;]
+xref:boost/asio/make_work_guard-04.adoc[make&lowbar;work&lowbar;guard](
+    T const& t,
+    ExecutionContext& ctx,
+    int = 0,
+    int = 0,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/make_work_guard-04.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+* A work guard constructed with the associated executor of the object `t,` which is obtained as if by calling &period;
+* A work guard constructed with the execution context&apos;s executor, obtained by performing &period;
+* A work guard constructed with the specified executor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *t*
+| An arbitrary object, such as a completion handler, for which the associated executor will be obtained&period;
+| *ctx*
+| An execution context, from which an executor will be obtained&period;
+| *ex*
+| An executor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

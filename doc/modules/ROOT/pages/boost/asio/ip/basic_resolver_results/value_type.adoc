@@ -1,0 +1,18 @@
+[#boost-asio-ip-basic_resolver_results-value_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_results.adoc[basic&lowbar;resolver&lowbar;results]::value&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+The type of a value in the results range&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;results&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/ip/basic_resolver_entry.adoc[basic&lowbar;resolver&lowbar;entry&lt;protocol&lowbar;type&gt;] value&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,89 @@
+[#boost-asio-ip-network_v4]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::network&lowbar;v4
+:relfileprefix: ../../../
+:mrdocs:
+
+Represents an IPv4 network&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class network&lowbar;v4;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/network_v4/2constructor-04.adoc[`network&lowbar;v4`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/network_v4/operator_assign-02e.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/ip/network_v4/address.adoc[`address`] 
+| Obtain the address object specified when the network object was created&period;
+| xref:boost/asio/ip/network_v4/broadcast.adoc[`broadcast`] 
+| Obtain an address object that represents the network&apos;s broadcast address&period;
+| xref:boost/asio/ip/network_v4/canonical.adoc[`canonical`] 
+| Obtain the true network address, omitting any host bits&period;
+| xref:boost/asio/ip/network_v4/hosts.adoc[`hosts`] 
+| Obtain an address range corresponding to the hosts in the network&period;
+| xref:boost/asio/ip/network_v4/is_host.adoc[`is&lowbar;host`] 
+| Test if network is a valid host address&period;
+| xref:boost/asio/ip/network_v4/is_subnet_of.adoc[`is&lowbar;subnet&lowbar;of`] 
+| Test if a network is a real subnet of another network&period;
+| xref:boost/asio/ip/network_v4/netmask.adoc[`netmask`] 
+| Obtain the netmask that was specified when the network object was created&period;
+| xref:boost/asio/ip/network_v4/network.adoc[`network`] 
+| Obtain an address object that represents the network address&period;
+| xref:boost/asio/ip/network_v4/prefix_length.adoc[`prefix&lowbar;length`] 
+| Obtain the prefix length that was specified when the network object was created&period;
+| xref:boost/asio/ip/network_v4/to_string-07.adoc[`to&lowbar;string`] 
+| Get the network as an address in dotted decimal format&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/operator_not_eq-01c.adoc[boost::asio::ip::operator!&equals;]`
+| Compare two networks for inequality&period;
+| `xref:boost/asio/ip/operator_eq-0c.adoc[boost::asio::ip::operator&equals;&equals;]`
+| Compare two networks for equality&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/make_network_v4-019.adoc[`make&lowbar;network&lowbar;v4`]
+| Create an IPv4 network from an address and prefix length&period;
+| xref:boost/asio/ip/make_network_v4-03.adoc[`make&lowbar;network&lowbar;v4`]
+| Create an IPv4 network from a string containing IP address and prefix length&period;
+| xref:boost/asio/ip/make_network_v4-078.adoc[`make&lowbar;network&lowbar;v4`]
+| Create an IPv4 network from a string containing IP address and prefix length&period;
+| xref:boost/asio/ip/make_network_v4-07c.adoc[`make&lowbar;network&lowbar;v4`]
+| Create an IPv4 network from an address and netmask&period;
+| xref:boost/asio/ip/make_network_v4-0b3.adoc[`make&lowbar;network&lowbar;v4`]
+| Create an IPv4 network from a string containing IP address and prefix length&period;
+| xref:boost/asio/ip/make_network_v4-0be.adoc[`make&lowbar;network&lowbar;v4`]
+| Create an IPv4 network from a string containing IP address and prefix length&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;network&lowbar;v4 class provides the ability to use and manipulate IP version 4 networks&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

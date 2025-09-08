@@ -1,0 +1,22 @@
+[#boost-asio-throw_exception]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::throw&lowbar;exception
+:relfileprefix: ../../
+:mrdocs:
+
+Helper function to throw an exception arising from a disposition&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Disposition&gt;
+void
+throw&lowbar;exception(
+    Disposition&& d,
+    int = 0);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

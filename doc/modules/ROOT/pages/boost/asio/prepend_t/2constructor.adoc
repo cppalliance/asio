@@ -1,0 +1,24 @@
+[#boost-asio-prepend_t-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/prepend_t.adoc[prepend&lowbar;t]::prepend&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;prepend&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; V&gt;
+constexpr
+prepend&lowbar;t(
+    T&& completion&lowbar;token,
+    V&period;&period;&period;&&&period;&period;&period; values);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

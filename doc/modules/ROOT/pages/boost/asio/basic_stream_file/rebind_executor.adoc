@@ -1,0 +1,29 @@
+[#boost-asio-basic_stream_file-rebind_executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]::rebind&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Rebinds the file type to another executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+struct rebind&lowbar;executor;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_stream_file/rebind_executor/other.adoc[`other`] 
+| The file type when rebound to the specified executor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

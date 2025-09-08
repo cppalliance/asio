@@ -1,0 +1,23 @@
+[#boost-asio-ip-address_v4-to_uint]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]::to&lowbar;uint
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the address as an unsigned integer in host byte order&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v4/uint_type.adoc[uint&lowbar;type]
+to&lowbar;uint() const noexcept;
+----
+
+== Return Value
+
+the address as an unsigned integer in host byte order&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

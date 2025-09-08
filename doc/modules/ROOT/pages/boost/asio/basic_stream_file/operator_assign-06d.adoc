@@ -1,0 +1,46 @@
+[#boost-asio-basic_stream_file-operator_assign-06d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;file&period;hpp&gt;`
+
+Move&hyphen;assign a basic&lowbar;stream&lowbar;file from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]&
+xref:boost/asio/basic_stream_file/operator_assign-061.adoc[operator&equals;](xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]&& other);
+----
+
+[.small]#xref:boost/asio/basic_stream_file/operator_assign-061.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign a basic&lowbar;stream&lowbar;file from a file of another executor type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]&
+xref:boost/asio/basic_stream_file/operator_assign-0a.adoc[operator&equals;](xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file&lt;Executor1&gt;]&& other);
+----
+
+[.small]#xref:boost/asio/basic_stream_file/operator_assign-0a.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;stream&lowbar;file object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,133 @@
+[#boost-asio-execution_context]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::execution&lowbar;context
+:relfileprefix: ../../
+:mrdocs:
+
+A context for function object execution&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class execution&lowbar;context;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/allocator-03.adoc[`allocator`] 
+| 
+| xref:boost/asio/execution_context/allocator-0a.adoc[`allocator&lt;void&gt;`] 
+| 
+| xref:boost/asio/execution_context/id.adoc[`id`] 
+| Class used to uniquely identify a service&period;
+| xref:boost/asio/execution_context/service.adoc[`service`] 
+| Base class for all execution context services&period;
+| xref:boost/asio/execution_context/service_maker.adoc[`service&lowbar;maker`] 
+| Base class for all execution context service makers&period;
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/fork_event.adoc[`fork&lowbar;event`] 
+| Fork&hyphen;related event notifications&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/2constructor-00.adoc[`execution&lowbar;context`]         [.small]#[constructor]#
+| Constructor&period;
+| xref:boost/asio/execution_context/2destructor.adoc[`&#126;execution&lowbar;context`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/execution_context/notify_fork.adoc[`notify&lowbar;fork`] 
+| Notify the execution&lowbar;context of a fork&hyphen;related event&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/destroy.adoc[`destroy`] 
+| Destroys all services in the context&period;
+| xref:boost/asio/execution_context/shutdown.adoc[`shutdown`] 
+| Shuts down all services in the context&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/has_service.adoc[boost::asio::has&lowbar;service]`
+| Determine if an execution&lowbar;context contains a specified service type&period;
+| `xref:boost/asio/add_service.adoc[boost::asio::add&lowbar;service]`
+| (Deprecated&colon; Use make&lowbar;service()&period;) Add a service object to the execution&lowbar;context&period;
+| `xref:boost/asio/make_service.adoc[boost::asio::make&lowbar;service]`
+| Creates a service object and adds it to the execution&lowbar;context&period;
+| `xref:boost/asio/use_service-05.adoc[boost::asio::use&lowbar;service]`
+| Obtain the service object corresponding to the given type&period;
+| `xref:boost/asio/use_service-0c.adoc[boost::asio::use&lowbar;service]`
+| Obtain the service object corresponding to the given type&period;
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/io_context.adoc[`io&lowbar;context`]
+| Provides core I&sol;O functionality&period;
+| xref:boost/asio/system_context.adoc[`system&lowbar;context`]
+| The executor context for the system executor&period;
+| xref:boost/asio/thread_pool.adoc[`thread&lowbar;pool`]
+| A simple fixed&hyphen;size thread pool&period;
+|===
+
+== Description
+
+An execution context represents a place where function objects will be executed&period; An `io&lowbar;context` is an example of an execution context&period;
+
+== The execution&lowbar;context class and services
+Class execution&lowbar;context implements an extensible, type&hyphen;safe, polymorphic set of services, indexed by service type&period;
+
+Services exist to manage the resources that are shared across an execution context&period; For example, timers may be implemented in terms of a single timer queue, and this queue would be stored in a service&period;
+
+Access to the services of an execution&lowbar;context is via three function templates, use&lowbar;service(), add&lowbar;service() and has&lowbar;service()&period;
+
+In a call to `use&lowbar;service&lt;Service&gt;(),` the type argument chooses a service, making available all members of the named type&period; If `Service` is not present in an execution&lowbar;context, an object of type `Service` is created and added to the execution&lowbar;context&period; A C&plus;&plus; program can check if an execution&lowbar;context implements a particular service with the function template `has&lowbar;service&lt;Service&gt;()&period;`
+
+Service objects may be explicitly added to an execution&lowbar;context using the function template `add&lowbar;service&lt;Service&gt;()&period;` If the `Service` is already present, the service&lowbar;already&lowbar;exists exception is thrown&period; If the owner of the service is not the same object as the execution&lowbar;context parameter, the invalid&lowbar;service&lowbar;owner exception is thrown&period;
+
+Once a service reference is obtained from an execution&lowbar;context object by calling use&lowbar;service(), that reference remains usable as long as the owning execution&lowbar;context object exists&period;
+
+All service implementations have execution&lowbar;context&colon;&colon;service as a public base class&period; Custom services may be implemented by deriving from this class and then added to an execution&lowbar;context using the facilities described above&period;
+
+== The execution&lowbar;context as a base class
+Class execution&lowbar;context may be used only as a base class for concrete execution context types&period; The `io&lowbar;context` is an example of such a derived type&period;
+
+On destruction, a class that is derived from execution&lowbar;context must perform followed by &period;
+
+This destruction sequence permits programs to simplify their resource management by using `shared&lowbar;ptr&lt;&gt;&period;` Where an object&apos;s lifetime is tied to the lifetime of a connection (or some other sequence of asynchronous operations), a `shared&lowbar;ptr` to the object would be bound into the handlers for all asynchronous operations associated with it&period; This works as follows&colon;
+
+* When a single connection ends, all associated asynchronous operations complete&period; The corresponding handler objects are destroyed, and all `shared&lowbar;ptr` references to the objects are destroyed&period;
+* To shut down the whole program, the io&lowbar;context function stop() is called to terminate any run() calls as soon as possible&period; The io&lowbar;context destructor calls `shutdown()` and `destroy()` to destroy all pending handlers, causing all `shared&lowbar;ptr` references to all connection objects to be destroyed&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

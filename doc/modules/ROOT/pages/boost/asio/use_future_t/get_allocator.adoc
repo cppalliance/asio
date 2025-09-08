@@ -1,0 +1,23 @@
+[#boost-asio-use_future_t-get_allocator]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/use_future_t.adoc[use&lowbar;future&lowbar;t]::get&lowbar;allocator
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain allocator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;future&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/use_future_t/allocator_type.adoc[allocator&lowbar;type]
+get&lowbar;allocator() const;
+----
+
+== Return Value
+
+The allocator type&period; The allocator is used when constructing the `std&colon;&colon;promise` object for a given asynchronous operation&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

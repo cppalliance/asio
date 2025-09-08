@@ -1,0 +1,166 @@
+[#boost-asio-basic_serial_port-2constructor-04e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::basic&lowbar;serial&lowbar;port
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+Move&hyphen;construct a basic&lowbar;serial&lowbar;port from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_serial_port/2constructor-092.adoc[basic&lowbar;serial&lowbar;port](xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]&& other);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-092.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;serial&lowbar;port without opening it&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/basic_serial_port/2constructor-06d.adoc[basic&lowbar;serial&lowbar;port](xref:boost/asio/basic_serial_port/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-06d.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;serial&lowbar;port on an existing native serial port&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_serial_port/2constructor-0f.adoc[basic&lowbar;serial&lowbar;port](
+    xref:boost/asio/basic_serial_port/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/basic_serial_port/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;serial&lowbar;port);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+
+Construct and open a basic&lowbar;serial&lowbar;port&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_serial_port/2constructor-00.adoc[basic&lowbar;serial&lowbar;port](
+    xref:boost/asio/basic_serial_port/executor_type.adoc[executor&lowbar;type] const& ex,
+    std::string const& device);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+Construct and open a basic&lowbar;serial&lowbar;port&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_serial_port/2constructor-09f.adoc[basic&lowbar;serial&lowbar;port](
+    xref:boost/asio/basic_serial_port/executor_type.adoc[executor&lowbar;type] const& ex,
+    char const* device);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-09f.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;serial&lowbar;port without opening it&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_serial_port/2constructor-05.adoc[basic&lowbar;serial&lowbar;port](
+    ExecutionContext& context,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-05.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;construct a basic&lowbar;serial&lowbar;port from a serial port of another executor type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/basic_serial_port/2constructor-03.adoc[basic&lowbar;serial&lowbar;port](
+    xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port&lt;Executor1&gt;]&& other,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-03.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;serial&lowbar;port on an existing native serial port&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_serial_port/2constructor-06f.adoc[basic&lowbar;serial&lowbar;port](
+    ExecutionContext& context,
+    xref:boost/asio/basic_serial_port/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;serial&lowbar;port,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-06f.adoc[_» more&period;&period;&period;_]#
+
+Construct and open a basic&lowbar;serial&lowbar;port&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_serial_port/2constructor-045.adoc[basic&lowbar;serial&lowbar;port](
+    ExecutionContext& context,
+    std::string const& device,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-045.adoc[_» more&period;&period;&period;_]#
+
+Construct and open a basic&lowbar;serial&lowbar;port&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_serial_port/2constructor-067.adoc[basic&lowbar;serial&lowbar;port](
+    ExecutionContext& context,
+    char const* device,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/2constructor-067.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;serial&lowbar;port object from which the move will occur&period;
+| *ex*
+| The I&sol;O executor that the serial port will use, by default, to dispatch handlers for any asynchronous operations performed on the serial port&period;
+| *native&lowbar;serial&lowbar;port*
+| A native serial port&period;
+| *device*
+| The platform&hyphen;specific device name for this serial port&period;
+| *context*
+| An execution context which provides the I&sol;O executor that the serial port will use, by default, to dispatch handlers for any asynchronous operations performed on the serial port&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

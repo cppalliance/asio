@@ -1,0 +1,23 @@
+[#boost-asio-basic_writable_pipe-is_open]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]::is&lowbar;open
+:relfileprefix: ../../../
+:mrdocs:
+
+Determine whether the pipe is open&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;writable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;open() const;
+----
+
+== Return Value
+
+whether the pipe is open&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

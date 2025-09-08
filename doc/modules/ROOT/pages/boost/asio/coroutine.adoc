@@ -1,0 +1,238 @@
+[#boost-asio-coroutine]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::coroutine
+:relfileprefix: ../../
+:mrdocs:
+
+Provides support for implementing stackless coroutines&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;coroutine&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class coroutine;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/coroutine/2constructor.adoc[`coroutine`]         [.small]#[constructor]#
+| Constructs a coroutine in its initial state&period;
+| xref:boost/asio/coroutine/is_child.adoc[`is&lowbar;child`] 
+| Returns true if the coroutine is the child of a fork&period;
+| xref:boost/asio/coroutine/is_complete.adoc[`is&lowbar;complete`] 
+| Returns true if the coroutine has reached its terminal state&period;
+| xref:boost/asio/coroutine/is_parent.adoc[`is&lowbar;parent`] 
+| Returns true if the coroutine is the parent of a fork&period;
+|===
+
+== Description
+
+The `coroutine` class may be used to implement stackless coroutines&period; The class itself is used to store the current state of the coroutine&period;
+
+Coroutines are copy&hyphen;constructible and assignable, and the space overhead is a single int&period; They can be used as a base class&colon;
+
+[,cpp]
+----
+class session : coroutine
+{
+  ...
+}; 
+----
+or as a data member&colon;
+
+[,cpp]
+----
+class session
+{
+  ...
+  coroutine coro_;
+}; 
+----
+or even bound in as a function argument using lambdas or `bind()&period;` The important thing is that as the application maintains a copy of the object for as long as the coroutine must be kept alive&period;
+
+== Pseudo&hyphen;keywords
+A coroutine is used in conjunction with certain &quot;pseudo&hyphen;keywords&quot;, which are implemented as macros&period; These macros are defined by a header file&colon;
+
+[,cpp]
+----
+#include <boost/asio/yield.hpp>
+----
+and may conversely be undefined as follows&colon;
+
+[,cpp]
+----
+#include <boost/asio/unyield.hpp>
+----
+The `reenter` macro is used to define the body of a coroutine&period; It takes a single argument&colon; a pointer or reference to a coroutine object&period; For example, if the base class is a coroutine object you may write&colon;
+
+[,cpp]
+----
+reenter (this)
+{
+  ... coroutine body ...
+} 
+----
+and if a data member or other variable you can write&colon;
+
+[,cpp]
+----
+reenter (coro_)
+{
+  ... coroutine body ...
+} 
+----
+When `reenter` is executed at runtime, control jumps to the location of the last `yield` or `fork&period;`
+
+The coroutine body may also be a single statement, such as&colon;
+
+[,cpp]
+----
+reenter (this) for (;;)
+{
+  ...
+} 
+----
+*Limitation&colon;* The `reenter` macro is implemented using a switch&period; This means that you must take care when using local variables within the coroutine body&period; The local variable is not allowed in a position where reentering the coroutine could bypass the variable definition&period;
+
+yield _statement_
+
+This form of the `yield` keyword is often used with asynchronous operations&colon;
+
+[,cpp]
+----
+yield socket_->async_read_some(buffer(*buffer_), *this); 
+----
+This divides into four logical steps&colon;
+
+* `yield` saves the current state of the coroutine&period;
+* The statement initiates the asynchronous operation&period;
+* The resume point is defined immediately following the statement&period;
+* Control is transferred to the end of the coroutine body&period;
+
+When the asynchronous operation completes, the function object is invoked and `reenter` causes control to transfer to the resume point&period; It is important to remember to carry the coroutine state forward with the asynchronous operation&period; In the above snippet, the current class is a function object object with a coroutine object as base class or data member&period;
+
+The statement may also be a compound statement, and this permits us to define local variables with limited scope&colon;
+
+[,cpp]
+----
+yield
+{
+  mutable_buffer b = buffer(*buffer_);
+  socket_->async_read_some(b, *this);
+} 
+----
+yield return _expression_ &semi;
+
+This form of `yield` is often used in generators or coroutine&hyphen;based parsers&period; For example, the function object&colon;
+
+[,cpp]
+----
+struct interleave : coroutine
+{
+  istream& is1;
+  istream& is2;
+  char operator()(char c)
+  {
+    reenter (this) for (;;)
+    {
+      yield return is1.get();
+      yield return is2.get();
+    }
+  }
+}; 
+----
+defines a trivial coroutine that interleaves the characters from two input streams&period;
+
+This type of `yield` divides into three logical steps&colon;
+
+* `yield` saves the current state of the coroutine&period;
+* The resume point is defined immediately following the semicolon&period;
+* The value of the expression is returned from the function&period;
+
+This form of `yield` is equivalent to the following steps&colon;
+
+* `yield` saves the current state of the coroutine&period;
+* The resume point is defined immediately following the semicolon&period;
+* Control is transferred to the end of the coroutine body&period;
+
+This form might be applied when coroutines are used for cooperative threading and scheduling is explicitly managed&period; For example&colon;
+
+[,cpp]
+----
+struct task : coroutine
+{
+  ...
+  void operator()()
+  {
+    reenter (this)
+    {
+      while (... not finished ...)
+      {
+        ... do something ...
+        yield;
+        ... do some more ...
+        yield;
+      }
+    }
+  }
+  ...
+};
+...
+task t1, t2;
+for (;;)
+{
+  t1();
+  t2();
+} 
+----
+The final form of `yield` is used to explicitly terminate the coroutine&period; This form is comprised of two steps&colon;
+
+* `yield` sets the coroutine state to indicate termination&period;
+* Control is transferred to the end of the coroutine body&period;
+
+Once terminated, calls to is&lowbar;complete() return true and the coroutine cannot be reentered&period;
+
+Note that a coroutine may also be implicitly terminated if the coroutine body is exited without a yield, e&period;g&period; by return, throw or by running to the end of the body&period;
+
+fork _statement_
+
+The `fork` pseudo&hyphen;keyword is used when &quot;forking&quot; a coroutine, i&period;e&period; splitting it into two (or more) copies&period; One use of `fork` is in a server, where a new coroutine is created to handle each client connection&colon;
+
+[,cpp]
+----
+reenter (this)
+{
+  do
+  {
+    socket_.reset(new tcp::socket(my_context_));
+    yield acceptor->async_accept(*socket_, *this);
+    fork server(*this)();
+  } while (is_parent());
+  ... client-specific handling follows ...
+} 
+----
+The logical steps involved in a `fork` are&colon;
+
+* `fork` saves the current state of the coroutine&period;
+* The statement creates a copy of the coroutine and either executes it immediately or schedules it for later execution&period;
+* The resume point is defined immediately following the semicolon&period;
+* For the &quot;parent&quot;, control immediately continues from the next line&period;
+
+The functions is&lowbar;parent() and is&lowbar;child() can be used to differentiate between parent and child&period; You would use these functions to alter subsequent control flow&period;
+
+Note that `fork` doesn&apos;t do the actual forking by itself&period; It is the application&apos;s responsibility to create a clone of the coroutine and call it&period; The clone can be called immediately, as above, or scheduled for delayed execution using something like boost&colon;&colon;asio&colon;&colon;post()&period;
+
+== Alternate macro names
+If preferred, an application can use macro names that follow a more typical naming convention, rather than the pseudo&hyphen;keywords&period; These are&colon;
+
+* `BOOST&lowbar;ASIO&lowbar;CORO&lowbar;REENTER` instead of `reenter`
+* `BOOST&lowbar;ASIO&lowbar;CORO&lowbar;YIELD` instead of `yield`
+* `BOOST&lowbar;ASIO&lowbar;CORO&lowbar;FORK` instead of `fork`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

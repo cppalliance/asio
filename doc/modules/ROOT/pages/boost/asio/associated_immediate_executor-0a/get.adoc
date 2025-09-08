@@ -1,0 +1,20 @@
+[#boost-asio-associated_immediate_executor-0a-get]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_immediate_executor-0a.adoc[associated&lowbar;immediate&lowbar;executor&lt;any&lowbar;completion&lowbar;handler&lt;Signatures&period;&period;&period;&gt;, Candidate&gt;]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+xref:boost/asio/associated_immediate_executor-0a/type.adoc[type]
+get(
+    xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler&lt;Signatures&period;&period;&period;&gt;] const& handler,
+    Candidate const& candidate = Candidate()) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

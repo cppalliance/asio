@@ -1,0 +1,38 @@
+[#boost-asio-operator_not_eq-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator!&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Compare two slots for inequality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;signal&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+operator!&equals;(
+    xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot] const& lhs,
+    xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot] const& rhs) noexcept;
+----
+
+== Return Value
+
+`true` if the objects are not equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *lhs*
+| The left operand
+| *rhs*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

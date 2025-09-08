@@ -1,0 +1,44 @@
+[#boost-asio-strand-dispatch]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::dispatch
+:relfileprefix: ../../../
+:mrdocs:
+
+Request the strand to invoke the given function object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Function,
+    typename Allocator&gt;
+void
+dispatch(
+    Function&& f,
+    Allocator const& a);
+----
+
+== Description
+
+This function is used to ask the strand to execute the given function object on its underlying executor&period; The function object will be executed inside this function if the strand is not otherwise busy and if the underlying executor&apos;s `dispatch()` function is also able to execute the function before returning&period;
+
+[,cpp]
+----
+void function(); 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *f*
+| The function object to be called&period; The executor will make a copy of the handler object as required&period; The function signature of the function object must be&colon;
+| *a*
+| An allocator that may be used by the executor to allocate the internal storage needed for function invocation&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

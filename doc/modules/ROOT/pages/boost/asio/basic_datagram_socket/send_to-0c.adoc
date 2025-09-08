@@ -1,0 +1,55 @@
+[#boost-asio-basic_datagram_socket-send_to-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::send&lowbar;to
+:relfileprefix: ../../../
+:mrdocs:
+
+Send a datagram to the specified endpoint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+send&lowbar;to(
+    ConstBufferSequence const& buffers,
+    xref:boost/asio/basic_datagram_socket/endpoint_type.adoc[endpoint&lowbar;type] const& destination,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags] flags);
+----
+
+== Description
+
+This function is used to send a datagram to the specified remote endpoint&period; The function call will block until the data has been sent successfully or an error occurs&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes sent&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be sent to the remote endpoint&period;
+| *destination*
+| The remote endpoint to which the data will be sent&period;
+| *flags*
+| Flags specifying how the send call is to be made&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

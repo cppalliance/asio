@@ -1,0 +1,187 @@
+[#boost-asio-basic_socket_acceptor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;socket&lowbar;acceptor
+:relfileprefix: ../../
+:mrdocs:
+
+Provides the ability to accept new connections&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;socket&lowbar;acceptor
+    : public xref:boost/asio/socket_base.adoc[socket&lowbar;base]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/socket_base.adoc[socket&lowbar;base]`
+| The socket&lowbar;base class is used as a base for the basic&lowbar;stream&lowbar;socket and basic&lowbar;datagram&lowbar;socket class templates so that we have a common place to define the shutdown&lowbar;type and enum&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_socket_acceptor/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the acceptor type to another executor&period;
+| xref:boost/asio/socket_base/broadcast.adoc[`broadcast`] 
+| 
+| xref:boost/asio/socket_base/bytes_readable.adoc[`bytes&lowbar;readable`] 
+| 
+| xref:boost/asio/socket_base/debug.adoc[`debug`] 
+| 
+| xref:boost/asio/socket_base/do_not_route.adoc[`do&lowbar;not&lowbar;route`] 
+| 
+| xref:boost/asio/socket_base/enable_connection_aborted.adoc[`enable&lowbar;connection&lowbar;aborted`] 
+| 
+| xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[`endpoint&lowbar;type`] 
+| The endpoint type&period;
+| xref:boost/asio/basic_socket_acceptor/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/socket_base/keep_alive.adoc[`keep&lowbar;alive`] 
+| 
+| xref:boost/asio/socket_base/linger.adoc[`linger`] 
+| 
+| xref:boost/asio/socket_base/message_flags.adoc[`message&lowbar;flags`] 
+| Bitmask type for flags that can be passed to send and receive operations&period;
+| xref:boost/asio/basic_socket_acceptor/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+| xref:boost/asio/socket_base/out_of_band_inline.adoc[`out&lowbar;of&lowbar;band&lowbar;inline`] 
+| 
+| xref:boost/asio/basic_socket_acceptor/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type&period;
+| xref:boost/asio/socket_base/receive_buffer_size.adoc[`receive&lowbar;buffer&lowbar;size`] 
+| 
+| xref:boost/asio/socket_base/receive_low_watermark.adoc[`receive&lowbar;low&lowbar;watermark`] 
+| 
+| xref:boost/asio/socket_base/reuse_address.adoc[`reuse&lowbar;address`] 
+| 
+| xref:boost/asio/socket_base/send_buffer_size.adoc[`send&lowbar;buffer&lowbar;size`] 
+| 
+| xref:boost/asio/socket_base/send_low_watermark.adoc[`send&lowbar;low&lowbar;watermark`] 
+| 
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/socket_base/shutdown_type.adoc[`shutdown&lowbar;type`] 
+| Different ways a socket may be shutdown&period;
+| xref:boost/asio/socket_base/wait_type.adoc[`wait&lowbar;type`] 
+| Wait types&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_socket_acceptor/2constructor-0ba.adoc[`basic&lowbar;socket&lowbar;acceptor`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_socket_acceptor/2destructor.adoc[`&#126;basic&lowbar;socket&lowbar;acceptor`] [.small]#[destructor]#
+| Destroys the acceptor&period;
+| xref:boost/asio/basic_socket_acceptor/operator_assign-03.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/basic_socket_acceptor/accept-087.adoc[`accept`] 
+| `accept` overloads
+| xref:boost/asio/basic_socket_acceptor/assign-0d.adoc[`assign`] 
+| 
+| xref:boost/asio/basic_socket_acceptor/async_accept-085.adoc[`async&lowbar;accept`] 
+| Start an asynchronous accept&period;
+| xref:boost/asio/basic_socket_acceptor/async_wait.adoc[`async&lowbar;wait`] 
+| Asynchronously wait for the acceptor to become ready to read, ready to write, or to have pending error conditions&period;
+| xref:boost/asio/basic_socket_acceptor/bind-0a.adoc[`bind`] 
+| Bind the acceptor to the given local endpoint&period;
+| xref:boost/asio/basic_socket_acceptor/cancel-0a.adoc[`cancel`] 
+| Cancel all asynchronous operations associated with the acceptor&period;
+| xref:boost/asio/basic_socket_acceptor/close-08.adoc[`close`] 
+| Close the acceptor&period;
+| xref:boost/asio/basic_socket_acceptor/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/basic_socket_acceptor/get_option-0d.adoc[`get&lowbar;option`] 
+| Get an option from the acceptor&period;
+| xref:boost/asio/basic_socket_acceptor/io_control-01.adoc[`io&lowbar;control`] 
+| Perform an IO control command on the acceptor&period;
+| xref:boost/asio/basic_socket_acceptor/is_open.adoc[`is&lowbar;open`] 
+| Determine whether the acceptor is open&period;
+| xref:boost/asio/basic_socket_acceptor/listen-02.adoc[`listen`] 
+| Place the acceptor into the state where it will listen for new connections&period;
+| xref:boost/asio/basic_socket_acceptor/local_endpoint-075.adoc[`local&lowbar;endpoint`] 
+| Get the local endpoint of the acceptor&period;
+| xref:boost/asio/basic_socket_acceptor/native_handle.adoc[`native&lowbar;handle`] 
+| Get the native acceptor representation&period;
+| xref:boost/asio/basic_socket_acceptor/native_non_blocking-0c.adoc[`native&lowbar;non&lowbar;blocking`] 
+| `native&lowbar;non&lowbar;blocking` overloads
+| xref:boost/asio/basic_socket_acceptor/non_blocking-01.adoc[`non&lowbar;blocking`] 
+| `non&lowbar;blocking` overloads
+| xref:boost/asio/basic_socket_acceptor/open-01.adoc[`open`] 
+| Open the acceptor using the specified protocol&period;
+| xref:boost/asio/basic_socket_acceptor/release-01.adoc[`release`] 
+| 
+| xref:boost/asio/basic_socket_acceptor/set_option-0d.adoc[`set&lowbar;option`] 
+| Set an option on the acceptor&period;
+| xref:boost/asio/basic_socket_acceptor/wait-05.adoc[`wait`] 
+| Wait for the acceptor to become ready to read, ready to write, or to have pending error conditions&period;
+|===
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/socket_base/max_listen_connections.adoc[`max&lowbar;listen&lowbar;connections`] 
+| xref:boost/asio/socket_base/message_do_not_route.adoc[`message&lowbar;do&lowbar;not&lowbar;route`] 
+| xref:boost/asio/socket_base/message_end_of_record.adoc[`message&lowbar;end&lowbar;of&lowbar;record`] 
+| xref:boost/asio/socket_base/message_out_of_band.adoc[`message&lowbar;out&lowbar;of&lowbar;band`] 
+| xref:boost/asio/socket_base/message_peek.adoc[`message&lowbar;peek`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_socket_acceptor.adoc[boost::asio::basic&lowbar;socket&lowbar;acceptor]`
+| Provides the ability to accept new connections&period;
+|===
+
+== Description
+
+The basic&lowbar;socket&lowbar;acceptor class template is used for accepting new socket connections&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+Synchronous `accept` operations are thread safe, if the underlying operating system calls are also thread safe&period; This means that it is permitted to perform concurrent calls to synchronous `accept` operations on a single socket object&period; Other synchronous operations, such as `open` or `close,` are not thread safe&period;
+
+== Example
+Opening a socket acceptor with the SO&lowbar;REUSEADDR option enabled&colon;
+
+[,cpp]
+----
+boost::asio::ip::tcp::acceptor acceptor(my_context);
+boost::asio::ip::tcp::endpoint endpoint(boost::asio::ip::tcp::v4(), port);
+acceptor.open(endpoint.protocol());
+acceptor.set_option(boost::asio::ip::tcp::acceptor::reuse_address(true));
+acceptor.bind(endpoint);
+acceptor.listen();
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

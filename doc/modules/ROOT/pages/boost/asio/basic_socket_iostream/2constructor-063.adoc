@@ -1,0 +1,23 @@
+[#boost-asio-basic_socket_iostream-2constructor-063]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::basic&lowbar;socket&lowbar;iostream
+:relfileprefix: ../../../
+:mrdocs:
+
+Establish a connection to an endpoint corresponding to a resolver query&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; T&gt;
+basic&lowbar;socket&lowbar;iostream(T&period;&period;&period; x);
+----
+
+== Description
+
+This constructor automatically establishes a connection based on the supplied resolver query parameters&period; The arguments are used to construct a resolver query object&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

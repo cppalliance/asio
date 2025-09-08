@@ -1,0 +1,18 @@
+[#boost-asio-ip-basic_resolver_results-const_iterator]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_results.adoc[basic&lowbar;resolver&lowbar;results]::const&lowbar;iterator
+:relfileprefix: ../../../../
+:mrdocs:
+
+The type of an iterator into the range&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;results&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator&lt;protocol&lowbar;type&gt;] const&lowbar;iterator;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

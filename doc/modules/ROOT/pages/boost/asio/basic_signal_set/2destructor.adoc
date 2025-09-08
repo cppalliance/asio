@@ -1,0 +1,22 @@
+[#boost-asio-basic_signal_set-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set]::&#126;basic&lowbar;signal&lowbar;set
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys the signal set&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;signal&lowbar;set();
+----
+
+== Description
+
+This function destroys the signal set, cancelling any outstanding asynchronous wait operations associated with the signal set as if by calling `cancel&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

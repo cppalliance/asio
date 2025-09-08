@@ -1,0 +1,18 @@
+[#boost-asio-basic_socket_streambuf-underflow]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]::underflow
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+int&lowbar;type
+underflow();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,238 @@
+[#boost-asio-io_context]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::io&lowbar;context
+:relfileprefix: ../../
+:mrdocs:
+
+Provides core I&sol;O functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class io&lowbar;context
+    : public xref:boost/asio/execution_context.adoc[execution&lowbar;context]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution_context.adoc[execution&lowbar;context]`
+| A context for function object execution&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/allocator-03.adoc[`allocator`] 
+| 
+| xref:boost/asio/io_context/basic_executor_type.adoc[`basic&lowbar;executor&lowbar;type`] 
+| Executor implementation type used to submit functions to an io&lowbar;context&period;
+| xref:boost/asio/execution_context/id.adoc[`id`] 
+| Class used to uniquely identify a service&period;
+| xref:boost/asio/io_context/service.adoc[`service`] 
+| Base class for all io&lowbar;context services&period;
+| xref:boost/asio/execution_context/service_maker.adoc[`service&lowbar;maker`] 
+| Base class for all execution context service makers&period;
+| xref:boost/asio/io_context/strand.adoc[`strand`] 
+| 
+| xref:boost/asio/io_context/count_type.adoc[`count&lowbar;type`] 
+| The type used to count the number of handlers executed by the context&period;
+| xref:boost/asio/io_context/executor_type.adoc[`executor&lowbar;type`] 
+| Executor used to submit functions to an io&lowbar;context&period;
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/fork_event.adoc[`fork&lowbar;event`] 
+| Fork&hyphen;related event notifications&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/io_context/2constructor-0a.adoc[`io&lowbar;context`]         [.small]#[constructor]#
+| Constructor&period;
+| xref:boost/asio/io_context/2destructor.adoc[`&#126;io&lowbar;context`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/io_context/get_executor.adoc[`get&lowbar;executor`] 
+| Obtains the executor associated with the io&lowbar;context&period;
+| xref:boost/asio/execution_context/notify_fork.adoc[`notify&lowbar;fork`] 
+| Notify the execution&lowbar;context of a fork&hyphen;related event&period;
+| xref:boost/asio/io_context/poll.adoc[`poll`] 
+| Run the io&lowbar;context object&apos;s event processing loop to execute ready handlers&period;
+| xref:boost/asio/io_context/poll_one.adoc[`poll&lowbar;one`] 
+| Run the io&lowbar;context object&apos;s event processing loop to execute one ready handler&period;
+| xref:boost/asio/io_context/restart.adoc[`restart`] 
+| Restart the io&lowbar;context in preparation for a subsequent run() invocation&period;
+| xref:boost/asio/io_context/run.adoc[`run`] 
+| Run the io&lowbar;context object&apos;s event processing loop&period;
+| xref:boost/asio/io_context/run_for.adoc[`run&lowbar;for`] 
+| Run the io&lowbar;context object&apos;s event processing loop for a specified duration&period;
+| xref:boost/asio/io_context/run_one.adoc[`run&lowbar;one`] 
+| Run the io&lowbar;context object&apos;s event processing loop to execute at most one handler&period;
+| xref:boost/asio/io_context/run_one_for.adoc[`run&lowbar;one&lowbar;for`] 
+| Run the io&lowbar;context object&apos;s event processing loop for a specified duration to execute at most one handler&period;
+| xref:boost/asio/io_context/run_one_until.adoc[`run&lowbar;one&lowbar;until`] 
+| Run the io&lowbar;context object&apos;s event processing loop until a specified time to execute at most one handler&period;
+| xref:boost/asio/io_context/run_until.adoc[`run&lowbar;until`] 
+| Run the io&lowbar;context object&apos;s event processing loop until a specified time&period;
+| xref:boost/asio/io_context/stop.adoc[`stop`] 
+| Stop the io&lowbar;context object&apos;s event processing loop&period;
+| xref:boost/asio/io_context/stopped.adoc[`stopped`] 
+| Determine whether the io&lowbar;context object has been stopped&period;
+| xref:boost/asio/io_context/wrap.adoc[`wrap`] 
+| (Deprecated&colon; Use boost&colon;&colon;asio&colon;&colon;bind&lowbar;executor()&period;) Create a new handler that automatically dispatches the wrapped handler on the io&lowbar;context&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/destroy.adoc[`destroy`] 
+| Destroys all services in the context&period;
+| xref:boost/asio/execution_context/shutdown.adoc[`shutdown`] 
+| Shuts down all services in the context&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/use_service-05.adoc[boost::asio::use&lowbar;service]`
+| Obtain the service object corresponding to the given type&period;
+| `xref:boost/asio/io_context/basic_executor_type.adoc[boost::asio::io&lowbar;context::basic&lowbar;executor&lowbar;type]`
+| Executor implementation type used to submit functions to an io&lowbar;context&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/add_service.adoc[`add&lowbar;service`]
+| (Deprecated&colon; Use make&lowbar;service()&period;) Add a service object to the execution&lowbar;context&period;
+| xref:boost/asio/has_service.adoc[`has&lowbar;service`]
+| Determine if an execution&lowbar;context contains a specified service type&period;
+| xref:boost/asio/make_service.adoc[`make&lowbar;service`]
+| Creates a service object and adds it to the execution&lowbar;context&period;
+| xref:boost/asio/use_service-0c.adoc[`use&lowbar;service`]
+| Obtain the service object corresponding to the given type&period;
+|===
+
+== Description
+
+The io&lowbar;context class provides the core I&sol;O functionality for users of the asynchronous I&sol;O objects, including&colon;
+
+* boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;tcp&colon;&colon;socket
+* boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;tcp&colon;&colon;acceptor
+* boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;udp&colon;&colon;socket
+* boost&colon;&colon;asio&colon;&colon;deadline&lowbar;timer&period;
+
+The io&lowbar;context class also includes facilities intended for developers of custom asynchronous services&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Safe, with the specific exceptions of the restart() and notify&lowbar;fork() functions&period; Calling restart() while there are unfinished run(), run&lowbar;one(), run&lowbar;for(), run&lowbar;until(), poll() or poll&lowbar;one() calls results in undefined behaviour&period; The notify&lowbar;fork() function should not be called while any io&lowbar;context function, or any function on an I&sol;O object that is associated with the io&lowbar;context, is being called in another thread&period;
+
+== Concepts&colon;
+Dispatcher&period;
+
+== Synchronous and asynchronous operations
+Synchronous operations on I&sol;O objects implicitly run the io&lowbar;context object for an individual operation&period; The io&lowbar;context functions run(), run&lowbar;one(), run&lowbar;for(), run&lowbar;until(), poll() or poll&lowbar;one() must be called for the io&lowbar;context to perform asynchronous operations on behalf of a C&plus;&plus; program&period; Notification that an asynchronous operation has completed is delivered by invocation of the associated handler&period; Handlers are invoked only by a thread that is currently calling any overload of run(), run&lowbar;one(), run&lowbar;for(), run&lowbar;until(), poll() or poll&lowbar;one() for the io&lowbar;context&period;
+
+== Effect of exceptions thrown from handlers
+If an exception is thrown from a handler, the exception is allowed to propagate through the throwing thread&apos;s invocation of run(), run&lowbar;one(), run&lowbar;for(), run&lowbar;until(), poll() or poll&lowbar;one()&period; No other threads that are calling any of these functions are affected&period; It is then the responsibility of the application to catch the exception&period;
+
+After the exception has been caught, the run(), run&lowbar;one(), run&lowbar;for(), run&lowbar;until(), poll() or poll&lowbar;one() call may be restarted _without_ the need for an intervening call to restart()&period; This allows the thread to rejoin the io&lowbar;context object&apos;s thread pool without impacting any other threads in the pool&period;
+
+For example&colon;
+
+[,cpp]
+----
+boost::asio::io_context io_context;
+...
+for (;;)
+{
+  try
+  {
+    io_context.run();
+    break; // run() exited normally
+  }
+  catch (my_exception& e)
+  {
+    // Deal with exception as appropriate.
+  }
+}
+----
+== Submitting arbitrary tasks to the io&lowbar;context
+To submit functions to the io&lowbar;context, use the xref:boost/asio/dispatch-09.adoc[`boost&colon;&colon;asio&colon;&colon;dispatch`], xref:boost/asio/post-055.adoc[`boost&colon;&colon;asio&colon;&colon;post`] or xref:boost/asio/defer-0c2.adoc[`boost&colon;&colon;asio&colon;&colon;defer`] free functions&period;
+
+For example&colon;
+
+[,cpp]
+----
+void my_task()
+{
+  ...
+}
+
+...
+
+boost::asio::io_context io_context;
+
+// Submit a function to the io_context.
+boost::asio::post(io_context, my_task);
+
+// Submit a lambda object to the io_context.
+boost::asio::post(io_context,
+    []()
+    {
+      ...
+    });
+
+// Run the io_context until it runs out of work.
+io_context.run(); 
+----
+== Stopping the io&lowbar;context from running out of work
+Some applications may need to prevent an io&lowbar;context object&apos;s run() call from returning when there is no more work to do&period; For example, the io&lowbar;context may be being run in a background thread that is launched prior to the application&apos;s asynchronous operations&period; The run() call may be kept running by using the xref:boost/asio/make_work_guard-0b.adoc[`make&lowbar;work&lowbar;guard`] function to create an object of type boost&colon;&colon;asio&colon;&colon;executor&lowbar;work&lowbar;guard&lt;io&lowbar;context&colon;&colon;executor&lowbar;type&gt;&colon;
+
+[,cpp]
+----
+boost::asio::io_context io_context;
+boost::asio::executor_work_guard<boost::asio::io_context::executor_type>
+  = boost::asio::make_work_guard(io_context);
+... 
+----
+To effect a shutdown, the application will then need to call the io&lowbar;context object&apos;s stop() member function&period; This will cause the io&lowbar;context run() call to return as soon as possible, abandoning unfinished operations and without permitting ready handlers to be dispatched&period;
+
+Alternatively, if the application requires that all operations and handlers be allowed to finish normally, the work object may be explicitly reset&period;
+
+[,cpp]
+----
+boost::asio::io_context io_context;
+boost::asio::executor_work_guard<boost::asio::io_context::executor_type>
+  = boost::asio::make_work_guard(io_context);
+...
+work.reset(); // Allow run() to exit. 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

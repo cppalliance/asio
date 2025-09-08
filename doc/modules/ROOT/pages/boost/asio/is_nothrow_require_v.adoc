@@ -1,0 +1,19 @@
+[#boost-asio-is_nothrow_require_v]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;nothrow&lowbar;require&lowbar;v
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;require&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Properties&gt;
+constexpr bool is&lowbar;nothrow&lowbar;require&lowbar;v = is&lowbar;nothrow&lowbar;require&lt;T, Properties&period;&period;&period;&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

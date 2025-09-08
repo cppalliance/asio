@@ -1,0 +1,18 @@
+[#boost-asio-basic_socket-lowest_layer_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::lowest&lowbar;layer&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+A basic&lowbar;socket is always the lowest layer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;] lowest&lowbar;layer&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

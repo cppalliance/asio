@@ -1,0 +1,135 @@
+[#boost-asio-read_until-0af]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read&lowbar;until
+:relfileprefix: ../../
+:mrdocs:
+
+This function is used to read data into the specified dynamic buffer sequence until a user&hyphen;defined match condition function object, when applied to the data contained in the dynamic buffer sequence, indicates a successful match&period; The call will block until one of the following conditions is true&colon;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&lowbar;until&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename MatchCondition&gt;
+size&lowbar;t
+read&lowbar;until(
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    MatchCondition match&lowbar;condition,
+    int = 0,
+    int = 0,
+    int = 0);
+----
+
+== Description
+
+* The match condition function object returns a std&colon;&colon;pair where the second element evaluates to true&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the stream&apos;s read&lowbar;some function&period; If the match condition function object already indicates a match, the function returns immediately&period;
+
+[,cpp]
+----
+pair<iterator, bool> match_condition(iterator begin, iterator end);
+----
+where `iterator` represents the type&colon;
+
+[,cpp]
+----
+buffers_iterator<typename DynamicBuffer_v1::const_buffers_type>
+----
+The iterator parameters `begin` and `end` define the range of bytes to be scanned to determine whether there is a match&period; The `first` member of the return value is an iterator marking one&hyphen;past&hyphen;the&hyphen;end of the bytes that have been consumed by the match function&period; This iterator is used to calculate the `begin` parameter for any subsequent invocation of the match condition&period; The `second` member of the return value is true if a match has been found, false otherwise&period;
+
+[NOTE]
+After a successful read&lowbar;until operation, the dynamic buffer sequence may contain additional data beyond that which matched the function object&period; An application will typically leave that data in the dynamic buffer sequence for a subsequent read&lowbar;until operation to examine&period;
+
+[NOTE]
+The default implementation of the `is&lowbar;match&lowbar;condition` type trait evaluates to true for function pointers and function objects with a `result&lowbar;type` typedef&period; It must be specialised for other user&hyphen;defined function objects&period;
+
+== Examples
+To read data into a dynamic buffer sequence until whitespace is encountered&colon;
+
+[,cpp]
+----
+typedef boost::asio::buffers_iterator<
+    boost::asio::const_buffer> iterator;
+
+std::pair<iterator, bool>
+match_whitespace(iterator begin, iterator end)
+{
+  iterator i = begin;
+  while (i != end)
+    if (std::isspace(*i++))
+      return std::make_pair(i, true);
+  return std::make_pair(i, false);
+}
+...
+std::string data;
+boost::asio::read_until(s, data, match_whitespace);
+----
+To read data into a `std&colon;&colon;string` until a matching character is found&colon;
+
+[,cpp]
+----
+class match_char
+{
+public:
+  explicit match_char(char c) : c_(c) {}
+
+  template <typename Iterator>
+  std::pair<Iterator, bool> operator()(
+      Iterator begin, Iterator end) const
+  {
+    Iterator i = begin;
+    while (i != end)
+      if (c_ == *i++)
+        return std::make_pair(i, true);
+    return std::make_pair(i, false);
+  }
+
+private:
+  char c_;
+};
+
+namespace asio {
+  template <> struct is_match_condition<match_char>
+    : public boost::true_type {};
+} // namespace asio
+...
+std::string data;
+boost::asio::read_until(s, data, match_char('a'));
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes in the dynamic&lowbar;buffer&apos;s get area that have been fully consumed by the match function&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream from which the data is to be read&period; The type must support the SyncReadStream concept&period;
+| *buffers*
+| A dynamic buffer sequence into which the data will be read&period;
+| *match&lowbar;condition*
+| The function object to be called to determine whether a match exists&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

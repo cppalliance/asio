@@ -1,0 +1,17 @@
+[#boost-asio-is_write_buffered-value]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/is_write_buffered.adoc[is&lowbar;write&lowbar;buffered]::value
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;is&lowbar;write&lowbar;buffered&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+bool const value = sizeof(detail&colon;&colon;is&lowbar;write&lowbar;buffered&lowbar;helper((Stream&ast;)0)) &equals;&equals; 1;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

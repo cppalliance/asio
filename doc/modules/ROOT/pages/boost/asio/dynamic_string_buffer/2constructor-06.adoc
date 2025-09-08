@@ -1,0 +1,58 @@
+[#boost-asio-dynamic_string_buffer-2constructor-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer]::dynamic&lowbar;string&lowbar;buffer
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+*DynamicBuffer&lowbar;v2&colon;* Copy construct a dynamic buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/dynamic_string_buffer/2constructor-052.adoc[dynamic&lowbar;string&lowbar;buffer](xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_string_buffer/2constructor-052.adoc[_» more&period;&period;&period;_]#
+
+Move construct a dynamic buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/dynamic_string_buffer/2constructor-0e.adoc[dynamic&lowbar;string&lowbar;buffer](xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_string_buffer/2constructor-0e.adoc[_» more&period;&period;&period;_]#
+
+Construct a dynamic buffer from a string&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/dynamic_string_buffer/2constructor-056.adoc[dynamic&lowbar;string&lowbar;buffer](
+    std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& s,
+    size&lowbar;t maximum&lowbar;size = (std&colon;&colon;numeric&lowbar;limits&lt;std&colon;&colon;size&lowbar;t&gt;&colon;&colon;max)()) noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_string_buffer/2constructor-056.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The string to be used as backing storage for the dynamic buffer&period; The object stores a reference to the string and the user is responsible for ensuring that the string object remains valid while the dynamic&lowbar;string&lowbar;buffer object, and copies of the object, are in use&period;
+| *maximum&lowbar;size*
+| Specifies a maximum size for the buffer, in bytes&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

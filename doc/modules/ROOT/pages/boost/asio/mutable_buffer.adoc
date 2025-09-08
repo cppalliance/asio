@@ -1,0 +1,103 @@
+[#boost-asio-mutable_buffer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::mutable&lowbar;buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Holds a buffer that can be modified&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class mutable&lowbar;buffer;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/mutable_buffer/2constructor-0f.adoc[`mutable&lowbar;buffer`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/mutable_buffer/data.adoc[`data`] 
+| Get a pointer to the beginning of the memory range&period;
+| xref:boost/asio/mutable_buffer/operator_plus_eq.adoc[`operator&plus;&equals;`] 
+| Move the start of the buffer by the specified number of bytes&period;
+| xref:boost/asio/mutable_buffer/size.adoc[`size`] 
+| Get the size of the memory range&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffer-023.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-043.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given string&period;
+| xref:boost/asio/buffer-045.adoc[`buffer`]
+| Create a new modifiable buffer from an existing buffer&period;
+| xref:boost/asio/buffer-049.adoc[`buffer`]
+| Create a new modifiable buffer from a span&period;
+| xref:boost/asio/buffer-05.adoc[`buffer`]
+| Create a new modifiable buffer from a contiguous container&period;
+| xref:boost/asio/buffer-063.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-07fa.adoc[`buffer`]
+| Create a new modifiable buffer from a contiguous container&period;
+| xref:boost/asio/buffer-089e.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-097.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-099.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-0a0.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given POD vector&period;
+| xref:boost/asio/buffer-0a6.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given POD vector&period;
+| xref:boost/asio/buffer-0af.adoc[`buffer`]
+| Create a new modifiable buffer from a span&period;
+| xref:boost/asio/buffer-0b.adoc[`buffer`]
+| Create a new modifiable buffer from an existing buffer&period;
+| xref:boost/asio/buffer-0e7.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-0e9.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given string&period;
+| xref:boost/asio/buffer-0fd.adoc[`buffer`]
+| Create a new modifiable buffer that represents the given memory range&period;
+| xref:boost/asio/buffer_sequence_begin-01b2.adoc[`buffer&lowbar;sequence&lowbar;begin`]
+| Get an iterator to the first element in a buffer sequence&period;
+| xref:boost/asio/buffer_sequence_begin-01d.adoc[`buffer&lowbar;sequence&lowbar;begin`]
+| Get an iterator to the first element in a buffer sequence&period;
+| xref:boost/asio/buffer_sequence_end-002.adoc[`buffer&lowbar;sequence&lowbar;end`]
+| Get an iterator to one past the end element in a buffer sequence&period;
+| xref:boost/asio/buffer_sequence_end-08.adoc[`buffer&lowbar;sequence&lowbar;end`]
+| Get an iterator to one past the end element in a buffer sequence&period;
+| xref:boost/asio/operator_plus-00a.adoc[`operator&plus;`]
+| Create a new modifiable buffer that is offset from the start of another&period;
+| xref:boost/asio/operator_plus-074.adoc[`operator&plus;`]
+| Create a new modifiable buffer that is offset from the start of another&period;
+|===
+
+== Description
+
+The mutable&lowbar;buffer class provides a safe representation of a buffer that can be modified&period; It does not own the underlying data, and so is cheap to copy or assign&period;
+
+== Accessing Buffer Contents
+The contents of a buffer may be accessed using the `data()` and `size()` member functions&colon;
+
+[,cpp]
+----
+boost::asio::mutable_buffer b1 = ...;
+std::size_t s1 = b1.size();
+unsigned char* p1 = static_cast<unsigned char*>(b1.data());
+----
+The `data()` member function permits violations of type safety, so uses of it in application code should be carefully considered&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

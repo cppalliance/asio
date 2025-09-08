@@ -1,0 +1,18 @@
+[#boost-asio-generic-seq_packet_protocol-socket]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/seq_packet_protocol.adoc[seq&lowbar;packet&lowbar;protocol]::socket
+:relfileprefix: ../../../../
+:mrdocs:
+
+The generic socket type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;seq&lowbar;packet&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_seq_packet_socket.adoc[basic&lowbar;seq&lowbar;packet&lowbar;socket&lt;seq&lowbar;packet&lowbar;protocol&gt;] socket;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

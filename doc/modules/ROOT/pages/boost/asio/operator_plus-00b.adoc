@@ -1,0 +1,37 @@
+[#boost-asio-operator_plus-00b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&plus;
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new non&hyphen;modifiable buffer that is offset from the start of another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+operator&plus;(
+    xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const& b,
+    size&lowbar;t n) noexcept;
+----
+
+== Return Value
+
+Holds a buffer that cannot be modified&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *b*
+| The left operand
+| *n*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

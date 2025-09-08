@@ -1,0 +1,23 @@
+[#boost-asio-mutable_registered_buffer-buffer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer]::buffer
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the underlying mutable buffer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const&
+buffer() const noexcept;
+----
+
+== Return Value
+
+the underlying mutable buffer&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

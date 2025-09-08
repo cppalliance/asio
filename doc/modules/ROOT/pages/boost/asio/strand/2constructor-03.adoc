@@ -1,0 +1,22 @@
+[#boost-asio-strand-2constructor-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::strand
+:relfileprefix: ../../../
+:mrdocs:
+
+Default constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+strand();
+----
+
+== Description
+
+This constructor is only valid if the underlying executor type is default constructible&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,32 @@
+[#boost-asio-io_context-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::&#126;io&lowbar;context
+:relfileprefix: ../../../
+:mrdocs:
+
+Destructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;io&lowbar;context();
+----
+
+== Description
+
+On destruction, the io&lowbar;context performs the following sequence of operations&colon;
+
+* For each service object `svc` in the io&lowbar;context set, in reverse order of the beginning of service object lifetime, performs `svc&hyphen;&gt;shutdown()&period;`
+* Uninvoked handler objects that were scheduled for deferred invocation on the io&lowbar;context, or any associated strand, are destroyed&period;
+* For each service object `svc` in the io&lowbar;context set, in reverse order of the beginning of service object lifetime, performs &period;
+
+[NOTE]
+The destruction sequence described above permits programs to simplify their resource management by using `shared&lowbar;ptr&lt;&gt;&period;` Where an object&apos;s lifetime is tied to the lifetime of a connection (or some other sequence of asynchronous operations), a `shared&lowbar;ptr` to the object would be bound into the handlers for all asynchronous operations associated with it&period; This works as follows&colon;
+
+* When a single connection ends, all associated asynchronous operations complete&period; The corresponding handler objects are destroyed, and all `shared&lowbar;ptr` references to the objects are destroyed&period;
+* To shut down the whole program, the io&lowbar;context function stop() is called to terminate any run() calls as soon as possible&period; The io&lowbar;context destructor defined above destroys all handlers, causing all `shared&lowbar;ptr` references to all connection objects to be destroyed&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

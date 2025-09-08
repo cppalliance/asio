@@ -1,0 +1,47 @@
+[#boost-asio-service_already_exists]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::service&lowbar;already&lowbar;exists
+:relfileprefix: ../../
+:mrdocs:
+
+Exception thrown when trying to add a duplicate service to an execution&lowbar;context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class service&lowbar;already&lowbar;exists
+    : public std::logic&lowbar;error
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::logic&lowbar;error`
+| 
+|===
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/service_already_exists/_Mybase.adoc[`&lowbar;Mybase`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/service_already_exists/2constructor.adoc[`service&lowbar;already&lowbar;exists`]         [.small]#[constructor]#
+| Default constructor
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,45 @@
+[#boost-asio-generic]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::generic
+:relfileprefix: ../../
+:mrdocs:
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/generic/basic_endpoint.adoc[`basic&lowbar;endpoint`] 
+| Describes an endpoint for any socket type&period;
+| xref:boost/asio/generic/datagram_protocol.adoc[`datagram&lowbar;protocol`] 
+| Encapsulates the flags needed for a generic datagram&hyphen;oriented socket&period;
+| xref:boost/asio/generic/raw_protocol.adoc[`raw&lowbar;protocol`] 
+| Encapsulates the flags needed for a generic raw socket&period;
+| xref:boost/asio/generic/seq_packet_protocol.adoc[`seq&lowbar;packet&lowbar;protocol`] 
+| Encapsulates the flags needed for a generic sequenced packet socket&period;
+| xref:boost/asio/generic/stream_protocol.adoc[`stream&lowbar;protocol`] 
+| Encapsulates the flags needed for a generic stream&hyphen;oriented socket&period;
+|===
+
+== Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/generic/operator_eq-0e.adoc[`operator&equals;&equals;`] 
+| Equality operators
+| xref:boost/asio/generic/operator_not_eq-09.adoc[`operator!&equals;`] 
+| Inequality operators
+| xref:boost/asio/generic/operator_lt.adoc[`operator&lt;`] 
+| Compare endpoints for ordering&period;
+| xref:boost/asio/generic/operator_le.adoc[`operator&lt;&equals;`] 
+| Compare endpoints for ordering&period;
+| xref:boost/asio/generic/operator_gt.adoc[`operator&gt;`] 
+| Compare endpoints for ordering&period;
+| xref:boost/asio/generic/operator_ge.adoc[`operator&gt;&equals;`] 
+| Compare endpoints for ordering&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

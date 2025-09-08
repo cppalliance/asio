@@ -1,0 +1,18 @@
+[#boost-asio-registered_buffer_id-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/registered_buffer_id.adoc[registered&lowbar;buffer&lowbar;id]::registered&lowbar;buffer&lowbar;id
+:relfileprefix: ../../../
+:mrdocs:
+
+Default constructor creates an invalid registered buffer identifier&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+registered&lowbar;buffer&lowbar;id() noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

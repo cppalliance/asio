@@ -1,0 +1,51 @@
+[#boost-asio-config_from_concurrency_hint]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::config&lowbar;from&lowbar;concurrency&lowbar;hint
+:relfileprefix: ../../
+:mrdocs:
+
+Configures an execution context based on a concurrency hint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class config&lowbar;from&lowbar;concurrency&lowbar;hint
+    : public xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker]`
+| Base class for all execution context service makers&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/config_from_concurrency_hint/2constructor-06.adoc[`config&lowbar;from&lowbar;concurrency&lowbar;hint`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/config_from_concurrency_hint/make-03.adoc[`make`]  [.small]#[virtual]#
+| `make` overloads
+|===
+
+== Description
+
+This configuration service is provided for backwards compatibility with the existing concurrency hint mechanism&period;
+
+== Example
+[,cpp]
+----
+boost::asio::io_context my_io_context{
+    boost::asio::config_from_concurrency_hint{1}}; 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-buffers_iterator-value_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator]::value&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The type of the value pointed to by the iterator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffers&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef ByteType value&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

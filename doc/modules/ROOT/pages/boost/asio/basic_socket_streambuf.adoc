@@ -1,0 +1,94 @@
+[#boost-asio-basic_socket_streambuf]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;socket&lowbar;streambuf
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Clock = std::chrono::steady&lowbar;clock,
+    typename WaitTraits = xref:boost/asio/wait_traits.adoc[wait&lowbar;traits&lt;Clock&gt;]&gt;
+class basic&lowbar;socket&lowbar;streambuf
+    : public std::streambuf
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::streambuf`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_socket_streambuf/clock_type.adoc[`clock&lowbar;type`] 
+| The clock type&period;
+| xref:boost/asio/basic_socket_streambuf/duration.adoc[`duration`] 
+| 
+| xref:boost/asio/basic_socket_streambuf/endpoint_type.adoc[`endpoint&lowbar;type`] 
+| The endpoint type&period;
+| xref:boost/asio/basic_socket_streambuf/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type&period;
+| xref:boost/asio/basic_socket_streambuf/time_point.adoc[`time&lowbar;point`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_socket_streambuf/2constructor-01.adoc[`basic&lowbar;socket&lowbar;streambuf`]         [.small]#[constructor]#
+| Construct a basic&lowbar;socket&lowbar;streambuf without establishing a connection&period;
+| xref:boost/asio/basic_socket_streambuf/2constructor-09.adoc[`basic&lowbar;socket&lowbar;streambuf`]         [.small]#[constructor]#
+| Move&hyphen;construct a basic&lowbar;socket&lowbar;streambuf from another&period;
+| xref:boost/asio/basic_socket_streambuf/2constructor-0a.adoc[`basic&lowbar;socket&lowbar;streambuf`]         [.small]#[constructor]#
+| Construct a basic&lowbar;socket&lowbar;streambuf from the supplied socket&period;
+| xref:boost/asio/basic_socket_streambuf/2destructor.adoc[`&#126;basic&lowbar;socket&lowbar;streambuf`] [.small]#[destructor]# [.small]#[virtual]#
+| Destructor flushes buffered data&period;
+| xref:boost/asio/basic_socket_streambuf/operator_assign.adoc[`operator&equals;`] 
+| Move&hyphen;assign a basic&lowbar;socket&lowbar;streambuf from another&period;
+| xref:boost/asio/basic_socket_streambuf/close.adoc[`close`] 
+| Close the connection&period;
+| xref:boost/asio/basic_socket_streambuf/connect-0a.adoc[`connect`] 
+| Establish a connection&period;
+| xref:boost/asio/basic_socket_streambuf/connect-05.adoc[`connect`] 
+| Establish a connection&period;
+| xref:boost/asio/basic_socket_streambuf/error.adoc[`error`] 
+| Get the last error associated with the stream buffer&period;
+| xref:boost/asio/basic_socket_streambuf/expires_after.adoc[`expires&lowbar;after`] 
+| Set the stream buffer&apos;s expiry time relative to now&period;
+| xref:boost/asio/basic_socket_streambuf/expires_at.adoc[`expires&lowbar;at`] 
+| Set the stream buffer&apos;s expiry time as an absolute time&period;
+| xref:boost/asio/basic_socket_streambuf/expiry.adoc[`expiry`] 
+| Get the stream buffer&apos;s expiry time as an absolute time&period;
+| xref:boost/asio/basic_socket_streambuf/socket.adoc[`socket`] 
+| Get a reference to the underlying socket&period;
+|===
+
+== Protected Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/basic_socket_streambuf/overflow.adoc[`overflow`]  [.small]#[virtual]#
+| xref:boost/asio/basic_socket_streambuf/setbuf.adoc[`setbuf`]  [.small]#[virtual]#
+| xref:boost/asio/basic_socket_streambuf/sync.adoc[`sync`]  [.small]#[virtual]#
+| xref:boost/asio/basic_socket_streambuf/underflow.adoc[`underflow`]  [.small]#[virtual]#
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,42 @@
+[#boost-asio-ip-basic_resolver_query-2constructor-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_query.adoc[basic&lowbar;resolver&lowbar;query]::basic&lowbar;resolver&lowbar;query
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct with specified service name for a given protocol&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;query&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;resolver&lowbar;query(
+    xref:boost/asio/ip/basic_resolver_query/protocol_type.adoc[protocol&lowbar;type] const& protocol,
+    std::string const& service,
+    xref:boost/asio/ip/resolver_base/flags.adoc[resolver&lowbar;query&lowbar;base::flags] resolve&lowbar;flags = passive &verbar; address&lowbar;configured);
+----
+
+== Description
+
+This constructor is typically used to perform name resolution for local service binding with a specific protocol version&period;
+
+[NOTE]
+On POSIX systems, service names are typically defined in the file &period; On Windows, service names may be found in the file &period; Operating systems may use additional locations when resolving service names&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *protocol*
+| A protocol object, normally representing either the IPv4 or IPv6 version of an internet protocol&period;
+| *service*
+| A string identifying the requested service&period; This may be a descriptive name or a numeric string corresponding to a port number&period;
+| *resolve&lowbar;flags*
+| A set of flags that determine how name resolution should be performed&period; The default flags are suitable for local service binding&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

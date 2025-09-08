@@ -1,0 +1,28 @@
+[#boost-asio-config-2constructor-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config.adoc[config]::config
+:relfileprefix: ../../../
+:mrdocs:
+
+Copy constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+config(xref:boost/asio/config.adoc[config] const& other) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

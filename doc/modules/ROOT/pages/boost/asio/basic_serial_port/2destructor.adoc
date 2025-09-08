@@ -1,0 +1,22 @@
+[#boost-asio-basic_serial_port-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::&#126;basic&lowbar;serial&lowbar;port
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys the serial port&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;serial&lowbar;port();
+----
+
+== Description
+
+This function destroys the serial port, cancelling any outstanding asynchronous wait operations associated with the serial port as if by calling `cancel&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

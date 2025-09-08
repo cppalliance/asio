@@ -1,0 +1,77 @@
+[#boost-asio-basic_datagram_socket-async_receive_from-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::async&lowbar;receive&lowbar;from
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous receive&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename MutableBufferSequence,
+    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;ReadToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+          declval&lt;initiate&lowbar;async&lowbar;receive&lowbar;from&gt;(), token, buffers,
+          &amp;sender&lowbar;endpoint, socket&lowbar;base&colon;&colon;message&lowbar;flags(0)))
+async&lowbar;receive&lowbar;from(
+    MutableBufferSequence const& buffers,
+    xref:boost/asio/basic_datagram_socket/endpoint_type.adoc[endpoint&lowbar;type]& sender&lowbar;endpoint,
+    ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+== Description
+
+This function is used to asynchronously receive a datagram&period; It is an initiating function for an `asynchronous&lowbar;operation`, and always returns immediately&period;
+
+[,cpp]
+----
+void handler(
+  const boost::system::error_code& error, // Result of operation.
+  std::size_t bytes_transferred // Number of bytes received.
+); 
+----
+Regardless of whether the asynchronous operation completes immediately or not, the completion handler will not be invoked from within this function&period; On immediate completion, invocation of the handler will be performed in a manner equivalent to using boost&colon;&colon;asio&colon;&colon;async&lowbar;immediate()&period;
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code, std::size_t) 
+----
+== Example
+To receive into a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+socket.async_receive_from(
+    boost::asio::buffer(data, size), sender_endpoint, handler); 
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on receiving into multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Per&hyphen;Operation Cancellation
+On POSIX or Windows operating systems, this asynchronous operation supports cancellation for the following boost&colon;&colon;asio&colon;&colon;cancellation&lowbar;type values&colon;
+
+* `cancellation&lowbar;type&colon;&colon;terminal`
+* `cancellation&lowbar;type&colon;&colon;partial`
+* `cancellation&lowbar;type&colon;&colon;total`
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more buffers into which the data will be received&period; Although the buffers object may be copied as necessary, ownership of the underlying memory blocks is retained by the caller, which must guarantee that they remain valid until the completion handler is called&period;
+| *sender&lowbar;endpoint*
+| An endpoint object that receives the endpoint of the remote sender of the datagram&period; Ownership of the sender&lowbar;endpoint object is retained by the caller, which must guarantee that it is valid until the completion handler is called&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the receive completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

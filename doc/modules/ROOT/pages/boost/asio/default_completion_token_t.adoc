@@ -1,0 +1,17 @@
+[#boost-asio-default_completion_token_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::default&lowbar;completion&lowbar;token&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;default&lowbar;completion&lowbar;token&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+using default&lowbar;completion&lowbar;token&lowbar;t = default&lowbar;completion&lowbar;token&lt;T&gt;::type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

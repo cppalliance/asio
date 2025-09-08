@@ -1,0 +1,34 @@
+[#boost-asio-basic_socket-assign-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::assign
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_socket/assign-0ac2b.adoc[assign](
+    xref:boost/asio/basic_socket/protocol_type.adoc[protocol&lowbar;type] const& protocol,
+    xref:boost/asio/basic_socket/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;socket);
+----
+
+[.small]#xref:boost/asio/basic_socket/assign-0ac2b.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_socket/assign-0ac21.adoc[assign](
+    xref:boost/asio/basic_socket/protocol_type.adoc[protocol&lowbar;type] const& protocol,
+    xref:boost/asio/basic_socket/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;socket,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket/assign-0ac21.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

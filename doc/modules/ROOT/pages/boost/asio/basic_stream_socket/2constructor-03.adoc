@@ -1,0 +1,40 @@
+[#boost-asio-basic_stream_socket-2constructor-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]::basic&lowbar;stream&lowbar;socket
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;construct a basic&lowbar;stream&lowbar;socket from a socket of another protocol type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol1,
+    typename Executor1&gt;
+basic&lowbar;stream&lowbar;socket(
+    xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket&lt;Protocol1, Executor1&gt;]&& other,
+    int = 0);
+----
+
+== Description
+
+This constructor moves a stream socket from one object to another&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;stream&lowbar;socket(const` executor&lowbar;type&amp;) constructor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;stream&lowbar;socket object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

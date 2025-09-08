@@ -1,0 +1,36 @@
+[#boost-asio-basic_serial_port-2constructor-09f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::basic&lowbar;serial&lowbar;port
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct and open a basic&lowbar;serial&lowbar;port&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;serial&lowbar;port(
+    xref:boost/asio/basic_serial_port/executor_type.adoc[executor&lowbar;type] const& ex,
+    char const* device);
+----
+
+== Description
+
+This constructor creates and opens a serial port for the specified device name&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the serial port will use, by default, to dispatch handlers for any asynchronous operations performed on the serial port&period;
+| *device*
+| The platform&hyphen;specific device name for this serial port&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

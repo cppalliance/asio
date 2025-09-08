@@ -1,0 +1,33 @@
+[#boost-asio-strand-operator_assign-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Move assignment operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/strand.adoc[strand]&
+operator&equals;(xref:boost/asio/strand.adoc[strand]&& other) noexcept;
+----
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move assign from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

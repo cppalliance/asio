@@ -1,0 +1,33 @@
+[#boost-asio-windows]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::windows
+:relfileprefix: ../../
+:mrdocs:
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_object_handle.adoc[`basic&lowbar;object&lowbar;handle`] 
+| Provides object&hyphen;oriented handle functionality&period;
+| xref:boost/asio/windows/basic_overlapped_handle.adoc[`basic&lowbar;overlapped&lowbar;handle`] 
+| Provides Windows handle functionality for objects that support overlapped I&sol;O&period;
+| xref:boost/asio/windows/basic_random_access_handle.adoc[`basic&lowbar;random&lowbar;access&lowbar;handle`] 
+| Provides random&hyphen;access handle functionality&period;
+| xref:boost/asio/windows/basic_stream_handle.adoc[`basic&lowbar;stream&lowbar;handle`] 
+| Provides stream&hyphen;oriented handle functionality&period;
+| xref:boost/asio/windows/overlapped_ptr.adoc[`overlapped&lowbar;ptr`] 
+| Wraps a handler to create an OVERLAPPED object for use with overlapped I&sol;O&period;
+| xref:boost/asio/windows/object_handle.adoc[`object&lowbar;handle`] 
+| Typedef for the typical usage of an object handle&period;
+| xref:boost/asio/windows/overlapped_handle.adoc[`overlapped&lowbar;handle`] 
+| Typedef for the typical usage of an overlapped handle&period;
+| xref:boost/asio/windows/random_access_handle.adoc[`random&lowbar;access&lowbar;handle`] 
+| Typedef for the typical usage of a random&hyphen;access handle&period;
+| xref:boost/asio/windows/stream_handle.adoc[`stream&lowbar;handle`] 
+| Typedef for the typical usage of a stream&hyphen;oriented handle&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

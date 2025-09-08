@@ -1,0 +1,53 @@
+[#boost-asio-async_completion]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;completion
+:relfileprefix: ../../
+:mrdocs:
+
+Helper template to deduce the handler type from a CompletionToken, capture a local copy of the handler, and then create an async&lowbar;result for the handler&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename&period;&period;&period; Signatures&gt;
+struct async&lowbar;completion;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/async_completion/completion_handler_type.adoc[`completion&lowbar;handler&lowbar;type`] 
+| The real handler type to be used for the asynchronous operation&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/async_completion/2constructor.adoc[`async&lowbar;completion`]         [.small]#[constructor]#
+| Constructor&period;
+|===
+
+== Data Members
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/async_completion/completion_handler.adoc[`completion&lowbar;handler`] 
+| A copy of, or reference to, a real handler object&period;
+| xref:boost/asio/async_completion/result.adoc[`result`] 
+| The result of the asynchronous operation&apos;s initiating function&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

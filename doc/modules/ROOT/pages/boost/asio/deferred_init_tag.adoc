@@ -1,0 +1,18 @@
+[#boost-asio-deferred_init_tag]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;init&lowbar;tag
+:relfileprefix: ../../
+:mrdocs:
+
+Tag type to disambiguate deferred constructors&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct deferred&lowbar;init&lowbar;tag;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

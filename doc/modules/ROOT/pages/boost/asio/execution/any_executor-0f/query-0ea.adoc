@@ -1,0 +1,83 @@
+[#boost-asio-execution-any_executor-0f-query-0ea]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]::query
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+find&lowbar;convertible&lowbar;property&lt;Property&gt;::query&lowbar;result&lowbar;type
+xref:boost/asio/execution/any_executor-0f/query-0e6.adoc[query](Property const& p)
+requires !is&lowbar;same&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type,
+          void
+        &gt;&colon;&colon;value
+        &amp;&amp;
+        !is&lowbar;reference&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type
+        &gt;&colon;&colon;value
+        &amp;&amp;
+        !is&lowbar;scalar&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type
+        &gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/query-0e6.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+find&lowbar;convertible&lowbar;property&lt;Property&gt;::query&lowbar;result&lowbar;type
+xref:boost/asio/execution/any_executor-0f/query-00e.adoc[query](Property const& p)
+requires !is&lowbar;same&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type,
+          void
+        &gt;&colon;&colon;value
+        &amp;&amp;
+        is&lowbar;scalar&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type
+        &gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/query-00e.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+find&lowbar;convertible&lowbar;property&lt;Property&gt;::query&lowbar;result&lowbar;type
+xref:boost/asio/execution/any_executor-0f/query-002.adoc[query](Property const& p)
+requires !is&lowbar;same&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type,
+          void
+        &gt;&colon;&colon;value
+        &amp;&amp;
+        is&lowbar;reference&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type
+        &gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/query-002.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+void
+xref:boost/asio/execution/any_executor-0f/query-0c.adoc[query](Property const& p)
+requires is&lowbar;same&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type,
+          void
+        &gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/query-0c.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

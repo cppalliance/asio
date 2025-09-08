@@ -1,0 +1,23 @@
+[#boost-asio-strand-on_work_finished]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::on&lowbar;work&lowbar;finished
+:relfileprefix: ../../../
+:mrdocs:
+
+Inform the strand that some work is no longer outstanding&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+on&lowbar;work&lowbar;finished() const noexcept;
+----
+
+== Description
+
+The strand delegates this call to its underlying executor&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

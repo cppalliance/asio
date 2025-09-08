@@ -1,0 +1,23 @@
+[#boost-asio-ip-basic_resolver_entry-endpoint]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_entry.adoc[basic&lowbar;resolver&lowbar;entry]::endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the endpoint associated with the entry&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;entry&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_entry/endpoint_type.adoc[endpoint&lowbar;type]
+endpoint() const;
+----
+
+== Return Value
+
+the endpoint associated with the entry&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

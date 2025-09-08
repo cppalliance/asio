@@ -1,0 +1,83 @@
+[#boost-asio-generic-stream_protocol]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::stream&lowbar;protocol
+:relfileprefix: ../../../
+:mrdocs:
+
+Encapsulates the flags needed for a generic stream&hyphen;oriented socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;stream&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class stream&lowbar;protocol;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/generic/stream_protocol/endpoint.adoc[`endpoint`] 
+| The type of an endpoint&period;
+| xref:boost/asio/generic/stream_protocol/iostream.adoc[`iostream`] 
+| The generic socket iostream type&period;
+| xref:boost/asio/generic/stream_protocol/socket.adoc[`socket`] 
+| The generic socket type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/generic/stream_protocol/2constructor-0b.adoc[`stream&lowbar;protocol`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/generic/stream_protocol/family.adoc[`family`] 
+| Obtain an identifier for the protocol family&period;
+| xref:boost/asio/generic/stream_protocol/protocol.adoc[`protocol`] 
+| Obtain an identifier for the protocol&period;
+| xref:boost/asio/generic/stream_protocol/type.adoc[`type`] 
+| Obtain an identifier for the type of the protocol&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/generic/operator_not_eq-0e.adoc[boost::asio::generic::operator!&equals;]`
+| Compare two protocols for inequality&period;
+| `xref:boost/asio/generic/operator_eq-04.adoc[boost::asio::generic::operator&equals;&equals;]`
+| Compare two protocols for equality&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;generic&colon;&colon;stream&lowbar;protocol class contains flags necessary for stream&hyphen;oriented sockets of any address family and protocol&period;
+
+== Examples
+Constructing using a native address family and socket protocol&colon;
+
+[,cpp]
+----
+stream_protocol p(AF_INET, IPPROTO_TCP); 
+----
+Constructing from a specific protocol type&colon;
+
+[,cpp]
+----
+stream_protocol p(boost::asio::ip::tcp::v4()); 
+----
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Safe&period;
+
+== Concepts&colon;
+Protocol&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

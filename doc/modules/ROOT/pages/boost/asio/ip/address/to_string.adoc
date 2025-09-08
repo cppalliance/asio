@@ -1,0 +1,23 @@
+[#boost-asio-ip-address-to_string]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address.adoc[address]::to&lowbar;string
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the address as a string&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+std::string
+to&lowbar;string() const;
+----
+
+== Return Value
+
+the address as a string&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

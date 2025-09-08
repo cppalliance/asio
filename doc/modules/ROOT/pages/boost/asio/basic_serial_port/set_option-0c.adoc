@@ -1,0 +1,38 @@
+[#boost-asio-basic_serial_port-set_option-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::set&lowbar;option
+:relfileprefix: ../../../
+:mrdocs:
+
+Set an option on the serial port&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename SettableSerialPortOption&gt;
+boost::system::error&lowbar;code
+set&lowbar;option(
+    SettableSerialPortOption const& option,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to set an option on the serial port&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *option*
+| The option value to be set on the serial port&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

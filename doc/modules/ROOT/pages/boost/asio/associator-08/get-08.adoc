@@ -1,0 +1,20 @@
+[#boost-asio-associator-08-get-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associator-08.adoc[associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;bind&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+decltype(Associator&lt;Handler, DefaultCandidate&gt;&colon;&colon;get(h&period;handler&lowbar;, c))
+get(
+    &sol;&ast; implementation-defined &ast;&sol; const& h,
+    DefaultCandidate const& c) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

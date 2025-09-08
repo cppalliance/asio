@@ -1,0 +1,41 @@
+[#boost-asio-operator_not_eq-0f4]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator!&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Compare two executors for inequality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;system&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+operator!&equals;(
+    xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor] const& lhs,
+    xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor] const& rhs) noexcept;
+----
+
+== Description
+
+Two executors are equal if they refer to the same underlying io&lowbar;context&period;
+
+== Return Value
+
+`true` if the objects are not equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *lhs*
+| The left operand
+| *rhs*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

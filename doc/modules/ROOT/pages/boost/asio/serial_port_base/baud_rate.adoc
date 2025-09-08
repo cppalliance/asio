@@ -1,0 +1,38 @@
+[#boost-asio-serial_port_base-baud_rate]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]::baud&lowbar;rate
+:relfileprefix: ../../../
+:mrdocs:
+
+Serial port option to permit changing the baud rate&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class baud&lowbar;rate;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/serial_port_base/baud_rate/2constructor.adoc[`baud&lowbar;rate`]         [.small]#[constructor]#
+| Construct from `unsigned int`
+| xref:boost/asio/serial_port_base/baud_rate/load.adoc[`load`] 
+| 
+| xref:boost/asio/serial_port_base/baud_rate/store.adoc[`store`] 
+| 
+| xref:boost/asio/serial_port_base/baud_rate/value.adoc[`value`] 
+| 
+|===
+
+== Description
+
+Implements changing the baud rate for a given serial port&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

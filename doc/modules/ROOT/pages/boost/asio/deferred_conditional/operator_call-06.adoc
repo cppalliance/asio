@@ -1,0 +1,20 @@
+[#boost-asio-deferred_conditional-operator_call-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/deferred_conditional.adoc[deferred&lowbar;conditional]::operator()
+:relfileprefix: ../../../
+:mrdocs:
+
+Invoke the conditional branch bsaed on the stored value&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; Args&gt;
+decltype(static&lowbar;cast&lt;OnTrue&amp;&amp;&gt;(on&lowbar;true&lowbar;)(static&lowbar;cast&lt;Args&amp;&amp;&gt;(args)&period;&period;&period;))
+operator()(Args&period;&period;&period;&&&period;&period;&period; args);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

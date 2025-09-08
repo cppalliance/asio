@@ -1,0 +1,18 @@
+[#boost-asio-buffered_read_stream-next_layer_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_read_stream.adoc[buffered&lowbar;read&lowbar;stream]::next&lowbar;layer&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The type of the next layer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;read&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/remove_reference_t.adoc[remove&lowbar;reference&lowbar;t&lt;Stream&gt;] next&lowbar;layer&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

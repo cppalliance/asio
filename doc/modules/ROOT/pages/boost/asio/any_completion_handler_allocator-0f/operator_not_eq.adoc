@@ -1,0 +1,34 @@
+[#boost-asio-any_completion_handler_allocator-0f-operator_not_eq]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_handler_allocator-0f.adoc[any&lowbar;completion&lowbar;handler&lowbar;allocator&lt;void, Signatures&period;&period;&period;&gt;]::operator!&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Inequality operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+operator!&equals;(xref:boost/asio/any_completion_handler_allocator-0f.adoc[any&lowbar;completion&lowbar;handler&lowbar;allocator] const& other) const noexcept;
+----
+
+== Return Value
+
+`true` if the objects are not equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

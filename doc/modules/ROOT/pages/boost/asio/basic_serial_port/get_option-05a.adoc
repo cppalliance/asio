@@ -1,0 +1,48 @@
+[#boost-asio-basic_serial_port-get_option-05a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::get&lowbar;option
+:relfileprefix: ../../../
+:mrdocs:
+
+Get an option from the serial port&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename GettableSerialPortOption&gt;
+void
+get&lowbar;option(GettableSerialPortOption& option);
+----
+
+== Description
+
+This function is used to get the current value of an option on the serial port&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+an option from the serial port&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *option*
+| The option value to be obtained from the serial port&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

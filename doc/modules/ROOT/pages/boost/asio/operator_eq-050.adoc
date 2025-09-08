@@ -1,0 +1,41 @@
+[#boost-asio-operator_eq-050]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&equals;&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Compare two strands for equality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&lowbar;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+operator&equals;&equals;(
+    xref:boost/asio/io_context/strand.adoc[strand] const& a,
+    xref:boost/asio/io_context/strand.adoc[strand] const& b) noexcept;
+----
+
+== Description
+
+Two strands are equal if they refer to the same ordered, non&hyphen;concurrent state&period;
+
+== Return Value
+
+`true` if the objects are equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *a*
+| The left operand
+| *b*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

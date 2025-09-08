@@ -1,0 +1,53 @@
+[#boost-asio-basic_streambuf_ref]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;streambuf&lowbar;ref
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator = std::allocator&lt;char&gt;&gt;
+class basic&lowbar;streambuf&lowbar;ref;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_streambuf_ref/const_buffers_type.adoc[`const&lowbar;buffers&lowbar;type`] 
+| The type used to represent the input sequence as a list of buffers&period;
+| xref:boost/asio/basic_streambuf_ref/mutable_buffers_type.adoc[`mutable&lowbar;buffers&lowbar;type`] 
+| The type used to represent the output sequence as a list of buffers&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_streambuf_ref/2constructor-06.adoc[`basic&lowbar;streambuf&lowbar;ref`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_streambuf_ref/capacity.adoc[`capacity`] 
+| Get the current capacity of the dynamic buffer&period;
+| xref:boost/asio/basic_streambuf_ref/commit.adoc[`commit`] 
+| Move bytes from the output sequence to the input sequence&period;
+| xref:boost/asio/basic_streambuf_ref/consume.adoc[`consume`] 
+| Remove characters from the input sequence&period;
+| xref:boost/asio/basic_streambuf_ref/data.adoc[`data`] 
+| Get a list of buffers that represents the input sequence&period;
+| xref:boost/asio/basic_streambuf_ref/max_size.adoc[`max&lowbar;size`] 
+| Get the maximum size of the dynamic buffer&period;
+| xref:boost/asio/basic_streambuf_ref/prepare.adoc[`prepare`] 
+| Get a list of buffers that represents the output sequence, with the given size&period;
+| xref:boost/asio/basic_streambuf_ref/size.adoc[`size`] 
+| Get the size of the input sequence&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

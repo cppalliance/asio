@@ -1,0 +1,33 @@
+[#boost-asio-dynamic_string_buffer-grow]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer]::grow
+:relfileprefix: ../../../
+:mrdocs:
+
+*DynamicBuffer&lowbar;v2&colon;* Grow the underlying memory by the specified number of bytes&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+grow(size&lowbar;t n);
+----
+
+== Description
+
+Resizes the string to accommodate an additional `n` bytes at the end&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `std&colon;&colon;length&lowbar;error`
+| If &period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

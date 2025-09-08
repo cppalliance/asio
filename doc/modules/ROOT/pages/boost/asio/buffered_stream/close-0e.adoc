@@ -1,0 +1,35 @@
+[#boost-asio-buffered_stream-close-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_stream.adoc[buffered&lowbar;stream]::close
+:relfileprefix: ../../../
+:mrdocs:
+
+Close the stream&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;stream&period;hpp&gt;`
+
+Close the stream&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/buffered_stream/close-00.adoc[close]();
+----
+
+[.small]#xref:boost/asio/buffered_stream/close-00.adoc[_» more&period;&period;&period;_]#
+
+Close the stream&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/buffered_stream/close-0a.adoc[close](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/buffered_stream/close-0a.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

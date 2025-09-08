@@ -1,0 +1,38 @@
+[#boost-asio-error]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::error
+:relfileprefix: ../../
+:mrdocs:
+
+== Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/error/addrinfo_errors.adoc[`addrinfo&lowbar;errors`] 
+| xref:boost/asio/error/basic_errors.adoc[`basic&lowbar;errors`] 
+| xref:boost/asio/error/misc_errors.adoc[`misc&lowbar;errors`] 
+| xref:boost/asio/error/netdb_errors.adoc[`netdb&lowbar;errors`] 
+|===
+
+== Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/error/clear.adoc[`clear`] 
+| 
+| xref:boost/asio/error/get_addrinfo_category.adoc[`get&lowbar;addrinfo&lowbar;category`] 
+| 
+| xref:boost/asio/error/get_misc_category.adoc[`get&lowbar;misc&lowbar;category`] 
+| 
+| xref:boost/asio/error/get_netdb_category.adoc[`get&lowbar;netdb&lowbar;category`] 
+| 
+| xref:boost/asio/error/get_system_category.adoc[`get&lowbar;system&lowbar;category`] 
+| 
+| xref:boost/asio/error/make_error_code-0a.adoc[`make&lowbar;error&lowbar;code`] 
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

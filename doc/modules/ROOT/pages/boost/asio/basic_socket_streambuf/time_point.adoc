@@ -1,0 +1,16 @@
+[#boost-asio-basic_socket_streambuf-time_point]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]::time&lowbar;point
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef traits&lowbar;helper::time&lowbar;type time&lowbar;point;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

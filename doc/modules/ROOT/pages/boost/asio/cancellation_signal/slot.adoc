@@ -1,0 +1,27 @@
+[#boost-asio-cancellation_signal-slot]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_signal.adoc[cancellation&lowbar;signal]::slot
+:relfileprefix: ../../../
+:mrdocs:
+
+Returns the single slot associated with the signal&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;signal&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot]
+slot() noexcept;
+----
+
+== Description
+
+The signal object must remain valid for as long the slot may be used&period; Destruction of the signal invalidates the slot&period;
+
+== Return Value
+
+the single slot associated with the signal&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

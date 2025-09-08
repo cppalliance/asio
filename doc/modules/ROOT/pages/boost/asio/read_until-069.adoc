@@ -1,0 +1,76 @@
+[#boost-asio-read_until-069]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read&lowbar;until
+:relfileprefix: ../../
+:mrdocs:
+
+Read data into a dynamic buffer sequence until a function object indicates a match&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&lowbar;until&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename MatchCondition&gt;
+size&lowbar;t
+read&lowbar;until(
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    MatchCondition match&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+== Description
+
+This function is used to read data into the specified dynamic buffer sequence until a user&hyphen;defined match condition function object, when applied to the data contained in the dynamic buffer sequence, indicates a successful match&period; The call will block until one of the following conditions is true&colon;
+
+* The match condition function object returns a std&colon;&colon;pair where the second element evaluates to true&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the stream&apos;s read&lowbar;some function&period; If the match condition function object already indicates a match, the function returns immediately&period;
+
+[,cpp]
+----
+pair<iterator, bool> match_condition(iterator begin, iterator end);
+----
+where `iterator` represents the type&colon;
+
+[,cpp]
+----
+buffers_iterator<DynamicBuffer_v2::const_buffers_type>
+----
+The iterator parameters `begin` and `end` define the range of bytes to be scanned to determine whether there is a match&period; The `first` member of the return value is an iterator marking one&hyphen;past&hyphen;the&hyphen;end of the bytes that have been consumed by the match function&period; This iterator is used to calculate the `begin` parameter for any subsequent invocation of the match condition&period; The `second` member of the return value is true if a match has been found, false otherwise&period;
+
+[NOTE]
+After a successful read&lowbar;until operation, the dynamic buffer sequence may contain additional data beyond that which matched the function object&period; An application will typically leave that data in the dynamic buffer sequence for a subsequent read&lowbar;until operation to examine&period;
+
+[NOTE]
+The default implementation of the `is&lowbar;match&lowbar;condition` type trait evaluates to true for function pointers and function objects with a `result&lowbar;type` typedef&period; It must be specialised for other user&hyphen;defined function objects&period;
+
+== Return Value
+
+The number of bytes in the dynamic buffer sequence&apos;s get area that have been fully consumed by the match function&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream from which the data is to be read&period; The type must support the SyncReadStream concept&period;
+| *buffers*
+| A dynamic buffer sequence into which the data will be read&period;
+| *match&lowbar;condition*
+| The function object to be called to determine whether a match exists&period; The signature of the function object must be&colon;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

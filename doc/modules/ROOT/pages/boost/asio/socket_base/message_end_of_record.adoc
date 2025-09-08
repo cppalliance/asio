@@ -1,0 +1,17 @@
+[#boost-asio-socket_base-message_end_of_record]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/socket_base.adoc[socket&lowbar;base]::message&lowbar;end&lowbar;of&lowbar;record
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;socket&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+int const message&lowbar;end&lowbar;of&lowbar;record = BOOST&lowbar;ASIO&lowbar;OS&lowbar;DEF(MSG&lowbar;EOR);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

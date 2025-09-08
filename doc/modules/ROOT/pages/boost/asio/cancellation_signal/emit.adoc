@@ -1,0 +1,19 @@
+[#boost-asio-cancellation_signal-emit]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_signal.adoc[cancellation&lowbar;signal]::emit
+:relfileprefix: ../../../
+:mrdocs:
+
+Emits the signal and causes invocation of the slot&apos;s handler, if any&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;signal&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+emit(xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] type);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

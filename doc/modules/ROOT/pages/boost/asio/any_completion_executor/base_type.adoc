@@ -1,0 +1,16 @@
+[#boost-asio-any_completion_executor-base_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]::base&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/execution/any_executor-0f.adoc[execution::any&lowbar;executor&lt;execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;] base&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,30 @@
+[#boost-asio-execution_context-service_maker-make]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::xref:boost/asio/execution_context/service_maker.adoc[service&lowbar;maker]::make
+:relfileprefix: ../../../../
+:mrdocs:
+
+Make services to be added to the execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+void
+make(xref:boost/asio/execution_context.adoc[execution&lowbar;context]& context) const = 0;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| A context for function object execution&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

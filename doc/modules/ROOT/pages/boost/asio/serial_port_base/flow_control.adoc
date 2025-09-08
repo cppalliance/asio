@@ -1,0 +1,46 @@
+[#boost-asio-serial_port_base-flow_control]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]::flow&lowbar;control
+:relfileprefix: ../../../
+:mrdocs:
+
+Serial port option to permit changing the flow control&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class flow&lowbar;control;
+----
+
+== Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/serial_port_base/flow_control/type.adoc[`type`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/serial_port_base/flow_control/2constructor.adoc[`flow&lowbar;control`]         [.small]#[constructor]#
+| Construct from `type`
+| xref:boost/asio/serial_port_base/flow_control/load.adoc[`load`] 
+| 
+| xref:boost/asio/serial_port_base/flow_control/store.adoc[`store`] 
+| 
+| xref:boost/asio/serial_port_base/flow_control/value.adoc[`value`] 
+| 
+|===
+
+== Description
+
+Implements changing the flow control for a given serial port&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

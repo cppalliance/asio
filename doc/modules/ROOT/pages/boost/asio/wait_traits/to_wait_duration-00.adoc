@@ -1,0 +1,24 @@
+[#boost-asio-wait_traits-to_wait_duration-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/wait_traits.adoc[wait&lowbar;traits]::to&lowbar;wait&lowbar;duration
+:relfileprefix: ../../../
+:mrdocs:
+
+Convert a clock duration into a duration used for waiting&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;wait&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+Clock::duration
+to&lowbar;wait&lowbar;duration(Clock::time&lowbar;point const& t);
+----
+
+== Return Value
+
+`d&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

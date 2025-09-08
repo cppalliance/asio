@@ -1,0 +1,73 @@
+[#boost-asio-io_context-basic_executor_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::basic&lowbar;executor&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+Executor implementation type used to submit functions to an io&lowbar;context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Allocator,
+    std::uintptr&lowbar;t Bits&gt;
+class basic&lowbar;executor&lowbar;type;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/io_context/basic_executor_type/2constructor-04c.adoc[`basic&lowbar;executor&lowbar;type`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/io_context/basic_executor_type/2destructor.adoc[`&#126;basic&lowbar;executor&lowbar;type`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/io_context/basic_executor_type/operator_assign-09.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/io_context/basic_executor_type/context.adoc[`context`] 
+| Obtain the underlying execution context&period;
+| xref:boost/asio/io_context/basic_executor_type/defer.adoc[`defer`] 
+| Request the io&lowbar;context to invoke the given function object&period;
+| xref:boost/asio/io_context/basic_executor_type/dispatch.adoc[`dispatch`] 
+| Request the io&lowbar;context to invoke the given function object&period;
+| xref:boost/asio/io_context/basic_executor_type/execute.adoc[`execute`] 
+| Execution function&period;
+| xref:boost/asio/io_context/basic_executor_type/on_work_finished.adoc[`on&lowbar;work&lowbar;finished`] 
+| Inform the io&lowbar;context that some work is no longer outstanding&period;
+| xref:boost/asio/io_context/basic_executor_type/on_work_started.adoc[`on&lowbar;work&lowbar;started`] 
+| Inform the io&lowbar;context that it has some outstanding work to do&period;
+| xref:boost/asio/io_context/basic_executor_type/post.adoc[`post`] 
+| Request the io&lowbar;context to invoke the given function object&period;
+| xref:boost/asio/io_context/basic_executor_type/running_in_this_thread.adoc[`running&lowbar;in&lowbar;this&lowbar;thread`] 
+| Determine whether the io&lowbar;context is running in the current thread&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/io_context/basic_executor_type.adoc[boost::asio::io&lowbar;context::basic&lowbar;executor&lowbar;type]`
+| Executor implementation type used to submit functions to an io&lowbar;context&period;
+| `xref:boost/asio/io_context.adoc[boost::asio::io&lowbar;context]`
+| Provides core I&sol;O functionality&period;
+| `xref:boost/asio/operator_not_eq-010.adoc[boost::asio::operator!&equals;]`
+| Compare two executors for inequality&period;
+| `xref:boost/asio/operator_eq-0a.adoc[boost::asio::operator&equals;&equals;]`
+| Compare two executors for equality&period;
+| `boost&lowbar;asio&lowbar;query&lowbar;fn::impl`
+| 
+| `boost&lowbar;asio&lowbar;prefer&lowbar;fn::impl`
+| 
+| `boost&lowbar;asio&lowbar;require&lowbar;fn::impl`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

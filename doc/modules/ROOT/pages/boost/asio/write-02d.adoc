@@ -1,0 +1,350 @@
+[#boost-asio-write-02d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::write
+:relfileprefix: ../../
+:mrdocs:
+
+`write` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;write&period;hpp&gt;`
+
+Write all of the supplied data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/write-0d.adoc[write](
+    SyncWriteStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b);
+----
+
+[.small]#xref:boost/asio/write-0d.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v2&gt;
+size&lowbar;t
+xref:boost/asio/write-0a7.adoc[write](
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-0a7.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/write-044.adoc[write](
+    SyncWriteStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/write-044.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/write-02a.adoc[write](
+    SyncWriteStream& s,
+    ConstBufferSequence const& buffers,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-02a.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v2&gt;
+size&lowbar;t
+xref:boost/asio/write-00.adoc[write](
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-00.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/write-01f.adoc[write](
+    SyncWriteStream& s,
+    ConstBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-01f.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+xref:boost/asio/write-068.adoc[write](
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-068.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename Allocator,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write-010.adoc[write](
+    SyncWriteStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-010.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+xref:boost/asio/write-079.adoc[write](
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-079.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write-0b.adoc[write](
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    CompletionCondition completion&lowbar;condition,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-0b.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename Allocator,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write-066.adoc[write](
+    SyncWriteStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-066.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename ConstBufferSequence,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write-02f.adoc[write](
+    SyncWriteStream& s,
+    ConstBufferSequence const& buffers,
+    CompletionCondition completion&lowbar;condition,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-02f.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write-04e.adoc[write](
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-04e.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename ConstBufferSequence,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write-0a5.adoc[write](
+    SyncWriteStream& s,
+    ConstBufferSequence const& buffers,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-0a5.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write-0f.adoc[write](
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    CompletionCondition completion&lowbar;condition,
+    int = 0,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-0f.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data to a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write-077.adoc[write](
+    SyncWriteStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write-077.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+* The number of bytes transferred&period;
+* The number of bytes written&period; If an error occurs, returns the total number of bytes successfully transferred prior to the error&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream to which the data is to be written&period; The type must support the SyncWriteStream concept&period;
+| *b*
+| The basic&lowbar;streambuf object from which data will be written&period;
+| *buffers*
+| The dynamic buffer sequence from which data will be written&period; Successfully written data is automatically consumed from the buffers&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+| *completion&lowbar;condition*
+| The function object to be called to determine whether the write operation is complete&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

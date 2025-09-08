@@ -1,0 +1,22 @@
+[#boost-asio-to_exception_ptr]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::to&lowbar;exception&lowbar;ptr
+:relfileprefix: ../../
+:mrdocs:
+
+Helper function to convert a disposition to an `exception&lowbar;ptr&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Disposition&gt;
+std::exception&lowbar;ptr
+to&lowbar;exception&lowbar;ptr(
+    Disposition&& d,
+    int = 0) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

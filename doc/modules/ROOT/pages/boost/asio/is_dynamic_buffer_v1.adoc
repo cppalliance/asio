@@ -1,0 +1,40 @@
+[#boost-asio-is_dynamic_buffer_v1]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;dynamic&lowbar;buffer&lowbar;v1
+:relfileprefix: ../../
+:mrdocs:
+
+Trait to determine whether a type satisfies the DynamicBuffer&lowbar;v1 requirements&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct is&lowbar;dynamic&lowbar;buffer&lowbar;v1
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/is_dynamic_buffer.adoc[`is&lowbar;dynamic&lowbar;buffer`]
+| Trait to determine whether a type satisfies the DynamicBuffer requirements&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

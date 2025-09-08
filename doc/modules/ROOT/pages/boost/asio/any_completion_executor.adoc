@@ -1,0 +1,94 @@
+[#boost-asio-any_completion_executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::any&lowbar;completion&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Polymorphic executor type for use with I&sol;O objects&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class any&lowbar;completion&lowbar;executor
+    : public xref:boost/asio/execution/any_executor-0f.adoc[execution::any&lowbar;executor&lt;execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution/any_executor-0f.adoc[execution::any&lowbar;executor&lt;execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;]`
+| 
+|===
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/any_completion_executor/find_convertible_preferable_property.adoc[`find&lowbar;convertible&lowbar;preferable&lowbar;property`] 
+| xref:boost/asio/any_completion_executor/find_convertible_property.adoc[`find&lowbar;convertible&lowbar;property`] 
+| xref:boost/asio/any_completion_executor/find_convertible_requirable_property.adoc[`find&lowbar;convertible&lowbar;requirable&lowbar;property`] 
+| xref:boost/asio/any_completion_executor/base_type.adoc[`base&lowbar;type`] 
+| xref:boost/asio/any_completion_executor/supportable_properties_type.adoc[`supportable&lowbar;properties&lowbar;type`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/any_completion_executor/2constructor-0a1.adoc[`any&lowbar;completion&lowbar;executor`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/any_completion_executor/2destructor.adoc[`&#126;any&lowbar;completion&lowbar;executor`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/any_completion_executor/operator_assign-04.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/any_completion_executor/equality_helper.adoc[`equality&lowbar;helper`] 
+| 
+| xref:boost/asio/any_completion_executor/prefer-040.adoc[`prefer`] 
+| Obtain a polymorphic wrapper with the specified property&period;
+| xref:boost/asio/any_completion_executor/query-09.adoc[`query`] 
+| 
+| xref:boost/asio/any_completion_executor/require-03.adoc[`require`] 
+| Obtain a polymorphic wrapper with the specified property&period;
+| xref:boost/asio/any_completion_executor/swap-04.adoc[`swap`] 
+| Swap targets with another polymorphic wrapper&period;
+|===
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/any_completion_executor/prop_fns_table.adoc[`prop&lowbar;fns&lowbar;table`] 
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/any_completion_executor/prop_fns_.adoc[`prop&lowbar;fns&lowbar;`] 
+|===
+
+== Description
+
+The `any&lowbar;completion&lowbar;executor` type is a polymorphic executor that supports the set of properties required for the execution of completion handlers&period; It is defined as the execution&colon;&colon;any&lowbar;executor class template parameterised as follows&colon;
+
+[,cpp]
+----
+execution::any_executor<
+  execution::prefer_only<execution::outstanding_work_t::tracked_t>,
+  execution::prefer_only<execution::outstanding_work_t::untracked_t>
+  execution::prefer_only<execution::relationship_t::fork_t>,
+  execution::prefer_only<execution::relationship_t::continuation_t>
+> 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

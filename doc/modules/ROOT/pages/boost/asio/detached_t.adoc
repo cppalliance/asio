@@ -1,0 +1,58 @@
+[#boost-asio-detached_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::detached&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` type used to specify that an asynchronous operation is detached&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detached&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class detached&lowbar;t;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/detached_t/executor_with_default.adoc[`executor&lowbar;with&lowbar;default`] 
+| Adapts an executor to add the `detached&lowbar;t` completion token as the default&period;
+| xref:boost/asio/detached_t/as_default_on_t.adoc[`as&lowbar;default&lowbar;on&lowbar;t`] 
+| Type alias to adapt an I&sol;O object to use `detached&lowbar;t` as its default completion token type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/detached_t/2constructor.adoc[`detached&lowbar;t`]         [.small]#[constructor]#
+| Constructor&period;
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/detached_t/as_default_on.adoc[`as&lowbar;default&lowbar;on`] 
+| Function helper to adapt an I&sol;O object to use `detached&lowbar;t` as its default completion token type&period;
+|===
+
+== Description
+
+The detached&lowbar;t class is used to indicate that an asynchronous operation is detached&period; That is, there is no completion handler waiting for the operation&apos;s result&period; A detached&lowbar;t object may be passed as a handler to an asynchronous operation, typically using the special value `boost&colon;&colon;asio&colon;&colon;detached&period;` For example&colon;
+
+[,cpp]
+----
+my_socket.async_send(my_buffer, boost::asio::detached);
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

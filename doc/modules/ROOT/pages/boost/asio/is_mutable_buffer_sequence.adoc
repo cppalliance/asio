@@ -1,0 +1,30 @@
+[#boost-asio-is_mutable_buffer_sequence]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;mutable&lowbar;buffer&lowbar;sequence
+:relfileprefix: ../../
+:mrdocs:
+
+Trait to determine whether a type satisfies the MutableBufferSequence requirements&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct is&lowbar;mutable&lowbar;buffer&lowbar;sequence
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

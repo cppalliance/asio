@@ -1,0 +1,29 @@
+[#boost-asio-buffer_sequence_begin-01bc]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;sequence&lowbar;begin
+:relfileprefix: ../../
+:mrdocs:
+
+Get an iterator to the first element in a buffer sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename C&gt;
+decltype(c&period;begin())
+buffer&lowbar;sequence&lowbar;begin(
+    C& c,
+    int = 0,
+    int = 0,
+    int = 0,
+    int = 0) noexcept;
+----
+
+== Return Value
+
+an iterator to the first element in a buffer sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

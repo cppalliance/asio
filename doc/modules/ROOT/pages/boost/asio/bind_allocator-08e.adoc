@@ -1,0 +1,24 @@
+[#boost-asio-bind_allocator-08e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;allocator
+:relfileprefix: ../../
+:mrdocs:
+
+Create a partial completion token that associates an allocator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator&gt;
+xref:boost/asio/partial_allocator_binder.adoc[partial&lowbar;allocator&lowbar;binder&lt;Allocator&gt;]
+bind&lowbar;allocator(Allocator const& ex);
+----
+
+== Return Value
+
+A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied allocator as its associated allocator&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

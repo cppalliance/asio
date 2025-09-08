@@ -1,0 +1,38 @@
+[#boost-asio-has_service]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::has&lowbar;service
+:relfileprefix: ../../
+:mrdocs:
+
+Determine if an execution&lowbar;context contains a specified service type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Service&gt;
+bool
+has&lowbar;service(xref:boost/asio/execution_context.adoc[execution&lowbar;context]& e);
+----
+
+== Description
+
+This function is used to determine whether the execution&lowbar;context contains a service object corresponding to the given service type&period;
+
+== Return Value
+
+A boolean indicating whether the execution&lowbar;context contains the service&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The execution&lowbar;context object that owns the service&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

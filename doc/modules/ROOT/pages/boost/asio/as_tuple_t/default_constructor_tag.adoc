@@ -1,0 +1,18 @@
+[#boost-asio-as_tuple_t-default_constructor_tag]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/as_tuple_t.adoc[as&lowbar;tuple&lowbar;t]::default&lowbar;constructor&lowbar;tag
+:relfileprefix: ../../../
+:mrdocs:
+
+Tag type used to prevent the &quot;default&quot; constructor from being used for conversions&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;as&lowbar;tuple&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct default&lowbar;constructor&lowbar;tag;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

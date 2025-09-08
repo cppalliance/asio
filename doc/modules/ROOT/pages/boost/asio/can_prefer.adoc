@@ -1,0 +1,30 @@
+[#boost-asio-can_prefer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::can&lowbar;prefer
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;prefer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Properties&gt;
+struct can&lowbar;prefer
+    : integral&lowbar;constant&lt;bool, boost&lowbar;asio&lowbar;prefer&lowbar;fn&colon;&colon;call&lowbar;traits&lt;prefer&lowbar;t, T, void (Properties&period;&period;&period;)&gt;&colon;&colon;overload !&equals; boost&lowbar;asio&lowbar;prefer&lowbar;fn&colon;&colon;ill&lowbar;formed&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `integral&lowbar;constant&lt;bool, boost&lowbar;asio&lowbar;prefer&lowbar;fn&colon;&colon;call&lowbar;traits&lt;prefer&lowbar;t, T, void (Properties&period;&period;&period;)&gt;&colon;&colon;overload !&equals; boost&lowbar;asio&lowbar;prefer&lowbar;fn&colon;&colon;ill&lowbar;formed&gt;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

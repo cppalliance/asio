@@ -1,0 +1,20 @@
+[#boost-asio-associated_immediate_executor-0d-get]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_immediate_executor-0d.adoc[associated&lowbar;immediate&lowbar;executor&lt;immediate&lowbar;executor&lowbar;binder&lt;T, Executor&gt;, Executor1&gt;]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+decltype(b&period;get&lowbar;immediate&lowbar;executor())
+get(
+    xref:boost/asio/immediate_executor_binder.adoc[immediate&lowbar;executor&lowbar;binder&lt;T, Executor&gt;] const& b,
+    Executor1 const& = Executor1()) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

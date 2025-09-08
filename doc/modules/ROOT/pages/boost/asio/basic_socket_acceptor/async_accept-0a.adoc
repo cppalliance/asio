@@ -1,0 +1,95 @@
+[#boost-asio-basic_socket_acceptor-async_accept-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::async&lowbar;accept
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous accept&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename MoveAcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;MoveAcceptToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code,
+          typename Protocol&colon;&colon;socket&colon;&colon;template rebind&lowbar;executor&lt;
+            typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&colon;&colon;other)&gt;(
+              declval&lt;initiate&lowbar;async&lowbar;move&lowbar;accept&gt;(), token,
+              context&period;get&lowbar;executor(), static&lowbar;cast&lt;endpoint&lowbar;type&ast;&gt;(0),
+              static&lowbar;cast&lt;typename Protocol&colon;&colon;socket&colon;&colon;template rebind&lowbar;executor&lt;
+                typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&colon;&colon;other&ast;&gt;(0)))
+async&lowbar;accept(
+    ExecutionContext& context,
+    MoveAcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+== Description
+
+This function is used to asynchronously accept a new connection&period; It is an initiating function for an `asynchronous&lowbar;operation`, and always returns immediately&period;
+
+This overload requires that the Protocol template parameter satisfy the AcceptableProtocol type requirements&period;
+
+[,cpp]
+----
+void handler(
+  // Result of operation.
+  const boost::system::error_code& error,
+
+  // On success, the newly accepted socket.
+  typename Protocol::socket::template rebind_executor<
+    typename ExecutionContext::executor_type>::other peer
+); 
+----
+Regardless of whether the asynchronous operation completes immediately or not, the completion handler will not be invoked from within this function&period; On immediate completion, invocation of the handler will be performed in a manner equivalent to using boost&colon;&colon;asio&colon;&colon;async&lowbar;immediate()&period;
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code,
+   typename Protocol::socket::template rebind_executor<
+     typename ExecutionContext::executor_type>::other)) 
+----
+== Example
+[,cpp]
+----
+void accept_handler(const boost::system::error_code& error,
+    boost::asio::ip::tcp::socket peer)
+{
+  if (!error)
+  {
+    // Accept succeeded.
+  }
+}
+
+...
+
+boost::asio::ip::tcp::acceptor acceptor(my_context);
+...
+acceptor.async_accept(my_context2, accept_handler);
+----
+== Per&hyphen;Operation Cancellation
+On POSIX or Windows operating systems, this asynchronous operation supports cancellation for the following boost&colon;&colon;asio&colon;&colon;cancellation&lowbar;type values&colon;
+
+* `cancellation&lowbar;type&colon;&colon;terminal`
+* `cancellation&lowbar;type&colon;&colon;partial`
+* `cancellation&lowbar;type&colon;&colon;total`
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| The I&sol;O execution context object to be used for the newly accepted socket&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the accept completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,34 @@
+[#boost-asio-this_coro-cancellation_state]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/this_coro.adoc[this&lowbar;coro]::cancellation&lowbar;state
+:relfileprefix: ../../../
+:mrdocs:
+
+Awaitable object that returns the cancellation state of the current coroutine&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr xref:boost/asio/this_coro/cancellation_state_t.adoc[cancellation&lowbar;state&lowbar;t] cancellation&lowbar;state = cancellation&lowbar;state;
+----
+
+== Description
+
+== Example
+[,cpp]
+----
+boost::asio::awaitable<void> my_coroutine()
+{
+  boost::asio::cancellation_state cs
+    = co_await boost::asio::this_coro::cancellation_state;
+
+  // ...
+
+  if (cs.cancelled() != boost::asio::cancellation_type::none)
+    // ...
+} 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

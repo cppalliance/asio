@@ -1,0 +1,34 @@
+[#boost-asio-deferred_async_operation-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;async&lowbar;operation
+:relfileprefix: ../../
+:mrdocs:
+
+Encapsulates a deferred asynchronous operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Signature,
+    typename Initiation,
+    typename&period;&period;&period; InitArgs&gt;
+class deferred&lowbar;async&lowbar;operation;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_async_operation-08/2constructor.adoc[`deferred&lowbar;async&lowbar;operation`]         [.small]#[constructor]#
+| Construct a deferred asynchronous operation from the arguments to an initiation function object&period;
+| xref:boost/asio/deferred_async_operation-08/operator_call-0b.adoc[`operator()`] 
+| Initiate the asynchronous operation using the supplied completion token&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

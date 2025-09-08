@@ -1,0 +1,29 @@
+[#boost-asio-config_from_string-2constructor-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config_from_string.adoc[config&lowbar;from&lowbar;string]::config&lowbar;from&lowbar;string
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct with the default prefix &quot;asio&quot;&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+config&lowbar;from&lowbar;string(std::string s);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The object to construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,53 @@
+[#boost-asio-io_context-service]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::service
+:relfileprefix: ../../../
+:mrdocs:
+
+Base class for all io&lowbar;context services&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class service
+    : public xref:boost/asio/execution_context/service.adoc[execution&lowbar;context::service]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution_context/service.adoc[execution&lowbar;context::service]`
+| Base class for all execution context services&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/service/context.adoc[`context`] 
+| Get the context object that owns the service&period;
+| xref:boost/asio/io_context/service/get_io_context.adoc[`get&lowbar;io&lowbar;context`] 
+| Get the io&lowbar;context object that owns the service&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/io_context/service/2constructor.adoc[`service`]         [.small]#[constructor]#
+| Constructor&period;
+| xref:boost/asio/io_context/service/2destructor.adoc[`&#126;service`] [.small]#[destructor]# [.small]#[virtual]#
+| Destructor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

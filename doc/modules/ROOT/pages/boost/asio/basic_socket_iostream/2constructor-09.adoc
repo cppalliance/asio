@@ -1,0 +1,28 @@
+[#boost-asio-basic_socket_iostream-2constructor-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::basic&lowbar;socket&lowbar;iostream
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;construct a basic&lowbar;socket&lowbar;iostream from another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;socket&lowbar;iostream(xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]&& other);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,47 @@
+[#boost-asio-basic_socket_acceptor-close-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::close
+:relfileprefix: ../../../
+:mrdocs:
+
+Close the acceptor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+close(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to close the acceptor&period; Any asynchronous accept operations will be cancelled immediately&period;
+
+A subsequent call to open() is required before the acceptor can again be used to again perform socket accept operations&period;
+
+== Example
+[,cpp]
+----
+boost::asio::ip::tcp::acceptor acceptor(my_context);
+...
+boost::system::error_code ec;
+acceptor.close(ec);
+if (ec)
+{
+  // An error occurred.
+}
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

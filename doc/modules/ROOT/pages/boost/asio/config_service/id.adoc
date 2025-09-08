@@ -1,0 +1,17 @@
+[#boost-asio-config_service-id]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config_service.adoc[config&lowbar;service]::id
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+&sol;&ast; implementation-defined &ast;&sol; id;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

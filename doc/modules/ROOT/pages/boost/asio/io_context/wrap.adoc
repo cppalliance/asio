@@ -1,0 +1,65 @@
+[#boost-asio-io_context-wrap]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::wrap
+:relfileprefix: ../../../
+:mrdocs:
+
+(Deprecated&colon; Use boost&colon;&colon;asio&colon;&colon;bind&lowbar;executor()&period;) Create a new handler that automatically dispatches the wrapped handler on the io&lowbar;context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Handler&gt;
+&sol;&ast; implementation-defined &ast;&sol;
+wrap(Handler handler);
+----
+
+== Description
+
+This function is used to create a new handler function object that, when invoked, will automatically pass the wrapped handler to the io&lowbar;context object&apos;s dispatch function&period;
+
+[,cpp]
+----
+void handler(A1 a1, ... An an); 
+----
+[,cpp]
+----
+R f(A1 a1, ... An an); 
+----
+If this function object is passed to the wrap function like so&colon;
+
+[,cpp]
+----
+io_context.wrap(f); 
+----
+then the return value is a function object with the signature
+
+[,cpp]
+----
+void g(A1 a1, ... An an); 
+----
+that, when invoked, executes code equivalent to&colon;
+
+[,cpp]
+----
+boost::asio::dispatch(io_context,
+    boost::bind(f, a1, ... an)); 
+----
+== Return Value
+
+A function object that, when invoked, passes the wrapped handler to the io&lowbar;context object&apos;s dispatch function&period; Given a function object with the signature&colon;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *handler*
+| The handler to be wrapped&period; The io&lowbar;context will make a copy of the handler object as required&period; The function signature of the handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

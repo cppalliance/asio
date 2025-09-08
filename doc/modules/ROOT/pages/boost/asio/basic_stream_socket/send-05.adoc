@@ -1,0 +1,48 @@
+[#boost-asio-basic_stream_socket-send-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]::send
+:relfileprefix: ../../../
+:mrdocs:
+
+Send some data on the socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+send(
+    ConstBufferSequence const& buffers,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags] flags,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to send data on the stream socket&period; The function call will block until one or more bytes of the data has been sent successfully, or an until error occurs&period;
+
+[NOTE]
+The send operation may not transmit all of the data to the peer&period; Consider using the xref:boost/asio/write-02d.adoc[`write`] function if you need to ensure that all data is written before the blocking operation completes&period;
+
+== Return Value
+
+The number of bytes sent&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be sent on the socket&period;
+| *flags*
+| Flags specifying how the send call is to be made&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

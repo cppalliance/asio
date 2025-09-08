@@ -1,0 +1,49 @@
+[#boost-asio-basic_socket_acceptor-2constructor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::basic&lowbar;socket&lowbar;acceptor
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a basic&lowbar;socket&lowbar;acceptor on an existing native acceptor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;socket&lowbar;acceptor(
+    xref:boost/asio/basic_socket_acceptor/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/basic_socket_acceptor/protocol_type.adoc[protocol&lowbar;type] const& protocol,
+    xref:boost/asio/basic_socket_acceptor/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;acceptor);
+----
+
+== Description
+
+This constructor creates an acceptor object to hold an existing native acceptor&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the acceptor will use, by default, to dispatch handlers for any asynchronous operations performed on the acceptor&period;
+| *protocol*
+| An object specifying protocol parameters to be used&period;
+| *native&lowbar;acceptor*
+| A native acceptor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-streambuf]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::streambuf
+:relfileprefix: ../../
+:mrdocs:
+
+Typedef for the typical usage of basic&lowbar;streambuf&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf] streambuf;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

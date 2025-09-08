@@ -1,0 +1,34 @@
+[#boost-asio-partial_as_tuple]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::partial&lowbar;as&lowbar;tuple
+:relfileprefix: ../../
+:mrdocs:
+
+A function object type that adapts a `completion&lowbar;token` to specify that the completion handler arguments should be combined into a single tuple argument&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;as&lowbar;tuple&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct partial&lowbar;as&lowbar;tuple;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/partial_as_tuple/2constructor.adoc[`partial&lowbar;as&lowbar;tuple`]         [.small]#[constructor]#
+| Default constructor&period;
+| xref:boost/asio/partial_as_tuple/operator_call.adoc[`operator()`] 
+| Adapt a `completion&lowbar;token` to specify that the completion handler arguments should be combined into a single tuple argument&period;
+|===
+
+== Description
+
+May also be used directly as a completion token, in which case it adapts the asynchronous operation&apos;s default completion token (or boost&colon;&colon;asio&colon;&colon;deferred if no default is available)&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

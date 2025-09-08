@@ -1,0 +1,25 @@
+[#boost-asio-execution_context-destroy]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::destroy
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys all services in the context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+destroy();
+----
+
+== Description
+
+This function is implemented as follows&colon;
+
+* For each service object `svc` in the execution&lowbar;context set, in reverse order of the beginning of service object lifetime, performs &period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

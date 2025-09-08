@@ -1,0 +1,34 @@
+[#boost-asio-executor_binder-2constructor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor_binder.adoc[executor&lowbar;binder]::executor&lowbar;binder
+:relfileprefix: ../../../
+:mrdocs:
+
+Move construct from a different executor wrapper type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherExecutor&gt;
+executor&lowbar;binder(
+    xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;U, OtherExecutor&gt;]&& other,
+    int = 0,
+    int = 0);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| A call wrapper type to bind an executor of type `Executor` to an object of type `T&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

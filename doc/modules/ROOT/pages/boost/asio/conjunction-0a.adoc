@@ -1,0 +1,30 @@
+[#boost-asio-conjunction-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/conjunction-06.adoc[conjunction]&lt;Head, Tail&period;&period;&period;&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Head,
+    typename&period;&period;&period; Tail&gt;
+struct xref:boost/asio/conjunction-06.adoc[conjunction]&lt;Head, Tail&period;&period;&period;&gt;
+    : xref:boost/asio/conditional_t.adoc[conditional&lowbar;t&lt;Head&colon;&colon;value, conjunction&lt;Tail&period;&period;&period;&gt;, Head&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/conditional_t.adoc[conditional&lowbar;t&lt;Head&colon;&colon;value, conjunction&lt;Tail&period;&period;&period;&gt;, Head&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

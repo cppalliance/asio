@@ -1,0 +1,23 @@
+[#boost-asio-ip-basic_resolver_results-empty]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_results.adoc[basic&lowbar;resolver&lowbar;results]::empty
+:relfileprefix: ../../../../
+:mrdocs:
+
+Determine whether the results range is empty&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;results&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+empty() const noexcept;
+----
+
+== Return Value
+
+whether the results range is empty&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

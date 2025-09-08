@@ -1,0 +1,64 @@
+[#boost-asio-buffer_copy-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;copy
+:relfileprefix: ../../
+:mrdocs:
+
+`buffer&lowbar;copy` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+Copies bytes from a source buffer sequence to a target buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename MutableBufferSequence,
+    typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/buffer_copy-0c.adoc[buffer&lowbar;copy](
+    MutableBufferSequence const& target,
+    ConstBufferSequence const& source) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_copy-0c.adoc[_» more&period;&period;&period;_]#
+
+Copies a limited number of bytes from a source buffer sequence to a target buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename MutableBufferSequence,
+    typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/buffer_copy-08.adoc[buffer&lowbar;copy](
+    MutableBufferSequence const& target,
+    ConstBufferSequence const& source,
+    size&lowbar;t max&lowbar;bytes&lowbar;to&lowbar;copy) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_copy-08.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+The number of bytes copied&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *target*
+| A modifiable buffer sequence representing the memory regions to which the bytes will be copied&period;
+| *source*
+| A non&hyphen;modifiable buffer sequence representing the memory regions from which the bytes will be copied&period;
+| *max&lowbar;bytes&lowbar;to&lowbar;copy*
+| The maximum number of bytes to be copied&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

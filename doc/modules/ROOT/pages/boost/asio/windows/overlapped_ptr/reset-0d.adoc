@@ -1,0 +1,58 @@
+[#boost-asio-windows-overlapped_ptr-reset-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/overlapped_ptr.adoc[overlapped&lowbar;ptr]::reset
+:relfileprefix: ../../../../
+:mrdocs:
+
+`reset` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;overlapped&lowbar;ptr&period;hpp&gt;`
+
+Reset to empty&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/windows/overlapped_ptr/reset-05.adoc[reset]();
+----
+
+[.small]#xref:boost/asio/windows/overlapped_ptr/reset-05.adoc[_» more&period;&period;&period;_]#
+
+Reset to contain the specified handler, freeing any current OVERLAPPED object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename Handler&gt;
+void
+xref:boost/asio/windows/overlapped_ptr/reset-0c.adoc[reset](
+    ExecutionContext& context,
+    Handler&& handler,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/windows/overlapped_ptr/reset-0c.adoc[_» more&period;&period;&period;_]#
+
+Reset to contain the specified handler, freeing any current OVERLAPPED object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename Handler&gt;
+void
+xref:boost/asio/windows/overlapped_ptr/reset-03.adoc[reset](
+    Executor const& ex,
+    Handler&& handler,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/windows/overlapped_ptr/reset-03.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

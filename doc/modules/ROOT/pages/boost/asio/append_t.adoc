@@ -1,0 +1,50 @@
+[#boost-asio-append_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::append&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+Completion token type used to specify that the completion handler arguments should be passed additional values after the results of the operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;append&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename&period;&period;&period; Values&gt;
+class append&lowbar;t;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/append_t/2constructor.adoc[`append&lowbar;t`]         [.small]#[constructor]#
+| Constructor&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/append_t/token_.adoc[`token&lowbar;`] 
+| xref:boost/asio/append_t/values_.adoc[`values&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/append.adoc[`append`]
+| Completion token type used to specify that the completion handler arguments should be passed additional values after the results of the operation&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

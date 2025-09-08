@@ -1,0 +1,32 @@
+[#boost-asio-partial_cancel_at_timer-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/partial_cancel_at_timer.adoc[partial&lowbar;cancel&lowbar;at&lowbar;timer]::partial&lowbar;cancel&lowbar;at&lowbar;timer
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructor that specifies the expiry and cancellation type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+partial&lowbar;cancel&lowbar;at&lowbar;timer(
+    xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,
+    Clock::time&lowbar;point const& expiry,
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] cancel&lowbar;type = cancellation&lowbar;type&colon;&colon;terminal);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *timer*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

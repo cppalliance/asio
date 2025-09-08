@@ -1,0 +1,72 @@
+[#boost-asio-write_at-00a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::write&lowbar;at
+:relfileprefix: ../../
+:mrdocs:
+
+Write a certain amount of data at a specified offset before returning&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;write&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename Allocator,
+    typename CompletionCondition&gt;
+size&lowbar;t
+write&lowbar;at(
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+== Description
+
+This function is used to write a certain number of bytes of data to a random access device at a specified offset&period; The call will block until one of the following conditions is true&colon;
+
+* All of the data in the supplied basic&lowbar;streambuf has been written&period;
+* The completion&lowbar;condition function object returns 0&period;
+
+This operation is implemented in terms of zero or more calls to the device&apos;s write&lowbar;some&lowbar;at function&period;
+
+[,cpp]
+----
+std::size_t completion_condition(
+  // Result of latest write_some_at operation.
+  const boost::system::error_code& error,
+
+  // Number of bytes transferred so far.
+  std::size_t bytes_transferred
+); 
+----
+A return value of 0 indicates that the write operation is complete&period; A non&hyphen;zero return value indicates the maximum number of bytes to be written on the next call to the device&apos;s write&lowbar;some&lowbar;at function&period;
+
+== Return Value
+
+The number of bytes written&period; If an error occurs, returns the total number of bytes successfully transferred prior to the error&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *d*
+| The device to which the data is to be written&period; The type must support the SyncRandomAccessWriteDevice concept&period;
+| *offset*
+| The offset at which the data will be written&period;
+| *b*
+| The basic&lowbar;streambuf object from which data will be written&period;
+| *completion&lowbar;condition*
+| The function object to be called to determine whether the write operation is complete&period; The signature of the function object must be&colon;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,31 @@
+[#boost-asio-deferred_values]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;values
+:relfileprefix: ../../
+:mrdocs:
+
+Encapsulates deferred values&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; Values&gt;
+class deferred&lowbar;values;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_values/2constructor.adoc[`deferred&lowbar;values`]         [.small]#[constructor]#
+| Construct a deferred asynchronous operation from the arguments to an initiation function object&period;
+| xref:boost/asio/deferred_values/operator_call-07e.adoc[`operator()`] 
+| Initiate the deferred operation using the supplied completion token&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

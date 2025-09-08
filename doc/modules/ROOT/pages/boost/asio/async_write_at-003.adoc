@@ -1,0 +1,139 @@
+[#boost-asio-async_write_at-003]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;write&lowbar;at
+:relfileprefix: ../../
+:mrdocs:
+
+`async&lowbar;write&lowbar;at` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;write&lowbar;at&period;hpp&gt;`
+
+Start an asynchronous operation to write all of the supplied data at the specified offset&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename AsyncRandomAccessWriteDevice,
+    typename Allocator,
+    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessWriteDevice::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;write&lowbar;at&lowbar;streambuf&lt;
+          AsyncRandomAccessWriteDevice&gt;&gt;(),
+        token, offset, &amp;b, transfer&lowbar;all()))
+xref:boost/asio/async_write_at-0d.adoc[async&lowbar;write&lowbar;at](
+    AsyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    WriteToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename AsyncRandomAccessWriteDevice&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_write_at-0d.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous operation to write all of the supplied data at the specified offset&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename AsyncRandomAccessWriteDevice,
+    typename ConstBufferSequence,
+    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessWriteDevice::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;write&lowbar;at&lt;
+          AsyncRandomAccessWriteDevice&gt;&gt;(),
+        token, offset, buffers, transfer&lowbar;all()))
+xref:boost/asio/async_write_at-02.adoc[async&lowbar;write&lowbar;at](
+    AsyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    ConstBufferSequence const& buffers,
+    WriteToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename AsyncRandomAccessWriteDevice&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_write_at-02.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous operation to write a certain amount of data at the specified offset&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename AsyncRandomAccessWriteDevice,
+    typename Allocator,
+    typename CompletionCondition,
+    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessWriteDevice::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;write&lowbar;at&lowbar;streambuf&lt;
+          AsyncRandomAccessWriteDevice&gt;&gt;(),
+        token, offset, &amp;b,
+        static&lowbar;cast&lt;CompletionCondition&amp;&amp;&gt;(completion&lowbar;condition)))
+xref:boost/asio/async_write_at-005.adoc[async&lowbar;write&lowbar;at](
+    AsyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    WriteToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename AsyncRandomAccessWriteDevice&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_write_at-005.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous operation to write a certain amount of data at the specified offset&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename AsyncRandomAccessWriteDevice,
+    typename ConstBufferSequence,
+    typename CompletionCondition,
+    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessWriteDevice::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;write&lowbar;at&lt;
+          AsyncRandomAccessWriteDevice&gt;&gt;(),
+        token, offset, buffers,
+        static&lowbar;cast&lt;CompletionCondition&amp;&amp;&gt;(completion&lowbar;condition)))
+xref:boost/asio/async_write_at-05.adoc[async&lowbar;write&lowbar;at](
+    AsyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    ConstBufferSequence const& buffers,
+    CompletionCondition completion&lowbar;condition,
+    WriteToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename AsyncRandomAccessWriteDevice&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_write_at-05.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *d*
+| The device to which the data is to be written&period; The type must support the AsyncRandomAccessWriteDevice concept&period;
+| *offset*
+| The offset at which the data will be written&period;
+| *b*
+| A basic&lowbar;streambuf object from which data will be written&period; Ownership of the streambuf is retained by the caller, which must guarantee that it remains valid until the completion handler is called&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the write completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| *buffers*
+| One or more buffers containing the data to be written&period; Although the buffers object may be copied as necessary, ownership of the underlying memory blocks is retained by the caller, which must guarantee that they remain valid until the completion handler is called&period;
+| *completion&lowbar;condition*
+| The function object to be called to determine whether the write operation is complete&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

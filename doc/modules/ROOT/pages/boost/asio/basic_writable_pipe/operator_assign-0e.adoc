@@ -1,0 +1,46 @@
+[#boost-asio-basic_writable_pipe-operator_assign-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;writable&lowbar;pipe&period;hpp&gt;`
+
+Move&hyphen;assign a basic&lowbar;writable&lowbar;pipe from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]&
+xref:boost/asio/basic_writable_pipe/operator_assign-07.adoc[operator&equals;](xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]&& other);
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/operator_assign-07.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign a basic&lowbar;writable&lowbar;pipe from a pipe of another executor type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]&
+xref:boost/asio/basic_writable_pipe/operator_assign-0a.adoc[operator&equals;](xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe&lt;Executor1&gt;]&& other);
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/operator_assign-0a.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;writable&lowbar;pipe object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

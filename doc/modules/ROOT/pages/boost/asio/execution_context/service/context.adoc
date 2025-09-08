@@ -1,0 +1,23 @@
+[#boost-asio-execution_context-service-context]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::xref:boost/asio/execution_context/service.adoc[service]::context
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the context object that owns the service&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution_context.adoc[execution&lowbar;context]&
+context();
+----
+
+== Return Value
+
+the context object that owns the service&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

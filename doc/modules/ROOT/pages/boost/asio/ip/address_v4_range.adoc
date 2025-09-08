@@ -1,0 +1,18 @@
+[#boost-asio-ip-address_v4_range]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::address&lowbar;v4&lowbar;range
+:relfileprefix: ../../../
+:mrdocs:
+
+Represents a range of IPv4 addresses&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&lowbar;range&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/ip/basic_address_range-02.adoc[basic&lowbar;address&lowbar;range&lt;address&lowbar;v4&gt;] address&lowbar;v4&lowbar;range;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

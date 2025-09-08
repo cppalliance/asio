@@ -1,0 +1,40 @@
+[#boost-asio-ip-basic_resolver-operator_assign-05c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Move&hyphen;assign a basic&lowbar;resolver from another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]&
+operator&equals;(xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]&& other);
+----
+
+== Description
+
+This assignment operator moves a resolver from one object to another&period; Cancels any outstanding asynchronous operations associated with the target object&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;resolver(const` executor&lowbar;type&amp;) constructor&period;
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;resolver object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

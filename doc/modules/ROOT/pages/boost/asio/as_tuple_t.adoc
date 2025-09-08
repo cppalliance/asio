@@ -1,0 +1,65 @@
+[#boost-asio-as_tuple_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::as&lowbar;tuple&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` adapter used to specify that the completion handler arguments should be combined into a single tuple argument&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;as&lowbar;tuple&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CompletionToken&gt;
+class as&lowbar;tuple&lowbar;t;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/as_tuple_t/default_constructor_tag.adoc[`default&lowbar;constructor&lowbar;tag`] 
+| Tag type used to prevent the &quot;default&quot; constructor from being used for conversions&period;
+| xref:boost/asio/as_tuple_t/executor_with_default.adoc[`executor&lowbar;with&lowbar;default`] 
+| Adapts an executor to add the `as&lowbar;tuple&lowbar;t` completion token as the default&period;
+| xref:boost/asio/as_tuple_t/as_default_on_t.adoc[`as&lowbar;default&lowbar;on&lowbar;t`] 
+| Type alias to adapt an I&sol;O object to use `as&lowbar;tuple&lowbar;t` as its default completion token type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/as_tuple_t/2constructor-0b.adoc[`as&lowbar;tuple&lowbar;t`]         [.small]#[constructor]#
+| Constructors
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/as_tuple_t/as_default_on.adoc[`as&lowbar;default&lowbar;on`] 
+| Function helper to adapt an I&sol;O object to use `as&lowbar;tuple&lowbar;t` as its default completion token type&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/as_tuple_t/token_.adoc[`token&lowbar;`] 
+|===
+
+== Description
+
+The as&lowbar;tuple&lowbar;t class is used to indicate that any arguments to the completion handler should be combined and passed as a single tuple argument&period; The arguments are first moved into a `std&colon;&colon;tuple` and that tuple is then passed to the completion handler&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

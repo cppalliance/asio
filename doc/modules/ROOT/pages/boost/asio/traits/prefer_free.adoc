@@ -1,0 +1,31 @@
+[#boost-asio-traits-prefer_free]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::prefer&lowbar;free
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;traits&sol;prefer&lowbar;free&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Property,
+    typename = void&gt;
+struct prefer&lowbar;free
+    : xref:boost/asio/traits/prefer_free_default-01.adoc[prefer&lowbar;free&lowbar;default&lt;T, Property&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/traits/prefer_free_default-01.adoc[prefer&lowbar;free&lowbar;default&lt;T, Property&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

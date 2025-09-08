@@ -1,0 +1,16 @@
+[#boost-asio-ip-unicast-hops]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/unicast.adoc[unicast]::hops
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;unicast&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef &sol;&ast; implementation-defined &ast;&sol; hops;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

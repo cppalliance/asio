@@ -1,0 +1,39 @@
+[#boost-asio-associated_cancellation_slot-05-get-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_cancellation_slot-05.adoc[associated&lowbar;cancellation&lowbar;slot&lt;reference&lowbar;wrapper&lt;T&gt;, CancellationSlot&gt;]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+Forwards the request to get the cancellation slot to the associator specialisation for the unwrapped type `T&period;`
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+Forwards the request to get the cancellation slot to the associator specialisation for the unwrapped type `T&period;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+xref:boost/asio/associated_cancellation_slot-05/type.adoc[type]
+xref:boost/asio/associated_cancellation_slot-05/get-05.adoc[get](reference&lowbar;wrapper&lt;T&gt; t) noexcept;
+----
+
+[.small]#xref:boost/asio/associated_cancellation_slot-05/get-05.adoc[_» more&period;&period;&period;_]#
+
+Forwards the request to get the cancellation slot to the associator specialisation for the unwrapped type `T&period;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+decltype(associated&lowbar;cancellation&lowbar;slot&lt;T, CancellationSlot&gt;&colon;&colon;get(t&period;get(), s))
+xref:boost/asio/associated_cancellation_slot-05/get-03.adoc[get](
+    reference&lowbar;wrapper&lt;T&gt; t,
+    CancellationSlot const& s) noexcept;
+----
+
+[.small]#xref:boost/asio/associated_cancellation_slot-05/get-03.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

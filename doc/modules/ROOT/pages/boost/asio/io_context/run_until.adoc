@@ -1,0 +1,40 @@
+[#boost-asio-io_context-run_until]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::run&lowbar;until
+:relfileprefix: ../../../
+:mrdocs:
+
+Run the io&lowbar;context object&apos;s event processing loop until a specified time&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Clock,
+    typename Duration&gt;
+size&lowbar;t
+run&lowbar;until(chrono::time&lowbar;point&lt;Clock, Duration&gt; const& abs&lowbar;time);
+----
+
+== Description
+
+The run&lowbar;until() function blocks until all work has finished and there are no more handlers to be dispatched, until the io&lowbar;context has been stopped, or until the specified time has been reached&period;
+
+== Return Value
+
+The number of handlers that were executed&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *abs&lowbar;time*
+| The time point until which the call may block&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

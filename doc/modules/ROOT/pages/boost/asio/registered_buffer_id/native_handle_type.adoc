@@ -1,0 +1,18 @@
+[#boost-asio-registered_buffer_id-native_handle_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/registered_buffer_id.adoc[registered&lowbar;buffer&lowbar;id]::native&lowbar;handle&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The native buffer identifier type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef int native&lowbar;handle&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

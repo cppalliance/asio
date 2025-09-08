@@ -1,0 +1,61 @@
+[#boost-asio-execution-query-06a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::query
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;context&lowbar;as&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename U&gt;
+constexpr
+U
+xref:boost/asio/execution/query-05.adoc[query](
+    Executor const& ex,
+    xref:boost/asio/execution/context_as_t-0aa.adoc[context&lowbar;as&lowbar;t&lt;U&gt;] const&)
+requires is&lowbar;same&lt;T, U&gt;&colon;&colon;value &amp;&amp; can&lowbar;query&lt;const Executor&amp;, const context&lowbar;t&amp;&gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/query-05.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename Property&gt;
+constexpr
+xref:boost/asio/query_result_t.adoc[query&lowbar;result&lowbar;t&lt;Executor const&, InnerProperty const&&gt;]
+xref:boost/asio/execution/query-01.adoc[query](
+    Executor const& ex,
+    xref:boost/asio/execution/prefer_only.adoc[prefer&lowbar;only&lt;Property&gt;] const& p)
+requires is&lowbar;same&lt;Property, InnerProperty&gt;&colon;&colon;value &amp;&amp; can&lowbar;query&lt;const Executor&amp;, const InnerProperty&amp;&gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/query-01.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename U&gt;
+constexpr
+U
+xref:boost/asio/execution/query-06b.adoc[query](
+    Executor const& ex,
+    xref:boost/asio/execution/context_as_t-0aa.adoc[context&lowbar;as&lowbar;t&lt;U&gt;] const&,
+    void* = 0,
+    void* = 0)
+requires is&lowbar;same&lt;T, U&gt;&colon;&colon;value &amp;&amp; can&lowbar;query&lt;const Executor&amp;, const context&lowbar;t&amp;&gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/query-06b.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

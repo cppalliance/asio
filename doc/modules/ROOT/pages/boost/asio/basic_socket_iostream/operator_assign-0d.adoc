@@ -1,0 +1,33 @@
+[#boost-asio-basic_socket_iostream-operator_assign-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;assign a basic&lowbar;socket&lowbar;iostream from another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]&
+operator&equals;(xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]&& other);
+----
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move assign from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

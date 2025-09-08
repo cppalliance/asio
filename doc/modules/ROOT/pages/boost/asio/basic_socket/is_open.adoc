@@ -1,0 +1,23 @@
+[#boost-asio-basic_socket-is_open]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::is&lowbar;open
+:relfileprefix: ../../../
+:mrdocs:
+
+Determine whether the socket is open&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;open() const;
+----
+
+== Return Value
+
+whether the socket is open&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

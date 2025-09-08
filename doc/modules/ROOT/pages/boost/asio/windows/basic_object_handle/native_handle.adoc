@@ -1,0 +1,27 @@
+[#boost-asio-windows-basic_object_handle-native_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::native&lowbar;handle
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the native handle representation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_object_handle/native_handle_type.adoc[native&lowbar;handle&lowbar;type]
+native&lowbar;handle();
+----
+
+== Description
+
+This function may be used to obtain the underlying representation of the handle&period; This is intended to allow access to native handle functionality that is not otherwise provided&period;
+
+== Return Value
+
+the native handle representation&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

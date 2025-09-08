@@ -1,0 +1,17 @@
+[#boost-asio-bad_executor-operator_assign]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/bad_executor.adoc[bad&lowbar;executor]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;vcruntime&lowbar;exception&period;h&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+exception&
+operator&equals;(exception const& &lowbar;Other) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

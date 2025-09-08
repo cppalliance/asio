@@ -1,0 +1,67 @@
+[#boost-asio-ip-network_v4-2constructor-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]::network&lowbar;v4
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v4&period;hpp&gt;`
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4/2constructor-096.adoc[network&lowbar;v4]() noexcept;
+----
+
+[.small]#xref:boost/asio/ip/network_v4/2constructor-096.adoc[_» more&period;&period;&period;_]#
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4/2constructor-09c.adoc[network&lowbar;v4](xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/network_v4/2constructor-09c.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4/2constructor-00.adoc[network&lowbar;v4](xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/network_v4/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+Construct a network based on the specified address and prefix length&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4/2constructor-09f.adoc[network&lowbar;v4](
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& addr,
+    unsigned short prefix&lowbar;len);
+----
+
+[.small]#xref:boost/asio/ip/network_v4/2constructor-09f.adoc[_» more&period;&period;&period;_]#
+
+Construct network based on the specified address and netmask&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4/2constructor-02.adoc[network&lowbar;v4](
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& addr,
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& mask);
+----
+
+[.small]#xref:boost/asio/ip/network_v4/2constructor-02.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

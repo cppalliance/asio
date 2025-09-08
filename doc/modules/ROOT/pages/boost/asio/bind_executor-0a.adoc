@@ -1,0 +1,75 @@
+[#boost-asio-bind_executor-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+`bind&lowbar;executor` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+Create a partial completion token that associates an execution context&apos;s executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/partial_executor_binder.adoc[partial&lowbar;executor&lowbar;binder&lt;ExecutionContext::executor&lowbar;type&gt;]
+xref:boost/asio/bind_executor-04.adoc[bind&lowbar;executor](
+    ExecutionContext& ctx,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/bind_executor-04.adoc[_» more&period;&period;&period;_]#
+
+Create a partial completion token that associates an executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/partial_executor_binder.adoc[partial&lowbar;executor&lowbar;binder&lt;Executor&gt;]
+xref:boost/asio/bind_executor-05.adoc[bind&lowbar;executor](
+    Executor const& ex,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/bind_executor-05.adoc[_» more&period;&period;&period;_]#
+
+Associate an object of type `T` with an execution context&apos;s executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename T&gt;
+xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, ExecutionContext::executor&lowbar;type&gt;]
+xref:boost/asio/bind_executor-02.adoc[bind&lowbar;executor](
+    ExecutionContext& ctx,
+    T&& t,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/bind_executor-02.adoc[_» more&period;&period;&period;_]#
+
+Associate an object of type `T` with an executor of type `Executor&period;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename T&gt;
+xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Executor&gt;]
+xref:boost/asio/bind_executor-03.adoc[bind&lowbar;executor](
+    Executor const& ex,
+    T&& t,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/bind_executor-03.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

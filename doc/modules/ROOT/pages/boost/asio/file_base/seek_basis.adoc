@@ -1,0 +1,33 @@
+[#boost-asio-file_base-seek_basis]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/file_base.adoc[file&lowbar;base]::seek&lowbar;basis
+:relfileprefix: ../../../
+:mrdocs:
+
+Basis for seeking in a file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;file&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum seek&lowbar;basis;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`seek&lowbar;set`
+|
+|`seek&lowbar;cur`
+|
+|`seek&lowbar;end`
+|
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

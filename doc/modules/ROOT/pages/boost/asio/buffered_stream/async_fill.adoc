@@ -1,0 +1,29 @@
+[#boost-asio-buffered_stream-async_fill]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_stream.adoc[buffered&lowbar;stream]::async&lowbar;fill
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous fill&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ReadHandler = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(declval&lt;buffered&lowbar;read&lowbar;stream&lt;
+        buffered&lowbar;write&lowbar;stream&lt;Stream&gt;&gt;&amp;&gt;()&period;async&lowbar;fill(
+          static&lowbar;cast&lt;ReadHandler&amp;&amp;&gt;(handler)))
+async&lowbar;fill(ReadHandler&& handler = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+== Description
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code, std::size_t) 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

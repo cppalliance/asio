@@ -1,0 +1,16 @@
+[#boost-asio-ip-v6_only]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::v6&lowbar;only
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;v6&lowbar;only&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef &sol;&ast; implementation-defined &ast;&sol; v6&lowbar;only;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

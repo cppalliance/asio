@@ -1,0 +1,52 @@
+[#boost-asio-redirect_error_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::redirect&lowbar;error&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` adapter used to specify that an error produced by an asynchronous operation is captured to an error&lowbar;code variable&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;redirect&lowbar;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CompletionToken&gt;
+class redirect&lowbar;error&lowbar;t;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/redirect_error_t/2constructor.adoc[`redirect&lowbar;error&lowbar;t`]         [.small]#[constructor]#
+| Constructor&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/redirect_error_t/ec_.adoc[`ec&lowbar;`] 
+| xref:boost/asio/redirect_error_t/token_.adoc[`token&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/redirect_error-04.adoc[`redirect&lowbar;error`]
+| Adapt a `completion&lowbar;token` to capture error&lowbar;code values to a variable&period;
+|===
+
+== Description
+
+The redirect&lowbar;error&lowbar;t class is used to indicate that any error&lowbar;code produced by an asynchronous operation is captured to a specified variable&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

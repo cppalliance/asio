@@ -1,0 +1,55 @@
+[#boost-asio-basic_file-sync_all-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::sync&lowbar;all
+:relfileprefix: ../../../
+:mrdocs:
+
+Synchronise the file to disk&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+Synchronise the file to disk&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_file/sync_all-0c.adoc[sync&lowbar;all]();
+----
+
+[.small]#xref:boost/asio/basic_file/sync_all-0c.adoc[_» more&period;&period;&period;_]#
+
+Synchronise the file to disk&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_file/sync_all-00.adoc[sync&lowbar;all](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_file/sync_all-00.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

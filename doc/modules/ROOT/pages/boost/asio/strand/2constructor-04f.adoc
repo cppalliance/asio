@@ -1,0 +1,28 @@
+[#boost-asio-strand-2constructor-04f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::strand
+:relfileprefix: ../../../
+:mrdocs:
+
+Move constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+strand(xref:boost/asio/strand.adoc[strand]&& other) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

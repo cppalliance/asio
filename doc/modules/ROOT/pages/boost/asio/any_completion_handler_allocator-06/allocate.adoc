@@ -1,0 +1,19 @@
+[#boost-asio-any_completion_handler_allocator-06-allocate]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_handler_allocator-06.adoc[any&lowbar;completion&lowbar;handler&lowbar;allocator]::allocate
+:relfileprefix: ../../../
+:mrdocs:
+
+Allocate space for `n` objects of the allocator&apos;s value type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+T*
+allocate(size&lowbar;t n) const;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

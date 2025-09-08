@@ -1,0 +1,20 @@
+[#boost-asio-strand-query_helper-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::query&lowbar;helper
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+xref:boost/asio/query_result_t.adoc[query&lowbar;result&lowbar;t&lt;Executor const&, Property&gt;]
+query&lowbar;helper(
+    std::false&lowbar;type,
+    Property const& property);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

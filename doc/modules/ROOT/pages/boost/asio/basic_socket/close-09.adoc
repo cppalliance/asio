@@ -1,0 +1,48 @@
+[#boost-asio-basic_socket-close-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::close
+:relfileprefix: ../../../
+:mrdocs:
+
+Close the socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+close(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to close the socket&period; Any asynchronous send, receive or connect operations will be cancelled immediately, and will complete with the boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted error&period;
+
+== Example
+[,cpp]
+----
+boost::asio::ip::tcp::socket socket(my_context);
+...
+boost::system::error_code ec;
+socket.close(ec);
+if (ec)
+{
+  // An error occurred.
+}
+----
+[NOTE]
+For portable behaviour with respect to graceful closure of a connected socket, call shutdown() before closing the socket&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period; Note that, even if the function indicates an error, the underlying descriptor is closed&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,56 @@
+[#boost-asio-basic_socket_acceptor-accept-007]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::accept
+:relfileprefix: ../../../
+:mrdocs:
+
+Accept a new connection&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+Protocol::socket::rebind&lowbar;executor&lt;Executor1&gt;::other
+accept(
+    Executor1 const& ex,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+== Description
+
+This function is used to accept a new connection from a peer&period; The function call will block until a new connection has been accepted successfully or an error occurs&period;
+
+This overload requires that the Protocol template parameter satisfy the AcceptableProtocol type requirements&period;
+
+== Example
+[,cpp]
+----
+boost::asio::ip::tcp::acceptor acceptor(my_context);
+...
+boost::asio::ip::tcp::socket socket(acceptor.accept(my_context2, ec));
+if (ec)
+{
+  // An error occurred.
+}
+----
+== Return Value
+
+On success, a socket object representing the newly accepted connection&period; On error, a socket object where is&lowbar;open() is false&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor object to be used for the newly accepted socket&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

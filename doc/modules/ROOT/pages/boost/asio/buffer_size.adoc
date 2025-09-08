@@ -1,0 +1,42 @@
+[#boost-asio-buffer_size]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;size
+:relfileprefix: ../../
+:mrdocs:
+
+Get the total number of bytes in a buffer sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename BufferSequence&gt;
+size&lowbar;t
+buffer&lowbar;size(BufferSequence const& b) noexcept;
+----
+
+== Description
+
+The `buffer&lowbar;size` function determines the total size of all buffers in the buffer sequence, as if computed as follows&colon;
+
+[,cpp]
+----
+size_t total_size = 0;
+auto i = boost::asio::buffer_sequence_begin(buffers);
+auto end = boost::asio::buffer_sequence_end(buffers);
+for (; i != end; ++i)
+{
+  const_buffer b(*i);
+  total_size += b.size();
+}
+return total_size; 
+----
+The `BufferSequence` template parameter may meet either of the `ConstBufferSequence` or `MutableBufferSequence` type requirements&period;
+
+== Return Value
+
+the total number of bytes in a buffer sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

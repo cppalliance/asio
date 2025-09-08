@@ -1,0 +1,25 @@
+[#boost-asio-socket_errc-already_open]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/socket_errc.adoc[socket&lowbar;errc]::already&lowbar;open
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using error::already&lowbar;open;
+----
+
+== Introduced Symbols
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/error/misc_errors.adoc[boost::asio::error::misc&lowbar;errors::already&lowbar;open]
+| Already open&period;
+|===
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

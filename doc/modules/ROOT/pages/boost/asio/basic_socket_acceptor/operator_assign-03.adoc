@@ -1,0 +1,48 @@
+[#boost-asio-basic_socket_acceptor-operator_assign-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+Move&hyphen;assign a basic&lowbar;socket&lowbar;acceptor from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]&
+xref:boost/asio/basic_socket_acceptor/operator_assign-00.adoc[operator&equals;](xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]&& other);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/operator_assign-00.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign a basic&lowbar;socket&lowbar;acceptor from an acceptor of another protocol type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol1,
+    typename Executor1&gt;
+xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]&
+xref:boost/asio/basic_socket_acceptor/operator_assign-0d.adoc[operator&equals;](xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor&lt;Protocol1, Executor1&gt;]&& other);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/operator_assign-0d.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;socket&lowbar;acceptor object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

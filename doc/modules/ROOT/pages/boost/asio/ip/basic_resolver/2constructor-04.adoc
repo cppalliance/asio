@@ -1,0 +1,35 @@
+[#boost-asio-ip-basic_resolver-2constructor-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]::basic&lowbar;resolver
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct with execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+basic&lowbar;resolver(
+    ExecutionContext& context,
+    int = 0);
+----
+
+== Description
+
+This constructor creates a basic&lowbar;resolver&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| An execution context which provides the I&sol;O executor that the resolver will use, by default, to dispatch handlers for any asynchronous operations performed on the resolver&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

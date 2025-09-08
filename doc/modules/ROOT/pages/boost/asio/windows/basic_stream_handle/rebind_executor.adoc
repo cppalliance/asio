@@ -1,0 +1,29 @@
+[#boost-asio-windows-basic_stream_handle-rebind_executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_stream_handle.adoc[basic&lowbar;stream&lowbar;handle]::rebind&lowbar;executor
+:relfileprefix: ../../../../
+:mrdocs:
+
+Rebinds the handle type to another executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;stream&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+struct rebind&lowbar;executor;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_stream_handle/rebind_executor/other.adoc[`other`] 
+| The handle type when rebound to the specified executor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,116 @@
+[#boost-asio-post-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::post
+:relfileprefix: ../../
+:mrdocs:
+
+Submits a completion token or function object for execution&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;post&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;post&lowbar;with&lowbar;executor&lt;Executor&gt;&gt;(), token))
+post(
+    Executor const& ex,
+    NullaryToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;(),
+    int = 0);
+----
+
+== Description
+
+This function submits an object for execution using the specified executor&period; The function object is queued for execution, and is never called from the current thread prior to returning from &period;
+
+The use of `post(),` rather than xref:boost/asio/defer-0c2.adoc[`defer()`], indicates the caller&apos;s preference that the function object be eagerly queued for execution&period;
+
+[,cpp]
+----
+void handler(); 
+----
+[,cpp]
+----
+class Init
+{
+public:
+  using executor_type = Executor;
+  explicit Init(const Executor& ex) : ex_(ex) {}
+  executor_type get_executor() const noexcept { return ex_; }
+  template <typename CompletionHandler>
+    void operator()(CompletionHandler&& completion_handler) const;
+private:
+  Executor ex_; // exposition only
+}; 
+----
+The function call operator of `Init&colon;`
+
+* Obtains the handler&apos;s associated executor object `ex1` of type `Ex1` by performing
+
+[,cpp]
+----
+auto ex1 = get_associated_executor(handler, ex); 
+----
+* Obtains the handler&apos;s associated allocator object `alloc` by performing
+
+[,cpp]
+----
+auto alloc = get_associated_allocator(handler); 
+----
+* If is true, constructs a function object `f` with a member `executor&lowbar;` that is initialised with , a member `handler&lowbar;` that is a decay&hyphen;copy of `completion&lowbar;handler,` and a function call operator that performs&colon;
+
+[,cpp]
+----
+auto a = get_associated_allocator(handler_);
+prefer(executor_, execution::allocator(a)).execute(std::move(handler_));
+----
+* If is false, constructs a function object `f` with a member `work&lowbar;` that is initialised with , a member `handler&lowbar;` that is a decay&hyphen;copy of `completion&lowbar;handler,` and a function call operator that performs&colon;
+
+[,cpp]
+----
+auto a = get_associated_allocator(handler_);
+work_.get_executor().dispatch(std::move(handler_), a);
+work_.reset(); 
+----
+* If is true, performs
+
+[,cpp]
+----
+prefer(
+    require(ex, execution::blocking.never),
+    execution::relationship.fork,
+    execution::allocator(alloc)
+  ).execute(std::move(f)); 
+----
+* If is false, performs
+
+[,cpp]
+----
+ex.post(std::move(f), alloc); 
+----
+== Completion Signature
+[,cpp]
+----
+void() 
+----
+== Return Value
+
+This function returns , where `Init` is a function object type defined as&colon;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The target executor&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

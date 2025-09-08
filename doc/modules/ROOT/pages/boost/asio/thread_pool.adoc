@@ -1,0 +1,160 @@
+[#boost-asio-thread_pool]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::thread&lowbar;pool
+:relfileprefix: ../../
+:mrdocs:
+
+A simple fixed&hyphen;size thread pool&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class thread&lowbar;pool
+    : public xref:boost/asio/execution_context.adoc[execution&lowbar;context]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution_context.adoc[execution&lowbar;context]`
+| A context for function object execution&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/allocator-03.adoc[`allocator`] 
+| 
+| xref:boost/asio/thread_pool/basic_executor_type.adoc[`basic&lowbar;executor&lowbar;type`] 
+| Executor implementation type used to submit functions to a thread pool&period;
+| xref:boost/asio/execution_context/id.adoc[`id`] 
+| Class used to uniquely identify a service&period;
+| xref:boost/asio/execution_context/service.adoc[`service`] 
+| Base class for all execution context services&period;
+| xref:boost/asio/execution_context/service_maker.adoc[`service&lowbar;maker`] 
+| Base class for all execution context service makers&period;
+| xref:boost/asio/thread_pool/executor_type.adoc[`executor&lowbar;type`] 
+| Executor used to submit functions to a thread pool&period;
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/fork_event.adoc[`fork&lowbar;event`] 
+| Fork&hyphen;related event notifications&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/thread_pool/2constructor-04.adoc[`thread&lowbar;pool`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/thread_pool/2destructor.adoc[`&#126;thread&lowbar;pool`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/thread_pool/attach.adoc[`attach`] 
+| Attaches the current thread to the pool&period;
+| xref:boost/asio/thread_pool/executor.adoc[`executor`] 
+| Obtains the executor associated with the pool&period;
+| xref:boost/asio/thread_pool/get_executor.adoc[`get&lowbar;executor`] 
+| Obtains the executor associated with the pool&period;
+| xref:boost/asio/thread_pool/join.adoc[`join`] 
+| Joins the threads&period;
+| xref:boost/asio/execution_context/notify_fork.adoc[`notify&lowbar;fork`] 
+| Notify the execution&lowbar;context of a fork&hyphen;related event&period;
+| xref:boost/asio/thread_pool/stop.adoc[`stop`] 
+| Stops the threads&period;
+| xref:boost/asio/thread_pool/wait.adoc[`wait`] 
+| Waits for threads to complete&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/destroy.adoc[`destroy`] 
+| Destroys all services in the context&period;
+| xref:boost/asio/execution_context/shutdown.adoc[`shutdown`] 
+| Shuts down all services in the context&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/thread_pool/basic_executor_type.adoc[boost::asio::thread&lowbar;pool::basic&lowbar;executor&lowbar;type]`
+| Executor implementation type used to submit functions to a thread pool&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/add_service.adoc[`add&lowbar;service`]
+| (Deprecated&colon; Use make&lowbar;service()&period;) Add a service object to the execution&lowbar;context&period;
+| xref:boost/asio/has_service.adoc[`has&lowbar;service`]
+| Determine if an execution&lowbar;context contains a specified service type&period;
+| xref:boost/asio/make_service.adoc[`make&lowbar;service`]
+| Creates a service object and adds it to the execution&lowbar;context&period;
+| xref:boost/asio/use_service-0c.adoc[`use&lowbar;service`]
+| Obtain the service object corresponding to the given type&period;
+|===
+
+== Description
+
+The thread pool class is an execution context where functions are permitted to run on one of a fixed number of threads&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Safe, with the specific exceptions of the join() wait() and notify&lowbar;fork() functions&period; The join() and wait() functions must not be called at the same time as other calls to join() or wait() on the same pool&period; The notify&lowbar;fork() function should not be called while any thread&lowbar;pool function, or any function on an I&sol;O object that is associated with the thread&lowbar;pool, is being called in another thread&period; (In effect, this means that notify&lowbar;fork() is safe only on a thread pool that has no internal or attached threads at the time&period;)
+
+== Submitting tasks to the pool
+To submit functions to the thread pool, use the xref:boost/asio/dispatch-09.adoc[`boost&colon;&colon;asio&colon;&colon;dispatch`], xref:boost/asio/post-055.adoc[`boost&colon;&colon;asio&colon;&colon;post`] or xref:boost/asio/defer-0c2.adoc[`boost&colon;&colon;asio&colon;&colon;defer`] free functions&period;
+
+For example&colon;
+
+[,cpp]
+----
+void my_task()
+{
+  ...
+}
+
+...
+
+// Launch the pool with four threads.
+boost::asio::thread_pool pool(4);
+
+// Submit a function to the pool.
+boost::asio::post(pool, my_task);
+
+// Submit a lambda object to the pool.
+boost::asio::post(pool,
+    []()
+    {
+      ...
+    });
+
+// Wait for all tasks in the pool to complete.
+pool.join(); 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

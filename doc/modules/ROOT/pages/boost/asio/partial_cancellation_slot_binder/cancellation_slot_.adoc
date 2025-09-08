@@ -1,0 +1,16 @@
+[#boost-asio-partial_cancellation_slot_binder-cancellation_slot_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/partial_cancellation_slot_binder.adoc[partial&lowbar;cancellation&lowbar;slot&lowbar;binder]::cancellation&lowbar;slot&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+CancellationSlot cancellation&lowbar;slot&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

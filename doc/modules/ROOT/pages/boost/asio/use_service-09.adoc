@@ -1,0 +1,53 @@
+[#boost-asio-use_service-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::use&lowbar;service
+:relfileprefix: ../../
+:mrdocs:
+
+Obtain the service object corresponding to the given type&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+Obtain the service object corresponding to the given type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Service&gt;
+Service&
+xref:boost/asio/use_service-0c.adoc[use&lowbar;service](xref:boost/asio/execution_context.adoc[execution&lowbar;context]& e);
+----
+
+[.small]#xref:boost/asio/use_service-0c.adoc[_» more&period;&period;&period;_]#
+
+Obtain the service object corresponding to the given type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Service&gt;
+Service&
+xref:boost/asio/use_service-05.adoc[use&lowbar;service](xref:boost/asio/io_context.adoc[io&lowbar;context]& ioc);
+----
+
+[.small]#xref:boost/asio/use_service-05.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+The service interface implementing the specified service type&period; Ownership of the service interface is not transferred to the caller&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The execution&lowbar;context object that owns the service&period;
+| *ioc*
+| The io&lowbar;context object that owns the service&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

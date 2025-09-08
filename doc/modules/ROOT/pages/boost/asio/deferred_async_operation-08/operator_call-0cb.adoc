@@ -1,0 +1,20 @@
+[#boost-asio-deferred_async_operation-08-operator_call-0cb]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/deferred_async_operation-08.adoc[deferred&lowbar;async&lowbar;operation]::operator()
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CompletionToken&gt;
+decltype(this&hyphen;&gt;const&lowbar;invoke&lowbar;helper(
+        static&lowbar;cast&lt;CompletionToken&amp;&amp;&gt;(token),
+        detail&colon;&colon;index&lowbar;sequence&lowbar;for&lt;InitArgs&period;&period;&period;&gt;()))
+operator()(CompletionToken&& token);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

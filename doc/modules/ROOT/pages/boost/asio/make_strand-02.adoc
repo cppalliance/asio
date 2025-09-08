@@ -1,0 +1,36 @@
+[#boost-asio-make_strand-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::make&lowbar;strand
+:relfileprefix: ../../
+:mrdocs:
+
+Create a xref:boost/asio/strand.adoc[`strand`] object for an execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/strand.adoc[strand&lt;ExecutionContext::executor&lowbar;type&gt;]
+make&lowbar;strand(
+    ExecutionContext& ctx,
+    int = 0);
+----
+
+== Return Value
+
+A strand constructed with the execution context&apos;s executor, obtained by performing &period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ctx*
+| An execution context, from which an executor will be obtained&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,70 @@
+[#boost-asio-basic_system_executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;system&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+An executor that uses arbitrary threads&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;system&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Blocking,
+    typename Relationship,
+    typename Allocator&gt;
+class basic&lowbar;system&lowbar;executor;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_system_executor/2constructor.adoc[`basic&lowbar;system&lowbar;executor`]         [.small]#[constructor]#
+| Default constructor&period;
+| xref:boost/asio/basic_system_executor/context.adoc[`context`] 
+| Obtain the underlying execution context&period;
+| xref:boost/asio/basic_system_executor/defer.adoc[`defer`] 
+| Request the system executor to invoke the given function object&period;
+| xref:boost/asio/basic_system_executor/dispatch.adoc[`dispatch`] 
+| Request the system executor to invoke the given function object&period;
+| xref:boost/asio/basic_system_executor/execute.adoc[`execute`] 
+| Execution function&period;
+| xref:boost/asio/basic_system_executor/on_work_finished.adoc[`on&lowbar;work&lowbar;finished`] 
+| Inform the executor that some work is no longer outstanding&period;
+| xref:boost/asio/basic_system_executor/on_work_started.adoc[`on&lowbar;work&lowbar;started`] 
+| Inform the executor that it has some outstanding work to do&period;
+| xref:boost/asio/basic_system_executor/post.adoc[`post`] 
+| Request the system executor to invoke the given function object&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_system_executor.adoc[boost::asio::basic&lowbar;system&lowbar;executor]`
+| An executor that uses arbitrary threads&period;
+| `xref:boost/asio/operator_not_eq-0f4.adoc[boost::asio::operator!&equals;]`
+| Compare two executors for inequality&period;
+| `xref:boost/asio/operator_eq-06.adoc[boost::asio::operator&equals;&equals;]`
+| Compare two executors for equality&period;
+| `boost&lowbar;asio&lowbar;query&lowbar;fn::impl`
+| 
+| `boost&lowbar;asio&lowbar;prefer&lowbar;fn::impl`
+| 
+| `boost&lowbar;asio&lowbar;require&lowbar;fn::impl`
+| 
+|===
+
+== Description
+
+The system executor represents an execution context where functions are permitted to run on arbitrary threads&period; When the blocking&period;never property is established, the system executor will schedule the function to run on an unspecified system thread pool&period; When either blocking&period;possibly or blocking&period;always is established, the executor invokes the function immediately&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

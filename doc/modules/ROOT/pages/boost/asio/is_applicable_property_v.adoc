@@ -1,0 +1,19 @@
+[#boost-asio-is_applicable_property_v]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;applicable&lowbar;property&lowbar;v
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;is&lowbar;applicable&lowbar;property&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Property&gt;
+constexpr bool is&lowbar;applicable&lowbar;property&lowbar;v = is&lowbar;applicable&lowbar;property&lt;T, Property&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,50 @@
+[#boost-asio-any_io_executor-require-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]::require
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain a polymorphic wrapper with the specified property&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;io&lowbar;executor&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;context&lowbar;as&lowbar;t&lt;execution&lowbar;context&&gt;, &sol;&ast; implementation-defined &ast;&sol;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;]
+xref:boost/asio/any_io_executor/require-0d.adoc[require](Property const& p)
+requires find&lowbar;convertible&lowbar;requirable&lowbar;property&lt;Property&gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/any_io_executor/require-0d.adoc[_» more&period;&period;&period;_]#
+
+Obtain a polymorphic wrapper with the specified property&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]
+xref:boost/asio/any_io_executor/require-08.adoc[require](
+    Property const& p,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/any_io_executor/require-08.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;&gt;
+xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]
+xref:boost/asio/any_io_executor/require-0f.adoc[require&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;](
+    &sol;&ast; implementation-defined &ast;&sol; const&,
+    int = 0) const;
+----
+
+[.small]#xref:boost/asio/any_io_executor/require-0f.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

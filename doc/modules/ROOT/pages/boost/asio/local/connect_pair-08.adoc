@@ -1,0 +1,48 @@
+[#boost-asio-local-connect_pair-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::connect&lowbar;pair
+:relfileprefix: ../../../
+:mrdocs:
+
+Create a pair of connected sockets&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;connect&lowbar;pair&period;hpp&gt;`
+
+Create a pair of connected sockets&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor1,
+    typename Executor2&gt;
+void
+xref:boost/asio/local/connect_pair-01.adoc[connect&lowbar;pair](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor1&gt;]& socket1,
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor2&gt;]& socket2);
+----
+
+[.small]#xref:boost/asio/local/connect_pair-01.adoc[_» more&period;&period;&period;_]#
+
+Create a pair of connected sockets&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor1,
+    typename Executor2&gt;
+boost::system::error&lowbar;code
+xref:boost/asio/local/connect_pair-07.adoc[connect&lowbar;pair](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor1&gt;]& socket1,
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor2&gt;]& socket2,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/local/connect_pair-07.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

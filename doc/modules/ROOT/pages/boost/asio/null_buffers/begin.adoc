@@ -1,0 +1,23 @@
+[#boost-asio-null_buffers-begin]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/null_buffers.adoc[null&lowbar;buffers]::begin
+:relfileprefix: ../../../
+:mrdocs:
+
+Get a random&hyphen;access iterator to the first element&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/null_buffers/const_iterator.adoc[const&lowbar;iterator]
+begin() const noexcept;
+----
+
+== Return Value
+
+a random&hyphen;access iterator to the first element&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

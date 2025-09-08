@@ -1,0 +1,35 @@
+[#boost-asio-buffer-0db]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Obtain a buffer representing part of a registered buffer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer]
+buffer(
+    xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer] const& b,
+    size&lowbar;t n) noexcept;
+----
+
+== Return Value
+
+Holds a registered buffer over non&hyphen;modifiable data&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *b*
+| Holds a registered buffer over non&hyphen;modifiable data&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

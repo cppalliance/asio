@@ -1,0 +1,81 @@
+[#boost-asio-generic-raw_protocol]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::raw&lowbar;protocol
+:relfileprefix: ../../../
+:mrdocs:
+
+Encapsulates the flags needed for a generic raw socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;raw&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class raw&lowbar;protocol;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/generic/raw_protocol/endpoint.adoc[`endpoint`] 
+| The type of an endpoint&period;
+| xref:boost/asio/generic/raw_protocol/socket.adoc[`socket`] 
+| The generic socket type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/generic/raw_protocol/2constructor-06.adoc[`raw&lowbar;protocol`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/generic/raw_protocol/family.adoc[`family`] 
+| Obtain an identifier for the protocol family&period;
+| xref:boost/asio/generic/raw_protocol/protocol.adoc[`protocol`] 
+| Obtain an identifier for the protocol&period;
+| xref:boost/asio/generic/raw_protocol/type.adoc[`type`] 
+| Obtain an identifier for the type of the protocol&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/generic/operator_not_eq-01.adoc[boost::asio::generic::operator!&equals;]`
+| Compare two protocols for inequality&period;
+| `xref:boost/asio/generic/operator_eq-06.adoc[boost::asio::generic::operator&equals;&equals;]`
+| Compare two protocols for equality&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;generic&colon;&colon;raw&lowbar;protocol class contains flags necessary for raw sockets of any address family and protocol&period;
+
+== Examples
+Constructing using a native address family and socket protocol&colon;
+
+[,cpp]
+----
+raw_protocol p(AF_INET, IPPROTO_ICMP); 
+----
+Constructing from a specific protocol type&colon;
+
+[,cpp]
+----
+raw_protocol p(boost::asio::ip::icmp::v4()); 
+----
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Safe&period;
+
+== Concepts&colon;
+Protocol&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

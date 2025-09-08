@@ -1,0 +1,16 @@
+[#boost-asio-prefer_result-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/prefer_result.adoc[prefer&lowbar;result]::type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;prefer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef boost&lowbar;asio&lowbar;prefer&lowbar;fn::call&lowbar;traits&lt;prefer&lowbar;t, T, void(Properties&period;&period;&period;)&gt;::result&lowbar;type type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

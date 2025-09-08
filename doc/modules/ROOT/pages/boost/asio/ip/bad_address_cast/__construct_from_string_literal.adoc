@@ -1,0 +1,18 @@
+[#boost-asio-ip-bad_address_cast-__construct_from_string_literal]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/bad_address_cast.adoc[bad&lowbar;address&lowbar;cast]::&lowbar;&lowbar;construct&lowbar;from&lowbar;string&lowbar;literal
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;vcruntime&lowbar;typeinfo&period;h&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+bad&lowbar;cast
+&lowbar;&lowbar;construct&lowbar;from&lowbar;string&lowbar;literal(char const const* &lowbar;Message) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

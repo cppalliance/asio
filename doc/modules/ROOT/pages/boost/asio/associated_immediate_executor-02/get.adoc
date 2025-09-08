@@ -1,0 +1,22 @@
+[#boost-asio-associated_immediate_executor-02-get]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_immediate_executor-02.adoc[associated&lowbar;immediate&lowbar;executor&lt;reference&lowbar;wrapper&lt;T&gt;, Executor&gt;]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+Forwards the request to get the executor to the associator specialisation for the unwrapped type `T&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+decltype(associated&lowbar;immediate&lowbar;executor&lt;T, Executor&gt;&colon;&colon;get(t&period;get(), ex))
+get(
+    reference&lowbar;wrapper&lt;T&gt; t,
+    Executor const& ex) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

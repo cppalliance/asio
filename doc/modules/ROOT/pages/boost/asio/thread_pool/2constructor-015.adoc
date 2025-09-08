@@ -1,0 +1,36 @@
+[#boost-asio-thread_pool-2constructor-015]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::thread&lowbar;pool
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructs a pool with a specified number of threads&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+thread&lowbar;pool(
+    size&lowbar;t num&lowbar;threads,
+    xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker] const& initial&lowbar;services);
+----
+
+== Description
+
+Construct with a service maker, to create an initial set of services that will be installed into the execution context at construction time&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *num&lowbar;threads*
+| The number of threads required&period;
+| *initial&lowbar;services*
+| Used to create the initial services&period; The `make` function will be called once at the end of execution&lowbar;context construction&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,33 @@
+[#boost-asio-operator_and_eq-0eb]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&amp;&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Bitwise and&hyphen;assignment operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;type&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]&
+operator&amp;&equals;(
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]& x,
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] y);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *x*
+| The left operand
+| *y*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

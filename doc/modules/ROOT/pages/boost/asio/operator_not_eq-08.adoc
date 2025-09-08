@@ -1,0 +1,39 @@
+[#boost-asio-operator_not_eq-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator!&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Inequality operator, returns true if the disposition contains an error&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Disposition&gt;
+constexpr
+bool
+operator!&equals;(
+    Disposition const& d,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+== Return Value
+
+`true` if the objects are not equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *d*
+| The left operand
+| *rhs*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

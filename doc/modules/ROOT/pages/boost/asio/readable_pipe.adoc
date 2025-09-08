@@ -1,0 +1,18 @@
+[#boost-asio-readable_pipe]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::readable&lowbar;pipe
+:relfileprefix: ../../
+:mrdocs:
+
+Typedef for the typical usage of a readable pipe&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;readable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_readable_pipe.adoc[basic&lowbar;readable&lowbar;pipe] readable&lowbar;pipe;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

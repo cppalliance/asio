@@ -1,0 +1,111 @@
+[#boost-asio-ip-basic_resolver_results]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::basic&lowbar;resolver&lowbar;results
+:relfileprefix: ../../../
+:mrdocs:
+
+A range of entries produced by a resolver&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;results&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename InternetProtocol&gt;
+class basic&lowbar;resolver&lowbar;results;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_results/const_iterator.adoc[`const&lowbar;iterator`] 
+| The type of an iterator into the range&period;
+| xref:boost/asio/ip/basic_resolver_results/const_reference.adoc[`const&lowbar;reference`] 
+| The type of a const reference to a value in the range&period;
+| xref:boost/asio/ip/basic_resolver_results/difference_type.adoc[`difference&lowbar;type`] 
+| Type used to represent the distance between two iterators in the range&period;
+| xref:boost/asio/ip/basic_resolver_results/endpoint_type.adoc[`endpoint&lowbar;type`] 
+| The endpoint type associated with the results&period;
+| xref:boost/asio/ip/basic_resolver_results/iterator.adoc[`iterator`] 
+| The type of an iterator into the range&period;
+| xref:boost/asio/ip/basic_resolver_results/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type associated with the results&period;
+| xref:boost/asio/ip/basic_resolver_results/reference.adoc[`reference`] 
+| The type of a non&hyphen;const reference to a value in the range&period;
+| xref:boost/asio/ip/basic_resolver_results/size_type.adoc[`size&lowbar;type`] 
+| Type used to represent a count of the elements in the range&period;
+| xref:boost/asio/ip/basic_resolver_results/value_type.adoc[`value&lowbar;type`] 
+| The type of a value in the results range&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_results/2constructor-0d.adoc[`basic&lowbar;resolver&lowbar;results`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/basic_resolver_results/operator_assign-08.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/ip/basic_resolver_results/begin.adoc[`begin`] 
+| Obtain a begin iterator for the results range&period;
+| xref:boost/asio/ip/basic_resolver_results/cbegin.adoc[`cbegin`] 
+| Obtain a begin iterator for the results range&period;
+| xref:boost/asio/ip/basic_resolver_results/cend.adoc[`cend`] 
+| Obtain an end iterator for the results range&period;
+| xref:boost/asio/ip/basic_resolver_results/empty.adoc[`empty`] 
+| Determine whether the results range is empty&period;
+| xref:boost/asio/ip/basic_resolver_results/end.adoc[`end`] 
+| Obtain an end iterator for the results range&period;
+| xref:boost/asio/ip/basic_resolver_results/max_size.adoc[`max&lowbar;size`] 
+| Get the maximum number of entries permitted in a results range&period;
+| xref:boost/asio/ip/basic_resolver_results/size.adoc[`size`] 
+| Get the number of entries in the results range&period;
+| xref:boost/asio/ip/basic_resolver_results/swap.adoc[`swap`] 
+| Swap the results range with another&period;
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_results/create-00.adoc[`create`] 
+| 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/operator_not_eq-051.adoc[boost::asio::ip::operator!&equals;]`
+| Test two iterators for inequality&period;
+| `xref:boost/asio/ip/operator_eq-016.adoc[boost::asio::ip::operator&equals;&equals;]`
+| Test two iterators for equality&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;basic&lowbar;resolver&lowbar;results class template is used to define a range over the results returned by a resolver&period;
+
+The iterator&apos;s value&lowbar;type, obtained when a results iterator is dereferenced, is&colon;
+
+[,cpp]
+----
+const basic_resolver_entry<InternetProtocol> 
+----
+[NOTE]
+For backward compatibility, basic&lowbar;resolver&lowbar;results is derived from basic&lowbar;resolver&lowbar;iterator&period; This derivation is deprecated&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

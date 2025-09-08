@@ -1,0 +1,37 @@
+[#boost-asio-basic_file-size-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::size
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the size of the file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+std::uint64&lowbar;t
+size(boost::system::error&lowbar;code& ec) const;
+----
+
+== Description
+
+This function determines the size of the file, in bytes&period;
+
+== Return Value
+
+the size of the file&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

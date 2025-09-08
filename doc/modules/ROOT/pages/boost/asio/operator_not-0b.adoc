@@ -1,0 +1,34 @@
+[#boost-asio-operator_not-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator!
+:relfileprefix: ../../
+:mrdocs:
+
+Negation operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;type&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+operator!(xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] x);
+----
+
+== Return Value
+
+`true` if the object is falsy, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *x*
+| The operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

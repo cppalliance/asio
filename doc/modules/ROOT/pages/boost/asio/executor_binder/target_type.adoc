@@ -1,0 +1,18 @@
+[#boost-asio-executor_binder-target_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor_binder.adoc[executor&lowbar;binder]::target&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The type of the target object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef T target&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

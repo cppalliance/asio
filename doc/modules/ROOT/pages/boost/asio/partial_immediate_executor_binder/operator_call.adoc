@@ -1,0 +1,25 @@
+[#boost-asio-partial_immediate_executor_binder-operator_call]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/partial_immediate_executor_binder.adoc[partial&lowbar;immediate&lowbar;executor&lowbar;binder]::operator()
+:relfileprefix: ../../../
+:mrdocs:
+
+Adapt a `completion&lowbar;token` to specify that the completion handler should have the executor as its associated immediate executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CompletionToken&gt;
+constexpr
+xref:boost/asio/immediate_executor_binder.adoc[immediate&lowbar;executor&lowbar;binder&lt;decay&lowbar;t&lt;CompletionToken&gt;, Executor&gt;]
+operator()(CompletionToken&& completion&lowbar;token);
+----
+
+== Return Value
+
+A call wrapper type to bind a immediate executor of type `Executor` to an object of type `T&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

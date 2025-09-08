@@ -1,0 +1,34 @@
+[#boost-asio-operator_xor-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&circ;
+:relfileprefix: ../../
+:mrdocs:
+
+Bitwise xor operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;type&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]
+operator&circ;(
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] x,
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] y);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *x*
+| The left operand
+| *y*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

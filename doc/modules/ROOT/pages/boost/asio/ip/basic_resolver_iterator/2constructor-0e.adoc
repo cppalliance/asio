@@ -1,0 +1,43 @@
+[#boost-asio-ip-basic_resolver_iterator-2constructor-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]::basic&lowbar;resolver&lowbar;iterator
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;iterator&period;hpp&gt;`
+
+Default constructor creates an end iterator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_iterator/2constructor-0c.adoc[basic&lowbar;resolver&lowbar;iterator]();
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver_iterator/2constructor-0c.adoc[_» more&period;&period;&period;_]#
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_iterator/2constructor-02.adoc[basic&lowbar;resolver&lowbar;iterator](xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator] const& other);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver_iterator/2constructor-02.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_iterator/2constructor-0a.adoc[basic&lowbar;resolver&lowbar;iterator](xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]&& other);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver_iterator/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

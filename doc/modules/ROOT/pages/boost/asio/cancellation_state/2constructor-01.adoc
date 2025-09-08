@@ -1,0 +1,34 @@
+[#boost-asio-cancellation_state-2constructor-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_state.adoc[cancellation&lowbar;state]::cancellation&lowbar;state
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct and attach to a parent slot to create a new child slot&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CancellationSlot&gt;
+constexpr
+cancellation&lowbar;state(CancellationSlot slot);
+----
+
+== Description
+
+Initialises the cancellation state so that it allows terminal cancellation only&period; Equivalent to &period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *slot*
+| The parent cancellation slot to which the state will be attached&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

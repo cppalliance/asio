@@ -1,0 +1,17 @@
+[#boost-asio-transfer_at_least]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::transfer&lowbar;at&lowbar;least
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;completion&lowbar;condition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&sol;&ast; implementation-defined &ast;&sol;
+transfer&lowbar;at&lowbar;least(size&lowbar;t minimum);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

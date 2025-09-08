@@ -1,0 +1,21 @@
+[#boost-asio-windows-overlapped_ptr-complete]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/overlapped_ptr.adoc[overlapped&lowbar;ptr]::complete
+:relfileprefix: ../../../../
+:mrdocs:
+
+Post completion notification for overlapped operation&period; Releases ownership&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;overlapped&lowbar;ptr&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+complete(
+    boost::system::error&lowbar;code const& ec,
+    size&lowbar;t bytes&lowbar;transferred);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

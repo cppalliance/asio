@@ -1,0 +1,113 @@
+[#boost-asio-basic_socket-native_non_blocking-059]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::native&lowbar;non&lowbar;blocking
+:relfileprefix: ../../../
+:mrdocs:
+
+Sets the non&hyphen;blocking mode of the native socket implementation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+native&lowbar;non&lowbar;blocking(bool mode);
+----
+
+== Description
+
+This function is used to modify the non&hyphen;blocking mode of the underlying native socket&period; It has no effect on the behaviour of the socket object&apos;s synchronous operations&period;
+
+== Example
+This function is intended to allow the encapsulation of arbitrary non&hyphen;blocking system calls as asynchronous operations, in a way that is transparent to the user of the socket object&period; The following example illustrates how Linux&apos;s `sendfile` system call might be encapsulated&colon;
+
+[,cpp]
+----
+template <typename Handler>
+struct sendfile_op
+{
+  tcp::socket& sock_;
+  int fd_;
+  Handler handler_;
+  off_t offset_;
+  std::size_t total_bytes_transferred_;
+
+  // Function call operator meeting WriteHandler requirements.
+  // Used as the handler for the async_write_some operation.
+  void operator()(boost::system::error_code ec, std::size_t)
+  {
+    // Put the underlying socket into non-blocking mode.
+    if (!ec)
+      if (!sock_.native_non_blocking())
+        sock_.native_non_blocking(true, ec);
+
+    if (!ec)
+    {
+      for (;;)
+      {
+        // Try the system call.
+        errno = 0;
+        int n = ::sendfile(sock_.native_handle(), fd_, &offset_, 65536);
+        ec = boost::system::error_code(n < 0 ? errno : 0,
+            boost::asio::error::get_system_category());
+        total_bytes_transferred_ += ec ? 0 : n;
+
+        // Retry operation immediately if interrupted by signal.
+        if (ec == boost::asio::error::interrupted)
+          continue;
+
+        // Check if we need to run the operation again.
+        if (ec == boost::asio::error::would_block
+            || ec == boost::asio::error::try_again)
+        {
+          // We have to wait for the socket to become ready again.
+          sock_.async_wait(tcp::socket::wait_write, *this);
+          return;
+        }
+
+        if (ec || n == 0)
+        {
+          // An error occurred, or we have reached the end of the file.
+          // Either way we must exit the loop so we can call the handler.
+          break;
+        }
+
+        // Loop around to try calling sendfile again.
+      }
+    }
+
+    // Pass result back to user's handler.
+    handler_(ec, total_bytes_transferred_);
+  }
+};
+
+template <typename Handler>
+void async_sendfile(tcp::socket& sock, int fd, Handler h)
+{
+  sendfile_op<Handler> op = { sock, fd, h, 0, 0 };
+  sock.async_wait(tcp::socket::wait_write, op);
+} 
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; If the `mode` is `false,` but the current value of `non&lowbar;blocking()` is `true,` this function fails with boost&colon;&colon;asio&colon;&colon;error&colon;&colon;invalid&lowbar;argument, as the combination does not make sense&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *mode*
+| If `true,` the underlying socket is put into non&hyphen;blocking mode and direct system calls may fail with boost&colon;&colon;asio&colon;&colon;error&colon;&colon;would&lowbar;block (or the equivalent system error)&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

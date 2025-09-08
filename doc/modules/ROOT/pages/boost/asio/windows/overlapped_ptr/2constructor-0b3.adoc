@@ -1,0 +1,24 @@
+[#boost-asio-windows-overlapped_ptr-2constructor-0b3]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/overlapped_ptr.adoc[overlapped&lowbar;ptr]::overlapped&lowbar;ptr
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct an overlapped&lowbar;ptr to contain the specified handler&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;overlapped&lowbar;ptr&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename Handler&gt;
+overlapped&lowbar;ptr(
+    Executor const& ex,
+    Handler&& handler,
+    int = 0);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

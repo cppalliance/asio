@@ -1,0 +1,20 @@
+[#boost-asio-execution_context-allocator-0a-2constructor-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::xref:boost/asio/execution_context/allocator-0a.adoc[allocator&lt;void&gt;]::allocator
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct from another `allocator` for a different value type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+constexpr
+allocator(xref:boost/asio/execution_context/allocator-03.adoc[allocator&lt;U&gt;] const& a) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

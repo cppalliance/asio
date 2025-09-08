@@ -1,0 +1,78 @@
+[#boost-asio-read-08d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read
+:relfileprefix: ../../
+:mrdocs:
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename MutableBufferSequence&gt;
+size&lowbar;t
+read(
+    SyncReadStream& s,
+    MutableBufferSequence const& buffers,
+    int = 0);
+----
+
+== Description
+
+This function is used to read a certain number of bytes of data from a stream&period; The call will block until one of the following conditions is true&colon;
+
+* The supplied buffers are full&period; That is, the bytes transferred is equal to the sum of the buffer sizes&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the stream&apos;s read&lowbar;some function&period;
+
+== Example
+To read into a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+boost::asio::read(s, boost::asio::buffer(data, size)); 
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on reading into multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+[NOTE]
+This overload is equivalent to calling&colon;
+
+[,cpp]
+----
+boost::asio::read(
+    s, buffers,
+    boost::asio::transfer_all()); 
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes transferred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream from which the data is to be read&period; The type must support the SyncReadStream concept&period;
+| *buffers*
+| One or more buffers into which the data will be read&period; The sum of the buffer sizes indicates the maximum number of bytes to read from the stream&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

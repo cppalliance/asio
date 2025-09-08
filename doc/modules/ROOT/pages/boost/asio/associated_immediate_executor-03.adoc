@@ -1,0 +1,42 @@
+[#boost-asio-associated_immediate_executor-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::associated&lowbar;immediate&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Traits type used to obtain the immediate executor associated with an object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor&gt;
+struct associated&lowbar;immediate&lowbar;executor
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Description
+
+A program may specialise this traits type if the `T` template parameter in the specialisation is a user&hyphen;defined type&period; The template parameter `Executor` shall be a type meeting the Executor requirements&period;
+
+Specialisations shall meet the following requirements, where `t` is a const reference to an object of type `T,` and `e` is an object of type `Executor&period;`
+
+* Provide a nested typedef `type` that identifies a type meeting the Executor requirements&period;
+* Provide a noexcept static member function named `get,` callable as `get(t)` and with return type `type` or a (possibly const) reference to `type&period;`
+* Provide a noexcept static member function named `get,` callable as `get(t,e)` and with return type `type` or a (possibly const) reference to `type&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-config_from_concurrency_hint-2constructor-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config_from_concurrency_hint.adoc[config&lowbar;from&lowbar;concurrency&lowbar;hint]::config&lowbar;from&lowbar;concurrency&lowbar;hint
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct with a default concurrency hint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+config&lowbar;from&lowbar;concurrency&lowbar;hint();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

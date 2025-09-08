@@ -1,0 +1,78 @@
+[#boost-asio-basic_stream_file]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;stream&lowbar;file
+:relfileprefix: ../../
+:mrdocs:
+
+Provides stream&hyphen;oriented file functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;stream&lowbar;file
+    : public xref:boost/asio/basic_file.adoc[basic&lowbar;file&lt;Executor&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_file.adoc[basic&lowbar;file&lt;Executor&gt;]`
+| Provides file functionality&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_stream_file/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the file type to another executor&period;
+| xref:boost/asio/basic_stream_file/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_stream_file/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_stream_file/2constructor-05.adoc[`basic&lowbar;stream&lowbar;file`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_stream_file/2destructor.adoc[`&#126;basic&lowbar;stream&lowbar;file`] [.small]#[destructor]#
+| Destroys the file&period;
+| xref:boost/asio/basic_stream_file/operator_assign-06d.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/basic_stream_file/async_read_some.adoc[`async&lowbar;read&lowbar;some`] 
+| Start an asynchronous read&period;
+| xref:boost/asio/basic_stream_file/async_write_some.adoc[`async&lowbar;write&lowbar;some`] 
+| Start an asynchronous write&period;
+| xref:boost/asio/basic_stream_file/read_some-0e.adoc[`read&lowbar;some`] 
+| Read some data from the file&period;
+| xref:boost/asio/basic_stream_file/seek-03.adoc[`seek`] 
+| Seek to a position in the file&period;
+| xref:boost/asio/basic_stream_file/write_some-0d.adoc[`write&lowbar;some`] 
+| Write some data to the file&period;
+|===
+
+== Description
+
+The basic&lowbar;stream&lowbar;file class template provides asynchronous and blocking stream&hyphen;oriented file functionality&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+== Concepts&colon;
+AsyncReadStream, AsyncWriteStream, Stream, SyncReadStream, SyncWriteStream&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,20 @@
+[#boost-asio-io_context-basic_executor_type-execute]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type]::execute
+:relfileprefix: ../../../../
+:mrdocs:
+
+Execution function&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Function&gt;
+void
+execute(Function&& f);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

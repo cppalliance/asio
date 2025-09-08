@@ -1,0 +1,17 @@
+[#boost-asio-error-get_netdb_category]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/error.adoc[error]::get&lowbar;netdb&lowbar;category
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;category const&
+get&lowbar;netdb&lowbar;category();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

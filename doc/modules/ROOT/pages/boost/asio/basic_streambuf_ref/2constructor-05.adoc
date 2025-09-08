@@ -1,0 +1,28 @@
+[#boost-asio-basic_streambuf_ref-2constructor-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_streambuf_ref.adoc[basic&lowbar;streambuf&lowbar;ref]::basic&lowbar;streambuf&lowbar;ref
+:relfileprefix: ../../../
+:mrdocs:
+
+Move construct a basic&lowbar;streambuf&lowbar;ref&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;streambuf&lowbar;ref(xref:boost/asio/basic_streambuf_ref.adoc[basic&lowbar;streambuf&lowbar;ref]&& other) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

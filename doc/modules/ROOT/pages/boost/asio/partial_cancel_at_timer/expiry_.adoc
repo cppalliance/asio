@@ -1,0 +1,16 @@
+[#boost-asio-partial_cancel_at_timer-expiry_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/partial_cancel_at_timer.adoc[partial&lowbar;cancel&lowbar;at&lowbar;timer]::expiry&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+Clock::time&lowbar;point expiry&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

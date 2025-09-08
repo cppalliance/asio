@@ -1,0 +1,22 @@
+[#boost-asio-basic_waitable_timer-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::&#126;basic&lowbar;waitable&lowbar;timer
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys the timer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;waitable&lowbar;timer();
+----
+
+== Description
+
+This function destroys the timer, cancelling any outstanding asynchronous wait operations associated with the timer as if by calling `cancel&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,25 @@
+[#boost-asio-ip-address_v6-2constructor-077]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]::address&lowbar;v6
+:relfileprefix: ../../../../
+:mrdocs:
+
+Default constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+address&lowbar;v6() noexcept;
+----
+
+== Description
+
+Initialises the `address&lowbar;v6` object such that&colon;
+
+* yields &semi; and
+* &period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

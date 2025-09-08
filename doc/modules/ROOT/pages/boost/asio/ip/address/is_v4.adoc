@@ -1,0 +1,23 @@
+[#boost-asio-ip-address-is_v4]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address.adoc[address]::is&lowbar;v4
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get whether the address is an IP version 4 address&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;v4() const noexcept;
+----
+
+== Return Value
+
+whether the address is an IP version 4 address&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

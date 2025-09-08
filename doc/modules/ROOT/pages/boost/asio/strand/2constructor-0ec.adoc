@@ -1,0 +1,33 @@
+[#boost-asio-strand-2constructor-0ec]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::strand
+:relfileprefix: ../../../
+:mrdocs:
+
+Converting move constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;class OtherExecutor&gt;
+strand(xref:boost/asio/strand.adoc[strand&lt;OtherExecutor&gt;]&& other) noexcept;
+----
+
+== Description
+
+This constructor is only valid if the `OtherExecutor` type is convertible to `Executor&period;`
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| Provides serialised function invocation for any executor type&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

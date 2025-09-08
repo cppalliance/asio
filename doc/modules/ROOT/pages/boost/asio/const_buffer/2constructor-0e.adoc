@@ -1,0 +1,18 @@
+[#boost-asio-const_buffer-2constructor-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]::const&lowbar;buffer
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct an empty buffer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+const&lowbar;buffer() noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,87 @@
+[#boost-asio-ip-make_network_v4-01c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::make&lowbar;network&lowbar;v4
+:relfileprefix: ../../../
+:mrdocs:
+
+`make&lowbar;network&lowbar;v4` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v4&period;hpp&gt;`
+
+Create an IPv4 network from a string containing IP address and prefix length&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]
+xref:boost/asio/ip/make_network_v4-03.adoc[make&lowbar;network&lowbar;v4](std::string const& str);
+----
+
+[.small]#xref:boost/asio/ip/make_network_v4-03.adoc[_» more&period;&period;&period;_]#
+
+Create an IPv4 network from a string containing IP address and prefix length&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]
+xref:boost/asio/ip/make_network_v4-078.adoc[make&lowbar;network&lowbar;v4](char const* str);
+----
+
+[.small]#xref:boost/asio/ip/make_network_v4-078.adoc[_» more&period;&period;&period;_]#
+
+Create an IPv4 network from an address and prefix length&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]
+xref:boost/asio/ip/make_network_v4-019.adoc[make&lowbar;network&lowbar;v4](
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& addr,
+    unsigned short prefix&lowbar;len);
+----
+
+[.small]#xref:boost/asio/ip/make_network_v4-019.adoc[_» more&period;&period;&period;_]#
+
+Create an IPv4 network from an address and netmask&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]
+xref:boost/asio/ip/make_network_v4-07c.adoc[make&lowbar;network&lowbar;v4](
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& addr,
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& mask);
+----
+
+[.small]#xref:boost/asio/ip/make_network_v4-07c.adoc[_» more&period;&period;&period;_]#
+
+Create an IPv4 network from a string containing IP address and prefix length&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]
+xref:boost/asio/ip/make_network_v4-0be.adoc[make&lowbar;network&lowbar;v4](
+    std::string const& str,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/ip/make_network_v4-0be.adoc[_» more&period;&period;&period;_]#
+
+Create an IPv4 network from a string containing IP address and prefix length&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]
+xref:boost/asio/ip/make_network_v4-0b3.adoc[make&lowbar;network&lowbar;v4](
+    char const* str,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/ip/make_network_v4-0b3.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

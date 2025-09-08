@@ -1,0 +1,23 @@
+[#boost-asio-basic_streambuf_ref-size]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_streambuf_ref.adoc[basic&lowbar;streambuf&lowbar;ref]::size
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the size of the input sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+size() const noexcept;
+----
+
+== Return Value
+
+the size of the input sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

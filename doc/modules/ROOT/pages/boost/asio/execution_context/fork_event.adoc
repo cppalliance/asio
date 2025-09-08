@@ -1,0 +1,33 @@
+[#boost-asio-execution_context-fork_event]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::fork&lowbar;event
+:relfileprefix: ../../../
+:mrdocs:
+
+Fork&hyphen;related event notifications&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum fork&lowbar;event;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`fork&lowbar;prepare`
+|Notify the context that the process is about to fork&period;
+|`fork&lowbar;parent`
+|Notify the context that the process has forked and is the parent&period;
+|`fork&lowbar;child`
+|Notify the context that the process has forked and is the child&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

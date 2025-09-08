@@ -1,0 +1,44 @@
+[#boost-asio-basic_signal_set-add-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set]::add
+:relfileprefix: ../../../
+:mrdocs:
+
+Add a signal to a signal&lowbar;set with the specified flags&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+add(
+    int signal&lowbar;number,
+    xref:boost/asio/signal_set_base/flags_t.adoc[flags&lowbar;t] f,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function adds the specified signal to the set&period; It has no effect if the signal is already in the set&period;
+
+Flags other than flags&colon;&colon;dont&lowbar;care require OS support for the `sigaction` call, and this function will fail with `error&colon;&colon;operation&lowbar;not&lowbar;supported` if this is unavailable&period;
+
+The specified flags will conflict with a prior, active registration of the same signal, if either specified a flags value other than flags&colon;&colon;dont&lowbar;care&period; In this case, the `add` will fail with `error&colon;&colon;invalid&lowbar;argument&period;`
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *signal&lowbar;number*
+| The signal to be added to the set&period;
+| *f*
+| Flags to modify the behaviour of the specified signal&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

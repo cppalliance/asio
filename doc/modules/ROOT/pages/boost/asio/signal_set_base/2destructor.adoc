@@ -1,0 +1,18 @@
+[#boost-asio-signal_set_base-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/signal_set_base.adoc[signal&lowbar;set&lowbar;base]::&#126;signal&lowbar;set&lowbar;base
+:relfileprefix: ../../../
+:mrdocs:
+
+Protected destructor to prevent deletion through this type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;signal&lowbar;set&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;signal&lowbar;set&lowbar;base();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

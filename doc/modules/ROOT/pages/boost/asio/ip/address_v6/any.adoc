@@ -1,0 +1,28 @@
+[#boost-asio-ip-address_v6-any]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]::any
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain an address object that represents any address&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]
+any() noexcept;
+----
+
+== Description
+
+This functions returns an address that represents the &quot;any&quot; address &period;
+
+== Return Value
+
+A default&hyphen;constructed `address&lowbar;v6` object&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

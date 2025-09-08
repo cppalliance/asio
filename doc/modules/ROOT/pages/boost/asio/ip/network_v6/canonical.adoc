@@ -1,0 +1,23 @@
+[#boost-asio-ip-network_v6-canonical]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/network_v6.adoc[network&lowbar;v6]::canonical
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain the true network address, omitting any host bits&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v6.adoc[network&lowbar;v6]
+canonical() const noexcept;
+----
+
+== Return Value
+
+Represents an IPv6 network&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,41 @@
+[#boost-asio-file_base-flags]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/file_base.adoc[file&lowbar;base]::flags
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;file&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum flags;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`read&lowbar;only`
+|
+|`write&lowbar;only`
+|
+|`read&lowbar;write`
+|
+|`append`
+|
+|`create`
+|
+|`exclusive`
+|
+|`truncate`
+|
+|`sync&lowbar;all&lowbar;on&lowbar;write`
+|
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

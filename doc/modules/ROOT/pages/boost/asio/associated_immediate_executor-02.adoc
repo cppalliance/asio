@@ -1,0 +1,52 @@
+[#boost-asio-associated_immediate_executor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_immediate_executor-03.adoc[associated&lowbar;immediate&lowbar;executor]&lt;reference&lowbar;wrapper&lt;T&gt;, Executor&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+Specialisation of associated&lowbar;immediate&lowbar;executor for `std&colon;&colon;reference&lowbar;wrapper&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor&gt;
+struct xref:boost/asio/associated_immediate_executor-03.adoc[associated&lowbar;immediate&lowbar;executor]&lt;reference&lowbar;wrapper&lt;T&gt;, Executor&gt;
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/associated_immediate_executor-02/type.adoc[`type`] 
+| Forwards `type` to the associator specialisation for the unwrapped type `T&period;`
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/associated_immediate_executor-02/get.adoc[`get`] 
+| Forwards the request to get the executor to the associator specialisation for the unwrapped type `T&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

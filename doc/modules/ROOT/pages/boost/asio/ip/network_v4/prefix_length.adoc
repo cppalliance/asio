@@ -1,0 +1,19 @@
+[#boost-asio-ip-network_v4-prefix_length]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]::prefix&lowbar;length
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain the prefix length that was specified when the network object was created&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+unsigned short
+prefix&lowbar;length() const noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

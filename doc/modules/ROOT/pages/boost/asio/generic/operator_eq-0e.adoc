@@ -1,0 +1,78 @@
+[#boost-asio-generic-operator_eq-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::operator&equals;&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Equality operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+Compare two endpoints for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/generic/operator_eq-03.adoc[operator&equals;&equals;](
+    xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint&lt;Protocol&gt;] const& e1,
+    xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint&lt;Protocol&gt;] const& e2);
+----
+
+[.small]#xref:boost/asio/generic/operator_eq-03.adoc[_» more&period;&period;&period;_]#
+
+Compare two protocols for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/generic/operator_eq-0c.adoc[operator&equals;&equals;](
+    xref:boost/asio/generic/datagram_protocol.adoc[datagram&lowbar;protocol] const& p1,
+    xref:boost/asio/generic/datagram_protocol.adoc[datagram&lowbar;protocol] const& p2);
+----
+
+[.small]#xref:boost/asio/generic/operator_eq-0c.adoc[_» more&period;&period;&period;_]#
+
+Compare two protocols for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/generic/operator_eq-06.adoc[operator&equals;&equals;](
+    xref:boost/asio/generic/raw_protocol.adoc[raw&lowbar;protocol] const& p1,
+    xref:boost/asio/generic/raw_protocol.adoc[raw&lowbar;protocol] const& p2);
+----
+
+[.small]#xref:boost/asio/generic/operator_eq-06.adoc[_» more&period;&period;&period;_]#
+
+Compare two protocols for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/generic/operator_eq-00.adoc[operator&equals;&equals;](
+    xref:boost/asio/generic/seq_packet_protocol.adoc[seq&lowbar;packet&lowbar;protocol] const& p1,
+    xref:boost/asio/generic/seq_packet_protocol.adoc[seq&lowbar;packet&lowbar;protocol] const& p2);
+----
+
+[.small]#xref:boost/asio/generic/operator_eq-00.adoc[_» more&period;&period;&period;_]#
+
+Compare two protocols for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/generic/operator_eq-04.adoc[operator&equals;&equals;](
+    xref:boost/asio/generic/stream_protocol.adoc[stream&lowbar;protocol] const& p1,
+    xref:boost/asio/generic/stream_protocol.adoc[stream&lowbar;protocol] const& p2);
+----
+
+[.small]#xref:boost/asio/generic/operator_eq-04.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

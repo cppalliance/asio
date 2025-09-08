@@ -1,0 +1,38 @@
+[#boost-asio-strand-execute]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::execute
+:relfileprefix: ../../../
+:mrdocs:
+
+Request the strand to invoke the given function object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Function&gt;
+void
+execute(Function&& f);
+----
+
+== Description
+
+This function is used to ask the strand to execute the given function object on its underlying executor&period; The function object will be executed according to the properties of the underlying executor&period;
+
+[,cpp]
+----
+void function(); 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *f*
+| The function object to be called&period; The executor will make a copy of the handler object as required&period; The function signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

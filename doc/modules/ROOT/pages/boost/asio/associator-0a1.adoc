@@ -1,0 +1,25 @@
+[#boost-asio-associator-0a1]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::associator
+:relfileprefix: ../../
+:mrdocs:
+
+Used to generically specialise associators for a type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    typename&gt; typename Associator,
+    typename T,
+    typename DefaultCandidate,
+    typename &lowbar; = void&gt;
+struct associator;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

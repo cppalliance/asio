@@ -1,0 +1,27 @@
+[#boost-asio-windows-basic_overlapped_handle-lowest_layer-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_overlapped_handle.adoc[basic&lowbar;overlapped&lowbar;handle]::lowest&lowbar;layer
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get a const reference to the lowest layer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;overlapped&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_overlapped_handle/lowest_layer_type.adoc[lowest&lowbar;layer&lowbar;type] const&
+lowest&lowbar;layer() const;
+----
+
+== Description
+
+This function returns a const reference to the lowest layer in a stack of layers&period; Since an overlapped&lowbar;handle cannot contain any further layers, it simply returns a reference to itself&period;
+
+== Return Value
+
+A const reference to the lowest layer in the stack of layers&period; Ownership is not transferred to the caller&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

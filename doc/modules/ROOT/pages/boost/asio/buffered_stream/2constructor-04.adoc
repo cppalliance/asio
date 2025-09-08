@@ -1,0 +1,22 @@
+[#boost-asio-buffered_stream-2constructor-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_stream.adoc[buffered&lowbar;stream]::buffered&lowbar;stream
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct, passing the specified argument to initialise the next layer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Arg&gt;
+buffered&lowbar;stream(
+    Arg&& a,
+    size&lowbar;t read&lowbar;buffer&lowbar;size,
+    size&lowbar;t write&lowbar;buffer&lowbar;size);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

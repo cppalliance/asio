@@ -1,0 +1,45 @@
+[#boost-asio-basic_io_object-029-2constructor-07c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_io_object-029.adoc[basic&lowbar;io&lowbar;object&lt;IoObjectService, true&gt;]::basic&lowbar;io&lowbar;object
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;io&lowbar;object&period;hpp&gt;`
+
+Move constructor
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_io_object-029/2constructor-08.adoc[basic&lowbar;io&lowbar;object](xref:boost/asio/basic_io_object-029.adoc[basic&lowbar;io&lowbar;object]&& other);
+----
+
+[.small]#xref:boost/asio/basic_io_object-029/2constructor-08.adoc[_» more&period;&period;&period;_]#
+
+Construct from `io&lowbar;context`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/basic_io_object-029/2constructor-09.adoc[basic&lowbar;io&lowbar;object](xref:boost/asio/io_context.adoc[boost::asio::io&lowbar;context]& io&lowbar;context);
+----
+
+[.small]#xref:boost/asio/basic_io_object-029/2constructor-09.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename IoObjectService1&gt;
+xref:boost/asio/basic_io_object-029/2constructor-07b.adoc[basic&lowbar;io&lowbar;object](
+    IoObjectService1& other&lowbar;service,
+    IoObjectService1::implementation&lowbar;type& other&lowbar;implementation);
+----
+
+[.small]#xref:boost/asio/basic_io_object-029/2constructor-07b.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

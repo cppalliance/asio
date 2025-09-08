@@ -1,0 +1,29 @@
+[#boost-asio-buffers_iterator-operator_subs]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator]::operator&lsqb;&rsqb;
+:relfileprefix: ../../../
+:mrdocs:
+
+Access an individual element&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffers&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffers_iterator/reference.adoc[reference]
+operator&lsqb;&rsqb;(ptrdiff&lowbar;t difference) const;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *difference*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

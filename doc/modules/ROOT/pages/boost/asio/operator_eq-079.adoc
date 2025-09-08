@@ -1,0 +1,203 @@
+[#boost-asio-operator_eq-079]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&equals;&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Equality operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+Compare two executors for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_eq-0a.adoc[operator&equals;&equals;](
+    xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& a,
+    xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-0a.adoc[_» more&period;&period;&period;_]#
+
+Compare two strands for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_eq-050.adoc[operator&equals;&equals;](
+    xref:boost/asio/io_context/strand.adoc[strand] const& a,
+    xref:boost/asio/io_context/strand.adoc[strand] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-050.adoc[_» more&period;&period;&period;_]#
+
+Compare two slots for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_eq-0c.adoc[operator&equals;&equals;](
+    xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot] const& lhs,
+    xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-0c.adoc[_» more&period;&period;&period;_]#
+
+Compare two executors for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_eq-06.adoc[operator&equals;&equals;](
+    xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor] const& lhs,
+    xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-06.adoc[_» more&period;&period;&period;_]#
+
+Equality operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_eq-09.adoc[operator&equals;&equals;](
+    std::nullptr&lowbar;t lhs,
+    xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-09.adoc[_» more&period;&period;&period;_]#
+
+Equality operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_eq-0d.adoc[operator&equals;&equals;](
+    xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler] const& a,
+    std::nullptr&lowbar;t rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-0d.adoc[_» more&period;&period;&period;_]#
+
+Compare two executors for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_eq-00.adoc[operator&equals;&equals;](
+    xref:boost/asio/executor.adoc[executor] const& a,
+    xref:boost/asio/executor.adoc[executor] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-00.adoc[_» more&period;&period;&period;_]#
+
+Compare two IDs for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_eq-051.adoc[operator&equals;&equals;](
+    xref:boost/asio/registered_buffer_id.adoc[registered&lowbar;buffer&lowbar;id] const& lhs,
+    xref:boost/asio/registered_buffer_id.adoc[registered&lowbar;buffer&lowbar;id] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-051.adoc[_» more&period;&period;&period;_]#
+
+Test two iterators for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_eq-014.adoc[operator&equals;&equals;](
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& a,
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& b);
+----
+
+[.small]#xref:boost/asio/operator_eq-014.adoc[_» more&period;&period;&period;_]#
+
+Equality operator, returns true if the disposition does not contain an error&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Disposition&gt;
+constexpr
+bool
+xref:boost/asio/operator_eq-04.adoc[operator&equals;&equals;](
+    Disposition const& d,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-04.adoc[_» more&period;&period;&period;_]#
+
+Equality operator, returns true if the disposition does not contain an error&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Disposition&gt;
+constexpr
+bool
+xref:boost/asio/operator_eq-07f.adoc[operator&equals;&equals;](
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    Disposition const& d) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-07f.adoc[_» more&period;&period;&period;_]#
+
+Equality operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_eq-034.adoc[operator&equals;&equals;](
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-034.adoc[_» more&period;&period;&period;_]#
+
+Compare two executors for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_eq-01d.adoc[operator&equals;&equals;](
+    xref:boost/asio/thread_pool/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& a,
+    xref:boost/asio/thread_pool/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-01d.adoc[_» more&period;&period;&period;_]#
+
+Compare two strands for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_eq-031.adoc[operator&equals;&equals;](
+    xref:boost/asio/strand.adoc[strand] const& a,
+    xref:boost/asio/strand.adoc[strand] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-031.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,35 @@
+[#boost-asio-ip-address_v6-operator_assign-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&period;hpp&gt;`
+
+Assign from another address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]&
+xref:boost/asio/ip/address_v6/operator_assign-0f.adoc[operator&equals;](xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address_v6/operator_assign-0f.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign from another address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]&
+xref:boost/asio/ip/address_v6/operator_assign-05.adoc[operator&equals;](xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address_v6/operator_assign-05.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,30 @@
+[#boost-asio-config_from_env-make-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config_from_env.adoc[config&lowbar;from&lowbar;env]::make
+:relfileprefix: ../../../
+:mrdocs:
+
+Add a concrete service to the specified execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+void
+make(xref:boost/asio/execution_context.adoc[execution&lowbar;context]& ctx) const override;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ctx*
+| A context for function object execution&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,16 @@
+[#boost-asio-execution-outstanding_work]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::outstanding&lowbar;work
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;outstanding&lowbar;work&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr xref:boost/asio/execution/outstanding_work_t.adoc[outstanding&lowbar;work&lowbar;t] outstanding&lowbar;work = outstanding&lowbar;work;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

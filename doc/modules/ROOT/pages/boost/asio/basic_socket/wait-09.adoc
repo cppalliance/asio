@@ -1,0 +1,47 @@
+[#boost-asio-basic_socket-wait-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::wait
+:relfileprefix: ../../../
+:mrdocs:
+
+Wait for the socket to become ready to read, ready to write, or to have pending error conditions&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+wait(
+    xref:boost/asio/socket_base/wait_type.adoc[wait&lowbar;type] w,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to perform a blocking wait for a socket to enter a ready to read, write or error condition state&period;
+
+== Example
+Waiting for a socket to become readable&period;
+
+[,cpp]
+----
+boost::asio::ip::tcp::socket socket(my_context);
+...
+boost::system::error_code ec;
+socket.wait(boost::asio::ip::tcp::socket::wait_read, ec);
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *w*
+| Specifies the desired socket state&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

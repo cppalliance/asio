@@ -1,0 +1,88 @@
+[#boost-asio-execution]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::execution
+:relfileprefix: ../../
+:mrdocs:
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution/allocator_t-00.adoc[`allocator&lowbar;t`] 
+| 
+| xref:boost/asio/execution/allocator_t-05.adoc[`allocator&lowbar;t&lt;void&gt;`] 
+| 
+| xref:boost/asio/execution/any_executor-07.adoc[`any&lowbar;executor&lt;&gt;`] 
+| 
+| xref:boost/asio/execution/any_executor-0f.adoc[`any&lowbar;executor`] 
+| 
+| xref:boost/asio/execution/bad_executor.adoc[`bad&lowbar;executor`] 
+| Exception thrown when trying to access an empty polymorphic executor&period;
+| xref:boost/asio/execution/context_as_t-0aa.adoc[`context&lowbar;as&lowbar;t`] 
+| 
+| xref:boost/asio/execution/context_as_t-0a1.adoc[`context&lowbar;as&lowbar;t&lt;execution&lowbar;context&&gt;`] 
+| 
+| xref:boost/asio/execution/invocable_archetype.adoc[`invocable&lowbar;archetype`] 
+| An archetypal function object used for determining adherence to the execution&colon;&colon;executor concept&period;
+| xref:boost/asio/execution/is_executor-0f.adoc[`is&lowbar;executor`] 
+| The is&lowbar;executor trait detects whether a type T satisfies the execution&colon;&colon;executor concept&period;
+| xref:boost/asio/execution/is_executor-08.adoc[`is&lowbar;executor&lt;io&lowbar;context&gt;`] 
+| 
+| xref:boost/asio/execution/is_executor-0c.adoc[`is&lowbar;executor&lt;thread&lowbar;pool&gt;`] 
+| 
+| xref:boost/asio/execution/prefer_only.adoc[`prefer&lowbar;only`] 
+| 
+| xref:boost/asio/execution/blocking_adaptation_t.adoc[`blocking&lowbar;adaptation&lowbar;t`] 
+| 
+| xref:boost/asio/execution/blocking_t.adoc[`blocking&lowbar;t`] 
+| 
+| xref:boost/asio/execution/context_t.adoc[`context&lowbar;t`] 
+| 
+| xref:boost/asio/execution/mapping_t.adoc[`mapping&lowbar;t`] 
+| 
+| xref:boost/asio/execution/occupancy_t.adoc[`occupancy&lowbar;t`] 
+| 
+| xref:boost/asio/execution/outstanding_work_t.adoc[`outstanding&lowbar;work&lowbar;t`] 
+| 
+| xref:boost/asio/execution/relationship_t.adoc[`relationship&lowbar;t`] 
+| 
+|===
+
+== Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution/prefer.adoc[`prefer`] 
+| 
+| xref:boost/asio/execution/query-06a.adoc[`query`] 
+| 
+| xref:boost/asio/execution/swap-00.adoc[`swap`] 
+| 
+| xref:boost/asio/execution/operator_eq-0a.adoc[`operator&equals;&equals;`] 
+| Equality operators
+| xref:boost/asio/execution/operator_not_eq-06.adoc[`operator!&equals;`] 
+| Inequality operators
+|===
+
+== Variables
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/allocator.adoc[`allocator`] 
+| xref:boost/asio/execution/blocking.adoc[`blocking`] 
+| xref:boost/asio/execution/blocking_adaptation.adoc[`blocking&lowbar;adaptation`] 
+| xref:boost/asio/execution/context.adoc[`context`] 
+| xref:boost/asio/execution/context_as.adoc[`context&lowbar;as`] 
+| xref:boost/asio/execution/is_executor_v.adoc[`is&lowbar;executor&lowbar;v`] 
+| xref:boost/asio/execution/mapping.adoc[`mapping`] 
+| xref:boost/asio/execution/occupancy.adoc[`occupancy`] 
+| xref:boost/asio/execution/outstanding_work.adoc[`outstanding&lowbar;work`] 
+| xref:boost/asio/execution/relationship.adoc[`relationship`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

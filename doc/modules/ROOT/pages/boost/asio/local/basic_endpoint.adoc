@@ -1,0 +1,95 @@
+[#boost-asio-local-basic_endpoint]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::basic&lowbar;endpoint
+:relfileprefix: ../../../
+:mrdocs:
+
+Describes an endpoint for a UNIX socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Protocol&gt;
+class basic&lowbar;endpoint;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/local/basic_endpoint/data_type.adoc[`data&lowbar;type`] 
+| 
+| xref:boost/asio/local/basic_endpoint/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type associated with the endpoint&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/local/basic_endpoint/2constructor-0c.adoc[`basic&lowbar;endpoint`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/local/basic_endpoint/operator_assign-009.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/local/basic_endpoint/capacity.adoc[`capacity`] 
+| Get the capacity of the endpoint in the native type&period;
+| xref:boost/asio/local/basic_endpoint/data-09.adoc[`data`] 
+| Get the underlying endpoint in the native type&period;
+| xref:boost/asio/local/basic_endpoint/path-0f.adoc[`path`] 
+| `path` overloads
+| xref:boost/asio/local/basic_endpoint/protocol.adoc[`protocol`] 
+| The protocol associated with the endpoint&period;
+| xref:boost/asio/local/basic_endpoint/resize.adoc[`resize`] 
+| Set the underlying size of the endpoint in the native type&period;
+| xref:boost/asio/local/basic_endpoint/size.adoc[`size`] 
+| Get the underlying size of the endpoint in the native type&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/local/operator_ge.adoc[boost::asio::local::operator&gt;&equals;]`
+| Compare endpoints for ordering&period;
+| `xref:boost/asio/local/operator_le.adoc[boost::asio::local::operator&lt;&equals;]`
+| Compare endpoints for ordering&period;
+| `xref:boost/asio/local/operator_gt.adoc[boost::asio::local::operator&gt;]`
+| Compare endpoints for ordering&period;
+| `xref:boost/asio/local/operator_lt.adoc[boost::asio::local::operator&lt;]`
+| Compare endpoints for ordering&period;
+| `xref:boost/asio/local/operator_not_eq.adoc[boost::asio::local::operator!&equals;]`
+| Compare two endpoints for inequality&period;
+| `xref:boost/asio/local/operator_eq.adoc[boost::asio::local::operator&equals;&equals;]`
+| Compare two endpoints for equality&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/local/operator_lshift.adoc[`operator&lt;&lt;`]
+| Output an endpoint as a string&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;local&colon;&colon;basic&lowbar;endpoint class template describes an endpoint that may be associated with a particular UNIX socket&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+== Concepts&colon;
+Endpoint&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

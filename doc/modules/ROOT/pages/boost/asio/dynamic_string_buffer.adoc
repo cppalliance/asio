@@ -1,0 +1,78 @@
+[#boost-asio-dynamic_string_buffer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::dynamic&lowbar;string&lowbar;buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Adapt a basic&lowbar;string to the DynamicBuffer requirements&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+class dynamic&lowbar;string&lowbar;buffer;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/dynamic_string_buffer/const_buffers_type.adoc[`const&lowbar;buffers&lowbar;type`] 
+| The type used to represent a sequence of constant buffers that refers to the underlying memory&period;
+| xref:boost/asio/dynamic_string_buffer/mutable_buffers_type.adoc[`mutable&lowbar;buffers&lowbar;type`] 
+| The type used to represent a sequence of mutable buffers that refers to the underlying memory&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/dynamic_string_buffer/2constructor-06.adoc[`dynamic&lowbar;string&lowbar;buffer`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/dynamic_string_buffer/capacity.adoc[`capacity`] 
+| Get the maximum size that the buffer may grow to without triggering reallocation&period;
+| xref:boost/asio/dynamic_string_buffer/commit.adoc[`commit`] 
+| *DynamicBuffer&lowbar;v1&colon;* Move bytes from the output sequence to the input sequence&period;
+| xref:boost/asio/dynamic_string_buffer/consume.adoc[`consume`] 
+| *DynamicBuffer&lowbar;v1&colon;* Remove characters from the input sequence&period; *DynamicBuffer&lowbar;v2&colon;* Consume the specified number of bytes from the beginning of the underlying memory&period;
+| xref:boost/asio/dynamic_string_buffer/data-0d.adoc[`data`] 
+| `data` overloads
+| xref:boost/asio/dynamic_string_buffer/grow.adoc[`grow`] 
+| *DynamicBuffer&lowbar;v2&colon;* Grow the underlying memory by the specified number of bytes&period;
+| xref:boost/asio/dynamic_string_buffer/max_size.adoc[`max&lowbar;size`] 
+| Get the maximum size of the dynamic buffer&period;
+| xref:boost/asio/dynamic_string_buffer/prepare.adoc[`prepare`] 
+| *DynamicBuffer&lowbar;v1&colon;* Get a list of buffers that represents the output sequence, with the given size&period;
+| xref:boost/asio/dynamic_string_buffer/shrink.adoc[`shrink`] 
+| *DynamicBuffer&lowbar;v2&colon;* Shrink the underlying memory by the specified number of bytes&period;
+| xref:boost/asio/dynamic_string_buffer/size.adoc[`size`] 
+| *DynamicBuffer&lowbar;v1&colon;* Get the size of the input sequence&period; *DynamicBuffer&lowbar;v2&colon;* Get the current size of the underlying memory&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/dynamic_buffer-08a.adoc[`dynamic&lowbar;buffer`]
+| Create a new dynamic buffer that represents the given string&period;
+| xref:boost/asio/dynamic_buffer-0a.adoc[`dynamic&lowbar;buffer`]
+| Create a new dynamic buffer that represents the given string&period;
+|===
+
+== Description
+
+Requires that &period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

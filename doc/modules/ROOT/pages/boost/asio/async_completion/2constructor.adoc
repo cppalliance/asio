@@ -1,0 +1,33 @@
+[#boost-asio-async_completion-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_completion.adoc[async&lowbar;completion]::async&lowbar;completion
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+async&lowbar;completion(CompletionToken& token);
+----
+
+== Description
+
+The constructor creates the concrete completion handler and makes the link between the handler and the asynchronous result&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *token*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

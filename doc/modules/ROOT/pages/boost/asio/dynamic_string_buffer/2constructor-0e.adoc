@@ -1,0 +1,28 @@
+[#boost-asio-dynamic_string_buffer-2constructor-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer]::dynamic&lowbar;string&lowbar;buffer
+:relfileprefix: ../../../
+:mrdocs:
+
+Move construct a dynamic buffer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+dynamic&lowbar;string&lowbar;buffer(xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer]&& other) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

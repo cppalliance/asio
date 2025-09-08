@@ -1,0 +1,22 @@
+[#boost-asio-use_future]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::use&lowbar;future
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` object that causes an asynchronous operation to return a future&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;future&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr xref:boost/asio/use_future_t.adoc[use&lowbar;future&lowbar;t] use&lowbar;future = use&lowbar;future;
+----
+
+== Description
+
+See the documentation for boost&colon;&colon;asio&colon;&colon;use&lowbar;future&lowbar;t for a usage example&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

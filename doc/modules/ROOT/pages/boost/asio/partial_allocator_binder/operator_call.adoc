@@ -1,0 +1,25 @@
+[#boost-asio-partial_allocator_binder-operator_call]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/partial_allocator_binder.adoc[partial&lowbar;allocator&lowbar;binder]::operator()
+:relfileprefix: ../../../
+:mrdocs:
+
+Adapt a `completion&lowbar;token` to specify that the completion handler should have the allocator as its associated allocator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CompletionToken&gt;
+constexpr
+xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;decay&lowbar;t&lt;CompletionToken&gt;, Allocator&gt;]
+operator()(CompletionToken&& completion&lowbar;token);
+----
+
+== Return Value
+
+A call wrapper type to bind an allocator of type `Allocator` to an object of type `T&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,43 @@
+[#boost-asio-basic_signal_set-cancel-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set]::cancel
+:relfileprefix: ../../../
+:mrdocs:
+
+Cancel all operations associated with the signal set&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+cancel(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function forces the completion of any pending asynchronous wait operations against the signal set&period; The handler for each cancelled operation will be invoked with the boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted error code&period;
+
+Cancellation does not alter the set of registered signals&period;
+
+[NOTE]
+If a registered signal occurred before cancel() is called, then the handlers for asynchronous wait operations will&colon;
+
+* have already been invoked&semi; or
+* have been queued for invocation in the near future&period;
+
+These handlers can no longer be cancelled, and therefore are passed an error code that indicates the successful completion of the wait operation&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

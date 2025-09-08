@@ -1,0 +1,27 @@
+[#boost-asio-prefer_result]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::prefer&lowbar;result
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;prefer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Properties&gt;
+struct prefer&lowbar;result;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/prefer_result/type.adoc[`type`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

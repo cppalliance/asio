@@ -1,0 +1,112 @@
+[#boost-asio-windows-basic_random_access_handle-2constructor-0b1]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle]::basic&lowbar;random&lowbar;access&lowbar;handle
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;random&lowbar;access&lowbar;handle&period;hpp&gt;`
+
+Move&hyphen;construct a random&hyphen;access handle from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_random_access_handle/2constructor-0ba.adoc[basic&lowbar;random&lowbar;access&lowbar;handle](xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle]&& other);
+----
+
+[.small]#xref:boost/asio/windows/basic_random_access_handle/2constructor-0ba.adoc[_» more&period;&period;&period;_]#
+
+Construct a random&hyphen;access handle without opening it&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/windows/basic_random_access_handle/2constructor-0a.adoc[basic&lowbar;random&lowbar;access&lowbar;handle](xref:boost/asio/windows/basic_random_access_handle/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+[.small]#xref:boost/asio/windows/basic_random_access_handle/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+Construct a random&hyphen;access handle on an existing native handle&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_random_access_handle/2constructor-07.adoc[basic&lowbar;random&lowbar;access&lowbar;handle](
+    xref:boost/asio/windows/basic_random_access_handle/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/windows/basic_random_access_handle/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& handle);
+----
+
+[.small]#xref:boost/asio/windows/basic_random_access_handle/2constructor-07.adoc[_» more&period;&period;&period;_]#
+
+Construct a random&hyphen;access handle without opening it&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/windows/basic_random_access_handle/2constructor-00.adoc[basic&lowbar;random&lowbar;access&lowbar;handle](
+    ExecutionContext& context,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/windows/basic_random_access_handle/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;construct a random&hyphen;access handle from a handle of another executor type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/windows/basic_random_access_handle/2constructor-0f.adoc[basic&lowbar;random&lowbar;access&lowbar;handle](
+    xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle&lt;Executor1&gt;]&& other,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/windows/basic_random_access_handle/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+
+Construct a random&hyphen;access handle on an existing native handle&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/windows/basic_random_access_handle/2constructor-0d.adoc[basic&lowbar;random&lowbar;access&lowbar;handle](
+    ExecutionContext& context,
+    xref:boost/asio/windows/basic_random_access_handle/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& handle,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/windows/basic_random_access_handle/2constructor-0d.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other random&hyphen;access handle object from which the move will occur&period;
+| *ex*
+| The I&sol;O executor that the random&hyphen;access handle will use, by default, to dispatch handlers for any asynchronous operations performed on the random&hyphen;access handle&period;
+| *handle*
+| The new underlying handle implementation&period;
+| *context*
+| An execution context which provides the I&sol;O executor that the random&hyphen;access handle will use, by default, to dispatch handlers for any asynchronous operations performed on the random&hyphen;access handle&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

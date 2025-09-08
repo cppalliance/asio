@@ -1,0 +1,80 @@
+[#boost-asio-ip-udp]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::udp
+:relfileprefix: ../../../
+:mrdocs:
+
+Encapsulates the flags needed for UDP&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;udp&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class udp;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/udp/endpoint.adoc[`endpoint`] 
+| The type of a UDP endpoint&period;
+| xref:boost/asio/ip/udp/resolver.adoc[`resolver`] 
+| The UDP resolver type&period;
+| xref:boost/asio/ip/udp/socket.adoc[`socket`] 
+| The UDP socket type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/udp/family.adoc[`family`] 
+| Obtain an identifier for the protocol family&period;
+| xref:boost/asio/ip/udp/protocol.adoc[`protocol`] 
+| Obtain an identifier for the protocol&period;
+| xref:boost/asio/ip/udp/type.adoc[`type`] 
+| Obtain an identifier for the type of the protocol&period;
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/udp/v4.adoc[`v4`] 
+| Construct to represent the IPv4 UDP protocol&period;
+| xref:boost/asio/ip/udp/v6.adoc[`v6`] 
+| Construct to represent the IPv6 UDP protocol&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/operator_not_eq-016.adoc[boost::asio::ip::operator!&equals;]`
+| Compare two protocols for inequality&period;
+| `xref:boost/asio/ip/operator_eq-0eb.adoc[boost::asio::ip::operator&equals;&equals;]`
+| Compare two protocols for equality&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;udp class contains flags necessary for UDP sockets&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Safe&period;
+
+== Concepts&colon;
+Protocol, InternetProtocol&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

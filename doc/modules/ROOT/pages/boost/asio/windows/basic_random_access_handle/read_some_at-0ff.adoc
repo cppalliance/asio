@@ -1,0 +1,64 @@
+[#boost-asio-windows-basic_random_access_handle-read_some_at-0ff]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle]::read&lowbar;some&lowbar;at
+:relfileprefix: ../../../../
+:mrdocs:
+
+Read some data from the handle at the specified offset&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;random&lowbar;access&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+read&lowbar;some&lowbar;at(
+    std::uint64&lowbar;t offset,
+    MutableBufferSequence const& buffers);
+----
+
+== Description
+
+This function is used to read data from the random&hyphen;access handle&period; The function call will block until one or more bytes of data has been read successfully, or until an error occurs&period;
+
+[NOTE]
+The read&lowbar;some operation may not read all of the requested number of bytes&period; Consider using the xref:boost/asio/read_at-0a.adoc[`read&lowbar;at`] function if you need to ensure that the requested amount of data is read before the blocking operation completes&period;
+
+== Example
+To read into a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+handle.read_some_at(42, boost::asio::buffer(data, size));
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on reading into multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; An error code of boost&colon;&colon;asio&colon;&colon;error&colon;&colon;eof indicates that the connection was closed by the peer&period;
+|===
+
+== Return Value
+
+The number of bytes read&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *offset*
+| The offset at which the data will be read&period;
+| *buffers*
+| One or more buffers into which the data will be read&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,65 @@
+[#boost-asio-basic_file-open-0e8]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::open
+:relfileprefix: ../../../
+:mrdocs:
+
+Open the file using the specified path&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+open(
+    std::string const& path,
+    xref:boost/asio/file_base/flags.adoc[file&lowbar;base::flags] open&lowbar;flags,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function opens the file so that it will use the specified path&period;
+
+Exactly one of the following file&lowbar;base&colon;&colon;flags values must be specified&colon;
+
+* flags&colon;&colon;read&lowbar;only
+* flags&colon;&colon;write&lowbar;only
+* flags&colon;&colon;read&lowbar;write
+
+The following flags may be bitwise or&hyphen;ed in addition&colon;
+
+* flags&colon;&colon;append
+* flags&colon;&colon;create
+* flags&colon;&colon;exclusive
+* flags&colon;&colon;truncate
+* flags&colon;&colon;sync&lowbar;all&lowbar;on&lowbar;write
+
+== Example
+[,cpp]
+----
+boost::asio::stream_file file(my_context);
+boost::system::error_code ec;
+file.open("/path/to/my/file", boost::asio::stream_file::read_only, ec);
+if (ec)
+{
+  // An error occurred.
+}
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *path*
+| The path name identifying the file to be opened&period;
+| *open&lowbar;flags*
+| A set of flags that determine how the file should be opened&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

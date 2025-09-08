@@ -1,0 +1,93 @@
+[#boost-asio-error-basic_errors]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/error.adoc[error]::basic&lowbar;errors
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum basic&lowbar;errors;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`access&lowbar;denied`
+|Permission denied&period;
+|`address&lowbar;family&lowbar;not&lowbar;supported`
+|Address family not supported by protocol&period;
+|`address&lowbar;in&lowbar;use`
+|Address already in use&period;
+|`already&lowbar;connected`
+|Transport endpoint is already connected&period;
+|`already&lowbar;started`
+|Operation already in progress&period;
+|`broken&lowbar;pipe`
+|Broken pipe&period;
+|`connection&lowbar;aborted`
+|A connection has been aborted&period;
+|`connection&lowbar;refused`
+|Connection refused&period;
+|`connection&lowbar;reset`
+|Connection reset by peer&period;
+|`bad&lowbar;descriptor`
+|Bad file descriptor&period;
+|`fault`
+|Bad address&period;
+|`host&lowbar;unreachable`
+|No route to host&period;
+|`in&lowbar;progress`
+|Operation now in progress&period;
+|`interrupted`
+|Interrupted system call&period;
+|`invalid&lowbar;argument`
+|Invalid argument&period;
+|`message&lowbar;size`
+|Message too long&period;
+|`name&lowbar;too&lowbar;long`
+|The name was too long&period;
+|`network&lowbar;down`
+|Network is down&period;
+|`network&lowbar;reset`
+|Network dropped connection on reset&period;
+|`network&lowbar;unreachable`
+|Network is unreachable&period;
+|`no&lowbar;descriptors`
+|Too many open files&period;
+|`no&lowbar;buffer&lowbar;space`
+|No buffer space available&period;
+|`no&lowbar;memory`
+|Cannot allocate memory&period;
+|`no&lowbar;permission`
+|Operation not permitted&period;
+|`no&lowbar;protocol&lowbar;option`
+|Protocol not available&period;
+|`no&lowbar;such&lowbar;device`
+|No such device&period;
+|`not&lowbar;connected`
+|Transport endpoint is not connected&period;
+|`not&lowbar;socket`
+|Socket operation on non&hyphen;socket&period;
+|`operation&lowbar;aborted`
+|Operation cancelled&period;
+|`operation&lowbar;not&lowbar;supported`
+|Operation not supported&period;
+|`shut&lowbar;down`
+|Cannot send after transport endpoint shutdown&period;
+|`timed&lowbar;out`
+|Connection timed out&period;
+|`try&lowbar;again`
+|Resource temporarily unavailable&period;
+|`would&lowbar;block`
+|The socket is marked non&hyphen;blocking and the requested operation would block&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-this_coro-throw_if_cancelled-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/this_coro.adoc[this&lowbar;coro]::throw&lowbar;if&lowbar;cancelled
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/this_coro/throw_if_cancelled_0_t.adoc[throw&lowbar;if&lowbar;cancelled&lowbar;0&lowbar;t]
+throw&lowbar;if&lowbar;cancelled();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

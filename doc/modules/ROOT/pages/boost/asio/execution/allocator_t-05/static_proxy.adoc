@@ -1,0 +1,25 @@
+[#boost-asio-execution-allocator_t-05-static_proxy]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/allocator_t-05.adoc[allocator&lowbar;t&lt;void&gt;]::static&lowbar;proxy
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct static&lowbar;proxy;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/allocator_t-05/static_proxy/type.adoc[`type`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

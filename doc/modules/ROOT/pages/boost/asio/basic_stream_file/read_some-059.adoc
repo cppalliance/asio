@@ -1,0 +1,60 @@
+[#boost-asio-basic_stream_file-read_some-059]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]::read&lowbar;some
+:relfileprefix: ../../../
+:mrdocs:
+
+Read some data from the file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+read&lowbar;some(MutableBufferSequence const& buffers);
+----
+
+== Description
+
+This function is used to read data from the stream file&period; The function call will block until one or more bytes of data has been read successfully, or until an error occurs&period;
+
+[NOTE]
+The read&lowbar;some operation may not read all of the requested number of bytes&period; Consider using the xref:boost/asio/read-090.adoc[`read`] function if you need to ensure that the requested amount of data is read before the blocking operation completes&period;
+
+== Example
+To read into a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+file.read_some(boost::asio::buffer(data, size));
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on reading into multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; An error code of boost&colon;&colon;asio&colon;&colon;error&colon;&colon;eof indicates that the end of the file was reached&period;
+|===
+
+== Return Value
+
+The number of bytes read&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more buffers into which the data will be read&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

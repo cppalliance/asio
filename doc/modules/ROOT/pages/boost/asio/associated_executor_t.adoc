@@ -1,0 +1,19 @@
+[#boost-asio-associated_executor_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::associated&lowbar;executor&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor = xref:boost/asio/system_executor.adoc[system&lowbar;executor]&gt;
+using associated&lowbar;executor&lowbar;t = associated&lowbar;executor&lt;T, Executor&gt;::type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

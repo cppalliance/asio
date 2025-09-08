@@ -1,0 +1,63 @@
+[#boost-asio-any_completion_handler_allocator-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::any&lowbar;completion&lowbar;handler&lowbar;allocator
+:relfileprefix: ../../
+:mrdocs:
+
+An allocator type that forwards memory allocation operations through an instance of `any&lowbar;completion&lowbar;handler&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Signatures&gt;
+class any&lowbar;completion&lowbar;handler&lowbar;allocator;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/any_completion_handler_allocator-06/rebind.adoc[`rebind`] 
+| Rebinds an allocator to another value type&period;
+| xref:boost/asio/any_completion_handler_allocator-06/value_type.adoc[`value&lowbar;type`] 
+| The type of objects that may be allocated by the allocator&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/any_completion_handler_allocator-06/2constructor.adoc[`any&lowbar;completion&lowbar;handler&lowbar;allocator`]         [.small]#[constructor]#
+| Construct from another `any&lowbar;completion&lowbar;handler&lowbar;allocator&period;`
+| xref:boost/asio/any_completion_handler_allocator-06/allocate.adoc[`allocate`] 
+| Allocate space for `n` objects of the allocator&apos;s value type&period;
+| xref:boost/asio/any_completion_handler_allocator-06/deallocate.adoc[`deallocate`] 
+| Deallocate space for `n` objects of the allocator&apos;s value type&period;
+| xref:boost/asio/any_completion_handler_allocator-06/operator_eq.adoc[`operator&equals;&equals;`] 
+| Equality operator&period;
+| xref:boost/asio/any_completion_handler_allocator-06/operator_not_eq.adoc[`operator!&equals;`] 
+| Inequality operator&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/any_completion_handler_allocator-06.adoc[boost::asio::any&lowbar;completion&lowbar;handler&lowbar;allocator]`
+| An allocator type that forwards memory allocation operations through an instance of `any&lowbar;completion&lowbar;handler&period;`
+| `xref:boost/asio/any_completion_handler.adoc[boost::asio::any&lowbar;completion&lowbar;handler]`
+| Polymorphic wrapper for completion handlers&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,42 @@
+[#boost-asio-dynamic_string_buffer-data-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer]::data
+:relfileprefix: ../../../
+:mrdocs:
+
+*DynamicBuffer&lowbar;v2&colon;* Get a sequence of buffers that represents the underlying memory&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/dynamic_string_buffer/const_buffers_type.adoc[const&lowbar;buffers&lowbar;type]
+data(
+    size&lowbar;t pos,
+    size&lowbar;t n) const noexcept;
+----
+
+== Description
+
+[NOTE]
+The returned object is invalidated by any `dynamic&lowbar;string&lowbar;buffer` or `basic&lowbar;string` member function that resizes or erases the string&period;
+
+== Return Value
+
+The type used to represent a sequence of constant buffers that refers to the underlying memory&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *pos*
+| Position of the first byte to represent in the buffer sequence
+| *n*
+| The number of bytes to return in the buffer sequence&period; If the underlying memory is shorter, the buffer sequence represents as many bytes as are available&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

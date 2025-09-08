@@ -1,0 +1,18 @@
+[#boost-asio-executor-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::&#126;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Destructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;executor();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

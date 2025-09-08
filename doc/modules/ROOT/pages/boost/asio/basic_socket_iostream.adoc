@@ -1,0 +1,102 @@
+[#boost-asio-basic_socket_iostream]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;socket&lowbar;iostream
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Clock = std::chrono::steady&lowbar;clock,
+    typename WaitTraits = xref:boost/asio/wait_traits.adoc[wait&lowbar;traits&lt;Clock&gt;]&gt;
+class basic&lowbar;socket&lowbar;iostream
+    : public std::basic&lowbar;iostream&lt;char&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::basic&lowbar;iostream&lt;char&gt;`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_socket_iostream/_Myios.adoc[`&lowbar;Myios`] 
+| 
+| xref:boost/asio/basic_socket_iostream/_Myis.adoc[`&lowbar;Myis`] 
+| 
+| xref:boost/asio/basic_socket_iostream/_Myos.adoc[`&lowbar;Myos`] 
+| 
+| xref:boost/asio/basic_socket_iostream/char_type.adoc[`char&lowbar;type`] 
+| 
+| xref:boost/asio/basic_socket_iostream/clock_type.adoc[`clock&lowbar;type`] 
+| The clock type&period;
+| xref:boost/asio/basic_socket_iostream/duration.adoc[`duration`] 
+| 
+| xref:boost/asio/basic_socket_iostream/endpoint_type.adoc[`endpoint&lowbar;type`] 
+| The endpoint type&period;
+| xref:boost/asio/basic_socket_iostream/int_type.adoc[`int&lowbar;type`] 
+| 
+| xref:boost/asio/basic_socket_iostream/off_type.adoc[`off&lowbar;type`] 
+| 
+| xref:boost/asio/basic_socket_iostream/pos_type.adoc[`pos&lowbar;type`] 
+| 
+| xref:boost/asio/basic_socket_iostream/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type&period;
+| xref:boost/asio/basic_socket_iostream/time_point.adoc[`time&lowbar;point`] 
+| 
+| xref:boost/asio/basic_socket_iostream/traits_type.adoc[`traits&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_socket_iostream/2constructor-0d.adoc[`basic&lowbar;socket&lowbar;iostream`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_socket_iostream/operator_assign-07.adoc[`operator&equals;`] 
+| Move&hyphen;assign a basic&lowbar;socket&lowbar;iostream from another&period;
+| xref:boost/asio/basic_socket_iostream/close.adoc[`close`] 
+| Close the connection&period;
+| xref:boost/asio/basic_socket_iostream/connect.adoc[`connect`] 
+| Establish a connection to an endpoint corresponding to a resolver query&period;
+| xref:boost/asio/basic_socket_iostream/error.adoc[`error`] 
+| Get the last error associated with the stream&period;
+| xref:boost/asio/basic_socket_iostream/expires_after.adoc[`expires&lowbar;after`] 
+| Set the stream&apos;s expiry time relative to now&period;
+| xref:boost/asio/basic_socket_iostream/expires_at.adoc[`expires&lowbar;at`] 
+| Set the stream&apos;s expiry time as an absolute time&period;
+| xref:boost/asio/basic_socket_iostream/expiry.adoc[`expiry`] 
+| Get the stream&apos;s expiry time as an absolute time&period;
+| xref:boost/asio/basic_socket_iostream/rdbuf.adoc[`rdbuf`] 
+| Return a pointer to the underlying streambuf&period;
+| xref:boost/asio/basic_socket_iostream/socket.adoc[`socket`] 
+| Get a reference to the underlying socket&period;
+|===
+
+== Protected Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/basic_socket_iostream/operator_assign-00.adoc[`operator&equals;`] 
+| xref:boost/asio/basic_socket_iostream/swap.adoc[`swap`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,20 @@
+[#boost-asio-config_service-shutdown]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config_service.adoc[config&lowbar;service]::shutdown
+:relfileprefix: ../../../
+:mrdocs:
+
+Shutdown the service&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+void
+shutdown() override;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

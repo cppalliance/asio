@@ -1,0 +1,22 @@
+[#boost-asio-basic_socket_acceptor-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::&#126;basic&lowbar;socket&lowbar;acceptor
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys the acceptor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;socket&lowbar;acceptor();
+----
+
+== Description
+
+This function destroys the acceptor, cancelling any outstanding asynchronous operations associated with the acceptor as if by calling `cancel&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,48 @@
+[#boost-asio-basic_stream_socket-operator_assign-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;socket&period;hpp&gt;`
+
+Move&hyphen;assign a basic&lowbar;stream&lowbar;socket from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]&
+xref:boost/asio/basic_stream_socket/operator_assign-0c.adoc[operator&equals;](xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]&& other);
+----
+
+[.small]#xref:boost/asio/basic_stream_socket/operator_assign-0c.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign a basic&lowbar;stream&lowbar;socket from a socket of another protocol type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol1,
+    typename Executor1&gt;
+xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]&
+xref:boost/asio/basic_stream_socket/operator_assign-07.adoc[operator&equals;](xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket&lt;Protocol1, Executor1&gt;]&& other);
+----
+
+[.small]#xref:boost/asio/basic_stream_socket/operator_assign-07.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;stream&lowbar;socket object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

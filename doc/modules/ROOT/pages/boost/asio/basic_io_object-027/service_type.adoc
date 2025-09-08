@@ -1,0 +1,18 @@
+[#boost-asio-basic_io_object-027-service_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_io_object-027.adoc[basic&lowbar;io&lowbar;object]::service&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The type of the service that will be used to provide I&sol;O operations&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;io&lowbar;object&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef IoObjectService service&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

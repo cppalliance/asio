@@ -1,0 +1,24 @@
+[#boost-asio-executor-2constructor-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Allocator&hyphen;aware constructor to create a polymorphic wrapper for the specified executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename Allocator&gt;
+executor(
+    std::allocator&lowbar;arg&lowbar;t,
+    Allocator const& a,
+    Executor e);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

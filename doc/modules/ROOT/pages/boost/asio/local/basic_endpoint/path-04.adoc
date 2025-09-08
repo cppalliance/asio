@@ -1,0 +1,19 @@
+[#boost-asio-local-basic_endpoint-path-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint]::path
+:relfileprefix: ../../../../
+:mrdocs:
+
+Set the path associated with the endpoint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+path(char const* p);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

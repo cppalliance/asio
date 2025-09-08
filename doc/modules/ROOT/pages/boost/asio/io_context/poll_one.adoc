@@ -1,0 +1,27 @@
+[#boost-asio-io_context-poll_one]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::poll&lowbar;one
+:relfileprefix: ../../../
+:mrdocs:
+
+Run the io&lowbar;context object&apos;s event processing loop to execute one ready handler&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/io_context/count_type.adoc[count&lowbar;type]
+poll&lowbar;one();
+----
+
+== Description
+
+The poll&lowbar;one() function runs at most one handler that is ready to run, without blocking&period;
+
+== Return Value
+
+The number of handlers that were executed&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

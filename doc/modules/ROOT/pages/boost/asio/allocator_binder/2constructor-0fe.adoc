@@ -1,0 +1,134 @@
+[#boost-asio-allocator_binder-2constructor-0fe]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder]::allocator&lowbar;binder
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/allocator_binder/2constructor-0ff.adoc[allocator&lowbar;binder](xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder] const& other);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-0ff.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/allocator_binder/2constructor-0a.adoc[allocator&lowbar;binder](xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder]&& other);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy, but specify a different allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/allocator_binder/2constructor-049.adoc[allocator&lowbar;binder](
+    xref:boost/asio/allocator_binder/allocator_type.adoc[allocator&lowbar;type] const& s,
+    xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder] const& other);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-049.adoc[_» more&period;&period;&period;_]#
+
+Move construct the target object, but specify a different allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/allocator_binder/2constructor-01.adoc[allocator&lowbar;binder](
+    xref:boost/asio/allocator_binder/allocator_type.adoc[allocator&lowbar;type] const& s,
+    xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder]&& other);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-01.adoc[_» more&period;&period;&period;_]#
+
+Construct an allocator wrapper for the specified object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+xref:boost/asio/allocator_binder/2constructor-040.adoc[allocator&lowbar;binder](
+    xref:boost/asio/allocator_binder/allocator_type.adoc[allocator&lowbar;type] const& s,
+    U&& u);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-040.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy of a different allocator wrapper type, but specify a different allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherAllocator&gt;
+xref:boost/asio/allocator_binder/2constructor-06.adoc[allocator&lowbar;binder](
+    xref:boost/asio/allocator_binder/allocator_type.adoc[allocator&lowbar;type] const& s,
+    xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;U, OtherAllocator&gt;] const& other,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-06.adoc[_» more&period;&period;&period;_]#
+
+Move construct from a different allocator wrapper type, but specify a different allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherAllocator&gt;
+xref:boost/asio/allocator_binder/2constructor-07.adoc[allocator&lowbar;binder](
+    xref:boost/asio/allocator_binder/allocator_type.adoc[allocator&lowbar;type] const& s,
+    xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;U, OtherAllocator&gt;]&& other,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-07.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy of a different allocator wrapper type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherAllocator&gt;
+xref:boost/asio/allocator_binder/2constructor-09.adoc[allocator&lowbar;binder](
+    xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;U, OtherAllocator&gt;] const& other,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-09.adoc[_» more&period;&period;&period;_]#
+
+Move construct from a different allocator wrapper type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherAllocator&gt;
+xref:boost/asio/allocator_binder/2constructor-0c.adoc[allocator&lowbar;binder](
+    xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;U, OtherAllocator&gt;]&& other,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/allocator_binder/2constructor-0c.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

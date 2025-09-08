@@ -1,0 +1,26 @@
+[#boost-asio-dynamic_buffer-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::dynamic&lowbar;buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new dynamic buffer that represents the given vector&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Allocator&gt;
+xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer&lt;Elem, Allocator&gt;]
+dynamic&lowbar;buffer(std::vector&lt;Elem, Allocator&gt;& data) noexcept;
+----
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-ip-basic_address_iterator-07-reference]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_address_iterator-07.adoc[basic&lowbar;address&lowbar;iterator&lt;address&lowbar;v6&gt;]::reference
+:relfileprefix: ../../../../
+:mrdocs:
+
+The type of a reference to an element pointed to by the iterator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6] const& reference;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-ip-basic_resolver_query-protocol_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_query.adoc[basic&lowbar;resolver&lowbar;query]::protocol&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+The protocol type associated with the endpoint query&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;query&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef InternetProtocol protocol&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

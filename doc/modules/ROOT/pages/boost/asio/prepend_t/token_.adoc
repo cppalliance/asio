@@ -1,0 +1,16 @@
+[#boost-asio-prepend_t-token_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/prepend_t.adoc[prepend&lowbar;t]::token&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;prepend&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+CompletionToken token&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

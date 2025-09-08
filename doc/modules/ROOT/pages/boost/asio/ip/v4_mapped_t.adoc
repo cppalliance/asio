@@ -1,0 +1,41 @@
+[#boost-asio-ip-v4_mapped_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::v4&lowbar;mapped&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+Tag type used for distinguishing overloads that deal in IPv4&hyphen;mapped IPv6 addresses&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum v4&lowbar;mapped&lowbar;t;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`v4&lowbar;mapped`
+|
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/make_address_v4-072.adoc[`make&lowbar;address&lowbar;v4`]
+| Create an IPv4 address from a IPv4&hyphen;mapped IPv6 address&period;
+| xref:boost/asio/ip/make_address_v6-0d.adoc[`make&lowbar;address&lowbar;v6`]
+| Create an IPv4&hyphen;mapped IPv6 address from an IPv4 address&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

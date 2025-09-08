@@ -1,0 +1,16 @@
+[#boost-asio-chrono-time_point_cast]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/chrono.adoc[chrono]::time&lowbar;point&lowbar;cast
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;chrono&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using std::chrono::time&lowbar;point&lowbar;cast;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

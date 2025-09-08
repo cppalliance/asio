@@ -1,0 +1,43 @@
+[#boost-asio-basic_file-resize-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::resize
+:relfileprefix: ../../../
+:mrdocs:
+
+Alter the size of the file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+resize(std::uint64&lowbar;t n);
+----
+
+== Description
+
+This function resizes the file to the specified size, in bytes&period; If the current file size exceeds `n` then any extra data is discarded&period; If the current size is less than `n` then the file is extended and filled with zeroes&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *n*
+| The new size for the file&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

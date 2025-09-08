@@ -1,0 +1,30 @@
+[#boost-asio-any_completion_handler_allocator-06-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_handler_allocator-06.adoc[any&lowbar;completion&lowbar;handler&lowbar;allocator]::any&lowbar;completion&lowbar;handler&lowbar;allocator
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct from another `any&lowbar;completion&lowbar;handler&lowbar;allocator&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+constexpr
+any&lowbar;completion&lowbar;handler&lowbar;allocator(xref:boost/asio/any_completion_handler_allocator-06.adoc[any&lowbar;completion&lowbar;handler&lowbar;allocator&lt;U, Signatures&period;&period;&period;&gt;] const& a) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *a*
+| An allocator type that forwards memory allocation operations through an instance of `any&lowbar;completion&lowbar;handler&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,36 @@
+[#boost-asio-uses_executor-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::uses&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+The uses&lowbar;executor trait detects whether a type T has an associated executor that is convertible from type Executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;uses&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor&gt;
+struct uses&lowbar;executor
+    : std::false&lowbar;type
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::false&lowbar;type`
+| 
+|===
+
+== Description
+
+Meets the BinaryTypeTrait requirements&period; The Asio library provides a definition that is derived from false&lowbar;type&period; A program may specialize this template to derive from true&lowbar;type for a user&hyphen;defined type T that can be constructed with an executor, where the first argument of a constructor has type executor&lowbar;arg&lowbar;t and the second argument is convertible from type Executor&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

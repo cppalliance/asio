@@ -1,0 +1,117 @@
+[#boost-asio-basic_serial_port]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;serial&lowbar;port
+:relfileprefix: ../../
+:mrdocs:
+
+Provides serial port functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;serial&lowbar;port
+    : public xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]`
+| The serial&lowbar;port&lowbar;base class is used as a base for the basic&lowbar;serial&lowbar;port class template so that we have a common place to define the serial port options&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/serial_port_base/baud_rate.adoc[`baud&lowbar;rate`] 
+| Serial port option to permit changing the baud rate&period;
+| xref:boost/asio/serial_port_base/character_size.adoc[`character&lowbar;size`] 
+| Serial port option to permit changing the character size&period;
+| xref:boost/asio/serial_port_base/flow_control.adoc[`flow&lowbar;control`] 
+| Serial port option to permit changing the flow control&period;
+| xref:boost/asio/serial_port_base/parity.adoc[`parity`] 
+| Serial port option to permit changing the parity&period;
+| xref:boost/asio/basic_serial_port/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the serial port type to another executor&period;
+| xref:boost/asio/serial_port_base/stop_bits.adoc[`stop&lowbar;bits`] 
+| Serial port option to permit changing the number of stop bits&period;
+| xref:boost/asio/basic_serial_port/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_serial_port/lowest_layer_type.adoc[`lowest&lowbar;layer&lowbar;type`] 
+| A basic&lowbar;basic&lowbar;serial&lowbar;port is always the lowest layer&period;
+| xref:boost/asio/basic_serial_port/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_serial_port/2constructor-04e.adoc[`basic&lowbar;serial&lowbar;port`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_serial_port/2destructor.adoc[`&#126;basic&lowbar;serial&lowbar;port`] [.small]#[destructor]#
+| Destroys the serial port&period;
+| xref:boost/asio/basic_serial_port/operator_assign-03.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/basic_serial_port/assign-01.adoc[`assign`] 
+| 
+| xref:boost/asio/basic_serial_port/async_read_some.adoc[`async&lowbar;read&lowbar;some`] 
+| Start an asynchronous read&period;
+| xref:boost/asio/basic_serial_port/async_write_some.adoc[`async&lowbar;write&lowbar;some`] 
+| Start an asynchronous write&period;
+| xref:boost/asio/basic_serial_port/cancel-0fed.adoc[`cancel`] 
+| Cancel all asynchronous operations associated with the serial port&period;
+| xref:boost/asio/basic_serial_port/close-06.adoc[`close`] 
+| Close the serial port&period;
+| xref:boost/asio/basic_serial_port/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/basic_serial_port/get_option-04.adoc[`get&lowbar;option`] 
+| Get an option from the serial port&period;
+| xref:boost/asio/basic_serial_port/is_open.adoc[`is&lowbar;open`] 
+| Determine whether the serial port is open&period;
+| xref:boost/asio/basic_serial_port/lowest_layer-04.adoc[`lowest&lowbar;layer`] 
+| `lowest&lowbar;layer` overloads
+| xref:boost/asio/basic_serial_port/native_handle.adoc[`native&lowbar;handle`] 
+| Get the native serial port representation&period;
+| xref:boost/asio/basic_serial_port/open-0f.adoc[`open`] 
+| Open the serial port using the specified device name&period;
+| xref:boost/asio/basic_serial_port/read_some-01.adoc[`read&lowbar;some`] 
+| Read some data from the serial port&period;
+| xref:boost/asio/basic_serial_port/send_break-03.adoc[`send&lowbar;break`] 
+| Send a break sequence to the serial port&period;
+| xref:boost/asio/basic_serial_port/set_option-01.adoc[`set&lowbar;option`] 
+| Set an option on the serial port&period;
+| xref:boost/asio/basic_serial_port/write_some-09.adoc[`write&lowbar;some`] 
+| Write some data to the serial port&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_serial_port.adoc[boost::asio::basic&lowbar;serial&lowbar;port]`
+| Provides serial port functionality&period;
+|===
+
+== Description
+
+The basic&lowbar;serial&lowbar;port class provides a wrapper over serial port functionality&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

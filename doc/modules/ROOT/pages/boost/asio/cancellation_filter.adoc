@@ -1,0 +1,29 @@
+[#boost-asio-cancellation_filter]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancellation&lowbar;filter
+:relfileprefix: ../../
+:mrdocs:
+
+A simple cancellation signal propagation filter&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] Mask&gt;
+struct cancellation&lowbar;filter;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancellation_filter/operator_call.adoc[`operator()`] 
+| Returns &period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

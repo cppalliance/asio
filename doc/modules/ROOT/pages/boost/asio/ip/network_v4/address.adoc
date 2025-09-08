@@ -1,0 +1,23 @@
+[#boost-asio-ip-network_v4-address]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]::address
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain the address object specified when the network object was created&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]
+address() const noexcept;
+----
+
+== Return Value
+
+Implements IP version 4 style addresses&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

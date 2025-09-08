@@ -1,0 +1,71 @@
+[#boost-asio-windows-basic_random_access_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::basic&lowbar;random&lowbar;access&lowbar;handle
+:relfileprefix: ../../../
+:mrdocs:
+
+Provides random&hyphen;access handle functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;random&lowbar;access&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;random&lowbar;access&lowbar;handle
+    : public xref:boost/asio/windows/basic_overlapped_handle.adoc[basic&lowbar;overlapped&lowbar;handle&lt;Executor&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/windows/basic_overlapped_handle.adoc[basic&lowbar;overlapped&lowbar;handle&lt;Executor&gt;]`
+| Provides Windows handle functionality for objects that support overlapped I&sol;O&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_random_access_handle/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the handle type to another executor&period;
+| xref:boost/asio/windows/basic_random_access_handle/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/windows/basic_random_access_handle/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_random_access_handle/2constructor-0b1.adoc[`basic&lowbar;random&lowbar;access&lowbar;handle`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/windows/basic_random_access_handle/operator_assign-0f.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/windows/basic_random_access_handle/async_read_some_at.adoc[`async&lowbar;read&lowbar;some&lowbar;at`] 
+| Start an asynchronous read at the specified offset&period;
+| xref:boost/asio/windows/basic_random_access_handle/async_write_some_at.adoc[`async&lowbar;write&lowbar;some&lowbar;at`] 
+| Start an asynchronous write at the specified offset&period;
+| xref:boost/asio/windows/basic_random_access_handle/read_some_at-0e.adoc[`read&lowbar;some&lowbar;at`] 
+| Read some data from the handle at the specified offset&period;
+| xref:boost/asio/windows/basic_random_access_handle/write_some_at-0c.adoc[`write&lowbar;some&lowbar;at`] 
+| Write some data to the handle at the specified offset&period;
+|===
+
+== Description
+
+The windows&colon;&colon;basic&lowbar;random&lowbar;access&lowbar;handle class provides asynchronous and blocking random&hyphen;access handle functionality&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

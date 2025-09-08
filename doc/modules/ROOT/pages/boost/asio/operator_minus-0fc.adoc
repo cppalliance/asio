@@ -1,0 +1,39 @@
+[#boost-asio-operator_minus-0fc]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&hyphen;
+:relfileprefix: ../../
+:mrdocs:
+
+Subtraction operator&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffers&lowbar;iterator&period;hpp&gt;`
+
+Subtraction operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+ptrdiff&lowbar;t
+xref:boost/asio/operator_minus-09.adoc[operator&hyphen;](
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& a,
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& b);
+----
+
+[.small]#xref:boost/asio/operator_minus-09.adoc[_» more&period;&period;&period;_]#
+
+Subtraction operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator]
+xref:boost/asio/operator_minus-0fd.adoc[operator&hyphen;](
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& iter,
+    ptrdiff&lowbar;t difference);
+----
+
+[.small]#xref:boost/asio/operator_minus-0fd.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

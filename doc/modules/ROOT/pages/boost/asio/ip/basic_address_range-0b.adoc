@@ -1,0 +1,54 @@
+[#boost-asio-ip-basic_address_range-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_address_range-0e.adoc[basic&lowbar;address&lowbar;range]&lt;xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+Represents a range of IPv6 addresses&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&lowbar;range&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;&gt;
+class xref:boost/asio/ip/basic_address_range-0e.adoc[basic&lowbar;address&lowbar;range]&lt;xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]&gt;;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_address_range-0b/iterator.adoc[`iterator`] 
+| The type of an iterator that points into the range&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_address_range-0b/2constructor-0f.adoc[`basic&lowbar;address&lowbar;range`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/basic_address_range-0b/operator_assign-01.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/ip/basic_address_range-0b/begin.adoc[`begin`] 
+| Obtain an iterator that points to the start of the range&period;
+| xref:boost/asio/ip/basic_address_range-0b/empty.adoc[`empty`] 
+| Determine whether the range is empty&period;
+| xref:boost/asio/ip/basic_address_range-0b/end.adoc[`end`] 
+| Obtain an iterator that points to the end of the range&period;
+| xref:boost/asio/ip/basic_address_range-0b/find.adoc[`find`] 
+| Find an address in the range&period;
+|===
+
+== Description
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,23 @@
+[#boost-asio-dynamic_string_buffer-capacity]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer]::capacity
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the maximum size that the buffer may grow to without triggering reallocation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+capacity() const noexcept;
+----
+
+== Return Value
+
+The current capacity of the underlying string if less than max&lowbar;size()&period; Otherwise returns max&lowbar;size()&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,34 @@
+[#boost-asio-make_work_guard-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::make&lowbar;work&lowbar;guard
+:relfileprefix: ../../
+:mrdocs:
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&lowbar;work&lowbar;guard&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;associated&lowbar;executor&lt;T&gt;::type&gt;]
+make&lowbar;work&lowbar;guard(T const& t);
+----
+
+== Return Value
+
+A work guard constructed with the associated executor of the object `t,` which is obtained as if by calling &period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *t*
+| An arbitrary object, such as a completion handler, for which the associated executor will be obtained&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

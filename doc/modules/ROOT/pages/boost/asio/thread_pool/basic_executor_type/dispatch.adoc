@@ -1,0 +1,44 @@
+[#boost-asio-thread_pool-basic_executor_type-dispatch]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::xref:boost/asio/thread_pool/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type]::dispatch
+:relfileprefix: ../../../../
+:mrdocs:
+
+Request the thread pool to invoke the given function object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Function,
+    typename OtherAllocator&gt;
+void
+dispatch(
+    Function&& f,
+    OtherAllocator const& a);
+----
+
+== Description
+
+This function is used to ask the thread pool to execute the given function object&period; If the current thread belongs to the pool, `dispatch()` executes the function before returning&period; Otherwise, the function will be scheduled to run on the thread pool&period;
+
+[,cpp]
+----
+void function(); 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *f*
+| The function object to be called&period; The executor will make a copy of the handler object as required&period; The function signature of the function object must be&colon;
+| *a*
+| An allocator that may be used by the executor to allocate the internal storage needed for function invocation&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

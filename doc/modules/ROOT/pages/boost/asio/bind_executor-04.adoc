@@ -1,0 +1,26 @@
+[#boost-asio-bind_executor-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Create a partial completion token that associates an execution context&apos;s executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/partial_executor_binder.adoc[partial&lowbar;executor&lowbar;binder&lt;ExecutionContext::executor&lowbar;type&gt;]
+bind&lowbar;executor(
+    ExecutionContext& ctx,
+    int = 0);
+----
+
+== Return Value
+
+A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied executor as its associated executor&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

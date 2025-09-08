@@ -1,0 +1,50 @@
+[#boost-asio-deferred_t-executor_with_default]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/deferred_t.adoc[deferred&lowbar;t]::executor&lowbar;with&lowbar;default
+:relfileprefix: ../../../
+:mrdocs:
+
+Adapts an executor to add the `deferred&lowbar;t` completion token as the default&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename InnerExecutor&gt;
+struct executor&lowbar;with&lowbar;default
+    : InnerExecutor
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `InnerExecutor`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_t/executor_with_default/default_completion_token_type.adoc[`default&lowbar;completion&lowbar;token&lowbar;type`] 
+| Specify `deferred&lowbar;t` as the default completion token type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_t/executor_with_default/2constructor.adoc[`executor&lowbar;with&lowbar;default`]         [.small]#[constructor]#
+| Construct the adapted executor from the inner executor type&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

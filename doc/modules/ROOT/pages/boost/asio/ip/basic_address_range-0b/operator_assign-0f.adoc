@@ -1,0 +1,33 @@
+[#boost-asio-ip-basic_address_range-0b-operator_assign-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_address_range-0b.adoc[basic&lowbar;address&lowbar;range&lt;address&lowbar;v6&gt;]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Move assignment operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&lowbar;range&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_address_range-0b.adoc[basic&lowbar;address&lowbar;range&lt;address&lowbar;v6&gt;]&
+operator&equals;(xref:boost/asio/ip/basic_address_range-0b.adoc[basic&lowbar;address&lowbar;range&lt;address&lowbar;v6&gt;]&& other) noexcept;
+----
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move assign from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

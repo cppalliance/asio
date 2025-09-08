@@ -1,0 +1,31 @@
+[#boost-asio-async_result-048-initiate]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_result-048.adoc[async&lowbar;result&lt;partial&lowbar;cancellation&lowbar;slot&lowbar;binder&lt;CancellationSlot&gt;, Signatures&period;&period;&period;&gt;]::initiate
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Initiation,
+    typename RawCompletionToken,
+    typename&period;&period;&period; Args&gt;
+static
+decltype(async&lowbar;initiate&lt;Signatures&period;&period;&period;&gt;(
+        static&lowbar;cast&lt;Initiation&amp;&amp;&gt;(initiation),
+        cancellation&lowbar;slot&lowbar;binder&lt;
+          default&lowbar;completion&lowbar;token&lowbar;t&lt;associated&lowbar;executor&lowbar;t&lt;Initiation&gt;&gt;,
+          CancellationSlot&gt;(token&period;cancellation&lowbar;slot&lowbar;,
+            default&lowbar;completion&lowbar;token&lowbar;t&lt;associated&lowbar;executor&lowbar;t&lt;Initiation&gt;&gt;&lcub;&rcub;),
+        static&lowbar;cast&lt;Args&amp;&amp;&gt;(args)&period;&period;&period;))
+initiate(
+    Initiation&& initiation,
+    RawCompletionToken&& token,
+    Args&period;&period;&period;&&&period;&period;&period; args);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

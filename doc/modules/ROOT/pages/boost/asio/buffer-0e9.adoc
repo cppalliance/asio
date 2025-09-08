@@ -1,0 +1,32 @@
+[#boost-asio-buffer-0e9]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new modifiable buffer that represents the given string&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+buffer(std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data) noexcept;
+----
+
+== Description
+
+[NOTE]
+The buffer is invalidated by any non&hyphen;const operation called on the given string object&period;
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

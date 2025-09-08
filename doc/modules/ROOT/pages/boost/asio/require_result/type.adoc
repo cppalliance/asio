@@ -1,0 +1,16 @@
+[#boost-asio-require_result-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/require_result.adoc[require&lowbar;result]::type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;require&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef boost&lowbar;asio&lowbar;require&lowbar;fn::call&lowbar;traits&lt;require&lowbar;t, T, void(Properties&period;&period;&period;)&gt;::result&lowbar;type type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

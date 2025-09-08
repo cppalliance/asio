@@ -1,0 +1,16 @@
+[#boost-asio-traits-prefer_free_default-03-result_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/prefer_free_default-03.adoc[prefer&lowbar;free&lowbar;default&lt;T, execution::prefer&lowbar;only&lt;InnerProperty&gt;&gt;]::result&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;prefer&lowbar;only&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/prefer_result_t.adoc[prefer&lowbar;result&lowbar;t&lt;T const&, InnerProperty const&&gt;] result&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

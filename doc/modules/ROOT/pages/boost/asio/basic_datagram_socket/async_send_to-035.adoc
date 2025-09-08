@@ -1,0 +1,79 @@
+[#boost-asio-basic_datagram_socket-async_send_to-035]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::async&lowbar;send&lowbar;to
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous send&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ConstBufferSequence,
+    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+          declval&lt;initiate&lowbar;async&lowbar;send&lowbar;to&gt;(), token, buffers,
+          destination, socket&lowbar;base&colon;&colon;message&lowbar;flags(0)))
+async&lowbar;send&lowbar;to(
+    ConstBufferSequence const& buffers,
+    xref:boost/asio/basic_datagram_socket/endpoint_type.adoc[endpoint&lowbar;type] const& destination,
+    WriteToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+== Description
+
+This function is used to asynchronously send a datagram to the specified remote endpoint&period; It is an initiating function for an `asynchronous&lowbar;operation`, and always returns immediately&period;
+
+[,cpp]
+----
+void handler(
+  const boost::system::error_code& error, // Result of operation.
+  std::size_t bytes_transferred // Number of bytes sent.
+); 
+----
+Regardless of whether the asynchronous operation completes immediately or not, the completion handler will not be invoked from within this function&period; On immediate completion, invocation of the handler will be performed in a manner equivalent to using boost&colon;&colon;asio&colon;&colon;async&lowbar;immediate()&period;
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code, std::size_t) 
+----
+== Example
+To send a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+boost::asio::ip::udp::endpoint destination(
+    boost::asio::ip::address::from_string("1.2.3.4"), 12345);
+socket.async_send_to(
+    boost::asio::buffer(data, size), destination, handler);
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on sending multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Per&hyphen;Operation Cancellation
+On POSIX or Windows operating systems, this asynchronous operation supports cancellation for the following boost&colon;&colon;asio&colon;&colon;cancellation&lowbar;type values&colon;
+
+* `cancellation&lowbar;type&colon;&colon;terminal`
+* `cancellation&lowbar;type&colon;&colon;partial`
+* `cancellation&lowbar;type&colon;&colon;total`
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be sent to the remote endpoint&period; Although the buffers object may be copied as necessary, ownership of the underlying memory blocks is retained by the caller, which must guarantee that they remain valid until the completion handler is called&period;
+| *destination*
+| The remote endpoint to which the data will be sent&period; Copies will be made of the endpoint as required&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the send completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

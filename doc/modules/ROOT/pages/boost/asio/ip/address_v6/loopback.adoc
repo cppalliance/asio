@@ -1,0 +1,28 @@
+[#boost-asio-ip-address_v6-loopback]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]::loopback
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain an address object that represents the loopback address&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]
+loopback() noexcept;
+----
+
+== Description
+
+This function returns an address that represents the well&hyphen;known loopback address &period;
+
+== Return Value
+
+Implements IP version 6 style addresses&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

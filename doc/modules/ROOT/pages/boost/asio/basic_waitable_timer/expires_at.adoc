@@ -1,0 +1,55 @@
+[#boost-asio-basic_waitable_timer-expires_at]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::expires&lowbar;at
+:relfileprefix: ../../../
+:mrdocs:
+
+Set the timer&apos;s expiry time as an absolute time&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+expires&lowbar;at(xref:boost/asio/basic_waitable_timer/time_point.adoc[time&lowbar;point] const& expiry&lowbar;time);
+----
+
+== Description
+
+This function sets the expiry time&period; Any pending asynchronous wait operations will be cancelled&period; The handler for each cancelled operation will be invoked with the boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted error code&period;
+
+[NOTE]
+If the timer has already expired when expires&lowbar;at() is called, then the handlers for asynchronous wait operations will&colon;
+
+* have already been invoked&semi; or
+* have been queued for invocation in the near future&period;
+
+These handlers can no longer be cancelled, and therefore are passed an error code that indicates the successful completion of the wait operation&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of asynchronous operations that were cancelled&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *expiry&lowbar;time*
+| The expiry time to be used for the timer&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

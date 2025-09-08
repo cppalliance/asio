@@ -1,0 +1,28 @@
+[#boost-asio-default_completion_token]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::default&lowbar;completion&lowbar;token
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;default&lowbar;completion&lowbar;token&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct default&lowbar;completion&lowbar;token
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

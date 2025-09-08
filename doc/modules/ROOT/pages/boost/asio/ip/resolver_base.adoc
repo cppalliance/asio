@@ -1,0 +1,70 @@
+[#boost-asio-ip-resolver_base]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::resolver&lowbar;base
+:relfileprefix: ../../../
+:mrdocs:
+
+The resolver&lowbar;base class is used as a base for the basic&lowbar;resolver class templates to provide a common place to define the flag constants&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;resolver&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class resolver&lowbar;base;
+----
+
+== Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/resolver_base/flags.adoc[`flags`] 
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/resolver_base/2destructor.adoc[`&#126;resolver&lowbar;base`] [.small]#[destructor]#
+| Protected destructor to prevent deletion through this type&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/operator_xor_eq.adoc[boost::asio::ip::operator&circ;&equals;]`
+| 
+| `xref:boost/asio/ip/operator_or_eq.adoc[boost::asio::ip::operator&verbar;&equals;]`
+| 
+| `xref:boost/asio/ip/operator_and_eq.adoc[boost::asio::ip::operator&amp;&equals;]`
+| 
+| `xref:boost/asio/ip/operator_bitnot.adoc[boost::asio::ip::operator&#126;]`
+| 
+| `xref:boost/asio/ip/operator_xor.adoc[boost::asio::ip::operator&circ;]`
+| 
+| `xref:boost/asio/ip/operator_bitor.adoc[boost::asio::ip::operator&verbar;]`
+| 
+| `xref:boost/asio/ip/operator_bitand.adoc[boost::asio::ip::operator&amp;]`
+| 
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver.adoc[`basic&lowbar;resolver`]
+| Provides endpoint resolution functionality&period;
+| xref:boost/asio/ip/resolver_query_base.adoc[`resolver&lowbar;query&lowbar;base`]
+| The resolver&lowbar;query&lowbar;base class is used as a base for the basic&lowbar;resolver&lowbar;query class templates to provide a common place to define the flag constants&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

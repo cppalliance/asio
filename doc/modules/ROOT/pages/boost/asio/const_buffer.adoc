@@ -1,0 +1,119 @@
+[#boost-asio-const_buffer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::const&lowbar;buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Holds a buffer that cannot be modified&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class const&lowbar;buffer;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/const_buffer/2constructor-0b.adoc[`const&lowbar;buffer`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/const_buffer/data.adoc[`data`] 
+| Get a pointer to the beginning of the memory range&period;
+| xref:boost/asio/const_buffer/operator_plus_eq.adoc[`operator&plus;&equals;`] 
+| Move the start of the buffer by the specified number of bytes&period;
+| xref:boost/asio/const_buffer/size.adoc[`size`] 
+| Get the size of the memory range&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffer-000.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer from a span&period;
+| xref:boost/asio/buffer-001.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer from a contiguous container&period;
+| xref:boost/asio/buffer-0024.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer from a contiguous container&period;
+| xref:boost/asio/buffer-002a.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-025.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-02f.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-037.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given string&period;
+| xref:boost/asio/buffer-03b.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-065.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-076.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given memory range&period;
+| xref:boost/asio/buffer-07f2.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-085.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given string&period;
+| xref:boost/asio/buffer-0895.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer from a span&period;
+| xref:boost/asio/buffer-0a1.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD vector&period;
+| xref:boost/asio/buffer-0a4.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD vector&period;
+| xref:boost/asio/buffer-0a5.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer from a contiguous container&period;
+| xref:boost/asio/buffer-0cd2.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer from a contiguous container&period;
+| xref:boost/asio/buffer-0cda.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-0d8.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-0e2.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-0f8.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer from an existing buffer&period;
+| xref:boost/asio/buffer-0ff9.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer from an existing buffer&period;
+| xref:boost/asio/buffer-0ffe.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer_sequence_begin-09.adoc[`buffer&lowbar;sequence&lowbar;begin`]
+| Get an iterator to the first element in a buffer sequence&period;
+| xref:boost/asio/buffer_sequence_begin-0d.adoc[`buffer&lowbar;sequence&lowbar;begin`]
+| Get an iterator to the first element in a buffer sequence&period;
+| xref:boost/asio/buffer_sequence_end-05.adoc[`buffer&lowbar;sequence&lowbar;end`]
+| Get an iterator to one past the end element in a buffer sequence&period;
+| xref:boost/asio/buffer_sequence_end-0ae.adoc[`buffer&lowbar;sequence&lowbar;end`]
+| Get an iterator to one past the end element in a buffer sequence&period;
+| xref:boost/asio/operator_plus-00b.adoc[`operator&plus;`]
+| Create a new non&hyphen;modifiable buffer that is offset from the start of another&period;
+| xref:boost/asio/operator_plus-02.adoc[`operator&plus;`]
+| Create a new non&hyphen;modifiable buffer that is offset from the start of another&period;
+| xref:boost/asio/buffer_literals/2function-01.adoc[`buffer&lowbar;literals&colon;&colon;&lt;unnamed function&gt;`]
+| Literal operator for creating const&lowbar;buffer objects from unbounded binary or hexadecimal integer literals&period;
+| xref:boost/asio/buffer_literals/2function-0e.adoc[`buffer&lowbar;literals&colon;&colon;&lt;unnamed function&gt;`]
+| Literal operator for creating const&lowbar;buffer objects from string literals&period;
+|===
+
+== Description
+
+The const&lowbar;buffer class provides a safe representation of a buffer that cannot be modified&period; It does not own the underlying data, and so is cheap to copy or assign&period;
+
+== Accessing Buffer Contents
+The contents of a buffer may be accessed using the `data()` and `size()` member functions&colon;
+
+[,cpp]
+----
+boost::asio::const_buffer b1 = ...;
+std::size_t s1 = b1.size();
+const unsigned char* p1 = static_cast<const unsigned char*>(b1.data());
+----
+The `data()` member function permits violations of type safety, so uses of it in application code should be carefully considered&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

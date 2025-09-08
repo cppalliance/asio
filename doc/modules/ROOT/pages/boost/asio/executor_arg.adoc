@@ -1,0 +1,22 @@
+[#boost-asio-executor_arg]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::executor&lowbar;arg
+:relfileprefix: ../../
+:mrdocs:
+
+A special value, similar to std&colon;&colon;nothrow, used to disambiguate constructors that accept executor arguments&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;uses&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr xref:boost/asio/executor_arg_t.adoc[executor&lowbar;arg&lowbar;t] executor&lowbar;arg = executor&lowbar;arg;
+----
+
+== Description
+
+See boost&colon;&colon;asio&colon;&colon;executor&lowbar;arg&lowbar;t and boost&colon;&colon;asio&colon;&colon;uses&lowbar;executor for more information&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,102 @@
+[#boost-asio-thread_pool-2constructor-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::thread&lowbar;pool
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+Constructs a pool with an automatically determined number of threads&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/thread_pool/2constructor-02.adoc[thread&lowbar;pool]();
+----
+
+[.small]#xref:boost/asio/thread_pool/2constructor-02.adoc[_» more&period;&period;&period;_]#
+
+Constructs a pool with a specified number of threads&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/thread_pool/2constructor-0a.adoc[thread&lowbar;pool](size&lowbar;t num&lowbar;threads);
+----
+
+[.small]#xref:boost/asio/thread_pool/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+Constructs a pool with a specified number of threads&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/thread_pool/2constructor-015.adoc[thread&lowbar;pool](
+    size&lowbar;t num&lowbar;threads,
+    xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker] const& initial&lowbar;services);
+----
+
+[.small]#xref:boost/asio/thread_pool/2constructor-015.adoc[_» more&period;&period;&period;_]#
+
+Constructs a pool with an automatically determined number of threads&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator&gt;
+xref:boost/asio/thread_pool/2constructor-0d.adoc[thread&lowbar;pool](
+    std::allocator&lowbar;arg&lowbar;t,
+    Allocator const& a);
+----
+
+[.small]#xref:boost/asio/thread_pool/2constructor-0d.adoc[_» more&period;&period;&period;_]#
+
+Constructs a pool with a specified number of threads&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator&gt;
+xref:boost/asio/thread_pool/2constructor-01a.adoc[thread&lowbar;pool](
+    std::allocator&lowbar;arg&lowbar;t,
+    Allocator const& a,
+    size&lowbar;t num&lowbar;threads);
+----
+
+[.small]#xref:boost/asio/thread_pool/2constructor-01a.adoc[_» more&period;&period;&period;_]#
+
+Constructs a pool with a specified number of threads&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator&gt;
+xref:boost/asio/thread_pool/2constructor-08.adoc[thread&lowbar;pool](
+    std::allocator&lowbar;arg&lowbar;t,
+    Allocator const& a,
+    size&lowbar;t num&lowbar;threads,
+    xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker] const& initial&lowbar;services);
+----
+
+[.small]#xref:boost/asio/thread_pool/2constructor-08.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *num&lowbar;threads*
+| The number of threads required&period;
+| *initial&lowbar;services*
+| Used to create the initial services&period; The `make` function will be called once at the end of execution&lowbar;context construction&period;
+| *a*
+| An allocator that will be used for allocating objects that are associated with the execution context, such as services and internal state for I&sol;O objects&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

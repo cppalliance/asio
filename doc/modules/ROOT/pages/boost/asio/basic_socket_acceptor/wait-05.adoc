@@ -1,0 +1,49 @@
+[#boost-asio-basic_socket_acceptor-wait-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::wait
+:relfileprefix: ../../../
+:mrdocs:
+
+Wait for the acceptor to become ready to read, ready to write, or to have pending error conditions&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+Wait for the acceptor to become ready to read, ready to write, or to have pending error conditions&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_socket_acceptor/wait-0e.adoc[wait](xref:boost/asio/socket_base/wait_type.adoc[wait&lowbar;type] w);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/wait-0e.adoc[_» more&period;&period;&period;_]#
+
+Wait for the acceptor to become ready to read, ready to write, or to have pending error conditions&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_socket_acceptor/wait-01.adoc[wait](
+    xref:boost/asio/socket_base/wait_type.adoc[wait&lowbar;type] w,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/wait-01.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *w*
+| Specifies the desired acceptor state&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

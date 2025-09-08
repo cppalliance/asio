@@ -1,0 +1,18 @@
+[#boost-asio-basic_socket_streambuf-2constructor-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]::basic&lowbar;socket&lowbar;streambuf
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a basic&lowbar;socket&lowbar;streambuf without establishing a connection&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;socket&lowbar;streambuf();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

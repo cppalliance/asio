@@ -1,0 +1,19 @@
+[#boost-asio-generic-raw_protocol-protocol]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/raw_protocol.adoc[raw&lowbar;protocol]::protocol
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain an identifier for the protocol&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;raw&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+int
+protocol() const noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

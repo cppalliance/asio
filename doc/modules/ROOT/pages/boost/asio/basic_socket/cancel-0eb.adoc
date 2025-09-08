@@ -1,0 +1,29 @@
+[#boost-asio-basic_socket-cancel-0eb]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::cancel
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_socket/cancel-0ec.adoc[cancel]();
+----
+
+[.small]#xref:boost/asio/basic_socket/cancel-0ec.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_socket/cancel-06.adoc[cancel](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket/cancel-06.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

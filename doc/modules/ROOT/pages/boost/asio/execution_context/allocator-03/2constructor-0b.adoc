@@ -1,0 +1,30 @@
+[#boost-asio-execution_context-allocator-03-2constructor-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::xref:boost/asio/execution_context/allocator-03.adoc[allocator]::allocator
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct an allocator that is associated with an execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+explicit
+allocator(xref:boost/asio/execution_context.adoc[execution&lowbar;context]& e) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

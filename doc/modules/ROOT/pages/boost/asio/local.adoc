@@ -1,0 +1,47 @@
+[#boost-asio-local]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::local
+:relfileprefix: ../../
+:mrdocs:
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/local/basic_endpoint.adoc[`basic&lowbar;endpoint`] 
+| Describes an endpoint for a UNIX socket&period;
+| xref:boost/asio/local/datagram_protocol.adoc[`datagram&lowbar;protocol`] 
+| Encapsulates the flags needed for datagram&hyphen;oriented UNIX sockets&period;
+| xref:boost/asio/local/seq_packet_protocol.adoc[`seq&lowbar;packet&lowbar;protocol`] 
+| Encapsulates the flags needed for seq&lowbar;packet UNIX sockets&period;
+| xref:boost/asio/local/stream_protocol.adoc[`stream&lowbar;protocol`] 
+| Encapsulates the flags needed for stream&hyphen;oriented UNIX sockets&period;
+|===
+
+== Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/local/connect_pair-08.adoc[`connect&lowbar;pair`] 
+| Create a pair of connected sockets&period;
+| xref:boost/asio/local/operator_lshift.adoc[`operator&lt;&lt;`] 
+| Output an endpoint as a string&period;
+| xref:boost/asio/local/operator_eq.adoc[`operator&equals;&equals;`] 
+| Compare two endpoints for equality&period;
+| xref:boost/asio/local/operator_not_eq.adoc[`operator!&equals;`] 
+| Compare two endpoints for inequality&period;
+| xref:boost/asio/local/operator_lt.adoc[`operator&lt;`] 
+| Compare endpoints for ordering&period;
+| xref:boost/asio/local/operator_le.adoc[`operator&lt;&equals;`] 
+| Compare endpoints for ordering&period;
+| xref:boost/asio/local/operator_gt.adoc[`operator&gt;`] 
+| Compare endpoints for ordering&period;
+| xref:boost/asio/local/operator_ge.adoc[`operator&gt;&equals;`] 
+| Compare endpoints for ordering&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

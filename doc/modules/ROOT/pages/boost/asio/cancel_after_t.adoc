@@ -1,0 +1,58 @@
+[#boost-asio-cancel_after_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancel&lowbar;after&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` adapter that cancels an operation after a timeout&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;after&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename Clock,
+    typename WaitTraits = xref:boost/asio/wait_traits.adoc[boost::asio::wait&lowbar;traits&lt;Clock&gt;]&gt;
+class cancel&lowbar;after&lowbar;t;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancel_after_t/2constructor.adoc[`cancel&lowbar;after&lowbar;t`]         [.small]#[constructor]#
+| Constructor&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/cancel_after_t/cancel_type_.adoc[`cancel&lowbar;type&lowbar;`] 
+| xref:boost/asio/cancel_after_t/timeout_.adoc[`timeout&lowbar;`] 
+| xref:boost/asio/cancel_after_t/token_.adoc[`token&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancel_after-095.adoc[`cancel&lowbar;after`]
+| Adapt a `completion&lowbar;token` to cancel an operation if not complete before the specified relative timeout has elapsed&period;
+| xref:boost/asio/cancel_after-0b.adoc[`cancel&lowbar;after`]
+| Adapt a `completion&lowbar;token` to cancel an operation if not complete before the specified relative timeout has elapsed&period;
+|===
+
+== Description
+
+The cancel&lowbar;after&lowbar;t class is used to indicate that an asynchronous operation should be cancelled if not complete before the specified duration has elapsed&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

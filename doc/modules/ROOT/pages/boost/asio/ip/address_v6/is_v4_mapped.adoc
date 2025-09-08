@@ -1,0 +1,23 @@
+[#boost-asio-ip-address_v6-is_v4_mapped]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]::is&lowbar;v4&lowbar;mapped
+:relfileprefix: ../../../../
+:mrdocs:
+
+Determine whether the address is a mapped IPv4 address&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;v4&lowbar;mapped() const noexcept;
+----
+
+== Return Value
+
+whether the address is a mapped IPv4 address&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

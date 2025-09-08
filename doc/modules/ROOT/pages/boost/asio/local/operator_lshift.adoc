@@ -1,0 +1,45 @@
+[#boost-asio-local-operator_lshift]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::operator&lt;&lt;
+:relfileprefix: ../../../
+:mrdocs:
+
+Output an endpoint as a string&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Protocol&gt;
+std::basic&lowbar;ostream&lt;Elem, Traits&gt;&
+operator&lt;&lt;(
+    std::basic&lowbar;ostream&lt;Elem, Traits&gt;& os,
+    xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint&lt;Protocol&gt;] const& endpoint);
+----
+
+== Description
+
+Used to output a human&hyphen;readable string for a specified endpoint&period;
+
+== Return Value
+
+The output stream&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *os*
+| The output stream to which the string will be written&period;
+| *endpoint*
+| The endpoint to be written&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

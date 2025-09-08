@@ -1,0 +1,27 @@
+[#boost-asio-basic_socket-native_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::native&lowbar;handle
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the native socket representation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket/native_handle_type.adoc[native&lowbar;handle&lowbar;type]
+native&lowbar;handle();
+----
+
+== Description
+
+This function may be used to obtain the underlying representation of the socket&period; This is intended to allow access to native socket functionality that is not otherwise provided&period;
+
+== Return Value
+
+the native socket representation&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

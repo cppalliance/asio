@@ -1,0 +1,23 @@
+[#boost-asio-basic_socket_iostream-socket]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::socket
+:relfileprefix: ../../../
+:mrdocs:
+
+Get a reference to the underlying socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol&gt;]&
+socket();
+----
+
+== Return Value
+
+a reference to the underlying socket&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

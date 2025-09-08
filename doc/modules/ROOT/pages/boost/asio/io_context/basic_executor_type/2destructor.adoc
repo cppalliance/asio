@@ -1,0 +1,18 @@
+[#boost-asio-io_context-basic_executor_type-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type]::&#126;basic&lowbar;executor&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+Destructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;executor&lowbar;type() noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

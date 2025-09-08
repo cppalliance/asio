@@ -1,0 +1,45 @@
+[#boost-asio-multiple_exceptions]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::multiple&lowbar;exceptions
+:relfileprefix: ../../
+:mrdocs:
+
+Exception thrown when there are multiple pending exceptions to rethrow&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;multiple&lowbar;exceptions&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class multiple&lowbar;exceptions
+    : public std::exception
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::exception`
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/multiple_exceptions/2constructor.adoc[`multiple&lowbar;exceptions`]         [.small]#[constructor]#
+| Constructor&period;
+| xref:boost/asio/multiple_exceptions/operator_assign.adoc[`operator&equals;`] 
+| 
+| xref:boost/asio/multiple_exceptions/first_exception.adoc[`first&lowbar;exception`] 
+| Obtain a pointer to the first exception&period;
+| xref:boost/asio/multiple_exceptions/what.adoc[`what`]  [.small]#[virtual]#
+| Obtain message associated with exception&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

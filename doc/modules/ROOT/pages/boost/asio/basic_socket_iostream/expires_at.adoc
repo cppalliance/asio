@@ -1,0 +1,33 @@
+[#boost-asio-basic_socket_iostream-expires_at]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::expires&lowbar;at
+:relfileprefix: ../../../
+:mrdocs:
+
+Set the stream&apos;s expiry time as an absolute time&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+expires&lowbar;at(xref:boost/asio/basic_socket_iostream/time_point.adoc[time&lowbar;point] const& expiry&lowbar;time);
+----
+
+== Description
+
+This function sets the expiry time associated with the stream&period; Stream operations performed after this time (where the operations cannot be completed using the internal buffers) will fail with the error boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *expiry&lowbar;time*
+| The expiry time to be used for the stream&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

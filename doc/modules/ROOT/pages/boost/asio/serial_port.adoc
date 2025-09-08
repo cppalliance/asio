@@ -1,0 +1,18 @@
+[#boost-asio-serial_port]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::serial&lowbar;port
+:relfileprefix: ../../
+:mrdocs:
+
+Typedef for the typical usage of a serial port&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port] serial&lowbar;port;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

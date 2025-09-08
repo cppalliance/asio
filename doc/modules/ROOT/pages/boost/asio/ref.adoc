@@ -1,0 +1,16 @@
+[#boost-asio-ref]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::ref
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;functional&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using std::ref;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

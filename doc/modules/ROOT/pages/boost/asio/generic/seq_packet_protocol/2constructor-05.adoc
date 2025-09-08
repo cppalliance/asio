@@ -1,0 +1,46 @@
+[#boost-asio-generic-seq_packet_protocol-2constructor-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/seq_packet_protocol.adoc[seq&lowbar;packet&lowbar;protocol]::seq&lowbar;packet&lowbar;protocol
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;seq&lowbar;packet&lowbar;protocol&period;hpp&gt;`
+
+Construct a generic protocol object from a specific protocol&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Protocol&gt;
+xref:boost/asio/generic/seq_packet_protocol/2constructor-0c.adoc[seq&lowbar;packet&lowbar;protocol](Protocol const& source&lowbar;protocol);
+----
+
+[.small]#xref:boost/asio/generic/seq_packet_protocol/2constructor-0c.adoc[_» more&period;&period;&period;_]#
+
+Construct a protocol object for a specific address family and protocol&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/generic/seq_packet_protocol/2constructor-0b.adoc[seq&lowbar;packet&lowbar;protocol](
+    int address&lowbar;family,
+    int socket&lowbar;protocol);
+----
+
+[.small]#xref:boost/asio/generic/seq_packet_protocol/2constructor-0b.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `undefined`
+| `bad&lowbar;cast` Thrown if the source protocol is not based around sequenced packets&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,55 @@
+[#boost-asio-windows-basic_object_handle-cancel-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::cancel
+:relfileprefix: ../../../../
+:mrdocs:
+
+Cancel all asynchronous operations associated with the handle&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+Cancel all asynchronous operations associated with the handle&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/windows/basic_object_handle/cancel-0e.adoc[cancel]();
+----
+
+[.small]#xref:boost/asio/windows/basic_object_handle/cancel-0e.adoc[_» more&period;&period;&period;_]#
+
+Cancel all asynchronous operations associated with the handle&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/windows/basic_object_handle/cancel-05.adoc[cancel](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/windows/basic_object_handle/cancel-05.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,59 @@
+[#boost-asio-cancellation_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancellation&lowbar;type
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;type&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum class cancellation&lowbar;type : unsigned int;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`none`
+|
+|`terminal`
+|
+|`partial`
+|
+|`total`
+|
+|`all`
+|
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/operator_not-0b.adoc[`operator!`]
+| Negation operator&period;
+| xref:boost/asio/operator_bitand-03.adoc[`operator&amp;`]
+| Bitwise and operator&period;
+| xref:boost/asio/operator_and_eq-0eb.adoc[`operator&amp;&equals;`]
+| Bitwise and&hyphen;assignment operator&period;
+| xref:boost/asio/operator_xor-06.adoc[`operator&circ;`]
+| Bitwise xor operator&period;
+| xref:boost/asio/operator_xor_eq-03.adoc[`operator&circ;&equals;`]
+| Bitwise xor&hyphen;assignment operator&period;
+| xref:boost/asio/operator_bitor-00.adoc[`operator&verbar;`]
+| Bitwise or operator&period;
+| xref:boost/asio/operator_or_eq-0e.adoc[`operator&verbar;&equals;`]
+| Bitwise or&hyphen;assignment operator&period;
+| xref:boost/asio/operator_bitnot-09.adoc[`operator&#126;`]
+| Bitwise negation operator&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,45 @@
+[#boost-asio-ip-address_v6-scope_id-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6]::scope&lowbar;id
+:relfileprefix: ../../../../
+:mrdocs:
+
+The scope ID of the address&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&period;hpp&gt;`
+
+The scope ID of the address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/scope_id_type.adoc[scope&lowbar;id&lowbar;type]
+xref:boost/asio/ip/address_v6/scope_id-00.adoc[scope&lowbar;id]() const noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address_v6/scope_id-00.adoc[_» more&period;&period;&period;_]#
+
+The scope ID of the address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/ip/address_v6/scope_id-0a.adoc[scope&lowbar;id](xref:boost/asio/ip/scope_id_type.adoc[scope&lowbar;id&lowbar;type] id) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address_v6/scope_id-0a.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *id*
+| The new scope ID&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

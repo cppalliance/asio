@@ -1,0 +1,23 @@
+[#boost-asio-basic_streambuf-capacity]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf]::capacity
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the current capacity of the basic&lowbar;streambuf&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+capacity() const noexcept;
+----
+
+== Return Value
+
+The current total capacity of the streambuf, i&period;e&period; for both the input sequence and output sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

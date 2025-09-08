@@ -1,0 +1,18 @@
+[#boost-asio-ip-tcp-iostream]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/tcp.adoc[tcp]::iostream
+:relfileprefix: ../../../../
+:mrdocs:
+
+The TCP iostream type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;tcp&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream&lt;tcp&gt;] iostream;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

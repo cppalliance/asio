@@ -1,0 +1,17 @@
+[#boost-asio-executor-target_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::target&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+type&lowbar;info const&
+target&lowbar;type() const noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

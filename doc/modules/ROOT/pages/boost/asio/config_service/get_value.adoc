@@ -1,0 +1,24 @@
+[#boost-asio-config_service-get_value]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config_service.adoc[config&lowbar;service]::get&lowbar;value
+:relfileprefix: ../../../
+:mrdocs:
+
+Retrieve a configuration value&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+char const*
+get&lowbar;value(
+    char const* section,
+    char const* key&lowbar;name,
+    char* value,
+    size&lowbar;t value&lowbar;len) const;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

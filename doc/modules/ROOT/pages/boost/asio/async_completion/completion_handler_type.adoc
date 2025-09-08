@@ -1,0 +1,18 @@
+[#boost-asio-async_completion-completion_handler_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_completion.adoc[async&lowbar;completion]::completion&lowbar;handler&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The real handler type to be used for the asynchronous operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef boost::asio::async&lowbar;result&lt;decay&lowbar;t&lt;CompletionToken&gt;, Signatures&period;&period;&period;&gt;::completion&lowbar;handler&lowbar;type completion&lowbar;handler&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

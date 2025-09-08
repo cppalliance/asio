@@ -1,0 +1,43 @@
+[#boost-asio-basic_socket_acceptor-listen-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::listen
+:relfileprefix: ../../../
+:mrdocs:
+
+Place the acceptor into the state where it will listen for new connections&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+listen(int backlog = socket&lowbar;base&colon;&colon;max&lowbar;listen&lowbar;connections);
+----
+
+== Description
+
+This function puts the socket acceptor into the state where it may accept new connections&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *backlog*
+| The maximum length of the queue of pending connections&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

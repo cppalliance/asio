@@ -1,0 +1,76 @@
+[#boost-asio-execution-any_executor-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]&lt;&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;&gt;
+class xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]&lt;&gt;
+    : public &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution/any_executor-07/2constructor-063.adoc[`any&lowbar;executor`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/execution/any_executor-07/operator_assign-0a.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/execution/any_executor-07/equality_helper.adoc[`equality&lowbar;helper`] 
+| 
+| xref:boost/asio/execution/any_executor-07/swap-07.adoc[`swap`] 
+| 
+|===
+
+== Using Declarations
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/any_executor-07/execute.adoc[`execute`] 
+| xref:boost/asio/execution/any_executor-07/operator void(*)(unspecified_bool_type_t).adoc[`operator void(&ast;)(unspecified&lowbar;bool&lowbar;type&lowbar;t)`] 
+| xref:boost/asio/execution/any_executor-07/operator!.adoc[`operator!`] 
+| xref:boost/asio/execution/any_executor-07/target.adoc[`target`] 
+| xref:boost/asio/execution/any_executor-07/target_type.adoc[`target&lowbar;type`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution/operator_not_eq-01.adoc[boost::asio::execution::operator!&equals;]`
+| Inequality operator
+| `xref:boost/asio/execution/operator_not_eq-022.adoc[boost::asio::execution::operator!&equals;]`
+| Inequality operator
+| `xref:boost/asio/execution/operator_not_eq-08.adoc[boost::asio::execution::operator!&equals;]`
+| Inequality operator
+| `xref:boost/asio/execution/operator_eq-03.adoc[boost::asio::execution::operator&equals;&equals;]`
+| Equality operator
+| `xref:boost/asio/execution/operator_eq-0d8.adoc[boost::asio::execution::operator&equals;&equals;]`
+| Equality operator
+| `xref:boost/asio/execution/operator_eq-01.adoc[boost::asio::execution::operator&equals;&equals;]`
+| Equality operator
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

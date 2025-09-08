@@ -1,0 +1,46 @@
+[#boost-asio-windows-basic_object_handle-operator_assign-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+Move&hyphen;assign an object handle from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]&
+xref:boost/asio/windows/basic_object_handle/operator_assign-01.adoc[operator&equals;](xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]&& other);
+----
+
+[.small]#xref:boost/asio/windows/basic_object_handle/operator_assign-01.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign an object handle from a handle of another executor type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]&
+xref:boost/asio/windows/basic_object_handle/operator_assign-00.adoc[operator&equals;](xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle&lt;Executor1&gt;]&& other);
+----
+
+[.small]#xref:boost/asio/windows/basic_object_handle/operator_assign-00.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other object handle object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,43 @@
+[#boost-asio-buffer-045]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new modifiable buffer from an existing buffer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+buffer(
+    xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const& b,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+== Description
+
+[,cpp]
+----
+mutable_buffer(
+    b.data(),
+    min(b.size(), max_size_in_bytes)); 
+----
+== Return Value
+
+A mutable&lowbar;buffer value equivalent to&colon;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *b*
+| Holds a buffer that can be modified&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,16 @@
+[#boost-asio-basic_io_object-029-implementation_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_io_object-029.adoc[basic&lowbar;io&lowbar;object&lt;IoObjectService, true&gt;]::implementation&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;io&lowbar;object&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef service&lowbar;type::implementation&lowbar;type implementation&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,33 @@
+[#boost-asio-basic_serial_port-send_break-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::send&lowbar;break
+:relfileprefix: ../../../
+:mrdocs:
+
+Send a break sequence to the serial port&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+send&lowbar;break(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function causes a break sequence of platform&hyphen;specific duration to be sent out the serial port&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

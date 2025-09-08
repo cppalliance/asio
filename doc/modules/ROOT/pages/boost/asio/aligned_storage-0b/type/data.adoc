@@ -1,0 +1,17 @@
+[#boost-asio-aligned_storage-0b-type-data]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/aligned_storage-0b.adoc[aligned&lowbar;storage&lt;24, 8&gt;]::xref:boost/asio/aligned_storage-0b/type.adoc[type]::data
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&lsqb;&lsqb;alignas&rsqb;&rsqb;
+unsigned char data[24];
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

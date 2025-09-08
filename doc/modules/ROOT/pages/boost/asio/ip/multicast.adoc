@@ -1,0 +1,19 @@
+[#boost-asio-ip-multicast]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::multicast
+:relfileprefix: ../../../
+:mrdocs:
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/multicast/enable_loopback.adoc[`enable&lowbar;loopback`] 
+| xref:boost/asio/ip/multicast/hops.adoc[`hops`] 
+| xref:boost/asio/ip/multicast/join_group.adoc[`join&lowbar;group`] 
+| xref:boost/asio/ip/multicast/leave_group.adoc[`leave&lowbar;group`] 
+| xref:boost/asio/ip/multicast/outbound_interface.adoc[`outbound&lowbar;interface`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

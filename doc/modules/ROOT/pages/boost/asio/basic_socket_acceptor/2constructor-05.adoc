@@ -1,0 +1,35 @@
+[#boost-asio-basic_socket_acceptor-2constructor-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::basic&lowbar;socket&lowbar;acceptor
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;construct a basic&lowbar;socket&lowbar;acceptor from another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;socket&lowbar;acceptor(xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]&& other) noexcept;
+----
+
+== Description
+
+This constructor moves an acceptor from one object to another&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;socket&lowbar;acceptor(const` executor&lowbar;type&amp;) constructor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;socket&lowbar;acceptor object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

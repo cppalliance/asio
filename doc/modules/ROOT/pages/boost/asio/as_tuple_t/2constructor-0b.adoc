@@ -1,0 +1,38 @@
+[#boost-asio-as_tuple_t-2constructor-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/as_tuple_t.adoc[as&lowbar;tuple&lowbar;t]::as&lowbar;tuple&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;as&lowbar;tuple&period;hpp&gt;`
+
+Constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+constexpr
+xref:boost/asio/as_tuple_t/2constructor-0c.adoc[as&lowbar;tuple&lowbar;t](T&& completion&lowbar;token);
+----
+
+[.small]#xref:boost/asio/as_tuple_t/2constructor-0c.adoc[_» more&period;&period;&period;_]#
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/as_tuple_t/2constructor-00.adoc[as&lowbar;tuple&lowbar;t](
+    xref:boost/asio/as_tuple_t/default_constructor_tag.adoc[default&lowbar;constructor&lowbar;tag] = default&lowbar;constructor&lowbar;tag(),
+    CompletionToken token = CompletionToken());
+----
+
+[.small]#xref:boost/asio/as_tuple_t/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,75 @@
+[#boost-asio-basic_random_access_file]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;random&lowbar;access&lowbar;file
+:relfileprefix: ../../
+:mrdocs:
+
+Provides random&hyphen;access file functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;random&lowbar;access&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;random&lowbar;access&lowbar;file
+    : public xref:boost/asio/basic_file.adoc[basic&lowbar;file&lt;Executor&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_file.adoc[basic&lowbar;file&lt;Executor&gt;]`
+| Provides file functionality&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_random_access_file/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the file type to another executor&period;
+| xref:boost/asio/basic_random_access_file/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_random_access_file/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_random_access_file/2constructor-0db.adoc[`basic&lowbar;random&lowbar;access&lowbar;file`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_random_access_file/2destructor.adoc[`&#126;basic&lowbar;random&lowbar;access&lowbar;file`] [.small]#[destructor]#
+| Destroys the file&period;
+| xref:boost/asio/basic_random_access_file/operator_assign-0e.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/basic_random_access_file/async_read_some_at.adoc[`async&lowbar;read&lowbar;some&lowbar;at`] 
+| Start an asynchronous read at the specified offset&period;
+| xref:boost/asio/basic_random_access_file/async_write_some_at.adoc[`async&lowbar;write&lowbar;some&lowbar;at`] 
+| Start an asynchronous write at the specified offset&period;
+| xref:boost/asio/basic_random_access_file/read_some_at-0c.adoc[`read&lowbar;some&lowbar;at`] 
+| Read some data from the handle at the specified offset&period;
+| xref:boost/asio/basic_random_access_file/write_some_at-0d.adoc[`write&lowbar;some&lowbar;at`] 
+| Write some data to the handle at the specified offset&period;
+|===
+
+== Description
+
+The basic&lowbar;random&lowbar;access&lowbar;file class template provides asynchronous and blocking random&hyphen;access file functionality&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+Synchronous `read&lowbar;some&lowbar;at` and `write&lowbar;some&lowbar;at` operations are thread safe with respect to each other, if the underlying operating system calls are also thread safe&period; This means that it is permitted to perform concurrent calls to these synchronous operations on a single file object&period; Other synchronous operations, such as `open` or `close,` are not thread safe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

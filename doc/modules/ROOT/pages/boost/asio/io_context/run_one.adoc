@@ -1,0 +1,30 @@
+[#boost-asio-io_context-run_one]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::run&lowbar;one
+:relfileprefix: ../../../
+:mrdocs:
+
+Run the io&lowbar;context object&apos;s event processing loop to execute at most one handler&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/io_context/count_type.adoc[count&lowbar;type]
+run&lowbar;one();
+----
+
+== Description
+
+The run&lowbar;one() function blocks until one handler has been dispatched, or until the io&lowbar;context has been stopped&period;
+
+[NOTE]
+Calling the run&lowbar;one() function from a thread that is currently calling one of run(), run&lowbar;one(), run&lowbar;for(), run&lowbar;until(), poll() or poll&lowbar;one() on the same io&lowbar;context object may introduce the potential for deadlock&period; It is the caller&apos;s responsibility to avoid this&period;
+
+== Return Value
+
+The number of handlers that were executed&period; A zero return value implies that the io&lowbar;context object is stopped (the stopped() function returns `true)&period;` Subsequent calls to run(), run&lowbar;one(), poll() or poll&lowbar;one() will return immediately unless there is a prior call to restart()&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

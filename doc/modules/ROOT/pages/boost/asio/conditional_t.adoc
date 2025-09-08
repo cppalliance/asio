@@ -1,0 +1,20 @@
+[#boost-asio-conditional_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::conditional&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    bool C,
+    typename T,
+    typename U&gt;
+using conditional&lowbar;t = std::conditional&lt;C, T, U&gt;::type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

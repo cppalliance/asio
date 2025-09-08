@@ -1,0 +1,31 @@
+[#boost-asio-serial_port_base-flow_control-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]::xref:boost/asio/serial_port_base/flow_control.adoc[flow&lowbar;control]::type
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum type;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`none`
+|
+|`software`
+|
+|`hardware`
+|
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

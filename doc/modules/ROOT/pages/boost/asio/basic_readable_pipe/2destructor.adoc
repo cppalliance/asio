@@ -1,0 +1,22 @@
+[#boost-asio-basic_readable_pipe-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_readable_pipe.adoc[basic&lowbar;readable&lowbar;pipe]::&#126;basic&lowbar;readable&lowbar;pipe
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys the pipe&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;readable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;readable&lowbar;pipe();
+----
+
+== Description
+
+This function destroys the pipe, cancelling any outstanding asynchronous wait operations associated with the pipe as if by calling `cancel&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

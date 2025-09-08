@@ -1,0 +1,18 @@
+[#boost-asio-ip-udp-socket]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/udp.adoc[udp]::socket
+:relfileprefix: ../../../../
+:mrdocs:
+
+The UDP socket type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;udp&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket&lt;udp&gt;] socket;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

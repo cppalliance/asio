@@ -1,0 +1,30 @@
+[#boost-asio-buffered_write_stream-async_flush]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_write_stream.adoc[buffered&lowbar;write&lowbar;stream]::async&lowbar;flush
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous flush&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename WriteHandler = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteHandler,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+          declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;buffered&lowbar;flush&lt;Stream&gt;&gt;(),
+          handler, declval&lt;detail&colon;&colon;buffered&lowbar;stream&lowbar;storage&ast;&gt;()))
+async&lowbar;flush(WriteHandler&& handler = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+== Description
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code, std::size_t) 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

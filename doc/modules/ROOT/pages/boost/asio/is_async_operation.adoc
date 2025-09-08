@@ -1,0 +1,30 @@
+[#boost-asio-is_async_operation]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;async&lowbar;operation
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Args&gt;
+struct is&lowbar;async&lowbar;operation
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

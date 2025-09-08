@@ -1,0 +1,45 @@
+[#boost-asio-associator-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associator-0a1.adoc[associator]&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;bind&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    typename&gt; typename Associator,
+    typename Handler,
+    typename Arg1,
+    typename Arg2,
+    typename Arg3,
+    typename DefaultCandidate&gt;
+struct xref:boost/asio/associator-0a1.adoc[associator]&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;
+    : Associator&lt;Handler, DefaultCandidate&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `Associator&lt;Handler, DefaultCandidate&gt;`
+| 
+|===
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/associator-08/get-03.adoc[`get`] 
+| xref:boost/asio/associator-08/get-08.adoc[`get`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

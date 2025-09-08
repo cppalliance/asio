@@ -1,0 +1,16 @@
+[#boost-asio-ip-basic_resolver_iterator-values_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]::values&lowbar;
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_iterator/values_ptr_type.adoc[values&lowbar;ptr&lowbar;type] values&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

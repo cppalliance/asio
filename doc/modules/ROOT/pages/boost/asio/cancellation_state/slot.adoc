@@ -1,0 +1,28 @@
+[#boost-asio-cancellation_state-slot]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_state.adoc[cancellation&lowbar;state]::slot
+:relfileprefix: ../../../
+:mrdocs:
+
+Returns the single child slot associated with the state&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot]
+slot() const noexcept;
+----
+
+== Description
+
+This sub&hyphen;slot is used with the operations that are being composed&period;
+
+== Return Value
+
+the single child slot associated with the state&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

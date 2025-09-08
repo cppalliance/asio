@@ -1,0 +1,18 @@
+[#boost-asio-basic_seq_packet_socket-rebind_executor-other]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_seq_packet_socket.adoc[basic&lowbar;seq&lowbar;packet&lowbar;socket]::xref:boost/asio/basic_seq_packet_socket/rebind_executor.adoc[rebind&lowbar;executor]::other
+:relfileprefix: ../../../../
+:mrdocs:
+
+The socket type when rebound to the specified executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;seq&lowbar;packet&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_seq_packet_socket.adoc[basic&lowbar;seq&lowbar;packet&lowbar;socket&lt;Protocol, Executor1&gt;] other;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

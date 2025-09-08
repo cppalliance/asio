@@ -1,0 +1,29 @@
+[#boost-asio-prepend]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::prepend
+:relfileprefix: ../../
+:mrdocs:
+
+Completion token type used to specify that the completion handler arguments should be passed additional values before the results of the operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;prepend&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename&period;&period;&period; Values&gt;
+constexpr
+xref:boost/asio/prepend_t.adoc[prepend&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, decay&lowbar;t&lt;Values&gt;&period;&period;&period;&gt;]
+prepend(
+    CompletionToken&& completion&lowbar;token,
+    Values&period;&period;&period;&&&period;&period;&period; values);
+----
+
+== Return Value
+
+Completion token type used to specify that the completion handler arguments should be passed additional values before the results of the operation&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

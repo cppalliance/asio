@@ -1,0 +1,22 @@
+[#boost-asio-basic_stream_socket-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]::&#126;basic&lowbar;stream&lowbar;socket
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys the socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;stream&lowbar;socket();
+----
+
+== Description
+
+This function destroys the socket, cancelling any outstanding asynchronous operations associated with the socket as if by calling `cancel&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

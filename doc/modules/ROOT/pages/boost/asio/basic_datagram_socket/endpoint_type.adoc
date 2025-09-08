@@ -1,0 +1,18 @@
+[#boost-asio-basic_datagram_socket-endpoint_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::endpoint&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The endpoint type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef Protocol::endpoint endpoint&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

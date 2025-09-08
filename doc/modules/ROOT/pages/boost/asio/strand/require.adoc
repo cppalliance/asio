@@ -1,0 +1,36 @@
+[#boost-asio-strand-require]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::require
+:relfileprefix: ../../../
+:mrdocs:
+
+Forward a requirement to the underlying executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+xref:boost/asio/strand.adoc[strand&lt;decay&lowbar;t&lt;require&lowbar;result&lowbar;t&lt;Executor const&, Property&gt;&gt;&gt;]
+require(Property const& p) noexcept(is&lowbar;nothrow&lowbar;require&lt;const Executor &amp;, Property&gt;&colon;&colon;value);
+----
+
+== Description
+
+Do not call this function directly&period; It is intended for use with the boost&colon;&colon;asio&colon;&colon;require customisation point&period;
+
+For example&colon;
+
+[,cpp]
+----
+boost::asio::strand<my_executor_type> ex1 = ...;
+auto ex2 = boost::asio::require(ex1,
+    boost::asio::execution::blocking.never); 
+----
+== Return Value
+
+Provides serialised function invocation for any executor type&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

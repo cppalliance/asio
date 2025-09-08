@@ -1,0 +1,30 @@
+[#boost-asio-is_nothrow_require]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;nothrow&lowbar;require
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;require&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Properties&gt;
+struct is&lowbar;nothrow&lowbar;require
+    : integral&lowbar;constant&lt;bool, boost&lowbar;asio&lowbar;require&lowbar;fn&colon;&colon;call&lowbar;traits&lt;require&lowbar;t, T, void (Properties&period;&period;&period;)&gt;&colon;&colon;is&lowbar;noexcept&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `integral&lowbar;constant&lt;bool, boost&lowbar;asio&lowbar;require&lowbar;fn&colon;&colon;call&lowbar;traits&lt;require&lowbar;t, T, void (Properties&period;&period;&period;)&gt;&colon;&colon;is&lowbar;noexcept&gt;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

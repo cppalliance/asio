@@ -1,0 +1,27 @@
+[#boost-asio-is_read_buffered]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;read&lowbar;buffered
+:relfileprefix: ../../
+:mrdocs:
+
+The is&lowbar;read&lowbar;buffered class is a traits class that may be used to determine whether a stream type supports buffering of read data&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;is&lowbar;read&lowbar;buffered&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Stream&gt;
+class is&lowbar;read&lowbar;buffered;
+----
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/is_read_buffered/value.adoc[`value`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

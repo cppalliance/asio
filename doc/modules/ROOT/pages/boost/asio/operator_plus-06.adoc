@@ -1,0 +1,37 @@
+[#boost-asio-operator_plus-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&plus;
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new modifiable buffer that is offset from the start of another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer]
+operator&plus;(
+    size&lowbar;t n,
+    xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer] const& b) noexcept;
+----
+
+== Return Value
+
+Holds a registered buffer over modifiable data&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *n*
+| The left operand
+| *b*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

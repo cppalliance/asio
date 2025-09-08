@@ -1,0 +1,37 @@
+[#boost-asio-any_io_executor-require-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]::require
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain a polymorphic wrapper with the specified property&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;io&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]
+require(
+    Property const& p,
+    int = 0);
+----
+
+== Description
+
+Do not call this function directly&period; It is intended for use with the boost&colon;&colon;asio&colon;&colon;require and boost&colon;&colon;asio&colon;&colon;prefer customisation points&period;
+
+For example&colon;
+
+[,cpp]
+----
+any_io_executor ex = ...;
+auto ex2 = boost::asio::require(ex, execution::blocking.possibly); 
+----
+== Return Value
+
+Polymorphic executor type for use with I&sol;O objects&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

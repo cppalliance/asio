@@ -1,0 +1,57 @@
+[#boost-asio-ip-resolver_query_base]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::resolver&lowbar;query&lowbar;base
+:relfileprefix: ../../../
+:mrdocs:
+
+The resolver&lowbar;query&lowbar;base class is used as a base for the basic&lowbar;resolver&lowbar;query class templates to provide a common place to define the flag constants&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;resolver&lowbar;query&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class resolver&lowbar;query&lowbar;base
+    : public xref:boost/asio/ip/resolver_base.adoc[resolver&lowbar;base]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/resolver_base.adoc[resolver&lowbar;base]`
+| The resolver&lowbar;base class is used as a base for the basic&lowbar;resolver class templates to provide a common place to define the flag constants&period;
+|===
+
+== Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/resolver_base/flags.adoc[`flags`] 
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/resolver_query_base/2destructor.adoc[`&#126;resolver&lowbar;query&lowbar;base`] [.small]#[destructor]#
+| Protected destructor to prevent deletion through this type&period;
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_query.adoc[`basic&lowbar;resolver&lowbar;query`]
+| An query to be passed to a resolver&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

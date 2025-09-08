@@ -1,0 +1,17 @@
+[#boost-asio-buffer_literals]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;literals
+:relfileprefix: ../../
+:mrdocs:
+
+== Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffer_literals/2function-00.adoc[`Unnamed overloads`] 
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

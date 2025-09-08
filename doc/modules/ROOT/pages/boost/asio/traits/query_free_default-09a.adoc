@@ -1,0 +1,36 @@
+[#boost-asio-traits-query_free_default-09a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/query_free_default-095.adoc[query&lowbar;free&lowbar;default]&lt;T, xref:boost/asio/execution/mapping_t.adoc[execution::mapping&lowbar;t]&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;mapping&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+requires !can&lowbar;query&lt;T, execution&colon;&colon;mapping&lowbar;t&colon;&colon;thread&lowbar;t&gt;&colon;&colon;value
+      &amp;&amp; can&lowbar;query&lt;T, execution&colon;&colon;mapping&lowbar;t&colon;&colon;new&lowbar;thread&lowbar;t&gt;&colon;&colon;value
+struct xref:boost/asio/traits/query_free_default-095.adoc[query&lowbar;free&lowbar;default]&lt;T, xref:boost/asio/execution/mapping_t.adoc[execution::mapping&lowbar;t]&gt;;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/traits/query_free_default-09a/result_type.adoc[`result&lowbar;type`] 
+|===
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/traits/query_free_default-09a/is_noexcept.adoc[`is&lowbar;noexcept`] 
+| xref:boost/asio/traits/query_free_default-09a/is_valid.adoc[`is&lowbar;valid`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

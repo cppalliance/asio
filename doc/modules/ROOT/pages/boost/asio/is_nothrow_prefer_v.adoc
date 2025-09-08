@@ -1,0 +1,19 @@
+[#boost-asio-is_nothrow_prefer_v]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;nothrow&lowbar;prefer&lowbar;v
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;prefer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Properties&gt;
+constexpr bool is&lowbar;nothrow&lowbar;prefer&lowbar;v = is&lowbar;nothrow&lowbar;prefer&lt;T, Properties&period;&period;&period;&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

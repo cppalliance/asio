@@ -1,0 +1,55 @@
+[#boost-asio-basic_io_object-029]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_io_object-027.adoc[basic&lowbar;io&lowbar;object]&lt;IoObjectService, true&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;io&lowbar;object&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename IoObjectService&gt;
+class xref:boost/asio/basic_io_object-027.adoc[basic&lowbar;io&lowbar;object]&lt;IoObjectService, true&gt;;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/basic_io_object-029/executor_type.adoc[`executor&lowbar;type`] 
+| xref:boost/asio/basic_io_object-029/implementation_type.adoc[`implementation&lowbar;type`] 
+| xref:boost/asio/basic_io_object-029/service_type.adoc[`service&lowbar;type`] 
+|===
+
+== Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/basic_io_object-029/get_executor.adoc[`get&lowbar;executor`] 
+| xref:boost/asio/basic_io_object-029/get_io_context.adoc[`get&lowbar;io&lowbar;context`] 
+| xref:boost/asio/basic_io_object-029/get_io_service.adoc[`get&lowbar;io&lowbar;service`] 
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_io_object-029/2constructor-07c.adoc[`basic&lowbar;io&lowbar;object`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_io_object-029/2destructor.adoc[`&#126;basic&lowbar;io&lowbar;object`] [.small]#[destructor]#
+| Destructor
+| xref:boost/asio/basic_io_object-029/operator_assign.adoc[`operator&equals;`] 
+| Move assignment operator
+| xref:boost/asio/basic_io_object-029/get_implementation-0a.adoc[`get&lowbar;implementation`] 
+| 
+| xref:boost/asio/basic_io_object-029/get_service-02.adoc[`get&lowbar;service`] 
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

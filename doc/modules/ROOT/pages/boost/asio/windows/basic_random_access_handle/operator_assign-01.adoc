@@ -1,0 +1,40 @@
+[#boost-asio-windows-basic_random_access_handle-operator_assign-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Move&hyphen;assign a random&hyphen;access handle from another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;random&lowbar;access&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle]&
+operator&equals;(xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle]&& other);
+----
+
+== Description
+
+This assignment operator moves a random&hyphen;access handle from one object to another&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;random&lowbar;access&lowbar;handle(const` executor&lowbar;type&amp;) constructor&period;
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other random&hyphen;access handle object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

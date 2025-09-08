@@ -1,0 +1,23 @@
+[#boost-asio-system_context-stopped]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/system_context.adoc[system&lowbar;context]::stopped
+:relfileprefix: ../../../
+:mrdocs:
+
+Determine whether the system thread pool has been stopped&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;system&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+stopped() const noexcept;
+----
+
+== Return Value
+
+whether the system thread pool has been stopped&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

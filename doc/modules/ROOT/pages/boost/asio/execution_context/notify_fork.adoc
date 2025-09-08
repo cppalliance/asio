@@ -1,0 +1,65 @@
+[#boost-asio-execution_context-notify_fork]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::notify&lowbar;fork
+:relfileprefix: ../../../
+:mrdocs:
+
+Notify the execution&lowbar;context of a fork&hyphen;related event&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+notify&lowbar;fork(xref:boost/asio/execution_context/fork_event.adoc[fork&lowbar;event] event);
+----
+
+== Description
+
+This function is used to inform the execution&lowbar;context that the process is about to fork, or has just forked&period; This allows the execution&lowbar;context, and the services it contains, to perform any necessary housekeeping to ensure correct operation following a fork&period;
+
+This function must not be called while any other execution&lowbar;context function, or any function associated with the execution&lowbar;context&apos;s derived class, is being called in another thread&period; It is, however, safe to call this function from within a completion handler, provided no other thread is accessing the execution&lowbar;context or its derived class&period;
+
+== Example
+The following code illustrates how to incorporate the notify&lowbar;fork() function&colon;
+
+[,cpp]
+----
+my_execution_context.notify_fork(execution_context::fork_prepare);
+if (fork() == 0)
+{
+  // This is the child process.
+  my_execution_context.notify_fork(execution_context::fork_child);
+}
+else
+{
+  // This is the parent process.
+  my_execution_context.notify_fork(execution_context::fork_parent);
+} 
+----
+[NOTE]
+For each service object `svc` in the execution&lowbar;context set, performs &period; When processing the fork&lowbar;prepare event, services are visited in reverse order of the beginning of service object lifetime&period; Otherwise, services are visited in order of the beginning of service object lifetime&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; If the notification fails the execution&lowbar;context object should no longer be used and should be destroyed&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *event*
+| A fork&hyphen;related event&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

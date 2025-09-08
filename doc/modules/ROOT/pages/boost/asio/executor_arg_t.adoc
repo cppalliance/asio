@@ -1,0 +1,32 @@
+[#boost-asio-executor_arg_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::executor&lowbar;arg&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A special type, similar to std&colon;&colon;nothrow&lowbar;t, used to disambiguate constructors that accept executor arguments&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;uses&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct executor&lowbar;arg&lowbar;t;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/executor_arg_t/2constructor.adoc[`executor&lowbar;arg&lowbar;t`]         [.small]#[constructor]#
+| Constructor&period;
+|===
+
+== Description
+
+The executor&lowbar;arg&lowbar;t struct is an empty structure type used as a unique type to disambiguate constructor and function overloading&period; Specifically, some types have constructors with executor&lowbar;arg&lowbar;t as the first argument, immediately followed by an argument of a type that satisfies the Executor type requirements&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

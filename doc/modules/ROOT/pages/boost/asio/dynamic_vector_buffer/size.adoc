@@ -1,0 +1,23 @@
+[#boost-asio-dynamic_vector_buffer-size]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer]::size
+:relfileprefix: ../../../
+:mrdocs:
+
+*DynamicBuffer&lowbar;v1&colon;* Get the size of the input sequence&period; *DynamicBuffer&lowbar;v2&colon;* Get the current size of the underlying memory&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+size() const noexcept;
+----
+
+== Return Value
+
+*DynamicBuffer&lowbar;v1* The current size of the input sequence&period; *DynamicBuffer&lowbar;v2&colon;* The current size of the underlying vector if less than max&lowbar;size()&period; Otherwise returns max&lowbar;size()&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

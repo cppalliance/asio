@@ -1,0 +1,52 @@
+[#boost-asio-registered_buffer_id]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::registered&lowbar;buffer&lowbar;id
+:relfileprefix: ../../
+:mrdocs:
+
+Type used to identify a registered buffer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class registered&lowbar;buffer&lowbar;id;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/registered_buffer_id/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| The native buffer identifier type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/registered_buffer_id/2constructor.adoc[`registered&lowbar;buffer&lowbar;id`]         [.small]#[constructor]#
+| Default constructor creates an invalid registered buffer identifier&period;
+| xref:boost/asio/registered_buffer_id/native_handle.adoc[`native&lowbar;handle`] 
+| Get the native buffer identifier type&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/operator_not_eq-011.adoc[boost::asio::operator!&equals;]`
+| Compare two IDs for equality&period;
+| `xref:boost/asio/operator_eq-051.adoc[boost::asio::operator&equals;&equals;]`
+| Compare two IDs for equality&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

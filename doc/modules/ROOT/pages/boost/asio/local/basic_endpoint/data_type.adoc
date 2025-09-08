@@ -1,0 +1,16 @@
+[#boost-asio-local-basic_endpoint-data_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint]::data&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef &sol;&ast; implementation-defined &ast;&sol; data&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

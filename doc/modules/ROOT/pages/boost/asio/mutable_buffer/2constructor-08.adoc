@@ -1,0 +1,28 @@
+[#boost-asio-mutable_buffer-2constructor-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]::mutable&lowbar;buffer
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a buffer from a span of bytes&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    size&lowbar;t&gt; typename Span,
+    typename T,
+    size&lowbar;t Extent&gt;
+mutable&lowbar;buffer(
+    Span&lt;T, Extent&gt; const& span,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

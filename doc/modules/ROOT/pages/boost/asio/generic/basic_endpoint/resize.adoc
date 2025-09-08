@@ -1,0 +1,19 @@
+[#boost-asio-generic-basic_endpoint-resize]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint]::resize
+:relfileprefix: ../../../../
+:mrdocs:
+
+Set the underlying size of the endpoint in the native type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+resize(size&lowbar;t new&lowbar;size);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

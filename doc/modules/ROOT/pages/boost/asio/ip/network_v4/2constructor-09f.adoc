@@ -1,0 +1,30 @@
+[#boost-asio-ip-network_v4-2constructor-09f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]::network&lowbar;v4
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct a network based on the specified address and prefix length&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+network&lowbar;v4(
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& addr,
+    unsigned short prefix&lowbar;len);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *addr*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

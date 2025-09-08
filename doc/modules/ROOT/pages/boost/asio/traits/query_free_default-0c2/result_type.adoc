@@ -1,0 +1,16 @@
+[#boost-asio-traits-query_free_default-0c2-result_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/query_free_default-0c2.adoc[query&lowbar;free&lowbar;default&lt;T, execution::blocking&lowbar;t&gt;]::result&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;blocking&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/execution/blocking_t.adoc[execution::blocking&lowbar;t] result&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,16 @@
+[#boost-asio-stream_errc]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::stream&lowbar;errc
+:relfileprefix: ../../
+:mrdocs:
+
+== Using Declarations
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/stream_errc/eof.adoc[`eof`] 
+| xref:boost/asio/stream_errc/not_found.adoc[`not&lowbar;found`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

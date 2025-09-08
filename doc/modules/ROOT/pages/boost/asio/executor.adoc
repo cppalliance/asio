@@ -1,0 +1,79 @@
+[#boost-asio-executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::executor
+:relfileprefix: ../../
+:mrdocs:
+
+Polymorphic wrapper for executors&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class executor;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/executor/unspecified_bool_type_t.adoc[`unspecified&lowbar;bool&lowbar;type&lowbar;t`] 
+| xref:boost/asio/executor/unspecified_bool_type.adoc[`unspecified&lowbar;bool&lowbar;type`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/executor/2constructor-0a.adoc[`executor`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/executor/2destructor.adoc[`&#126;executor`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/executor/operator_assign-0d.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/executor/context.adoc[`context`] 
+| Obtain the underlying execution context&period;
+| xref:boost/asio/executor/defer.adoc[`defer`] 
+| Request the executor to invoke the given function object&period;
+| xref:boost/asio/executor/dispatch.adoc[`dispatch`] 
+| Request the executor to invoke the given function object&period;
+| xref:boost/asio/executor/on_work_finished.adoc[`on&lowbar;work&lowbar;finished`] 
+| Inform the executor that some work is no longer outstanding&period;
+| xref:boost/asio/executor/on_work_started.adoc[`on&lowbar;work&lowbar;started`] 
+| Inform the executor that it has some outstanding work to do&period;
+| xref:boost/asio/executor/post.adoc[`post`] 
+| Request the executor to invoke the given function object&period;
+| xref:boost/asio/executor/target-0a.adoc[`target`] 
+| Obtain a pointer to the target executor object&period;
+| xref:boost/asio/executor/target_type.adoc[`target&lowbar;type`] 
+| 
+| xref:boost/asio/executor/2conversion.adoc[`operator unspecified&lowbar;bool&lowbar;type`] 
+| Operator to test if the executor contains a valid target&period;
+|===
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/executor/unspecified_bool_true.adoc[`unspecified&lowbar;bool&lowbar;true`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/operator_not_eq-042.adoc[boost::asio::operator!&equals;]`
+| Compare two executors for inequality&period;
+| `xref:boost/asio/operator_eq-00.adoc[boost::asio::operator&equals;&equals;]`
+| Compare two executors for equality&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

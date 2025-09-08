@@ -1,0 +1,33 @@
+[#boost-asio-error-netdb_errors]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/error.adoc[error]::netdb&lowbar;errors
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum netdb&lowbar;errors;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`host&lowbar;not&lowbar;found`
+|Host not found (authoritative)&period;
+|`host&lowbar;not&lowbar;found&lowbar;try&lowbar;again`
+|Host not found (non&hyphen;authoritative)&period;
+|`no&lowbar;data`
+|The query is valid but does not have associated address data&period;
+|`no&lowbar;recovery`
+|A non&hyphen;recoverable error occurred&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

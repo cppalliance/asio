@@ -1,0 +1,36 @@
+[#boost-asio-basic_socket_iostream-error]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::error
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the last error associated with the stream&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code const&
+error() const;
+----
+
+== Description
+
+== Example
+To print the error associated with a failure to establish a connection&colon;
+
+[,cpp]
+----
+tcp::iostream s("www.boost.org", "http");
+if (!s)
+{
+  std::cout << "Error: " << s.error().message() << std::endl;
+} 
+----
+== Return Value
+
+An `error&lowbar;code` corresponding to the last error from the stream&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

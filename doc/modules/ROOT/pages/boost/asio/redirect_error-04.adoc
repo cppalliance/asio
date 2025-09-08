@@ -1,0 +1,26 @@
+[#boost-asio-redirect_error-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::redirect&lowbar;error
+:relfileprefix: ../../
+:mrdocs:
+
+Adapt a `completion&lowbar;token` to capture error&lowbar;code values to a variable&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;redirect&lowbar;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CompletionToken&gt;
+xref:boost/asio/redirect_error_t.adoc[redirect&lowbar;error&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;&gt;]
+redirect&lowbar;error(
+    CompletionToken&& completion&lowbar;token,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Return Value
+
+A `completion&lowbar;token` adapter used to specify that an error produced by an asynchronous operation is captured to an error&lowbar;code variable&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

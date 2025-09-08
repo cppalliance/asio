@@ -1,0 +1,18 @@
+[#boost-asio-allocator_binder-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder]::&#126;allocator&lowbar;binder
+:relfileprefix: ../../../
+:mrdocs:
+
+Destructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;allocator&lowbar;binder();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

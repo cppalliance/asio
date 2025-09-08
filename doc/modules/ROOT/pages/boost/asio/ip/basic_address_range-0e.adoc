@@ -1,0 +1,17 @@
+[#boost-asio-ip-basic_address_range-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::basic&lowbar;address&lowbar;range
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&lowbar;range&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&gt;
+class basic&lowbar;address&lowbar;range;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

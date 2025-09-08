@@ -1,0 +1,16 @@
+[#boost-asio-async_result-070-return_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_result-070.adoc[async&lowbar;result&lt;&sol;&ast; implementation-defined &ast;&sol;, Signatures&period;&period;&period;&gt;]::return&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef &sol;&ast; implementation-defined &ast;&sol; return&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

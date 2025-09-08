@@ -1,0 +1,41 @@
+[#boost-asio-use_service-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::use&lowbar;service
+:relfileprefix: ../../
+:mrdocs:
+
+Obtain the service object corresponding to the given type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Service&gt;
+Service&
+use&lowbar;service(xref:boost/asio/io_context.adoc[io&lowbar;context]& ioc);
+----
+
+== Description
+
+This function is used to locate a service object that corresponds to the given service type&period; If there is no existing implementation of the service, then the io&lowbar;context will create a new instance of the service&period;
+
+[NOTE]
+This overload is preserved for backwards compatibility with services that inherit from io&lowbar;context&colon;&colon;service&period;
+
+== Return Value
+
+The service interface implementing the specified service type&period; Ownership of the service interface is not transferred to the caller&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ioc*
+| The io&lowbar;context object that owns the service&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

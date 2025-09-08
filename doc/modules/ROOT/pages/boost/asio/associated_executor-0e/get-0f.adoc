@@ -1,0 +1,39 @@
+[#boost-asio-associated_executor-0e-get-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_executor-0e.adoc[associated&lowbar;executor&lt;reference&lowbar;wrapper&lt;T&gt;, Executor&gt;]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+Forwards the request to get the executor to the associator specialisation for the unwrapped type `T&period;`
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;executor&period;hpp&gt;`
+
+Forwards the request to get the executor to the associator specialisation for the unwrapped type `T&period;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+xref:boost/asio/associated_executor-0e/type.adoc[type]
+xref:boost/asio/associated_executor-0e/get-05.adoc[get](reference&lowbar;wrapper&lt;T&gt; t) noexcept;
+----
+
+[.small]#xref:boost/asio/associated_executor-0e/get-05.adoc[_» more&period;&period;&period;_]#
+
+Forwards the request to get the executor to the associator specialisation for the unwrapped type `T&period;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+decltype(associated&lowbar;executor&lt;T, Executor&gt;&colon;&colon;get(t&period;get(), ex))
+xref:boost/asio/associated_executor-0e/get-0b.adoc[get](
+    reference&lowbar;wrapper&lt;T&gt; t,
+    Executor const& ex) noexcept;
+----
+
+[.small]#xref:boost/asio/associated_executor-0e/get-0b.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

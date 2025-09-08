@@ -1,0 +1,23 @@
+[#boost-asio-basic_socket_acceptor-get_executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::get&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the executor associated with the object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_acceptor/executor_type.adoc[executor&lowbar;type] const&
+get&lowbar;executor() noexcept;
+----
+
+== Return Value
+
+the executor associated with the object&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

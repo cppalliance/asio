@@ -1,0 +1,19 @@
+[#boost-asio-traits-static_query-02d-value]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/static_query-02d.adoc[static&lowbar;query&lt;T, execution::occupancy&lowbar;t&gt;]::value
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;occupancy&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+static
+xref:boost/asio/traits/static_query-02d/result_type.adoc[result&lowbar;type]
+value();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

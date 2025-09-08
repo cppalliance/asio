@@ -1,0 +1,203 @@
+[#boost-asio-operator_not_eq-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator!&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Inequality operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+Compare two executors for inequality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_not_eq-010.adoc[operator!&equals;](
+    xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& a,
+    xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-010.adoc[_» more&period;&period;&period;_]#
+
+Compare two strands for inequality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_not_eq-06.adoc[operator!&equals;](
+    xref:boost/asio/io_context/strand.adoc[strand] const& a,
+    xref:boost/asio/io_context/strand.adoc[strand] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-06.adoc[_» more&period;&period;&period;_]#
+
+Compare two slots for inequality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_not_eq-0d.adoc[operator!&equals;](
+    xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot] const& lhs,
+    xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-0d.adoc[_» more&period;&period;&period;_]#
+
+Compare two executors for inequality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_not_eq-0f4.adoc[operator!&equals;](
+    xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor] const& lhs,
+    xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-0f4.adoc[_» more&period;&period;&period;_]#
+
+Inequality operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_not_eq-016.adoc[operator!&equals;](
+    std::nullptr&lowbar;t lhs,
+    xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-016.adoc[_» more&period;&period;&period;_]#
+
+Inequality operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_not_eq-02.adoc[operator!&equals;](
+    xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler] const& a,
+    std::nullptr&lowbar;t rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-02.adoc[_» more&period;&period;&period;_]#
+
+Compare two executors for inequality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_not_eq-042.adoc[operator!&equals;](
+    xref:boost/asio/executor.adoc[executor] const& a,
+    xref:boost/asio/executor.adoc[executor] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-042.adoc[_» more&period;&period;&period;_]#
+
+Compare two IDs for equality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_not_eq-011.adoc[operator!&equals;](
+    xref:boost/asio/registered_buffer_id.adoc[registered&lowbar;buffer&lowbar;id] const& lhs,
+    xref:boost/asio/registered_buffer_id.adoc[registered&lowbar;buffer&lowbar;id] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-011.adoc[_» more&period;&period;&period;_]#
+
+Test two iterators for inequality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_not_eq-0be.adoc[operator!&equals;](
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& a,
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& b);
+----
+
+[.small]#xref:boost/asio/operator_not_eq-0be.adoc[_» more&period;&period;&period;_]#
+
+Inequality operator, returns true if the disposition contains an error&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Disposition&gt;
+constexpr
+bool
+xref:boost/asio/operator_not_eq-08.adoc[operator!&equals;](
+    Disposition const& d,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-08.adoc[_» more&period;&period;&period;_]#
+
+Inequality operator, returns true if the disposition contains an error&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Disposition&gt;
+constexpr
+bool
+xref:boost/asio/operator_not_eq-045.adoc[operator!&equals;](
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    Disposition const& d) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-045.adoc[_» more&period;&period;&period;_]#
+
+Inequality operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_not_eq-0fe.adoc[operator!&equals;](
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-0fe.adoc[_» more&period;&period;&period;_]#
+
+Compare two executors for inequality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_not_eq-0b7.adoc[operator!&equals;](
+    xref:boost/asio/thread_pool/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& a,
+    xref:boost/asio/thread_pool/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-0b7.adoc[_» more&period;&period;&period;_]#
+
+Compare two strands for inequality&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/operator_not_eq-014.adoc[operator!&equals;](
+    xref:boost/asio/strand.adoc[strand] const& a,
+    xref:boost/asio/strand.adoc[strand] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-014.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

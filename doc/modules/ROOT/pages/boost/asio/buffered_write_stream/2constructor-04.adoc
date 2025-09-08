@@ -1,0 +1,37 @@
+[#boost-asio-buffered_write_stream-2constructor-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_write_stream.adoc[buffered&lowbar;write&lowbar;stream]::buffered&lowbar;write&lowbar;stream
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct, passing the specified argument to initialise the next layer&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+Construct, passing the specified argument to initialise the next layer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Arg&gt;
+xref:boost/asio/buffered_write_stream/2constructor-0a.adoc[buffered&lowbar;write&lowbar;stream](Arg&& a);
+----
+
+[.small]#xref:boost/asio/buffered_write_stream/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+Construct, passing the specified argument to initialise the next layer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Arg&gt;
+xref:boost/asio/buffered_write_stream/2constructor-08.adoc[buffered&lowbar;write&lowbar;stream](
+    Arg&& a,
+    size&lowbar;t buffer&lowbar;size);
+----
+
+[.small]#xref:boost/asio/buffered_write_stream/2constructor-08.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,47 @@
+[#boost-asio-basic_waitable_timer-cancel]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::cancel
+:relfileprefix: ../../../
+:mrdocs:
+
+Cancel any asynchronous operations that are waiting on the timer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+cancel();
+----
+
+== Description
+
+This function forces the completion of any pending asynchronous wait operations against the timer&period; The handler for each cancelled operation will be invoked with the boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted error code&period;
+
+Cancelling the timer does not change the expiry time&period;
+
+[NOTE]
+If the timer has already expired when cancel() is called, then the handlers for asynchronous wait operations will&colon;
+
+* have already been invoked&semi; or
+* have been queued for invocation in the near future&period;
+
+These handlers can no longer be cancelled, and therefore are passed an error code that indicates the successful completion of the wait operation&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of asynchronous operations that were cancelled&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,28 @@
+[#boost-asio-execution-is_executor-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/is_executor-0f.adoc[is&lowbar;executor]&lt;xref:boost/asio/io_context.adoc[io&lowbar;context]&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;&gt;
+struct xref:boost/asio/execution/is_executor-0f.adoc[is&lowbar;executor]&lt;xref:boost/asio/io_context.adoc[io&lowbar;context]&gt;
+    : std::false&lowbar;type
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::false&lowbar;type`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

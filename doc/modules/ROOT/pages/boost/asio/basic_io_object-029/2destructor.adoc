@@ -1,0 +1,18 @@
+[#boost-asio-basic_io_object-029-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_io_object-029.adoc[basic&lowbar;io&lowbar;object&lt;IoObjectService, true&gt;]::&#126;basic&lowbar;io&lowbar;object
+:relfileprefix: ../../../
+:mrdocs:
+
+Destructor
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;io&lowbar;object&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;io&lowbar;object();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

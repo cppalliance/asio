@@ -1,0 +1,125 @@
+[#boost-asio-basic_raw_socket]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;raw&lowbar;socket
+:relfileprefix: ../../
+:mrdocs:
+
+Provides raw&hyphen;oriented socket functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;raw&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;raw&lowbar;socket
+    : public xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]`
+| Provides socket functionality&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_raw_socket/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the socket type to another executor&period;
+| xref:boost/asio/basic_raw_socket/endpoint_type.adoc[`endpoint&lowbar;type`] 
+| The endpoint type&period;
+| xref:boost/asio/basic_raw_socket/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_raw_socket/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+| xref:boost/asio/basic_raw_socket/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_raw_socket/2constructor-06.adoc[`basic&lowbar;raw&lowbar;socket`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_raw_socket/2destructor.adoc[`&#126;basic&lowbar;raw&lowbar;socket`] [.small]#[destructor]#
+| Destroys the socket&period;
+| xref:boost/asio/basic_raw_socket/operator_assign-04.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/basic_raw_socket/async_receive-0e.adoc[`async&lowbar;receive`] 
+| Start an asynchronous receive on a connected socket&period;
+| xref:boost/asio/basic_raw_socket/async_receive_from-0d9.adoc[`async&lowbar;receive&lowbar;from`] 
+| Start an asynchronous receive&period;
+| xref:boost/asio/basic_raw_socket/async_send-02.adoc[`async&lowbar;send`] 
+| Start an asynchronous send on a connected socket&period;
+| xref:boost/asio/basic_raw_socket/async_send_to-03.adoc[`async&lowbar;send&lowbar;to`] 
+| Start an asynchronous send&period;
+| xref:boost/asio/basic_raw_socket/receive-04.adoc[`receive`] 
+| Receive some data on a connected socket&period;
+| xref:boost/asio/basic_raw_socket/receive_from-04.adoc[`receive&lowbar;from`] 
+| Receive raw data with the endpoint of the sender&period;
+| xref:boost/asio/basic_raw_socket/send-00.adoc[`send`] 
+| Send some data on a connected socket&period;
+| xref:boost/asio/basic_raw_socket/send_to-08.adoc[`send&lowbar;to`] 
+| Send raw data to the specified endpoint&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/async_connect-053.adoc[`async&lowbar;connect`]
+| Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/async_connect-055.adoc[`async&lowbar;connect`]
+| Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/async_connect-08.adoc[`async&lowbar;connect`]
+| Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/async_connect-09.adoc[`async&lowbar;connect`]
+| Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect-02.adoc[`connect`]
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect-051.adoc[`connect`]
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect-05c.adoc[`connect`]
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect-06.adoc[`connect`]
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect-070.adoc[`connect`]
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect-0c.adoc[`connect`]
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect-0d.adoc[`connect`]
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect-0e.adoc[`connect`]
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/local/connect_pair-01.adoc[`local&colon;&colon;connect&lowbar;pair`]
+| Create a pair of connected sockets&period;
+| xref:boost/asio/local/connect_pair-07.adoc[`local&colon;&colon;connect&lowbar;pair`]
+| Create a pair of connected sockets&period;
+|===
+
+== Description
+
+The basic&lowbar;raw&lowbar;socket class template provides asynchronous and blocking raw&hyphen;oriented socket functionality&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+Synchronous `send,` `send&lowbar;to,` `receive,` `receive&lowbar;from,` `connect,` and `shutdown` operations are thread safe with respect to each other, if the underlying operating system calls are also thread safe&period; This means that it is permitted to perform concurrent calls to these synchronous operations on a single socket object&period; Other synchronous operations, such as `open` or `close,` are not thread safe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,40 @@
+[#boost-asio-basic_serial_port-operator_assign-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;assign a basic&lowbar;serial&lowbar;port from another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]&
+operator&equals;(xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]&& other);
+----
+
+== Description
+
+This assignment operator moves a serial port from one object to another&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;serial&lowbar;port(const` executor&lowbar;type&amp;) constructor&period;
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;serial&lowbar;port object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

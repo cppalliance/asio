@@ -1,0 +1,18 @@
+[#boost-asio-windows-object_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::object&lowbar;handle
+:relfileprefix: ../../../
+:mrdocs:
+
+Typedef for the typical usage of an object handle&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;object&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle] object&lowbar;handle;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

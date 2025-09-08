@@ -1,0 +1,24 @@
+[#boost-asio-cancellation_slot-has_handler]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot]::has&lowbar;handler
+:relfileprefix: ../../../
+:mrdocs:
+
+Returns whether the slot is connected and has an installed handler&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;signal&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+has&lowbar;handler() const noexcept;
+----
+
+== Return Value
+
+whether the slot is connected and has an installed handler&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

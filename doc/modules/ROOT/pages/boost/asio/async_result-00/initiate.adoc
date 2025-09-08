@@ -1,0 +1,30 @@
+[#boost-asio-async_result-00-initiate]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_result-00.adoc[async&lowbar;result&lt;allocator&lowbar;binder&lt;T, Allocator&gt;, Signature&gt;]::initiate
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Initiation,
+    typename RawCompletionToken,
+    typename&period;&period;&period; Args&gt;
+static
+decltype(async&lowbar;initiate&lt;
+        conditional&lowbar;t&lt;
+          is&lowbar;const&lt;remove&lowbar;reference&lowbar;t&lt;RawCompletionToken&gt;&gt;&colon;&colon;value, const T, T&gt;,
+        Signature&gt;(
+        declval&lt;init&lowbar;wrapper&lt;decay&lowbar;t&lt;Initiation&gt;&gt;&gt;(),
+        token&period;get(), token&period;get&lowbar;allocator(), static&lowbar;cast&lt;Args&amp;&amp;&gt;(args)&period;&period;&period;))
+initiate(
+    Initiation&& initiation,
+    RawCompletionToken&& token,
+    Args&period;&period;&period;&&&period;&period;&period; args);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

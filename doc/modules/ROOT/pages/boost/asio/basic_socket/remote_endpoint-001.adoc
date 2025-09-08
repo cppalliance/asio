@@ -1,0 +1,44 @@
+[#boost-asio-basic_socket-remote_endpoint-001]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::remote&lowbar;endpoint
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the remote endpoint of the socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket/endpoint_type.adoc[endpoint&lowbar;type]
+remote&lowbar;endpoint() const;
+----
+
+== Description
+
+This function is used to obtain the remote endpoint of the socket&period;
+
+== Example
+[,cpp]
+----
+boost::asio::ip::tcp::socket socket(my_context);
+...
+boost::asio::ip::tcp::endpoint endpoint = socket.remote_endpoint();
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+An object that represents the remote endpoint of the socket&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

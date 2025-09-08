@@ -1,0 +1,17 @@
+[#boost-asio-basic_serial_port-assign-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::assign
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+assign(xref:boost/asio/basic_serial_port/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;serial&lowbar;port);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

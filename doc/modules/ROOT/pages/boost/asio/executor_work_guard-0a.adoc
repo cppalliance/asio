@@ -1,0 +1,44 @@
+[#boost-asio-executor_work_guard-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard]&lt;Executor&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&lowbar;work&lowbar;guard&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+requires !is&lowbar;executor&lt;Executor&gt;&colon;&colon;value &amp;&amp; execution&colon;&colon;is&lowbar;executor&lt;Executor&gt;&colon;&colon;value
+class xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard]&lt;Executor&gt;;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/executor_work_guard-0a/executor_type.adoc[`executor&lowbar;type`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/executor_work_guard-0a/2constructor-0c7.adoc[`executor&lowbar;work&lowbar;guard`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/executor_work_guard-0a/2destructor.adoc[`&#126;executor&lowbar;work&lowbar;guard`] [.small]#[destructor]#
+| Destructor
+| xref:boost/asio/executor_work_guard-0a/get_executor.adoc[`get&lowbar;executor`] 
+| 
+| xref:boost/asio/executor_work_guard-0a/owns_work.adoc[`owns&lowbar;work`] 
+| 
+| xref:boost/asio/executor_work_guard-0a/reset.adoc[`reset`] 
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

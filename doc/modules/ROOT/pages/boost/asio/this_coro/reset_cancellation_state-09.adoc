@@ -1,0 +1,23 @@
+[#boost-asio-this_coro-reset_cancellation_state-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/this_coro.adoc[this&lowbar;coro]::reset&lowbar;cancellation&lowbar;state
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename InFilter,
+    typename OutFilter&gt;
+constexpr
+xref:boost/asio/this_coro/reset_cancellation_state_2_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;2&lowbar;t&lt;decay&lowbar;t&lt;InFilter&gt;, decay&lowbar;t&lt;OutFilter&gt;&gt;]
+reset&lowbar;cancellation&lowbar;state(
+    InFilter&& in&lowbar;filter,
+    OutFilter&& out&lowbar;filter);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

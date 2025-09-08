@@ -1,0 +1,46 @@
+[#boost-asio-basic_serial_port-operator_assign-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+Move&hyphen;assign a basic&lowbar;serial&lowbar;port from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]&
+xref:boost/asio/basic_serial_port/operator_assign-01.adoc[operator&equals;](xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]&& other);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/operator_assign-01.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign a basic&lowbar;serial&lowbar;port from a serial port of another executor type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]&
+xref:boost/asio/basic_serial_port/operator_assign-0d.adoc[operator&equals;](xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port&lt;Executor1&gt;]&& other);
+----
+
+[.small]#xref:boost/asio/basic_serial_port/operator_assign-0d.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;serial&lowbar;port object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

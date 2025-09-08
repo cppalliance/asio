@@ -1,0 +1,37 @@
+[#boost-asio-generic-operator_eq-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::operator&equals;&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Compare two protocols for equality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;datagram&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+operator&equals;&equals;(
+    xref:boost/asio/generic/datagram_protocol.adoc[datagram&lowbar;protocol] const& p1,
+    xref:boost/asio/generic/datagram_protocol.adoc[datagram&lowbar;protocol] const& p2);
+----
+
+== Return Value
+
+`true` if the objects are equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *p1*
+| The left operand
+| *p2*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

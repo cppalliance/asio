@@ -1,0 +1,60 @@
+[#boost-asio-basic_serial_port-write_some-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::write&lowbar;some
+:relfileprefix: ../../../
+:mrdocs:
+
+Write some data to the serial port&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+write&lowbar;some(ConstBufferSequence const& buffers);
+----
+
+== Description
+
+This function is used to write data to the serial port&period; The function call will block until one or more bytes of the data has been written successfully, or until an error occurs&period;
+
+[NOTE]
+The write&lowbar;some operation may not transmit all of the data to the peer&period; Consider using the xref:boost/asio/write-02d.adoc[`write`] function if you need to ensure that all data is written before the blocking operation completes&period;
+
+== Example
+To write a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+basic_serial_port.write_some(boost::asio::buffer(data, size));
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on writing multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; An error code of boost&colon;&colon;asio&colon;&colon;error&colon;&colon;eof indicates that the connection was closed by the peer&period;
+|===
+
+== Return Value
+
+The number of bytes written&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be written to the serial port&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

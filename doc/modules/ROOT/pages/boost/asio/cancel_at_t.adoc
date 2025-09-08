@@ -1,0 +1,58 @@
+[#boost-asio-cancel_at_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancel&lowbar;at&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` adapter that cancels an operation at a given time&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename Clock,
+    typename WaitTraits = xref:boost/asio/wait_traits.adoc[boost::asio::wait&lowbar;traits&lt;Clock&gt;]&gt;
+class cancel&lowbar;at&lowbar;t;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancel_at_t/2constructor.adoc[`cancel&lowbar;at&lowbar;t`]         [.small]#[constructor]#
+| Constructor&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/cancel_at_t/cancel_type_.adoc[`cancel&lowbar;type&lowbar;`] 
+| xref:boost/asio/cancel_at_t/expiry_.adoc[`expiry&lowbar;`] 
+| xref:boost/asio/cancel_at_t/token_.adoc[`token&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancel_at-01.adoc[`cancel&lowbar;at`]
+| Adapt a `completion&lowbar;token` to cancel an operation if not complete by the specified absolute time&period;
+| xref:boost/asio/cancel_at-07.adoc[`cancel&lowbar;at`]
+| Adapt a `completion&lowbar;token` to cancel an operation if not complete by the specified absolute time&period;
+|===
+
+== Description
+
+The cancel&lowbar;at&lowbar;t class is used to indicate that an asynchronous operation should be cancelled if not complete at the specified absolute time&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

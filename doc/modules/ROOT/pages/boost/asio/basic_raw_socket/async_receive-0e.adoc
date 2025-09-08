@@ -1,0 +1,65 @@
+[#boost-asio-basic_raw_socket-async_receive-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_raw_socket.adoc[basic&lowbar;raw&lowbar;socket]::async&lowbar;receive
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous receive on a connected socket&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;raw&lowbar;socket&period;hpp&gt;`
+
+Start an asynchronous receive on a connected socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename MutableBufferSequence,
+    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;ReadToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+          declval&lt;initiate&lowbar;async&lowbar;receive&gt;(), token,
+          buffers, socket&lowbar;base&colon;&colon;message&lowbar;flags(0)))
+xref:boost/asio/basic_raw_socket/async_receive-06.adoc[async&lowbar;receive](
+    MutableBufferSequence const& buffers,
+    ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+[.small]#xref:boost/asio/basic_raw_socket/async_receive-06.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous receive on a connected socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename MutableBufferSequence,
+    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;ReadToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+          declval&lt;initiate&lowbar;async&lowbar;receive&gt;(), token, buffers, flags))
+xref:boost/asio/basic_raw_socket/async_receive-02.adoc[async&lowbar;receive](
+    MutableBufferSequence const& buffers,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags] flags,
+    ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+[.small]#xref:boost/asio/basic_raw_socket/async_receive-02.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more buffers into which the data will be received&period; Although the buffers object may be copied as necessary, ownership of the underlying memory blocks is retained by the caller, which must guarantee that they remain valid until the completion handler is called&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the receive completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| *flags*
+| Flags specifying how the receive call is to be made&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

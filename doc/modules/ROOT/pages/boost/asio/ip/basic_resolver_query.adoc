@@ -1,0 +1,71 @@
+[#boost-asio-ip-basic_resolver_query]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::basic&lowbar;resolver&lowbar;query
+:relfileprefix: ../../../
+:mrdocs:
+
+An query to be passed to a resolver&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;query&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename InternetProtocol&gt;
+class basic&lowbar;resolver&lowbar;query
+    : public xref:boost/asio/ip/resolver_query_base.adoc[resolver&lowbar;query&lowbar;base]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/resolver_query_base.adoc[resolver&lowbar;query&lowbar;base]`
+| The resolver&lowbar;query&lowbar;base class is used as a base for the basic&lowbar;resolver&lowbar;query class templates to provide a common place to define the flag constants&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_query/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type associated with the endpoint query&period;
+|===
+
+== Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/resolver_base/flags.adoc[`flags`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_query/2constructor-01.adoc[`basic&lowbar;resolver&lowbar;query`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/basic_resolver_query/hints.adoc[`hints`] 
+| Get the hints associated with the query&period;
+| xref:boost/asio/ip/basic_resolver_query/host_name.adoc[`host&lowbar;name`] 
+| Get the host name associated with the query&period;
+| xref:boost/asio/ip/basic_resolver_query/service_name.adoc[`service&lowbar;name`] 
+| Get the service name associated with the query&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;basic&lowbar;resolver&lowbar;query class template describes a query that can be passed to a resolver&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

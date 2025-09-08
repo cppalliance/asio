@@ -1,0 +1,38 @@
+[#boost-asio-serial_port_base-character_size]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]::character&lowbar;size
+:relfileprefix: ../../../
+:mrdocs:
+
+Serial port option to permit changing the character size&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class character&lowbar;size;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/serial_port_base/character_size/2constructor.adoc[`character&lowbar;size`]         [.small]#[constructor]#
+| Construct from `unsigned int`
+| xref:boost/asio/serial_port_base/character_size/load.adoc[`load`] 
+| 
+| xref:boost/asio/serial_port_base/character_size/store.adoc[`store`] 
+| 
+| xref:boost/asio/serial_port_base/character_size/value.adoc[`value`] 
+| 
+|===
+
+== Description
+
+Implements changing the character size for a given serial port&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

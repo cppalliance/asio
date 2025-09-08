@@ -1,0 +1,16 @@
+[#boost-asio-cancel_after_timer-timer_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancel_after_timer.adoc[cancel&lowbar;after&lowbar;timer]::timer&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;after&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

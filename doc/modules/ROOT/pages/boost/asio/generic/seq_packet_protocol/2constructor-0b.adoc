@@ -1,0 +1,30 @@
+[#boost-asio-generic-seq_packet_protocol-2constructor-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/seq_packet_protocol.adoc[seq&lowbar;packet&lowbar;protocol]::seq&lowbar;packet&lowbar;protocol
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct a protocol object for a specific address family and protocol&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;seq&lowbar;packet&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+seq&lowbar;packet&lowbar;protocol(
+    int address&lowbar;family,
+    int socket&lowbar;protocol);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *address&lowbar;family*
+| The value to construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

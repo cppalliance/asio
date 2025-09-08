@@ -1,0 +1,28 @@
+[#boost-asio-ip-address_v4-2constructor-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]::address&lowbar;v4
+:relfileprefix: ../../../../
+:mrdocs:
+
+Move constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+address&lowbar;v4(xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]&& other) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

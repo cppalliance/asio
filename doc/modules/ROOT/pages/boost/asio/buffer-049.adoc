@@ -1,0 +1,33 @@
+[#boost-asio-buffer-049]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new modifiable buffer from a span&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    size&lowbar;t&gt; typename Span,
+    typename T,
+    size&lowbar;t Extent&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+buffer(
+    Span&lt;T, Extent&gt; const& span,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,58 @@
+[#boost-asio-executor-operator_assign-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+Assignment operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/executor.adoc[executor]&
+xref:boost/asio/executor/operator_assign-0c.adoc[operator&equals;](xref:boost/asio/executor.adoc[executor] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/executor/operator_assign-0c.adoc[_» more&period;&period;&period;_]#
+
+Move assignment operator
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/executor.adoc[executor]&
+xref:boost/asio/executor/operator_assign-09e.adoc[operator&equals;](xref:boost/asio/executor.adoc[executor]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/executor/operator_assign-09e.adoc[_» more&period;&period;&period;_]#
+
+Assignment operator for nullptr&lowbar;t&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/executor.adoc[executor]&
+xref:boost/asio/executor/operator_assign-092.adoc[operator&equals;](std::nullptr&lowbar;t value) noexcept;
+----
+
+[.small]#xref:boost/asio/executor/operator_assign-092.adoc[_» more&period;&period;&period;_]#
+
+Assignment operator to create a polymorphic wrapper for the specified executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/executor.adoc[executor]&
+xref:boost/asio/executor/operator_assign-01.adoc[operator&equals;](Executor&& e) noexcept;
+----
+
+[.small]#xref:boost/asio/executor/operator_assign-01.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

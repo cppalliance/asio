@@ -1,0 +1,34 @@
+[#boost-asio-config-2constructor-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config.adoc[config]::config
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/config/2constructor-03.adoc[config](xref:boost/asio/config.adoc[config] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/config/2constructor-03.adoc[_» more&period;&period;&period;_]#
+
+Constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/config/2constructor-0a.adoc[config](xref:boost/asio/execution_context.adoc[execution&lowbar;context]& context);
+----
+
+[.small]#xref:boost/asio/config/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

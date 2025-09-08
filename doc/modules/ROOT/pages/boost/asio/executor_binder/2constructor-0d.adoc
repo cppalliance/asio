@@ -1,0 +1,139 @@
+[#boost-asio-executor_binder-2constructor-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor_binder.adoc[executor&lowbar;binder]::executor&lowbar;binder
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/executor_binder/2constructor-04.adoc[executor&lowbar;binder](xref:boost/asio/executor_binder.adoc[executor&lowbar;binder] const& other);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-04.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/executor_binder/2constructor-05.adoc[executor&lowbar;binder](xref:boost/asio/executor_binder.adoc[executor&lowbar;binder]&& other);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-05.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy, but specify a different executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/executor_binder/2constructor-0f.adoc[executor&lowbar;binder](
+    xref:boost/asio/executor_arg_t.adoc[executor&lowbar;arg&lowbar;t],
+    xref:boost/asio/executor_binder/executor_type.adoc[executor&lowbar;type] const& e,
+    xref:boost/asio/executor_binder.adoc[executor&lowbar;binder] const& other);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+
+Move construct the target object, but specify a different executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/executor_binder/2constructor-0ce.adoc[executor&lowbar;binder](
+    xref:boost/asio/executor_arg_t.adoc[executor&lowbar;arg&lowbar;t],
+    xref:boost/asio/executor_binder/executor_type.adoc[executor&lowbar;type] const& e,
+    xref:boost/asio/executor_binder.adoc[executor&lowbar;binder]&& other);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-0ce.adoc[_» more&period;&period;&period;_]#
+
+Construct an executor wrapper for the specified object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+xref:boost/asio/executor_binder/2constructor-0ca.adoc[executor&lowbar;binder](
+    xref:boost/asio/executor_arg_t.adoc[executor&lowbar;arg&lowbar;t],
+    xref:boost/asio/executor_binder/executor_type.adoc[executor&lowbar;type] const& e,
+    U&& u);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-0ca.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy of a different executor wrapper type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherExecutor&gt;
+xref:boost/asio/executor_binder/2constructor-03.adoc[executor&lowbar;binder](
+    xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;U, OtherExecutor&gt;] const& other,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-03.adoc[_» more&period;&period;&period;_]#
+
+Move construct from a different executor wrapper type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherExecutor&gt;
+xref:boost/asio/executor_binder/2constructor-02.adoc[executor&lowbar;binder](
+    xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;U, OtherExecutor&gt;]&& other,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-02.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy of a different executor wrapper type, but specify a different executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherExecutor&gt;
+xref:boost/asio/executor_binder/2constructor-0e.adoc[executor&lowbar;binder](
+    xref:boost/asio/executor_arg_t.adoc[executor&lowbar;arg&lowbar;t],
+    xref:boost/asio/executor_binder/executor_type.adoc[executor&lowbar;type] const& e,
+    xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;U, OtherExecutor&gt;] const& other,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-0e.adoc[_» more&period;&period;&period;_]#
+
+Move construct from a different executor wrapper type, but specify a different executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherExecutor&gt;
+xref:boost/asio/executor_binder/2constructor-00.adoc[executor&lowbar;binder](
+    xref:boost/asio/executor_arg_t.adoc[executor&lowbar;arg&lowbar;t],
+    xref:boost/asio/executor_binder/executor_type.adoc[executor&lowbar;type] const& e,
+    xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;U, OtherExecutor&gt;]&& other,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/executor_binder/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

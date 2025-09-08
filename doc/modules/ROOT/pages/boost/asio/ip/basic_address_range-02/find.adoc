@@ -1,0 +1,33 @@
+[#boost-asio-ip-basic_address_range-02-find]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_address_range-02.adoc[basic&lowbar;address&lowbar;range&lt;address&lowbar;v4&gt;]::find
+:relfileprefix: ../../../../
+:mrdocs:
+
+Find an address in the range&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&lowbar;range&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_address_range-02/iterator.adoc[iterator]
+find(xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& addr) const noexcept;
+----
+
+== Return Value
+
+The type of an iterator that points into the range&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *addr*
+| Implements IP version 4 style addresses&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

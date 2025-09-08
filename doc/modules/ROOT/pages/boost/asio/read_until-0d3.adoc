@@ -1,0 +1,522 @@
+[#boost-asio-read_until-0d3]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read&lowbar;until
+:relfileprefix: ../../
+:mrdocs:
+
+`read&lowbar;until` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;read&lowbar;until&period;hpp&gt;`
+
+Read data into a streambuf until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/read_until-0bd.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    char delim);
+----
+
+[.small]#xref:boost/asio/read_until-0bd.adoc[_» more&period;&period;&period;_]#
+
+Read data into a streambuf until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/read_until-04f.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    std::string const& delim);
+----
+
+[.small]#xref:boost/asio/read_until-04f.adoc[_» more&period;&period;&period;_]#
+
+Read data into a streambuf until some part of the data it contains matches a regular expression&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator,
+    typename Traits&gt;
+size&lowbar;t
+xref:boost/asio/read_until-0dc.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    boost::basic&lowbar;regex&lt;char, Traits&gt; const& expr);
+----
+
+[.small]#xref:boost/asio/read_until-0dc.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2&gt;
+size&lowbar;t
+xref:boost/asio/read_until-065.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    char delim,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-065.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2&gt;
+size&lowbar;t
+xref:boost/asio/read_until-008.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    std::string const& delim,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-008.adoc[_» more&period;&period;&period;_]#
+
+Read data into a streambuf until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/read_until-012.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    char delim,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/read_until-012.adoc[_» more&period;&period;&period;_]#
+
+Read data into a streambuf until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/read_until-007.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    std::string const& delim,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/read_until-007.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until some part of the data it contains matches a regular expression&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename Traits&gt;
+size&lowbar;t
+xref:boost/asio/read_until-018.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    boost::basic&lowbar;regex&lt;char, Traits&gt; const& expr,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-018.adoc[_» more&period;&period;&period;_]#
+
+Read data into a streambuf until a function object indicates a match&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator,
+    typename MatchCondition&gt;
+size&lowbar;t
+xref:boost/asio/read_until-09.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    MatchCondition match&lowbar;condition,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-09.adoc[_» more&period;&period;&period;_]#
+
+Read data into a streambuf until some part of the data it contains matches a regular expression&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator,
+    typename Traits&gt;
+size&lowbar;t
+xref:boost/asio/read_until-05.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    boost::basic&lowbar;regex&lt;char, Traits&gt; const& expr,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/read_until-05.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2&gt;
+size&lowbar;t
+xref:boost/asio/read_until-07a.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    char delim,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-07a.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2&gt;
+size&lowbar;t
+xref:boost/asio/read_until-073.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    std::string const& delim,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-073.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+xref:boost/asio/read_until-0a3.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    char delim,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-0a3.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+xref:boost/asio/read_until-04c.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    std::string const& delim,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-04c.adoc[_» more&period;&period;&period;_]#
+
+This function is used to read data into the specified dynamic buffer sequence until a user&hyphen;defined match condition function object, when applied to the data contained in the dynamic buffer sequence, indicates a successful match&period; The call will block until one of the following conditions is true&colon;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename MatchCondition&gt;
+size&lowbar;t
+xref:boost/asio/read_until-003.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    MatchCondition match&lowbar;condition,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-003.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until some part of the data it contains matches a regular expression&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename Traits&gt;
+size&lowbar;t
+xref:boost/asio/read_until-0e.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    boost::basic&lowbar;regex&lt;char, Traits&gt; const& expr,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-0e.adoc[_» more&period;&period;&period;_]#
+
+Read data into a streambuf until a function object indicates a match&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator,
+    typename MatchCondition&gt;
+size&lowbar;t
+xref:boost/asio/read_until-08.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    MatchCondition match&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-08.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until some part of the data it contains matches a regular expression&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename Traits&gt;
+size&lowbar;t
+xref:boost/asio/read_until-000.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    boost::basic&lowbar;regex&lt;char, Traits&gt; const& expr,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-000.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+xref:boost/asio/read_until-03.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    char delim,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-03.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+xref:boost/asio/read_until-0b0.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    std::string const& delim,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-0b0.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until a function object indicates a match&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename MatchCondition&gt;
+size&lowbar;t
+xref:boost/asio/read_until-069.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    MatchCondition match&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-069.adoc[_» more&period;&period;&period;_]#
+
+This function is used to read data into the specified dynamic buffer sequence until a user&hyphen;defined match condition function object, when applied to the data contained in the dynamic buffer sequence, indicates a successful match&period; The call will block until one of the following conditions is true&colon;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename MatchCondition&gt;
+size&lowbar;t
+xref:boost/asio/read_until-0af.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    MatchCondition match&lowbar;condition,
+    int = 0,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-0af.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until some part of the data it contains matches a regular expression&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename Traits&gt;
+size&lowbar;t
+xref:boost/asio/read_until-017.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    boost::basic&lowbar;regex&lt;char, Traits&gt; const& expr,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-017.adoc[_» more&period;&period;&period;_]#
+
+Read data into a dynamic buffer sequence until a function object indicates a match&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename MatchCondition&gt;
+size&lowbar;t
+xref:boost/asio/read_until-0c.adoc[read&lowbar;until](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    MatchCondition match&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read_until-0c.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+* The number of bytes in the streambuf&apos;s get area up to and including the delimiter&period;
+* The number of bytes in the streambuf&apos;s get area up to and including the substring that matches the regular expression&period;
+* The number of bytes in the dynamic buffer sequence&apos;s get area up to and including the delimiter&period;
+* The number of bytes in the streambuf&apos;s get area up to and including the delimiter&period; Returns 0 if an error occurred&period;
+* The number of bytes in the dynamic buffer sequence&apos;s get area up to and including the substring that matches the regular expression&period;
+* The number of bytes in the streambuf&apos;s get area that have been fully consumed by the match function&period;
+* The number of bytes in the streambuf&apos;s get area up to and including the substring that matches the regular expression&period; Returns 0 if an error occurred&period;
+* The number of bytes in the dynamic buffer sequence&apos;s get area up to and including the delimiter&period; Returns 0 if an error occurred&period;
+* The number of bytes in the dynamic&lowbar;buffer&apos;s get area that have been fully consumed by the match function&period;
+* The number of bytes in the dynamic buffer sequence&apos;s get area up to and including the substring that matches the regular expression&period; Returns 0 if an error occurred&period;
+* The number of bytes in the streambuf&apos;s get area that have been fully consumed by the match function&period; Returns 0 if an error occurred&period;
+* The number of bytes in the dynamic buffer sequence&apos;s get area that have been fully consumed by the match function&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream from which the data is to be read&period; The type must support the SyncReadStream concept&period;
+| *b*
+| A streambuf object into which the data will be read&period;
+| *delim*
+| The delimiter character&period;
+| *expr*
+| The regular expression&period;
+| *buffers*
+| The dynamic buffer sequence into which the data will be read&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+| *match&lowbar;condition*
+| The function object to be called to determine whether a match exists&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

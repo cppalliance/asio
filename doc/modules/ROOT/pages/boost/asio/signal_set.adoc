@@ -1,0 +1,18 @@
+[#boost-asio-signal_set]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::signal&lowbar;set
+:relfileprefix: ../../
+:mrdocs:
+
+Typedef for the typical usage of a signal set&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;signal&lowbar;set&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set] signal&lowbar;set;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

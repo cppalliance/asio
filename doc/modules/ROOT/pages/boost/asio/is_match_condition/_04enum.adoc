@@ -1,0 +1,27 @@
+[#boost-asio-is_match_condition-_04enum]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/is_match_condition.adoc[is&lowbar;match&lowbar;condition]::Unnamed enum
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&lowbar;until&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum Unnamed enum;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`value`
+|
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

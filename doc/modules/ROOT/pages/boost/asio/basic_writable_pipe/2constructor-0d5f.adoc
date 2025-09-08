@@ -1,0 +1,33 @@
+[#boost-asio-basic_writable_pipe-2constructor-0d5f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]::basic&lowbar;writable&lowbar;pipe
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a basic&lowbar;writable&lowbar;pipe without opening it&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;writable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+basic&lowbar;writable&lowbar;pipe(xref:boost/asio/basic_writable_pipe/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+== Description
+
+This constructor creates a pipe without opening it&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the pipe will use, by default, to dispatch handlers for any asynchronous operations performed on the pipe&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

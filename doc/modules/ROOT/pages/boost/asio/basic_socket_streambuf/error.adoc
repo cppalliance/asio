@@ -1,0 +1,23 @@
+[#boost-asio-basic_socket_streambuf-error]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]::error
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the last error associated with the stream buffer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code const&
+error() const;
+----
+
+== Return Value
+
+An `error&lowbar;code` corresponding to the last error from the stream buffer&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,16 @@
+[#boost-asio-socket_errc]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::socket&lowbar;errc
+:relfileprefix: ../../
+:mrdocs:
+
+== Using Declarations
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/socket_errc/already_open.adoc[`already&lowbar;open`] 
+| xref:boost/asio/socket_errc/not_found.adoc[`not&lowbar;found`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

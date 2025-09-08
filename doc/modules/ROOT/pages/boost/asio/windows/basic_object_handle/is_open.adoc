@@ -1,0 +1,23 @@
+[#boost-asio-windows-basic_object_handle-is_open]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::is&lowbar;open
+:relfileprefix: ../../../../
+:mrdocs:
+
+Determine whether the handle is open&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;open() const;
+----
+
+== Return Value
+
+whether the handle is open&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,30 @@
+[#boost-asio-can_query]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::can&lowbar;query
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;query&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Property&gt;
+struct can&lowbar;query
+    : integral&lowbar;constant&lt;bool, boost&lowbar;asio&lowbar;query&lowbar;fn&colon;&colon;call&lowbar;traits&lt;query&lowbar;t, T, void (Property)&gt;&colon;&colon;overload !&equals; boost&lowbar;asio&lowbar;query&lowbar;fn&colon;&colon;ill&lowbar;formed&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `integral&lowbar;constant&lt;bool, boost&lowbar;asio&lowbar;query&lowbar;fn&colon;&colon;call&lowbar;traits&lt;query&lowbar;t, T, void (Property)&gt;&colon;&colon;overload !&equals; boost&lowbar;asio&lowbar;query&lowbar;fn&colon;&colon;ill&lowbar;formed&gt;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

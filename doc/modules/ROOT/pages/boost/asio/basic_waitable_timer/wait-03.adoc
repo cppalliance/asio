@@ -1,0 +1,55 @@
+[#boost-asio-basic_waitable_timer-wait-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::wait
+:relfileprefix: ../../../
+:mrdocs:
+
+Perform a blocking wait on the timer&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+Perform a blocking wait on the timer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_waitable_timer/wait-0f.adoc[wait]();
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/wait-0f.adoc[_» more&period;&period;&period;_]#
+
+Perform a blocking wait on the timer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_waitable_timer/wait-04.adoc[wait](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/wait-04.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

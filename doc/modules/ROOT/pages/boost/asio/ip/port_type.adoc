@@ -1,0 +1,18 @@
+[#boost-asio-ip-port_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::port&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+Type used for storing port numbers&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef std::uint&lowbar;least16&lowbar;t port&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

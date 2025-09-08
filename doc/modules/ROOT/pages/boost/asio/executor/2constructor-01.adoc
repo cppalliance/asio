@@ -1,0 +1,30 @@
+[#boost-asio-executor-2constructor-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a polymorphic executor that moves the target from another polymorphic executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+executor(
+    std::nothrow&lowbar;t,
+    xref:boost/asio/executor.adoc[executor]&& other) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| Polymorphic wrapper for executors&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

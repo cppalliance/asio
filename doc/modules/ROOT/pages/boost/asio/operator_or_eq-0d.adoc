@@ -1,0 +1,50 @@
+[#boost-asio-operator_or_eq-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&verbar;&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Bitwise or&hyphen;assignment operator&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;type&period;hpp&gt;`
+
+Bitwise or&hyphen;assignment operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]&
+xref:boost/asio/operator_or_eq-0e.adoc[operator&verbar;&equals;](
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]& x,
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] y);
+----
+
+[.small]#xref:boost/asio/operator_or_eq-0e.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/file_base/flags.adoc[flags]&
+xref:boost/asio/operator_or_eq-02.adoc[operator&verbar;&equals;](
+    xref:boost/asio/file_base/flags.adoc[flags]& x,
+    xref:boost/asio/file_base/flags.adoc[flags] y);
+----
+
+[.small]#xref:boost/asio/operator_or_eq-02.adoc[_» more&period;&period;&period;_]#
+
+Bitwise or&hyphen;assignment operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t]&
+xref:boost/asio/operator_or_eq-05.adoc[operator&verbar;&equals;](
+    xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t]& x,
+    xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t] y);
+----
+
+[.small]#xref:boost/asio/operator_or_eq-05.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

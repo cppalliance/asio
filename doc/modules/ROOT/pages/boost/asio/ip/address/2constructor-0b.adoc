@@ -1,0 +1,63 @@
+[#boost-asio-ip-address-2constructor-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address.adoc[address]::address
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&period;hpp&gt;`
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address/2constructor-0e.adoc[address]() noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/2constructor-0e.adoc[_» more&period;&period;&period;_]#
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address/2constructor-0f.adoc[address](xref:boost/asio/ip/address.adoc[address] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address/2constructor-0a.adoc[address](xref:boost/asio/ip/address.adoc[address]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+Construct an address from an IPv4 address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address/2constructor-07.adoc[address](xref:boost/asio/ip/address_v4.adoc[boost::asio::ip::address&lowbar;v4] const& ipv4&lowbar;address) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/2constructor-07.adoc[_» more&period;&period;&period;_]#
+
+Construct an address from an IPv6 address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address/2constructor-03.adoc[address](xref:boost/asio/ip/address_v6.adoc[boost::asio::ip::address&lowbar;v6] const& ipv6&lowbar;address) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/2constructor-03.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

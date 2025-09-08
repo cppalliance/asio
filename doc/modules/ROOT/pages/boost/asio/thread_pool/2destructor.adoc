@@ -1,0 +1,22 @@
+[#boost-asio-thread_pool-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::&#126;thread&lowbar;pool
+:relfileprefix: ../../../
+:mrdocs:
+
+Destructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;thread&lowbar;pool();
+----
+
+== Description
+
+Automatically stops and joins the pool, if not explicitly done beforehand&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,27 @@
+[#boost-asio-basic_socket-lowest_layer-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::lowest&lowbar;layer
+:relfileprefix: ../../../
+:mrdocs:
+
+Get a reference to the lowest layer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket/lowest_layer_type.adoc[lowest&lowbar;layer&lowbar;type]&
+lowest&lowbar;layer();
+----
+
+== Description
+
+This function returns a reference to the lowest layer in a stack of layers&period; Since a basic&lowbar;socket cannot contain any further layers, it simply returns a reference to itself&period;
+
+== Return Value
+
+A reference to the lowest layer in the stack of layers&period; Ownership is not transferred to the caller&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

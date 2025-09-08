@@ -1,0 +1,28 @@
+[#boost-asio-dynamic_vector_buffer-data-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer]::data
+:relfileprefix: ../../../
+:mrdocs:
+
+*DynamicBuffer&lowbar;v1&colon;* Get a list of buffers that represents the input sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/dynamic_vector_buffer/const_buffers_type.adoc[const&lowbar;buffers&lowbar;type]
+data() const noexcept;
+----
+
+== Description
+
+[NOTE]
+The returned object is invalidated by any `dynamic&lowbar;vector&lowbar;buffer` or `vector` member function that modifies the input sequence or output sequence&period;
+
+== Return Value
+
+An object of type `const&lowbar;buffers&lowbar;type` that satisfies ConstBufferSequence requirements, representing the vector memory in the input sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

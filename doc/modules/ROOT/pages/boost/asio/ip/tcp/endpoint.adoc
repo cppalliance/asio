@@ -1,0 +1,18 @@
+[#boost-asio-ip-tcp-endpoint]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/tcp.adoc[tcp]::endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+The type of a TCP endpoint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;tcp&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/ip/basic_endpoint.adoc[basic&lowbar;endpoint&lt;tcp&gt;] endpoint;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

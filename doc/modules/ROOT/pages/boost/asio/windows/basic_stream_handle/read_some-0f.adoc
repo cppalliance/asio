@@ -1,0 +1,45 @@
+[#boost-asio-windows-basic_stream_handle-read_some-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_stream_handle.adoc[basic&lowbar;stream&lowbar;handle]::read&lowbar;some
+:relfileprefix: ../../../../
+:mrdocs:
+
+Read some data from the handle&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;stream&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+read&lowbar;some(
+    MutableBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to read data from the stream handle&period; The function call will block until one or more bytes of data has been read successfully, or until an error occurs&period;
+
+[NOTE]
+The read&lowbar;some operation may not read all of the requested number of bytes&period; Consider using the xref:boost/asio/read-090.adoc[`read`] function if you need to ensure that the requested amount of data is read before the blocking operation completes&period;
+
+== Return Value
+
+The number of bytes read&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more buffers into which the data will be read&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

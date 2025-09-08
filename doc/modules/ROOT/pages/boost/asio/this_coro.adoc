@@ -1,0 +1,53 @@
+[#boost-asio-this_coro]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::this&lowbar;coro
+:relfileprefix: ../../
+:mrdocs:
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/this_coro/cancellation_state_t.adoc[`cancellation&lowbar;state&lowbar;t`] 
+| Awaitable type that returns the cancellation state of the current coroutine&period;
+| xref:boost/asio/this_coro/executor_t.adoc[`executor&lowbar;t`] 
+| Awaitable type that returns the executor of the current coroutine&period;
+| xref:boost/asio/this_coro/reset_cancellation_state_0_t.adoc[`reset&lowbar;cancellation&lowbar;state&lowbar;0&lowbar;t`] 
+| 
+| xref:boost/asio/this_coro/reset_cancellation_state_1_t.adoc[`reset&lowbar;cancellation&lowbar;state&lowbar;1&lowbar;t`] 
+| 
+| xref:boost/asio/this_coro/reset_cancellation_state_2_t.adoc[`reset&lowbar;cancellation&lowbar;state&lowbar;2&lowbar;t`] 
+| 
+| xref:boost/asio/this_coro/throw_if_cancelled_0_t.adoc[`throw&lowbar;if&lowbar;cancelled&lowbar;0&lowbar;t`] 
+| 
+| xref:boost/asio/this_coro/throw_if_cancelled_1_t.adoc[`throw&lowbar;if&lowbar;cancelled&lowbar;1&lowbar;t`] 
+| 
+|===
+
+== Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/this_coro/reset_cancellation_state-02.adoc[`reset&lowbar;cancellation&lowbar;state`] 
+| 
+| xref:boost/asio/this_coro/throw_if_cancelled-0a.adoc[`throw&lowbar;if&lowbar;cancelled`] 
+| 
+|===
+
+== Variables
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/this_coro/cancellation_state.adoc[`cancellation&lowbar;state`] 
+| Awaitable object that returns the cancellation state of the current coroutine&period;
+| xref:boost/asio/this_coro/executor.adoc[`executor`] 
+| Awaitable object that returns the executor of the current coroutine&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

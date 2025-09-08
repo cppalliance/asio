@@ -1,0 +1,57 @@
+[#boost-asio-ip-address-operator_assign-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address.adoc[address]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&period;hpp&gt;`
+
+Assign from another address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]&
+xref:boost/asio/ip/address/operator_assign-02c.adoc[operator&equals;](xref:boost/asio/ip/address.adoc[address] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/operator_assign-02c.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign from another address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]&
+xref:boost/asio/ip/address/operator_assign-03.adoc[operator&equals;](xref:boost/asio/ip/address.adoc[address]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/operator_assign-03.adoc[_» more&period;&period;&period;_]#
+
+Assign from an IPv4 address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]&
+xref:boost/asio/ip/address/operator_assign-09.adoc[operator&equals;](xref:boost/asio/ip/address_v4.adoc[boost::asio::ip::address&lowbar;v4] const& ipv4&lowbar;address) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/operator_assign-09.adoc[_» more&period;&period;&period;_]#
+
+Assign from an IPv6 address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]&
+xref:boost/asio/ip/address/operator_assign-021.adoc[operator&equals;](xref:boost/asio/ip/address_v6.adoc[boost::asio::ip::address&lowbar;v6] const& ipv6&lowbar;address) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address/operator_assign-021.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

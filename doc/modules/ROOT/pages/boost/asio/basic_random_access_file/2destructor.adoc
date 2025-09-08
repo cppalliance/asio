@@ -1,0 +1,22 @@
+[#boost-asio-basic_random_access_file-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_random_access_file.adoc[basic&lowbar;random&lowbar;access&lowbar;file]::&#126;basic&lowbar;random&lowbar;access&lowbar;file
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys the file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;random&lowbar;access&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;random&lowbar;access&lowbar;file();
+----
+
+== Description
+
+This function destroys the file, cancelling any outstanding asynchronous operations associated with the file as if by calling `cancel&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

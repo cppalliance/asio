@@ -1,0 +1,29 @@
+[#boost-asio-generic-stream_protocol-2constructor-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/stream_protocol.adoc[stream&lowbar;protocol]::stream&lowbar;protocol
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct a generic protocol object from a specific protocol&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;stream&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Protocol&gt;
+stream&lowbar;protocol(Protocol const& source&lowbar;protocol);
+----
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `undefined`
+| `bad&lowbar;cast` Thrown if the source protocol is not stream&hyphen;oriented&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

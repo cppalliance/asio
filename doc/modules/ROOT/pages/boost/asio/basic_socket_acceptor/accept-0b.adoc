@@ -1,0 +1,59 @@
+[#boost-asio-basic_socket_acceptor-accept-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::accept
+:relfileprefix: ../../../
+:mrdocs:
+
+Accept a new connection&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+Protocol::socket::rebind&lowbar;executor&lt;ExecutionContext::executor&lowbar;type&gt;::other
+accept(
+    ExecutionContext& context,
+    int = 0);
+----
+
+== Description
+
+This function is used to accept a new connection from a peer&period; The function call will block until a new connection has been accepted successfully or an error occurs&period;
+
+This overload requires that the Protocol template parameter satisfy the AcceptableProtocol type requirements&period;
+
+== Example
+[,cpp]
+----
+boost::asio::ip::tcp::acceptor acceptor(my_context);
+...
+boost::asio::ip::tcp::socket socket(acceptor.accept());
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+A socket object representing the newly accepted connection&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| The I&sol;O execution context object to be used for the newly accepted socket&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

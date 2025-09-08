@@ -1,0 +1,33 @@
+[#boost-asio-ip-basic_resolver_iterator-operator_assign-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Move&hyphen;assignment operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]&
+operator&equals;(xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]&& other);
+----
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to move assign from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

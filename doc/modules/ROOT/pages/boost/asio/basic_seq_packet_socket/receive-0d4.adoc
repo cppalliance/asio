@@ -1,0 +1,51 @@
+[#boost-asio-basic_seq_packet_socket-receive-0d4]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_seq_packet_socket.adoc[basic&lowbar;seq&lowbar;packet&lowbar;socket]::receive
+:relfileprefix: ../../../
+:mrdocs:
+
+Receive some data on a connected socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;seq&lowbar;packet&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+receive(
+    MutableBufferSequence const& buffers,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags] in&lowbar;flags,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags]& out&lowbar;flags,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to receive data on the sequenced packet socket&period; The function call will block until data has been received successfully, or until an error occurs&period;
+
+[NOTE]
+The receive operation may not receive all of the requested number of bytes&period; Consider using the xref:boost/asio/read-090.adoc[`read`] function if you need to ensure that the requested amount of data is read before the blocking operation completes&period;
+
+== Return Value
+
+The number of bytes received&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more buffers into which the data will be received&period;
+| *in&lowbar;flags*
+| Flags specifying how the receive call is to be made&period;
+| *out&lowbar;flags*
+| After the receive call completes, contains flags associated with the received data&period; For example, if the socket&lowbar;base&colon;&colon;message&lowbar;end&lowbar;of&lowbar;record bit is set then the received data marks the end of a record&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

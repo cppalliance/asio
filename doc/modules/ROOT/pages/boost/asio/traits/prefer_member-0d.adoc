@@ -1,0 +1,36 @@
+[#boost-asio-traits-prefer_member-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/prefer_member-09.adoc[prefer&lowbar;member]&lt;xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor], Prop&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Prop&gt;
+struct xref:boost/asio/traits/prefer_member-09.adoc[prefer&lowbar;member]&lt;xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor], Prop&gt;
+    : xref:boost/asio/traits/prefer_member-09.adoc[prefer&lowbar;member&lt;any&lowbar;completion&lowbar;executor::base&lowbar;type, Prop&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/traits/prefer_member-09.adoc[prefer&lowbar;member&lt;any&lowbar;completion&lowbar;executor::base&lowbar;type, Prop&gt;]`
+| 
+|===
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/traits/prefer_member-0d/result_type.adoc[`result&lowbar;type`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

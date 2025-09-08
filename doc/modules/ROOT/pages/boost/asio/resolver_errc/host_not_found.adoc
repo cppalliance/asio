@@ -1,0 +1,25 @@
+[#boost-asio-resolver_errc-host_not_found]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/resolver_errc.adoc[resolver&lowbar;errc]::host&lowbar;not&lowbar;found
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using error::host&lowbar;not&lowbar;found;
+----
+
+== Introduced Symbols
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/error/netdb_errors.adoc[boost::asio::error::netdb&lowbar;errors::host&lowbar;not&lowbar;found]
+| Host not found (authoritative)&period;
+|===
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

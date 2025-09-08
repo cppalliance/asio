@@ -1,0 +1,58 @@
+[#boost-asio-partial_cancel_after_timer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::partial&lowbar;cancel&lowbar;after&lowbar;timer
+:relfileprefix: ../../
+:mrdocs:
+
+A function object type that adapts a `completion&lowbar;token` to cancel an operation after a timeout&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;after&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Clock,
+    typename WaitTraits = xref:boost/asio/wait_traits.adoc[boost::asio::wait&lowbar;traits&lt;Clock&gt;],
+    typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class partial&lowbar;cancel&lowbar;after&lowbar;timer;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/partial_cancel_after_timer/2constructor.adoc[`partial&lowbar;cancel&lowbar;after&lowbar;timer`]         [.small]#[constructor]#
+| Constructor that specifies the timeout duration and cancellation type&period;
+| xref:boost/asio/partial_cancel_after_timer/operator_call.adoc[`operator()`] 
+| Adapt a `completion&lowbar;token` to specify that the completion handler arguments should be combined into a single tuple argument&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/partial_cancel_after_timer/cancel_type_.adoc[`cancel&lowbar;type&lowbar;`] 
+| xref:boost/asio/partial_cancel_after_timer/timeout_.adoc[`timeout&lowbar;`] 
+| xref:boost/asio/partial_cancel_after_timer/timer_.adoc[`timer&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancel_after-02.adoc[`cancel&lowbar;after`]
+| Create a partial completion token adapter that cancels an operation if not complete before the specified relative timeout has elapsed&period;
+|===
+
+== Description
+
+May also be used directly as a completion token, in which case it adapts the asynchronous operation&apos;s default completion token (or boost&colon;&colon;asio&colon;&colon;deferred if no default is available)&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

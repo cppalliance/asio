@@ -1,0 +1,18 @@
+[#boost-asio-associated_allocator-038-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_allocator-038.adoc[associated&lowbar;allocator&lt;reference&lowbar;wrapper&lt;T&gt;, Allocator&gt;]::type
+:relfileprefix: ../../../
+:mrdocs:
+
+Forwards `type` to the associator specialisation for the unwrapped type `T&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef associated&lowbar;allocator&lt;T, Allocator&gt;::type type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

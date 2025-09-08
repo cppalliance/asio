@@ -1,0 +1,56 @@
+[#boost-asio-execution_context-service_maker]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::service&lowbar;maker
+:relfileprefix: ../../../
+:mrdocs:
+
+Base class for all execution context service makers&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class service&lowbar;maker;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/service_maker/make.adoc[`make`]  [.small]#[virtual]#
+| Make services to be added to the execution context&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/service_maker/2destructor.adoc[`&#126;service&lowbar;maker`] [.small]#[destructor]# [.small]#[virtual]#
+| Destructor&period;
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/config_from_concurrency_hint.adoc[`config&lowbar;from&lowbar;concurrency&lowbar;hint`]
+| Configures an execution context based on a concurrency hint&period;
+| xref:boost/asio/config_from_env.adoc[`config&lowbar;from&lowbar;env`]
+| Configures an execution context by reading environment variables&period;
+| xref:boost/asio/config_from_string.adoc[`config&lowbar;from&lowbar;string`]
+| Configures an execution context by reading variables from a string&period;
+|===
+
+== Description
+
+A service maker is called by the execution context to create services that need to be installed into the execution context at construction time&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

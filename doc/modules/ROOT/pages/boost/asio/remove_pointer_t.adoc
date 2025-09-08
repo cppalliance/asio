@@ -1,0 +1,17 @@
+[#boost-asio-remove_pointer_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::remove&lowbar;pointer&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+using remove&lowbar;pointer&lowbar;t = std::remove&lowbar;pointer&lt;T&gt;::type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

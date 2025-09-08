@@ -1,0 +1,33 @@
+[#boost-asio-basic_datagram_socket-2constructor-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::basic&lowbar;datagram&lowbar;socket
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a basic&lowbar;datagram&lowbar;socket without opening it&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+basic&lowbar;datagram&lowbar;socket(xref:boost/asio/basic_datagram_socket/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+== Description
+
+This constructor creates a datagram socket without opening it&period; The open() function must be called before data can be sent or received on the socket&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the socket will use, by default, to dispatch handlers for any asynchronous operations performed on the socket&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

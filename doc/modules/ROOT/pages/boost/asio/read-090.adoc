@@ -1,0 +1,350 @@
+[#boost-asio-read-090]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read
+:relfileprefix: ../../
+:mrdocs:
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;read&period;hpp&gt;`
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/read-07e.adoc[read](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b);
+----
+
+[.small]#xref:boost/asio/read-07e.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2&gt;
+size&lowbar;t
+xref:boost/asio/read-092.adoc[read](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-092.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/read-05.adoc[read](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/read-05.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/read-08d.adoc[read](
+    SyncReadStream& s,
+    MutableBufferSequence const& buffers,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-08d.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2&gt;
+size&lowbar;t
+xref:boost/asio/read-08e.adoc[read](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-08e.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/read-0d6.adoc[read](
+    SyncReadStream& s,
+    MutableBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-0d6.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+xref:boost/asio/read-04.adoc[read](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-04.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/read-097.adoc[read](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-097.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+xref:boost/asio/read-08c.adoc[read](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-08c.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/read-0db.adoc[read](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    CompletionCondition completion&lowbar;condition,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-0db.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/read-01.adoc[read](
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-01.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename MutableBufferSequence,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/read-076.adoc[read](
+    SyncReadStream& s,
+    MutableBufferSequence const& buffers,
+    CompletionCondition completion&lowbar;condition,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-076.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v2,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/read-02.adoc[read](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v2 buffers,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-02.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename MutableBufferSequence,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/read-0f.adoc[read](
+    SyncReadStream& s,
+    MutableBufferSequence const& buffers,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-0f.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/read-0c.adoc[read](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    CompletionCondition completion&lowbar;condition,
+    int = 0,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-0c.adoc[_» more&period;&period;&period;_]#
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/read-06.adoc[read](
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/read-06.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+* The number of bytes transferred&period;
+* The number of bytes read&period; If an error occurs, returns the total number of bytes successfully transferred prior to the error&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream from which the data is to be read&period; The type must support the SyncReadStream concept&period;
+| *b*
+| The basic&lowbar;streambuf object into which the data will be read&period;
+| *buffers*
+| The dynamic buffer sequence into which the data will be read&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+| *completion&lowbar;condition*
+| The function object to be called to determine whether the read operation is complete&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

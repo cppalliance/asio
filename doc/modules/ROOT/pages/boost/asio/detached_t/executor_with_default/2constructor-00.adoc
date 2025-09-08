@@ -1,0 +1,28 @@
+[#boost-asio-detached_t-executor_with_default-2constructor-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/detached_t.adoc[detached&lowbar;t]::xref:boost/asio/detached_t/executor_with_default.adoc[executor&lowbar;with&lowbar;default]::executor&lowbar;with&lowbar;default
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct the adapted executor from the inner executor type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detached&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+executor&lowbar;with&lowbar;default(InnerExecutor const& ex) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

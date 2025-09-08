@@ -1,0 +1,74 @@
+[#boost-asio-basic_socket-non_blocking-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::non&lowbar;blocking
+:relfileprefix: ../../../
+:mrdocs:
+
+`non&lowbar;blocking` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+Gets the non&hyphen;blocking mode of the socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/basic_socket/non_blocking-0e.adoc[non&lowbar;blocking]() const;
+----
+
+[.small]#xref:boost/asio/basic_socket/non_blocking-0e.adoc[_» more&period;&period;&period;_]#
+
+Sets the non&hyphen;blocking mode of the socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_socket/non_blocking-06.adoc[non&lowbar;blocking](bool mode);
+----
+
+[.small]#xref:boost/asio/basic_socket/non_blocking-06.adoc[_» more&period;&period;&period;_]#
+
+Sets the non&hyphen;blocking mode of the socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_socket/non_blocking-0f.adoc[non&lowbar;blocking](
+    bool mode,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket/non_blocking-0f.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+`true` if the socket&apos;s synchronous operations will fail with boost&colon;&colon;asio&colon;&colon;error&colon;&colon;would&lowbar;block if they are unable to perform the requested operation immediately&period; If `false,` synchronous operations will block until complete&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *mode*
+| If `true,` the socket&apos;s synchronous operations will fail with boost&colon;&colon;asio&colon;&colon;error&colon;&colon;would&lowbar;block if they are unable to perform the requested operation immediately&period; If `false,` synchronous operations will block until complete&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

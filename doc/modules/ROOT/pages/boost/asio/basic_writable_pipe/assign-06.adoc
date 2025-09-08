@@ -1,0 +1,31 @@
+[#boost-asio-basic_writable_pipe-assign-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]::assign
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;writable&lowbar;pipe&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_writable_pipe/assign-0f.adoc[assign](xref:boost/asio/basic_writable_pipe/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;pipe);
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/assign-0f.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_writable_pipe/assign-0d.adoc[assign](
+    xref:boost/asio/basic_writable_pipe/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;pipe,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/assign-0d.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

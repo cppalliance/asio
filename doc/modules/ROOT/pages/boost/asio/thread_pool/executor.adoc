@@ -1,0 +1,23 @@
+[#boost-asio-thread_pool-executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtains the executor associated with the pool&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/thread_pool/executor_type.adoc[executor&lowbar;type]
+executor() noexcept;
+----
+
+== Return Value
+
+Executor used to submit functions to a thread pool&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

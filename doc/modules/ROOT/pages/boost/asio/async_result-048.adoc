@@ -1,0 +1,27 @@
+[#boost-asio-async_result-048]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_result-04d.adoc[async&lowbar;result]&lt;xref:boost/asio/partial_cancellation_slot_binder.adoc[partial&lowbar;cancellation&lowbar;slot&lowbar;binder&lt;CancellationSlot&gt;], Signatures&period;&period;&period;&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CancellationSlot,
+    typename&period;&period;&period; Signatures&gt;
+struct xref:boost/asio/async_result-04d.adoc[async&lowbar;result]&lt;xref:boost/asio/partial_cancellation_slot_binder.adoc[partial&lowbar;cancellation&lowbar;slot&lowbar;binder&lt;CancellationSlot&gt;], Signatures&period;&period;&period;&gt;;
+----
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/async_result-048/initiate.adoc[`initiate`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

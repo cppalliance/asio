@@ -1,0 +1,24 @@
+[#boost-asio-buffer_literals-2function-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffer_literals.adoc[buffer&lowbar;literals]::Unnamed function
+:relfileprefix: ../../../
+:mrdocs:
+
+Literal operator for creating const&lowbar;buffer objects from unbounded binary or hexadecimal integer literals&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;char Chars&period;&period;&period;&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+Unnamed function();
+----
+
+== Return Value
+
+Holds a buffer that cannot be modified&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

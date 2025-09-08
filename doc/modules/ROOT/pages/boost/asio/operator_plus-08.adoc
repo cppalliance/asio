@@ -1,0 +1,143 @@
+[#boost-asio-operator_plus-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&plus;
+:relfileprefix: ../../
+:mrdocs:
+
+Addition operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+Addition operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator]
+xref:boost/asio/operator_plus-07f.adoc[operator&plus;](
+    ptrdiff&lowbar;t difference,
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& iter);
+----
+
+[.small]#xref:boost/asio/operator_plus-07f.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that is offset from the start of another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/operator_plus-02.adoc[operator&plus;](
+    size&lowbar;t n,
+    xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_plus-02.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that is offset from the start of another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer]
+xref:boost/asio/operator_plus-005.adoc[operator&plus;](
+    size&lowbar;t n,
+    xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_plus-005.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that is offset from the start of another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/operator_plus-00a.adoc[operator&plus;](
+    size&lowbar;t n,
+    xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_plus-00a.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that is offset from the start of another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer]
+xref:boost/asio/operator_plus-06.adoc[operator&plus;](
+    size&lowbar;t n,
+    xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_plus-06.adoc[_» more&period;&period;&period;_]#
+
+Addition operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator]
+xref:boost/asio/operator_plus-0f.adoc[operator&plus;](
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& iter,
+    ptrdiff&lowbar;t difference);
+----
+
+[.small]#xref:boost/asio/operator_plus-0f.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that is offset from the start of another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/operator_plus-00b.adoc[operator&plus;](
+    xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const& b,
+    size&lowbar;t n) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_plus-00b.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable registered buffer that is offset from the start of another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer]
+xref:boost/asio/operator_plus-006.adoc[operator&plus;](
+    xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer] const& b,
+    size&lowbar;t n) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_plus-006.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that is offset from the start of another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/operator_plus-074.adoc[operator&plus;](
+    xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const& b,
+    size&lowbar;t n) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_plus-074.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable registered buffer that is offset from the start of another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer]
+xref:boost/asio/operator_plus-076.adoc[operator&plus;](
+    xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer] const& b,
+    size&lowbar;t n) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_plus-076.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

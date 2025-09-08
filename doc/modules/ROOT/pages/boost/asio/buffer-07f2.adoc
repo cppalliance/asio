@@ -1,0 +1,34 @@
+[#boost-asio-buffer-07f2]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+buffer(boost::array&lt;PodType, N&gt; const& data) noexcept;
+----
+
+== Description
+
+[,cpp]
+----
+const_buffer(
+    data.data(),
+    data.size() * sizeof(PodType)); 
+----
+== Return Value
+
+A const&lowbar;buffer value equivalent to&colon;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

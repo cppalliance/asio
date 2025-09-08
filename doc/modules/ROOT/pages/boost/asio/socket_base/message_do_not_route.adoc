@@ -1,0 +1,17 @@
+[#boost-asio-socket_base-message_do_not_route]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/socket_base.adoc[socket&lowbar;base]::message&lowbar;do&lowbar;not&lowbar;route
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;socket&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+int const message&lowbar;do&lowbar;not&lowbar;route = BOOST&lowbar;ASIO&lowbar;OS&lowbar;DEF(MSG&lowbar;DONTROUTE);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

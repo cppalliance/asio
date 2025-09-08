@@ -1,0 +1,23 @@
+[#boost-asio-config-get]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config.adoc[config]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+Retrieve an integral configuration value&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+T
+get(
+    char const* section,
+    char const* key&lowbar;name,
+    T default&lowbar;value);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

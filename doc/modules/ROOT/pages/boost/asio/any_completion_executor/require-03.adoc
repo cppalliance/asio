@@ -1,0 +1,38 @@
+[#boost-asio-any_completion_executor-require-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]::require
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain a polymorphic wrapper with the specified property&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;]
+xref:boost/asio/any_completion_executor/require-00.adoc[require](Property const& p)
+requires find&lowbar;convertible&lowbar;requirable&lowbar;property&lt;Property&gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/any_completion_executor/require-00.adoc[_» more&period;&period;&period;_]#
+
+Obtain a polymorphic wrapper with the specified property&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]
+xref:boost/asio/any_completion_executor/require-07.adoc[require](
+    Property const& p,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/any_completion_executor/require-07.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,210 @@
+[#boost-asio-connect-07d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::connect
+:relfileprefix: ../../
+:mrdocs:
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;connect&period;hpp&gt;`
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename Iterator&gt;
+Iterator
+xref:boost/asio/connect-070.adoc[connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    Iterator begin,
+    Iterator end);
+----
+
+[.small]#xref:boost/asio/connect-070.adoc[_» more&period;&period;&period;_]#
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename EndpointSequence&gt;
+Protocol::endpoint
+xref:boost/asio/connect-0e.adoc[connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    EndpointSequence const& endpoints,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/connect-0e.adoc[_» more&period;&period;&period;_]#
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename Iterator&gt;
+Iterator
+xref:boost/asio/connect-051.adoc[connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    Iterator begin,
+    Iterator end,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/connect-051.adoc[_» more&period;&period;&period;_]#
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename EndpointSequence&gt;
+Protocol::endpoint
+xref:boost/asio/connect-0d.adoc[connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    EndpointSequence const& endpoints,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/connect-0d.adoc[_» more&period;&period;&period;_]#
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename Iterator,
+    typename ConnectCondition&gt;
+Iterator
+xref:boost/asio/connect-05c.adoc[connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    Iterator begin,
+    Iterator end,
+    ConnectCondition connect&lowbar;condition,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/connect-05c.adoc[_» more&period;&period;&period;_]#
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename EndpointSequence,
+    typename ConnectCondition&gt;
+Protocol::endpoint
+xref:boost/asio/connect-0c.adoc[connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    EndpointSequence const& endpoints,
+    ConnectCondition connect&lowbar;condition,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/connect-0c.adoc[_» more&period;&period;&period;_]#
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename Iterator,
+    typename ConnectCondition&gt;
+Iterator
+xref:boost/asio/connect-02.adoc[connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    Iterator begin,
+    Iterator end,
+    ConnectCondition connect&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/connect-02.adoc[_» more&period;&period;&period;_]#
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename EndpointSequence,
+    typename ConnectCondition&gt;
+Protocol::endpoint
+xref:boost/asio/connect-06.adoc[connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    EndpointSequence const& endpoints,
+    ConnectCondition connect&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/connect-06.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; If the sequence is empty, the associated `error&lowbar;code` is boost&colon;&colon;asio&colon;&colon;error&colon;&colon;not&lowbar;found&period; Otherwise, contains the error from the last connection attempt&period;
+|===
+
+== Return Value
+
+* An iterator denoting the successfully connected endpoint&period;
+* The successfully connected endpoint&period;
+* On success, an iterator denoting the successfully connected endpoint&period; Otherwise, the end iterator&period;
+* On success, the successfully connected endpoint&period; Otherwise, a default&hyphen;constructed endpoint&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The socket to be connected&period; If the socket is already open, it will be closed&period;
+| *begin*
+| An iterator pointing to the start of a sequence of endpoints&period;
+| *end*
+| An iterator pointing to the end of a sequence of endpoints&period;
+| *endpoints*
+| A sequence of endpoints&period;
+| *ec*
+| Set to indicate what error occurred, if any&period; If the sequence is empty, set to boost&colon;&colon;asio&colon;&colon;error&colon;&colon;not&lowbar;found&period; Otherwise, contains the error from the last connection attempt&period;
+| *connect&lowbar;condition*
+| A function object that is called prior to each connection attempt&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

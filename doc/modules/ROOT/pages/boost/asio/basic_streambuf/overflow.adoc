@@ -1,0 +1,24 @@
+[#boost-asio-basic_streambuf-overflow]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf]::overflow
+:relfileprefix: ../../../
+:mrdocs:
+
+Override std&colon;&colon;streambuf behaviour&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+int&lowbar;type
+overflow(int&lowbar;type c);
+----
+
+== Description
+
+Behaves according to the specification of `std&colon;&colon;streambuf&colon;&colon;overflow(),` with the specialisation that `std&colon;&colon;length&lowbar;error` is thrown if appending the character to the input sequence would require the condition to be true&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,55 @@
+[#boost-asio-basic_file-2constructor-0cb]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::basic&lowbar;file
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct and open a basic&lowbar;file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+basic&lowbar;file(
+    ExecutionContext& context,
+    char const* path,
+    xref:boost/asio/file_base/flags.adoc[file&lowbar;base::flags] open&lowbar;flags,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+== Description
+
+This constructor initialises a file and opens it&period;
+
+Exactly one of the following file&lowbar;base&colon;&colon;flags values must be specified&colon;
+
+* flags&colon;&colon;read&lowbar;only
+* flags&colon;&colon;write&lowbar;only
+* flags&colon;&colon;read&lowbar;write
+
+The following flags may be bitwise or&hyphen;ed in addition&colon;
+
+* flags&colon;&colon;append
+* flags&colon;&colon;create
+* flags&colon;&colon;exclusive
+* flags&colon;&colon;truncate
+* flags&colon;&colon;sync&lowbar;all&lowbar;on&lowbar;write
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| An execution context which provides the I&sol;O executor that the file will use, by default, to dispatch handlers for any asynchronous operations performed on the file&period;
+| *path*
+| The path name identifying the file to be opened&period;
+| *open&lowbar;flags*
+| A set of flags that determine how the file should be opened&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

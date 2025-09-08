@@ -1,0 +1,28 @@
+[#boost-asio-dynamic_vector_buffer-consume]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer]::consume
+:relfileprefix: ../../../
+:mrdocs:
+
+*DynamicBuffer&lowbar;v1&colon;* Remove characters from the input sequence&period; *DynamicBuffer&lowbar;v2&colon;* Consume the specified number of bytes from the beginning of the underlying memory&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+consume(size&lowbar;t n);
+----
+
+== Description
+
+*DynamicBuffer&lowbar;v1&colon;* Removes `n` characters from the beginning of the input sequence&period;
+
+[NOTE]
+If `n` is greater than the size of the input sequence, the entire input sequence is consumed and no error is issued&period;
+
+*DynamicBuffer&lowbar;v2&colon;* Erases `n` bytes from the beginning of the vector&period; If `n` is greater than the current size of the vector, the vector is emptied&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,67 @@
+[#boost-asio-ip-basic_endpoint-2constructor-0e1]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_endpoint.adoc[basic&lowbar;endpoint]::basic&lowbar;endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_endpoint/2constructor-0cc.adoc[basic&lowbar;endpoint]() noexcept;
+----
+
+[.small]#xref:boost/asio/ip/basic_endpoint/2constructor-0cc.adoc[_» more&period;&period;&period;_]#
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_endpoint/2constructor-0e3.adoc[basic&lowbar;endpoint](xref:boost/asio/ip/basic_endpoint.adoc[basic&lowbar;endpoint] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/basic_endpoint/2constructor-0e3.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_endpoint/2constructor-0e8.adoc[basic&lowbar;endpoint](xref:boost/asio/ip/basic_endpoint.adoc[basic&lowbar;endpoint]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/basic_endpoint/2constructor-0e8.adoc[_» more&period;&period;&period;_]#
+
+Construct an endpoint using a port number, specified in the host&apos;s byte order&period; The IP address will be the any address (i&period;e&period; INADDR&lowbar;ANY or in6addr&lowbar;any)&period; This constructor would typically be used for accepting new connections&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_endpoint/2constructor-0cf.adoc[basic&lowbar;endpoint](
+    InternetProtocol const& internet&lowbar;protocol,
+    xref:boost/asio/ip/port_type.adoc[port&lowbar;type] port&lowbar;num) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/basic_endpoint/2constructor-0cf.adoc[_» more&period;&period;&period;_]#
+
+Construct an endpoint using a port number and an IP address&period; This constructor may be used for accepting connections on a specific interface or for making a connection to a remote endpoint&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_endpoint/2constructor-00.adoc[basic&lowbar;endpoint](
+    xref:boost/asio/ip/address.adoc[boost::asio::ip::address] const& addr,
+    xref:boost/asio/ip/port_type.adoc[port&lowbar;type] port&lowbar;num) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/basic_endpoint/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

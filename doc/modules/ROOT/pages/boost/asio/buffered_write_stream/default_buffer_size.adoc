@@ -1,0 +1,17 @@
+[#boost-asio-buffered_write_stream-default_buffer_size]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_write_stream.adoc[buffered&lowbar;write&lowbar;stream]::default&lowbar;buffer&lowbar;size
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+size&lowbar;t const default&lowbar;buffer&lowbar;size = 1024;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,33 @@
+[#boost-asio-socket_base-shutdown_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/socket_base.adoc[socket&lowbar;base]::shutdown&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+Different ways a socket may be shutdown&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;socket&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum shutdown&lowbar;type;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`shutdown&lowbar;receive`
+|
+|`shutdown&lowbar;send`
+|
+|`shutdown&lowbar;both`
+|
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

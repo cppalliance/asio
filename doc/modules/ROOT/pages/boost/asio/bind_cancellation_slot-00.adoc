@@ -1,0 +1,28 @@
+[#boost-asio-bind_cancellation_slot-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;cancellation&lowbar;slot
+:relfileprefix: ../../
+:mrdocs:
+
+Associate an object of type `T` with a cancellation slot of type `CancellationSlot&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CancellationSlot,
+    typename T&gt;
+xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, CancellationSlot&gt;]
+bind&lowbar;cancellation&lowbar;slot(
+    CancellationSlot const& s,
+    T&& t);
+----
+
+== Return Value
+
+A call wrapper type to bind a cancellation slot of type `CancellationSlot` to an object of type `T&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

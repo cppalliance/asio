@@ -1,0 +1,692 @@
+[#boost-asio-buffer-068]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer
+:relfileprefix: ../../
+:mrdocs:
+
+`buffer` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+Create a new non&hyphen;modifiable buffer from an existing buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0ff9.adoc[buffer](xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0ff9.adoc[_» more&period;&period;&period;_]#
+
+Obtain a buffer representing the entire registered buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer]
+xref:boost/asio/buffer-09e.adoc[buffer](xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-09e.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer from an existing buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-0b.adoc[buffer](xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0b.adoc[_» more&period;&period;&period;_]#
+
+Obtain a buffer representing the entire registered buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer]
+xref:boost/asio/buffer-0ec.adoc[buffer](xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0ec.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-0e7.adoc[buffer](boost::array&lt;PodType, N&gt;& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0e7.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0ffe.adoc[buffer](boost::array&lt;PodType const, N&gt;& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0ffe.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-097.adoc[buffer](std::array&lt;PodType, N&gt;& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-097.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-025.adoc[buffer](std::array&lt;PodType const, N&gt;& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-025.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given POD vector&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    typename Allocator&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-0a0.adoc[buffer](std::vector&lt;PodType, Allocator&gt;& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0a0.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-07f2.adoc[buffer](boost::array&lt;PodType, N&gt; const& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-07f2.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0cda.adoc[buffer](std::array&lt;PodType, N&gt; const& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0cda.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD vector&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    typename Allocator&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0a1.adoc[buffer](std::vector&lt;PodType, Allocator&gt; const& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0a1.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-063.adoc[buffer](PodType(& data)[]) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-063.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-02f.adoc[buffer](PodType const(& data)[]) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-02f.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given string&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-0e9.adoc[buffer](std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0e9.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given string&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-037.adoc[buffer](std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt; const& data) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-037.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer from an existing buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0f8.adoc[buffer](
+    xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const& b,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0f8.adoc[_» more&period;&period;&period;_]#
+
+Obtain a buffer representing part of a registered buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer]
+xref:boost/asio/buffer-0db.adoc[buffer](
+    xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer] const& b,
+    size&lowbar;t n) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0db.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer from an existing buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-045.adoc[buffer](
+    xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const& b,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-045.adoc[_» more&period;&period;&period;_]#
+
+Obtain a buffer representing part of a registered buffer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer]
+xref:boost/asio/buffer-01.adoc[buffer](
+    xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer] const& b,
+    size&lowbar;t n) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-01.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given memory range&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-0fd.adoc[buffer](
+    void* data,
+    size&lowbar;t size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0fd.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given memory range&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-076.adoc[buffer](
+    void const* data,
+    size&lowbar;t size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-076.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-023.adoc[buffer](
+    boost::array&lt;PodType, N&gt;& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-023.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0d8.adoc[buffer](
+    boost::array&lt;PodType const, N&gt;& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0d8.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-089e.adoc[buffer](
+    std::array&lt;PodType, N&gt;& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-089e.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-065.adoc[buffer](
+    std::array&lt;PodType const, N&gt;& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-065.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given POD vector&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    typename Allocator&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-0a6.adoc[buffer](
+    std::vector&lt;PodType, Allocator&gt;& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0a6.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-002a.adoc[buffer](
+    boost::array&lt;PodType, N&gt; const& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-002a.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-03b.adoc[buffer](
+    std::array&lt;PodType, N&gt; const& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-03b.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD vector&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    typename Allocator&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0a4.adoc[buffer](
+    std::vector&lt;PodType, Allocator&gt; const& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0a4.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-099.adoc[buffer](
+    PodType(& data)[],
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-099.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    size&lowbar;t N&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0e2.adoc[buffer](
+    PodType const(& data)[],
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0e2.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer that represents the given string&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-043.adoc[buffer](
+    std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-043.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer that represents the given string&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-085.adoc[buffer](
+    std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt; const& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-085.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer from a span&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    size&lowbar;t&gt; typename Span,
+    typename T,
+    size&lowbar;t Extent&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0895.adoc[buffer](
+    Span&lt;T const, Extent&gt; const& span,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0895.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer from a contiguous container&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-001.adoc[buffer](
+    T const& data,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-001.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer from a span&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    size&lowbar;t&gt; typename Span,
+    typename T,
+    size&lowbar;t Extent&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-049.adoc[buffer](
+    Span&lt;T, Extent&gt; const& span,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-049.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer from a span&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    size&lowbar;t&gt; typename Span,
+    typename T,
+    size&lowbar;t Extent&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-000.adoc[buffer](
+    Span&lt;T const, Extent&gt; const& span,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-000.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer from a contiguous container&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0a5.adoc[buffer](
+    T& data,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0a5.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer from a contiguous container&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-05.adoc[buffer](
+    T& data,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-05.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer from a contiguous container&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0cd2.adoc[buffer](
+    T const& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0cd2.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer from a span&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    size&lowbar;t&gt; typename Span,
+    typename T,
+    size&lowbar;t Extent&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-0af.adoc[buffer](
+    Span&lt;T, Extent&gt; const& span,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0af.adoc[_» more&period;&period;&period;_]#
+
+Create a new non&hyphen;modifiable buffer from a contiguous container&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+xref:boost/asio/buffer-0024.adoc[buffer](
+    T& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-0024.adoc[_» more&period;&period;&period;_]#
+
+Create a new modifiable buffer from a contiguous container&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+xref:boost/asio/buffer-07fa.adoc[buffer](
+    T& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer-07fa.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+* &period;
+* A mutable&lowbar;buffer value equivalent to&colon;
+* A const&lowbar;buffer value equivalent to&colon;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

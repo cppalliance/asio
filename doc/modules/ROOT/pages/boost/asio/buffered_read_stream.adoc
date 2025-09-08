@@ -1,0 +1,85 @@
+[#boost-asio-buffered_read_stream]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffered&lowbar;read&lowbar;stream
+:relfileprefix: ../../
+:mrdocs:
+
+Adds buffering to the read&hyphen;related operations of a stream&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;read&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Stream&gt;
+class buffered&lowbar;read&lowbar;stream;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffered_read_stream/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/buffered_read_stream/lowest_layer_type.adoc[`lowest&lowbar;layer&lowbar;type`] 
+| The type of the lowest layer&period;
+| xref:boost/asio/buffered_read_stream/next_layer_type.adoc[`next&lowbar;layer&lowbar;type`] 
+| The type of the next layer&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffered_read_stream/2constructor-04.adoc[`buffered&lowbar;read&lowbar;stream`]         [.small]#[constructor]#
+| Construct, passing the specified argument to initialise the next layer&period;
+| xref:boost/asio/buffered_read_stream/async_fill.adoc[`async&lowbar;fill`] 
+| Start an asynchronous fill&period;
+| xref:boost/asio/buffered_read_stream/async_read_some.adoc[`async&lowbar;read&lowbar;some`] 
+| Start an asynchronous read&period; The buffer into which the data will be read must be valid for the lifetime of the asynchronous operation&period;
+| xref:boost/asio/buffered_read_stream/async_write_some.adoc[`async&lowbar;write&lowbar;some`] 
+| Start an asynchronous write&period; The data being written must be valid for the lifetime of the asynchronous operation&period;
+| xref:boost/asio/buffered_read_stream/close-0d.adoc[`close`] 
+| Close the stream&period;
+| xref:boost/asio/buffered_read_stream/fill-0d7.adoc[`fill`] 
+| `fill` overloads
+| xref:boost/asio/buffered_read_stream/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/buffered_read_stream/in_avail-0e.adoc[`in&lowbar;avail`] 
+| Determine the amount of data that may be read without blocking&period;
+| xref:boost/asio/buffered_read_stream/lowest_layer-0e.adoc[`lowest&lowbar;layer`] 
+| `lowest&lowbar;layer` overloads
+| xref:boost/asio/buffered_read_stream/next_layer.adoc[`next&lowbar;layer`] 
+| Get a reference to the next layer&period;
+| xref:boost/asio/buffered_read_stream/peek-07.adoc[`peek`] 
+| `peek` overloads
+| xref:boost/asio/buffered_read_stream/read_some-02.adoc[`read&lowbar;some`] 
+| `read&lowbar;some` overloads
+| xref:boost/asio/buffered_read_stream/write_some-05.adoc[`write&lowbar;some`] 
+| `write&lowbar;some` overloads
+|===
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/buffered_read_stream/default_buffer_size.adoc[`default&lowbar;buffer&lowbar;size`] 
+|===
+
+== Description
+
+The buffered&lowbar;read&lowbar;stream class template can be used to add buffering to the synchronous and asynchronous read operations of a stream&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+== Concepts&colon;
+AsyncReadStream, AsyncWriteStream, Stream, SyncReadStream, SyncWriteStream&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,17 @@
+[#boost-asio-traits-query_free_default-03-is_noexcept]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/query_free_default-03.adoc[query&lowbar;free&lowbar;default&lt;T, execution::blocking&lowbar;t&gt;]::is&lowbar;noexcept
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;blocking&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+inline constexpr static
+bool is&lowbar;noexcept = is&lowbar;nothrow&lowbar;query&lt;T, execution&colon;&colon;blocking&lowbar;t&colon;&colon;possibly&lowbar;t&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

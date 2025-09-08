@@ -1,0 +1,67 @@
+[#boost-asio-connect-070]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::connect
+:relfileprefix: ../../
+:mrdocs:
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;connect&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename Iterator&gt;
+Iterator
+connect(
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    Iterator begin,
+    Iterator end);
+----
+
+== Description
+
+This function attempts to connect a socket to one of a sequence of endpoints&period; It does this by repeated calls to the socket&apos;s `connect` member function, once for each endpoint in the sequence, until a connection is successfully established&period;
+
+== Example
+[,cpp]
+----
+tcp::resolver r(my_context);
+tcp::resolver::query q("host", "service");
+tcp::resolver::results_type e = r.resolve(q);
+tcp::socket s(my_context);
+boost::asio::connect(s, e.begin(), e.end()); 
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; If the sequence is empty, the associated `error&lowbar;code` is boost&colon;&colon;asio&colon;&colon;error&colon;&colon;not&lowbar;found&period; Otherwise, contains the error from the last connection attempt&period;
+|===
+
+== Return Value
+
+An iterator denoting the successfully connected endpoint&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The socket to be connected&period; If the socket is already open, it will be closed&period;
+| *begin*
+| An iterator pointing to the start of a sequence of endpoints&period;
+| *end*
+| An iterator pointing to the end of a sequence of endpoints&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,46 @@
+[#boost-asio-serial_port_base-stop_bits]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]::stop&lowbar;bits
+:relfileprefix: ../../../
+:mrdocs:
+
+Serial port option to permit changing the number of stop bits&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class stop&lowbar;bits;
+----
+
+== Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/serial_port_base/stop_bits/type.adoc[`type`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/serial_port_base/stop_bits/2constructor.adoc[`stop&lowbar;bits`]         [.small]#[constructor]#
+| Construct from `type`
+| xref:boost/asio/serial_port_base/stop_bits/load.adoc[`load`] 
+| 
+| xref:boost/asio/serial_port_base/stop_bits/store.adoc[`store`] 
+| 
+| xref:boost/asio/serial_port_base/stop_bits/value.adoc[`value`] 
+| 
+|===
+
+== Description
+
+Implements changing the number of stop bits for a given serial port&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

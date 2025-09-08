@@ -1,0 +1,16 @@
+[#boost-asio-uint_least32_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::uint&lowbar;least32&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;cstdint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using std::uint&lowbar;least32&lowbar;t;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,147 @@
+[#boost-asio-execution-any_executor-0f-2constructor-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]::any&lowbar;executor
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+Default constructor
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f/2constructor-005.adoc[any&lowbar;executor]() noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-005.adoc[_» more&period;&period;&period;_]#
+
+Copy constructor
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f/2constructor-01.adoc[any&lowbar;executor](xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-01.adoc[_» more&period;&period;&period;_]#
+
+Move constructor
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f/2constructor-09.adoc[any&lowbar;executor](xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-09.adoc[_» more&period;&period;&period;_]#
+
+Construct from `nullptr&lowbar;t`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f/2constructor-007.adoc[any&lowbar;executor](std::nullptr&lowbar;t value) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-007.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/execution/any_executor-0f/2constructor-050.adoc[any&lowbar;executor](Executor ex)
+requires conditional&lowbar;t&lt;
+          !is&lowbar;same&lt;Executor, any&lowbar;executor&gt;&colon;&colon;value
+            &amp;&amp; !is&lowbar;base&lowbar;of&lt;detail&colon;&colon;any&lowbar;executor&lowbar;base, Executor&gt;&colon;&colon;value,
+          detail&colon;&colon;is&lowbar;valid&lowbar;target&lowbar;executor&lt;
+            Executor, void(SupportableProperties&period;&period;&period;)&gt;,
+          false&lowbar;type
+        &gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-050.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; OtherSupportableProperties&gt;
+xref:boost/asio/execution/any_executor-0f/2constructor-0c1e.adoc[any&lowbar;executor](xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;OtherSupportableProperties&period;&period;&period;&gt;] other)
+requires conditional&lowbar;t&lt;
+          !is&lowbar;same&lt;
+            any&lowbar;executor&lt;OtherSupportableProperties&period;&period;&period;&gt;,
+            any&lowbar;executor
+          &gt;&colon;&colon;value,
+          typename detail&colon;&colon;supportable&lowbar;properties&lt;
+            0, void(SupportableProperties&period;&period;&period;)&gt;&colon;&colon;template is&lowbar;valid&lowbar;target&lt;
+              any&lowbar;executor&lt;OtherSupportableProperties&period;&period;&period;&gt;&gt;,
+          false&lowbar;type
+        &gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-0c1e.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f/2constructor-0f.adoc[any&lowbar;executor](
+    std::nothrow&lowbar;t,
+    xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f/2constructor-0c13.adoc[any&lowbar;executor](
+    std::nothrow&lowbar;t,
+    xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-0c13.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/execution/any_executor-0f/2constructor-07.adoc[any&lowbar;executor](
+    std::nothrow&lowbar;t,
+    Executor ex) noexcept
+requires conditional&lowbar;t&lt;
+          !is&lowbar;same&lt;Executor, any&lowbar;executor&gt;&colon;&colon;value
+            &amp;&amp; !is&lowbar;base&lowbar;of&lt;detail&colon;&colon;any&lowbar;executor&lowbar;base, Executor&gt;&colon;&colon;value,
+          detail&colon;&colon;is&lowbar;valid&lowbar;target&lowbar;executor&lt;
+            Executor, void(SupportableProperties&period;&period;&period;)&gt;,
+          false&lowbar;type
+        &gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-07.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; OtherSupportableProperties&gt;
+xref:boost/asio/execution/any_executor-0f/2constructor-05e.adoc[any&lowbar;executor](
+    std::nothrow&lowbar;t,
+    xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;OtherSupportableProperties&period;&period;&period;&gt;] other) noexcept
+requires conditional&lowbar;t&lt;
+          !is&lowbar;same&lt;
+            any&lowbar;executor&lt;OtherSupportableProperties&period;&period;&period;&gt;,
+            any&lowbar;executor
+          &gt;&colon;&colon;value,
+          typename detail&colon;&colon;supportable&lowbar;properties&lt;
+            0, void(SupportableProperties&period;&period;&period;)&gt;&colon;&colon;template is&lowbar;valid&lowbar;target&lt;
+              any&lowbar;executor&lt;OtherSupportableProperties&period;&period;&period;&gt;&gt;,
+          false&lowbar;type
+        &gt;&colon;&colon;value;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/2constructor-05e.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,17 @@
+[#boost-asio-is_disposition_v]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;disposition&lowbar;v
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+constexpr bool is&lowbar;disposition&lowbar;v = is&lowbar;disposition&lt;T&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

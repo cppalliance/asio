@@ -1,0 +1,37 @@
+[#boost-asio-local-operator_gt]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::operator&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+Compare endpoints for ordering&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+operator&gt;(
+    xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint&lt;Protocol&gt;] const& e1,
+    xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint&lt;Protocol&gt;] const& e2) noexcept;
+----
+
+== Return Value
+
+`true` if the left object is greater than the right object, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e1*
+| The left operand
+| *e2*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

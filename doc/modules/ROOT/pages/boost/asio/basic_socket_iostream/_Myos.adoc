@@ -1,0 +1,16 @@
+[#boost-asio-basic_socket_iostream-_Myos]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::&lowbar;Myos
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;istream&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using &lowbar;Myos = basic&lowbar;ostream&lt;char, char&lowbar;traits&lt;char&gt;&gt;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

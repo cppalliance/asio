@@ -1,0 +1,33 @@
+[#boost-asio-windows-basic_random_access_handle-2constructor-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle]::basic&lowbar;random&lowbar;access&lowbar;handle
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct a random&hyphen;access handle without opening it&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;random&lowbar;access&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+basic&lowbar;random&lowbar;access&lowbar;handle(xref:boost/asio/windows/basic_random_access_handle/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+== Description
+
+This constructor creates a random&hyphen;access handle without opening it&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the random&hyphen;access handle will use, by default, to dispatch handlers for any asynchronous operations performed on the random&hyphen;access handle&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

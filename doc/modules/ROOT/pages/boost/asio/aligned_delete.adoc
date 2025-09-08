@@ -1,0 +1,17 @@
+[#boost-asio-aligned_delete]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::aligned&lowbar;delete
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;memory&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+aligned&lowbar;delete(void* ptr);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,28 @@
+[#boost-asio-local-basic_endpoint-2constructor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint]::basic&lowbar;endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct an endpoint using the specified path name&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;endpoint(std::string const& path&lowbar;name);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *path&lowbar;name*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

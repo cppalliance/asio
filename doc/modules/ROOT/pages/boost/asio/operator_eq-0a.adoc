@@ -1,0 +1,41 @@
+[#boost-asio-operator_eq-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&equals;&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Compare two executors for equality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+operator&equals;&equals;(
+    xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& a,
+    xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type] const& b) noexcept;
+----
+
+== Description
+
+Two executors are equal if they refer to the same underlying io&lowbar;context&period;
+
+== Return Value
+
+`true` if the objects are equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *a*
+| The left operand
+| *b*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,71 @@
+[#boost-asio-write-01f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::write
+:relfileprefix: ../../
+:mrdocs:
+
+Write all of the supplied data to a stream before returning&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;write&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncWriteStream,
+    typename ConstBufferSequence&gt;
+size&lowbar;t
+write(
+    SyncWriteStream& s,
+    ConstBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+== Description
+
+This function is used to write a certain number of bytes of data to a stream&period; The call will block until one of the following conditions is true&colon;
+
+* All of the data in the supplied buffers has been written&period; That is, the bytes transferred is equal to the sum of the buffer sizes&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the stream&apos;s write&lowbar;some function&period;
+
+== Example
+To write a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+boost::asio::write(s, boost::asio::buffer(data, size), ec); 
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on writing multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+[NOTE]
+This overload is equivalent to calling&colon;
+
+[,cpp]
+----
+boost::asio::write(
+    s, buffers,
+    boost::asio::transfer_all(), ec); 
+----
+== Return Value
+
+The number of bytes transferred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream to which the data is to be written&period; The type must support the SyncWriteStream concept&period;
+| *buffers*
+| One or more buffers containing the data to be written&period; The sum of the buffer sizes indicates the maximum number of bytes to write to the stream&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

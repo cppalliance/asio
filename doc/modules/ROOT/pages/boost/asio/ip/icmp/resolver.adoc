@@ -1,0 +1,18 @@
+[#boost-asio-ip-icmp-resolver]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/icmp.adoc[icmp]::resolver
+:relfileprefix: ../../../../
+:mrdocs:
+
+The ICMP resolver type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;icmp&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver&lt;icmp&gt;] resolver;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

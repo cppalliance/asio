@@ -1,0 +1,23 @@
+[#boost-asio-buffer_registration-begin]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration]::begin
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the begin iterator for the sequence of registered buffers&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&lowbar;registration&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffer_registration/const_iterator.adoc[const&lowbar;iterator]
+begin() const noexcept;
+----
+
+== Return Value
+
+the begin iterator for the sequence of registered buffers&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

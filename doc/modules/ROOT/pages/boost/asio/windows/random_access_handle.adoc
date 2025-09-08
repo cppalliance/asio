@@ -1,0 +1,18 @@
+[#boost-asio-windows-random_access_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::random&lowbar;access&lowbar;handle
+:relfileprefix: ../../../
+:mrdocs:
+
+Typedef for the typical usage of a random&hyphen;access handle&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;random&lowbar;access&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle] random&lowbar;access&lowbar;handle;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

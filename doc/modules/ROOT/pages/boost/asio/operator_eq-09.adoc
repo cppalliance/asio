@@ -1,0 +1,38 @@
+[#boost-asio-operator_eq-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&equals;&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Equality operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+operator&equals;&equals;(
+    std::nullptr&lowbar;t lhs,
+    xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler] const& b) noexcept;
+----
+
+== Return Value
+
+`true` if the objects are equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *lhs*
+| The left operand
+| *b*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

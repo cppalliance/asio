@@ -1,0 +1,48 @@
+[#boost-asio-windows-basic_object_handle-async_wait]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::async&lowbar;wait
+:relfileprefix: ../../../../
+:mrdocs:
+
+Start an asynchronous wait on the object handle&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename WaitToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WaitToken, void (boost&colon;&colon;system&colon;&colon;error&lowbar;code)&gt;(
+        declval&lt;initiate&lowbar;async&lowbar;wait&gt;(), token))
+async&lowbar;wait(WaitToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+== Description
+
+This function is be used to initiate an asynchronous wait against the object handle&period; It is an initiating function for an `asynchronous&lowbar;operation`, and always returns immediately&period;
+
+[,cpp]
+----
+void handler(
+  const boost::system::error_code& error // Result of operation.
+); 
+----
+Regardless of whether the asynchronous operation completes immediately or not, the completion handler will not be invoked from within this function&period; On immediate completion, invocation of the handler will be performed in a manner equivalent to using boost&colon;&colon;asio&colon;&colon;async&lowbar;immediate()&period;
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code) 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the wait completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

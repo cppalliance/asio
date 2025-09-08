@@ -1,0 +1,30 @@
+[#boost-asio-operator_bitnot-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&#126;
+:relfileprefix: ../../
+:mrdocs:
+
+Bitwise negation operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;type&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]
+operator&#126;(xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] x);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *x*
+| The operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

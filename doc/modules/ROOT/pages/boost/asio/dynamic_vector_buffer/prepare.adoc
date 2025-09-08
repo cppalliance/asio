@@ -1,0 +1,40 @@
+[#boost-asio-dynamic_vector_buffer-prepare]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer]::prepare
+:relfileprefix: ../../../
+:mrdocs:
+
+*DynamicBuffer&lowbar;v1&colon;* Get a list of buffers that represents the output sequence, with the given size&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/dynamic_vector_buffer/mutable_buffers_type.adoc[mutable&lowbar;buffers&lowbar;type]
+prepare(size&lowbar;t n);
+----
+
+== Description
+
+Ensures that the output sequence can accommodate `n` bytes, resizing the vector object as necessary&period;
+
+[NOTE]
+The returned object is invalidated by any `dynamic&lowbar;vector&lowbar;buffer` or `vector` member function that modifies the input sequence or output sequence&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `std&colon;&colon;length&lowbar;error`
+| If &period;
+|===
+
+== Return Value
+
+An object of type `mutable&lowbar;buffers&lowbar;type` that satisfies MutableBufferSequence requirements, representing vector memory at the start of the output sequence of size `n&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,19 @@
+[#boost-asio-can_require_v]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::can&lowbar;require&lowbar;v
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;require&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Properties&gt;
+constexpr bool can&lowbar;require&lowbar;v = can&lowbar;require&lt;T, Properties&period;&period;&period;&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

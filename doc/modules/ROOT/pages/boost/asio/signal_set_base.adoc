@@ -1,0 +1,56 @@
+[#boost-asio-signal_set_base]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::signal&lowbar;set&lowbar;base
+:relfileprefix: ../../
+:mrdocs:
+
+The signal&lowbar;set&lowbar;base class is used as a base for the basic&lowbar;signal&lowbar;set class templates so that we have a common place to define the flags enum&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;signal&lowbar;set&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class signal&lowbar;set&lowbar;base;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/signal_set_base/flags_t.adoc[`flags&lowbar;t`] 
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/signal_set_base/flags.adoc[`flags`] 
+| 
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/signal_set_base/2destructor.adoc[`&#126;signal&lowbar;set&lowbar;base`] [.small]#[destructor]#
+| Protected destructor to prevent deletion through this type&period;
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_signal_set.adoc[`basic&lowbar;signal&lowbar;set`]
+| Provides signal functionality&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-null_buffers-value_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/null_buffers.adoc[null&lowbar;buffers]::value&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The type for each element in the list of buffers&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] value&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

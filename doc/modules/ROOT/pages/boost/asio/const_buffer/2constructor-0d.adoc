@@ -1,0 +1,30 @@
+[#boost-asio-const_buffer-2constructor-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]::const&lowbar;buffer
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a buffer to represent a given memory range&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+const&lowbar;buffer(
+    void const* data,
+    size&lowbar;t size) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *data*
+| The value to construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,22 @@
+[#boost-asio-any_io_executor-query-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]::query
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+void
+query(Property const& p)
+requires is&lowbar;same&lt;
+          typename find&lowbar;convertible&lowbar;property&lt;Property&gt;&colon;&colon;query&lowbar;result&lowbar;type,
+          void
+        &gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

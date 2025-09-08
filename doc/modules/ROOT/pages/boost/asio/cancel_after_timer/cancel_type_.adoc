@@ -1,0 +1,16 @@
+[#boost-asio-cancel_after_timer-cancel_type_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancel_after_timer.adoc[cancel&lowbar;after&lowbar;timer]::cancel&lowbar;type&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;after&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] cancel&lowbar;type&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

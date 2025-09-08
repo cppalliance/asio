@@ -1,0 +1,35 @@
+[#boost-asio-use_future_t-2constructor-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/use_future_t.adoc[use&lowbar;future&lowbar;t]::use&lowbar;future&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;future&period;hpp&gt;`
+
+Construct using default&hyphen;constructed allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/use_future_t/2constructor-01.adoc[use&lowbar;future&lowbar;t]();
+----
+
+[.small]#xref:boost/asio/use_future_t/2constructor-01.adoc[_» more&period;&period;&period;_]#
+
+Construct using specified allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/use_future_t/2constructor-00.adoc[use&lowbar;future&lowbar;t](Allocator const& allocator);
+----
+
+[.small]#xref:boost/asio/use_future_t/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

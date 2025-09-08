@@ -1,0 +1,83 @@
+[#boost-asio-dispatch-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::dispatch
+:relfileprefix: ../../
+:mrdocs:
+
+Submits a completion token or function object for execution&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;dispatch&period;hpp&gt;`
+
+Submits a completion token or function object for execution&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename NullaryToken&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;dispatch&gt;(), token))
+xref:boost/asio/dispatch-01.adoc[dispatch](NullaryToken&& token);
+----
+
+[.small]#xref:boost/asio/dispatch-01.adoc[_» more&period;&period;&period;_]#
+
+Submits a completion token or function object for execution&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;ExecutionContext::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;dispatch&lowbar;with&lowbar;executor&lt;
+        typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&gt;(), token))
+xref:boost/asio/dispatch-0a.adoc[dispatch](
+    ExecutionContext& ctx,
+    NullaryToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/dispatch-0a.adoc[_» more&period;&period;&period;_]#
+
+Submits a completion token or function object for execution&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;dispatch&lowbar;with&lowbar;executor&lt;Executor&gt;&gt;(), token))
+xref:boost/asio/dispatch-0c.adoc[dispatch](
+    Executor const& ex,
+    NullaryToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/dispatch-0c.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+* This function returns , where `Init` is a function object type defined as&colon;
+* &period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler&period; The function signature of the completion handler must be&colon;
+| *ctx*
+| An execution context, from which the target executor is obtained&period;
+| *ex*
+| The target executor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

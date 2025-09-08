@@ -1,0 +1,84 @@
+[#boost-asio-async_write_at-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;write&lowbar;at
+:relfileprefix: ../../
+:mrdocs:
+
+Start an asynchronous operation to write all of the supplied data at the specified offset&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;write&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename AsyncRandomAccessWriteDevice,
+    typename Allocator,
+    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessWriteDevice::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;write&lowbar;at&lowbar;streambuf&lt;
+          AsyncRandomAccessWriteDevice&gt;&gt;(),
+        token, offset, &amp;b, transfer&lowbar;all()))
+async&lowbar;write&lowbar;at(
+    AsyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    WriteToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename AsyncRandomAccessWriteDevice&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+== Description
+
+This function is used to asynchronously write a certain number of bytes of data to a random access device at a specified offset&period; It is an initiating function for an `asynchronous&lowbar;operation`, and always returns immediately&period; The asynchronous operation will continue until one of the following conditions is true&colon;
+
+* All of the data in the supplied basic&lowbar;streambuf has been written&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the device&apos;s async&lowbar;write&lowbar;some&lowbar;at function, and is known as a _composed operation_&period; The program must ensure that the device performs no _overlapping_ write operations (such as async&lowbar;write&lowbar;at, the device&apos;s async&lowbar;write&lowbar;some&lowbar;at function, or any other composed operations that perform writes) until this operation completes&period; Operations are overlapping if the regions defined by their offsets, and the numbers of bytes to write, intersect&period;
+
+[,cpp]
+----
+void handler(
+  // Result of operation.
+  const boost::system::error_code& error,
+
+  // Number of bytes written from the buffers. If an error
+  // occurred, this will be less than the sum of the buffer sizes.
+  std::size_t bytes_transferred
+); 
+----
+Regardless of whether the asynchronous operation completes immediately or not, the completion handler will not be invoked from within this function&period; On immediate completion, invocation of the handler will be performed in a manner equivalent to using boost&colon;&colon;asio&colon;&colon;async&lowbar;immediate()&period;
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code, std::size_t) 
+----
+== Per&hyphen;Operation Cancellation
+This asynchronous operation supports cancellation for the following boost&colon;&colon;asio&colon;&colon;cancellation&lowbar;type values&colon;
+
+* `cancellation&lowbar;type&colon;&colon;terminal`
+* `cancellation&lowbar;type&colon;&colon;partial`
+
+if they are also supported by the `AsyncRandomAccessWriteDevice` type&apos;s async&lowbar;write&lowbar;some&lowbar;at operation&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *d*
+| The device to which the data is to be written&period; The type must support the AsyncRandomAccessWriteDevice concept&period;
+| *offset*
+| The offset at which the data will be written&period;
+| *b*
+| A basic&lowbar;streambuf object from which data will be written&period; Ownership of the streambuf is retained by the caller, which must guarantee that it remains valid until the completion handler is called&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the write completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

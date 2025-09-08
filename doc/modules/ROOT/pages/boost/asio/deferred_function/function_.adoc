@@ -1,0 +1,16 @@
+[#boost-asio-deferred_function-function_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/deferred_function.adoc[deferred&lowbar;function]::function&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+Function function&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

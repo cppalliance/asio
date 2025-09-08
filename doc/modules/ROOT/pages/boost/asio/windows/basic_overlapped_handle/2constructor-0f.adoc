@@ -1,0 +1,112 @@
+[#boost-asio-windows-basic_overlapped_handle-2constructor-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_overlapped_handle.adoc[basic&lowbar;overlapped&lowbar;handle]::basic&lowbar;overlapped&lowbar;handle
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;overlapped&lowbar;handle&period;hpp&gt;`
+
+Move&hyphen;construct an overlapped handle from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_overlapped_handle/2constructor-05.adoc[basic&lowbar;overlapped&lowbar;handle](xref:boost/asio/windows/basic_overlapped_handle.adoc[basic&lowbar;overlapped&lowbar;handle]&& other);
+----
+
+[.small]#xref:boost/asio/windows/basic_overlapped_handle/2constructor-05.adoc[_» more&period;&period;&period;_]#
+
+Construct an overlapped handle without opening it&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/windows/basic_overlapped_handle/2constructor-01.adoc[basic&lowbar;overlapped&lowbar;handle](xref:boost/asio/windows/basic_overlapped_handle/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+[.small]#xref:boost/asio/windows/basic_overlapped_handle/2constructor-01.adoc[_» more&period;&period;&period;_]#
+
+Construct an overlapped handle on an existing native handle&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_overlapped_handle/2constructor-024.adoc[basic&lowbar;overlapped&lowbar;handle](
+    xref:boost/asio/windows/basic_overlapped_handle/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/windows/basic_overlapped_handle/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;handle);
+----
+
+[.small]#xref:boost/asio/windows/basic_overlapped_handle/2constructor-024.adoc[_» more&period;&period;&period;_]#
+
+Construct an overlapped handle without opening it&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/windows/basic_overlapped_handle/2constructor-03.adoc[basic&lowbar;overlapped&lowbar;handle](
+    ExecutionContext& context,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/windows/basic_overlapped_handle/2constructor-03.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;construct an overlapped handle from a handle of another executor type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/windows/basic_overlapped_handle/2constructor-0a.adoc[basic&lowbar;overlapped&lowbar;handle](
+    xref:boost/asio/windows/basic_overlapped_handle.adoc[basic&lowbar;overlapped&lowbar;handle&lt;Executor1&gt;]&& other,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/windows/basic_overlapped_handle/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+Construct an overlapped handle on an existing native handle&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/windows/basic_overlapped_handle/2constructor-028.adoc[basic&lowbar;overlapped&lowbar;handle](
+    ExecutionContext& context,
+    xref:boost/asio/windows/basic_overlapped_handle/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;handle,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/windows/basic_overlapped_handle/2constructor-028.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other overlapped handle object from which the move will occur&period;
+| *ex*
+| The I&sol;O executor that the overlapped handle will use, by default, to dispatch handlers for any asynchronous operations performed on the overlapped handle&period;
+| *native&lowbar;handle*
+| The new underlying handle implementation&period;
+| *context*
+| An execution context which provides the I&sol;O executor that the overlapped handle will use, by default, to dispatch handlers for any asynchronous operations performed on the overlapped handle&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

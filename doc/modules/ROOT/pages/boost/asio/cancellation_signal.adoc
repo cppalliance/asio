@@ -1,0 +1,34 @@
+[#boost-asio-cancellation_signal]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancellation&lowbar;signal
+:relfileprefix: ../../
+:mrdocs:
+
+A cancellation signal with a single slot&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;signal&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class cancellation&lowbar;signal;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancellation_signal/2constructor-00.adoc[`cancellation&lowbar;signal`]         [.small]#[constructor]#
+| Default constructor
+| xref:boost/asio/cancellation_signal/2destructor.adoc[`&#126;cancellation&lowbar;signal`] [.small]#[destructor]#
+| Destructor
+| xref:boost/asio/cancellation_signal/emit.adoc[`emit`] 
+| Emits the signal and causes invocation of the slot&apos;s handler, if any&period;
+| xref:boost/asio/cancellation_signal/slot.adoc[`slot`] 
+| Returns the single slot associated with the signal&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

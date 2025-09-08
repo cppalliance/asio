@@ -1,0 +1,15 @@
+[#boost]
+= boost
+:relfileprefix: 
+:mrdocs:
+
+== Namespaces
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio.adoc[`asio`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,30 @@
+[#boost-asio-operator_bitnot-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&#126;
+:relfileprefix: ../../
+:mrdocs:
+
+Bitwise negation operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;signal&lowbar;set&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t]
+operator&#126;(xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t] x);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *x*
+| The operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

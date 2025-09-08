@@ -1,0 +1,29 @@
+[#boost-asio-basic_datagram_socket-rebind_executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::rebind&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Rebinds the socket type to another executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+struct rebind&lowbar;executor;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_datagram_socket/rebind_executor/other.adoc[`other`] 
+| The socket type when rebound to the specified executor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

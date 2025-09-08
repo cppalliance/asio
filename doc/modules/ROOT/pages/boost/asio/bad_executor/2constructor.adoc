@@ -1,0 +1,18 @@
+[#boost-asio-bad_executor-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/bad_executor.adoc[bad&lowbar;executor]::bad&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bad&lowbar;executor() noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,803 @@
+[#boost-asio]
+= xref:boost.adoc[boost]::asio
+:relfileprefix: ../
+:mrdocs:
+
+== Namespaces
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/buffer_literals.adoc[`buffer&lowbar;literals`] 
+| xref:boost/asio/chrono.adoc[`chrono`] 
+| xref:boost/asio/error.adoc[`error`] 
+| xref:boost/asio/execution.adoc[`execution`] 
+| xref:boost/asio/generic.adoc[`generic`] 
+| xref:boost/asio/ip.adoc[`ip`] 
+| xref:boost/asio/local.adoc[`local`] 
+| xref:boost/asio/resolver_errc.adoc[`resolver&lowbar;errc`] 
+| xref:boost/asio/socket_errc.adoc[`socket&lowbar;errc`] 
+| xref:boost/asio/stream_errc.adoc[`stream&lowbar;errc`] 
+| xref:boost/asio/this_coro.adoc[`this&lowbar;coro`] 
+| xref:boost/asio/traits.adoc[`traits`] 
+| xref:boost/asio/windows.adoc[`windows`] 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/aligned_storage-01.adoc[`aligned&lowbar;storage`] 
+| 
+| xref:boost/asio/aligned_storage-0b.adoc[`aligned&lowbar;storage&lt;24, 8&gt;`] 
+| 
+| xref:boost/asio/allocator_binder.adoc[`allocator&lowbar;binder`] 
+| A call wrapper type to bind an allocator of type `Allocator` to an object of type `T&period;`
+| xref:boost/asio/any_completion_executor.adoc[`any&lowbar;completion&lowbar;executor`] 
+| Polymorphic executor type for use with I&sol;O objects&period;
+| xref:boost/asio/any_completion_handler.adoc[`any&lowbar;completion&lowbar;handler`] 
+| Polymorphic wrapper for completion handlers&period;
+| xref:boost/asio/any_completion_handler_allocator-06.adoc[`any&lowbar;completion&lowbar;handler&lowbar;allocator`] 
+| An allocator type that forwards memory allocation operations through an instance of `any&lowbar;completion&lowbar;handler&period;`
+| xref:boost/asio/any_completion_handler_allocator-0f.adoc[`any&lowbar;completion&lowbar;handler&lowbar;allocator&lt;void, Signatures&period;&period;&period;&gt;`] 
+| A protoco&hyphen;allocator type that may be rebound to obtain an allocator that forwards memory allocation operations through an instance of `any&lowbar;completion&lowbar;handler&period;`
+| xref:boost/asio/any_io_executor.adoc[`any&lowbar;io&lowbar;executor`] 
+| Polymorphic executor type for use with I&sol;O objects&period;
+| xref:boost/asio/append_t.adoc[`append&lowbar;t`] 
+| Completion token type used to specify that the completion handler arguments should be passed additional values after the results of the operation&period;
+| xref:boost/asio/as_tuple_t.adoc[`as&lowbar;tuple&lowbar;t`] 
+| A `completion&lowbar;token` adapter used to specify that the completion handler arguments should be combined into a single tuple argument&period;
+| xref:boost/asio/associated_allocator-03f.adoc[`associated&lowbar;allocator`] 
+| Traits type used to obtain the allocator associated with an object&period;
+| xref:boost/asio/associated_allocator-038.adoc[`associated&lowbar;allocator&lt;reference&lowbar;wrapper&lt;T&gt;, Allocator&gt;`] 
+| Specialisation of associated&lowbar;allocator for `std&colon;&colon;reference&lowbar;wrapper&period;`
+| xref:boost/asio/associated_allocator-02.adoc[`associated&lowbar;allocator&lt;allocator&lowbar;binder&lt;T, Allocator&gt;, Allocator1&gt;`] 
+| 
+| xref:boost/asio/associated_cancellation_slot-04.adoc[`associated&lowbar;cancellation&lowbar;slot`] 
+| Traits type used to obtain the cancellation&lowbar;slot associated with an object&period;
+| xref:boost/asio/associated_cancellation_slot-05.adoc[`associated&lowbar;cancellation&lowbar;slot&lt;reference&lowbar;wrapper&lt;T&gt;, CancellationSlot&gt;`] 
+| Specialisation of associated&lowbar;cancellation&lowbar;slot for `std&colon;&colon;reference&lowbar;wrapper&period;`
+| xref:boost/asio/associated_cancellation_slot-0c.adoc[`associated&lowbar;cancellation&lowbar;slot&lt;cancellation&lowbar;slot&lowbar;binder&lt;T, CancellationSlot&gt;, CancellationSlot1&gt;`] 
+| 
+| xref:boost/asio/associated_executor-08.adoc[`associated&lowbar;executor`] 
+| Traits type used to obtain the executor associated with an object&period;
+| xref:boost/asio/associated_executor-0c.adoc[`associated&lowbar;executor&lt;any&lowbar;completion&lowbar;handler&lt;Signatures&period;&period;&period;&gt;, Candidate&gt;`] 
+| 
+| xref:boost/asio/associated_executor-0e.adoc[`associated&lowbar;executor&lt;reference&lowbar;wrapper&lt;T&gt;, Executor&gt;`] 
+| Specialisation of associated&lowbar;executor for `std&colon;&colon;reference&lowbar;wrapper&period;`
+| xref:boost/asio/associated_executor-04.adoc[`associated&lowbar;executor&lt;executor&lowbar;binder&lt;T, Executor&gt;, Executor1&gt;`] 
+| 
+| xref:boost/asio/associated_immediate_executor-03.adoc[`associated&lowbar;immediate&lowbar;executor`] 
+| Traits type used to obtain the immediate executor associated with an object&period;
+| xref:boost/asio/associated_immediate_executor-0a.adoc[`associated&lowbar;immediate&lowbar;executor&lt;any&lowbar;completion&lowbar;handler&lt;Signatures&period;&period;&period;&gt;, Candidate&gt;`] 
+| 
+| xref:boost/asio/associated_immediate_executor-02.adoc[`associated&lowbar;immediate&lowbar;executor&lt;reference&lowbar;wrapper&lt;T&gt;, Executor&gt;`] 
+| Specialisation of associated&lowbar;immediate&lowbar;executor for `std&colon;&colon;reference&lowbar;wrapper&period;`
+| xref:boost/asio/associated_immediate_executor-0d.adoc[`associated&lowbar;immediate&lowbar;executor&lt;immediate&lowbar;executor&lowbar;binder&lt;T, Executor&gt;, Executor1&gt;`] 
+| 
+| xref:boost/asio/associator-0a1.adoc[`associator`] 
+| Used to generically specialise associators for a type&period;
+| xref:boost/asio/associator-0ba.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-026.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-042.adoc[`associator&lt;Associator, allocator&lowbar;binder&lt;T, Allocator&gt;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-0c.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-0f7.adoc[`associator&lt;Associator, cancellation&lowbar;slot&lowbar;binder&lt;T, CancellationSlot&gt;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-07.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-0be.adoc[`associator&lt;Associator, executor&lowbar;binder&lt;T, Executor&gt;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-0d.adoc[`associator&lt;Associator, immediate&lowbar;executor&lowbar;binder&lt;T, Executor&gt;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-0f4.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-00c.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-004.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-020.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-08.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-044.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-09.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-0a9.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/async_completion.adoc[`async&lowbar;completion`] 
+| Helper template to deduce the handler type from a CompletionToken, capture a local copy of the handler, and then create an async&lowbar;result for the handler&period;
+| xref:boost/asio/async_result-04d.adoc[`async&lowbar;result`] 
+| 
+| xref:boost/asio/async_result-01.adoc[`async&lowbar;result&lt;&sol;&ast; implementation-defined &ast;&sol;, Signatures&period;&period;&period;&gt;`] 
+| 
+| xref:boost/asio/async_result-0e.adoc[`async&lowbar;result&lt;&sol;&ast; implementation-defined &ast;&sol;, Signature&gt;`] 
+| 
+| xref:boost/asio/async_result-070.adoc[`async&lowbar;result&lt;&sol;&ast; implementation-defined &ast;&sol;, Signatures&period;&period;&period;&gt;`] 
+| 
+| xref:boost/asio/async_result-0c.adoc[`async&lowbar;result&lt;void, Signatures&period;&period;&period;&gt;`] 
+| 
+| xref:boost/asio/async_result-07e.adoc[`async&lowbar;result&lt;partial&lowbar;allocator&lowbar;binder&lt;Allocator&gt;, Signatures&period;&period;&period;&gt;`] 
+| 
+| xref:boost/asio/async_result-048.adoc[`async&lowbar;result&lt;partial&lowbar;cancellation&lowbar;slot&lowbar;binder&lt;CancellationSlot&gt;, Signatures&period;&period;&period;&gt;`] 
+| 
+| xref:boost/asio/async_result-05.adoc[`async&lowbar;result&lt;partial&lowbar;executor&lowbar;binder&lt;Executor&gt;, Signatures&period;&period;&period;&gt;`] 
+| 
+| xref:boost/asio/async_result-0a.adoc[`async&lowbar;result&lt;partial&lowbar;immediate&lowbar;executor&lowbar;binder&lt;Executor&gt;, Signatures&period;&period;&period;&gt;`] 
+| 
+| xref:boost/asio/async_result-00.adoc[`async&lowbar;result&lt;allocator&lowbar;binder&lt;T, Allocator&gt;, Signature&gt;`] 
+| 
+| xref:boost/asio/async_result-09.adoc[`async&lowbar;result&lt;cancellation&lowbar;slot&lowbar;binder&lt;T, CancellationSlot&gt;, Signature&gt;`] 
+| 
+| xref:boost/asio/async_result-03.adoc[`async&lowbar;result&lt;executor&lowbar;binder&lt;T, Executor&gt;, Signature&gt;`] 
+| 
+| xref:boost/asio/async_result-0f.adoc[`async&lowbar;result&lt;immediate&lowbar;executor&lowbar;binder&lt;T, Executor&gt;, Signature&gt;`] 
+| 
+| xref:boost/asio/bad_executor.adoc[`bad&lowbar;executor`] 
+| Exception thrown when trying to access an empty polymorphic executor&period;
+| xref:boost/asio/basic_datagram_socket.adoc[`basic&lowbar;datagram&lowbar;socket`] 
+| Provides datagram&hyphen;oriented socket functionality&period;
+| xref:boost/asio/basic_file.adoc[`basic&lowbar;file`] 
+| Provides file functionality&period;
+| xref:boost/asio/basic_io_object-027.adoc[`basic&lowbar;io&lowbar;object`] 
+| 
+| xref:boost/asio/basic_io_object-029.adoc[`basic&lowbar;io&lowbar;object&lt;IoObjectService, true&gt;`] 
+| 
+| xref:boost/asio/basic_random_access_file.adoc[`basic&lowbar;random&lowbar;access&lowbar;file`] 
+| Provides random&hyphen;access file functionality&period;
+| xref:boost/asio/basic_raw_socket.adoc[`basic&lowbar;raw&lowbar;socket`] 
+| Provides raw&hyphen;oriented socket functionality&period;
+| xref:boost/asio/basic_readable_pipe.adoc[`basic&lowbar;readable&lowbar;pipe`] 
+| Provides pipe functionality&period;
+| xref:boost/asio/basic_seq_packet_socket.adoc[`basic&lowbar;seq&lowbar;packet&lowbar;socket`] 
+| Provides sequenced packet socket functionality&period;
+| xref:boost/asio/basic_serial_port.adoc[`basic&lowbar;serial&lowbar;port`] 
+| Provides serial port functionality&period;
+| xref:boost/asio/basic_signal_set.adoc[`basic&lowbar;signal&lowbar;set`] 
+| Provides signal functionality&period;
+| xref:boost/asio/basic_socket.adoc[`basic&lowbar;socket`] 
+| Provides socket functionality&period;
+| xref:boost/asio/basic_socket_acceptor.adoc[`basic&lowbar;socket&lowbar;acceptor`] 
+| Provides the ability to accept new connections&period;
+| xref:boost/asio/basic_socket_iostream.adoc[`basic&lowbar;socket&lowbar;iostream`] 
+| 
+| xref:boost/asio/basic_socket_streambuf.adoc[`basic&lowbar;socket&lowbar;streambuf`] 
+| 
+| xref:boost/asio/basic_stream_file.adoc[`basic&lowbar;stream&lowbar;file`] 
+| Provides stream&hyphen;oriented file functionality&period;
+| xref:boost/asio/basic_stream_socket.adoc[`basic&lowbar;stream&lowbar;socket`] 
+| Provides stream&hyphen;oriented socket functionality&period;
+| xref:boost/asio/basic_streambuf.adoc[`basic&lowbar;streambuf`] 
+| 
+| xref:boost/asio/basic_streambuf_ref.adoc[`basic&lowbar;streambuf&lowbar;ref`] 
+| 
+| xref:boost/asio/basic_system_executor.adoc[`basic&lowbar;system&lowbar;executor`] 
+| An executor that uses arbitrary threads&period;
+| xref:boost/asio/basic_waitable_timer.adoc[`basic&lowbar;waitable&lowbar;timer`] 
+| Provides waitable timer functionality&period;
+| xref:boost/asio/basic_writable_pipe.adoc[`basic&lowbar;writable&lowbar;pipe`] 
+| Provides pipe functionality&period;
+| xref:boost/asio/buffer_registration.adoc[`buffer&lowbar;registration`] 
+| Automatically registers and unregistered buffers with an execution context&period;
+| xref:boost/asio/buffered_read_stream.adoc[`buffered&lowbar;read&lowbar;stream`] 
+| Adds buffering to the read&hyphen;related operations of a stream&period;
+| xref:boost/asio/buffered_stream.adoc[`buffered&lowbar;stream`] 
+| Adds buffering to the read&hyphen; and write&hyphen;related operations of a stream&period;
+| xref:boost/asio/buffered_write_stream.adoc[`buffered&lowbar;write&lowbar;stream`] 
+| Adds buffering to the write&hyphen;related operations of a stream&period;
+| xref:boost/asio/buffers_iterator.adoc[`buffers&lowbar;iterator`] 
+| A random access iterator over the bytes in a buffer sequence&period;
+| xref:boost/asio/can_prefer.adoc[`can&lowbar;prefer`] 
+| 
+| xref:boost/asio/can_query.adoc[`can&lowbar;query`] 
+| 
+| xref:boost/asio/can_require.adoc[`can&lowbar;require`] 
+| 
+| xref:boost/asio/can_require_concept.adoc[`can&lowbar;require&lowbar;concept`] 
+| 
+| xref:boost/asio/cancel_after_t.adoc[`cancel&lowbar;after&lowbar;t`] 
+| A `completion&lowbar;token` adapter that cancels an operation after a timeout&period;
+| xref:boost/asio/cancel_after_timer.adoc[`cancel&lowbar;after&lowbar;timer`] 
+| A `completion&lowbar;token` adapter that cancels an operation after a timeout&period;
+| xref:boost/asio/cancel_at_t.adoc[`cancel&lowbar;at&lowbar;t`] 
+| A `completion&lowbar;token` adapter that cancels an operation at a given time&period;
+| xref:boost/asio/cancel_at_timer.adoc[`cancel&lowbar;at&lowbar;timer`] 
+| A `completion&lowbar;token` adapter that cancels an operation at a given time&period;
+| xref:boost/asio/cancellation_filter.adoc[`cancellation&lowbar;filter`] 
+| A simple cancellation signal propagation filter&period;
+| xref:boost/asio/cancellation_signal.adoc[`cancellation&lowbar;signal`] 
+| A cancellation signal with a single slot&period;
+| xref:boost/asio/cancellation_slot.adoc[`cancellation&lowbar;slot`] 
+| A slot associated with a cancellation signal&period;
+| xref:boost/asio/cancellation_slot_binder.adoc[`cancellation&lowbar;slot&lowbar;binder`] 
+| A call wrapper type to bind a cancellation slot of type `CancellationSlot` to an object of type `T&period;`
+| xref:boost/asio/cancellation_state.adoc[`cancellation&lowbar;state`] 
+| A cancellation state is used for chaining signals and slots in compositions&period;
+| xref:boost/asio/completion_signature_of.adoc[`completion&lowbar;signature&lowbar;of`] 
+| 
+| xref:boost/asio/config.adoc[`config`] 
+| Provides access to the configuration values associated with an execution context&period;
+| xref:boost/asio/config_from_concurrency_hint.adoc[`config&lowbar;from&lowbar;concurrency&lowbar;hint`] 
+| Configures an execution context based on a concurrency hint&period;
+| xref:boost/asio/config_from_env.adoc[`config&lowbar;from&lowbar;env`] 
+| Configures an execution context by reading environment variables&period;
+| xref:boost/asio/config_from_string.adoc[`config&lowbar;from&lowbar;string`] 
+| Configures an execution context by reading variables from a string&period;
+| xref:boost/asio/config_service.adoc[`config&lowbar;service`] 
+| Base class for configuration implementations&period;
+| xref:boost/asio/conjunction-06.adoc[`conjunction`] 
+| 
+| xref:boost/asio/conjunction-02.adoc[`conjunction&lt;T&gt;`] 
+| 
+| xref:boost/asio/conjunction-0a.adoc[`conjunction&lt;Head, Tail&period;&period;&period;&gt;`] 
+| 
+| xref:boost/asio/consign_t.adoc[`consign&lowbar;t`] 
+| Completion token type used to specify that the completion handler should carry additional values along with it&period;
+| xref:boost/asio/const_buffer.adoc[`const&lowbar;buffer`] 
+| Holds a buffer that cannot be modified&period;
+| xref:boost/asio/const_registered_buffer.adoc[`const&lowbar;registered&lowbar;buffer`] 
+| Holds a registered buffer over non&hyphen;modifiable data&period;
+| xref:boost/asio/constraint.adoc[`constraint`] 
+| 
+| xref:boost/asio/coroutine.adoc[`coroutine`] 
+| Provides support for implementing stackless coroutines&period;
+| xref:boost/asio/default_completion_token.adoc[`default&lowbar;completion&lowbar;token`] 
+| 
+| xref:boost/asio/defaulted_constraint.adoc[`defaulted&lowbar;constraint`] 
+| 
+| xref:boost/asio/deferred_async_operation-08.adoc[`deferred&lowbar;async&lowbar;operation`] 
+| Encapsulates a deferred asynchronous operation&period;
+| xref:boost/asio/deferred_async_operation-05.adoc[`deferred&lowbar;async&lowbar;operation&lt;deferred&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;, Initiation, InitArgs&period;&period;&period;&gt;`] 
+| Encapsulates a deferred asynchronous operation thas has multiple completion signatures&period;
+| xref:boost/asio/deferred_conditional.adoc[`deferred&lowbar;conditional`] 
+| Used to represent a deferred conditional branch&period;
+| xref:boost/asio/deferred_function.adoc[`deferred&lowbar;function`] 
+| Wraps a function object so that it may be used as an element in a deferred composition&period;
+| xref:boost/asio/deferred_init_tag.adoc[`deferred&lowbar;init&lowbar;tag`] 
+| Tag type to disambiguate deferred constructors&period;
+| xref:boost/asio/deferred_noop.adoc[`deferred&lowbar;noop`] 
+| Used to represent an empty deferred action&period;
+| xref:boost/asio/deferred_sequence.adoc[`deferred&lowbar;sequence`] 
+| Defines a link between two consecutive operations in a sequence&period;
+| xref:boost/asio/deferred_signatures.adoc[`deferred&lowbar;signatures`] 
+| Helper type to wrap multiple completion signatures&period;
+| xref:boost/asio/deferred_t.adoc[`deferred&lowbar;t`] 
+| Class used to specify that an asynchronous operation should return a function object to lazily launch the operation&period;
+| xref:boost/asio/deferred_values.adoc[`deferred&lowbar;values`] 
+| Encapsulates deferred values&period;
+| xref:boost/asio/detached_t.adoc[`detached&lowbar;t`] 
+| A `completion&lowbar;token` type used to specify that an asynchronous operation is detached&period;
+| xref:boost/asio/disposition_traits-05.adoc[`disposition&lowbar;traits`] 
+| 
+| xref:boost/asio/disposition_traits-0e.adoc[`disposition&lowbar;traits&lt;boost::system::error&lowbar;code&gt;`] 
+| Specialisation of `disposition&lowbar;traits` for `error&lowbar;code&period;`
+| xref:boost/asio/disposition_traits-06.adoc[`disposition&lowbar;traits&lt;std::exception&lowbar;ptr&gt;`] 
+| Specialisation of `disposition&lowbar;traits` for `std&colon;&colon;exception&lowbar;ptr&period;`
+| xref:boost/asio/disposition_traits-04.adoc[`disposition&lowbar;traits&lt;no&lowbar;error&lowbar;t&gt;`] 
+| Specialisation of `disposition&lowbar;traits` for `no&lowbar;error&lowbar;t&period;`
+| xref:boost/asio/dynamic_string_buffer.adoc[`dynamic&lowbar;string&lowbar;buffer`] 
+| Adapt a basic&lowbar;string to the DynamicBuffer requirements&period;
+| xref:boost/asio/dynamic_vector_buffer.adoc[`dynamic&lowbar;vector&lowbar;buffer`] 
+| Adapt a vector to the DynamicBuffer requirements&period;
+| xref:boost/asio/execution_context.adoc[`execution&lowbar;context`] 
+| A context for function object execution&period;
+| xref:boost/asio/executor.adoc[`executor`] 
+| Polymorphic wrapper for executors&period;
+| xref:boost/asio/executor_arg_t.adoc[`executor&lowbar;arg&lowbar;t`] 
+| A special type, similar to std&colon;&colon;nothrow&lowbar;t, used to disambiguate constructors that accept executor arguments&period;
+| xref:boost/asio/executor_binder.adoc[`executor&lowbar;binder`] 
+| A call wrapper type to bind an executor of type `Executor` to an object of type `T&period;`
+| xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] 
+| 
+| xref:boost/asio/executor_work_guard-0a.adoc[`executor&lowbar;work&lowbar;guard&lt;Executor&gt;`] 
+| 
+| xref:boost/asio/executor_work_guard-00.adoc[`executor&lowbar;work&lowbar;guard&lt;Executor&gt;`] 
+| 
+| xref:boost/asio/file_base.adoc[`file&lowbar;base`] 
+| The file&lowbar;base class is used as a base for the basic&lowbar;stream&lowbar;file and basic&lowbar;random&lowbar;access&lowbar;file class templates so that we have a common place to define flags&period;
+| xref:boost/asio/immediate_executor_binder.adoc[`immediate&lowbar;executor&lowbar;binder`] 
+| A call wrapper type to bind a immediate executor of type `Executor` to an object of type `T&period;`
+| xref:boost/asio/invalid_service_owner.adoc[`invalid&lowbar;service&lowbar;owner`] 
+| Exception thrown when trying to add a service object to an execution&lowbar;context where the service has a different owner&period;
+| xref:boost/asio/io_context.adoc[`io&lowbar;context`] 
+| Provides core I&sol;O functionality&period;
+| xref:boost/asio/is_applicable_property-0cf.adoc[`is&lowbar;applicable&lowbar;property`] 
+| 
+| xref:boost/asio/is_applicable_property-0ca.adoc[`is&lowbar;applicable&lowbar;property&lt;T, execution::prefer&lowbar;only&lt;InnerProperty&gt;&gt;`] 
+| 
+| xref:boost/asio/is_async_operation.adoc[`is&lowbar;async&lowbar;operation`] 
+| 
+| xref:boost/asio/is_completion_condition.adoc[`is&lowbar;completion&lowbar;condition`] 
+| 
+| xref:boost/asio/is_connect_condition.adoc[`is&lowbar;connect&lowbar;condition`] 
+| 
+| xref:boost/asio/is_const_buffer_sequence.adoc[`is&lowbar;const&lowbar;buffer&lowbar;sequence`] 
+| Trait to determine whether a type satisfies the ConstBufferSequence requirements&period;
+| xref:boost/asio/is_contiguous_iterator.adoc[`is&lowbar;contiguous&lowbar;iterator`] 
+| The is&lowbar;contiguous&lowbar;iterator class is a traits class that may be used to determine whether a type is a contiguous iterator&period;
+| xref:boost/asio/is_deferred-05.adoc[`is&lowbar;deferred`] 
+| Trait for detecting objects that are usable as deferred operations&period;
+| xref:boost/asio/is_deferred-06.adoc[`is&lowbar;deferred&lt;deferred&lowbar;noop&gt;`] 
+| 
+| xref:boost/asio/is_deferred-0f.adoc[`is&lowbar;deferred&lt;deferred&lowbar;function&lt;Function&gt;&gt;`] 
+| 
+| xref:boost/asio/is_deferred-036.adoc[`is&lowbar;deferred&lt;deferred&lowbar;values&lt;Values&period;&period;&period;&gt;&gt;`] 
+| 
+| xref:boost/asio/is_deferred-02.adoc[`is&lowbar;deferred&lt;deferred&lowbar;conditional&lt;OnTrue, OnFalse&gt;&gt;`] 
+| 
+| xref:boost/asio/is_deferred-03a.adoc[`is&lowbar;deferred&lt;deferred&lowbar;sequence&lt;Head, Tail&gt;&gt;`] 
+| 
+| xref:boost/asio/is_deferred-0d.adoc[`is&lowbar;deferred&lt;deferred&lowbar;async&lowbar;operation&lt;Signature, Initiation, InitArgs&period;&period;&period;&gt;&gt;`] 
+| 
+| xref:boost/asio/is_disposition.adoc[`is&lowbar;disposition`] 
+| Trait used for testing whether a type satisfies the requirements of a disposition&period;
+| xref:boost/asio/is_dynamic_buffer.adoc[`is&lowbar;dynamic&lowbar;buffer`] 
+| Trait to determine whether a type satisfies the DynamicBuffer requirements&period;
+| xref:boost/asio/is_dynamic_buffer_v1.adoc[`is&lowbar;dynamic&lowbar;buffer&lowbar;v1`] 
+| Trait to determine whether a type satisfies the DynamicBuffer&lowbar;v1 requirements&period;
+| xref:boost/asio/is_dynamic_buffer_v2.adoc[`is&lowbar;dynamic&lowbar;buffer&lowbar;v2`] 
+| Trait to determine whether a type satisfies the DynamicBuffer&lowbar;v2 requirements&period;
+| xref:boost/asio/is_endpoint_sequence.adoc[`is&lowbar;endpoint&lowbar;sequence`] 
+| 
+| xref:boost/asio/is_executor.adoc[`is&lowbar;executor`] 
+| The is&lowbar;executor trait detects whether a type T meets the Executor type requirements&period;
+| xref:boost/asio/is_match_condition.adoc[`is&lowbar;match&lowbar;condition`] 
+| Type trait used to determine whether a type can be used as a match condition function with read&lowbar;until and async&lowbar;read&lowbar;until&period;
+| xref:boost/asio/is_mutable_buffer_sequence.adoc[`is&lowbar;mutable&lowbar;buffer&lowbar;sequence`] 
+| Trait to determine whether a type satisfies the MutableBufferSequence requirements&period;
+| xref:boost/asio/is_nothrow_prefer.adoc[`is&lowbar;nothrow&lowbar;prefer`] 
+| 
+| xref:boost/asio/is_nothrow_query.adoc[`is&lowbar;nothrow&lowbar;query`] 
+| 
+| xref:boost/asio/is_nothrow_require.adoc[`is&lowbar;nothrow&lowbar;require`] 
+| 
+| xref:boost/asio/is_nothrow_require_concept.adoc[`is&lowbar;nothrow&lowbar;require&lowbar;concept`] 
+| 
+| xref:boost/asio/is_read_buffered.adoc[`is&lowbar;read&lowbar;buffered`] 
+| The is&lowbar;read&lowbar;buffered class is a traits class that may be used to determine whether a stream type supports buffering of read data&period;
+| xref:boost/asio/is_write_buffered.adoc[`is&lowbar;write&lowbar;buffered`] 
+| The is&lowbar;write&lowbar;buffered class is a traits class that may be used to determine whether a stream type supports buffering of written data&period;
+| xref:boost/asio/multiple_exceptions.adoc[`multiple&lowbar;exceptions`] 
+| Exception thrown when there are multiple pending exceptions to rethrow&period;
+| xref:boost/asio/mutable_buffer.adoc[`mutable&lowbar;buffer`] 
+| Holds a buffer that can be modified&period;
+| xref:boost/asio/mutable_registered_buffer.adoc[`mutable&lowbar;registered&lowbar;buffer`] 
+| Holds a registered buffer over modifiable data&period;
+| xref:boost/asio/no_error_t.adoc[`no&lowbar;error&lowbar;t`] 
+| A tag type used to indicate the absence of an error&period;
+| xref:boost/asio/null_buffers.adoc[`null&lowbar;buffers`] 
+| (Deprecated&colon; Use the socket&sol;descriptor wait() and async&lowbar;wait() member functions&period;) An implementation of both the ConstBufferSequence and MutableBufferSequence concepts to represent a null buffer sequence&period;
+| xref:boost/asio/partial_allocator_binder.adoc[`partial&lowbar;allocator&lowbar;binder`] 
+| A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied allocator as its associated allocator&period;
+| xref:boost/asio/partial_as_tuple.adoc[`partial&lowbar;as&lowbar;tuple`] 
+| A function object type that adapts a `completion&lowbar;token` to specify that the completion handler arguments should be combined into a single tuple argument&period;
+| xref:boost/asio/partial_cancel_after.adoc[`partial&lowbar;cancel&lowbar;after`] 
+| A function object type that adapts a `completion&lowbar;token` to cancel an operation after a timeout&period;
+| xref:boost/asio/partial_cancel_after_timer.adoc[`partial&lowbar;cancel&lowbar;after&lowbar;timer`] 
+| A function object type that adapts a `completion&lowbar;token` to cancel an operation after a timeout&period;
+| xref:boost/asio/partial_cancel_at.adoc[`partial&lowbar;cancel&lowbar;at`] 
+| A function object type that adapts a `completion&lowbar;token` to cancel an operation at a given time&period;
+| xref:boost/asio/partial_cancel_at_timer.adoc[`partial&lowbar;cancel&lowbar;at&lowbar;timer`] 
+| A function object type that adapts a `completion&lowbar;token` to cancel an operation at a given time&period;
+| xref:boost/asio/partial_cancellation_slot_binder.adoc[`partial&lowbar;cancellation&lowbar;slot&lowbar;binder`] 
+| A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied cancellation slot as its associated cancellation slot&period;
+| xref:boost/asio/partial_executor_binder.adoc[`partial&lowbar;executor&lowbar;binder`] 
+| A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied executor as its associated executor&period;
+| xref:boost/asio/partial_immediate_executor_binder.adoc[`partial&lowbar;immediate&lowbar;executor&lowbar;binder`] 
+| A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied executor as its associated immediate executor&period;
+| xref:boost/asio/partial_redirect_error.adoc[`partial&lowbar;redirect&lowbar;error`] 
+| A function object type that adapts a `completion&lowbar;token` to capture error&lowbar;code values to a variable&period;
+| xref:boost/asio/prefer_result.adoc[`prefer&lowbar;result`] 
+| 
+| xref:boost/asio/prepend_t.adoc[`prepend&lowbar;t`] 
+| Completion token type used to specify that the completion handler arguments should be passed additional values before the results of the operation&period;
+| xref:boost/asio/query_result.adoc[`query&lowbar;result`] 
+| 
+| xref:boost/asio/recycling_allocator-02.adoc[`recycling&lowbar;allocator`] 
+| An allocator that caches memory blocks in thread&hyphen;local storage for reuse&period;
+| xref:boost/asio/recycling_allocator-0d.adoc[`recycling&lowbar;allocator&lt;void&gt;`] 
+| A proto&hyphen;allocator that caches memory blocks in thread&hyphen;local storage for reuse&period;
+| xref:boost/asio/redirect_error_t.adoc[`redirect&lowbar;error&lowbar;t`] 
+| A `completion&lowbar;token` adapter used to specify that an error produced by an asynchronous operation is captured to an error&lowbar;code variable&period;
+| xref:boost/asio/registered_buffer_id.adoc[`registered&lowbar;buffer&lowbar;id`] 
+| Type used to identify a registered buffer&period;
+| xref:boost/asio/remove_cvref.adoc[`remove&lowbar;cvref`] 
+| 
+| xref:boost/asio/require_concept_result.adoc[`require&lowbar;concept&lowbar;result`] 
+| 
+| xref:boost/asio/require_result.adoc[`require&lowbar;result`] 
+| 
+| xref:boost/asio/serial_port_base.adoc[`serial&lowbar;port&lowbar;base`] 
+| The serial&lowbar;port&lowbar;base class is used as a base for the basic&lowbar;serial&lowbar;port class template so that we have a common place to define the serial port options&period;
+| xref:boost/asio/service_already_exists.adoc[`service&lowbar;already&lowbar;exists`] 
+| Exception thrown when trying to add a duplicate service to an execution&lowbar;context&period;
+| xref:boost/asio/signal_set_base.adoc[`signal&lowbar;set&lowbar;base`] 
+| The signal&lowbar;set&lowbar;base class is used as a base for the basic&lowbar;signal&lowbar;set class templates so that we have a common place to define the flags enum&period;
+| xref:boost/asio/socket_base.adoc[`socket&lowbar;base`] 
+| The socket&lowbar;base class is used as a base for the basic&lowbar;stream&lowbar;socket and basic&lowbar;datagram&lowbar;socket class templates so that we have a common place to define the shutdown&lowbar;type and enum&period;
+| xref:boost/asio/strand.adoc[`strand`] 
+| Provides serialised function invocation for any executor type&period;
+| xref:boost/asio/system_context.adoc[`system&lowbar;context`] 
+| The executor context for the system executor&period;
+| xref:boost/asio/thread_pool.adoc[`thread&lowbar;pool`] 
+| A simple fixed&hyphen;size thread pool&period;
+| xref:boost/asio/type_identity.adoc[`type&lowbar;identity`] 
+| 
+| xref:boost/asio/use_future_t.adoc[`use&lowbar;future&lowbar;t`] 
+| A `completion&lowbar;token` type that causes an asynchronous operation to return a future&period;
+| xref:boost/asio/uses_executor-0e.adoc[`uses&lowbar;executor`] 
+| The uses&lowbar;executor trait detects whether a type T has an associated executor that is convertible from type Executor&period;
+| xref:boost/asio/uses_executor-0f.adoc[`uses&lowbar;executor&lt;executor&lowbar;binder&lt;T, Executor&gt;, Executor&gt;`] 
+| 
+| xref:boost/asio/void_type.adoc[`void&lowbar;type`] 
+| 
+| xref:boost/asio/wait_traits.adoc[`wait&lowbar;traits`] 
+| Wait traits suitable for use with the basic&lowbar;waitable&lowbar;timer class template&period;
+| xref:boost/asio/add_const_t.adoc[`add&lowbar;const&lowbar;t`] 
+| 
+| xref:boost/asio/add_lvalue_reference_t.adoc[`add&lowbar;lvalue&lowbar;reference&lowbar;t`] 
+| 
+| xref:boost/asio/aligned_storage_t.adoc[`aligned&lowbar;storage&lowbar;t`] 
+| 
+| xref:boost/asio/associated_allocator_t.adoc[`associated&lowbar;allocator&lowbar;t`] 
+| 
+| xref:boost/asio/associated_cancellation_slot_t.adoc[`associated&lowbar;cancellation&lowbar;slot&lowbar;t`] 
+| 
+| xref:boost/asio/associated_executor_t.adoc[`associated&lowbar;executor&lowbar;t`] 
+| 
+| xref:boost/asio/associated_immediate_executor_t.adoc[`associated&lowbar;immediate&lowbar;executor&lowbar;t`] 
+| 
+| xref:boost/asio/cancellation_type_t.adoc[`cancellation&lowbar;type&lowbar;t`] 
+| 
+| xref:boost/asio/completion_signature_of_t.adoc[`completion&lowbar;signature&lowbar;of&lowbar;t`] 
+| 
+| xref:boost/asio/conditional_t.adoc[`conditional&lowbar;t`] 
+| 
+| xref:boost/asio/constraint_t.adoc[`constraint&lowbar;t`] 
+| 
+| xref:boost/asio/decay_t.adoc[`decay&lowbar;t`] 
+| 
+| xref:boost/asio/default_completion_token_t.adoc[`default&lowbar;completion&lowbar;token&lowbar;t`] 
+| 
+| xref:boost/asio/disable_cancellation.adoc[`disable&lowbar;cancellation`] 
+| A cancellation filter that disables cancellation&period;
+| xref:boost/asio/enable_if_t.adoc[`enable&lowbar;if&lowbar;t`] 
+| 
+| xref:boost/asio/enable_partial_cancellation.adoc[`enable&lowbar;partial&lowbar;cancellation`] 
+| 
+| xref:boost/asio/enable_terminal_cancellation.adoc[`enable&lowbar;terminal&lowbar;cancellation`] 
+| A cancellation filter that enables terminal cancellation only&period;
+| xref:boost/asio/enable_total_cancellation.adoc[`enable&lowbar;total&lowbar;cancellation`] 
+| 
+| xref:boost/asio/high_resolution_timer.adoc[`high&lowbar;resolution&lowbar;timer`] 
+| Typedef for a timer based on the high resolution clock&period;
+| xref:boost/asio/prefer_result_t.adoc[`prefer&lowbar;result&lowbar;t`] 
+| 
+| xref:boost/asio/prefer_t.adoc[`prefer&lowbar;t`] 
+| 
+| xref:boost/asio/query_result_t.adoc[`query&lowbar;result&lowbar;t`] 
+| 
+| xref:boost/asio/query_t.adoc[`query&lowbar;t`] 
+| 
+| xref:boost/asio/random_access_file.adoc[`random&lowbar;access&lowbar;file`] 
+| Typedef for the typical usage of a random&hyphen;access file&period;
+| xref:boost/asio/readable_pipe.adoc[`readable&lowbar;pipe`] 
+| Typedef for the typical usage of a readable pipe&period;
+| xref:boost/asio/remove_cv_t.adoc[`remove&lowbar;cv&lowbar;t`] 
+| 
+| xref:boost/asio/remove_cvref_t.adoc[`remove&lowbar;cvref&lowbar;t`] 
+| 
+| xref:boost/asio/remove_pointer_t.adoc[`remove&lowbar;pointer&lowbar;t`] 
+| 
+| xref:boost/asio/remove_reference_t.adoc[`remove&lowbar;reference&lowbar;t`] 
+| 
+| xref:boost/asio/require_concept_result_t.adoc[`require&lowbar;concept&lowbar;result&lowbar;t`] 
+| 
+| xref:boost/asio/require_concept_t.adoc[`require&lowbar;concept&lowbar;t`] 
+| 
+| xref:boost/asio/require_result_t.adoc[`require&lowbar;result&lowbar;t`] 
+| 
+| xref:boost/asio/require_t.adoc[`require&lowbar;t`] 
+| 
+| xref:boost/asio/result_of_t.adoc[`result&lowbar;of&lowbar;t`] 
+| 
+| xref:boost/asio/serial_port.adoc[`serial&lowbar;port`] 
+| Typedef for the typical usage of a serial port&period;
+| xref:boost/asio/signal_set.adoc[`signal&lowbar;set`] 
+| Typedef for the typical usage of a signal set&period;
+| xref:boost/asio/static_thread_pool.adoc[`static&lowbar;thread&lowbar;pool`] 
+| 
+| xref:boost/asio/steady_timer.adoc[`steady&lowbar;timer`] 
+| Typedef for a timer based on the steady clock&period;
+| xref:boost/asio/stream_file.adoc[`stream&lowbar;file`] 
+| Typedef for the typical usage of a stream&hyphen;oriented file&period;
+| xref:boost/asio/streambuf.adoc[`streambuf`] 
+| Typedef for the typical usage of basic&lowbar;streambuf&period;
+| xref:boost/asio/system_executor.adoc[`system&lowbar;executor`] 
+| An executor that uses arbitrary threads&period;
+| xref:boost/asio/system_timer.adoc[`system&lowbar;timer`] 
+| Typedef for a timer based on the system clock&period;
+| xref:boost/asio/type_identity_t.adoc[`type&lowbar;identity&lowbar;t`] 
+| 
+| xref:boost/asio/void_t.adoc[`void&lowbar;t`] 
+| 
+| xref:boost/asio/writable_pipe.adoc[`writable&lowbar;pipe`] 
+| Typedef for the typical usage of a writable pipe&period;
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancellation_type.adoc[`cancellation&lowbar;type`] 
+| 
+|===
+
+== Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/add_service.adoc[`add&lowbar;service`] 
+| (Deprecated&colon; Use make&lowbar;service()&period;) Add a service object to the execution&lowbar;context&period;
+| xref:boost/asio/aligned_delete.adoc[`aligned&lowbar;delete`] 
+| 
+| xref:boost/asio/aligned_new.adoc[`aligned&lowbar;new`] 
+| 
+| xref:boost/asio/append.adoc[`append`] 
+| Completion token type used to specify that the completion handler arguments should be passed additional values after the results of the operation&period;
+| xref:boost/asio/asio_handler_is_continuation.adoc[`asio&lowbar;handler&lowbar;is&lowbar;continuation`] 
+| Default continuation function for handlers&period;
+| xref:boost/asio/async_compose.adoc[`async&lowbar;compose`] 
+| Launch an asynchronous operation with a stateful implementation&period;
+| xref:boost/asio/async_connect-04.adoc[`async&lowbar;connect`] 
+| Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/async_immediate-0d.adoc[`async&lowbar;immediate`] 
+| Launch a trivial asynchronous operation that completes immediately&period;
+| xref:boost/asio/async_initiate-08.adoc[`async&lowbar;initiate`] 
+| 
+| xref:boost/asio/async_read-02.adoc[`async&lowbar;read`] 
+| Start an asynchronous operation to read a certain amount of data from a stream&period;
+| xref:boost/asio/async_read_at-04.adoc[`async&lowbar;read&lowbar;at`] 
+| Start an asynchronous operation to read a certain amount of data at the specified offset&period;
+| xref:boost/asio/async_read_until-060.adoc[`async&lowbar;read&lowbar;until`] 
+| `async&lowbar;read&lowbar;until` overloads
+| xref:boost/asio/async_write-00.adoc[`async&lowbar;write`] 
+| `async&lowbar;write` overloads
+| xref:boost/asio/async_write_at-003.adoc[`async&lowbar;write&lowbar;at`] 
+| `async&lowbar;write&lowbar;at` overloads
+| xref:boost/asio/bind_allocator-0876.adoc[`bind&lowbar;allocator`] 
+| `bind&lowbar;allocator` overloads
+| xref:boost/asio/bind_cancellation_slot-04.adoc[`bind&lowbar;cancellation&lowbar;slot`] 
+| `bind&lowbar;cancellation&lowbar;slot` overloads
+| xref:boost/asio/bind_executor-0a.adoc[`bind&lowbar;executor`] 
+| `bind&lowbar;executor` overloads
+| xref:boost/asio/bind_immediate_executor-09.adoc[`bind&lowbar;immediate&lowbar;executor`] 
+| `bind&lowbar;immediate&lowbar;executor` overloads
+| xref:boost/asio/buffer-068.adoc[`buffer`] 
+| `buffer` overloads
+| xref:boost/asio/buffer_copy-01.adoc[`buffer&lowbar;copy`] 
+| `buffer&lowbar;copy` overloads
+| xref:boost/asio/buffer_sequence_begin-01c.adoc[`buffer&lowbar;sequence&lowbar;begin`] 
+| Get an iterator to the first element in a buffer sequence&period;
+| xref:boost/asio/buffer_sequence_end-07.adoc[`buffer&lowbar;sequence&lowbar;end`] 
+| Get an iterator to one past the end element in a buffer sequence&period;
+| xref:boost/asio/buffer_size.adoc[`buffer&lowbar;size`] 
+| Get the total number of bytes in a buffer sequence&period;
+| xref:boost/asio/buffers_begin.adoc[`buffers&lowbar;begin`] 
+| Construct an iterator representing the beginning of the buffers&apos; data&period;
+| xref:boost/asio/buffers_end.adoc[`buffers&lowbar;end`] 
+| Construct an iterator representing the end of the buffers&apos; data&period;
+| xref:boost/asio/cancel_after-0e.adoc[`cancel&lowbar;after`] 
+| `cancel&lowbar;after` overloads
+| xref:boost/asio/cancel_at-08.adoc[`cancel&lowbar;at`] 
+| `cancel&lowbar;at` overloads
+| xref:boost/asio/composed.adoc[`composed`] 
+| Creates an initiation function object that may be used to launch an asynchronous operation with a stateful implementation&period;
+| xref:boost/asio/connect-07d.adoc[`connect`] 
+| Establishes a socket connection by trying each endpoint in a sequence&period;
+| xref:boost/asio/connect_pipe-05.adoc[`connect&lowbar;pipe`] 
+| Connect two pipe ends using an anonymous pipe&period;
+| xref:boost/asio/consign.adoc[`consign`] 
+| Completion token adapter used to specify that the completion handler should carry additional values along with it&period;
+| xref:boost/asio/defer-0c2.adoc[`defer`] 
+| Submits a completion token or function object for execution&period;
+| xref:boost/asio/dispatch-09.adoc[`dispatch`] 
+| Submits a completion token or function object for execution&period;
+| xref:boost/asio/dynamic_buffer-089.adoc[`dynamic&lowbar;buffer`] 
+| `dynamic&lowbar;buffer` overloads
+| xref:boost/asio/get_associated_allocator-0c.adoc[`get&lowbar;associated&lowbar;allocator`] 
+| Helper function to obtain an object&apos;s associated allocator&period;
+| xref:boost/asio/get_associated_cancellation_slot-0f.adoc[`get&lowbar;associated&lowbar;cancellation&lowbar;slot`] 
+| Helper function to obtain an object&apos;s associated cancellation&lowbar;slot&period;
+| xref:boost/asio/get_associated_executor-089.adoc[`get&lowbar;associated&lowbar;executor`] 
+| Helper function to obtain an object&apos;s associated executor&period;
+| xref:boost/asio/get_associated_immediate_executor-0e.adoc[`get&lowbar;associated&lowbar;immediate&lowbar;executor`] 
+| Helper function to obtain an object&apos;s associated executor&period;
+| xref:boost/asio/has_service.adoc[`has&lowbar;service`] 
+| Determine if an execution&lowbar;context contains a specified service type&period;
+| xref:boost/asio/make_service.adoc[`make&lowbar;service`] 
+| Creates a service object and adds it to the execution&lowbar;context&period;
+| xref:boost/asio/make_strand-04.adoc[`make&lowbar;strand`] 
+| `make&lowbar;strand` overloads
+| xref:boost/asio/make_work_guard-0b.adoc[`make&lowbar;work&lowbar;guard`] 
+| Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+| xref:boost/asio/operator_bitand-04.adoc[`operator&amp;`] 
+| Bitwise and operator&period;
+| xref:boost/asio/operator_and_eq-0e0.adoc[`operator&amp;&equals;`] 
+| Bitwise and&hyphen;assignment operator&period;
+| xref:boost/asio/operator_plus-08.adoc[`operator&plus;`] 
+| Addition operators
+| xref:boost/asio/operator_minus-0fc.adoc[`operator&hyphen;`] 
+| Subtraction operator&period;
+| xref:boost/asio/operator_xor-07.adoc[`operator&circ;`] 
+| Bitwise xor operator&period;
+| xref:boost/asio/operator_xor_eq-0b.adoc[`operator&circ;&equals;`] 
+| Bitwise xor&hyphen;assignment operator&period;
+| xref:boost/asio/operator_bitor-083b.adoc[`operator&verbar;`] 
+| Bitwise disjunction operators
+| xref:boost/asio/operator_or_eq-0d.adoc[`operator&verbar;&equals;`] 
+| Bitwise or&hyphen;assignment operator&period;
+| xref:boost/asio/operator_bitnot-087.adoc[`operator&#126;`] 
+| Bitwise negation operator&period;
+| xref:boost/asio/post-055.adoc[`post`] 
+| Submits a completion token or function object for execution&period;
+| xref:boost/asio/prepend.adoc[`prepend`] 
+| Completion token type used to specify that the completion handler arguments should be passed additional values before the results of the operation&period;
+| xref:boost/asio/read-090.adoc[`read`] 
+| Attempt to read a certain amount of data from a stream before returning&period;
+| xref:boost/asio/read_at-0a.adoc[`read&lowbar;at`] 
+| Attempt to read a certain amount of data at the specified offset before returning&period;
+| xref:boost/asio/read_size_helper.adoc[`read&lowbar;size&lowbar;helper`] 
+| 
+| xref:boost/asio/read_until-0d3.adoc[`read&lowbar;until`] 
+| `read&lowbar;until` overloads
+| xref:boost/asio/redirect_error-08.adoc[`redirect&lowbar;error`] 
+| `redirect&lowbar;error` overloads
+| xref:boost/asio/register_buffers-02.adoc[`register&lowbar;buffers`] 
+| Register buffers with an execution context&period;
+| xref:boost/asio/throw_exception.adoc[`throw&lowbar;exception`] 
+| Helper function to throw an exception arising from a disposition&period;
+| xref:boost/asio/to_exception_ptr.adoc[`to&lowbar;exception&lowbar;ptr`] 
+| Helper function to convert a disposition to an `exception&lowbar;ptr&period;`
+| xref:boost/asio/transfer_all.adoc[`transfer&lowbar;all`] 
+| 
+| xref:boost/asio/transfer_at_least.adoc[`transfer&lowbar;at&lowbar;least`] 
+| 
+| xref:boost/asio/transfer_exactly.adoc[`transfer&lowbar;exactly`] 
+| 
+| xref:boost/asio/use_service-09.adoc[`use&lowbar;service`] 
+| Obtain the service object corresponding to the given type&period;
+| xref:boost/asio/write-02d.adoc[`write`] 
+| `write` overloads
+| xref:boost/asio/write_at-05c.adoc[`write&lowbar;at`] 
+| `write&lowbar;at` overloads
+| xref:boost/asio/operator_not-01.adoc[`operator!`] 
+| Negation operator&period;
+| xref:boost/asio/operator_eq-079.adoc[`operator&equals;&equals;`] 
+| Equality operators
+| xref:boost/asio/operator_not_eq-0e.adoc[`operator!&equals;`] 
+| Inequality operators
+| xref:boost/asio/operator_lt.adoc[`operator&lt;`] 
+| Compare two iterators&period;
+| xref:boost/asio/operator_le.adoc[`operator&lt;&equals;`] 
+| Compare two iterators&period;
+| xref:boost/asio/operator_gt.adoc[`operator&gt;`] 
+| Compare two iterators&period;
+| xref:boost/asio/operator_ge.adoc[`operator&gt;&equals;`] 
+| Compare two iterators&period;
+|===
+
+== Variables
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/as_tuple.adoc[`as&lowbar;tuple`] 
+| A function object that adapts a `completion&lowbar;token` to specify that the completion handler arguments should be combined into a single tuple argument&period;
+| xref:boost/asio/can_prefer_v.adoc[`can&lowbar;prefer&lowbar;v`] 
+| 
+| xref:boost/asio/can_query_v.adoc[`can&lowbar;query&lowbar;v`] 
+| 
+| xref:boost/asio/can_require_concept_v.adoc[`can&lowbar;require&lowbar;concept&lowbar;v`] 
+| 
+| xref:boost/asio/can_require_v.adoc[`can&lowbar;require&lowbar;v`] 
+| 
+| xref:boost/asio/deferred.adoc[`deferred`] 
+| A `completion&lowbar;token` object used to specify that an asynchronous operation should return a function object to lazily launch the operation&period;
+| xref:boost/asio/detached.adoc[`detached`] 
+| A `completion&lowbar;token` object used to specify that an asynchronous operation is detached&period;
+| xref:boost/asio/executor_arg.adoc[`executor&lowbar;arg`] 
+| A special value, similar to std&colon;&colon;nothrow, used to disambiguate constructors that accept executor arguments&period;
+| xref:boost/asio/is_applicable_property_v.adoc[`is&lowbar;applicable&lowbar;property&lowbar;v`] 
+| 
+| xref:boost/asio/is_disposition_v.adoc[`is&lowbar;disposition&lowbar;v`] 
+| 
+| xref:boost/asio/is_nothrow_prefer_v.adoc[`is&lowbar;nothrow&lowbar;prefer&lowbar;v`] 
+| 
+| xref:boost/asio/is_nothrow_query_v.adoc[`is&lowbar;nothrow&lowbar;query&lowbar;v`] 
+| 
+| xref:boost/asio/is_nothrow_require_concept_v.adoc[`is&lowbar;nothrow&lowbar;require&lowbar;concept&lowbar;v`] 
+| 
+| xref:boost/asio/is_nothrow_require_v.adoc[`is&lowbar;nothrow&lowbar;require&lowbar;v`] 
+| 
+| xref:boost/asio/no_error.adoc[`no&lowbar;error`] 
+| A special value used to indicate the absence of an error&period;
+| xref:boost/asio/use_future.adoc[`use&lowbar;future`] 
+| A `completion&lowbar;token` object that causes an asynchronous operation to return a future&period;
+|===
+
+== Using Declarations
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/add_const.adoc[`add&lowbar;const`] 
+| xref:boost/asio/add_lvalue_reference.adoc[`add&lowbar;lvalue&lowbar;reference`] 
+| xref:boost/asio/alignment_of.adoc[`alignment&lowbar;of`] 
+| xref:boost/asio/allocator_arg_t.adoc[`allocator&lowbar;arg&lowbar;t`] 
+| xref:boost/asio/conditional.adoc[`conditional`] 
+| xref:boost/asio/decay.adoc[`decay`] 
+| xref:boost/asio/declval.adoc[`declval`] 
+| xref:boost/asio/enable_if.adoc[`enable&lowbar;if`] 
+| xref:boost/asio/false_type.adoc[`false&lowbar;type`] 
+| xref:boost/asio/int16_t.adoc[`int16&lowbar;t`] 
+| xref:boost/asio/int32_t.adoc[`int32&lowbar;t`] 
+| xref:boost/asio/int64_t.adoc[`int64&lowbar;t`] 
+| xref:boost/asio/int_least16_t.adoc[`int&lowbar;least16&lowbar;t`] 
+| xref:boost/asio/int_least32_t.adoc[`int&lowbar;least32&lowbar;t`] 
+| xref:boost/asio/int_least64_t.adoc[`int&lowbar;least64&lowbar;t`] 
+| xref:boost/asio/integral_constant.adoc[`integral&lowbar;constant`] 
+| xref:boost/asio/is_base_of.adoc[`is&lowbar;base&lowbar;of`] 
+| xref:boost/asio/is_class.adoc[`is&lowbar;class`] 
+| xref:boost/asio/is_const.adoc[`is&lowbar;const`] 
+| xref:boost/asio/is_constructible.adoc[`is&lowbar;constructible`] 
+| xref:boost/asio/is_convertible.adoc[`is&lowbar;convertible`] 
+| xref:boost/asio/is_copy_constructible.adoc[`is&lowbar;copy&lowbar;constructible`] 
+| xref:boost/asio/is_destructible.adoc[`is&lowbar;destructible`] 
+| xref:boost/asio/is_function.adoc[`is&lowbar;function`] 
+| xref:boost/asio/is_integral.adoc[`is&lowbar;integral`] 
+| xref:boost/asio/is_move_constructible.adoc[`is&lowbar;move&lowbar;constructible`] 
+| xref:boost/asio/is_nothrow_copy_assignable.adoc[`is&lowbar;nothrow&lowbar;copy&lowbar;assignable`] 
+| xref:boost/asio/is_nothrow_copy_constructible.adoc[`is&lowbar;nothrow&lowbar;copy&lowbar;constructible`] 
+| xref:boost/asio/is_nothrow_default_constructible.adoc[`is&lowbar;nothrow&lowbar;default&lowbar;constructible`] 
+| xref:boost/asio/is_nothrow_destructible.adoc[`is&lowbar;nothrow&lowbar;destructible`] 
+| xref:boost/asio/is_nothrow_move_assignable.adoc[`is&lowbar;nothrow&lowbar;move&lowbar;assignable`] 
+| xref:boost/asio/is_nothrow_move_constructible.adoc[`is&lowbar;nothrow&lowbar;move&lowbar;constructible`] 
+| xref:boost/asio/is_object.adoc[`is&lowbar;object`] 
+| xref:boost/asio/is_pointer.adoc[`is&lowbar;pointer`] 
+| xref:boost/asio/is_reference.adoc[`is&lowbar;reference`] 
+| xref:boost/asio/is_same.adoc[`is&lowbar;same`] 
+| xref:boost/asio/is_scalar.adoc[`is&lowbar;scalar`] 
+| xref:boost/asio/is_unsigned.adoc[`is&lowbar;unsigned`] 
+| xref:boost/asio/noncopyable.adoc[`noncopyable`] 
+| xref:boost/asio/nullptr_t.adoc[`nullptr&lowbar;t`] 
+| xref:boost/asio/ref.adoc[`ref`] 
+| xref:boost/asio/reference_wrapper.adoc[`reference&lowbar;wrapper`] 
+| xref:boost/asio/remove_cv.adoc[`remove&lowbar;cv`] 
+| xref:boost/asio/remove_pointer.adoc[`remove&lowbar;pointer`] 
+| xref:boost/asio/remove_reference.adoc[`remove&lowbar;reference`] 
+| xref:boost/asio/result_of.adoc[`result&lowbar;of`] 
+| xref:boost/asio/true_type.adoc[`true&lowbar;type`] 
+| xref:boost/asio/uint16_t.adoc[`uint16&lowbar;t`] 
+| xref:boost/asio/uint32_t.adoc[`uint32&lowbar;t`] 
+| xref:boost/asio/uint64_t.adoc[`uint64&lowbar;t`] 
+| xref:boost/asio/uint_least16_t.adoc[`uint&lowbar;least16&lowbar;t`] 
+| xref:boost/asio/uint_least32_t.adoc[`uint&lowbar;least32&lowbar;t`] 
+| xref:boost/asio/uint_least64_t.adoc[`uint&lowbar;least64&lowbar;t`] 
+| xref:boost/asio/uintmax_t.adoc[`uintmax&lowbar;t`] 
+| xref:boost/asio/uintptr_t.adoc[`uintptr&lowbar;t`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

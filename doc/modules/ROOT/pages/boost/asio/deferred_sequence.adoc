@@ -1,0 +1,40 @@
+[#boost-asio-deferred_sequence]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;sequence
+:relfileprefix: ../../
+:mrdocs:
+
+Defines a link between two consecutive operations in a sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Head,
+    typename Tail&gt;
+class deferred&lowbar;sequence
+    : public &sol;&ast; implementation-defined &ast;&sol;::base
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;::base`
+| 
+|===
+
+== Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/deferred_sequence/2constructor.adoc[`deferred&lowbar;sequence`]         [.small]#[constructor]#
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

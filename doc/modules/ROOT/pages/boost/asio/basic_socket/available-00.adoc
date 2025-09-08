@@ -1,0 +1,59 @@
+[#boost-asio-basic_socket-available-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::available
+:relfileprefix: ../../../
+:mrdocs:
+
+Determine the number of bytes available for reading&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+Determine the number of bytes available for reading&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+xref:boost/asio/basic_socket/available-05.adoc[available]() const;
+----
+
+[.small]#xref:boost/asio/basic_socket/available-05.adoc[_» more&period;&period;&period;_]#
+
+Determine the number of bytes available for reading&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+xref:boost/asio/basic_socket/available-09.adoc[available](boost::system::error&lowbar;code& ec) const;
+----
+
+[.small]#xref:boost/asio/basic_socket/available-09.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes that may be read without blocking, or 0 if an error occurs&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,41 @@
+[#boost-asio-traits-execute_member_default]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::execute&lowbar;member&lowbar;default
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;traits&sol;execute&lowbar;member&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename F,
+    typename = void&gt;
+struct execute&lowbar;member&lowbar;default
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/traits/execute_member-0b5.adoc[`execute&lowbar;member`]
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

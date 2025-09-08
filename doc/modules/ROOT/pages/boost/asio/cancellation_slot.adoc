@@ -1,0 +1,52 @@
+[#boost-asio-cancellation_slot]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancellation&lowbar;slot
+:relfileprefix: ../../
+:mrdocs:
+
+A slot associated with a cancellation signal&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;signal&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class cancellation&lowbar;slot;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancellation_slot/2constructor.adoc[`cancellation&lowbar;slot`]         [.small]#[constructor]#
+| Creates a slot that is not connected to any cancellation signal&period;
+| xref:boost/asio/cancellation_slot/assign.adoc[`assign`] 
+| Installs a handler into the slot&period;
+| xref:boost/asio/cancellation_slot/clear.adoc[`clear`] 
+| Clears the slot&period;
+| xref:boost/asio/cancellation_slot/emplace.adoc[`emplace`] 
+| Installs a handler into the slot, constructing the new object directly&period;
+| xref:boost/asio/cancellation_slot/has_handler.adoc[`has&lowbar;handler`] 
+| Returns whether the slot is connected and has an installed handler&period;
+| xref:boost/asio/cancellation_slot/is_connected.adoc[`is&lowbar;connected`] 
+| Returns whether the slot is connected to a signal&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/cancellation_signal.adoc[boost::asio::cancellation&lowbar;signal]`
+| A cancellation signal with a single slot&period;
+| `xref:boost/asio/operator_not_eq-0d.adoc[boost::asio::operator!&equals;]`
+| Compare two slots for inequality&period;
+| `xref:boost/asio/operator_eq-0c.adoc[boost::asio::operator&equals;&equals;]`
+| Compare two slots for equality&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

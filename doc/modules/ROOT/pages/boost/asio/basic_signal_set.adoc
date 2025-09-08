@@ -1,0 +1,121 @@
+[#boost-asio-basic_signal_set]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;signal&lowbar;set
+:relfileprefix: ../../
+:mrdocs:
+
+Provides signal functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;signal&lowbar;set
+    : public xref:boost/asio/signal_set_base.adoc[signal&lowbar;set&lowbar;base]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/signal_set_base.adoc[signal&lowbar;set&lowbar;base]`
+| The signal&lowbar;set&lowbar;base class is used as a base for the basic&lowbar;signal&lowbar;set class templates so that we have a common place to define the flags enum&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_signal_set/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the signal set type to another executor&period;
+| xref:boost/asio/basic_signal_set/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/signal_set_base/flags_t.adoc[`flags&lowbar;t`] 
+| 
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/signal_set_base/flags.adoc[`flags`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_signal_set/2constructor-06.adoc[`basic&lowbar;signal&lowbar;set`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_signal_set/2destructor.adoc[`&#126;basic&lowbar;signal&lowbar;set`] [.small]#[destructor]#
+| Destroys the signal set&period;
+| xref:boost/asio/basic_signal_set/add-0f.adoc[`add`] 
+| `add` overloads
+| xref:boost/asio/basic_signal_set/async_wait.adoc[`async&lowbar;wait`] 
+| Start an asynchronous operation to wait for a signal to be delivered&period;
+| xref:boost/asio/basic_signal_set/cancel-08.adoc[`cancel`] 
+| Cancel all operations associated with the signal set&period;
+| xref:boost/asio/basic_signal_set/clear-09.adoc[`clear`] 
+| Remove all signals from a signal&lowbar;set&period;
+| xref:boost/asio/basic_signal_set/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/basic_signal_set/remove-0e.adoc[`remove`] 
+| Remove a signal from a signal&lowbar;set&period;
+|===
+
+== Description
+
+The basic&lowbar;signal&lowbar;set class provides the ability to perform an asynchronous wait for one or more signals to occur&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+== Example
+Performing an asynchronous wait&colon;
+
+[,cpp]
+----
+void handler(
+    const boost::system::error_code& error,
+    int signal_number)
+{
+  if (!error)
+  {
+    // A signal occurred.
+  }
+}
+
+...
+
+// Construct a signal set registered for process termination.
+boost::asio::signal_set signals(my_context, SIGINT, SIGTERM);
+
+// Start an asynchronous wait for one of the signals to occur.
+signals.async_wait(handler);
+----
+== Queueing of signal notifications
+If a signal is registered with a signal&lowbar;set, and the signal occurs when there are no waiting handlers, then the signal notification is queued&period; The next async&lowbar;wait operation on that signal&lowbar;set will dequeue the notification&period; If multiple notifications are queued, subsequent async&lowbar;wait operations dequeue them one at a time&period; Signal notifications are dequeued in order of ascending signal number&period;
+
+If a signal number is removed from a signal&lowbar;set (using the `remove` or `erase` member functions) then any queued notifications for that signal are discarded&period;
+
+== Multiple registration of signals
+The same signal number may be registered with different signal&lowbar;set objects&period; When the signal occurs, one handler is called for each signal&lowbar;set object&period;
+
+Note that multiple registration only works for signals that are registered using Asio&period; The application must not also register a signal handler using functions such as `signal()` or `sigaction()&period;`
+
+== Signal masking on POSIX platforms
+POSIX allows signals to be blocked using functions such as `sigprocmask()` and `pthread&lowbar;sigmask()&period;` For signals to be delivered, programs must ensure that any signals registered using signal&lowbar;set objects are unblocked in at least one thread&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

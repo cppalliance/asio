@@ -1,0 +1,28 @@
+[#boost-asio-any_completion_handler-operator_call]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler]::operator()
+:relfileprefix: ../../../
+:mrdocs:
+
+Function call operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; Args&gt;
+decltype(fn&lowbar;table&lowbar;&hyphen;&gt;call(impl&lowbar;, static&lowbar;cast&lt;Args&amp;&amp;&gt;(args)&period;&period;&period;))
+operator()(Args&period;&period;&period;&&&period;&period;&period; args);
+----
+
+== Description
+
+Invokes target completion handler with the supplied arguments&period;
+
+This function may only be called once, as the target handler is moved from&period; The polymorphic wrapper is left in an empty state&period;
+
+Throws `std&colon;&colon;bad&lowbar;function&lowbar;call` if the polymorphic wrapper is empty&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

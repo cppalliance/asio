@@ -1,0 +1,55 @@
+[#boost-asio-windows-overlapped_ptr-2constructor-0b2]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/overlapped_ptr.adoc[overlapped&lowbar;ptr]::overlapped&lowbar;ptr
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;overlapped&lowbar;ptr&period;hpp&gt;`
+
+Construct an empty overlapped&lowbar;ptr&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/overlapped_ptr/2constructor-039.adoc[overlapped&lowbar;ptr]();
+----
+
+[.small]#xref:boost/asio/windows/overlapped_ptr/2constructor-039.adoc[_» more&period;&period;&period;_]#
+
+Construct an overlapped&lowbar;ptr to contain the specified handler&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename Handler&gt;
+xref:boost/asio/windows/overlapped_ptr/2constructor-033.adoc[overlapped&lowbar;ptr](
+    ExecutionContext& context,
+    Handler&& handler,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/windows/overlapped_ptr/2constructor-033.adoc[_» more&period;&period;&period;_]#
+
+Construct an overlapped&lowbar;ptr to contain the specified handler&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename Handler&gt;
+xref:boost/asio/windows/overlapped_ptr/2constructor-0b3.adoc[overlapped&lowbar;ptr](
+    Executor const& ex,
+    Handler&& handler,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/windows/overlapped_ptr/2constructor-0b3.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

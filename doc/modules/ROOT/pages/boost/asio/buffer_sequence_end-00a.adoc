@@ -1,0 +1,29 @@
+[#boost-asio-buffer_sequence_end-00a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;sequence&lowbar;end
+:relfileprefix: ../../
+:mrdocs:
+
+Get an iterator to one past the end element in a buffer sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename C&gt;
+decltype(c&period;end())
+buffer&lowbar;sequence&lowbar;end(
+    C const& c,
+    int = 0,
+    int = 0,
+    int = 0,
+    int = 0) noexcept;
+----
+
+== Return Value
+
+an iterator to one past the end element in a buffer sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

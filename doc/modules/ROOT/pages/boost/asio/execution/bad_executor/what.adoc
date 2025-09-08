@@ -1,0 +1,20 @@
+[#boost-asio-execution-bad_executor-what]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/bad_executor.adoc[bad&lowbar;executor]::what
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain message associated with exception&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;bad&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+char const*
+what() const noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

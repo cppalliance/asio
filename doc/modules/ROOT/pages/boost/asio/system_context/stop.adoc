@@ -1,0 +1,19 @@
+[#boost-asio-system_context-stop]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/system_context.adoc[system&lowbar;context]::stop
+:relfileprefix: ../../../
+:mrdocs:
+
+Signal all threads in the system thread pool to stop&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;system&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+stop();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

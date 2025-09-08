@@ -1,0 +1,46 @@
+[#boost-asio-ip-basic_resolver-operator_assign-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Move&hyphen;assign a basic&lowbar;resolver from another&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&period;hpp&gt;`
+
+Move&hyphen;assign a basic&lowbar;resolver from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]&
+xref:boost/asio/ip/basic_resolver/operator_assign-05c.adoc[operator&equals;](xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]&& other);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver/operator_assign-05c.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign a basic&lowbar;resolver from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]&
+xref:boost/asio/ip/basic_resolver/operator_assign-051.adoc[operator&equals;](xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver&lt;InternetProtocol, Executor1&gt;]&& other);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver/operator_assign-051.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;resolver object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

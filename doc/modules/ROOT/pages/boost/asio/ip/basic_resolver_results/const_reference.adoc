@@ -1,0 +1,18 @@
+[#boost-asio-ip-basic_resolver_results-const_reference]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_results.adoc[basic&lowbar;resolver&lowbar;results]::const&lowbar;reference
+:relfileprefix: ../../../../
+:mrdocs:
+
+The type of a const reference to a value in the range&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;results&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/ip/basic_resolver_results/value_type.adoc[value&lowbar;type] const& const&lowbar;reference;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

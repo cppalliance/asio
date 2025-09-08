@@ -1,0 +1,58 @@
+[#boost-asio-read_until-012]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read&lowbar;until
+:relfileprefix: ../../
+:mrdocs:
+
+Read data into a streambuf until it contains a specified delimiter&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&lowbar;until&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator&gt;
+size&lowbar;t
+read&lowbar;until(
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    char delim,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to read data into the specified streambuf until the streambuf&apos;s get area contains the specified delimiter&period; The call will block until one of the following conditions is true&colon;
+
+* The get area of the streambuf contains the specified delimiter&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the stream&apos;s read&lowbar;some function&period; If the streambuf&apos;s get area already contains the delimiter, the function returns immediately&period;
+
+[NOTE]
+After a successful read&lowbar;until operation, the streambuf may contain additional data beyond the delimiter&period; An application will typically leave that data in the streambuf for a subsequent read&lowbar;until operation to examine&period;
+
+== Return Value
+
+The number of bytes in the streambuf&apos;s get area up to and including the delimiter&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream from which the data is to be read&period; The type must support the SyncReadStream concept&period;
+| *b*
+| A streambuf object into which the data will be read&period;
+| *delim*
+| The delimiter character&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

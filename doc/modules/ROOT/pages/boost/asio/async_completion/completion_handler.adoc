@@ -1,0 +1,18 @@
+[#boost-asio-async_completion-completion_handler]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_completion.adoc[async&lowbar;completion]::completion&lowbar;handler
+:relfileprefix: ../../../
+:mrdocs:
+
+A copy of, or reference to, a real handler object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/conditional_t.adoc[conditional&lowbar;t&lt;is&lowbar;same&lt;CompletionToken, completion&lowbar;handler&lowbar;type&gt;&colon;&colon;value, completion&lowbar;handler&lowbar;type&, completion&lowbar;handler&lowbar;type&gt;] completion&lowbar;handler;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

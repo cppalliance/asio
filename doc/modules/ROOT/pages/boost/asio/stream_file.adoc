@@ -1,0 +1,18 @@
+[#boost-asio-stream_file]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::stream&lowbar;file
+:relfileprefix: ../../
+:mrdocs:
+
+Typedef for the typical usage of a stream&hyphen;oriented file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;stream&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file] stream&lowbar;file;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

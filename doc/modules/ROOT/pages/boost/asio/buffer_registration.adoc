@@ -1,0 +1,83 @@
+[#boost-asio-buffer_registration]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;registration
+:relfileprefix: ../../
+:mrdocs:
+
+Automatically registers and unregistered buffers with an execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&lowbar;registration&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename MutableBufferSequence,
+    typename Allocator = std::allocator&lt;void&gt;&gt;
+class buffer&lowbar;registration;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffer_registration/allocator_type.adoc[`allocator&lowbar;type`] 
+| The allocator type used for allocating storage for the buffers container&period;
+| xref:boost/asio/buffer_registration/const_iterator.adoc[`const&lowbar;iterator`] 
+| 
+| xref:boost/asio/buffer_registration/iterator.adoc[`iterator`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffer_registration/2constructor-0d.adoc[`buffer&lowbar;registration`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/buffer_registration/2destructor.adoc[`&#126;buffer&lowbar;registration`] [.small]#[destructor]#
+| Unregisters the buffers&period;
+| xref:boost/asio/buffer_registration/operator_assign.adoc[`operator&equals;`] 
+| Move assignment&period;
+| xref:boost/asio/buffer_registration/at.adoc[`at`] 
+| Get the buffer at the specified index&period;
+| xref:boost/asio/buffer_registration/begin.adoc[`begin`] 
+| Get the begin iterator for the sequence of registered buffers&period;
+| xref:boost/asio/buffer_registration/cbegin.adoc[`cbegin`] 
+| Get the begin iterator for the sequence of registered buffers&period;
+| xref:boost/asio/buffer_registration/cend.adoc[`cend`] 
+| Get the end iterator for the sequence of registered buffers&period;
+| xref:boost/asio/buffer_registration/end.adoc[`end`] 
+| Get the end iterator for the sequence of registered buffers&period;
+| xref:boost/asio/buffer_registration/operator_subs.adoc[`operator&lsqb;&rsqb;`] 
+| Get the buffer at the specified index&period;
+| xref:boost/asio/buffer_registration/size.adoc[`size`] 
+| Get the number of registered buffers&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/register_buffers-03.adoc[`register&lowbar;buffers`]
+| Register buffers with an execution context&period;
+| xref:boost/asio/register_buffers-09.adoc[`register&lowbar;buffers`]
+| Register buffers with an execution context&period;
+| xref:boost/asio/register_buffers-0a.adoc[`register&lowbar;buffers`]
+| Register buffers with an execution context&period;
+| xref:boost/asio/register_buffers-0f.adoc[`register&lowbar;buffers`]
+| Register buffers with an execution context&period;
+|===
+
+== Description
+
+For portability, applications should assume that only one registration is permitted per execution context&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

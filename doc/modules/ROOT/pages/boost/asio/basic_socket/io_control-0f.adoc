@@ -1,0 +1,55 @@
+[#boost-asio-basic_socket-io_control-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::io&lowbar;control
+:relfileprefix: ../../../
+:mrdocs:
+
+Perform an IO control command on the socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename IoControlCommand&gt;
+void
+io&lowbar;control(IoControlCommand& command);
+----
+
+== Description
+
+This function is used to execute an IO control command on the socket&period;
+
+== Example
+Getting the number of bytes ready to read&colon;
+
+[,cpp]
+----
+boost::asio::ip::tcp::socket socket(my_context);
+...
+boost::asio::ip::tcp::socket::bytes_readable command;
+socket.io_control(command);
+std::size_t bytes_readable = command.get();
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *command*
+| The IO control command to be performed on the socket&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

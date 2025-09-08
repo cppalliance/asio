@@ -1,0 +1,37 @@
+[#boost-asio-operator_plus-07f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&plus;
+:relfileprefix: ../../
+:mrdocs:
+
+Addition operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffers&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator]
+operator&plus;(
+    ptrdiff&lowbar;t difference,
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& iter);
+----
+
+== Return Value
+
+A random access iterator over the bytes in a buffer sequence&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *difference*
+| The left operand
+| *iter*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

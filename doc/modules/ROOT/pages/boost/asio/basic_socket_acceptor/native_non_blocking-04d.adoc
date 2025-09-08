@@ -1,0 +1,30 @@
+[#boost-asio-basic_socket_acceptor-native_non_blocking-04d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::native&lowbar;non&lowbar;blocking
+:relfileprefix: ../../../
+:mrdocs:
+
+Gets the non&hyphen;blocking mode of the native acceptor implementation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+native&lowbar;non&lowbar;blocking() const;
+----
+
+== Description
+
+This function is used to retrieve the non&hyphen;blocking mode of the underlying native acceptor&period; This mode has no effect on the behaviour of the acceptor object&apos;s synchronous operations&period;
+
+[NOTE]
+The current non&hyphen;blocking mode is cached by the acceptor object&period; Consequently, the return value may be incorrect if the non&hyphen;blocking mode was set directly on the native acceptor&period;
+
+== Return Value
+
+`true` if the underlying acceptor is in non&hyphen;blocking mode and direct system calls may fail with boost&colon;&colon;asio&colon;&colon;error&colon;&colon;would&lowbar;block (or the equivalent system error)&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

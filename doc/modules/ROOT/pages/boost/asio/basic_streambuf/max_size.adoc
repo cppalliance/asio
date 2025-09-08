@@ -1,0 +1,23 @@
+[#boost-asio-basic_streambuf-max_size]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf]::max&lowbar;size
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the maximum size of the basic&lowbar;streambuf&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+max&lowbar;size() const noexcept;
+----
+
+== Return Value
+
+The allowed maximum of the sum of the sizes of the input sequence and output sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

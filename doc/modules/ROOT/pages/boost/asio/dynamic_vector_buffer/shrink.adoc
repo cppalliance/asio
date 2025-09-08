@@ -1,0 +1,23 @@
+[#boost-asio-dynamic_vector_buffer-shrink]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer]::shrink
+:relfileprefix: ../../../
+:mrdocs:
+
+*DynamicBuffer&lowbar;v2&colon;* Shrink the underlying memory by the specified number of bytes&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+shrink(size&lowbar;t n);
+----
+
+== Description
+
+Erases `n` bytes from the end of the vector by resizing the vector object&period; If `n` is greater than the current size of the vector, the vector is emptied&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-executor_work_guard-00-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor_work_guard-00.adoc[executor&lowbar;work&lowbar;guard&lt;Executor&gt;]::&#126;executor&lowbar;work&lowbar;guard
+:relfileprefix: ../../../
+:mrdocs:
+
+Destructor
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&lowbar;work&lowbar;guard&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;executor&lowbar;work&lowbar;guard();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

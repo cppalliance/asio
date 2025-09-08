@@ -1,0 +1,35 @@
+[#boost-asio-execution-context_as_t-0aa-2constructor-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/context_as_t-0aa.adoc[context&lowbar;as&lowbar;t]::context&lowbar;as&lowbar;t
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;context&lowbar;as&period;hpp&gt;`
+
+Default constructor
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/execution/context_as_t-0aa/2constructor-0f.adoc[context&lowbar;as&lowbar;t]();
+----
+
+[.small]#xref:boost/asio/execution/context_as_t-0aa/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+
+Construct from `context&lowbar;t`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/execution/context_as_t-0aa/2constructor-0c.adoc[context&lowbar;as&lowbar;t](xref:boost/asio/execution/context_t.adoc[context&lowbar;t] value);
+----
+
+[.small]#xref:boost/asio/execution/context_as_t-0aa/2constructor-0c.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

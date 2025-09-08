@@ -1,0 +1,41 @@
+[#boost-asio-bind_cancellation_slot-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;cancellation&lowbar;slot
+:relfileprefix: ../../
+:mrdocs:
+
+`bind&lowbar;cancellation&lowbar;slot` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+Create a partial completion token that associates a cancellation slot&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CancellationSlot&gt;
+xref:boost/asio/partial_cancellation_slot_binder.adoc[partial&lowbar;cancellation&lowbar;slot&lowbar;binder&lt;CancellationSlot&gt;]
+xref:boost/asio/bind_cancellation_slot-06.adoc[bind&lowbar;cancellation&lowbar;slot](CancellationSlot const& ex);
+----
+
+[.small]#xref:boost/asio/bind_cancellation_slot-06.adoc[_» more&period;&period;&period;_]#
+
+Associate an object of type `T` with a cancellation slot of type `CancellationSlot&period;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CancellationSlot,
+    typename T&gt;
+xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, CancellationSlot&gt;]
+xref:boost/asio/bind_cancellation_slot-00.adoc[bind&lowbar;cancellation&lowbar;slot](
+    CancellationSlot const& s,
+    T&& t);
+----
+
+[.small]#xref:boost/asio/bind_cancellation_slot-00.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

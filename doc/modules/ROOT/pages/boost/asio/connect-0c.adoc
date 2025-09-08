@@ -1,0 +1,97 @@
+[#boost-asio-connect-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::connect
+:relfileprefix: ../../
+:mrdocs:
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;connect&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename EndpointSequence,
+    typename ConnectCondition&gt;
+Protocol::endpoint
+connect(
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    EndpointSequence const& endpoints,
+    ConnectCondition connect&lowbar;condition,
+    int = 0,
+    int = 0);
+----
+
+== Description
+
+This function attempts to connect a socket to one of a sequence of endpoints&period; It does this by repeated calls to the socket&apos;s `connect` member function, once for each endpoint in the sequence, until a connection is successfully established&period;
+
+[,cpp]
+----
+bool connect_condition(
+    const boost::system::error_code& ec,
+    const typename Protocol::endpoint& next); 
+----
+The `ec` parameter contains the result from the most recent connect operation&period; Before the first connection attempt, `ec` is always set to indicate success&period; The `next` parameter is the next endpoint to be tried&period; The function object should return true if the next endpoint should be tried, and false if it should be skipped&period;
+
+== Example
+The following connect condition function object can be used to output information about the individual connection attempts&colon;
+
+[,cpp]
+----
+struct my_connect_condition
+{
+  bool operator()(
+      const boost::system::error_code& ec,
+      const::tcp::endpoint& next)
+  {
+    if (ec) std::cout << "Error: " << ec.message() << std::endl;
+    std::cout << "Trying: " << next << std::endl;
+    return true;
+  }
+}; 
+----
+It would be used with the boost&colon;&colon;asio&colon;&colon;connect function as follows&colon;
+
+[,cpp]
+----
+tcp::resolver r(my_context);
+tcp::resolver::query q("host", "service");
+tcp::socket s(my_context);
+tcp::endpoint e = boost::asio::connect(s,
+    r.resolve(q), my_connect_condition());
+std::cout << "Connected to: " << e << std::endl; 
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; If the sequence is empty, the associated `error&lowbar;code` is boost&colon;&colon;asio&colon;&colon;error&colon;&colon;not&lowbar;found&period; Otherwise, contains the error from the last connection attempt&period;
+|===
+
+== Return Value
+
+The successfully connected endpoint&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The socket to be connected&period; If the socket is already open, it will be closed&period;
+| *endpoints*
+| A sequence of endpoints&period;
+| *connect&lowbar;condition*
+| A function object that is called prior to each connection attempt&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

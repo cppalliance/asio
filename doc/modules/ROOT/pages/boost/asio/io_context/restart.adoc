@@ -1,0 +1,25 @@
+[#boost-asio-io_context-restart]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::restart
+:relfileprefix: ../../../
+:mrdocs:
+
+Restart the io&lowbar;context in preparation for a subsequent run() invocation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+restart();
+----
+
+== Description
+
+This function must be called prior to any second or later set of invocations of the run(), run&lowbar;one(), poll() or poll&lowbar;one() functions when a previous invocation of these functions returned due to the io&lowbar;context being stopped or running out of work&period; After a call to restart(), the io&lowbar;context object&apos;s stopped() function will return `false&period;`
+
+This function must not be called while there are any unfinished calls to the run(), run&lowbar;one(), poll() or poll&lowbar;one() functions&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

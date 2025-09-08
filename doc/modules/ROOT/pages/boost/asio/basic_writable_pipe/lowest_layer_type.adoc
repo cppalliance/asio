@@ -1,0 +1,18 @@
+[#boost-asio-basic_writable_pipe-lowest_layer_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]::lowest&lowbar;layer&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+A basic&lowbar;writable&lowbar;pipe is always the lowest layer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;writable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe] lowest&lowbar;layer&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

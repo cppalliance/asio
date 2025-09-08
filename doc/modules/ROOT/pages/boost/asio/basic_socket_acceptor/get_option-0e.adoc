@@ -1,0 +1,58 @@
+[#boost-asio-basic_socket_acceptor-get_option-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::get&lowbar;option
+:relfileprefix: ../../../
+:mrdocs:
+
+Get an option from the acceptor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename GettableSocketOption&gt;
+boost::system::error&lowbar;code
+get&lowbar;option(
+    GettableSocketOption& option,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to get the current value of an option on the acceptor&period;
+
+== Example
+Getting the value of the SOL&lowbar;SOCKET&sol;SO&lowbar;REUSEADDR option&colon;
+
+[,cpp]
+----
+boost::asio::ip::tcp::acceptor acceptor(my_context);
+...
+boost::asio::ip::tcp::acceptor::reuse_address option;
+boost::system::error_code ec;
+acceptor.get_option(option, ec);
+if (ec)
+{
+  // An error occurred.
+}
+bool is_set = option.get();
+----
+== Return Value
+
+an option from the acceptor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *option*
+| The option value to be obtained from the acceptor&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

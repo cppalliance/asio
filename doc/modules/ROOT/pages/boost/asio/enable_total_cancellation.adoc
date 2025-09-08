@@ -1,0 +1,16 @@
+[#boost-asio-enable_total_cancellation]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::enable&lowbar;total&lowbar;cancellation
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/cancellation_filter.adoc[cancellation&lowbar;filter&lt;static&lowbar;cast&lt;cancellation&lowbar;type&lowbar;t&gt;(static&lowbar;cast&lt;unsigned int&gt;(cancellation&lowbar;type&colon;&colon;terminal) &verbar; static&lowbar;cast&lt;unsigned int&gt;(cancellation&lowbar;type&colon;&colon;partial) &verbar; static&lowbar;cast&lt;unsigned int&gt;(cancellation&lowbar;type&colon;&colon;total))&gt;] enable&lowbar;total&lowbar;cancellation;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

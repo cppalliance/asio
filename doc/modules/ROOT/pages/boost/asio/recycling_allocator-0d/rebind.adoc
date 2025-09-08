@@ -1,0 +1,29 @@
+[#boost-asio-recycling_allocator-0d-rebind]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/recycling_allocator-0d.adoc[recycling&lowbar;allocator&lt;void&gt;]::rebind
+:relfileprefix: ../../../
+:mrdocs:
+
+Rebind the allocator to another value&lowbar;type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;recycling&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+struct rebind;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/recycling_allocator-0d/rebind/other.adoc[`other`] 
+| The rebound `allocator` type&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

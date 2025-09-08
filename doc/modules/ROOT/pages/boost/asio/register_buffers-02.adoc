@@ -1,0 +1,85 @@
+[#boost-asio-register_buffers-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::register&lowbar;buffers
+:relfileprefix: ../../
+:mrdocs:
+
+Register buffers with an execution context&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffer&lowbar;registration&period;hpp&gt;`
+
+Register buffers with an execution context&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename MutableBufferSequence&gt;
+xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence&gt;]
+xref:boost/asio/register_buffers-0a.adoc[register&lowbar;buffers](
+    ExecutionContext& ctx,
+    MutableBufferSequence const& buffer&lowbar;sequence,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/register_buffers-0a.adoc[_» more&period;&period;&period;_]#
+
+Register buffers with an execution context&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename MutableBufferSequence&gt;
+xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence&gt;]
+xref:boost/asio/register_buffers-0f.adoc[register&lowbar;buffers](
+    Executor const& ex,
+    MutableBufferSequence const& buffer&lowbar;sequence,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/register_buffers-0f.adoc[_» more&period;&period;&period;_]#
+
+Register buffers with an execution context&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename MutableBufferSequence,
+    typename Allocator&gt;
+xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence, Allocator&gt;]
+xref:boost/asio/register_buffers-03.adoc[register&lowbar;buffers](
+    ExecutionContext& ctx,
+    MutableBufferSequence const& buffer&lowbar;sequence,
+    Allocator const& alloc,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/register_buffers-03.adoc[_» more&period;&period;&period;_]#
+
+Register buffers with an execution context&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename MutableBufferSequence,
+    typename Allocator&gt;
+xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence, Allocator&gt;]
+xref:boost/asio/register_buffers-09.adoc[register&lowbar;buffers](
+    Executor const& ex,
+    MutableBufferSequence const& buffer&lowbar;sequence,
+    Allocator const& alloc,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/register_buffers-09.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

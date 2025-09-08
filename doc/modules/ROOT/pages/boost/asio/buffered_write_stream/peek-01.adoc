@@ -1,0 +1,39 @@
+[#boost-asio-buffered_write_stream-peek-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_write_stream.adoc[buffered&lowbar;write&lowbar;stream]::peek
+:relfileprefix: ../../../
+:mrdocs:
+
+`peek` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+Peek at the incoming data on the stream&period; Returns the number of bytes read&period; Throws an exception on failure&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/buffered_write_stream/peek-0d.adoc[peek](MutableBufferSequence const& buffers);
+----
+
+[.small]#xref:boost/asio/buffered_write_stream/peek-0d.adoc[_» more&period;&period;&period;_]#
+
+Peek at the incoming data on the stream&period; Returns the number of bytes read, or 0 if an error occurred&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/buffered_write_stream/peek-00.adoc[peek](
+    MutableBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/buffered_write_stream/peek-00.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

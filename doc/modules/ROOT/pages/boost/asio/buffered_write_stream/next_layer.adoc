@@ -1,0 +1,23 @@
+[#boost-asio-buffered_write_stream-next_layer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_write_stream.adoc[buffered&lowbar;write&lowbar;stream]::next&lowbar;layer
+:relfileprefix: ../../../
+:mrdocs:
+
+Get a reference to the next layer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffered_write_stream/next_layer_type.adoc[next&lowbar;layer&lowbar;type]&
+next&lowbar;layer();
+----
+
+== Return Value
+
+a reference to the next layer&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,26 @@
+[#boost-asio-traits-equality_comparable-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/equality_comparable-0a0.adoc[equality&lowbar;comparable]&lt;xref:boost/asio/execution/any_executor-0f.adoc[execution::any&lowbar;executor&lt;SupportableProperties&period;&period;&period;&gt;]&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; SupportableProperties&gt;
+struct xref:boost/asio/traits/equality_comparable-0a0.adoc[equality&lowbar;comparable]&lt;xref:boost/asio/execution/any_executor-0f.adoc[execution::any&lowbar;executor&lt;SupportableProperties&period;&period;&period;&gt;]&gt;;
+----
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/traits/equality_comparable-09/is_noexcept.adoc[`is&lowbar;noexcept`] 
+| xref:boost/asio/traits/equality_comparable-09/is_valid.adoc[`is&lowbar;valid`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

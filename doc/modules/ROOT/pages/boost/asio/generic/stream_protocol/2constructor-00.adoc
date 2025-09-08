@@ -1,0 +1,30 @@
+[#boost-asio-generic-stream_protocol-2constructor-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/stream_protocol.adoc[stream&lowbar;protocol]::stream&lowbar;protocol
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct a protocol object for a specific address family and protocol&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;stream&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+stream&lowbar;protocol(
+    int address&lowbar;family,
+    int socket&lowbar;protocol);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *address&lowbar;family*
+| The value to construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

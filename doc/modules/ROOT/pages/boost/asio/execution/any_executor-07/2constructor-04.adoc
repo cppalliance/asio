@@ -1,0 +1,23 @@
+[#boost-asio-execution-any_executor-07-2constructor-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/any_executor-07.adoc[any&lowbar;executor&lt;&gt;]::any&lowbar;executor
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+any&lowbar;executor(Executor ex)
+requires conditional&lowbar;t&lt;
+          !is&lowbar;same&lt;Executor, any&lowbar;executor&gt;&colon;&colon;value
+            &amp;&amp; !is&lowbar;base&lowbar;of&lt;detail&colon;&colon;any&lowbar;executor&lowbar;base, Executor&gt;&colon;&colon;value,
+          is&lowbar;executor&lt;Executor&gt;,
+          false&lowbar;type
+        &gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,23 @@
+[#boost-asio-local-basic_endpoint-capacity]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint]::capacity
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the capacity of the endpoint in the native type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+capacity() const noexcept;
+----
+
+== Return Value
+
+the capacity of the endpoint in the native type&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

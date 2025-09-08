@@ -1,0 +1,38 @@
+[#boost-asio-windows-basic_object_handle-2constructor-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::basic&lowbar;object&lowbar;handle
+:relfileprefix: ../../../../
+:mrdocs:
+
+Move&hyphen;construct an object handle from a handle of another executor type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+basic&lowbar;object&lowbar;handle(
+    xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle&lt;Executor1&gt;]&& other,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+== Description
+
+This constructor moves an object handle from one object to another&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;object&lowbar;handle(const` executor&lowbar;type&amp;) constructor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other object handle object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

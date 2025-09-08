@@ -1,0 +1,23 @@
+[#boost-asio-const_registered_buffer-id]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer]::id
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the registered buffer identifier&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/registered_buffer_id.adoc[registered&lowbar;buffer&lowbar;id] const&
+id() const noexcept;
+----
+
+== Return Value
+
+the registered buffer identifier&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

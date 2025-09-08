@@ -1,0 +1,28 @@
+[#boost-asio-remove_cvref]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::remove&lowbar;cvref
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct remove&lowbar;cvref
+    : std::remove&lowbar;cv&lt;std::remove&lowbar;reference&lt;T&gt;::type&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::remove&lowbar;cv&lt;std::remove&lowbar;reference&lt;T&gt;::type&gt;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

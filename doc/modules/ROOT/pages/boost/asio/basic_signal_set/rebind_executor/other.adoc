@@ -1,0 +1,18 @@
+[#boost-asio-basic_signal_set-rebind_executor-other]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set]::xref:boost/asio/basic_signal_set/rebind_executor.adoc[rebind&lowbar;executor]::other
+:relfileprefix: ../../../../
+:mrdocs:
+
+The signal set type when rebound to the specified executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set&lt;Executor1&gt;] other;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

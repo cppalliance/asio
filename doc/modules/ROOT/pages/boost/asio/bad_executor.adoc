@@ -1,0 +1,43 @@
+[#boost-asio-bad_executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bad&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Exception thrown when trying to access an empty polymorphic executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class bad&lowbar;executor
+    : public std::exception
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::exception`
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/bad_executor/2constructor.adoc[`bad&lowbar;executor`]         [.small]#[constructor]#
+| Constructor&period;
+| xref:boost/asio/bad_executor/operator_assign.adoc[`operator&equals;`] 
+| 
+| xref:boost/asio/bad_executor/what.adoc[`what`]  [.small]#[virtual]#
+| Obtain message associated with exception&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

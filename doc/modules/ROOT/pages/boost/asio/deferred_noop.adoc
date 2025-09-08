@@ -1,0 +1,28 @@
+[#boost-asio-deferred_noop]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;noop
+:relfileprefix: ../../
+:mrdocs:
+
+Used to represent an empty deferred action&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct deferred&lowbar;noop;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_noop/operator_call-03.adoc[`operator()`] 
+| No effect&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

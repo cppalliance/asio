@@ -1,0 +1,200 @@
+[#boost-asio-write_at-05c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::write&lowbar;at
+:relfileprefix: ../../
+:mrdocs:
+
+`write&lowbar;at` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;write&lowbar;at&period;hpp&gt;`
+
+Write all of the supplied data at the specified offset before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/write_at-053.adoc[write&lowbar;at](
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b);
+----
+
+[.small]#xref:boost/asio/write_at-053.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data at the specified offset before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/write_at-0ea.adoc[write&lowbar;at](
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    ConstBufferSequence const& buffers);
+----
+
+[.small]#xref:boost/asio/write_at-0ea.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data at the specified offset before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename Allocator&gt;
+size&lowbar;t
+xref:boost/asio/write_at-07f.adoc[write&lowbar;at](
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/write_at-07f.adoc[_» more&period;&period;&period;_]#
+
+Write all of the supplied data at the specified offset before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/write_at-006.adoc[write&lowbar;at](
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    ConstBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/write_at-006.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data at a specified offset before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename Allocator,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write_at-072.adoc[write&lowbar;at](
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write_at-072.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data at a specified offset before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename ConstBufferSequence,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write_at-06.adoc[write&lowbar;at](
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    ConstBufferSequence const& buffers,
+    CompletionCondition completion&lowbar;condition,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write_at-06.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data at a specified offset before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename Allocator,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write_at-00a.adoc[write&lowbar;at](
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write_at-00a.adoc[_» more&period;&period;&period;_]#
+
+Write a certain amount of data at a specified offset before returning&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename ConstBufferSequence,
+    typename CompletionCondition&gt;
+size&lowbar;t
+xref:boost/asio/write_at-0e7.adoc[write&lowbar;at](
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    ConstBufferSequence const& buffers,
+    CompletionCondition completion&lowbar;condition,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/write_at-0e7.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+* The number of bytes transferred&period;
+* The number of bytes written&period; If an error occurs, returns the total number of bytes successfully transferred prior to the error&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *d*
+| The device to which the data is to be written&period; The type must support the SyncRandomAccessWriteDevice concept&period;
+| *offset*
+| The offset at which the data will be written&period;
+| *b*
+| The basic&lowbar;streambuf object from which data will be written&period;
+| *buffers*
+| One or more buffers containing the data to be written&period; The sum of the buffer sizes indicates the maximum number of bytes to write to the device&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+| *completion&lowbar;condition*
+| The function object to be called to determine whether the write operation is complete&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,33 @@
+[#boost-asio-basic_waitable_timer-wait-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::wait
+:relfileprefix: ../../../
+:mrdocs:
+
+Perform a blocking wait on the timer&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+wait(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to wait for the timer to expire&period; This function blocks and does not return until the timer has expired&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

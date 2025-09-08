@@ -1,0 +1,25 @@
+[#boost-asio-resolver_errc-service_not_found]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/resolver_errc.adoc[resolver&lowbar;errc]::service&lowbar;not&lowbar;found
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using error::service&lowbar;not&lowbar;found;
+----
+
+== Introduced Symbols
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/error/addrinfo_errors.adoc[boost::asio::error::addrinfo&lowbar;errors::service&lowbar;not&lowbar;found]
+| The service is not supported for the given socket type&period;
+|===
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

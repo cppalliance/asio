@@ -1,0 +1,49 @@
+[#boost-asio-cancellation_slot-emplace]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot]::emplace
+:relfileprefix: ../../../
+:mrdocs:
+
+Installs a handler into the slot, constructing the new object directly&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;signal&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CancellationHandler,
+    typename&period;&period;&period; Args&gt;
+CancellationHandler&
+emplace(Args&period;&period;&period;&&&period;&period;&period; args);
+----
+
+== Description
+
+Destroys any existing handler in the slot, then installs the new handler, constructing it with the supplied `args&period;`
+
+The handler is a function object to be called when the signal is emitted&period; The signature of the handler must be
+
+[,cpp]
+----
+void handler(boost::asio::cancellation_type_t); 
+----
+[NOTE]
+Handlers installed into the slot via `emplace` are not required to be copy constructible or move constructible&period;
+
+== Return Value
+
+A reference to the newly installed handler&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *args*
+| Arguments to be passed to the `CancellationHandler` object&apos;s constructor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

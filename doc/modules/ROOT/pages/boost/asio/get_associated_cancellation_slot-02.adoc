@@ -1,0 +1,24 @@
+[#boost-asio-get_associated_cancellation_slot-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::get&lowbar;associated&lowbar;cancellation&lowbar;slot
+:relfileprefix: ../../
+:mrdocs:
+
+Helper function to obtain an object&apos;s associated cancellation&lowbar;slot&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename CancellationSlot&gt;
+decltype(associated&lowbar;cancellation&lowbar;slot&lt;T, CancellationSlot&gt;&colon;&colon;get(t, st))
+get&lowbar;associated&lowbar;cancellation&lowbar;slot(
+    T const& t,
+    CancellationSlot const& st) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

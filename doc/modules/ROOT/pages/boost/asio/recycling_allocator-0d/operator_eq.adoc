@@ -1,0 +1,34 @@
+[#boost-asio-recycling_allocator-0d-operator_eq]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/recycling_allocator-0d.adoc[recycling&lowbar;allocator&lt;void&gt;]::operator&equals;&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Equality operator&period; Always returns true&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;recycling&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+operator&equals;&equals;(xref:boost/asio/recycling_allocator-0d.adoc[recycling&lowbar;allocator&lt;void&gt;] const& rhs) const noexcept;
+----
+
+== Return Value
+
+`true` if the objects are equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *rhs*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,33 @@
+[#boost-asio-basic_seq_packet_socket-2constructor-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_seq_packet_socket.adoc[basic&lowbar;seq&lowbar;packet&lowbar;socket]::basic&lowbar;seq&lowbar;packet&lowbar;socket
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a basic&lowbar;seq&lowbar;packet&lowbar;socket without opening it&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;seq&lowbar;packet&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+basic&lowbar;seq&lowbar;packet&lowbar;socket(xref:boost/asio/basic_seq_packet_socket/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+== Description
+
+This constructor creates a sequenced packet socket without opening it&period; The socket needs to be opened and then connected or accepted before data can be sent or received on it&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the socket will use, by default, to dispatch handlers for any asynchronous operations performed on the socket&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

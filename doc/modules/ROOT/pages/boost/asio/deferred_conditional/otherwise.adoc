@@ -1,0 +1,28 @@
+[#boost-asio-deferred_conditional-otherwise]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/deferred_conditional.adoc[deferred&lowbar;conditional]::otherwise
+:relfileprefix: ../../../
+:mrdocs:
+
+Set the false branch of the conditional&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+xref:boost/asio/deferred_conditional.adoc[deferred&lowbar;conditional&lt;OnTrue, T&gt;]
+otherwise(
+    T on&lowbar;false,
+    int* = 0,
+    int* = 0,
+    int* = 0);
+----
+
+== Return Value
+
+Used to represent a deferred conditional branch&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

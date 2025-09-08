@@ -1,0 +1,139 @@
+[#boost-asio-basic_signal_set-2constructor-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set]::basic&lowbar;signal&lowbar;set
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+Construct a signal set without adding any signals&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/basic_signal_set/2constructor-01.adoc[basic&lowbar;signal&lowbar;set](xref:boost/asio/basic_signal_set/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+[.small]#xref:boost/asio/basic_signal_set/2constructor-01.adoc[_» more&period;&period;&period;_]#
+
+Construct a signal set and add one signal&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_signal_set/2constructor-043498.adoc[basic&lowbar;signal&lowbar;set](
+    xref:boost/asio/basic_signal_set/executor_type.adoc[executor&lowbar;type] const& ex,
+    int signal&lowbar;number&lowbar;1);
+----
+
+[.small]#xref:boost/asio/basic_signal_set/2constructor-043498.adoc[_» more&period;&period;&period;_]#
+
+Construct a signal set without adding any signals&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_signal_set/2constructor-00.adoc[basic&lowbar;signal&lowbar;set](
+    ExecutionContext& context,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/basic_signal_set/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+Construct a signal set and add two signals&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_signal_set/2constructor-08.adoc[basic&lowbar;signal&lowbar;set](
+    xref:boost/asio/basic_signal_set/executor_type.adoc[executor&lowbar;type] const& ex,
+    int signal&lowbar;number&lowbar;1,
+    int signal&lowbar;number&lowbar;2);
+----
+
+[.small]#xref:boost/asio/basic_signal_set/2constructor-08.adoc[_» more&period;&period;&period;_]#
+
+Construct a signal set and add one signal&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_signal_set/2constructor-0fb.adoc[basic&lowbar;signal&lowbar;set](
+    ExecutionContext& context,
+    int signal&lowbar;number&lowbar;1,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/basic_signal_set/2constructor-0fb.adoc[_» more&period;&period;&period;_]#
+
+Construct a signal set and add three signals&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_signal_set/2constructor-043495.adoc[basic&lowbar;signal&lowbar;set](
+    xref:boost/asio/basic_signal_set/executor_type.adoc[executor&lowbar;type] const& ex,
+    int signal&lowbar;number&lowbar;1,
+    int signal&lowbar;number&lowbar;2,
+    int signal&lowbar;number&lowbar;3);
+----
+
+[.small]#xref:boost/asio/basic_signal_set/2constructor-043495.adoc[_» more&period;&period;&period;_]#
+
+Construct a signal set and add two signals&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_signal_set/2constructor-0b.adoc[basic&lowbar;signal&lowbar;set](
+    ExecutionContext& context,
+    int signal&lowbar;number&lowbar;1,
+    int signal&lowbar;number&lowbar;2,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/basic_signal_set/2constructor-0b.adoc[_» more&period;&period;&period;_]#
+
+Construct a signal set and add three signals&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_signal_set/2constructor-0f0.adoc[basic&lowbar;signal&lowbar;set](
+    ExecutionContext& context,
+    int signal&lowbar;number&lowbar;1,
+    int signal&lowbar;number&lowbar;2,
+    int signal&lowbar;number&lowbar;3,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/basic_signal_set/2constructor-0f0.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the signal set will use, by default, to dispatch handlers for any asynchronous operations performed on the signal set&period;
+| *signal&lowbar;number&lowbar;1*
+| The signal number to be added&period;
+| *context*
+| An execution context which provides the I&sol;O executor that the signal set will use, by default, to dispatch handlers for any asynchronous operations performed on the signal set&period;
+| *signal&lowbar;number&lowbar;2*
+| The second signal number to be added&period;
+| *signal&lowbar;number&lowbar;3*
+| The third signal number to be added&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,23 @@
+[#boost-asio-io_context-basic_executor_type-on_work_started]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::xref:boost/asio/io_context/basic_executor_type.adoc[basic&lowbar;executor&lowbar;type]::on&lowbar;work&lowbar;started
+:relfileprefix: ../../../../
+:mrdocs:
+
+Inform the io&lowbar;context that it has some outstanding work to do&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+on&lowbar;work&lowbar;started() const noexcept;
+----
+
+== Description
+
+This function is used to inform the io&lowbar;context that some work has begun&period; This ensures that the io&lowbar;context&apos;s run() and run&lowbar;one() functions do not exit while the work is underway&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

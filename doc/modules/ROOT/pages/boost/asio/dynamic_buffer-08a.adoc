@@ -1,0 +1,27 @@
+[#boost-asio-dynamic_buffer-08a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::dynamic&lowbar;buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new dynamic buffer that represents the given string&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer&lt;Elem, Traits, Allocator&gt;]
+dynamic&lowbar;buffer(std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data) noexcept;
+----
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

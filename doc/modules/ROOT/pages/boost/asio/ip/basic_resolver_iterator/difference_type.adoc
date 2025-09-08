@@ -1,0 +1,18 @@
+[#boost-asio-ip-basic_resolver_iterator-difference_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]::difference&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+The type used for the distance between two iterators&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef ptrdiff&lowbar;t difference&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

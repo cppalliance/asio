@@ -1,0 +1,16 @@
+[#boost-asio-execution-any_executor-07-target]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/any_executor-07.adoc[any&lowbar;executor&lt;&gt;]::target
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using &sol;&ast; implementation-defined &ast;&sol;::target;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

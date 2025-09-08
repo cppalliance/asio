@@ -1,0 +1,17 @@
+[#boost-asio-basic_socket-cancel-0ec]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::cancel
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+cancel();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

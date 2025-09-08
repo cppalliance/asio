@@ -1,0 +1,16 @@
+[#boost-asio-conditional]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::conditional
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using std::conditional;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

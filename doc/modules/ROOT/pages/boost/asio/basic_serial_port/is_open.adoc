@@ -1,0 +1,23 @@
+[#boost-asio-basic_serial_port-is_open]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::is&lowbar;open
+:relfileprefix: ../../../
+:mrdocs:
+
+Determine whether the serial port is open&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;open() const;
+----
+
+== Return Value
+
+whether the serial port is open&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,58 @@
+[#boost-asio-make_strand-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::make&lowbar;strand
+:relfileprefix: ../../
+:mrdocs:
+
+`make&lowbar;strand` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+Create a xref:boost/asio/strand.adoc[`strand`] object for an execution context&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/strand.adoc[strand&lt;ExecutionContext::executor&lowbar;type&gt;]
+xref:boost/asio/make_strand-02.adoc[make&lowbar;strand](
+    ExecutionContext& ctx,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/make_strand-02.adoc[_» more&period;&period;&period;_]#
+
+Create a xref:boost/asio/strand.adoc[`strand`] object for an executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/strand.adoc[strand&lt;Executor&gt;]
+xref:boost/asio/make_strand-07.adoc[make&lowbar;strand](
+    Executor const& ex,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/make_strand-07.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+* A strand constructed with the execution context&apos;s executor, obtained by performing &period;
+* A strand constructed with the specified executor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ctx*
+| An execution context, from which an executor will be obtained&period;
+| *ex*
+| An executor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

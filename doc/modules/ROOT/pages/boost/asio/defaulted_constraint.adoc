@@ -1,0 +1,26 @@
+[#boost-asio-defaulted_constraint]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::defaulted&lowbar;constraint
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct defaulted&lowbar;constraint;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/defaulted_constraint/2constructor.adoc[`defaulted&lowbar;constraint`]         [.small]#[constructor]#
+| Default constructor
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

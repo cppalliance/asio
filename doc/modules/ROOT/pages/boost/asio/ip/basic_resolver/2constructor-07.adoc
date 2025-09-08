@@ -1,0 +1,74 @@
+[#boost-asio-ip-basic_resolver-2constructor-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]::basic&lowbar;resolver
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&period;hpp&gt;`
+
+Move&hyphen;construct a basic&lowbar;resolver from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver/2constructor-0c.adoc[basic&lowbar;resolver](xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]&& other);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver/2constructor-0c.adoc[_» more&period;&period;&period;_]#
+
+Construct with executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/ip/basic_resolver/2constructor-0b.adoc[basic&lowbar;resolver](xref:boost/asio/ip/basic_resolver/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver/2constructor-0b.adoc[_» more&period;&period;&period;_]#
+
+Construct with execution context&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/ip/basic_resolver/2constructor-04.adoc[basic&lowbar;resolver](
+    ExecutionContext& context,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver/2constructor-04.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;construct a basic&lowbar;resolver from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/ip/basic_resolver/2constructor-00.adoc[basic&lowbar;resolver](
+    xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver&lt;InternetProtocol, Executor1&gt;]&& other,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;resolver object from which the move will occur&period;
+| *ex*
+| The I&sol;O executor that the resolver will use, by default, to dispatch handlers for any asynchronous operations performed on the resolver&period;
+| *context*
+| An execution context which provides the I&sol;O executor that the resolver will use, by default, to dispatch handlers for any asynchronous operations performed on the resolver&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

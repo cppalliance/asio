@@ -1,0 +1,78 @@
+[#boost-asio-read_at-0da]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read&lowbar;at
+:relfileprefix: ../../
+:mrdocs:
+
+Attempt to read a certain amount of data at the specified offset before returning&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessReadDevice,
+    typename Allocator,
+    typename CompletionCondition&gt;
+size&lowbar;t
+read&lowbar;at(
+    SyncRandomAccessReadDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    CompletionCondition completion&lowbar;condition,
+    int = 0);
+----
+
+== Description
+
+This function is used to read a certain number of bytes of data from a random access device at the specified offset&period; The call will block until one of the following conditions is true&colon;
+
+* The completion&lowbar;condition function object returns 0&period;
+
+This operation is implemented in terms of zero or more calls to the device&apos;s read&lowbar;some&lowbar;at function&period;
+
+[,cpp]
+----
+std::size_t completion_condition(
+  // Result of latest read_some_at operation.
+  const boost::system::error_code& error,
+
+  // Number of bytes transferred so far.
+  std::size_t bytes_transferred
+); 
+----
+A return value of 0 indicates that the read operation is complete&period; A non&hyphen;zero return value indicates the maximum number of bytes to be read on the next call to the device&apos;s read&lowbar;some&lowbar;at function&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes transferred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *d*
+| The device from which the data is to be read&period; The type must support the SyncRandomAccessReadDevice concept&period;
+| *offset*
+| The offset at which the data will be read&period;
+| *b*
+| The basic&lowbar;streambuf object into which the data will be read&period;
+| *completion&lowbar;condition*
+| The function object to be called to determine whether the read operation is complete&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

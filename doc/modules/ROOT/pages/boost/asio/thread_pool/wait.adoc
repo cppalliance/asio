@@ -1,0 +1,26 @@
+[#boost-asio-thread_pool-wait]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::wait
+:relfileprefix: ../../../
+:mrdocs:
+
+Waits for threads to complete&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+wait();
+----
+
+== Description
+
+This function blocks until the threads in the pool have completed&period; If `stop()` is not called prior to `wait(),` the `wait()` call will wait until the pool has no more outstanding work&period;
+
+[NOTE]
+`wait()` is synonymous with `join()&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

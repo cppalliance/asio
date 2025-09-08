@@ -1,0 +1,31 @@
+[#boost-asio-generic-basic_endpoint-2constructor-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint]::basic&lowbar;endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct an endpoint from the specified socket address&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;endpoint(
+    void const* socket&lowbar;address,
+    size&lowbar;t socket&lowbar;address&lowbar;size,
+    int socket&lowbar;protocol = 0);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *socket&lowbar;address*
+| The value to construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

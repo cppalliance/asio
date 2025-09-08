@@ -1,0 +1,47 @@
+[#boost-asio-this_coro-reset_cancellation_state-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/this_coro.adoc[this&lowbar;coro]::reset&lowbar;cancellation&lowbar;state
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/this_coro/reset_cancellation_state_0_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;0&lowbar;t]
+xref:boost/asio/this_coro/reset_cancellation_state-0b.adoc[reset&lowbar;cancellation&lowbar;state]();
+----
+
+[.small]#xref:boost/asio/this_coro/reset_cancellation_state-0b.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Filter&gt;
+constexpr
+xref:boost/asio/this_coro/reset_cancellation_state_1_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;1&lowbar;t&lt;decay&lowbar;t&lt;Filter&gt;&gt;]
+xref:boost/asio/this_coro/reset_cancellation_state-05.adoc[reset&lowbar;cancellation&lowbar;state](Filter&& filter);
+----
+
+[.small]#xref:boost/asio/this_coro/reset_cancellation_state-05.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename InFilter,
+    typename OutFilter&gt;
+constexpr
+xref:boost/asio/this_coro/reset_cancellation_state_2_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;2&lowbar;t&lt;decay&lowbar;t&lt;InFilter&gt;, decay&lowbar;t&lt;OutFilter&gt;&gt;]
+xref:boost/asio/this_coro/reset_cancellation_state-09.adoc[reset&lowbar;cancellation&lowbar;state](
+    InFilter&& in&lowbar;filter,
+    OutFilter&& out&lowbar;filter);
+----
+
+[.small]#xref:boost/asio/this_coro/reset_cancellation_state-09.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

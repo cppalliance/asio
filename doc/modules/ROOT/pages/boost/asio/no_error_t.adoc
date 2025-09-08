@@ -1,0 +1,48 @@
+[#boost-asio-no_error_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::no&lowbar;error&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A tag type used to indicate the absence of an error&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct no&lowbar;error&lowbar;t;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/no_error_t/2constructor.adoc[`no&lowbar;error&lowbar;t`]         [.small]#[constructor]#
+| Default constructor&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/operator_not_eq-08.adoc[boost::asio::operator!&equals;]`
+| Inequality operator, returns true if the disposition contains an error&period;
+| `xref:boost/asio/operator_not_eq-045.adoc[boost::asio::operator!&equals;]`
+| Inequality operator, returns true if the disposition contains an error&period;
+| `xref:boost/asio/operator_eq-04.adoc[boost::asio::operator&equals;&equals;]`
+| Equality operator, returns true if the disposition does not contain an error&period;
+| `xref:boost/asio/operator_eq-07f.adoc[boost::asio::operator&equals;&equals;]`
+| Equality operator, returns true if the disposition does not contain an error&period;
+| `xref:boost/asio/operator_not_eq-0fe.adoc[boost::asio::operator!&equals;]`
+| Inequality operator&period;
+| `xref:boost/asio/operator_eq-034.adoc[boost::asio::operator&equals;&equals;]`
+| Equality operator&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

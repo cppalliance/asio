@@ -1,0 +1,47 @@
+[#boost-asio-get_associated_immediate_executor-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::get&lowbar;associated&lowbar;immediate&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Helper function to obtain an object&apos;s associated executor&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+Helper function to obtain an object&apos;s associated executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename ExecutionContext&gt;
+associated&lowbar;immediate&lowbar;executor&lt;T, ExecutionContext::executor&lowbar;type&gt;::type
+xref:boost/asio/get_associated_immediate_executor-0c2.adoc[get&lowbar;associated&lowbar;immediate&lowbar;executor](
+    T const& t,
+    ExecutionContext& ctx,
+    int = 0) noexcept;
+----
+
+[.small]#xref:boost/asio/get_associated_immediate_executor-0c2.adoc[_» more&period;&period;&period;_]#
+
+Helper function to obtain an object&apos;s associated executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor&gt;
+decltype(associated&lowbar;immediate&lowbar;executor&lt;T, Executor&gt;&colon;&colon;get(t, ex))
+xref:boost/asio/get_associated_immediate_executor-0ce.adoc[get&lowbar;associated&lowbar;immediate&lowbar;executor](
+    T const& t,
+    Executor const& ex,
+    int = 0) noexcept;
+----
+
+[.small]#xref:boost/asio/get_associated_immediate_executor-0ce.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

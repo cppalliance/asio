@@ -1,0 +1,16 @@
+[#boost-asio-cancel_after_t-timeout_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancel_after_t.adoc[cancel&lowbar;after&lowbar;t]::timeout&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;after&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+Clock::duration timeout&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

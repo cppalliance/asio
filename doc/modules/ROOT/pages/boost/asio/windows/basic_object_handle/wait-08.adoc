@@ -1,0 +1,33 @@
+[#boost-asio-windows-basic_object_handle-wait-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::wait
+:relfileprefix: ../../../../
+:mrdocs:
+
+Perform a blocking wait on the object handle&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+wait();
+----
+
+== Description
+
+This function is used to wait for the object handle to be set to the signalled state&period; This function blocks and does not return until the object handle has been set to the signalled state&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

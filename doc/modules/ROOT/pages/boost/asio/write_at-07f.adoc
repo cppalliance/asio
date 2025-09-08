@@ -1,0 +1,64 @@
+[#boost-asio-write_at-07f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::write&lowbar;at
+:relfileprefix: ../../
+:mrdocs:
+
+Write all of the supplied data at the specified offset before returning&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;write&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncRandomAccessWriteDevice,
+    typename Allocator&gt;
+size&lowbar;t
+write&lowbar;at(
+    SyncRandomAccessWriteDevice& d,
+    std::uint64&lowbar;t offset,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to write a certain number of bytes of data to a random access device at a specified offset&period; The call will block until one of the following conditions is true&colon;
+
+* All of the data in the supplied basic&lowbar;streambuf has been written&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the device&apos;s write&lowbar;some&lowbar;at function&period;
+
+[NOTE]
+This overload is equivalent to calling&colon;
+
+[,cpp]
+----
+boost::asio::write_at(
+    d, 42, b,
+    boost::asio::transfer_all(), ec); 
+----
+== Return Value
+
+The number of bytes transferred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *d*
+| The device to which the data is to be written&period; The type must support the SyncRandomAccessWriteDevice concept&period;
+| *offset*
+| The offset at which the data will be written&period;
+| *b*
+| The basic&lowbar;streambuf object from which data will be written&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

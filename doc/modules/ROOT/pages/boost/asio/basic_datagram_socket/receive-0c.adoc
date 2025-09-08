@@ -1,0 +1,82 @@
+[#boost-asio-basic_datagram_socket-receive-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::receive
+:relfileprefix: ../../../
+:mrdocs:
+
+Receive some data on a connected socket&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+Receive some data on a connected socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/basic_datagram_socket/receive-0d.adoc[receive](MutableBufferSequence const& buffers);
+----
+
+[.small]#xref:boost/asio/basic_datagram_socket/receive-0d.adoc[_» more&period;&period;&period;_]#
+
+Receive some data on a connected socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/basic_datagram_socket/receive-0a.adoc[receive](
+    MutableBufferSequence const& buffers,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags] flags);
+----
+
+[.small]#xref:boost/asio/basic_datagram_socket/receive-0a.adoc[_» more&period;&period;&period;_]#
+
+Receive some data on a connected socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/basic_datagram_socket/receive-05.adoc[receive](
+    MutableBufferSequence const& buffers,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags] flags,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_datagram_socket/receive-05.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes received&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more buffers into which the data will be received&period;
+| *flags*
+| Flags specifying how the receive call is to be made&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,37 @@
+[#boost-asio-execution_context-allocator-0a-2constructor-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::xref:boost/asio/execution_context/allocator-0a.adoc[allocator&lt;void&gt;]::allocator
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+Construct an allocator that is associated with an execution context&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+explicit
+xref:boost/asio/execution_context/allocator-0a/2constructor-06.adoc[allocator](xref:boost/asio/execution_context.adoc[execution&lowbar;context]& e) noexcept;
+----
+
+[.small]#xref:boost/asio/execution_context/allocator-0a/2constructor-06.adoc[_» more&period;&period;&period;_]#
+
+Construct from another `allocator` for a different value type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+constexpr
+xref:boost/asio/execution_context/allocator-0a/2constructor-0b.adoc[allocator](xref:boost/asio/execution_context/allocator-03.adoc[allocator&lt;U&gt;] const& a) noexcept;
+----
+
+[.small]#xref:boost/asio/execution_context/allocator-0a/2constructor-0b.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

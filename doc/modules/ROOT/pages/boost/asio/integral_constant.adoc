@@ -1,0 +1,16 @@
+[#boost-asio-integral_constant]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::integral&lowbar;constant
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using std::integral&lowbar;constant;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

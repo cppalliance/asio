@@ -1,0 +1,19 @@
+[#boost-asio-associated_allocator_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::associated&lowbar;allocator&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Allocator = std::allocator&lt;void&gt;&gt;
+using associated&lowbar;allocator&lowbar;t = associated&lowbar;allocator&lt;T, Allocator&gt;::type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

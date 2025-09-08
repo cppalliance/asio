@@ -1,0 +1,25 @@
+[#boost-asio-void_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::void&lowbar;type
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&gt;
+struct void&lowbar;type;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/void_type/type.adoc[`type`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

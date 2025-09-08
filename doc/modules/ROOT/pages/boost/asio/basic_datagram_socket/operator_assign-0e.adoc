@@ -1,0 +1,48 @@
+[#boost-asio-basic_datagram_socket-operator_assign-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+Move&hyphen;assign a basic&lowbar;datagram&lowbar;socket from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]&
+xref:boost/asio/basic_datagram_socket/operator_assign-00.adoc[operator&equals;](xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]&& other);
+----
+
+[.small]#xref:boost/asio/basic_datagram_socket/operator_assign-00.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign a basic&lowbar;datagram&lowbar;socket from a socket of another protocol type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol1,
+    typename Executor1&gt;
+xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]&
+xref:boost/asio/basic_datagram_socket/operator_assign-0f.adoc[operator&equals;](xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket&lt;Protocol1, Executor1&gt;]&& other);
+----
+
+[.small]#xref:boost/asio/basic_datagram_socket/operator_assign-0f.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;datagram&lowbar;socket object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

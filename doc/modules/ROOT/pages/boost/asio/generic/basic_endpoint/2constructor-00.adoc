@@ -1,0 +1,28 @@
+[#boost-asio-generic-basic_endpoint-2constructor-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint]::basic&lowbar;endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+Copy constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;endpoint(xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint] const& other);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

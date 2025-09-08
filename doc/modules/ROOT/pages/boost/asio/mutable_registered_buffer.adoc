@@ -1,0 +1,70 @@
+[#boost-asio-mutable_registered_buffer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::mutable&lowbar;registered&lowbar;buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Holds a registered buffer over modifiable data&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class mutable&lowbar;registered&lowbar;buffer;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/mutable_registered_buffer/2constructor.adoc[`mutable&lowbar;registered&lowbar;buffer`]         [.small]#[constructor]#
+| Default constructor creates an invalid registered buffer&period;
+| xref:boost/asio/mutable_registered_buffer/buffer.adoc[`buffer`] 
+| Get the underlying mutable buffer&period;
+| xref:boost/asio/mutable_registered_buffer/data.adoc[`data`] 
+| Get a pointer to the beginning of the memory range&period;
+| xref:boost/asio/mutable_registered_buffer/id.adoc[`id`] 
+| Get the registered buffer identifier&period;
+| xref:boost/asio/mutable_registered_buffer/operator_plus_eq.adoc[`operator&plus;&equals;`] 
+| Move the start of the buffer by the specified number of bytes&period;
+| xref:boost/asio/mutable_registered_buffer/size.adoc[`size`] 
+| Get the size of the memory range&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/buffer-01.adoc[boost::asio::buffer]`
+| Obtain a buffer representing part of a registered buffer&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffer-0ec.adoc[`buffer`]
+| Obtain a buffer representing the entire registered buffer&period;
+| xref:boost/asio/buffer_sequence_begin-01b2.adoc[`buffer&lowbar;sequence&lowbar;begin`]
+| Get an iterator to the first element in a buffer sequence&period;
+| xref:boost/asio/buffer_sequence_end-002.adoc[`buffer&lowbar;sequence&lowbar;end`]
+| Get an iterator to one past the end element in a buffer sequence&period;
+| xref:boost/asio/operator_plus-06.adoc[`operator&plus;`]
+| Create a new modifiable buffer that is offset from the start of another&period;
+| xref:boost/asio/operator_plus-076.adoc[`operator&plus;`]
+| Create a new modifiable registered buffer that is offset from the start of another&period;
+|===
+
+== Description
+
+Satisfies the `MutableBufferSequence` type requirements&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

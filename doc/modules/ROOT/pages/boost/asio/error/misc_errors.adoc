@@ -1,0 +1,33 @@
+[#boost-asio-error-misc_errors]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/error.adoc[error]::misc&lowbar;errors
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum misc&lowbar;errors;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`already&lowbar;open`
+|Already open&period;
+|`eof`
+|End of file or stream&period;
+|`not&lowbar;found`
+|Element not found&period;
+|`fd&lowbar;set&lowbar;failure`
+|The descriptor cannot fit into the select system call&apos;s fd&lowbar;set&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

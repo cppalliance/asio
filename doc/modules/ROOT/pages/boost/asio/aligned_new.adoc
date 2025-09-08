@@ -1,0 +1,19 @@
+[#boost-asio-aligned_new]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::aligned&lowbar;new
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;memory&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void*
+aligned&lowbar;new(
+    size&lowbar;t align,
+    size&lowbar;t size);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,41 @@
+[#boost-asio-bind_allocator-0876]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;allocator
+:relfileprefix: ../../
+:mrdocs:
+
+`bind&lowbar;allocator` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+Create a partial completion token that associates an allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator&gt;
+xref:boost/asio/partial_allocator_binder.adoc[partial&lowbar;allocator&lowbar;binder&lt;Allocator&gt;]
+xref:boost/asio/bind_allocator-08e.adoc[bind&lowbar;allocator](Allocator const& ex);
+----
+
+[.small]#xref:boost/asio/bind_allocator-08e.adoc[_» more&period;&period;&period;_]#
+
+Associate an object of type `T` with an allocator of type `Allocator&period;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Allocator,
+    typename T&gt;
+xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Allocator&gt;]
+xref:boost/asio/bind_allocator-0873.adoc[bind&lowbar;allocator](
+    Allocator const& s,
+    T&& t);
+----
+
+[.small]#xref:boost/asio/bind_allocator-0873.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

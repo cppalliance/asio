@@ -1,0 +1,76 @@
+[#boost-asio-ip-basic_address_iterator-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_address_iterator-03.adoc[basic&lowbar;address&lowbar;iterator]&lt;xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+An input iterator that can be used for traversing IPv4 addresses&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;&gt;
+class xref:boost/asio/ip/basic_address_iterator-03.adoc[basic&lowbar;address&lowbar;iterator]&lt;xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]&gt;;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_address_iterator-00/difference_type.adoc[`difference&lowbar;type`] 
+| Distance between two iterators&period;
+| xref:boost/asio/ip/basic_address_iterator-00/iterator_category.adoc[`iterator&lowbar;category`] 
+| Denotes that the iterator satisfies the input iterator requirements&period;
+| xref:boost/asio/ip/basic_address_iterator-00/pointer.adoc[`pointer`] 
+| The type of a pointer to an element pointed to by the iterator&period;
+| xref:boost/asio/ip/basic_address_iterator-00/reference.adoc[`reference`] 
+| The type of a reference to an element pointed to by the iterator&period;
+| xref:boost/asio/ip/basic_address_iterator-00/value_type.adoc[`value&lowbar;type`] 
+| The type of the elements pointed to by the iterator&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_address_iterator-00/2constructor-04.adoc[`basic&lowbar;address&lowbar;iterator`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/basic_address_iterator-00/operator_assign-01.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/ip/basic_address_iterator-00/operator_star.adoc[`operator&ast;`] 
+| Dereference the iterator&period;
+| xref:boost/asio/ip/basic_address_iterator-00/operator_inc-06.adoc[`operator&plus;&plus;`] 
+| Increment operators
+| xref:boost/asio/ip/basic_address_iterator-00/operator_dec-04.adoc[`operator&hyphen;&hyphen;`] 
+| Decrement operators
+| xref:boost/asio/ip/basic_address_iterator-00/operator_ptr.adoc[`operator&hyphen;&gt;`] 
+| Dereference the iterator&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/operator_not_eq-02.adoc[boost::asio::ip::operator!&equals;]`
+| Compare two addresses for inequality&period;
+| `xref:boost/asio/ip/operator_eq-0e8.adoc[boost::asio::ip::operator&equals;&equals;]`
+| Compare two addresses for equality&period;
+|===
+
+== Description
+
+In addition to satisfying the input iterator requirements, this iterator also supports decrement&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

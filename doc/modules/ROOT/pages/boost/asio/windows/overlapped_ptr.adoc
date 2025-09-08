@@ -1,0 +1,45 @@
+[#boost-asio-windows-overlapped_ptr]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::overlapped&lowbar;ptr
+:relfileprefix: ../../../
+:mrdocs:
+
+Wraps a handler to create an OVERLAPPED object for use with overlapped I&sol;O&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;overlapped&lowbar;ptr&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class overlapped&lowbar;ptr;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/overlapped_ptr/2constructor-0b2.adoc[`overlapped&lowbar;ptr`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/windows/overlapped_ptr/2destructor.adoc[`&#126;overlapped&lowbar;ptr`] [.small]#[destructor]#
+| Destructor automatically frees the OVERLAPPED object unless released&period;
+| xref:boost/asio/windows/overlapped_ptr/complete.adoc[`complete`] 
+| Post completion notification for overlapped operation&period; Releases ownership&period;
+| xref:boost/asio/windows/overlapped_ptr/get-0ea.adoc[`get`] 
+| Get the contained OVERLAPPED object&period;
+| xref:boost/asio/windows/overlapped_ptr/release.adoc[`release`] 
+| Release ownership of the OVERLAPPED object&period;
+| xref:boost/asio/windows/overlapped_ptr/reset-0d.adoc[`reset`] 
+| `reset` overloads
+|===
+
+== Description
+
+A special&hyphen;purpose smart pointer used to wrap an application handler so that it can be passed as the LPOVERLAPPED argument to overlapped I&sol;O functions&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

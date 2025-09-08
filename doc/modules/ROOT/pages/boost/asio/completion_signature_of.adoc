@@ -1,0 +1,30 @@
+[#boost-asio-completion_signature_of]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::completion&lowbar;signature&lowbar;of
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Args&gt;
+struct completion&lowbar;signature&lowbar;of
+    : xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;, &sol;&ast; implementation-defined &ast;&sol;)&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;, &sol;&ast; implementation-defined &ast;&sol;)&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,114 @@
+[#boost-asio-strand]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::strand
+:relfileprefix: ../../
+:mrdocs:
+
+Provides serialised function invocation for any executor type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+class strand;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/strand/implementation_type.adoc[`implementation&lowbar;type`] 
+| 
+| xref:boost/asio/strand/inner_executor_type.adoc[`inner&lowbar;executor&lowbar;type`] 
+| The type of the underlying executor&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/strand/2constructor-0b.adoc[`strand`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/strand/2destructor.adoc[`&#126;strand`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/strand/operator_assign-013.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/strand/context.adoc[`context`] 
+| Obtain the underlying execution context&period;
+| xref:boost/asio/strand/defer.adoc[`defer`] 
+| Request the strand to invoke the given function object&period;
+| xref:boost/asio/strand/dispatch.adoc[`dispatch`] 
+| Request the strand to invoke the given function object&period;
+| xref:boost/asio/strand/execute.adoc[`execute`] 
+| Request the strand to invoke the given function object&period;
+| xref:boost/asio/strand/get_inner_executor.adoc[`get&lowbar;inner&lowbar;executor`] 
+| Obtain the underlying executor&period;
+| xref:boost/asio/strand/on_work_finished.adoc[`on&lowbar;work&lowbar;finished`] 
+| Inform the strand that some work is no longer outstanding&period;
+| xref:boost/asio/strand/on_work_started.adoc[`on&lowbar;work&lowbar;started`] 
+| Inform the strand that it has some outstanding work to do&period;
+| xref:boost/asio/strand/post.adoc[`post`] 
+| Request the strand to invoke the given function object&period;
+| xref:boost/asio/strand/prefer.adoc[`prefer`] 
+| Forward a preference to the underlying executor&period;
+| xref:boost/asio/strand/query.adoc[`query`] 
+| Forward a query to the underlying executor&period;
+| xref:boost/asio/strand/query_helper-0c.adoc[`query&lowbar;helper`] 
+| 
+| xref:boost/asio/strand/require.adoc[`require`] 
+| Forward a requirement to the underlying executor&period;
+| xref:boost/asio/strand/running_in_this_thread.adoc[`running&lowbar;in&lowbar;this&lowbar;thread`] 
+| Determine whether the strand is running in the current thread&period;
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/strand/create_implementation-05.adoc[`create&lowbar;implementation`] 
+| 
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/strand/executor_.adoc[`executor&lowbar;`] 
+| xref:boost/asio/strand/impl_.adoc[`impl&lowbar;`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/operator_not_eq-014.adoc[boost::asio::operator!&equals;]`
+| Compare two strands for inequality&period;
+| `xref:boost/asio/operator_eq-031.adoc[boost::asio::operator&equals;&equals;]`
+| Compare two strands for equality&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/make_strand-02.adoc[`make&lowbar;strand`]
+| Create a xref:boost/asio/strand.adoc[`strand`] object for an execution context&period;
+| xref:boost/asio/make_strand-07.adoc[`make&lowbar;strand`]
+| Create a xref:boost/asio/strand.adoc[`strand`] object for an executor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

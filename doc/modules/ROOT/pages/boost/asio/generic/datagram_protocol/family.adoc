@@ -1,0 +1,19 @@
+[#boost-asio-generic-datagram_protocol-family]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/datagram_protocol.adoc[datagram&lowbar;protocol]::family
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain an identifier for the protocol family&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;datagram&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+int
+family() const noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

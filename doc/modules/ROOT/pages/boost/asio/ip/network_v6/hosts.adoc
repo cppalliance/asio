@@ -1,0 +1,23 @@
+[#boost-asio-ip-network_v6-hosts]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/network_v6.adoc[network&lowbar;v6]::hosts
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain an address range corresponding to the hosts in the network&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v6_range.adoc[address&lowbar;v6&lowbar;range]
+hosts() const noexcept;
+----
+
+== Return Value
+
+Represents a range of IPv6 addresses&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

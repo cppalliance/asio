@@ -1,0 +1,32 @@
+[#boost-asio-buffered_write_stream-async_read_some]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_write_stream.adoc[buffered&lowbar;write&lowbar;stream]::async&lowbar;read&lowbar;some
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous read&period; The buffer into which the data will be read must be valid for the lifetime of the asynchronous operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename MutableBufferSequence,
+    typename ReadHandler = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(declval&lt;conditional&lowbar;t&lt;true, Stream&amp;, ReadHandler&gt;&gt;()&period;async&lowbar;read&lowbar;some(
+        buffers, static&lowbar;cast&lt;ReadHandler&amp;&amp;&gt;(handler)))
+async&lowbar;read&lowbar;some(
+    MutableBufferSequence const& buffers,
+    ReadHandler&& handler = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+== Description
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code, std::size_t) 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

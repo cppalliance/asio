@@ -1,0 +1,46 @@
+[#boost-asio-basic_stream_socket-2constructor-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]::basic&lowbar;stream&lowbar;socket
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct and open a basic&lowbar;stream&lowbar;socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;stream&lowbar;socket(
+    xref:boost/asio/basic_stream_socket/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/basic_stream_socket/protocol_type.adoc[protocol&lowbar;type] const& protocol);
+----
+
+== Description
+
+This constructor creates and opens a stream socket&period; The socket needs to be connected or accepted before data can be sent or received on it&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the socket will use, by default, to dispatch handlers for any asynchronous operations performed on the socket&period;
+| *protocol*
+| An object specifying protocol parameters to be used&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,47 @@
+[#boost-asio-deferred_conditional]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;conditional
+:relfileprefix: ../../
+:mrdocs:
+
+Used to represent a deferred conditional branch&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename OnTrue = xref:boost/asio/deferred_noop.adoc[deferred&lowbar;noop],
+    typename OnFalse = xref:boost/asio/deferred_noop.adoc[deferred&lowbar;noop]&gt;
+class deferred&lowbar;conditional;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_conditional/2constructor.adoc[`deferred&lowbar;conditional`]         [.small]#[constructor]#
+| Construct a deferred conditional with the value to determine which branch will be executed&period;
+| xref:boost/asio/deferred_conditional/operator_call-03.adoc[`operator()`] 
+| Invoke the conditional branch bsaed on the stored value&period;
+| xref:boost/asio/deferred_conditional/otherwise.adoc[`otherwise`] 
+| Set the false branch of the conditional&period;
+| xref:boost/asio/deferred_conditional/then.adoc[`then`] 
+| Set the true branch of the conditional&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/deferred_conditional.adoc[boost::asio::deferred&lowbar;conditional]`
+| Used to represent a deferred conditional branch&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

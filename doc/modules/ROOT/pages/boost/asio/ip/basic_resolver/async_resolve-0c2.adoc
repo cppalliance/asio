@@ -1,0 +1,56 @@
+[#boost-asio-ip-basic_resolver-async_resolve-0c2]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]::async&lowbar;resolve
+:relfileprefix: ../../../../
+:mrdocs:
+
+Asynchronously perform reverse resolution of an endpoint to a list of entries&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ResolveToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(boost&colon;&colon;asio&colon;&colon;async&lowbar;initiate&lt;ResolveToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, results&lowbar;type)&gt;(
+          declval&lt;initiate&lowbar;async&lowbar;resolve&gt;(), token, e))
+async&lowbar;resolve(
+    xref:boost/asio/ip/basic_resolver/endpoint_type.adoc[endpoint&lowbar;type] const& e,
+    ResolveToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+== Description
+
+This function is used to asynchronously resolve an endpoint into a list of endpoint entries&period; It is an initiating function for an `asynchronous&lowbar;operation`, and always returns immediately&period;
+
+[,cpp]
+----
+void handler(
+  const boost::system::error_code& error, // Result of operation.
+  resolver::results_type results // Resolved endpoints as a range.
+); 
+----
+Regardless of whether the asynchronous operation completes immediately or not, the completion handler will not be invoked from within this function&period; On immediate completion, invocation of the handler will be performed in a manner equivalent to using boost&colon;&colon;asio&colon;&colon;async&lowbar;immediate()&period;
+
+A successful resolve operation is guaranteed to pass a non&hyphen;empty range to the handler&period;
+
+== Completion Signature
+[,cpp]
+----
+void(boost::system::error_code, results_type) 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| An endpoint object that determines what endpoints will be returned&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the resolve completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

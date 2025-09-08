@@ -1,0 +1,85 @@
+[#boost-asio-buffered_write_stream]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffered&lowbar;write&lowbar;stream
+:relfileprefix: ../../
+:mrdocs:
+
+Adds buffering to the write&hyphen;related operations of a stream&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Stream&gt;
+class buffered&lowbar;write&lowbar;stream;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffered_write_stream/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/buffered_write_stream/lowest_layer_type.adoc[`lowest&lowbar;layer&lowbar;type`] 
+| The type of the lowest layer&period;
+| xref:boost/asio/buffered_write_stream/next_layer_type.adoc[`next&lowbar;layer&lowbar;type`] 
+| The type of the next layer&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffered_write_stream/2constructor-04.adoc[`buffered&lowbar;write&lowbar;stream`]         [.small]#[constructor]#
+| Construct, passing the specified argument to initialise the next layer&period;
+| xref:boost/asio/buffered_write_stream/async_flush.adoc[`async&lowbar;flush`] 
+| Start an asynchronous flush&period;
+| xref:boost/asio/buffered_write_stream/async_read_some.adoc[`async&lowbar;read&lowbar;some`] 
+| Start an asynchronous read&period; The buffer into which the data will be read must be valid for the lifetime of the asynchronous operation&period;
+| xref:boost/asio/buffered_write_stream/async_write_some.adoc[`async&lowbar;write&lowbar;some`] 
+| Start an asynchronous write&period; The data being written must be valid for the lifetime of the asynchronous operation&period;
+| xref:boost/asio/buffered_write_stream/close-0a.adoc[`close`] 
+| Close the stream&period;
+| xref:boost/asio/buffered_write_stream/flush-08.adoc[`flush`] 
+| `flush` overloads
+| xref:boost/asio/buffered_write_stream/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/buffered_write_stream/in_avail-02.adoc[`in&lowbar;avail`] 
+| Determine the amount of data that may be read without blocking&period;
+| xref:boost/asio/buffered_write_stream/lowest_layer-0a.adoc[`lowest&lowbar;layer`] 
+| `lowest&lowbar;layer` overloads
+| xref:boost/asio/buffered_write_stream/next_layer.adoc[`next&lowbar;layer`] 
+| Get a reference to the next layer&period;
+| xref:boost/asio/buffered_write_stream/peek-01.adoc[`peek`] 
+| `peek` overloads
+| xref:boost/asio/buffered_write_stream/read_some-0d.adoc[`read&lowbar;some`] 
+| `read&lowbar;some` overloads
+| xref:boost/asio/buffered_write_stream/write_some-0e.adoc[`write&lowbar;some`] 
+| `write&lowbar;some` overloads
+|===
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/buffered_write_stream/default_buffer_size.adoc[`default&lowbar;buffer&lowbar;size`] 
+|===
+
+== Description
+
+The buffered&lowbar;write&lowbar;stream class template can be used to add buffering to the synchronous and asynchronous write operations of a stream&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+== Concepts&colon;
+AsyncReadStream, AsyncWriteStream, Stream, SyncReadStream, SyncWriteStream&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

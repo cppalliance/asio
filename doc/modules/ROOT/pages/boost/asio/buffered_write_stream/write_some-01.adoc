@@ -1,0 +1,20 @@
+[#boost-asio-buffered_write_stream-write_some-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_write_stream.adoc[buffered&lowbar;write&lowbar;stream]::write&lowbar;some
+:relfileprefix: ../../../
+:mrdocs:
+
+Write the given data to the stream&period; Returns the number of bytes written&period; Throws an exception on failure&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+write&lowbar;some(ConstBufferSequence const& buffers);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

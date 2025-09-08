@@ -1,0 +1,24 @@
+[#boost-asio-resolver_errc]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::resolver&lowbar;errc
+:relfileprefix: ../../
+:mrdocs:
+
+== Variables
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/resolver_errc/try_again.adoc[`try&lowbar;again`] 
+|===
+
+== Using Declarations
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/resolver_errc/host_not_found.adoc[`host&lowbar;not&lowbar;found`] 
+| xref:boost/asio/resolver_errc/service_not_found.adoc[`service&lowbar;not&lowbar;found`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

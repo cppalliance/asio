@@ -1,0 +1,19 @@
+[#boost-asio-deferred_signatures]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;signatures
+:relfileprefix: ../../
+:mrdocs:
+
+Helper type to wrap multiple completion signatures&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; Signatures&gt;
+struct deferred&lowbar;signatures;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

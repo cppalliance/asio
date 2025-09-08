@@ -1,0 +1,23 @@
+[#boost-asio-basic_streambuf_ref-prepare]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_streambuf_ref.adoc[basic&lowbar;streambuf&lowbar;ref]::prepare
+:relfileprefix: ../../../
+:mrdocs:
+
+Get a list of buffers that represents the output sequence, with the given size&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_streambuf_ref/mutable_buffers_type.adoc[mutable&lowbar;buffers&lowbar;type]
+prepare(size&lowbar;t n);
+----
+
+== Return Value
+
+a list of buffers that represents the output sequence, with the given size&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

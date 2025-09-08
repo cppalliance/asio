@@ -1,0 +1,38 @@
+[#boost-asio-allocator_binder-2constructor-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder]::allocator&lowbar;binder
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a copy of a different allocator wrapper type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherAllocator&gt;
+allocator&lowbar;binder(
+    xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;U, OtherAllocator&gt;] const& other,
+    int = 0,
+    int = 0);
+----
+
+== Description
+
+This constructor is only valid if the `Allocator` type is constructible from type `OtherAllocator,` and the type `T` is constructible from type `U&period;`
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| A call wrapper type to bind an allocator of type `Allocator` to an object of type `T&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

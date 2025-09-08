@@ -1,0 +1,20 @@
+[#boost-asio-execution-swap-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::swap
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; SupportableProperties&gt;
+void
+swap(
+    xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;SupportableProperties&period;&period;&period;&gt;]& a,
+    xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;SupportableProperties&period;&period;&period;&gt;]& b) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

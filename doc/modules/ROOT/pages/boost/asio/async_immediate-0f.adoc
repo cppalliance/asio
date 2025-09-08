@@ -1,0 +1,51 @@
+[#boost-asio-async_immediate-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;immediate
+:relfileprefix: ../../
+:mrdocs:
+
+Launch a trivial asynchronous operation that completes immediately&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;immediate&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;immediate&lt;Executor&gt;&gt;(), token))
+async&lowbar;immediate(
+    Executor const& ex,
+    NullaryToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;(),
+    int = 0);
+----
+
+== Description
+
+The async&lowbar;immediate function is intended for use by composed operations, which can delegate to this operation in order to implement the correct semantics for immediate completion&period;
+
+The completion handler is immediately submitted for execution by calling boost&colon;&colon;asio&colon;&colon;dispatch() on the handler&apos;s associated immediate executor&period;
+
+If the completion handler does not have a customised associated immediate executor, then the handler is submitted as if by calling boost&colon;&colon;asio&colon;&colon;post() on the supplied I&sol;O executor&period;
+
+== Completion Signature
+[,cpp]
+----
+void() 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The asynchronous operation&apos;s I&sol;O executor&period;
+| *token*
+| The completion token&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

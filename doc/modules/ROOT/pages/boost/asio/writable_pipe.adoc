@@ -1,0 +1,18 @@
+[#boost-asio-writable_pipe]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::writable&lowbar;pipe
+:relfileprefix: ../../
+:mrdocs:
+
+Typedef for the typical usage of a writable pipe&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;writable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe] writable&lowbar;pipe;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

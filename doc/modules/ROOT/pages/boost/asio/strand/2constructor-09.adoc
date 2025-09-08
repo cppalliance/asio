@@ -1,0 +1,21 @@
+[#boost-asio-strand-2constructor-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::strand
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a strand for the specified executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+strand(
+    Executor1 const& e,
+    int = 0);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

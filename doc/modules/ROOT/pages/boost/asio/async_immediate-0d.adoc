@@ -1,0 +1,63 @@
+[#boost-asio-async_immediate-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;immediate
+:relfileprefix: ../../
+:mrdocs:
+
+Launch a trivial asynchronous operation that completes immediately&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;immediate&period;hpp&gt;`
+
+Launch a trivial asynchronous operation that completes immediately&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;ExecutionContext::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;immediate&lt;
+        typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&gt;(), token))
+xref:boost/asio/async_immediate-01.adoc[async&lowbar;immediate](
+    ExecutionContext& ctx,
+    NullaryToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_immediate-01.adoc[_» more&period;&period;&period;_]#
+
+Launch a trivial asynchronous operation that completes immediately&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;immediate&lt;Executor&gt;&gt;(), token))
+xref:boost/asio/async_immediate-0f.adoc[async&lowbar;immediate](
+    Executor const& ex,
+    NullaryToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_immediate-0f.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The execution context used to obtain the asynchronous operation&apos;s I&sol;O executor&period;
+| *token*
+| The completion token&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

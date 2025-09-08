@@ -1,0 +1,23 @@
+[#boost-asio-coroutine-is_complete]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/coroutine.adoc[coroutine]::is&lowbar;complete
+:relfileprefix: ../../../
+:mrdocs:
+
+Returns true if the coroutine has reached its terminal state&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;coroutine&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;complete() const;
+----
+
+== Return Value
+
+true if the coroutine has reached its terminal state&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

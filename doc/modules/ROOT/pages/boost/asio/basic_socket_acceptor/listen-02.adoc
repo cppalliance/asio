@@ -1,0 +1,59 @@
+[#boost-asio-basic_socket_acceptor-listen-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::listen
+:relfileprefix: ../../../
+:mrdocs:
+
+Place the acceptor into the state where it will listen for new connections&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+Place the acceptor into the state where it will listen for new connections&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_socket_acceptor/listen-00.adoc[listen](int backlog = socket&lowbar;base&colon;&colon;max&lowbar;listen&lowbar;connections);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/listen-00.adoc[_» more&period;&period;&period;_]#
+
+Place the acceptor into the state where it will listen for new connections&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_socket_acceptor/listen-08.adoc[listen](
+    int backlog,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/listen-08.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *backlog*
+| The maximum length of the queue of pending connections&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

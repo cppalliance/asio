@@ -1,0 +1,53 @@
+[#boost-asio-partial_cancellation_slot_binder]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::partial&lowbar;cancellation&lowbar;slot&lowbar;binder
+:relfileprefix: ../../
+:mrdocs:
+
+A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied cancellation slot as its associated cancellation slot&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CancellationSlot&gt;
+struct partial&lowbar;cancellation&lowbar;slot&lowbar;binder;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/partial_cancellation_slot_binder/2constructor.adoc[`partial&lowbar;cancellation&lowbar;slot&lowbar;binder`]         [.small]#[constructor]#
+| Constructor that specifies associated cancellation slot&period;
+| xref:boost/asio/partial_cancellation_slot_binder/operator_call.adoc[`operator()`] 
+| Adapt a `completion&lowbar;token` to specify that the completion handler should have the cancellation slot as its associated cancellation slot&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/partial_cancellation_slot_binder/cancellation_slot_.adoc[`cancellation&lowbar;slot&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/bind_cancellation_slot-06.adoc[`bind&lowbar;cancellation&lowbar;slot`]
+| Create a partial completion token that associates a cancellation slot&period;
+|===
+
+== Description
+
+May also be used directly as a completion token, in which case it adapts the asynchronous operation&apos;s default completion token (or boost&colon;&colon;asio&colon;&colon;deferred if no default is available)&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

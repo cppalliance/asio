@@ -1,0 +1,60 @@
+[#boost-asio-basic_stream_socket-receive-01b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket]::receive
+:relfileprefix: ../../../
+:mrdocs:
+
+Receive some data on the socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+receive(MutableBufferSequence const& buffers);
+----
+
+== Description
+
+This function is used to receive data on the stream socket&period; The function call will block until one or more bytes of data has been received successfully, or until an error occurs&period;
+
+[NOTE]
+The receive operation may not receive all of the requested number of bytes&period; Consider using the xref:boost/asio/read-090.adoc[`read`] function if you need to ensure that the requested amount of data is read before the blocking operation completes&period;
+
+== Example
+To receive into a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+socket.receive(boost::asio::buffer(data, size));
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on receiving into multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; An error code of boost&colon;&colon;asio&colon;&colon;error&colon;&colon;eof indicates that the connection was closed by the peer&period;
+|===
+
+== Return Value
+
+The number of bytes received&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more buffers into which the data will be received&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

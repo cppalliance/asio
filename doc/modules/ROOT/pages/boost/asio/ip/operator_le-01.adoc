@@ -1,0 +1,69 @@
+[#boost-asio-ip-operator_le-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::operator&lt;&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Less&hyphen;than&hyphen;or&hyphen;equal operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&period;hpp&gt;`
+
+Compare addresses for ordering&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/ip/operator_le-09.adoc[operator&lt;&equals;](
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& a1,
+    xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& a2) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/operator_le-09.adoc[_» more&period;&period;&period;_]#
+
+Compare addresses for ordering&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/ip/operator_le-02c.adoc[operator&lt;&equals;](
+    xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6] const& a1,
+    xref:boost/asio/ip/address_v6.adoc[address&lowbar;v6] const& a2) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/operator_le-02c.adoc[_» more&period;&period;&period;_]#
+
+Compare addresses for ordering&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/ip/operator_le-025.adoc[operator&lt;&equals;](
+    xref:boost/asio/ip/address.adoc[address] const& a1,
+    xref:boost/asio/ip/address.adoc[address] const& a2) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/operator_le-025.adoc[_» more&period;&period;&period;_]#
+
+Compare endpoints for ordering&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+xref:boost/asio/ip/operator_le-0a.adoc[operator&lt;&equals;](
+    xref:boost/asio/ip/basic_endpoint.adoc[basic&lowbar;endpoint&lt;InternetProtocol&gt;] const& e1,
+    xref:boost/asio/ip/basic_endpoint.adoc[basic&lowbar;endpoint&lt;InternetProtocol&gt;] const& e2) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/operator_le-0a.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

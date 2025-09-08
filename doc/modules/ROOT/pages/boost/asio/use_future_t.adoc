@@ -1,0 +1,56 @@
+[#boost-asio-use_future_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::use&lowbar;future&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` type that causes an asynchronous operation to return a future&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;future&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator = std::allocator&lt;void&gt;&gt;
+class use&lowbar;future&lowbar;t;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/use_future_t/allocator_type.adoc[`allocator&lowbar;type`] 
+| The allocator type&period; The allocator is used when constructing the `std&colon;&colon;promise` object for a given asynchronous operation&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/use_future_t/2constructor-0c.adoc[`use&lowbar;future&lowbar;t`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/use_future_t/get_allocator.adoc[`get&lowbar;allocator`] 
+| Obtain allocator&period;
+| xref:boost/asio/use_future_t/operator_call.adoc[`operator()`] 
+| Wrap a function object in a packaged task&period;
+| xref:boost/asio/use_future_t/rebind.adoc[`rebind`] 
+| Specify an alternate allocator&period;
+|===
+
+== Description
+
+The use&lowbar;future&lowbar;t class is a completion token type that is used to indicate that an asynchronous operation should return a std&colon;&colon;future object&period; A use&lowbar;future&lowbar;t object may be passed as a completion token to an asynchronous operation, typically using the special value `boost&colon;&colon;asio&colon;&colon;use&lowbar;future&period;` For example&colon;
+
+[,cpp]
+----
+std::future<std::size_t> my_future
+  = my_socket.async_read_some(my_buffer, boost::asio::use_future); 
+----
+The initiating function (async&lowbar;read&lowbar;some in the above example) returns a future that will receive the result of the operation&period; If the operation completes with an error&lowbar;code indicating failure, it is converted into a system&lowbar;error and passed back to the caller via the future&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

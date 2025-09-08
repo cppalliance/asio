@@ -1,0 +1,82 @@
+[#boost-asio-windows-basic_object_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::basic&lowbar;object&lowbar;handle
+:relfileprefix: ../../../
+:mrdocs:
+
+Provides object&hyphen;oriented handle functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;object&lowbar;handle;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_object_handle/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the handle type to another executor&period;
+| xref:boost/asio/windows/basic_object_handle/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/windows/basic_object_handle/lowest_layer_type.adoc[`lowest&lowbar;layer&lowbar;type`] 
+| An object handle is always the lowest layer&period;
+| xref:boost/asio/windows/basic_object_handle/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_object_handle/2constructor-0e.adoc[`basic&lowbar;object&lowbar;handle`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/windows/basic_object_handle/operator_assign-0f.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/windows/basic_object_handle/assign-04.adoc[`assign`] 
+| 
+| xref:boost/asio/windows/basic_object_handle/async_wait.adoc[`async&lowbar;wait`] 
+| Start an asynchronous wait on the object handle&period;
+| xref:boost/asio/windows/basic_object_handle/cancel-08.adoc[`cancel`] 
+| Cancel all asynchronous operations associated with the handle&period;
+| xref:boost/asio/windows/basic_object_handle/close-0e.adoc[`close`] 
+| Close the handle&period;
+| xref:boost/asio/windows/basic_object_handle/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/windows/basic_object_handle/is_open.adoc[`is&lowbar;open`] 
+| Determine whether the handle is open&period;
+| xref:boost/asio/windows/basic_object_handle/lowest_layer-0b.adoc[`lowest&lowbar;layer`] 
+| `lowest&lowbar;layer` overloads
+| xref:boost/asio/windows/basic_object_handle/native_handle.adoc[`native&lowbar;handle`] 
+| Get the native handle representation&period;
+| xref:boost/asio/windows/basic_object_handle/wait-06.adoc[`wait`] 
+| Perform a blocking wait on the object handle&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/windows/basic_object_handle.adoc[boost::asio::windows::basic&lowbar;object&lowbar;handle]`
+| Provides object&hyphen;oriented handle functionality&period;
+|===
+
+== Description
+
+The windows&colon;&colon;basic&lowbar;object&lowbar;handle class provides asynchronous and blocking object&hyphen;oriented handle functionality&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

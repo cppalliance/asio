@@ -1,0 +1,24 @@
+[#boost-asio-ip-bad_address_cast-what]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/bad_address_cast.adoc[bad&lowbar;address&lowbar;cast]::what
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the message associated with the exception&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;bad&lowbar;address&lowbar;cast&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+char const*
+what() const noexcept;
+----
+
+== Return Value
+
+the message associated with the exception&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

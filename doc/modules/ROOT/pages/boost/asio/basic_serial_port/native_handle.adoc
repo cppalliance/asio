@@ -1,0 +1,27 @@
+[#boost-asio-basic_serial_port-native_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::native&lowbar;handle
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the native serial port representation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_serial_port/native_handle_type.adoc[native&lowbar;handle&lowbar;type]
+native&lowbar;handle();
+----
+
+== Description
+
+This function may be used to obtain the underlying representation of the serial port&period; This is intended to allow access to native serial port functionality that is not otherwise provided&period;
+
+== Return Value
+
+the native serial port representation&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

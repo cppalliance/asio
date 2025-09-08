@@ -1,0 +1,29 @@
+[#boost-asio-execution-any_executor-0f-swap-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]::swap
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/execution/any_executor-0f/swap-0d.adoc[swap](xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]& other) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/swap-0d.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+swap(&sol;&ast; implementation-defined &ast;&sol;& other) noexcept;
+----
+
+[.small]#[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

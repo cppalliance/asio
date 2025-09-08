@@ -1,0 +1,133 @@
+[#boost-asio-ip-address_v6]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::address&lowbar;v6
+:relfileprefix: ../../../
+:mrdocs:
+
+Implements IP version 6 style addresses&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class address&lowbar;v6;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/address_v6/bytes_type.adoc[`bytes&lowbar;type`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/address_v6/2constructor-06.adoc[`address&lowbar;v6`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/address_v6/operator_assign-0b.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/ip/address_v6/is_link_local.adoc[`is&lowbar;link&lowbar;local`] 
+| Determine whether the address is link local&period;
+| xref:boost/asio/ip/address_v6/is_loopback.adoc[`is&lowbar;loopback`] 
+| Determine whether the address is a loopback address&period;
+| xref:boost/asio/ip/address_v6/is_multicast.adoc[`is&lowbar;multicast`] 
+| Determine whether the address is a multicast address&period;
+| xref:boost/asio/ip/address_v6/is_multicast_global.adoc[`is&lowbar;multicast&lowbar;global`] 
+| Determine whether the address is a global multicast address&period;
+| xref:boost/asio/ip/address_v6/is_multicast_link_local.adoc[`is&lowbar;multicast&lowbar;link&lowbar;local`] 
+| Determine whether the address is a link&hyphen;local multicast address&period;
+| xref:boost/asio/ip/address_v6/is_multicast_node_local.adoc[`is&lowbar;multicast&lowbar;node&lowbar;local`] 
+| Determine whether the address is a node&hyphen;local multicast address&period;
+| xref:boost/asio/ip/address_v6/is_multicast_org_local.adoc[`is&lowbar;multicast&lowbar;org&lowbar;local`] 
+| Determine whether the address is a org&hyphen;local multicast address&period;
+| xref:boost/asio/ip/address_v6/is_multicast_site_local.adoc[`is&lowbar;multicast&lowbar;site&lowbar;local`] 
+| Determine whether the address is a site&hyphen;local multicast address&period;
+| xref:boost/asio/ip/address_v6/is_site_local.adoc[`is&lowbar;site&lowbar;local`] 
+| Determine whether the address is site local&period;
+| xref:boost/asio/ip/address_v6/is_unspecified.adoc[`is&lowbar;unspecified`] 
+| Determine whether the address is unspecified&period;
+| xref:boost/asio/ip/address_v6/is_v4_mapped.adoc[`is&lowbar;v4&lowbar;mapped`] 
+| Determine whether the address is a mapped IPv4 address&period;
+| xref:boost/asio/ip/address_v6/scope_id-03.adoc[`scope&lowbar;id`] 
+| The scope ID of the address&period;
+| xref:boost/asio/ip/address_v6/to_bytes.adoc[`to&lowbar;bytes`] 
+| Get the address in bytes, in network byte order&period;
+| xref:boost/asio/ip/address_v6/to_string.adoc[`to&lowbar;string`] 
+| Get the address as a string&period;
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/address_v6/any.adoc[`any`] 
+| Obtain an address object that represents any address&period;
+| xref:boost/asio/ip/address_v6/loopback.adoc[`loopback`] 
+| Obtain an address object that represents the loopback address&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/basic_address_iterator-07.adoc[boost::asio::ip::basic&lowbar;address&lowbar;iterator&lt;address&lowbar;v6&gt;]`
+| An input iterator that can be used for traversing IPv6 addresses&period;
+| `xref:boost/asio/ip/operator_ge-04.adoc[boost::asio::ip::operator&gt;&equals;]`
+| Compare addresses for ordering&period;
+| `xref:boost/asio/ip/operator_le-02c.adoc[boost::asio::ip::operator&lt;&equals;]`
+| Compare addresses for ordering&period;
+| `xref:boost/asio/ip/operator_gt-0f.adoc[boost::asio::ip::operator&gt;]`
+| Compare addresses for ordering&period;
+| `xref:boost/asio/ip/operator_lt-0e.adoc[boost::asio::ip::operator&lt;]`
+| Compare addresses for ordering&period;
+| `xref:boost/asio/ip/operator_not_eq-07.adoc[boost::asio::ip::operator!&equals;]`
+| Compare two addresses for inequality&period;
+| `xref:boost/asio/ip/operator_eq-01c.adoc[boost::asio::ip::operator&equals;&equals;]`
+| Compare two addresses for equality&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/make_address_v6-00.adoc[`make&lowbar;address&lowbar;v6`]
+| Create an IPv6 address from an IP address string&period;
+| xref:boost/asio/ip/make_address_v6-079.adoc[`make&lowbar;address&lowbar;v6`]
+| Create an IPv6 address from raw bytes and scope ID&period;
+| xref:boost/asio/ip/make_address_v6-07a.adoc[`make&lowbar;address&lowbar;v6`]
+| Create an IPv6 address from an IP address string&period;
+| xref:boost/asio/ip/make_address_v6-09.adoc[`make&lowbar;address&lowbar;v6`]
+| Createan IPv6 address from an IP address string&period;
+| xref:boost/asio/ip/make_address_v6-0d.adoc[`make&lowbar;address&lowbar;v6`]
+| Create an IPv4&hyphen;mapped IPv6 address from an IPv4 address&period;
+| xref:boost/asio/ip/make_address_v6-0e.adoc[`make&lowbar;address&lowbar;v6`]
+| Create an IPv6 address from an IP address string&period;
+| xref:boost/asio/ip/make_network_v6-03.adoc[`make&lowbar;network&lowbar;v6`]
+| Create an IPv6 network from an address and prefix length&period;
+| xref:boost/asio/ip/operator_lshift-00.adoc[`operator&lt;&lt;`]
+| Output a network as a string&period;
+| xref:boost/asio/ip/operator_lshift-03d.adoc[`operator&lt;&lt;`]
+| Output an address as a string&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;address&lowbar;v6 class provides the ability to use and manipulate IP version 6 addresses&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

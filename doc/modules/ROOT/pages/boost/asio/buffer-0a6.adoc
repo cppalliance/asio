@@ -1,0 +1,39 @@
+[#boost-asio-buffer-0a6]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new modifiable buffer that represents the given POD vector&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename PodType,
+    typename Allocator&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
+buffer(
+    std::vector&lt;PodType, Allocator&gt;& data,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes) noexcept;
+----
+
+== Description
+
+[,cpp]
+----
+mutable_buffer(
+    data.size() ? &data[0] : 0,
+    min(data.size() * sizeof(PodType), max_size_in_bytes)); 
+----
+[NOTE]
+The buffer is invalidated by any vector operation that would also invalidate iterators&period;
+
+== Return Value
+
+A mutable&lowbar;buffer value equivalent to&colon;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

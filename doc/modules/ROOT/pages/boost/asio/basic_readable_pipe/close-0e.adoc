@@ -1,0 +1,33 @@
+[#boost-asio-basic_readable_pipe-close-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_readable_pipe.adoc[basic&lowbar;readable&lowbar;pipe]::close
+:relfileprefix: ../../../
+:mrdocs:
+
+Close the pipe&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;readable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+close();
+----
+
+== Description
+
+This function is used to close the pipe&period; Any asynchronous read operations will be cancelled immediately, and will complete with the boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted error&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,47 @@
+[#boost-asio-invalid_service_owner]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::invalid&lowbar;service&lowbar;owner
+:relfileprefix: ../../
+:mrdocs:
+
+Exception thrown when trying to add a service object to an execution&lowbar;context where the service has a different owner&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class invalid&lowbar;service&lowbar;owner
+    : public std::logic&lowbar;error
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::logic&lowbar;error`
+| 
+|===
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/invalid_service_owner/_Mybase.adoc[`&lowbar;Mybase`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/invalid_service_owner/2constructor.adoc[`invalid&lowbar;service&lowbar;owner`]         [.small]#[constructor]#
+| Default constructor
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

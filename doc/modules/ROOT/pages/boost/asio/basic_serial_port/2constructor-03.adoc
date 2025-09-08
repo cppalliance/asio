@@ -1,0 +1,38 @@
+[#boost-asio-basic_serial_port-2constructor-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::basic&lowbar;serial&lowbar;port
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;construct a basic&lowbar;serial&lowbar;port from a serial port of another executor type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+basic&lowbar;serial&lowbar;port(
+    xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port&lt;Executor1&gt;]&& other,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+== Description
+
+This constructor moves a serial port from one object to another&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;serial&lowbar;port(const` executor&lowbar;type&amp;) constructor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;serial&lowbar;port object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

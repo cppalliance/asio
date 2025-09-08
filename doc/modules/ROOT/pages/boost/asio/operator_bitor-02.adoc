@@ -1,0 +1,36 @@
+[#boost-asio-operator_bitor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&verbar;
+:relfileprefix: ../../
+:mrdocs:
+
+Pipe operator used to chain deferred operations&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Head,
+    typename Tail&gt;
+decltype(static&lowbar;cast&lt;Head&amp;&amp;&gt;(head)(static&lowbar;cast&lt;Tail&amp;&amp;&gt;(tail)))
+operator&verbar;(
+    Head head,
+    Tail&& tail);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *head*
+| The left operand
+| *tail*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

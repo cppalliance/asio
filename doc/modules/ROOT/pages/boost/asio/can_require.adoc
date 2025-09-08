@@ -1,0 +1,30 @@
+[#boost-asio-can_require]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::can&lowbar;require
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;require&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Properties&gt;
+struct can&lowbar;require
+    : integral&lowbar;constant&lt;bool, boost&lowbar;asio&lowbar;require&lowbar;fn&colon;&colon;call&lowbar;traits&lt;require&lowbar;t, T, void (Properties&period;&period;&period;)&gt;&colon;&colon;overload !&equals; boost&lowbar;asio&lowbar;require&lowbar;fn&colon;&colon;ill&lowbar;formed&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `integral&lowbar;constant&lt;bool, boost&lowbar;asio&lowbar;require&lowbar;fn&colon;&colon;call&lowbar;traits&lt;require&lowbar;t, T, void (Properties&period;&period;&period;)&gt;&colon;&colon;overload !&equals; boost&lowbar;asio&lowbar;require&lowbar;fn&colon;&colon;ill&lowbar;formed&gt;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

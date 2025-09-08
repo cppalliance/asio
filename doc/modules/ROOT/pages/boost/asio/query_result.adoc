@@ -1,0 +1,27 @@
+[#boost-asio-query_result]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::query&lowbar;result
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;query&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Property&gt;
+struct query&lowbar;result;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/query_result/type.adoc[`type`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

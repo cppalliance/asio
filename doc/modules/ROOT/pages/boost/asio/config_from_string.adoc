@@ -1,0 +1,57 @@
+[#boost-asio-config_from_string]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::config&lowbar;from&lowbar;string
+:relfileprefix: ../../
+:mrdocs:
+
+Configures an execution context by reading variables from a string&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class config&lowbar;from&lowbar;string
+    : public xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker]`
+| Base class for all execution context service makers&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/config_from_string/2constructor-08.adoc[`config&lowbar;from&lowbar;string`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/config_from_string/make-0b.adoc[`make`]  [.small]#[virtual]#
+| `make` overloads
+|===
+
+== Description
+
+Each variable must be on a line of its own, and of the form&colon;
+
+or, if an optional prefix is specified&colon;
+
+Blank lines and lines starting with are ignored&period; It is also permitted to include a comment starting with after the value&period;
+
+== Example
+[,cpp]
+----
+boost::asio::io_context my_io_context{
+    boost::asio::config_from_string{
+      "scheduler.concurrency_hint=10\n"
+      "scheduler.locking=1"}}; 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

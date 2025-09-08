@@ -1,0 +1,17 @@
+[#boost-asio-disposition_traits-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::disposition&lowbar;traits
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct disposition&lowbar;traits;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

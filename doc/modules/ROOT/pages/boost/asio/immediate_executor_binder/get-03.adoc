@@ -1,0 +1,23 @@
+[#boost-asio-immediate_executor_binder-get-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/immediate_executor_binder.adoc[immediate&lowbar;executor&lowbar;binder]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain a reference to the target object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/immediate_executor_binder/target_type.adoc[target&lowbar;type]&
+get() noexcept;
+----
+
+== Return Value
+
+The type of the target object&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

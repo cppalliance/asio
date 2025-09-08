@@ -1,0 +1,18 @@
+[#boost-asio-local-stream_protocol-acceptor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::xref:boost/asio/local/stream_protocol.adoc[stream&lowbar;protocol]::acceptor
+:relfileprefix: ../../../../
+:mrdocs:
+
+The UNIX domain acceptor type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;stream&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor&lt;stream&lowbar;protocol&gt;] acceptor;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

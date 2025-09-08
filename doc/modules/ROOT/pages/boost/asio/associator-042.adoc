@@ -1,0 +1,43 @@
+[#boost-asio-associator-042]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associator-0a1.adoc[associator]&lt;Associator, xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;T, Allocator&gt;], DefaultCandidate&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    typename&gt; typename Associator,
+    typename T,
+    typename Allocator,
+    typename DefaultCandidate&gt;
+struct xref:boost/asio/associator-0a1.adoc[associator]&lt;Associator, xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;T, Allocator&gt;], DefaultCandidate&gt;
+    : Associator&lt;T, DefaultCandidate&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `Associator&lt;T, DefaultCandidate&gt;`
+| 
+|===
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/associator-042/get-08.adoc[`get`] 
+| xref:boost/asio/associator-042/get-0a.adoc[`get`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

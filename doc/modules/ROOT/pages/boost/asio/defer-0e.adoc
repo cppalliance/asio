@@ -1,0 +1,91 @@
+[#boost-asio-defer-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::defer
+:relfileprefix: ../../
+:mrdocs:
+
+Submits a completion token or function object for execution&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;defer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename NullaryToken&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;defer&gt;(), token))
+defer(NullaryToken&& token);
+----
+
+== Description
+
+This function submits an object for execution using the object&apos;s associated executor&period; The function object is queued for execution, and is never called from the current thread prior to returning from &period;
+
+The use of `defer(),` rather than xref:boost/asio/post-055.adoc[`post()`], indicates the caller&apos;s preference that the executor defer the queueing of the function object&period; This may allow the executor to optimise queueing for cases when the function object represents a continuation of the current call context&period;
+
+[,cpp]
+----
+void handler(); 
+----
+[,cpp]
+----
+class Init
+{
+public:
+  template <typename CompletionHandler>
+    void operator()(CompletionHandler&& completion_handler) const;
+}; 
+----
+The function call operator of `Init&colon;`
+
+* Obtains the handler&apos;s associated executor object `ex` of type `Ex` by performing
+
+[,cpp]
+----
+auto ex = get_associated_executor(handler); 
+----
+* Obtains the handler&apos;s associated allocator object `alloc` by performing
+
+[,cpp]
+----
+auto alloc = get_associated_allocator(handler); 
+----
+* If is true, performs
+
+[,cpp]
+----
+prefer(
+    require(ex, execution::blocking.never),
+    execution::relationship.continuation,
+    execution::allocator(alloc)
+  ).execute(std::forward<CompletionHandler>(completion_handler)); 
+----
+* If is false, performs
+
+[,cpp]
+----
+ex.defer(
+    std::forward<CompletionHandler>(completion_handler),
+    alloc); 
+----
+== Completion Signature
+[,cpp]
+----
+void() 
+----
+== Return Value
+
+This function returns , where `Init` is a function object type defined as&colon;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

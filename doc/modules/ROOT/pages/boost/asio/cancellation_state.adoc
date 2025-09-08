@@ -1,0 +1,34 @@
+[#boost-asio-cancellation_state]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancellation&lowbar;state
+:relfileprefix: ../../
+:mrdocs:
+
+A cancellation state is used for chaining signals and slots in compositions&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class cancellation&lowbar;state;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancellation_state/2constructor-03.adoc[`cancellation&lowbar;state`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/cancellation_state/cancelled.adoc[`cancelled`] 
+| Returns the cancellation types that have been triggered&period;
+| xref:boost/asio/cancellation_state/clear.adoc[`clear`] 
+| Clears the specified cancellation types, if they have been triggered&period;
+| xref:boost/asio/cancellation_state/slot.adoc[`slot`] 
+| Returns the single child slot associated with the state&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

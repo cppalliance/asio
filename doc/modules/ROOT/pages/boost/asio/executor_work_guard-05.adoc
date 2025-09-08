@@ -1,0 +1,38 @@
+[#boost-asio-executor_work_guard-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::executor&lowbar;work&lowbar;guard
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&lowbar;work&lowbar;guard&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename = void,
+    typename = void&gt;
+class executor&lowbar;work&lowbar;guard;
+----
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/make_work_guard-02.adoc[`make&lowbar;work&lowbar;guard`]
+| Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+| xref:boost/asio/make_work_guard-03.adoc[`make&lowbar;work&lowbar;guard`]
+| Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+| xref:boost/asio/make_work_guard-04.adoc[`make&lowbar;work&lowbar;guard`]
+| Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+| xref:boost/asio/make_work_guard-08.adoc[`make&lowbar;work&lowbar;guard`]
+| Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+| xref:boost/asio/make_work_guard-0f.adoc[`make&lowbar;work&lowbar;guard`]
+| Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

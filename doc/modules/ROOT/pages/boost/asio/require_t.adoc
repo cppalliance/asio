@@ -1,0 +1,16 @@
+[#boost-asio-require_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::require&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;require&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef boost&lowbar;asio&lowbar;require&lowbar;fn::impl require&lowbar;t;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

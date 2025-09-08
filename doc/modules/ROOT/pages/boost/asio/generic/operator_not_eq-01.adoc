@@ -1,0 +1,37 @@
+[#boost-asio-generic-operator_not_eq-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::operator!&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Compare two protocols for inequality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;raw&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+operator!&equals;(
+    xref:boost/asio/generic/raw_protocol.adoc[raw&lowbar;protocol] const& p1,
+    xref:boost/asio/generic/raw_protocol.adoc[raw&lowbar;protocol] const& p2);
+----
+
+== Return Value
+
+`true` if the objects are not equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *p1*
+| The left operand
+| *p2*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

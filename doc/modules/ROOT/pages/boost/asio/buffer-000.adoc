@@ -1,0 +1,42 @@
+[#boost-asio-buffer-000]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Create a new non&hyphen;modifiable buffer from a span&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    template&lt;
+    typename,
+    size&lowbar;t&gt; typename Span,
+    typename T,
+    size&lowbar;t Extent&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
+buffer(
+    Span&lt;T const, Extent&gt; const& span,
+    size&lowbar;t max&lowbar;size&lowbar;in&lowbar;bytes,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint(),
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint()) noexcept;
+----
+
+== Description
+
+[,cpp]
+----
+const_buffer b1(b);
+const_buffer(
+    b1.data(),
+    min(b1.size(), max_size_in_bytes)); 
+----
+== Return Value
+
+A const&lowbar;buffer value equivalent to&colon;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

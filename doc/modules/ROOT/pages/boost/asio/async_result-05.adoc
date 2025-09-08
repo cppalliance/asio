@@ -1,0 +1,27 @@
+[#boost-asio-async_result-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_result-04d.adoc[async&lowbar;result]&lt;xref:boost/asio/partial_executor_binder.adoc[partial&lowbar;executor&lowbar;binder&lt;Executor&gt;], Signatures&period;&period;&period;&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename&period;&period;&period; Signatures&gt;
+struct xref:boost/asio/async_result-04d.adoc[async&lowbar;result]&lt;xref:boost/asio/partial_executor_binder.adoc[partial&lowbar;executor&lowbar;binder&lt;Executor&gt;], Signatures&period;&period;&period;&gt;;
+----
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/async_result-05/initiate.adoc[`initiate`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,59 @@
+[#boost-asio-basic_signal_set-remove-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set]::remove
+:relfileprefix: ../../../
+:mrdocs:
+
+Remove a signal from a signal&lowbar;set&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+Remove a signal from a signal&lowbar;set&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_signal_set/remove-00.adoc[remove](int signal&lowbar;number);
+----
+
+[.small]#xref:boost/asio/basic_signal_set/remove-00.adoc[_» more&period;&period;&period;_]#
+
+Remove a signal from a signal&lowbar;set&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_signal_set/remove-0a.adoc[remove](
+    int signal&lowbar;number,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_signal_set/remove-0a.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *signal&lowbar;number*
+| The signal to be removed from the set&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

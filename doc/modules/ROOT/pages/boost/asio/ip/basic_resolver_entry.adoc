@@ -1,0 +1,56 @@
+[#boost-asio-ip-basic_resolver_entry]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::basic&lowbar;resolver&lowbar;entry
+:relfileprefix: ../../../
+:mrdocs:
+
+An entry produced by a resolver&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;entry&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename InternetProtocol&gt;
+class basic&lowbar;resolver&lowbar;entry;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_entry/endpoint_type.adoc[`endpoint&lowbar;type`] 
+| The endpoint type associated with the endpoint entry&period;
+| xref:boost/asio/ip/basic_resolver_entry/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type associated with the endpoint entry&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_entry/2constructor-0c.adoc[`basic&lowbar;resolver&lowbar;entry`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/basic_resolver_entry/endpoint.adoc[`endpoint`] 
+| Get the endpoint associated with the entry&period;
+| xref:boost/asio/ip/basic_resolver_entry/host_name-0f.adoc[`host&lowbar;name`] 
+| Get the host name associated with the entry&period;
+| xref:boost/asio/ip/basic_resolver_entry/service_name-0c.adoc[`service&lowbar;name`] 
+| Get the service name associated with the entry&period;
+| xref:boost/asio/ip/basic_resolver_entry/2conversion.adoc[`operator endpoint&lowbar;type`] 
+| Convert to the endpoint associated with the entry&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;basic&lowbar;resolver&lowbar;entry class template describes an entry as returned by a resolver&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

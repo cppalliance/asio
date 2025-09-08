@@ -1,0 +1,68 @@
+[#boost-asio-basic_stream_file-seek-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]::seek
+:relfileprefix: ../../../
+:mrdocs:
+
+Seek to a position in the file&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;file&period;hpp&gt;`
+
+Seek to a position in the file&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+std::uint64&lowbar;t
+xref:boost/asio/basic_stream_file/seek-0a.adoc[seek](
+    std::int64&lowbar;t offset,
+    xref:boost/asio/file_base/seek_basis.adoc[file&lowbar;base::seek&lowbar;basis] whence);
+----
+
+[.small]#xref:boost/asio/basic_stream_file/seek-0a.adoc[_» more&period;&period;&period;_]#
+
+Seek to a position in the file&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+std::uint64&lowbar;t
+xref:boost/asio/basic_stream_file/seek-02.adoc[seek](
+    std::int64&lowbar;t offset,
+    xref:boost/asio/file_base/seek_basis.adoc[file&lowbar;base::seek&lowbar;basis] whence,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_stream_file/seek-02.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The new position relative to the beginning of the file&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *offset*
+| The requested position in the file, relative to `whence&period;`
+| *whence*
+| One of `seek&lowbar;set,` `seek&lowbar;cur` or `seek&lowbar;end&period;`
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

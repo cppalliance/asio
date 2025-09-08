@@ -1,0 +1,46 @@
+[#boost-asio-windows-basic_overlapped_handle-2constructor-024]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_overlapped_handle.adoc[basic&lowbar;overlapped&lowbar;handle]::basic&lowbar;overlapped&lowbar;handle
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct an overlapped handle on an existing native handle&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;overlapped&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;overlapped&lowbar;handle(
+    xref:boost/asio/windows/basic_overlapped_handle/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/windows/basic_overlapped_handle/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;handle);
+----
+
+== Description
+
+This constructor creates an overlapped handle object to hold an existing native handle&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the overlapped handle will use, by default, to dispatch handlers for any asynchronous operations performed on the overlapped handle&period;
+| *native&lowbar;handle*
+| The new underlying handle implementation&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

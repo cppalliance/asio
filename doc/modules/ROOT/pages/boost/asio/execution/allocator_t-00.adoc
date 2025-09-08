@@ -1,0 +1,54 @@
+[#boost-asio-execution-allocator_t-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::allocator&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ProtoAllocator&gt;
+struct allocator&lowbar;t;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/allocator_t-00/query_static_constexpr_member.adoc[`query&lowbar;static&lowbar;constexpr&lowbar;member`] 
+| xref:boost/asio/execution/allocator_t-00/static_proxy.adoc[`static&lowbar;proxy`] 
+|===
+
+== Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/allocator_t-00/value.adoc[`value`] 
+|===
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/allocator_t-00/is_applicable_property_v.adoc[`is&lowbar;applicable&lowbar;property&lowbar;v`] 
+| xref:boost/asio/execution/allocator_t-00/is_preferable.adoc[`is&lowbar;preferable`] 
+| xref:boost/asio/execution/allocator_t-00/is_requirable.adoc[`is&lowbar;requirable`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution/allocator_t-05.adoc[boost::asio::execution::allocator&lowbar;t&lt;void&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

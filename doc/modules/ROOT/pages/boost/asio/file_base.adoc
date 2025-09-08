@@ -1,0 +1,72 @@
+[#boost-asio-file_base]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::file&lowbar;base
+:relfileprefix: ../../
+:mrdocs:
+
+The file&lowbar;base class is used as a base for the basic&lowbar;stream&lowbar;file and basic&lowbar;random&lowbar;access&lowbar;file class templates so that we have a common place to define flags&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;file&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class file&lowbar;base;
+----
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/file_base/flags.adoc[`flags`] 
+| 
+| xref:boost/asio/file_base/seek_basis.adoc[`seek&lowbar;basis`] 
+| Basis for seeking in a file&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/file_base/2destructor.adoc[`&#126;file&lowbar;base`] [.small]#[destructor]#
+| Protected destructor to prevent deletion through this type&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/operator_xor_eq-04.adoc[boost::asio::operator&circ;&equals;]`
+| 
+| `xref:boost/asio/operator_or_eq-02.adoc[boost::asio::operator&verbar;&equals;]`
+| 
+| `xref:boost/asio/operator_and_eq-07.adoc[boost::asio::operator&amp;&equals;]`
+| 
+| `xref:boost/asio/operator_bitnot-088.adoc[boost::asio::operator&#126;]`
+| 
+| `xref:boost/asio/operator_xor-0f.adoc[boost::asio::operator&circ;]`
+| 
+| `xref:boost/asio/operator_bitor-087.adoc[boost::asio::operator&verbar;]`
+| 
+| `xref:boost/asio/operator_bitand-09.adoc[boost::asio::operator&amp;]`
+| 
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_file.adoc[`basic&lowbar;file`]
+| Provides file functionality&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

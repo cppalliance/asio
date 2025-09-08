@@ -1,0 +1,50 @@
+[#boost-asio-buffer_copy-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;copy
+:relfileprefix: ../../
+:mrdocs:
+
+Copies bytes from a source buffer sequence to a target buffer sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename MutableBufferSequence,
+    typename ConstBufferSequence&gt;
+size&lowbar;t
+buffer&lowbar;copy(
+    MutableBufferSequence const& target,
+    ConstBufferSequence const& source) noexcept;
+----
+
+== Description
+
+[NOTE]
+The number of bytes copied is the lesser of&colon;
+
+* `buffer&lowbar;size(target)`
+* `buffer&lowbar;size(source)`
+
+This function is implemented in terms of `memcpy,` and consequently it cannot be used to copy between overlapping memory regions&period;
+
+== Return Value
+
+The number of bytes copied&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *target*
+| A modifiable buffer sequence representing the memory regions to which the bytes will be copied&period;
+| *source*
+| A non&hyphen;modifiable buffer sequence representing the memory regions from which the bytes will be copied&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

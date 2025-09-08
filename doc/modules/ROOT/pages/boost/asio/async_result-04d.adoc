@@ -1,0 +1,38 @@
+[#boost-asio-async_result-04d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;result
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename&period;&period;&period; Signatures&gt;
+class async&lowbar;result
+    : public xref:boost/asio/conditional_t.adoc[conditional&lowbar;t&lt;detail&colon;&colon;are&lowbar;any&lowbar;lvalue&lowbar;completion&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;&colon;&colon;value &verbar;&verbar; !detail&colon;&colon;are&lowbar;any&lowbar;rvalue&lowbar;completion&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;&colon;&colon;value, &sol;&ast; implementation-defined &ast;&sol;, async&lowbar;result&lt;CompletionToken, &sol;&ast; implementation-defined &ast;&sol;::type&period;&period;&period;&gt;&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/conditional_t.adoc[conditional&lowbar;t&lt;detail&colon;&colon;are&lowbar;any&lowbar;lvalue&lowbar;completion&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;&colon;&colon;value &verbar;&verbar; !detail&colon;&colon;are&lowbar;any&lowbar;rvalue&lowbar;completion&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;&colon;&colon;value, &sol;&ast; implementation-defined &ast;&sol;, async&lowbar;result&lt;CompletionToken, &sol;&ast; implementation-defined &ast;&sol;::type&period;&period;&period;&gt;&gt;]`
+| 
+|===
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/async_result-04d/base_type.adoc[`base&lowbar;type`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,34 @@
+[#boost-asio-config_from_env-2constructor-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/config_from_env.adoc[config&lowbar;from&lowbar;env]::config&lowbar;from&lowbar;env
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+Construct with the default prefix &quot;asio&quot;&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/config_from_env/2constructor-0e.adoc[config&lowbar;from&lowbar;env]();
+----
+
+[.small]#xref:boost/asio/config_from_env/2constructor-0e.adoc[_» more&period;&period;&period;_]#
+
+Construct with a specified prefix&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/config_from_env/2constructor-0d.adoc[config&lowbar;from&lowbar;env](std::string prefix);
+----
+
+[.small]#xref:boost/asio/config_from_env/2constructor-0d.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

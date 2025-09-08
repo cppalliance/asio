@@ -1,0 +1,30 @@
+[#boost-asio-is_deferred-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/is_deferred-05.adoc[is&lowbar;deferred]&lt;xref:boost/asio/deferred_conditional.adoc[deferred&lowbar;conditional&lt;OnTrue, OnFalse&gt;]&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename OnTrue,
+    typename OnFalse&gt;
+struct xref:boost/asio/is_deferred-05.adoc[is&lowbar;deferred]&lt;xref:boost/asio/deferred_conditional.adoc[deferred&lowbar;conditional&lt;OnTrue, OnFalse&gt;]&gt;
+    : std::true&lowbar;type
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::true&lowbar;type`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

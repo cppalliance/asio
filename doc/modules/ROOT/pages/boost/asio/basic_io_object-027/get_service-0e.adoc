@@ -1,0 +1,35 @@
+[#boost-asio-basic_io_object-027-get_service-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_io_object-027.adoc[basic&lowbar;io&lowbar;object]::get&lowbar;service
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the service associated with the I&sol;O object&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;io&lowbar;object&period;hpp&gt;`
+
+Get the service associated with the I&sol;O object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_io_object-027/service_type.adoc[service&lowbar;type]&
+xref:boost/asio/basic_io_object-027/get_service-0a.adoc[get&lowbar;service]();
+----
+
+[.small]#xref:boost/asio/basic_io_object-027/get_service-0a.adoc[_» more&period;&period;&period;_]#
+
+Get the service associated with the I&sol;O object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_io_object-027/service_type.adoc[service&lowbar;type] const&
+xref:boost/asio/basic_io_object-027/get_service-05.adoc[get&lowbar;service]() const;
+----
+
+[.small]#xref:boost/asio/basic_io_object-027/get_service-05.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

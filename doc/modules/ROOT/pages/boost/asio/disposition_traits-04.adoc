@@ -1,0 +1,29 @@
+[#boost-asio-disposition_traits-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/disposition_traits-05.adoc[disposition&lowbar;traits]&lt;xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t]&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+Specialisation of `disposition&lowbar;traits` for `no&lowbar;error&lowbar;t&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;&gt;
+struct xref:boost/asio/disposition_traits-05.adoc[disposition&lowbar;traits]&lt;xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t]&gt;;
+----
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/disposition_traits-04/not_an_error.adoc[`not&lowbar;an&lowbar;error`] 
+| xref:boost/asio/disposition_traits-04/throw_exception.adoc[`throw&lowbar;exception`] 
+| xref:boost/asio/disposition_traits-04/to_exception_ptr.adoc[`to&lowbar;exception&lowbar;ptr`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,20 @@
+[#boost-asio-any_completion_executor-2constructor-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]::any&lowbar;completion&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename OtherAnyExecutor&gt;
+any&lowbar;completion&lowbar;executor(
+    std::nothrow&lowbar;t,
+    OtherAnyExecutor e,
+    int = 0) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

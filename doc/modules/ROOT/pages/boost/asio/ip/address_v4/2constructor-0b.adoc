@@ -1,0 +1,33 @@
+[#boost-asio-ip-address_v4-2constructor-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]::address&lowbar;v4
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct an address from an unsigned integer in host byte order&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+address&lowbar;v4(xref:boost/asio/ip/address_v4/uint_type.adoc[uint&lowbar;type] addr);
+----
+
+== Description
+
+Initialises the `address&lowbar;v4` object such that &period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *addr*
+| The object to construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

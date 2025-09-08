@@ -1,0 +1,21 @@
+[#boost-asio-deferred_t-as_default_on]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/deferred_t.adoc[deferred&lowbar;t]::as&lowbar;default&lowbar;on
+:relfileprefix: ../../../
+:mrdocs:
+
+Function helper to adapt an I&sol;O object to use `deferred&lowbar;t` as its default completion token type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+static
+decay&lowbar;t&lt;T&gt;::rebind&lowbar;executor&lt;executor&lowbar;with&lowbar;default&lt;decay&lowbar;t&lt;T&gt;::executor&lowbar;type&gt;&gt;::other
+as&lowbar;default&lowbar;on(T&& object);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,133 @@
+[#boost-asio-async_connect-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;connect
+:relfileprefix: ../../
+:mrdocs:
+
+Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;connect&period;hpp&gt;`
+
+Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename Iterator,
+    typename IteratorConnectToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+decltype(async&lowbar;initiate&lt;IteratorConnectToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, Iterator)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;iterator&lowbar;connect&lt;Protocol, Executor&gt;&gt;(),
+        token, begin, end, declval&lt;detail&colon;&colon;default&lowbar;connect&lowbar;condition&gt;()))
+xref:boost/asio/async_connect-09.adoc[async&lowbar;connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    Iterator begin,
+    Iterator end,
+    IteratorConnectToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_connect-09.adoc[_» more&period;&period;&period;_]#
+
+Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename EndpointSequence,
+    typename RangeConnectToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+decltype(async&lowbar;initiate&lt;RangeConnectToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, typename Protocol&colon;&colon;endpoint)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;range&lowbar;connect&lt;Protocol, Executor&gt;&gt;(),
+        token, endpoints, declval&lt;detail&colon;&colon;default&lowbar;connect&lowbar;condition&gt;()))
+xref:boost/asio/async_connect-08.adoc[async&lowbar;connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    EndpointSequence const& endpoints,
+    RangeConnectToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;(),
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_connect-08.adoc[_» more&period;&period;&period;_]#
+
+Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename Iterator,
+    typename ConnectCondition,
+    typename IteratorConnectToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+decltype(async&lowbar;initiate&lt;IteratorConnectToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, Iterator)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;iterator&lowbar;connect&lt;Protocol, Executor&gt;&gt;(),
+        token, begin, end, connect&lowbar;condition))
+xref:boost/asio/async_connect-055.adoc[async&lowbar;connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    Iterator begin,
+    Iterator end,
+    ConnectCondition connect&lowbar;condition,
+    IteratorConnectToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_connect-055.adoc[_» more&period;&period;&period;_]#
+
+Asynchronously establishes a socket connection by trying each endpoint in a sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename EndpointSequence,
+    typename ConnectCondition,
+    typename RangeConnectToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+decltype(async&lowbar;initiate&lt;RangeConnectToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, typename Protocol&colon;&colon;endpoint)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;range&lowbar;connect&lt;Protocol, Executor&gt;&gt;(),
+        token, endpoints, connect&lowbar;condition))
+xref:boost/asio/async_connect-053.adoc[async&lowbar;connect](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    EndpointSequence const& endpoints,
+    ConnectCondition connect&lowbar;condition,
+    RangeConnectToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;(),
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_connect-053.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The socket to be connected&period; If the socket is already open, it will be closed&period;
+| *begin*
+| An iterator pointing to the start of a sequence of endpoints&period;
+| *end*
+| An iterator pointing to the end of a sequence of endpoints&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the connect completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| *endpoints*
+| A sequence of endpoints&period;
+| *connect&lowbar;condition*
+| A function object that is called prior to each connection attempt&period; The signature of the function object must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

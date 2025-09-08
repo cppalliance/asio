@@ -1,0 +1,33 @@
+[#boost-asio-basic_waitable_timer-2constructor-00f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::basic&lowbar;waitable&lowbar;timer
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+basic&lowbar;waitable&lowbar;timer(xref:boost/asio/basic_waitable_timer/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+== Description
+
+This constructor creates a timer without setting an expiry time&period; The expires&lowbar;at() or expires&lowbar;after() functions must be called to set an expiry time before the timer can be waited on&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the timer will use, by default, to dispatch handlers for any asynchronous operations performed on the timer&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

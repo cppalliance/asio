@@ -1,0 +1,35 @@
+[#boost-asio-cancellation_slot_binder-get-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain a reference to the target object&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+Obtain a reference to the target object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_slot_binder/target_type.adoc[target&lowbar;type]&
+xref:boost/asio/cancellation_slot_binder/get-00.adoc[get]() noexcept;
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/get-00.adoc[_» more&period;&period;&period;_]#
+
+Obtain a reference to the target object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_slot_binder/target_type.adoc[target&lowbar;type] const&
+xref:boost/asio/cancellation_slot_binder/get-0b.adoc[get]() const noexcept;
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/get-0b.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

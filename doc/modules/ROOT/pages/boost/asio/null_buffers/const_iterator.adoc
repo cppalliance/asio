@@ -1,0 +1,18 @@
+[#boost-asio-null_buffers-const_iterator]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/null_buffers.adoc[null&lowbar;buffers]::const&lowbar;iterator
+:relfileprefix: ../../../
+:mrdocs:
+
+A random&hyphen;access iterator type that may be used to read elements&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const* const&lowbar;iterator;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,38 @@
+[#boost-asio-local-connect_pair-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::connect&lowbar;pair
+:relfileprefix: ../../../
+:mrdocs:
+
+Create a pair of connected sockets&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;connect&lowbar;pair&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor1,
+    typename Executor2&gt;
+boost::system::error&lowbar;code
+connect&lowbar;pair(
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor1&gt;]& socket1,
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor2&gt;]& socket2,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *socket1*
+| Provides socket functionality&period;
+| *socket2*
+| Provides socket functionality&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

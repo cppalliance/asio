@@ -1,0 +1,75 @@
+[#boost-asio-ip-address_v4-2constructor-0f00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]::address&lowbar;v4
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&period;hpp&gt;`
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v4/2constructor-04.adoc[address&lowbar;v4]() noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address_v4/2constructor-04.adoc[_» more&period;&period;&period;_]#
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v4/2constructor-0f09.adoc[address&lowbar;v4](xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address_v4/2constructor-0f09.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v4/2constructor-00.adoc[address&lowbar;v4](xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/address_v4/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+Construct an address from an unsigned integer in host byte order&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/ip/address_v4/2constructor-0b.adoc[address&lowbar;v4](xref:boost/asio/ip/address_v4/uint_type.adoc[uint&lowbar;type] addr);
+----
+
+[.small]#xref:boost/asio/ip/address_v4/2constructor-0b.adoc[_» more&period;&period;&period;_]#
+
+Construct an address from raw bytes&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/ip/address_v4/2constructor-03.adoc[address&lowbar;v4](xref:boost/asio/ip/address_v4/bytes_type.adoc[bytes&lowbar;type] const& bytes);
+----
+
+[.small]#xref:boost/asio/ip/address_v4/2constructor-03.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `out&lowbar;of&lowbar;range`
+| Thrown if any element in `bytes` is not in the range &period; Note that no range checking is required for platforms where is &period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

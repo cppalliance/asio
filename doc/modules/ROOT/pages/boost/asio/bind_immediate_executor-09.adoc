@@ -1,0 +1,41 @@
+[#boost-asio-bind_immediate_executor-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;immediate&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+`bind&lowbar;immediate&lowbar;executor` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+Create a partial completion token that associates an executor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/partial_immediate_executor_binder.adoc[partial&lowbar;immediate&lowbar;executor&lowbar;binder&lt;Executor&gt;]
+xref:boost/asio/bind_immediate_executor-0d.adoc[bind&lowbar;immediate&lowbar;executor](Executor const& ex);
+----
+
+[.small]#xref:boost/asio/bind_immediate_executor-0d.adoc[_» more&period;&period;&period;_]#
+
+Associate an object of type `T` with a immediate executor of type `Executor&period;`
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename T&gt;
+xref:boost/asio/immediate_executor_binder.adoc[immediate&lowbar;executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Executor&gt;]
+xref:boost/asio/bind_immediate_executor-07.adoc[bind&lowbar;immediate&lowbar;executor](
+    Executor const& e,
+    T&& t);
+----
+
+[.small]#xref:boost/asio/bind_immediate_executor-07.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,38 @@
+[#boost-asio-operator_not_eq-0fe]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator!&equals;
+:relfileprefix: ../../
+:mrdocs:
+
+Inequality operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+operator!&equals;(
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+== Return Value
+
+`true` if the objects are not equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *lhs*
+| The left operand
+| *rhs*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,20 @@
+[#boost-asio-associator-042-get-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associator-042.adoc[associator&lt;Associator, allocator&lowbar;binder&lt;T, Allocator&gt;, DefaultCandidate&gt;]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+decltype(Associator&lt;T, DefaultCandidate&gt;&colon;&colon;get(b&period;get(), c))
+get(
+    xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;T, Allocator&gt;] const& b,
+    DefaultCandidate const& c) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

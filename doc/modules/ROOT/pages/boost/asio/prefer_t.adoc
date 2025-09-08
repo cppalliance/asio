@@ -1,0 +1,16 @@
+[#boost-asio-prefer_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::prefer&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;prefer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef boost&lowbar;asio&lowbar;prefer&lowbar;fn::impl prefer&lowbar;t;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

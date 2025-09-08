@@ -1,0 +1,30 @@
+[#boost-asio-is_contiguous_iterator]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;contiguous&lowbar;iterator
+:relfileprefix: ../../
+:mrdocs:
+
+The is&lowbar;contiguous&lowbar;iterator class is a traits class that may be used to determine whether a type is a contiguous iterator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;is&lowbar;contiguous&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct is&lowbar;contiguous&lowbar;iterator
+    : is&lowbar;pointer&lt;T&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `is&lowbar;pointer&lt;T&gt;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

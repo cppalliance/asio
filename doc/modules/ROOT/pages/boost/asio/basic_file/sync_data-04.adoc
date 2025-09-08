@@ -1,0 +1,33 @@
+[#boost-asio-basic_file-sync_data-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::sync&lowbar;data
+:relfileprefix: ../../../
+:mrdocs:
+
+Synchronise the file data to disk&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+sync&lowbar;data(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function synchronises the file data to disk&period; Note that the semantics of this synchronisation vary between operation systems&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

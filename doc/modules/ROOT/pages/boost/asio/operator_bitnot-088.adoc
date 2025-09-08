@@ -1,0 +1,17 @@
+[#boost-asio-operator_bitnot-088]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&#126;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;file&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/file_base/flags.adoc[flags]
+operator&#126;(xref:boost/asio/file_base/flags.adoc[flags] x);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

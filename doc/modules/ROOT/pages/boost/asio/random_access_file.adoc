@@ -1,0 +1,18 @@
+[#boost-asio-random_access_file]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::random&lowbar;access&lowbar;file
+:relfileprefix: ../../
+:mrdocs:
+
+Typedef for the typical usage of a random&hyphen;access file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;random&lowbar;access&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_random_access_file.adoc[basic&lowbar;random&lowbar;access&lowbar;file] random&lowbar;access&lowbar;file;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

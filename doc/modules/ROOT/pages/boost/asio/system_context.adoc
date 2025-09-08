@@ -1,0 +1,117 @@
+[#boost-asio-system_context]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::system&lowbar;context
+:relfileprefix: ../../
+:mrdocs:
+
+The executor context for the system executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;system&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class system&lowbar;context
+    : public xref:boost/asio/execution_context.adoc[execution&lowbar;context]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution_context.adoc[execution&lowbar;context]`
+| A context for function object execution&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/allocator-03.adoc[`allocator`] 
+| 
+| xref:boost/asio/execution_context/id.adoc[`id`] 
+| Class used to uniquely identify a service&period;
+| xref:boost/asio/execution_context/service.adoc[`service`] 
+| Base class for all execution context services&period;
+| xref:boost/asio/execution_context/service_maker.adoc[`service&lowbar;maker`] 
+| Base class for all execution context service makers&period;
+| xref:boost/asio/system_context/executor_type.adoc[`executor&lowbar;type`] 
+| The executor type associated with the context&period;
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/fork_event.adoc[`fork&lowbar;event`] 
+| Fork&hyphen;related event notifications&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/system_context/2constructor.adoc[`system&lowbar;context`]         [.small]#[constructor]#
+| Default constructor
+| xref:boost/asio/system_context/2destructor.adoc[`&#126;system&lowbar;context`] [.small]#[destructor]#
+| Destructor shuts down all threads in the system thread pool&period;
+| xref:boost/asio/system_context/get_executor.adoc[`get&lowbar;executor`] 
+| Obtain an executor for the context&period;
+| xref:boost/asio/system_context/join.adoc[`join`] 
+| Join all threads in the system thread pool&period;
+| xref:boost/asio/execution_context/notify_fork.adoc[`notify&lowbar;fork`] 
+| Notify the execution&lowbar;context of a fork&hyphen;related event&period;
+| xref:boost/asio/system_context/stop.adoc[`stop`] 
+| Signal all threads in the system thread pool to stop&period;
+| xref:boost/asio/system_context/stopped.adoc[`stopped`] 
+| Determine whether the system thread pool has been stopped&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/execution_context/destroy.adoc[`destroy`] 
+| Destroys all services in the context&period;
+| xref:boost/asio/execution_context/shutdown.adoc[`shutdown`] 
+| Shuts down all services in the context&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_system_executor.adoc[boost::asio::basic&lowbar;system&lowbar;executor]`
+| An executor that uses arbitrary threads&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/add_service.adoc[`add&lowbar;service`]
+| (Deprecated&colon; Use make&lowbar;service()&period;) Add a service object to the execution&lowbar;context&period;
+| xref:boost/asio/has_service.adoc[`has&lowbar;service`]
+| Determine if an execution&lowbar;context contains a specified service type&period;
+| xref:boost/asio/make_service.adoc[`make&lowbar;service`]
+| Creates a service object and adds it to the execution&lowbar;context&period;
+| xref:boost/asio/use_service-0c.adoc[`use&lowbar;service`]
+| Obtain the service object corresponding to the given type&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

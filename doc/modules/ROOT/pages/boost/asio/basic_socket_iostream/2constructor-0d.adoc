@@ -1,0 +1,55 @@
+[#boost-asio-basic_socket_iostream-2constructor-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::basic&lowbar;socket&lowbar;iostream
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+Construct a basic&lowbar;socket&lowbar;iostream without establishing a connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_iostream/2constructor-067.adoc[basic&lowbar;socket&lowbar;iostream]();
+----
+
+[.small]#xref:boost/asio/basic_socket_iostream/2constructor-067.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;construct a basic&lowbar;socket&lowbar;iostream from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_iostream/2constructor-09.adoc[basic&lowbar;socket&lowbar;iostream](xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]&& other);
+----
+
+[.small]#xref:boost/asio/basic_socket_iostream/2constructor-09.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;socket&lowbar;iostream from the supplied socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/basic_socket_iostream/2constructor-064.adoc[basic&lowbar;socket&lowbar;iostream](xref:boost/asio/basic_stream_socket.adoc[basic&lowbar;stream&lowbar;socket&lt;protocol&lowbar;type&gt;] s);
+----
+
+[.small]#xref:boost/asio/basic_socket_iostream/2constructor-064.adoc[_» more&period;&period;&period;_]#
+
+Establish a connection to an endpoint corresponding to a resolver query&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; T&gt;
+xref:boost/asio/basic_socket_iostream/2constructor-063.adoc[basic&lowbar;socket&lowbar;iostream](T&period;&period;&period; x);
+----
+
+[.small]#xref:boost/asio/basic_socket_iostream/2constructor-063.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

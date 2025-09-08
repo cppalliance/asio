@@ -1,0 +1,74 @@
+[#boost-asio-deferred_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+Class used to specify that an asynchronous operation should return a function object to lazily launch the operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class deferred&lowbar;t;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_t/executor_with_default.adoc[`executor&lowbar;with&lowbar;default`] 
+| Adapts an executor to add the `deferred&lowbar;t` completion token as the default&period;
+| xref:boost/asio/deferred_t/as_default_on_t.adoc[`as&lowbar;default&lowbar;on&lowbar;t`] 
+| Type alias to adapt an I&sol;O object to use `deferred&lowbar;t` as its default completion token type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_t/2constructor.adoc[`deferred&lowbar;t`]         [.small]#[constructor]#
+| Default constructor&period;
+| xref:boost/asio/deferred_t/operator_call-08e.adoc[`operator()`] 
+| Function call operators
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/deferred_t/as_default_on.adoc[`as&lowbar;default&lowbar;on`] 
+| Function helper to adapt an I&sol;O object to use `deferred&lowbar;t` as its default completion token type&period;
+| xref:boost/asio/deferred_t/values.adoc[`values`] 
+| Returns a deferred operation that returns the provided values&period;
+| xref:boost/asio/deferred_t/when.adoc[`when`] 
+| Creates a conditional object for branching deferred operations&period;
+|===
+
+== Description
+
+The deferred&lowbar;t class is used to indicate that an asynchronous operation should return a function object which is itself an initiation function&period; A deferred&lowbar;t object may be passed as a completion token to an asynchronous operation, typically as the default completion token&colon;
+
+[,cpp]
+----
+auto my_deferred_op = my_socket.async_read_some(my_buffer); 
+----
+or by explicitly passing the special value `boost&colon;&colon;asio&colon;&colon;deferred&colon;`
+
+[,cpp]
+----
+auto my_deferred_op
+  = my_socket.async_read_some(my_buffer,
+      boost::asio::deferred); 
+----
+The initiating function (async&lowbar;read&lowbar;some in the above example) returns a function object that will lazily initiate the operation&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

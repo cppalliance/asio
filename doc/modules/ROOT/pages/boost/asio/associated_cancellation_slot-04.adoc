@@ -1,0 +1,42 @@
+[#boost-asio-associated_cancellation_slot-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::associated&lowbar;cancellation&lowbar;slot
+:relfileprefix: ../../
+:mrdocs:
+
+Traits type used to obtain the cancellation&lowbar;slot associated with an object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename CancellationSlot = xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot]&gt;
+struct associated&lowbar;cancellation&lowbar;slot
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Description
+
+A program may specialise this traits type if the `T` template parameter in the specialisation is a user&hyphen;defined type&period; The template parameter `CancellationSlot` shall be a type meeting the CancellationSlot requirements&period;
+
+Specialisations shall meet the following requirements, where `t` is a const reference to an object of type `T,` and `s` is an object of type `CancellationSlot&period;`
+
+* Provide a nested typedef `type` that identifies a type meeting the CancellationSlot requirements&period;
+* Provide a noexcept static member function named `get,` callable as `get(t)` and with return type `type` or a (possibly const) reference to `type&period;`
+* Provide a noexcept static member function named `get,` callable as `get(t,s)` and with return type `type` or a (possibly const) reference to `type&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,22 @@
+[#boost-asio-buffered_stream-peek-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_stream.adoc[buffered&lowbar;stream]::peek
+:relfileprefix: ../../../
+:mrdocs:
+
+Peek at the incoming data on the stream&period; Returns the number of bytes read, or 0 if an error occurred&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+peek(
+    MutableBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

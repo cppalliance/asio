@@ -1,0 +1,78 @@
+[#boost-asio-cancellation_slot_binder]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancellation&lowbar;slot&lowbar;binder
+:relfileprefix: ../../
+:mrdocs:
+
+A call wrapper type to bind a cancellation slot of type `CancellationSlot` to an object of type `T&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename CancellationSlot&gt;
+class cancellation&lowbar;slot&lowbar;binder
+    : public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancellation_slot_binder/cancellation_slot_type.adoc[`cancellation&lowbar;slot&lowbar;type`] 
+| The type of the associated cancellation slot&period;
+| xref:boost/asio/cancellation_slot_binder/target_type.adoc[`target&lowbar;type`] 
+| The type of the target object&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancellation_slot_binder/2constructor-0c4.adoc[`cancellation&lowbar;slot&lowbar;binder`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/cancellation_slot_binder/2destructor.adoc[`&#126;cancellation&lowbar;slot&lowbar;binder`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/cancellation_slot_binder/get-0a.adoc[`get`] 
+| Obtain a reference to the target object&period;
+| xref:boost/asio/cancellation_slot_binder/get_cancellation_slot.adoc[`get&lowbar;cancellation&lowbar;slot`] 
+| Obtain the associated cancellation slot&period;
+| xref:boost/asio/cancellation_slot_binder/operator_call-0c.adoc[`operator()`] 
+| Forwarding function call operator&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/bind_cancellation_slot-00.adoc[`bind&lowbar;cancellation&lowbar;slot`]
+| Associate an object of type `T` with a cancellation slot of type `CancellationSlot&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,33 @@
+[#boost-asio-windows-basic_object_handle-close-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::close
+:relfileprefix: ../../../../
+:mrdocs:
+
+Close the handle&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+close(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to close the handle&period; Any asynchronous read or write operations will be cancelled immediately, and will complete with the boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted error&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

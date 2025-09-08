@@ -1,0 +1,23 @@
+[#boost-asio-cancellation_slot_binder-get-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder]::get
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain a reference to the target object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_slot_binder/target_type.adoc[target&lowbar;type] const&
+get() const noexcept;
+----
+
+== Return Value
+
+The type of the target object&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

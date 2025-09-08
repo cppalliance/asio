@@ -1,0 +1,25 @@
+[#boost-asio-type_identity]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::type&lowbar;identity
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct type&lowbar;identity;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/type_identity/type.adoc[`type`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

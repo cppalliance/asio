@@ -1,0 +1,28 @@
+[#boost-asio-this_coro-cancellation_state_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/this_coro.adoc[this&lowbar;coro]::cancellation&lowbar;state&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+Awaitable type that returns the cancellation state of the current coroutine&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct cancellation&lowbar;state&lowbar;t;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/this_coro/cancellation_state_t/2constructor.adoc[`cancellation&lowbar;state&lowbar;t`]         [.small]#[constructor]#
+| Default constructor
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

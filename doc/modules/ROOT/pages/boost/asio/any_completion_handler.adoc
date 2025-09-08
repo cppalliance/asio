@@ -1,0 +1,90 @@
+[#boost-asio-any_completion_handler]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::any&lowbar;completion&lowbar;handler
+:relfileprefix: ../../
+:mrdocs:
+
+Polymorphic wrapper for completion handlers&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; Signatures&gt;
+class any&lowbar;completion&lowbar;handler;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/any_completion_handler/allocator_type.adoc[`allocator&lowbar;type`] 
+| The associated allocator type&period;
+| xref:boost/asio/any_completion_handler/cancellation_slot_type.adoc[`cancellation&lowbar;slot&lowbar;type`] 
+| The associated cancellation slot type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/any_completion_handler/2constructor-013.adoc[`any&lowbar;completion&lowbar;handler`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/any_completion_handler/2destructor.adoc[`&#126;any&lowbar;completion&lowbar;handler`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/any_completion_handler/operator_assign-02.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/any_completion_handler/get_allocator.adoc[`get&lowbar;allocator`] 
+| Get the associated allocator&period;
+| xref:boost/asio/any_completion_handler/get_cancellation_slot.adoc[`get&lowbar;cancellation&lowbar;slot`] 
+| Get the associated cancellation slot&period;
+| xref:boost/asio/any_completion_handler/operator_call.adoc[`operator()`] 
+| Function call operator&period;
+| xref:boost/asio/any_completion_handler/swap.adoc[`swap`] 
+| Swap the content of an `any&lowbar;completion&lowbar;handler` with another&period;
+| xref:boost/asio/any_completion_handler/2conversion.adoc[`operator bool`] 
+| Test if the polymorphic wrapper is empty&period;
+| xref:boost/asio/any_completion_handler/operator_not.adoc[`operator!`] 
+| Test if the polymorphic wrapper is non&hyphen;empty&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/operator_not_eq-016.adoc[boost::asio::operator!&equals;]`
+| Inequality operator&period;
+| `xref:boost/asio/operator_not_eq-02.adoc[boost::asio::operator!&equals;]`
+| Inequality operator&period;
+| `xref:boost/asio/operator_eq-09.adoc[boost::asio::operator&equals;&equals;]`
+| Equality operator&period;
+| `xref:boost/asio/operator_eq-0d.adoc[boost::asio::operator&equals;&equals;]`
+| Equality operator&period;
+| `xref:boost/asio/associated_immediate_executor-03.adoc[boost::asio::associated&lowbar;immediate&lowbar;executor]`
+| Traits type used to obtain the immediate executor associated with an object&period;
+| `xref:boost/asio/associated_executor-08.adoc[boost::asio::associated&lowbar;executor]`
+| Traits type used to obtain the executor associated with an object&period;
+| `xref:boost/asio/any_completion_handler_allocator-06.adoc[boost::asio::any&lowbar;completion&lowbar;handler&lowbar;allocator]`
+| An allocator type that forwards memory allocation operations through an instance of `any&lowbar;completion&lowbar;handler&period;`
+|===
+
+== Description
+
+The `any&lowbar;completion&lowbar;handler` class template is a polymorphic wrapper for completion handlers that propagates the associated executor, associated allocator, and associated cancellation slot through a type&hyphen;erasing interface&period;
+
+When using `any&lowbar;completion&lowbar;handler,` specify one or more completion signatures as template parameters&period; These will dictate the arguments that may be passed to the handler through the polymorphic interface&period;
+
+Typical uses for `any&lowbar;completion&lowbar;handler` include&colon;
+
+* Separate compilation of asynchronous operation implementations&period;
+* Enabling interoperability between asynchronous operations and virtual functions&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

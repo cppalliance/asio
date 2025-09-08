@@ -1,0 +1,115 @@
+[#boost-asio-buffers_iterator]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffers&lowbar;iterator
+:relfileprefix: ../../
+:mrdocs:
+
+A random access iterator over the bytes in a buffer sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffers&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename BufferSequence,
+    typename ByteType = char&gt;
+class buffers&lowbar;iterator;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffers_iterator/difference_type.adoc[`difference&lowbar;type`] 
+| The type used for the distance between two iterators&period;
+| xref:boost/asio/buffers_iterator/iterator_category.adoc[`iterator&lowbar;category`] 
+| The iterator category&period;
+| xref:boost/asio/buffers_iterator/pointer.adoc[`pointer`] 
+| 
+| xref:boost/asio/buffers_iterator/reference.adoc[`reference`] 
+| 
+| xref:boost/asio/buffers_iterator/value_type.adoc[`value&lowbar;type`] 
+| The type of the value pointed to by the iterator&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffers_iterator/2constructor.adoc[`buffers&lowbar;iterator`]         [.small]#[constructor]#
+| Default constructor&period; Creates an iterator in an undefined state&period;
+| xref:boost/asio/buffers_iterator/operator_star.adoc[`operator&ast;`] 
+| Dereference an iterator&period;
+| xref:boost/asio/buffers_iterator/operator_inc-01.adoc[`operator&plus;&plus;`] 
+| Increment operators
+| xref:boost/asio/buffers_iterator/operator_plus_eq.adoc[`operator&plus;&equals;`] 
+| Addition operator&period;
+| xref:boost/asio/buffers_iterator/operator_dec-0c.adoc[`operator&hyphen;&hyphen;`] 
+| Decrement operators
+| xref:boost/asio/buffers_iterator/operator_minus_eq.adoc[`operator&hyphen;&equals;`] 
+| Subtraction operator&period;
+| xref:boost/asio/buffers_iterator/operator_ptr.adoc[`operator&hyphen;&gt;`] 
+| Dereference an iterator&period;
+| xref:boost/asio/buffers_iterator/operator_subs.adoc[`operator&lsqb;&rsqb;`] 
+| Access an individual element&period;
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffers_iterator/begin.adoc[`begin`] 
+| Construct an iterator representing the beginning of the buffers&apos; data&period;
+| xref:boost/asio/buffers_iterator/end.adoc[`end`] 
+| Construct an iterator representing the end of the buffers&apos; data&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/operator_ge.adoc[boost::asio::operator&gt;&equals;]`
+| Compare two iterators&period;
+| `xref:boost/asio/operator_gt.adoc[boost::asio::operator&gt;]`
+| Compare two iterators&period;
+| `xref:boost/asio/operator_le.adoc[boost::asio::operator&lt;&equals;]`
+| Compare two iterators&period;
+| `xref:boost/asio/operator_lt.adoc[boost::asio::operator&lt;]`
+| Compare two iterators&period;
+| `xref:boost/asio/operator_not_eq-0be.adoc[boost::asio::operator!&equals;]`
+| Test two iterators for inequality&period;
+| `xref:boost/asio/operator_eq-014.adoc[boost::asio::operator&equals;&equals;]`
+| Test two iterators for equality&period;
+| `xref:boost/asio/operator_minus-09.adoc[boost::asio::operator&hyphen;]`
+| Subtraction operator&period;
+| `xref:boost/asio/operator_minus-0fd.adoc[boost::asio::operator&hyphen;]`
+| Subtraction operator&period;
+| `xref:boost/asio/operator_plus-07f.adoc[boost::asio::operator&plus;]`
+| Addition operator&period;
+| `xref:boost/asio/operator_plus-0f.adoc[boost::asio::operator&plus;]`
+| Addition operator&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/buffers_begin.adoc[`buffers&lowbar;begin`]
+| Construct an iterator representing the beginning of the buffers&apos; data&period;
+| xref:boost/asio/buffers_end.adoc[`buffers&lowbar;end`]
+| Construct an iterator representing the end of the buffers&apos; data&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

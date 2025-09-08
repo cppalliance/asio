@@ -1,0 +1,18 @@
+[#boost-asio-generic-seq_packet_protocol-endpoint]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/seq_packet_protocol.adoc[seq&lowbar;packet&lowbar;protocol]::endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+The type of an endpoint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;seq&lowbar;packet&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint&lt;seq&lowbar;packet&lowbar;protocol&gt;] endpoint;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

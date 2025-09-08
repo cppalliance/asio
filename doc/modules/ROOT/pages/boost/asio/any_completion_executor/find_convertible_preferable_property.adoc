@@ -1,0 +1,17 @@
+[#boost-asio-any_completion_executor-find_convertible_preferable_property]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]::find&lowbar;convertible&lowbar;preferable&lowbar;property
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct find&lowbar;convertible&lowbar;preferable&lowbar;property;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

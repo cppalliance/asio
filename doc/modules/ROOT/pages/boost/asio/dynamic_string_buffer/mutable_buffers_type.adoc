@@ -1,0 +1,18 @@
+[#boost-asio-dynamic_string_buffer-mutable_buffers_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer]::mutable&lowbar;buffers&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The type used to represent a sequence of mutable buffers that refers to the underlying memory&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] mutable&lowbar;buffers&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

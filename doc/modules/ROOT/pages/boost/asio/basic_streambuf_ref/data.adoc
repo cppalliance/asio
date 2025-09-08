@@ -1,0 +1,23 @@
+[#boost-asio-basic_streambuf_ref-data]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_streambuf_ref.adoc[basic&lowbar;streambuf&lowbar;ref]::data
+:relfileprefix: ../../../
+:mrdocs:
+
+Get a list of buffers that represents the input sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_streambuf_ref/const_buffers_type.adoc[const&lowbar;buffers&lowbar;type]
+data() const noexcept;
+----
+
+== Return Value
+
+a list of buffers that represents the input sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

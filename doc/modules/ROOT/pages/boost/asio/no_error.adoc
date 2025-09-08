@@ -1,0 +1,18 @@
+[#boost-asio-no_error]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::no&lowbar;error
+:relfileprefix: ../../
+:mrdocs:
+
+A special value used to indicate the absence of an error&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] no&lowbar;error = no&lowbar;error;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

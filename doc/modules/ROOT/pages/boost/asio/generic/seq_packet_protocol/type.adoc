@@ -1,0 +1,19 @@
+[#boost-asio-generic-seq_packet_protocol-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/seq_packet_protocol.adoc[seq&lowbar;packet&lowbar;protocol]::type
+:relfileprefix: ../../../../
+:mrdocs:
+
+Obtain an identifier for the type of the protocol&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;seq&lowbar;packet&lowbar;protocol&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+int
+type() const noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

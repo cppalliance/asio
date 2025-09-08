@@ -1,0 +1,40 @@
+[#boost-asio-windows-basic_object_handle-lowest_layer-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_object_handle.adoc[basic&lowbar;object&lowbar;handle]::lowest&lowbar;layer
+:relfileprefix: ../../../../
+:mrdocs:
+
+`lowest&lowbar;layer` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;object&lowbar;handle&period;hpp&gt;`
+
+Get a reference to the lowest layer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_object_handle/lowest_layer_type.adoc[lowest&lowbar;layer&lowbar;type]&
+xref:boost/asio/windows/basic_object_handle/lowest_layer-07.adoc[lowest&lowbar;layer]();
+----
+
+[.small]#xref:boost/asio/windows/basic_object_handle/lowest_layer-07.adoc[_» more&period;&period;&period;_]#
+
+Get a const reference to the lowest layer&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/windows/basic_object_handle/lowest_layer_type.adoc[lowest&lowbar;layer&lowbar;type] const&
+xref:boost/asio/windows/basic_object_handle/lowest_layer-0f.adoc[lowest&lowbar;layer]() const;
+----
+
+[.small]#xref:boost/asio/windows/basic_object_handle/lowest_layer-0f.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+* A reference to the lowest layer in the stack of layers&period; Ownership is not transferred to the caller&period;
+* A const reference to the lowest layer in the stack of layers&period; Ownership is not transferred to the caller&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

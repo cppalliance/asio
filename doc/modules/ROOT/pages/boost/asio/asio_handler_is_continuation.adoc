@@ -1,0 +1,37 @@
+[#boost-asio-asio_handler_is_continuation]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::asio&lowbar;handler&lowbar;is&lowbar;continuation
+:relfileprefix: ../../
+:mrdocs:
+
+Default continuation function for handlers&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;handler&lowbar;continuation&lowbar;hook&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+asio&lowbar;handler&lowbar;is&lowbar;continuation(&period;&period;&period;);
+----
+
+== Description
+
+Asynchronous operations may represent a continuation of the asynchronous control flow associated with the current handler&period; The implementation can use this knowledge to optimise scheduling of the handler&period;
+
+Implement asio&lowbar;handler&lowbar;is&lowbar;continuation for your own handlers to indicate when a handler represents a continuation&period;
+
+The default implementation of the continuation hook returns &period;
+
+== Example
+[,cpp]
+----
+class my_handler;
+
+bool asio_handler_is_continuation(my_handler* context)
+{
+  return true;
+}
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

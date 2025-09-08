@@ -1,0 +1,55 @@
+[#boost-asio-partial_executor_binder]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::partial&lowbar;executor&lowbar;binder
+:relfileprefix: ../../
+:mrdocs:
+
+A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied executor as its associated executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+struct partial&lowbar;executor&lowbar;binder;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/partial_executor_binder/2constructor.adoc[`partial&lowbar;executor&lowbar;binder`]         [.small]#[constructor]#
+| Constructor that specifies associated executor&period;
+| xref:boost/asio/partial_executor_binder/operator_call.adoc[`operator()`] 
+| Adapt a `completion&lowbar;token` to specify that the completion handler should have the executor as its associated executor&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/partial_executor_binder/executor_.adoc[`executor&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/bind_executor-04.adoc[`bind&lowbar;executor`]
+| Create a partial completion token that associates an execution context&apos;s executor&period;
+| xref:boost/asio/bind_executor-05.adoc[`bind&lowbar;executor`]
+| Create a partial completion token that associates an executor&period;
+|===
+
+== Description
+
+May also be used directly as a completion token, in which case it adapts the asynchronous operation&apos;s default completion token (or boost&colon;&colon;asio&colon;&colon;deferred if no default is available)&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

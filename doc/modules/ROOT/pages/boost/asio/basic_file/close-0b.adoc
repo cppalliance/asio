@@ -1,0 +1,55 @@
+[#boost-asio-basic_file-close-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::close
+:relfileprefix: ../../../
+:mrdocs:
+
+Close the file&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+Close the file&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/basic_file/close-0c.adoc[close]();
+----
+
+[.small]#xref:boost/asio/basic_file/close-0c.adoc[_» more&period;&period;&period;_]#
+
+Close the file&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+xref:boost/asio/basic_file/close-01.adoc[close](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_file/close-01.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; Note that, even if the function indicates an error, the underlying descriptor is closed&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period; Note that, even if the function indicates an error, the underlying descriptor is closed&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

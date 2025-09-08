@@ -1,0 +1,113 @@
+[#boost-asio-buffer_sequence_begin-01c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;sequence&lowbar;begin
+:relfileprefix: ../../
+:mrdocs:
+
+Get an iterator to the first element in a buffer sequence&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+Get an iterator to the first element in a buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const*
+xref:boost/asio/buffer_sequence_begin-09.adoc[buffer&lowbar;sequence&lowbar;begin](xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_sequence_begin-09.adoc[_» more&period;&period;&period;_]#
+
+Get an iterator to the first element in a buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const*
+xref:boost/asio/buffer_sequence_begin-01b2.adoc[buffer&lowbar;sequence&lowbar;begin](xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer] const& b) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_sequence_begin-01b2.adoc[_» more&period;&period;&period;_]#
+
+Get an iterator to the first element in a buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBuffer&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const*
+xref:boost/asio/buffer_sequence_begin-0d.adoc[buffer&lowbar;sequence&lowbar;begin](
+    ConstBuffer const& b,
+    int = 0) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_sequence_begin-0d.adoc[_» more&period;&period;&period;_]#
+
+Get an iterator to the first element in a buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBuffer&gt;
+xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer] const*
+xref:boost/asio/buffer_sequence_begin-01d.adoc[buffer&lowbar;sequence&lowbar;begin](
+    MutableBuffer const& b,
+    int = 0) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_sequence_begin-01d.adoc[_» more&period;&period;&period;_]#
+
+Get an iterator to the first element in a buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConvertibleToBuffer&gt;
+ConvertibleToBuffer const*
+xref:boost/asio/buffer_sequence_begin-0f.adoc[buffer&lowbar;sequence&lowbar;begin](
+    ConvertibleToBuffer const& b,
+    int = 0,
+    int = 0,
+    int = 0) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_sequence_begin-0f.adoc[_» more&period;&period;&period;_]#
+
+Get an iterator to the first element in a buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename C&gt;
+decltype(c&period;begin())
+xref:boost/asio/buffer_sequence_begin-01bc.adoc[buffer&lowbar;sequence&lowbar;begin](
+    C& c,
+    int = 0,
+    int = 0,
+    int = 0,
+    int = 0) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_sequence_begin-01bc.adoc[_» more&period;&period;&period;_]#
+
+Get an iterator to the first element in a buffer sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename C&gt;
+decltype(c&period;begin())
+xref:boost/asio/buffer_sequence_begin-0a.adoc[buffer&lowbar;sequence&lowbar;begin](
+    C const& c,
+    int = 0,
+    int = 0,
+    int = 0,
+    int = 0) noexcept;
+----
+
+[.small]#xref:boost/asio/buffer_sequence_begin-0a.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

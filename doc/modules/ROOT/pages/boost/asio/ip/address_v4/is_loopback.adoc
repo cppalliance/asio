@@ -1,0 +1,27 @@
+[#boost-asio-ip-address_v4-is_loopback]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]::is&lowbar;loopback
+:relfileprefix: ../../../../
+:mrdocs:
+
+Determine whether the address is a loopback address&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;loopback() const noexcept;
+----
+
+== Description
+
+This function tests whether the address is in the address block , which corresponds to the address range &period;
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

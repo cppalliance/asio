@@ -1,0 +1,36 @@
+[#boost-asio-basic_signal_set-clear-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set]::clear
+:relfileprefix: ../../../
+:mrdocs:
+
+Remove all signals from a signal&lowbar;set&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+clear(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function removes all signals from the set&period; It has no effect if the set is already empty&period;
+
+[NOTE]
+Removes all queued notifications&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

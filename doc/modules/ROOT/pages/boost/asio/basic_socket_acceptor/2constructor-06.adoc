@@ -1,0 +1,33 @@
+[#boost-asio-basic_socket_acceptor-2constructor-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::basic&lowbar;socket&lowbar;acceptor
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct an acceptor without opening it&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+basic&lowbar;socket&lowbar;acceptor(xref:boost/asio/basic_socket_acceptor/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+== Description
+
+This constructor creates an acceptor without opening it to listen for new connections&period; The open() function must be called before the acceptor can accept new socket connections&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The I&sol;O executor that the acceptor will use, by default, to dispatch handlers for any asynchronous operations performed on the acceptor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

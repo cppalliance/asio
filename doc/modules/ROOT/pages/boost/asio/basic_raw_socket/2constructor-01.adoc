@@ -1,0 +1,35 @@
+[#boost-asio-basic_raw_socket-2constructor-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_raw_socket.adoc[basic&lowbar;raw&lowbar;socket]::basic&lowbar;raw&lowbar;socket
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a basic&lowbar;raw&lowbar;socket without opening it&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;raw&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+basic&lowbar;raw&lowbar;socket(
+    ExecutionContext& context,
+    int = 0);
+----
+
+== Description
+
+This constructor creates a raw socket without opening it&period; The open() function must be called before data can be sent or received on the socket&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| An execution context which provides the I&sol;O executor that the socket will use, by default, to dispatch handlers for any asynchronous operations performed on the socket&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

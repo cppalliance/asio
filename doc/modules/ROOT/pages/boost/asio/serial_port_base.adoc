@@ -1,0 +1,56 @@
+[#boost-asio-serial_port_base]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::serial&lowbar;port&lowbar;base
+:relfileprefix: ../../
+:mrdocs:
+
+The serial&lowbar;port&lowbar;base class is used as a base for the basic&lowbar;serial&lowbar;port class template so that we have a common place to define the serial port options&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class serial&lowbar;port&lowbar;base;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/serial_port_base/baud_rate.adoc[`baud&lowbar;rate`] 
+| Serial port option to permit changing the baud rate&period;
+| xref:boost/asio/serial_port_base/character_size.adoc[`character&lowbar;size`] 
+| Serial port option to permit changing the character size&period;
+| xref:boost/asio/serial_port_base/flow_control.adoc[`flow&lowbar;control`] 
+| Serial port option to permit changing the flow control&period;
+| xref:boost/asio/serial_port_base/parity.adoc[`parity`] 
+| Serial port option to permit changing the parity&period;
+| xref:boost/asio/serial_port_base/stop_bits.adoc[`stop&lowbar;bits`] 
+| Serial port option to permit changing the number of stop bits&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/serial_port_base/2destructor.adoc[`&#126;serial&lowbar;port&lowbar;base`] [.small]#[destructor]#
+| Protected destructor to prevent deletion through this type&period;
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_serial_port.adoc[`basic&lowbar;serial&lowbar;port`]
+| Provides serial port functionality&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

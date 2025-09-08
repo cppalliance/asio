@@ -1,0 +1,63 @@
+[#boost-asio-basic_io_object-027]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;io&lowbar;object
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;io&lowbar;object&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename IoObjectService,
+    bool Movable = detail&colon;&colon;service&lowbar;has&lowbar;move&lt;IoObjectService&gt;&colon;&colon;value&gt;
+class basic&lowbar;io&lowbar;object;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_io_object-027/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_io_object-027/implementation_type.adoc[`implementation&lowbar;type`] 
+| The underlying implementation type of I&sol;O object&period;
+| xref:boost/asio/basic_io_object-027/service_type.adoc[`service&lowbar;type`] 
+| The type of the service that will be used to provide I&sol;O operations&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_io_object-027/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/basic_io_object-027/get_io_context.adoc[`get&lowbar;io&lowbar;context`] 
+| Get the io&lowbar;context associated with the object&period;
+| xref:boost/asio/basic_io_object-027/get_io_service.adoc[`get&lowbar;io&lowbar;service`] 
+| Get the io&lowbar;context associated with the object&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_io_object-027/2constructor.adoc[`basic&lowbar;io&lowbar;object`]         [.small]#[constructor]#
+| Construct a basic&lowbar;io&lowbar;object&period;
+| xref:boost/asio/basic_io_object-027/2destructor.adoc[`&#126;basic&lowbar;io&lowbar;object`] [.small]#[destructor]#
+| Protected destructor to prevent deletion through this type&period;
+| xref:boost/asio/basic_io_object-027/get_implementation-01.adoc[`get&lowbar;implementation`] 
+| Get the underlying implementation of the I&sol;O object&period;
+| xref:boost/asio/basic_io_object-027/get_service-0e.adoc[`get&lowbar;service`] 
+| Get the service associated with the I&sol;O object&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

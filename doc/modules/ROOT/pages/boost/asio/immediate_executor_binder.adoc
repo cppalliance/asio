@@ -1,0 +1,78 @@
+[#boost-asio-immediate_executor_binder]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::immediate&lowbar;executor&lowbar;binder
+:relfileprefix: ../../
+:mrdocs:
+
+A call wrapper type to bind a immediate executor of type `Executor` to an object of type `T&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor&gt;
+class immediate&lowbar;executor&lowbar;binder
+    : public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/immediate_executor_binder/immediate_executor_type.adoc[`immediate&lowbar;executor&lowbar;type`] 
+| The type of the associated immediate executor&period;
+| xref:boost/asio/immediate_executor_binder/target_type.adoc[`target&lowbar;type`] 
+| The type of the target object&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/immediate_executor_binder/2constructor-090.adoc[`immediate&lowbar;executor&lowbar;binder`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/immediate_executor_binder/2destructor.adoc[`&#126;immediate&lowbar;executor&lowbar;binder`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/immediate_executor_binder/get-0c.adoc[`get`] 
+| Obtain a reference to the target object&period;
+| xref:boost/asio/immediate_executor_binder/get_immediate_executor.adoc[`get&lowbar;immediate&lowbar;executor`] 
+| Obtain the associated immediate executor&period;
+| xref:boost/asio/immediate_executor_binder/operator_call-04.adoc[`operator()`] 
+| Forwarding function call operator&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/bind_immediate_executor-07.adoc[`bind&lowbar;immediate&lowbar;executor`]
+| Associate an object of type `T` with a immediate executor of type `Executor&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

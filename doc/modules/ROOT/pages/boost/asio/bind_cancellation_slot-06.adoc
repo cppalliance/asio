@@ -1,0 +1,24 @@
+[#boost-asio-bind_cancellation_slot-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;cancellation&lowbar;slot
+:relfileprefix: ../../
+:mrdocs:
+
+Create a partial completion token that associates a cancellation slot&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CancellationSlot&gt;
+xref:boost/asio/partial_cancellation_slot_binder.adoc[partial&lowbar;cancellation&lowbar;slot&lowbar;binder&lt;CancellationSlot&gt;]
+bind&lowbar;cancellation&lowbar;slot(CancellationSlot const& ex);
+----
+
+== Return Value
+
+A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied cancellation slot as its associated cancellation slot&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

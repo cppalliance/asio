@@ -1,0 +1,24 @@
+[#boost-asio-executor-operator_assign-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operator to create a polymorphic wrapper for the specified executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/executor.adoc[executor]&
+operator&equals;(Executor&& e) noexcept;
+----
+
+== Return Value
+
+Reference to the current object
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

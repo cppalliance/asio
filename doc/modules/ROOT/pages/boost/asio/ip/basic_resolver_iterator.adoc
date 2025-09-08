@@ -1,0 +1,108 @@
+[#boost-asio-ip-basic_resolver_iterator]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::basic&lowbar;resolver&lowbar;iterator
+:relfileprefix: ../../../
+:mrdocs:
+
+An iterator over the entries produced by a resolver&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename InternetProtocol&gt;
+class basic&lowbar;resolver&lowbar;iterator;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_iterator/difference_type.adoc[`difference&lowbar;type`] 
+| The type used for the distance between two iterators&period;
+| xref:boost/asio/ip/basic_resolver_iterator/iterator_category.adoc[`iterator&lowbar;category`] 
+| The iterator category&period;
+| xref:boost/asio/ip/basic_resolver_iterator/pointer.adoc[`pointer`] 
+| The type of the result of applying operator&hyphen;&gt;() to the iterator&period;
+| xref:boost/asio/ip/basic_resolver_iterator/reference.adoc[`reference`] 
+| The type of the result of applying operator&ast;() to the iterator&period;
+| xref:boost/asio/ip/basic_resolver_iterator/value_type.adoc[`value&lowbar;type`] 
+| The type of the value pointed to by the iterator&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver_iterator/2constructor-0e.adoc[`basic&lowbar;resolver&lowbar;iterator`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/basic_resolver_iterator/operator_assign-071.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/ip/basic_resolver_iterator/operator_star.adoc[`operator&ast;`] 
+| Dereference an iterator&period;
+| xref:boost/asio/ip/basic_resolver_iterator/operator_inc-08.adoc[`operator&plus;&plus;`] 
+| Increment operators
+| xref:boost/asio/ip/basic_resolver_iterator/operator_ptr.adoc[`operator&hyphen;&gt;`] 
+| Dereference an iterator&period;
+|===
+
+== Protected Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/basic_resolver_iterator/values_ptr_type.adoc[`values&lowbar;ptr&lowbar;type`] 
+| xref:boost/asio/ip/basic_resolver_iterator/values_type.adoc[`values&lowbar;type`] 
+|===
+
+== Protected Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/basic_resolver_iterator/dereference.adoc[`dereference`] 
+| xref:boost/asio/ip/basic_resolver_iterator/equal.adoc[`equal`] 
+| xref:boost/asio/ip/basic_resolver_iterator/increment.adoc[`increment`] 
+|===
+
+== Protected Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/basic_resolver_iterator/index_.adoc[`index&lowbar;`] 
+| xref:boost/asio/ip/basic_resolver_iterator/values_.adoc[`values&lowbar;`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/operator_not_eq-04b.adoc[boost::asio::ip::operator!&equals;]`
+| Test two iterators for inequality&period;
+| `xref:boost/asio/ip/operator_eq-00.adoc[boost::asio::ip::operator&equals;&equals;]`
+| Test two iterators for equality&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;basic&lowbar;resolver&lowbar;iterator class template is used to define iterators over the results returned by a resolver&period;
+
+The iterator&apos;s value&lowbar;type, obtained when the iterator is dereferenced, is&colon;
+
+[,cpp]
+----
+const basic_resolver_entry<InternetProtocol> 
+----
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

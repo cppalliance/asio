@@ -1,0 +1,28 @@
+[#boost-asio-multiple_exceptions-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/multiple_exceptions.adoc[multiple&lowbar;exceptions]::multiple&lowbar;exceptions
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;multiple&lowbar;exceptions&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+multiple&lowbar;exceptions(std::exception&lowbar;ptr first) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *first*
+| The object to construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

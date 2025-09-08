@@ -1,0 +1,18 @@
+[#boost-asio-disable_cancellation]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::disable&lowbar;cancellation
+:relfileprefix: ../../
+:mrdocs:
+
+A cancellation filter that disables cancellation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/cancellation_filter.adoc[cancellation&lowbar;filter&lt;cancellation&lowbar;type&colon;&colon;none&gt;] disable&lowbar;cancellation;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

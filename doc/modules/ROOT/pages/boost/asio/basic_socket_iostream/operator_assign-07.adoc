@@ -1,0 +1,33 @@
+[#boost-asio-basic_socket_iostream-operator_assign-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;assign a basic&lowbar;socket&lowbar;iostream from another&period;
+
+== Synopses
+
+Declared in `&lt;istream&gt;`
+
+Move&hyphen;assign a basic&lowbar;socket&lowbar;iostream from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]&
+xref:boost/asio/basic_socket_iostream/operator_assign-0d.adoc[operator&equals;](xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]&& other);
+----
+
+[.small]#xref:boost/asio/basic_socket_iostream/operator_assign-0d.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;iostream&lt;char&gt;&
+xref:boost/asio/basic_socket_iostream/operator_assign-04.adoc[operator&equals;](basic&lowbar;iostream&lt;char&gt; const& value) = delete;
+----
+
+[.small]#xref:boost/asio/basic_socket_iostream/operator_assign-04.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

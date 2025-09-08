@@ -1,0 +1,47 @@
+[#boost-asio-ip-basic_endpoint-2constructor-0cf]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_endpoint.adoc[basic&lowbar;endpoint]::basic&lowbar;endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct an endpoint using a port number, specified in the host&apos;s byte order&period; The IP address will be the any address (i&period;e&period; INADDR&lowbar;ANY or in6addr&lowbar;any)&period; This constructor would typically be used for accepting new connections&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;endpoint(
+    InternetProtocol const& internet&lowbar;protocol,
+    xref:boost/asio/ip/port_type.adoc[port&lowbar;type] port&lowbar;num) noexcept;
+----
+
+== Description
+
+== Examples
+To initialise an IPv4 TCP endpoint for port 1234, use&colon;
+
+[,cpp]
+----
+boost::asio::ip::tcp::endpoint ep(boost::asio::ip::tcp::v4(), 1234);
+----
+To specify an IPv6 UDP endpoint for port 9876, use&colon;
+
+[,cpp]
+----
+boost::asio::ip::udp::endpoint ep(boost::asio::ip::udp::v6(), 9876);
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *internet&lowbar;protocol*
+| The object to copy construct from
+| *port&lowbar;num*
+| Type used for storing port numbers&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

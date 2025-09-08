@@ -1,0 +1,65 @@
+[#boost-asio-basic_raw_socket-async_send-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_raw_socket.adoc[basic&lowbar;raw&lowbar;socket]::async&lowbar;send
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous send on a connected socket&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;raw&lowbar;socket&period;hpp&gt;`
+
+Start an asynchronous send on a connected socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ConstBufferSequence,
+    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+          declval&lt;initiate&lowbar;async&lowbar;send&gt;(), token,
+          buffers, socket&lowbar;base&colon;&colon;message&lowbar;flags(0)))
+xref:boost/asio/basic_raw_socket/async_send-0b.adoc[async&lowbar;send](
+    ConstBufferSequence const& buffers,
+    WriteToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+[.small]#xref:boost/asio/basic_raw_socket/async_send-0b.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous send on a connected socket&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ConstBufferSequence,
+    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;WriteToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+          declval&lt;initiate&lowbar;async&lowbar;send&gt;(), token, buffers, flags))
+xref:boost/asio/basic_raw_socket/async_send-0c.adoc[async&lowbar;send](
+    ConstBufferSequence const& buffers,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags] flags,
+    WriteToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+[.small]#xref:boost/asio/basic_raw_socket/async_send-0c.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be sent on the socket&period; Although the buffers object may be copied as necessary, ownership of the underlying memory blocks is retained by the caller, which must guarantee that they remain valid until the completion handler is called&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the send completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| *flags*
+| Flags specifying how the send call is to be made&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

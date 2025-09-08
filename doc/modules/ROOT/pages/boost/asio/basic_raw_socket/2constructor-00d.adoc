@@ -1,0 +1,35 @@
+[#boost-asio-basic_raw_socket-2constructor-00d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_raw_socket.adoc[basic&lowbar;raw&lowbar;socket]::basic&lowbar;raw&lowbar;socket
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;construct a basic&lowbar;raw&lowbar;socket from another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;raw&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;raw&lowbar;socket(xref:boost/asio/basic_raw_socket.adoc[basic&lowbar;raw&lowbar;socket]&& other) noexcept;
+----
+
+== Description
+
+This constructor moves a raw socket from one object to another&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;raw&lowbar;socket(const` executor&lowbar;type&amp;) constructor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;raw&lowbar;socket object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

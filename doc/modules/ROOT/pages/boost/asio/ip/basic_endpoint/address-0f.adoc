@@ -1,0 +1,35 @@
+[#boost-asio-ip-basic_endpoint-address-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_endpoint.adoc[basic&lowbar;endpoint]::address
+:relfileprefix: ../../../../
+:mrdocs:
+
+`address` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+Get the IP address associated with the endpoint&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[boost::asio::ip::address]
+xref:boost/asio/ip/basic_endpoint/address-09.adoc[address]() const noexcept;
+----
+
+[.small]#xref:boost/asio/ip/basic_endpoint/address-09.adoc[_» more&period;&period;&period;_]#
+
+Set the IP address associated with the endpoint&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/ip/basic_endpoint/address-0e.adoc[address](xref:boost/asio/ip/address.adoc[boost::asio::ip::address] const& addr) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/basic_endpoint/address-0e.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

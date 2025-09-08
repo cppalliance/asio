@@ -1,0 +1,139 @@
+[#boost-asio-basic_file]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;file
+:relfileprefix: ../../
+:mrdocs:
+
+Provides file functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;file
+    : public xref:boost/asio/file_base.adoc[file&lowbar;base]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/file_base.adoc[file&lowbar;base]`
+| The file&lowbar;base class is used as a base for the basic&lowbar;stream&lowbar;file and basic&lowbar;random&lowbar;access&lowbar;file class templates so that we have a common place to define flags&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_file/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the file type to another executor&period;
+| xref:boost/asio/basic_file/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_file/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/file_base/flags.adoc[`flags`] 
+| 
+| xref:boost/asio/file_base/seek_basis.adoc[`seek&lowbar;basis`] 
+| Basis for seeking in a file&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_file/2constructor-0c5.adoc[`basic&lowbar;file`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_file/operator_assign-03.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/basic_file/assign-07.adoc[`assign`] 
+| 
+| xref:boost/asio/basic_file/cancel-0f.adoc[`cancel`] 
+| 
+| xref:boost/asio/basic_file/close-0b.adoc[`close`] 
+| Close the file&period;
+| xref:boost/asio/basic_file/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/basic_file/is_open.adoc[`is&lowbar;open`] 
+| Determine whether the file is open&period;
+| xref:boost/asio/basic_file/native_handle.adoc[`native&lowbar;handle`] 
+| Get the native file representation&period;
+| xref:boost/asio/basic_file/open-0b.adoc[`open`] 
+| Open the file using the specified path&period;
+| xref:boost/asio/basic_file/release-09.adoc[`release`] 
+| 
+| xref:boost/asio/basic_file/resize-0d.adoc[`resize`] 
+| Alter the size of the file&period;
+| xref:boost/asio/basic_file/size-00.adoc[`size`] 
+| Get the size of the file&period;
+| xref:boost/asio/basic_file/sync_all-0f.adoc[`sync&lowbar;all`] 
+| Synchronise the file to disk&period;
+| xref:boost/asio/basic_file/sync_data-05.adoc[`sync&lowbar;data`] 
+| Synchronise the file data to disk&period;
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_file/2destructor.adoc[`&#126;basic&lowbar;file`] [.small]#[destructor]#
+| Protected destructor to prevent deletion through this type&period;
+|===
+
+== Protected Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/basic_file/impl_.adoc[`impl&lowbar;`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_file.adoc[boost::asio::basic&lowbar;file]`
+| Provides file functionality&period;
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_random_access_file.adoc[`basic&lowbar;random&lowbar;access&lowbar;file`]
+| Provides random&hyphen;access file functionality&period;
+| xref:boost/asio/basic_stream_file.adoc[`basic&lowbar;stream&lowbar;file`]
+| Provides stream&hyphen;oriented file functionality&period;
+|===
+
+== Description
+
+The basic&lowbar;file class template provides functionality that is common to both stream&hyphen;oriented and random&hyphen;access files&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

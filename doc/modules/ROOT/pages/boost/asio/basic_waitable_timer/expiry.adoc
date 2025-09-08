@@ -1,0 +1,27 @@
+[#boost-asio-basic_waitable_timer-expiry]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::expiry
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the timer&apos;s expiry time as an absolute time&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_waitable_timer/time_point.adoc[time&lowbar;point]
+expiry() const;
+----
+
+== Description
+
+This function may be used to obtain the timer&apos;s current expiry time&period; Whether the timer has expired or not does not affect this value&period;
+
+== Return Value
+
+the timer&apos;s expiry time as an absolute time&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

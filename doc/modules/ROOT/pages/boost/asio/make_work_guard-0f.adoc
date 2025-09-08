@@ -1,0 +1,36 @@
+[#boost-asio-make_work_guard-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::make&lowbar;work&lowbar;guard
+:relfileprefix: ../../
+:mrdocs:
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&lowbar;work&lowbar;guard&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;ExecutionContext::executor&lowbar;type&gt;]
+make&lowbar;work&lowbar;guard(
+    ExecutionContext& ctx,
+    int = 0);
+----
+
+== Return Value
+
+A work guard constructed with the execution context&apos;s executor, obtained by performing &period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ctx*
+| An execution context, from which an executor will be obtained&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

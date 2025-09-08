@@ -1,0 +1,21 @@
+[#boost-asio-executor-2constructor-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a polymorphic wrapper for the specified executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+executor(
+    std::nothrow&lowbar;t,
+    Executor e) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

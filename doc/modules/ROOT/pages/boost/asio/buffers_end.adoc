@@ -1,0 +1,24 @@
+[#boost-asio-buffers_end]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffers&lowbar;end
+:relfileprefix: ../../
+:mrdocs:
+
+Construct an iterator representing the end of the buffers&apos; data&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffers&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename BufferSequence&gt;
+xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator&lt;BufferSequence&gt;]
+buffers&lowbar;end(BufferSequence const& buffers);
+----
+
+== Return Value
+
+A random access iterator over the bytes in a buffer sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

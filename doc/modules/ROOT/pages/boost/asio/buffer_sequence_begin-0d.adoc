@@ -1,0 +1,26 @@
+[#boost-asio-buffer_sequence_begin-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;sequence&lowbar;begin
+:relfileprefix: ../../
+:mrdocs:
+
+Get an iterator to the first element in a buffer sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBuffer&gt;
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const*
+buffer&lowbar;sequence&lowbar;begin(
+    ConstBuffer const& b,
+    int = 0) noexcept;
+----
+
+== Return Value
+
+an iterator to the first element in a buffer sequence&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

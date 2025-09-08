@@ -1,0 +1,78 @@
+[#boost-asio-allocator_binder]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::allocator&lowbar;binder
+:relfileprefix: ../../
+:mrdocs:
+
+A call wrapper type to bind an allocator of type `Allocator` to an object of type `T&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Allocator&gt;
+class allocator&lowbar;binder
+    : public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/allocator_binder/allocator_type.adoc[`allocator&lowbar;type`] 
+| The type of the associated allocator&period;
+| xref:boost/asio/allocator_binder/target_type.adoc[`target&lowbar;type`] 
+| The type of the target object&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/allocator_binder/2constructor-0fe.adoc[`allocator&lowbar;binder`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/allocator_binder/2destructor.adoc[`&#126;allocator&lowbar;binder`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/allocator_binder/get-00.adoc[`get`] 
+| Obtain a reference to the target object&period;
+| xref:boost/asio/allocator_binder/get_allocator.adoc[`get&lowbar;allocator`] 
+| Obtain the associated allocator&period;
+| xref:boost/asio/allocator_binder/operator_call-0b.adoc[`operator()`] 
+| Forwarding function call operator&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/bind_allocator-0873.adoc[`bind&lowbar;allocator`]
+| Associate an object of type `T` with an allocator of type `Allocator&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

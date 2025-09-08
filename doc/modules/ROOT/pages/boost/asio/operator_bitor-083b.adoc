@@ -1,0 +1,68 @@
+[#boost-asio-operator_bitor-083b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&verbar;
+:relfileprefix: ../../
+:mrdocs:
+
+Bitwise disjunction operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;type&period;hpp&gt;`
+
+Bitwise or operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]
+xref:boost/asio/operator_bitor-00.adoc[operator&verbar;](
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] x,
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] y);
+----
+
+[.small]#xref:boost/asio/operator_bitor-00.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/file_base/flags.adoc[flags]
+xref:boost/asio/operator_bitor-087.adoc[operator&verbar;](
+    xref:boost/asio/file_base/flags.adoc[flags] x,
+    xref:boost/asio/file_base/flags.adoc[flags] y);
+----
+
+[.small]#xref:boost/asio/operator_bitor-087.adoc[_» more&period;&period;&period;_]#
+
+Bitwise or operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t]
+xref:boost/asio/operator_bitor-0837.adoc[operator&verbar;](
+    xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t] x,
+    xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t] y);
+----
+
+[.small]#xref:boost/asio/operator_bitor-0837.adoc[_» more&period;&period;&period;_]#
+
+Pipe operator used to chain deferred operations&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Head,
+    typename Tail&gt;
+decltype(static&lowbar;cast&lt;Head&amp;&amp;&gt;(head)(static&lowbar;cast&lt;Tail&amp;&amp;&gt;(tail)))
+xref:boost/asio/operator_bitor-02.adoc[operator&verbar;](
+    Head head,
+    Tail&& tail);
+----
+
+[.small]#xref:boost/asio/operator_bitor-02.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

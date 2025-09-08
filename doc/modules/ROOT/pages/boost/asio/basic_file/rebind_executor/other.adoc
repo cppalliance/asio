@@ -1,0 +1,18 @@
+[#boost-asio-basic_file-rebind_executor-other]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::xref:boost/asio/basic_file/rebind_executor.adoc[rebind&lowbar;executor]::other
+:relfileprefix: ../../../../
+:mrdocs:
+
+The file type when rebound to the specified executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_file.adoc[basic&lowbar;file&lt;Executor1&gt;] other;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

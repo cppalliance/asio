@@ -1,0 +1,19 @@
+[#boost-asio-is_nothrow_query_v]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;nothrow&lowbar;query&lowbar;v
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;query&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Property&gt;
+constexpr bool is&lowbar;nothrow&lowbar;query&lowbar;v = is&lowbar;nothrow&lowbar;query&lt;T, Property&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

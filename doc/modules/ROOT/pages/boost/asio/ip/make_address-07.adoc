@@ -1,0 +1,61 @@
+[#boost-asio-ip-make_address-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::make&lowbar;address
+:relfileprefix: ../../../
+:mrdocs:
+
+Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&period;hpp&gt;`
+
+Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]
+xref:boost/asio/ip/make_address-00.adoc[make&lowbar;address](std::string const& str);
+----
+
+[.small]#xref:boost/asio/ip/make_address-00.adoc[_» more&period;&period;&period;_]#
+
+Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]
+xref:boost/asio/ip/make_address-0a.adoc[make&lowbar;address](char const* str);
+----
+
+[.small]#xref:boost/asio/ip/make_address-0a.adoc[_» more&period;&period;&period;_]#
+
+Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]
+xref:boost/asio/ip/make_address-0c.adoc[make&lowbar;address](
+    std::string const& str,
+    boost::system::error&lowbar;code& ec) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/make_address-0c.adoc[_» more&period;&period;&period;_]#
+
+Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]
+xref:boost/asio/ip/make_address-09.adoc[make&lowbar;address](
+    char const* str,
+    boost::system::error&lowbar;code& ec) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/make_address-09.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

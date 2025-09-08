@@ -1,0 +1,36 @@
+[#boost-asio-cancellation_slot_binder-2constructor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder]::cancellation&lowbar;slot&lowbar;binder
+:relfileprefix: ../../../
+:mrdocs:
+
+Move construct from a different cancellation slot wrapper type, but specify a different cancellation slot&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherCancellationSlot&gt;
+cancellation&lowbar;slot&lowbar;binder(
+    xref:boost/asio/cancellation_slot_binder/cancellation_slot_type.adoc[cancellation&lowbar;slot&lowbar;type] const& s,
+    xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;U, OtherCancellationSlot&gt;]&& other,
+    int = 0);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The type of the associated cancellation slot&period;
+| *other*
+| A call wrapper type to bind a cancellation slot of type `CancellationSlot` to an object of type `T&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

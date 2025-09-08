@@ -1,0 +1,27 @@
+[#boost-asio-ip-address_v4-is_unspecified]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]::is&lowbar;unspecified
+:relfileprefix: ../../../../
+:mrdocs:
+
+Determine whether the address is unspecified&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;unspecified() const noexcept;
+----
+
+== Description
+
+This function tests whether the address is the unspecified address &period;
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,73 @@
+[#boost-asio-any_completion_executor-operator_assign-04]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;executor&period;hpp&gt;`
+
+Assignment operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]&
+xref:boost/asio/any_completion_executor/operator_assign-02.adoc[operator&equals;](xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor] const& e) noexcept;
+----
+
+[.small]#xref:boost/asio/any_completion_executor/operator_assign-02.adoc[_» more&period;&period;&period;_]#
+
+Move assignment operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]&
+xref:boost/asio/any_completion_executor/operator_assign-0c.adoc[operator&equals;](xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]&& e) noexcept;
+----
+
+[.small]#xref:boost/asio/any_completion_executor/operator_assign-0c.adoc[_» more&period;&period;&period;_]#
+
+Assignment operator that sets the polymorphic wrapper to the empty state&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]&
+xref:boost/asio/any_completion_executor/operator_assign-054.adoc[operator&equals;](std::nullptr&lowbar;t value);
+----
+
+[.small]#xref:boost/asio/any_completion_executor/operator_assign-054.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;]&
+xref:boost/asio/any_completion_executor/operator_assign-03.adoc[operator&equals;](std::nullptr&lowbar;t p) noexcept;
+----
+
+[.small]#xref:boost/asio/any_completion_executor/operator_assign-03.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;]&
+xref:boost/asio/any_completion_executor/operator_assign-0e.adoc[operator&equals;](xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/any_completion_executor/operator_assign-0e.adoc[_» more&period;&period;&period;_]#
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;]&
+xref:boost/asio/any_completion_executor/operator_assign-050.adoc[operator&equals;](xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor&lt;prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;, prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;&gt;]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/any_completion_executor/operator_assign-050.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,79 @@
+[#boost-asio-dynamic_buffer-089]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::dynamic&lowbar;buffer
+:relfileprefix: ../../
+:mrdocs:
+
+`dynamic&lowbar;buffer` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+Create a new dynamic buffer that represents the given vector&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Allocator&gt;
+xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer&lt;Elem, Allocator&gt;]
+xref:boost/asio/dynamic_buffer-03.adoc[dynamic&lowbar;buffer](std::vector&lt;Elem, Allocator&gt;& data) noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_buffer-03.adoc[_» more&period;&period;&period;_]#
+
+Create a new dynamic buffer that represents the given string&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer&lt;Elem, Traits, Allocator&gt;]
+xref:boost/asio/dynamic_buffer-08a.adoc[dynamic&lowbar;buffer](std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data) noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_buffer-08a.adoc[_» more&period;&period;&period;_]#
+
+Create a new dynamic buffer that represents the given vector&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Allocator&gt;
+xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer&lt;Elem, Allocator&gt;]
+xref:boost/asio/dynamic_buffer-0e.adoc[dynamic&lowbar;buffer](
+    std::vector&lt;Elem, Allocator&gt;& data,
+    size&lowbar;t max&lowbar;size) noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_buffer-0e.adoc[_» more&period;&period;&period;_]#
+
+Create a new dynamic buffer that represents the given string&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Traits,
+    typename Allocator&gt;
+xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer&lt;Elem, Traits, Allocator&gt;]
+xref:boost/asio/dynamic_buffer-0a.adoc[dynamic&lowbar;buffer](
+    std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data,
+    size&lowbar;t max&lowbar;size) noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_buffer-0a.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

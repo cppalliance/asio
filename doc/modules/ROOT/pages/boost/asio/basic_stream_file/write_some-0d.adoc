@@ -1,0 +1,66 @@
+[#boost-asio-basic_stream_file-write_some-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]::write&lowbar;some
+:relfileprefix: ../../../
+:mrdocs:
+
+Write some data to the file&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;file&period;hpp&gt;`
+
+Write some data to the file&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/basic_stream_file/write_some-0c.adoc[write&lowbar;some](ConstBufferSequence const& buffers);
+----
+
+[.small]#xref:boost/asio/basic_stream_file/write_some-0c.adoc[_» more&period;&period;&period;_]#
+
+Write some data to the file&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/basic_stream_file/write_some-09.adoc[write&lowbar;some](
+    ConstBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_stream_file/write_some-09.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; An error code of boost&colon;&colon;asio&colon;&colon;error&colon;&colon;eof indicates that the end of the file was reached&period;
+|===
+
+== Return Value
+
+* The number of bytes written&period;
+* The number of bytes written&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be written to the file&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

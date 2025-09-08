@@ -1,0 +1,134 @@
+[#boost-asio-cancellation_slot_binder-2constructor-0c4]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder]::cancellation&lowbar;slot&lowbar;binder
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_slot_binder/2constructor-0a.adoc[cancellation&lowbar;slot&lowbar;binder](xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder] const& other);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_slot_binder/2constructor-05.adoc[cancellation&lowbar;slot&lowbar;binder](xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder]&& other);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-05.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy, but specify a different cancellation slot&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_slot_binder/2constructor-08.adoc[cancellation&lowbar;slot&lowbar;binder](
+    xref:boost/asio/cancellation_slot_binder/cancellation_slot_type.adoc[cancellation&lowbar;slot&lowbar;type] const& s,
+    xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder] const& other);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-08.adoc[_» more&period;&period;&period;_]#
+
+Move construct the target object, but specify a different cancellation slot&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_slot_binder/2constructor-0d.adoc[cancellation&lowbar;slot&lowbar;binder](
+    xref:boost/asio/cancellation_slot_binder/cancellation_slot_type.adoc[cancellation&lowbar;slot&lowbar;type] const& s,
+    xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder]&& other);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-0d.adoc[_» more&period;&period;&period;_]#
+
+Construct a cancellation slot wrapper for the specified object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+xref:boost/asio/cancellation_slot_binder/2constructor-0e9.adoc[cancellation&lowbar;slot&lowbar;binder](
+    xref:boost/asio/cancellation_slot_binder/cancellation_slot_type.adoc[cancellation&lowbar;slot&lowbar;type] const& s,
+    U&& u);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-0e9.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy of a different cancellation slot wrapper type, but specify a different cancellation slot&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherCancellationSlot&gt;
+xref:boost/asio/cancellation_slot_binder/2constructor-0cf.adoc[cancellation&lowbar;slot&lowbar;binder](
+    xref:boost/asio/cancellation_slot_binder/cancellation_slot_type.adoc[cancellation&lowbar;slot&lowbar;type] const& s,
+    xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;U, OtherCancellationSlot&gt;] const& other,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-0cf.adoc[_» more&period;&period;&period;_]#
+
+Move construct from a different cancellation slot wrapper type, but specify a different cancellation slot&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherCancellationSlot&gt;
+xref:boost/asio/cancellation_slot_binder/2constructor-02.adoc[cancellation&lowbar;slot&lowbar;binder](
+    xref:boost/asio/cancellation_slot_binder/cancellation_slot_type.adoc[cancellation&lowbar;slot&lowbar;type] const& s,
+    xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;U, OtherCancellationSlot&gt;]&& other,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-02.adoc[_» more&period;&period;&period;_]#
+
+Construct a copy of a different cancellation slot wrapper type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherCancellationSlot&gt;
+xref:boost/asio/cancellation_slot_binder/2constructor-0c5.adoc[cancellation&lowbar;slot&lowbar;binder](
+    xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;U, OtherCancellationSlot&gt;] const& other,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-0c5.adoc[_» more&period;&period;&period;_]#
+
+Move construct from a different cancellation slot wrapper type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherCancellationSlot&gt;
+xref:boost/asio/cancellation_slot_binder/2constructor-0ee.adoc[cancellation&lowbar;slot&lowbar;binder](
+    xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;U, OtherCancellationSlot&gt;]&& other,
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/cancellation_slot_binder/2constructor-0ee.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

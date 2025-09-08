@@ -1,0 +1,30 @@
+[#boost-asio-is_applicable_property-0ca]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/is_applicable_property-0cf.adoc[is&lowbar;applicable&lowbar;property]&lt;T, xref:boost/asio/execution/prefer_only.adoc[execution::prefer&lowbar;only&lt;InnerProperty&gt;]&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;prefer&lowbar;only&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename InnerProperty&gt;
+struct xref:boost/asio/is_applicable_property-0cf.adoc[is&lowbar;applicable&lowbar;property]&lt;T, xref:boost/asio/execution/prefer_only.adoc[execution::prefer&lowbar;only&lt;InnerProperty&gt;]&gt;
+    : xref:boost/asio/is_applicable_property-0cf.adoc[is&lowbar;applicable&lowbar;property&lt;T, InnerProperty&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/is_applicable_property-0cf.adoc[is&lowbar;applicable&lowbar;property&lt;T, InnerProperty&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

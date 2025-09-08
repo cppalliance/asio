@@ -1,0 +1,24 @@
+[#boost-asio-async_result-01-initiate]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_result-01.adoc[async&lowbar;result&lt;&sol;&ast; implementation-defined &ast;&sol;, Signatures&period;&period;&period;&gt;]::initiate
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Initiation,
+    typename&period;&period;&period; InitArgs&gt;
+static
+xref:boost/asio/async_result-01/return_type.adoc[return&lowbar;type]
+initiate(
+    Initiation&&,
+    &sol;&ast; implementation-defined &ast;&sol;,
+    InitArgs&period;&period;&period;&&&period;&period;&period;);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

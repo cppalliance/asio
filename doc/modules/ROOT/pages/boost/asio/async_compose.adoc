@@ -1,0 +1,109 @@
+[#boost-asio-async_compose]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;compose
+:relfileprefix: ../../
+:mrdocs:
+
+Launch an asynchronous operation with a stateful implementation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;compose&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename Signature,
+    typename Implementation,
+    typename&period;&period;&period; IoObjectsOrExecutors&gt;
+decltype(async&lowbar;initiate&lt;CompletionToken, Signature&gt;(
+      composed&lt;Signature&gt;(static&lowbar;cast&lt;Implementation&amp;&amp;&gt;(implementation),
+        static&lowbar;cast&lt;IoObjectsOrExecutors&amp;&amp;&gt;(io&lowbar;objects&lowbar;or&lowbar;executors)&period;&period;&period;),
+      token))
+async&lowbar;compose(
+    Implementation&& implementation,
+    CompletionToken& token,
+    IoObjectsOrExecutors&period;&period;&period;&&&period;&period;&period; io&lowbar;objects&lowbar;or&lowbar;executors);
+----
+
+== Description
+
+The async&lowbar;compose function simplifies the implementation of composed asynchronous operations automatically wrapping a stateful function object with a conforming intermediate completion handler&period;
+
+== Per&hyphen;Operation Cancellation
+By default, terminal per&hyphen;operation cancellation is enabled for composed operations that are implemented using `async&lowbar;compose&period;` To disable cancellation for the composed operation, or to alter its supported cancellation types, call the `self` object&apos;s `reset&lowbar;cancellation&lowbar;state` function&period;
+
+== Example&colon;
+[,cpp]
+----
+struct async_echo_implementation
+{
+  tcp::socket& socket_;
+  boost::asio::mutable_buffer buffer_;
+  enum { starting, reading, writing } state_;
+
+  template <typename Self>
+  void operator()(Self& self,
+      boost::system::error_code error = {},
+      std::size_t n = 0)
+  {
+    switch (state_)
+    {
+    case starting:
+      state_ = reading;
+      socket_.async_read_some(
+          buffer_, std::move(self));
+      break;
+    case reading:
+      if (error)
+      {
+        self.complete(error, 0);
+      }
+      else
+      {
+        state_ = writing;
+        boost::asio::async_write(socket_, buffer_,
+            boost::asio::transfer_exactly(n),
+            std::move(self));
+      }
+      break;
+    case writing:
+      self.complete(error, n);
+      break;
+    }
+  }
+};
+
+template <typename CompletionToken>
+auto async_echo(tcp::socket& socket,
+    boost::asio::mutable_buffer buffer,
+    CompletionToken&& token)
+  -> decltype(
+    boost::asio::async_compose<CompletionToken,
+      void(boost::system::error_code, std::size_t)>(
+        std::declval<async_echo_implementation>(),
+        token, socket))
+{
+  return boost::asio::async_compose<CompletionToken,
+    void(boost::system::error_code, std::size_t)>(
+      async_echo_implementation{socket, buffer,
+        async_echo_implementation::starting},
+      token, socket);
+} 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *implementation*
+| A function object that contains the implementation of the composed asynchronous operation&period; The first argument to the function object is a non&hyphen;const reference to the enclosing intermediate completion handler&period; The remaining arguments are any arguments that originate from the completion handlers of any asynchronous operations performed by the implementation&period;
+| *token*
+| The completion token&period;
+| *io&lowbar;objects&lowbar;or&lowbar;executors*
+| Zero or more I&sol;O objects or I&sol;O executors for which outstanding work must be maintained&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

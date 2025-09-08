@@ -1,0 +1,18 @@
+[#boost-asio-ip-address_v6_iterator]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::address&lowbar;v6&lowbar;iterator
+:relfileprefix: ../../../
+:mrdocs:
+
+An input iterator that can be used for traversing IPv6 addresses&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v6&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/ip/basic_address_iterator-07.adoc[basic&lowbar;address&lowbar;iterator&lt;address&lowbar;v6&gt;] address&lowbar;v6&lowbar;iterator;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

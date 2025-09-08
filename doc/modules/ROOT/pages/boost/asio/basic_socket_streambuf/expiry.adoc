@@ -1,0 +1,23 @@
+[#boost-asio-basic_socket_streambuf-expiry]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]::expiry
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the stream buffer&apos;s expiry time as an absolute time&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_streambuf/time_point.adoc[time&lowbar;point]
+expiry() const;
+----
+
+== Return Value
+
+An absolute time value representing the stream buffer&apos;s expiry time&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

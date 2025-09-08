@@ -1,0 +1,24 @@
+[#boost-asio-aligned_storage-01-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/aligned_storage-01.adoc[aligned&lowbar;storage]::type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct type;
+----
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/aligned_storage-01/type/data.adoc[`data`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

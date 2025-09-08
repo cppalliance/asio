@@ -1,0 +1,29 @@
+[#boost-asio-bind_executor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Associate an object of type `T` with an execution context&apos;s executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename T&gt;
+xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, ExecutionContext::executor&lowbar;type&gt;]
+bind&lowbar;executor(
+    ExecutionContext& ctx,
+    T&& t,
+    int = 0);
+----
+
+== Return Value
+
+A call wrapper type to bind an executor of type `Executor` to an object of type `T&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

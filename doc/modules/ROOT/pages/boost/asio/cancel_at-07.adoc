@@ -1,0 +1,35 @@
+[#boost-asio-cancel_at-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::cancel&lowbar;at
+:relfileprefix: ../../
+:mrdocs:
+
+Adapt a `completion&lowbar;token` to cancel an operation if not complete by the specified absolute time&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename Clock,
+    typename Duration&gt;
+xref:boost/asio/cancel_at_t.adoc[cancel&lowbar;at&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock&gt;]
+cancel&lowbar;at(
+    chrono::time&lowbar;point&lt;Clock, Duration&gt; const& expiry,
+    xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] cancel&lowbar;type,
+    CompletionToken&& completion&lowbar;token);
+----
+
+== Description
+
+== Thread Safety
+When an asynchronous operation is used with cancel&lowbar;at, a timer async&lowbar;wait operation is performed in parallel to the main operation&period; If this parallel async&lowbar;wait completes first, a cancellation request is emitted to cancel the main operation&period; Consequently, the application must ensure that the asynchronous operation is performed within an implicit or explicit strand&period;
+
+== Return Value
+
+A `completion&lowbar;token` adapter that cancels an operation at a given time&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

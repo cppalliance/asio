@@ -1,0 +1,16 @@
+[#boost-asio-execution_context-service-key-type_info_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution_context.adoc[execution&lowbar;context]::xref:boost/asio/execution_context/service.adoc[service]::xref:boost/asio/execution_context/service.adoc[key]::type&lowbar;info&lowbar;
+:relfileprefix: ../../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+type&lowbar;info const* type&lowbar;info&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

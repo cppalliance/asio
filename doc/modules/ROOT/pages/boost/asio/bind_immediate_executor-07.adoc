@@ -1,0 +1,28 @@
+[#boost-asio-bind_immediate_executor-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;immediate&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Associate an object of type `T` with a immediate executor of type `Executor&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename T&gt;
+xref:boost/asio/immediate_executor_binder.adoc[immediate&lowbar;executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Executor&gt;]
+bind&lowbar;immediate&lowbar;executor(
+    Executor const& e,
+    T&& t);
+----
+
+== Return Value
+
+A call wrapper type to bind a immediate executor of type `Executor` to an object of type `T&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

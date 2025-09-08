@@ -1,0 +1,19 @@
+[#boost-asio-ip-operator_xor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::operator&circ;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;resolver&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/resolver_base/flags.adoc[flags]
+operator&circ;(
+    xref:boost/asio/ip/resolver_base/flags.adoc[flags] x,
+    xref:boost/asio/ip/resolver_base/flags.adoc[flags] y);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

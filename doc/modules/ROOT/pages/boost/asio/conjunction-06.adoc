@@ -1,0 +1,28 @@
+[#boost-asio-conjunction-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::conjunction
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period;&gt;
+struct conjunction
+    : std::true&lowbar;type
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::true&lowbar;type`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

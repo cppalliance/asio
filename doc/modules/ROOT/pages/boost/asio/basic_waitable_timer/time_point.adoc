@@ -1,0 +1,18 @@
+[#boost-asio-basic_waitable_timer-time_point]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::time&lowbar;point
+:relfileprefix: ../../../
+:mrdocs:
+
+The time point type of the clock&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef clock&lowbar;type::time&lowbar;point time&lowbar;point;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

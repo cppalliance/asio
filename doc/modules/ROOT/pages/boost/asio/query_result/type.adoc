@@ -1,0 +1,16 @@
+[#boost-asio-query_result-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/query_result.adoc[query&lowbar;result]::type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;query&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef boost&lowbar;asio&lowbar;query&lowbar;fn::call&lowbar;traits&lt;query&lowbar;t, T, void(Property)&gt;::result&lowbar;type type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

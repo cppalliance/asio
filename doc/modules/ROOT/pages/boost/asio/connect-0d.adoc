@@ -1,0 +1,62 @@
+[#boost-asio-connect-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::connect
+:relfileprefix: ../../
+:mrdocs:
+
+Establishes a socket connection by trying each endpoint in a sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;connect&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol,
+    typename Executor,
+    typename EndpointSequence&gt;
+Protocol::endpoint
+connect(
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol, Executor&gt;]& s,
+    EndpointSequence const& endpoints,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+== Description
+
+This function attempts to connect a socket to one of a sequence of endpoints&period; It does this by repeated calls to the socket&apos;s `connect` member function, once for each endpoint in the sequence, until a connection is successfully established&period;
+
+== Example
+[,cpp]
+----
+tcp::resolver r(my_context);
+tcp::resolver::query q("host", "service");
+tcp::socket s(my_context);
+boost::system::error_code ec;
+boost::asio::connect(s, r.resolve(q), ec);
+if (ec)
+{
+  // An error occurred.
+} 
+----
+== Return Value
+
+On success, the successfully connected endpoint&period; Otherwise, a default&hyphen;constructed endpoint&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The socket to be connected&period; If the socket is already open, it will be closed&period;
+| *endpoints*
+| A sequence of endpoints&period;
+| *ec*
+| Set to indicate what error occurred, if any&period; If the sequence is empty, set to boost&colon;&colon;asio&colon;&colon;error&colon;&colon;not&lowbar;found&period; Otherwise, contains the error from the last connection attempt&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

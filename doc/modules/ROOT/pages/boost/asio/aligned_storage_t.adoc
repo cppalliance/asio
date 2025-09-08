@@ -1,0 +1,19 @@
+[#boost-asio-aligned_storage_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::aligned&lowbar;storage&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    size&lowbar;t N,
+    size&lowbar;t A&gt;
+using aligned&lowbar;storage&lowbar;t = aligned&lowbar;storage&lt;N, A&gt;::type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

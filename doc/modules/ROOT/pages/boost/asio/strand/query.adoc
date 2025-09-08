@@ -1,0 +1,33 @@
+[#boost-asio-strand-query]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::query
+:relfileprefix: ../../../
+:mrdocs:
+
+Forward a query to the underlying executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Property&gt;
+xref:boost/asio/conditional_t.adoc[conditional&lowbar;t&lt;is&lowbar;convertible&lt;Property, execution&colon;&colon;blocking&lowbar;t&gt;&colon;&colon;value, execution::blocking&lowbar;t, query&lowbar;result&lowbar;t&lt;Executor const&, Property&gt;&gt;]
+query(Property const& p) noexcept(is&lowbar;nothrow&lowbar;query&lt;const Executor &amp;, Property&gt;&colon;&colon;value);
+----
+
+== Description
+
+Do not call this function directly&period; It is intended for use with the boost&colon;&colon;asio&colon;&colon;query customisation point&period;
+
+For example&colon;
+
+[,cpp]
+----
+boost::asio::strand<my_executor_type> ex = ...;
+if (boost::asio::query(ex, boost::asio::execution::blocking)
+      == boost::asio::execution::blocking.never)
+  ... 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,179 @@
+[#boost-asio-basic_waitable_timer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;waitable&lowbar;timer
+:relfileprefix: ../../
+:mrdocs:
+
+Provides waitable timer functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Clock,
+    typename WaitTraits = xref:boost/asio/wait_traits.adoc[boost::asio::wait&lowbar;traits&lt;Clock&gt;],
+    typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;waitable&lowbar;timer;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_waitable_timer/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the timer type to another executor&period;
+| xref:boost/asio/basic_waitable_timer/clock_type.adoc[`clock&lowbar;type`] 
+| The clock type&period;
+| xref:boost/asio/basic_waitable_timer/duration.adoc[`duration`] 
+| The duration type of the clock&period;
+| xref:boost/asio/basic_waitable_timer/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_waitable_timer/time_point.adoc[`time&lowbar;point`] 
+| The time point type of the clock&period;
+| xref:boost/asio/basic_waitable_timer/traits_type.adoc[`traits&lowbar;type`] 
+| The wait traits type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_waitable_timer/2constructor-002.adoc[`basic&lowbar;waitable&lowbar;timer`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_waitable_timer/2destructor.adoc[`&#126;basic&lowbar;waitable&lowbar;timer`] [.small]#[destructor]#
+| Destroys the timer&period;
+| xref:boost/asio/basic_waitable_timer/operator_assign-0a.adoc[`operator&equals;`] 
+| Move&hyphen;assign a basic&lowbar;waitable&lowbar;timer from another&period;
+| xref:boost/asio/basic_waitable_timer/async_wait.adoc[`async&lowbar;wait`] 
+| Start an asynchronous wait on the timer&period;
+| xref:boost/asio/basic_waitable_timer/cancel.adoc[`cancel`] 
+| Cancel any asynchronous operations that are waiting on the timer&period;
+| xref:boost/asio/basic_waitable_timer/cancel_one.adoc[`cancel&lowbar;one`] 
+| Cancels one asynchronous operation that is waiting on the timer&period;
+| xref:boost/asio/basic_waitable_timer/expires_after.adoc[`expires&lowbar;after`] 
+| Set the timer&apos;s expiry time relative to now&period;
+| xref:boost/asio/basic_waitable_timer/expires_at.adoc[`expires&lowbar;at`] 
+| Set the timer&apos;s expiry time as an absolute time&period;
+| xref:boost/asio/basic_waitable_timer/expiry.adoc[`expiry`] 
+| Get the timer&apos;s expiry time as an absolute time&period;
+| xref:boost/asio/basic_waitable_timer/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/basic_waitable_timer/wait-03.adoc[`wait`] 
+| Perform a blocking wait on the timer&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_waitable_timer.adoc[boost::asio::basic&lowbar;waitable&lowbar;timer]`
+| Provides waitable timer functionality&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/cancel_after-00.adoc[`cancel&lowbar;after`]
+| Adapt a `completion&lowbar;token` to cancel an operation if not complete before the specified relative timeout has elapsed&period;
+| xref:boost/asio/cancel_after-02.adoc[`cancel&lowbar;after`]
+| Create a partial completion token adapter that cancels an operation if not complete before the specified relative timeout has elapsed&period;
+| xref:boost/asio/cancel_after-0d.adoc[`cancel&lowbar;after`]
+| Adapt a `completion&lowbar;token` to cancel an operation if not complete before the specified relative timeout has elapsed&period;
+| xref:boost/asio/cancel_at-03.adoc[`cancel&lowbar;at`]
+| Adapt a `completion&lowbar;token` to cancel an operation if not complete by the specified absolute time&period;
+| xref:boost/asio/cancel_at-05.adoc[`cancel&lowbar;at`]
+| Adapt a `completion&lowbar;token` to cancel an operation if not complete by the specified absolute time&period;
+| xref:boost/asio/cancel_at-0b.adoc[`cancel&lowbar;at`]
+| Create a partial completion token adapter that cancels an operation if not complete by the specified absolute time&period;
+|===
+
+== Description
+
+The basic&lowbar;waitable&lowbar;timer class template provides the ability to perform a blocking or asynchronous wait for a timer to expire&period;
+
+A waitable timer is always in one of two states&colon; &quot;expired&quot; or &quot;not expired&quot;&period; If the wait() or async&lowbar;wait() function is called on an expired timer, the wait operation will complete immediately&period;
+
+Most applications will use one of the boost&colon;&colon;asio&colon;&colon;steady&lowbar;timer, boost&colon;&colon;asio&colon;&colon;system&lowbar;timer or boost&colon;&colon;asio&colon;&colon;high&lowbar;resolution&lowbar;timer typedefs&period;
+
+[NOTE]
+This waitable timer functionality is for use with the C&plus;&plus;11 standard library&apos;s `&lt;chrono&gt;` facility, or with the Boost&period;Chrono library&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+== Examples
+Performing a blocking wait (C&plus;&plus;11)&colon;
+
+[,cpp]
+----
+// Construct a timer without setting an expiry time.
+boost::asio::steady_timer timer(my_context);
+
+// Set an expiry time relative to now.
+timer.expires_after(std::chrono::seconds(5));
+
+// Wait for the timer to expire.
+timer.wait();
+----
+== Performing an asynchronous wait (C&plus;&plus;11)&colon;
+[,cpp]
+----
+void handler(const boost::system::error_code& error)
+{
+  if (!error)
+  {
+    // Timer expired.
+  }
+}
+
+...
+
+// Construct a timer with an absolute expiry time.
+boost::asio::steady_timer timer(my_context,
+    std::chrono::steady_clock::now() + std::chrono::seconds(60));
+
+// Start an asynchronous wait.
+timer.async_wait(handler);
+----
+== Changing an active waitable timer&apos;s expiry time
+Changing the expiry time of a timer while there are pending asynchronous waits causes those wait operations to be cancelled&period; To ensure that the action associated with the timer is performed only once, use something like this&colon; used&colon;
+
+[,cpp]
+----
+void on_some_event()
+{
+  if (my_timer.expires_after(seconds(5)) > 0)
+  {
+    // We managed to cancel the timer. Start new asynchronous wait.
+    my_timer.async_wait(on_timeout);
+  }
+  else
+  {
+    // Too late, timer has already expired!
+  }
+}
+
+void on_timeout(const boost::system::error_code& e)
+{
+  if (e != boost::asio::error::operation_aborted)
+  {
+    // Timer was not cancelled, take necessary action.
+  }
+}
+----
+* The boost&colon;&colon;asio&colon;&colon;basic&lowbar;waitable&lowbar;timer&colon;&colon;expires&lowbar;after() function cancels any pending asynchronous waits, and returns the number of asynchronous waits that were cancelled&period; If it returns 0 then you were too late and the wait handler has already been executed, or will soon be executed&period; If it returns 1 then the wait handler was successfully cancelled&period;
+* If a wait handler is cancelled, the boost&colon;&colon;system&colon;&colon;error&lowbar;code passed to it contains the value boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

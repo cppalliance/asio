@@ -1,0 +1,22 @@
+[#boost-asio-detached]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::detached
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` object used to specify that an asynchronous operation is detached&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detached&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr xref:boost/asio/detached_t.adoc[detached&lowbar;t] detached = detached;
+----
+
+== Description
+
+See the documentation for boost&colon;&colon;asio&colon;&colon;detached&lowbar;t for a usage example&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

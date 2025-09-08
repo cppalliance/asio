@@ -1,0 +1,16 @@
+[#boost-asio-signal_set_base-flags_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/signal_set_base.adoc[signal&lowbar;set&lowbar;base]::flags&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;signal&lowbar;set&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/signal_set_base/flags.adoc[flags] flags&lowbar;t;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,33 @@
+[#boost-asio-consign]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::consign
+:relfileprefix: ../../
+:mrdocs:
+
+Completion token adapter used to specify that the completion handler should carry additional values along with it&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;consign&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename&period;&period;&period; Values&gt;
+constexpr
+xref:boost/asio/consign_t.adoc[consign&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, decay&lowbar;t&lt;Values&gt;&period;&period;&period;&gt;]
+consign(
+    CompletionToken&& completion&lowbar;token,
+    Values&period;&period;&period;&&&period;&period;&period; values);
+----
+
+== Description
+
+This completion token adapter is typically used to keep at least one copy of an object, such as a smart pointer, alive until the completion handler is called&period;
+
+== Return Value
+
+Completion token type used to specify that the completion handler should carry additional values along with it&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

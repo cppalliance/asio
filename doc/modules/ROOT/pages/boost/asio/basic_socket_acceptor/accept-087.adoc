@@ -1,0 +1,274 @@
+[#boost-asio-basic_socket_acceptor-accept-087]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::accept
+:relfileprefix: ../../../
+:mrdocs:
+
+`accept` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+Protocol::socket::rebind&lowbar;executor&lt;executor&lowbar;type&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-0e.adoc[accept]();
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-0e.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+Protocol::socket::rebind&lowbar;executor&lt;executor&lowbar;type&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-0c8d.adoc[accept](xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-0c8d.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+Protocol::socket::rebind&lowbar;executor&lt;executor&lowbar;type&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-04e.adoc[accept](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-04e.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+Protocol::socket::rebind&lowbar;executor&lt;executor&lowbar;type&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-009.adoc[accept](
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-009.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+Protocol::socket::rebind&lowbar;executor&lt;ExecutionContext::executor&lowbar;type&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-0b.adoc[accept](
+    ExecutionContext& context,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-0b.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection and obtain the endpoint of the peer
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+void
+xref:boost/asio/basic_socket_acceptor/accept-07.adoc[accept](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;protocol&lowbar;type, Executor1&gt;]& peer,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-07.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+Protocol::socket::rebind&lowbar;executor&lt;Executor1&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-0df.adoc[accept](
+    Executor1 const& ex,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-0df.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol1,
+    typename Executor1&gt;
+void
+xref:boost/asio/basic_socket_acceptor/accept-03.adoc[accept](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol1, Executor1&gt;]& peer,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-03.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+Protocol::socket::rebind&lowbar;executor&lt;ExecutionContext::executor&lowbar;type&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-02.adoc[accept](
+    ExecutionContext& context,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-02.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+Protocol::socket::rebind&lowbar;executor&lt;ExecutionContext::executor&lowbar;type&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-0f.adoc[accept](
+    ExecutionContext& context,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-0f.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection and obtain the endpoint of the peer
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+boost::system::error&lowbar;code
+xref:boost/asio/basic_socket_acceptor/accept-084.adoc[accept](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;protocol&lowbar;type, Executor1&gt;]& peer,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-084.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+Protocol::socket::rebind&lowbar;executor&lt;Executor1&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-0c80.adoc[accept](
+    Executor1 const& ex,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-0c80.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+Protocol::socket::rebind&lowbar;executor&lt;Executor1&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-007.adoc[accept](
+    Executor1 const& ex,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-007.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol1,
+    typename Executor1&gt;
+boost::system::error&lowbar;code
+xref:boost/asio/basic_socket_acceptor/accept-06.adoc[accept](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol1, Executor1&gt;]& peer,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-06.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+Protocol::socket::rebind&lowbar;executor&lt;ExecutionContext::executor&lowbar;type&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-041.adoc[accept](
+    ExecutionContext& context,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-041.adoc[_» more&period;&period;&period;_]#
+
+Accept a new connection&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+Protocol::socket::rebind&lowbar;executor&lt;Executor1&gt;::other
+xref:boost/asio/basic_socket_acceptor/accept-0dd.adoc[accept](
+    xref:boost/asio/basic_socket_acceptor/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    boost::system::error&lowbar;code& ec,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/accept-0dd.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+* A socket object representing the newly accepted connection&period;
+* On success, a socket object representing the newly accepted connection&period; On error, a socket object where is&lowbar;open() is false&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *peer&lowbar;endpoint*
+| An endpoint object into which the endpoint of the remote peer will be written&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+| *context*
+| The I&sol;O execution context object to be used for the newly accepted socket&period;
+| *peer*
+| The socket into which the new connection will be accepted&period;
+| *ex*
+| The I&sol;O executor object to be used for the newly accepted socket&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

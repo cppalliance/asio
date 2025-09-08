@@ -1,0 +1,50 @@
+[#boost-asio-basic_signal_set-2constructor-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_signal_set.adoc[basic&lowbar;signal&lowbar;set]::basic&lowbar;signal&lowbar;set
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a signal set and add two signals&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+basic&lowbar;signal&lowbar;set(
+    ExecutionContext& context,
+    int signal&lowbar;number&lowbar;1,
+    int signal&lowbar;number&lowbar;2,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+== Description
+
+This constructor creates a signal set and registers for two signals&period;
+
+[NOTE]
+This constructor is equivalent to performing&colon;
+
+[,cpp]
+----
+boost::asio::signal_set signals(context);
+signals.add(signal_number_1);
+signals.add(signal_number_2); 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| An execution context which provides the I&sol;O executor that the signal set will use, by default, to dispatch handlers for any asynchronous operations performed on the signal set&period;
+| *signal&lowbar;number&lowbar;1*
+| The first signal number to be added&period;
+| *signal&lowbar;number&lowbar;2*
+| The second signal number to be added&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

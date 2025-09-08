@@ -1,0 +1,34 @@
+[#boost-asio-operator_bitor-0837]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&verbar;
+:relfileprefix: ../../
+:mrdocs:
+
+Bitwise or operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;signal&lowbar;set&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t]
+operator&verbar;(
+    xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t] x,
+    xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t] y);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *x*
+| The left operand
+| *y*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

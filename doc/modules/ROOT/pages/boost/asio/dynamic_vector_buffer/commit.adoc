@@ -1,0 +1,36 @@
+[#boost-asio-dynamic_vector_buffer-commit]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer]::commit
+:relfileprefix: ../../../
+:mrdocs:
+
+*DynamicBuffer&lowbar;v1&colon;* Move bytes from the output sequence to the input sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+commit(size&lowbar;t n);
+----
+
+== Description
+
+Requires a preceding call where , and no intervening operations that modify the input or output sequence&period;
+
+[NOTE]
+If `n` is greater than the size of the output sequence, the entire output sequence is moved to the input sequence and no error is issued&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *n*
+| The number of bytes to append from the start of the output sequence to the end of the input sequence&period; The remainder of the output sequence is discarded&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,27 @@
+[#boost-asio-chrono]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::chrono
+:relfileprefix: ../../
+:mrdocs:
+
+== Using Declarations
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/chrono/duration.adoc[`duration`] 
+| xref:boost/asio/chrono/duration_cast.adoc[`duration&lowbar;cast`] 
+| xref:boost/asio/chrono/high_resolution_clock.adoc[`high&lowbar;resolution&lowbar;clock`] 
+| xref:boost/asio/chrono/hours.adoc[`hours`] 
+| xref:boost/asio/chrono/microseconds.adoc[`microseconds`] 
+| xref:boost/asio/chrono/milliseconds.adoc[`milliseconds`] 
+| xref:boost/asio/chrono/minutes.adoc[`minutes`] 
+| xref:boost/asio/chrono/nanoseconds.adoc[`nanoseconds`] 
+| xref:boost/asio/chrono/seconds.adoc[`seconds`] 
+| xref:boost/asio/chrono/steady_clock.adoc[`steady&lowbar;clock`] 
+| xref:boost/asio/chrono/system_clock.adoc[`system&lowbar;clock`] 
+| xref:boost/asio/chrono/time_point.adoc[`time&lowbar;point`] 
+| xref:boost/asio/chrono/time_point_cast.adoc[`time&lowbar;point&lowbar;cast`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

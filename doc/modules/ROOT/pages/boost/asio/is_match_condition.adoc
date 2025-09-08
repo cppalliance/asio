@@ -1,0 +1,27 @@
+[#boost-asio-is_match_condition]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::is&lowbar;match&lowbar;condition
+:relfileprefix: ../../
+:mrdocs:
+
+Type trait used to determine whether a type can be used as a match condition function with read&lowbar;until and async&lowbar;read&lowbar;until&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&lowbar;until&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct is&lowbar;match&lowbar;condition;
+----
+
+== Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/is_match_condition/_04enum.adoc[`Unnamed enum`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

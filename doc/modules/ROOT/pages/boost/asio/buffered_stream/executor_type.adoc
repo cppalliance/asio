@@ -1,0 +1,18 @@
+[#boost-asio-buffered_stream-executor_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_stream.adoc[buffered&lowbar;stream]::executor&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+The type of the executor associated with the object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef lowest&lowbar;layer&lowbar;type::executor&lowbar;type executor&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

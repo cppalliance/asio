@@ -1,0 +1,23 @@
+[#boost-asio-basic_system_executor-context]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor]::context
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain the underlying execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;system&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/system_context.adoc[system&lowbar;context]&
+context() const noexcept;
+----
+
+== Return Value
+
+The executor context for the system executor&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

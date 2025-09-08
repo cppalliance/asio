@@ -1,0 +1,64 @@
+[#boost-asio-basic_random_access_file-write_some_at-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_random_access_file.adoc[basic&lowbar;random&lowbar;access&lowbar;file]::write&lowbar;some&lowbar;at
+:relfileprefix: ../../../
+:mrdocs:
+
+Write some data to the handle at the specified offset&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;random&lowbar;access&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+write&lowbar;some&lowbar;at(
+    std::uint64&lowbar;t offset,
+    ConstBufferSequence const& buffers);
+----
+
+== Description
+
+This function is used to write data to the random&hyphen;access handle&period; The function call will block until one or more bytes of the data has been written successfully, or until an error occurs&period;
+
+[NOTE]
+The write&lowbar;some&lowbar;at operation may not write all of the data&period; Consider using the xref:boost/asio/write_at-05c.adoc[`write&lowbar;at`] function if you need to ensure that all data is written before the blocking operation completes&period;
+
+== Example
+To write a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+handle.write_some_at(42, boost::asio::buffer(data, size));
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on writing multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; An error code of boost&colon;&colon;asio&colon;&colon;error&colon;&colon;eof indicates that the end of the file was reached&period;
+|===
+
+== Return Value
+
+The number of bytes written&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *offset*
+| The offset at which the data will be written&period;
+| *buffers*
+| One or more data buffers to be written to the handle&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

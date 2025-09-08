@@ -1,0 +1,67 @@
+[#boost-asio-dynamic_vector_buffer-data-00b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer]::data
+:relfileprefix: ../../../
+:mrdocs:
+
+`data` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+*DynamicBuffer&lowbar;v1&colon;* Get a list of buffers that represents the input sequence&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/dynamic_vector_buffer/const_buffers_type.adoc[const&lowbar;buffers&lowbar;type]
+xref:boost/asio/dynamic_vector_buffer/data-03.adoc[data]() const noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_vector_buffer/data-03.adoc[_» more&period;&period;&period;_]#
+
+*DynamicBuffer&lowbar;v2&colon;* Get a sequence of buffers that represents the underlying memory&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/dynamic_vector_buffer/mutable_buffers_type.adoc[mutable&lowbar;buffers&lowbar;type]
+xref:boost/asio/dynamic_vector_buffer/data-05.adoc[data](
+    size&lowbar;t pos,
+    size&lowbar;t n) noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_vector_buffer/data-05.adoc[_» more&period;&period;&period;_]#
+
+*DynamicBuffer&lowbar;v2&colon;* Get a sequence of buffers that represents the underlying memory&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/dynamic_vector_buffer/const_buffers_type.adoc[const&lowbar;buffers&lowbar;type]
+xref:boost/asio/dynamic_vector_buffer/data-000.adoc[data](
+    size&lowbar;t pos,
+    size&lowbar;t n) const noexcept;
+----
+
+[.small]#xref:boost/asio/dynamic_vector_buffer/data-000.adoc[_» more&period;&period;&period;_]#
+
+== Return Value
+
+* An object of type `const&lowbar;buffers&lowbar;type` that satisfies ConstBufferSequence requirements, representing the vector memory in the input sequence&period;
+* An object of type `mutable&lowbar;buffers&lowbar;type` that satisfies MutableBufferSequence requirements, representing the vector memory&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *pos*
+| Position of the first byte to represent in the buffer sequence
+| *n*
+| The number of bytes to return in the buffer sequence&period; If the underlying memory is shorter, the buffer sequence represents as many bytes as are available&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

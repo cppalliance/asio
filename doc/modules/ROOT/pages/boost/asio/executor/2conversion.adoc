@@ -1,0 +1,22 @@
+[#boost-asio-executor-2conversion]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::operator xref:boost/asio/executor/unspecified_bool_type.adoc[unspecified&lowbar;bool&lowbar;type]
+:relfileprefix: ../../../
+:mrdocs:
+
+Operator to test if the executor contains a valid target&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+operator xref:boost/asio/executor/unspecified_bool_type.adoc[unspecified&lowbar;bool&lowbar;type]() const noexcept;
+----
+
+== Return Value
+
+The object converted to `unspecified&lowbar;bool&lowbar;type`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

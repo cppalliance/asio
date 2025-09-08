@@ -1,0 +1,27 @@
+[#boost-asio-basic_io_object-027-get_io_service]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_io_object-027.adoc[basic&lowbar;io&lowbar;object]::get&lowbar;io&lowbar;service
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the io&lowbar;context associated with the object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;io&lowbar;object&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/io_context.adoc[boost::asio::io&lowbar;context]&
+get&lowbar;io&lowbar;service();
+----
+
+== Description
+
+This function may be used to obtain the io&lowbar;context object that the I&sol;O object uses to dispatch handlers for asynchronous operations&period;
+
+== Return Value
+
+A reference to the io&lowbar;context object that the I&sol;O object will use to dispatch handlers&period; Ownership is not transferred to the caller&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

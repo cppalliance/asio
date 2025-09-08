@@ -1,0 +1,25 @@
+[#boost-asio-async_initiate-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;initiate
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CompletionToken,
+    typename&period;&period;&period; Signatures,
+    typename Initiation,
+    typename&period;&period;&period; Args&gt;
+async&lowbar;result&lt;decay&lowbar;t&lt;CompletionToken&gt;, Signatures&period;&period;&period;&gt;::return&lowbar;type
+async&lowbar;initiate(
+    Initiation&& initiation,
+    CompletionToken& token,
+    Args&period;&period;&period;&&&period;&period;&period; args);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

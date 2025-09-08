@@ -1,0 +1,55 @@
+[#boost-asio-basic_raw_socket-receive_from-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_raw_socket.adoc[basic&lowbar;raw&lowbar;socket]::receive&lowbar;from
+:relfileprefix: ../../../
+:mrdocs:
+
+Receive raw data with the endpoint of the sender&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;raw&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+receive&lowbar;from(
+    MutableBufferSequence const& buffers,
+    xref:boost/asio/basic_raw_socket/endpoint_type.adoc[endpoint&lowbar;type]& sender&lowbar;endpoint,
+    xref:boost/asio/socket_base/message_flags.adoc[socket&lowbar;base::message&lowbar;flags] flags);
+----
+
+== Description
+
+This function is used to receive raw data&period; The function call will block until data has been received successfully or an error occurs&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes received&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more buffers into which the data will be received&period;
+| *sender&lowbar;endpoint*
+| An endpoint object that receives the endpoint of the remote sender of the data&period;
+| *flags*
+| Flags specifying how the receive call is to be made&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

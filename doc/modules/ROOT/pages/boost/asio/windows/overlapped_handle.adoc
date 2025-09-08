@@ -1,0 +1,18 @@
+[#boost-asio-windows-overlapped_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::overlapped&lowbar;handle
+:relfileprefix: ../../../
+:mrdocs:
+
+Typedef for the typical usage of an overlapped handle&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;overlapped&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/windows/basic_overlapped_handle.adoc[basic&lowbar;overlapped&lowbar;handle] overlapped&lowbar;handle;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

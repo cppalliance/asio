@@ -1,0 +1,60 @@
+[#boost-asio-basic_datagram_socket-send-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::send
+:relfileprefix: ../../../
+:mrdocs:
+
+Send some data on a connected socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+send(ConstBufferSequence const& buffers);
+----
+
+== Description
+
+This function is used to send data on the datagram socket&period; The function call will block until the data has been sent successfully or an error occurs&period;
+
+[NOTE]
+The send operation can only be used with a connected socket&period; Use the send&lowbar;to function to send data on an unconnected datagram socket&period;
+
+== Example
+To send a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+socket.send(boost::asio::buffer(data, size)); 
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on sending multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes sent&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be sent on the socket&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

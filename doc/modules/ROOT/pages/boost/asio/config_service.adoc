@@ -1,0 +1,51 @@
+[#boost-asio-config_service]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::config&lowbar;service
+:relfileprefix: ../../
+:mrdocs:
+
+Base class for configuration implementations&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class config&lowbar;service
+    : public &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/config_service/2constructor.adoc[`config&lowbar;service`]         [.small]#[constructor]#
+| Constructor&period;
+| xref:boost/asio/config_service/get_value.adoc[`get&lowbar;value`]  [.small]#[virtual]#
+| Retrieve a configuration value&period;
+| xref:boost/asio/config_service/shutdown.adoc[`shutdown`]  [.small]#[virtual]#
+| Shutdown the service&period;
+|===
+
+== Static Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/config_service/id.adoc[`id`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

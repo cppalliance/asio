@@ -1,0 +1,33 @@
+[#boost-asio-buffer_sequence_begin-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::buffer&lowbar;sequence&lowbar;begin
+:relfileprefix: ../../
+:mrdocs:
+
+Get an iterator to the first element in a buffer sequence&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/const_buffer.adoc[const&lowbar;buffer] const*
+buffer&lowbar;sequence&lowbar;begin(xref:boost/asio/const_registered_buffer.adoc[const&lowbar;registered&lowbar;buffer] const& b) noexcept;
+----
+
+== Return Value
+
+an iterator to the first element in a buffer sequence&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *b*
+| Holds a registered buffer over non&hyphen;modifiable data&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

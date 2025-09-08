@@ -1,0 +1,16 @@
+[#boost-asio-remove_reference]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::remove&lowbar;reference
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using std::remove&lowbar;reference;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

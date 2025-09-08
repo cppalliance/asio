@@ -1,0 +1,22 @@
+[#boost-asio-deferred]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::deferred
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` object used to specify that an asynchronous operation should return a function object to lazily launch the operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr xref:boost/asio/deferred_t.adoc[deferred&lowbar;t] deferred = deferred;
+----
+
+== Description
+
+See the documentation for boost&colon;&colon;asio&colon;&colon;deferred&lowbar;t for a usage example&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

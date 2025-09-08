@@ -1,0 +1,35 @@
+[#boost-asio-windows-overlapped_ptr-get-0ea]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/overlapped_ptr.adoc[overlapped&lowbar;ptr]::get
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the contained OVERLAPPED object&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;overlapped&lowbar;ptr&period;hpp&gt;`
+
+Get the contained OVERLAPPED object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+OVERLAPPED*
+xref:boost/asio/windows/overlapped_ptr/get-07.adoc[get]();
+----
+
+[.small]#xref:boost/asio/windows/overlapped_ptr/get-07.adoc[_» more&period;&period;&period;_]#
+
+Get the contained OVERLAPPED object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+OVERLAPPED const*
+xref:boost/asio/windows/overlapped_ptr/get-0e2.adoc[get]() const;
+----
+
+[.small]#xref:boost/asio/windows/overlapped_ptr/get-0e2.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

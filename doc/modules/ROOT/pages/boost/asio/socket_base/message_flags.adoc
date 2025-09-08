@@ -1,0 +1,18 @@
+[#boost-asio-socket_base-message_flags]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/socket_base.adoc[socket&lowbar;base]::message&lowbar;flags
+:relfileprefix: ../../../
+:mrdocs:
+
+Bitmask type for flags that can be passed to send and receive operations&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;socket&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef int message&lowbar;flags;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

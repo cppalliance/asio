@@ -1,0 +1,21 @@
+[#boost-asio-strand-create_implementation-07]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::create&lowbar;implementation
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename InnerExecutor&gt;
+static
+xref:boost/asio/strand/implementation_type.adoc[implementation&lowbar;type]
+create&lowbar;implementation(
+    InnerExecutor const& ex,
+    int = 0);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

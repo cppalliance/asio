@@ -1,0 +1,35 @@
+[#boost-asio-basic_serial_port-2constructor-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_serial_port.adoc[basic&lowbar;serial&lowbar;port]::basic&lowbar;serial&lowbar;port
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a basic&lowbar;serial&lowbar;port without opening it&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;serial&lowbar;port&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+basic&lowbar;serial&lowbar;port(
+    ExecutionContext& context,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+== Description
+
+This constructor creates a serial port without opening it&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| An execution context which provides the I&sol;O executor that the serial port will use, by default, to dispatch handlers for any asynchronous operations performed on the serial port&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

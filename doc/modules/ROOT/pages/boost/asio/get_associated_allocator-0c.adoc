@@ -1,0 +1,41 @@
+[#boost-asio-get_associated_allocator-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::get&lowbar;associated&lowbar;allocator
+:relfileprefix: ../../
+:mrdocs:
+
+Helper function to obtain an object&apos;s associated allocator&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;allocator&period;hpp&gt;`
+
+Helper function to obtain an object&apos;s associated allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+associated&lowbar;allocator&lt;T&gt;::type
+xref:boost/asio/get_associated_allocator-0e.adoc[get&lowbar;associated&lowbar;allocator](T const& t) noexcept;
+----
+
+[.small]#xref:boost/asio/get_associated_allocator-0e.adoc[_» more&period;&period;&period;_]#
+
+Helper function to obtain an object&apos;s associated allocator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Allocator&gt;
+decltype(associated&lowbar;allocator&lt;T, Allocator&gt;&colon;&colon;get(t, a))
+xref:boost/asio/get_associated_allocator-01.adoc[get&lowbar;associated&lowbar;allocator](
+    T const& t,
+    Allocator const& a) noexcept;
+----
+
+[.small]#xref:boost/asio/get_associated_allocator-01.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

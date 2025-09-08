@@ -1,0 +1,40 @@
+[#boost-asio-basic_waitable_timer-operator_assign-04d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;assign a basic&lowbar;waitable&lowbar;timer from another&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]&
+operator&equals;(xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]&& other);
+----
+
+== Description
+
+This assignment operator moves a timer from one object to another&period; Cancels any outstanding asynchronous operations associated with the target object&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;waitable&lowbar;timer(const` executor&lowbar;type&amp;) constructor&period;
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;waitable&lowbar;timer object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

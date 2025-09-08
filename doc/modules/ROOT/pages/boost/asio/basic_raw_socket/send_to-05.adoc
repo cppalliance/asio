@@ -1,0 +1,63 @@
+[#boost-asio-basic_raw_socket-send_to-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_raw_socket.adoc[basic&lowbar;raw&lowbar;socket]::send&lowbar;to
+:relfileprefix: ../../../
+:mrdocs:
+
+Send raw data to the specified endpoint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;raw&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+send&lowbar;to(
+    ConstBufferSequence const& buffers,
+    xref:boost/asio/basic_raw_socket/endpoint_type.adoc[endpoint&lowbar;type] const& destination);
+----
+
+== Description
+
+This function is used to send raw data to the specified remote endpoint&period; The function call will block until the data has been sent successfully or an error occurs&period;
+
+== Example
+To send a single data buffer use the xref:boost/asio/buffer-068.adoc[`buffer`] function as follows&colon;
+
+[,cpp]
+----
+boost::asio::ip::udp::endpoint destination(
+    boost::asio::ip::address::from_string("1.2.3.4"), 12345);
+socket.send_to(boost::asio::buffer(data, size), destination);
+----
+See the xref:boost/asio/buffer-068.adoc[`buffer`] documentation for information on sending multiple buffers in one go, and how to use it with arrays, boost&colon;&colon;array or std&colon;&colon;vector&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The number of bytes sent&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be sent to the remote endpoint&period;
+| *destination*
+| The remote endpoint to which the data will be sent&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

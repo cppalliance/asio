@@ -1,0 +1,33 @@
+[#boost-asio-generic-basic_endpoint-operator_assign-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Assign from another endpoint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint]&
+operator&equals;(xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint] const& other);
+----
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The object to copy assign from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

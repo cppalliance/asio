@@ -1,0 +1,60 @@
+[#boost-asio-async_result-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/async_result-04d.adoc[async&lowbar;result]&lt;xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;T, Executor&gt;], Signature&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor,
+    typename Signature&gt;
+class xref:boost/asio/async_result-04d.adoc[async&lowbar;result]&lt;xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;T, Executor&gt;], Signature&gt;
+    : public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/async_result-03/init_wrapper.adoc[`init&lowbar;wrapper`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/async_result-03/2constructor.adoc[`async&lowbar;result`]         [.small]#[constructor]#
+| Construct from `executor&lowbar;binder`
+|===
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/async_result-03/initiate.adoc[`initiate`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

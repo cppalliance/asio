@@ -1,0 +1,16 @@
+[#boost-asio-socket_base-do_not_route]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/socket_base.adoc[socket&lowbar;base]::do&lowbar;not&lowbar;route
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;socket&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef &sol;&ast; implementation-defined &ast;&sol; do&lowbar;not&lowbar;route;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

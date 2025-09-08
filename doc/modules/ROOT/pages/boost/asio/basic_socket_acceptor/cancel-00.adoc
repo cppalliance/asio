@@ -1,0 +1,33 @@
+[#boost-asio-basic_socket_acceptor-cancel-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::cancel
+:relfileprefix: ../../../
+:mrdocs:
+
+Cancel all asynchronous operations associated with the acceptor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+cancel(boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function causes all outstanding asynchronous connect, send and receive operations to finish immediately, and the handlers for cancelled operations will be passed the boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted error&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

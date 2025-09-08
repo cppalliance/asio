@@ -1,0 +1,204 @@
+[#boost-asio-basic_socket_acceptor-async_accept-085]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::async&lowbar;accept
+:relfileprefix: ../../../
+:mrdocs:
+
+Start an asynchronous accept&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+Start an asynchronous accept&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MoveAcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;MoveAcceptToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, typename Protocol&colon;&colon;socket&colon;&colon;template
+          rebind&lowbar;executor&lt;executor&lowbar;type&gt;&colon;&colon;other)&gt;(
+            declval&lt;initiate&lowbar;async&lowbar;move&lowbar;accept&gt;(), token,
+            declval&lt;const executor&lowbar;type&amp;&gt;(), static&lowbar;cast&lt;endpoint&lowbar;type&ast;&gt;(0),
+            static&lowbar;cast&lt;typename Protocol&colon;&colon;socket&colon;&colon;template
+              rebind&lowbar;executor&lt;executor&lowbar;type&gt;&colon;&colon;other&ast;&gt;(0)))
+xref:boost/asio/basic_socket_acceptor/async_accept-07.adoc[async&lowbar;accept](MoveAcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/async_accept-07.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous accept&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MoveAcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;MoveAcceptToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, typename Protocol&colon;&colon;socket&colon;&colon;template
+          rebind&lowbar;executor&lt;executor&lowbar;type&gt;&colon;&colon;other)&gt;(
+            declval&lt;initiate&lowbar;async&lowbar;move&lowbar;accept&gt;(), token,
+            declval&lt;const executor&lowbar;type&amp;&gt;(), &amp;peer&lowbar;endpoint,
+            static&lowbar;cast&lt;typename Protocol&colon;&colon;socket&colon;&colon;template
+              rebind&lowbar;executor&lt;executor&lowbar;type&gt;&colon;&colon;other&ast;&gt;(0)))
+xref:boost/asio/basic_socket_acceptor/async_accept-01f.adoc[async&lowbar;accept](
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    MoveAcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/async_accept-01f.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous accept&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename MoveAcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;MoveAcceptToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code,
+          typename Protocol&colon;&colon;socket&colon;&colon;template rebind&lowbar;executor&lt;
+            typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&colon;&colon;other)&gt;(
+              declval&lt;initiate&lowbar;async&lowbar;move&lowbar;accept&gt;(), token,
+              context&period;get&lowbar;executor(), static&lowbar;cast&lt;endpoint&lowbar;type&ast;&gt;(0),
+              static&lowbar;cast&lt;typename Protocol&colon;&colon;socket&colon;&colon;template rebind&lowbar;executor&lt;
+                typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&colon;&colon;other&ast;&gt;(0)))
+xref:boost/asio/basic_socket_acceptor/async_accept-0a.adoc[async&lowbar;accept](
+    ExecutionContext& context,
+    MoveAcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/async_accept-0a.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous accept&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor1,
+    typename AcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;AcceptToken, void (boost&colon;&colon;system&colon;&colon;error&lowbar;code)&gt;(
+        declval&lt;initiate&lowbar;async&lowbar;accept&gt;(), token, &amp;peer, &amp;peer&lowbar;endpoint))
+xref:boost/asio/basic_socket_acceptor/async_accept-08c.adoc[async&lowbar;accept](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;protocol&lowbar;type, Executor1&gt;]& peer,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    AcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/async_accept-08c.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous accept&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor1,
+    typename MoveAcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;MoveAcceptToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code,
+          typename Protocol&colon;&colon;socket&colon;&colon;template rebind&lowbar;executor&lt;
+            Executor1&gt;&colon;&colon;other)&gt;(
+              declval&lt;initiate&lowbar;async&lowbar;move&lowbar;accept&gt;(), token,
+              ex, static&lowbar;cast&lt;endpoint&lowbar;type&ast;&gt;(0),
+              static&lowbar;cast&lt;typename Protocol&colon;&colon;socket&colon;&colon;template
+                rebind&lowbar;executor&lt;Executor1&gt;&colon;&colon;other&ast;&gt;(0)))
+xref:boost/asio/basic_socket_acceptor/async_accept-013.adoc[async&lowbar;accept](
+    Executor1 const& ex,
+    MoveAcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/async_accept-013.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous accept&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol1,
+    typename Executor1,
+    typename AcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;AcceptToken, void (boost&colon;&colon;system&colon;&colon;error&lowbar;code)&gt;(
+        declval&lt;initiate&lowbar;async&lowbar;accept&gt;(), token,
+        &amp;peer, static&lowbar;cast&lt;endpoint&lowbar;type&ast;&gt;(0)))
+xref:boost/asio/basic_socket_acceptor/async_accept-09.adoc[async&lowbar;accept](
+    xref:boost/asio/basic_socket.adoc[basic&lowbar;socket&lt;Protocol1, Executor1&gt;]& peer,
+    AcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/async_accept-09.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous accept&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename MoveAcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;MoveAcceptToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code,
+          typename Protocol&colon;&colon;socket&colon;&colon;template rebind&lowbar;executor&lt;
+            typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&colon;&colon;other)&gt;(
+              declval&lt;initiate&lowbar;async&lowbar;move&lowbar;accept&gt;(), token,
+              context&period;get&lowbar;executor(), &amp;peer&lowbar;endpoint,
+              static&lowbar;cast&lt;typename Protocol&colon;&colon;socket&colon;&colon;template rebind&lowbar;executor&lt;
+                typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&colon;&colon;other&ast;&gt;(0)))
+xref:boost/asio/basic_socket_acceptor/async_accept-0d.adoc[async&lowbar;accept](
+    ExecutionContext& context,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    MoveAcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/async_accept-0d.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous accept&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor1,
+    typename MoveAcceptToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;MoveAcceptToken,
+        void (boost&colon;&colon;system&colon;&colon;error&lowbar;code,
+          typename Protocol&colon;&colon;socket&colon;&colon;template rebind&lowbar;executor&lt;
+            Executor1&gt;&colon;&colon;other)&gt;(
+          declval&lt;initiate&lowbar;async&lowbar;move&lowbar;accept&gt;(), token, ex, &amp;peer&lowbar;endpoint,
+          static&lowbar;cast&lt;typename Protocol&colon;&colon;socket&colon;&colon;template
+            rebind&lowbar;executor&lt;Executor1&gt;&colon;&colon;other&ast;&gt;(0)))
+xref:boost/asio/basic_socket_acceptor/async_accept-0b.adoc[async&lowbar;accept](
+    Executor1 const& ex,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type]& peer&lowbar;endpoint,
+    MoveAcceptToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/async_accept-0b.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the accept completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| *peer&lowbar;endpoint*
+| An endpoint object into which the endpoint of the remote peer will be written&period; Ownership of the peer&lowbar;endpoint object is retained by the caller, which must guarantee that it is valid until the completion handler is called&period;
+| *context*
+| The I&sol;O execution context object to be used for the newly accepted socket&period;
+| *peer*
+| The socket into which the new connection will be accepted&period; Ownership of the peer object is retained by the caller, which must guarantee that it is valid until the completion handler is called&period;
+| *ex*
+| The I&sol;O executor object to be used for the newly accepted socket&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,42 @@
+[#boost-asio-execution-operator_not_eq-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::operator!&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Inequality operator
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename AnyExecutor1,
+    typename AnyExecutor2&gt;
+bool
+operator!&equals;(
+    AnyExecutor1 const& a,
+    AnyExecutor2 const& b) noexcept
+requires is&lowbar;base&lowbar;of&lt;any&lowbar;executor, AnyExecutor1&gt;&colon;&colon;value
+      &verbar;&verbar; is&lowbar;base&lowbar;of&lt;any&lowbar;executor, AnyExecutor2&gt;&colon;&colon;value;
+----
+
+== Return Value
+
+`true` if the objects are not equal, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *a*
+| The left operand
+| *b*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

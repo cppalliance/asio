@@ -1,0 +1,51 @@
+[#boost-asio-config_from_env]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::config&lowbar;from&lowbar;env
+:relfileprefix: ../../
+:mrdocs:
+
+Configures an execution context by reading environment variables&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class config&lowbar;from&lowbar;env
+    : public xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/execution_context/service_maker.adoc[execution&lowbar;context::service&lowbar;maker]`
+| Base class for all execution context service makers&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/config_from_env/2constructor-0c.adoc[`config&lowbar;from&lowbar;env`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/config_from_env/make-08.adoc[`make`]  [.small]#[virtual]#
+| `make` overloads
+|===
+
+== Description
+
+The environment variable names are formed by concatenating the prefix, section, and key, with underscore as delimiter, and then converting the resulting string to upper case&period;
+
+== Example
+[,cpp]
+----
+boost::asio::io_context my_io_context{
+    boost::asio::config_from_env{"my_app"}}; 
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

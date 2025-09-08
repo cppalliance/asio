@@ -1,0 +1,34 @@
+[#boost-asio-operator_not-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator!
+:relfileprefix: ../../
+:mrdocs:
+
+Negation operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;signal&lowbar;set&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+operator!(xref:boost/asio/signal_set_base/flags_t.adoc[signal&lowbar;set&lowbar;base::flags&lowbar;t] x);
+----
+
+== Return Value
+
+`true` if the object is falsy, `false` otherwise
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *x*
+| The operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

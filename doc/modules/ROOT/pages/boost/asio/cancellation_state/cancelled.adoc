@@ -1,0 +1,23 @@
+[#boost-asio-cancellation_state-cancelled]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_state.adoc[cancellation&lowbar;state]::cancelled
+:relfileprefix: ../../../
+:mrdocs:
+
+Returns the cancellation types that have been triggered&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]
+cancelled() const noexcept;
+----
+
+== Return Value
+
+the cancellation types that have been triggered&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

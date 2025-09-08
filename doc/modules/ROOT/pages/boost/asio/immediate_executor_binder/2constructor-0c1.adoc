@@ -1,0 +1,40 @@
+[#boost-asio-immediate_executor_binder-2constructor-0c1]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/immediate_executor_binder.adoc[immediate&lowbar;executor&lowbar;binder]::immediate&lowbar;executor&lowbar;binder
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a copy of a different immediate executor wrapper type, but specify a different immediate executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename U,
+    typename OtherExecutor&gt;
+immediate&lowbar;executor&lowbar;binder(
+    xref:boost/asio/immediate_executor_binder/immediate_executor_type.adoc[immediate&lowbar;executor&lowbar;type] const& e,
+    xref:boost/asio/immediate_executor_binder.adoc[immediate&lowbar;executor&lowbar;binder&lt;U, OtherExecutor&gt;] const& other,
+    int = 0);
+----
+
+== Description
+
+This constructor is only valid if the type `T` is constructible from type `U&period;`
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The type of the associated immediate executor&period;
+| *other*
+| A call wrapper type to bind a immediate executor of type `Executor` to an object of type `T&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

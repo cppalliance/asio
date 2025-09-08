@@ -1,0 +1,23 @@
+[#boost-asio-ip-basic_resolver_iterator-operator_ptr]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]::operator&hyphen;&gt;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Dereference an iterator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_entry.adoc[basic&lowbar;resolver&lowbar;entry&lt;InternetProtocol&gt;] const*
+operator&hyphen;&gt;() const;
+----
+
+== Return Value
+
+An entry produced by a resolver&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

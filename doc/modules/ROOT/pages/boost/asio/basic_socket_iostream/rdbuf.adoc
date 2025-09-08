@@ -1,0 +1,23 @@
+[#boost-asio-basic_socket_iostream-rdbuf]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::rdbuf
+:relfileprefix: ../../../
+:mrdocs:
+
+Return a pointer to the underlying streambuf&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf&lt;Protocol, Clock, WaitTraits&gt;]*
+rdbuf() const;
+----
+
+== Return Value
+
+a pointer to the underlying streambuf&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-strand-2constructor-043]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/strand.adoc[strand]::strand
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;strand&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+strand(
+    Executor const& ex,
+    xref:boost/asio/strand/implementation_type.adoc[implementation&lowbar;type] const& impl);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

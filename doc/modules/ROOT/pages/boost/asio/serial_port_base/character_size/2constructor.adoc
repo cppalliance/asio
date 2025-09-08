@@ -1,0 +1,29 @@
+[#boost-asio-serial_port_base-character_size-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]::xref:boost/asio/serial_port_base/character_size.adoc[character&lowbar;size]::character&lowbar;size
+:relfileprefix: ../../../../
+:mrdocs:
+
+Construct from `unsigned int`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+character&lowbar;size(unsigned int t = 8);
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *t*
+| The value to construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

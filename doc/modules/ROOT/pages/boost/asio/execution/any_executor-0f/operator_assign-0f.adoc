@@ -1,0 +1,79 @@
+[#boost-asio-execution-any_executor-0f-operator_assign-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+Copy assignment operator
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]&
+xref:boost/asio/execution/any_executor-0f/operator_assign-034.adoc[operator&equals;](xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/operator_assign-034.adoc[_» more&period;&period;&period;_]#
+
+Copy assignment operator
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&sol;&ast; implementation-defined &ast;&sol;&
+operator&equals;(&sol;&ast; implementation-defined &ast;&sol; const& other) noexcept;
+----
+
+[.small]#[_» more&period;&period;&period;_]#
+
+Move assignment operator
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]&
+xref:boost/asio/execution/any_executor-0f/operator_assign-03b.adoc[operator&equals;](xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/operator_assign-03b.adoc[_» more&period;&period;&period;_]#
+
+Move assignment operator
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&sol;&ast; implementation-defined &ast;&sol;&
+operator&equals;(&sol;&ast; implementation-defined &ast;&sol;&& other) noexcept;
+----
+
+[.small]#[_» more&period;&period;&period;_]#
+
+Assignment operator
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&sol;&ast; implementation-defined &ast;&sol;&
+operator&equals;(std::nullptr&lowbar;t value) noexcept;
+----
+
+[.small]#[_» more&period;&period;&period;_]#
+
+Assignment operator
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/execution/any_executor-0f.adoc[any&lowbar;executor]&
+xref:boost/asio/execution/any_executor-0f/operator_assign-08.adoc[operator&equals;](std::nullptr&lowbar;t p) noexcept;
+----
+
+[.small]#xref:boost/asio/execution/any_executor-0f/operator_assign-08.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

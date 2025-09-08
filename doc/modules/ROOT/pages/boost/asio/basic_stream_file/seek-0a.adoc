@@ -1,0 +1,51 @@
+[#boost-asio-basic_stream_file-seek-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]::seek
+:relfileprefix: ../../../
+:mrdocs:
+
+Seek to a position in the file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+std::uint64&lowbar;t
+seek(
+    std::int64&lowbar;t offset,
+    xref:boost/asio/file_base/seek_basis.adoc[file&lowbar;base::seek&lowbar;basis] whence);
+----
+
+== Description
+
+This function updates the current position in the file&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+The new position relative to the beginning of the file&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *offset*
+| The requested position in the file, relative to `whence&period;`
+| *whence*
+| One of `seek&lowbar;set,` `seek&lowbar;cur` or `seek&lowbar;end&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

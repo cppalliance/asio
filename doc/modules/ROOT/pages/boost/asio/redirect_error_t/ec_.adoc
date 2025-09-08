@@ -1,0 +1,16 @@
+[#boost-asio-redirect_error_t-ec_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/redirect_error_t.adoc[redirect&lowbar;error&lowbar;t]::ec&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;redirect&lowbar;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code& ec&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

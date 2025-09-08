@@ -1,0 +1,44 @@
+[#boost-asio-basic_streambuf_ref-2constructor-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_streambuf_ref.adoc[basic&lowbar;streambuf&lowbar;ref]::basic&lowbar;streambuf&lowbar;ref
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+Copy construct a basic&lowbar;streambuf&lowbar;ref&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_streambuf_ref/2constructor-07.adoc[basic&lowbar;streambuf&lowbar;ref](xref:boost/asio/basic_streambuf_ref.adoc[basic&lowbar;streambuf&lowbar;ref] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/basic_streambuf_ref/2constructor-07.adoc[_» more&period;&period;&period;_]#
+
+Move construct a basic&lowbar;streambuf&lowbar;ref&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_streambuf_ref/2constructor-05.adoc[basic&lowbar;streambuf&lowbar;ref](xref:boost/asio/basic_streambuf_ref.adoc[basic&lowbar;streambuf&lowbar;ref]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/basic_streambuf_ref/2constructor-05.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;streambuf&lowbar;ref for the given basic&lowbar;streambuf object&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/basic_streambuf_ref/2constructor-0d.adoc[basic&lowbar;streambuf&lowbar;ref](xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& sb);
+----
+
+[.small]#xref:boost/asio/basic_streambuf_ref/2constructor-0d.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

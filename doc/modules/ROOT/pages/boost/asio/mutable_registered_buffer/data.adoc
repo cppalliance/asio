@@ -1,0 +1,23 @@
+[#boost-asio-mutable_registered_buffer-data]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/mutable_registered_buffer.adoc[mutable&lowbar;registered&lowbar;buffer]::data
+:relfileprefix: ../../../
+:mrdocs:
+
+Get a pointer to the beginning of the memory range&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;registered&lowbar;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void*
+data() const noexcept;
+----
+
+== Return Value
+
+&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,33 @@
+[#boost-asio-any_io_executor-operator_assign-0b4d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Assignment operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;io&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&
+operator&equals;(xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor] const& e) noexcept;
+----
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The object to copy assign from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

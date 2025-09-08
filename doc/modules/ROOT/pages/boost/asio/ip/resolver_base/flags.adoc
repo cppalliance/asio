@@ -1,0 +1,39 @@
+[#boost-asio-ip-resolver_base-flags]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/resolver_base.adoc[resolver&lowbar;base]::flags
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;resolver&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum flags;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`canonical&lowbar;name`
+|
+|`passive`
+|
+|`numeric&lowbar;host`
+|
+|`numeric&lowbar;service`
+|
+|`v4&lowbar;mapped`
+|
+|`all&lowbar;matching`
+|
+|`address&lowbar;configured`
+|
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

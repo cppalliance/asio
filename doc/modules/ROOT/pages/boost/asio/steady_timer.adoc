@@ -1,0 +1,26 @@
+[#boost-asio-steady_timer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::steady&lowbar;timer
+:relfileprefix: ../../
+:mrdocs:
+
+Typedef for a timer based on the steady clock&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;steady&lowbar;timer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;std::chrono::steady&lowbar;clock&gt;] steady&lowbar;timer;
+----
+
+== Description
+
+This typedef uses the C&plus;&plus;11 `&lt;chrono&gt;` standard library facility, if available&period; Otherwise, it may use the Boost&period;Chrono library&period; To explicitly utilise Boost&period;Chrono, use the basic&lowbar;waitable&lowbar;timer template directly&colon;
+
+[,cpp]
+----
+typedef basic_waitable_timer<boost::chrono::steady_clock> timer;
+----
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

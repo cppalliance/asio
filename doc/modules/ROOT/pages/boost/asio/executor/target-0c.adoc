@@ -1,0 +1,24 @@
+[#boost-asio-executor-target-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/executor.adoc[executor]::target
+:relfileprefix: ../../../
+:mrdocs:
+
+Obtain a pointer to the target executor object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+Executor const*
+target() noexcept;
+----
+
+== Return Value
+
+If , a pointer to the stored executor target&semi; otherwise, a null pointer&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

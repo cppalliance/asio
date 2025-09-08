@@ -1,0 +1,19 @@
+[#boost-asio-ip-bad_address_cast-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/bad_address_cast.adoc[bad&lowbar;address&lowbar;cast]::&#126;bad&lowbar;address&lowbar;cast
+:relfileprefix: ../../../../
+:mrdocs:
+
+Destructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;bad&lowbar;address&lowbar;cast&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+virtual
+&#126;bad&lowbar;address&lowbar;cast() noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

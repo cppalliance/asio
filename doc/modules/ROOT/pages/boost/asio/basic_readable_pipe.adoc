@@ -1,0 +1,98 @@
+[#boost-asio-basic_readable_pipe]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;readable&lowbar;pipe
+:relfileprefix: ../../
+:mrdocs:
+
+Provides pipe functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;readable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;readable&lowbar;pipe;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_readable_pipe/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the pipe type to another executor&period;
+| xref:boost/asio/basic_readable_pipe/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_readable_pipe/lowest_layer_type.adoc[`lowest&lowbar;layer&lowbar;type`] 
+| A basic&lowbar;readable&lowbar;pipe is always the lowest layer&period;
+| xref:boost/asio/basic_readable_pipe/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_readable_pipe/2constructor-01.adoc[`basic&lowbar;readable&lowbar;pipe`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_readable_pipe/2destructor.adoc[`&#126;basic&lowbar;readable&lowbar;pipe`] [.small]#[destructor]#
+| Destroys the pipe&period;
+| xref:boost/asio/basic_readable_pipe/operator_assign-04.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/basic_readable_pipe/assign-04.adoc[`assign`] 
+| 
+| xref:boost/asio/basic_readable_pipe/async_read_some.adoc[`async&lowbar;read&lowbar;some`] 
+| Start an asynchronous read&period;
+| xref:boost/asio/basic_readable_pipe/cancel-0f5.adoc[`cancel`] 
+| Cancel all asynchronous operations associated with the pipe&period;
+| xref:boost/asio/basic_readable_pipe/close-01.adoc[`close`] 
+| Close the pipe&period;
+| xref:boost/asio/basic_readable_pipe/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/basic_readable_pipe/is_open.adoc[`is&lowbar;open`] 
+| Determine whether the pipe is open&period;
+| xref:boost/asio/basic_readable_pipe/lowest_layer-0d.adoc[`lowest&lowbar;layer`] 
+| `lowest&lowbar;layer` overloads
+| xref:boost/asio/basic_readable_pipe/native_handle.adoc[`native&lowbar;handle`] 
+| Get the native pipe representation&period;
+| xref:boost/asio/basic_readable_pipe/read_some-0c.adoc[`read&lowbar;some`] 
+| Read some data from the pipe&period;
+| xref:boost/asio/basic_readable_pipe/release-0c.adoc[`release`] 
+| 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_readable_pipe.adoc[boost::asio::basic&lowbar;readable&lowbar;pipe]`
+| Provides pipe functionality&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/connect_pipe-0a.adoc[`connect&lowbar;pipe`]
+| Connect two pipe ends using an anonymous pipe&period;
+| xref:boost/asio/connect_pipe-0d.adoc[`connect&lowbar;pipe`]
+| Connect two pipe ends using an anonymous pipe&period;
+|===
+
+== Description
+
+The basic&lowbar;readable&lowbar;pipe class provides a wrapper over pipe functionality&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

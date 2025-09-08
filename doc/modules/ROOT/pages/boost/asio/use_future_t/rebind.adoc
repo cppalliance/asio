@@ -1,0 +1,24 @@
+[#boost-asio-use_future_t-rebind]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/use_future_t.adoc[use&lowbar;future&lowbar;t]::rebind
+:relfileprefix: ../../../
+:mrdocs:
+
+Specify an alternate allocator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;future&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename OtherAllocator&gt;
+xref:boost/asio/use_future_t.adoc[use&lowbar;future&lowbar;t&lt;OtherAllocator&gt;]
+rebind(OtherAllocator const& allocator);
+----
+
+== Return Value
+
+A `completion&lowbar;token` type that causes an asynchronous operation to return a future&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

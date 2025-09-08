@@ -1,0 +1,31 @@
+[#boost-asio-serial_port_base-stop_bits-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/serial_port_base.adoc[serial&lowbar;port&lowbar;base]::xref:boost/asio/serial_port_base/stop_bits.adoc[stop&lowbar;bits]::type
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;serial&lowbar;port&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+enum type;
+----
+
+== Members
+
+
+[cols=2]
+|===
+| Name
+| Description
+|`one`
+|
+|`onepointfive`
+|
+|`two`
+|
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

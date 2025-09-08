@@ -1,0 +1,128 @@
+[#boost-asio-basic_waitable_timer-2constructor-002]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]::basic&lowbar;waitable&lowbar;timer
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;waitable&lowbar;timer&period;hpp&gt;`
+
+Move&hyphen;construct a basic&lowbar;waitable&lowbar;timer from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_waitable_timer/2constructor-0f.adoc[basic&lowbar;waitable&lowbar;timer](xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer]&& other);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+
+Constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/basic_waitable_timer/2constructor-00f.adoc[basic&lowbar;waitable&lowbar;timer](xref:boost/asio/basic_waitable_timer/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/2constructor-00f.adoc[_» more&period;&period;&period;_]#
+
+Constructor to set a particular expiry time relative to now&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_waitable_timer/2constructor-0a.adoc[basic&lowbar;waitable&lowbar;timer](
+    xref:boost/asio/basic_waitable_timer/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/basic_waitable_timer/duration.adoc[duration] const& expiry&lowbar;time);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/2constructor-0a.adoc[_» more&period;&period;&period;_]#
+
+Constructor to set a particular expiry time as an absolute time&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_waitable_timer/2constructor-04.adoc[basic&lowbar;waitable&lowbar;timer](
+    xref:boost/asio/basic_waitable_timer/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/basic_waitable_timer/time_point.adoc[time&lowbar;point] const& expiry&lowbar;time);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/2constructor-04.adoc[_» more&period;&period;&period;_]#
+
+Constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_waitable_timer/2constructor-096.adoc[basic&lowbar;waitable&lowbar;timer](
+    ExecutionContext& context,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/2constructor-096.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;construct a basic&lowbar;waitable&lowbar;timer from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/basic_waitable_timer/2constructor-05.adoc[basic&lowbar;waitable&lowbar;timer](
+    xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor1&gt;]&& other,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/2constructor-05.adoc[_» more&period;&period;&period;_]#
+
+Constructor to set a particular expiry time relative to now&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_waitable_timer/2constructor-0d.adoc[basic&lowbar;waitable&lowbar;timer](
+    ExecutionContext& context,
+    xref:boost/asio/basic_waitable_timer/duration.adoc[duration] const& expiry&lowbar;time,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/2constructor-0d.adoc[_» more&period;&period;&period;_]#
+
+Constructor to set a particular expiry time as an absolute time&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_waitable_timer/2constructor-094.adoc[basic&lowbar;waitable&lowbar;timer](
+    ExecutionContext& context,
+    xref:boost/asio/basic_waitable_timer/time_point.adoc[time&lowbar;point] const& expiry&lowbar;time,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_waitable_timer/2constructor-094.adoc[_» more&period;&period;&period;_]#
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;waitable&lowbar;timer object from which the move will occur&period;
+| *ex*
+| The I&sol;O executor that the timer will use, by default, to dispatch handlers for any asynchronous operations performed on the timer&period;
+| *expiry&lowbar;time*
+| The expiry time to be used for the timer, relative to now&period;
+| *context*
+| An execution context which provides the I&sol;O executor that the timer will use, by default, to dispatch handlers for any asynchronous operations performed on the timer&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

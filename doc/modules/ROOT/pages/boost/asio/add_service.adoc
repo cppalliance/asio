@@ -1,0 +1,54 @@
+[#boost-asio-add_service]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::add&lowbar;service
+:relfileprefix: ../../
+:mrdocs:
+
+(Deprecated&colon; Use make&lowbar;service()&period;) Add a service object to the execution&lowbar;context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Service&gt;
+void
+add&lowbar;service(
+    xref:boost/asio/execution_context.adoc[execution&lowbar;context]& e,
+    Service* svc);
+----
+
+== Description
+
+This function is used to add a service to the execution&lowbar;context&period;
+
+[,cpp]
+----
+delete static_cast<execution_context::service*>(svc) 
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| xref:boost/asio/service_already_exists.adoc[`boost&colon;&colon;asio&colon;&colon;service&lowbar;already&lowbar;exists`]
+| Thrown if a service of the given type is already present in the execution&lowbar;context&period;
+| xref:boost/asio/invalid_service_owner.adoc[`boost&colon;&colon;asio&colon;&colon;invalid&lowbar;service&lowbar;owner`]
+| Thrown if the service&apos;s owning execution&lowbar;context is not the execution&lowbar;context object specified by the `e` parameter&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The execution&lowbar;context object that owns the service&period;
+| *svc*
+| The service object&period; On success, ownership of the service object is transferred to the execution&lowbar;context&period; When the execution&lowbar;context object is destroyed, it will destroy the service object by performing&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

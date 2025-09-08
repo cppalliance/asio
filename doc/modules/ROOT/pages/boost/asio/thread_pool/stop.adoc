@@ -1,0 +1,23 @@
+[#boost-asio-thread_pool-stop]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::stop
+:relfileprefix: ../../../
+:mrdocs:
+
+Stops the threads&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+stop();
+----
+
+== Description
+
+This function stops the threads as soon as possible&period; As a result of calling `stop(),` pending function objects may be never be invoked&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

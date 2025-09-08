@@ -1,0 +1,25 @@
+[#boost-asio-partial_cancel_at-operator_call]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/partial_cancel_at.adoc[partial&lowbar;cancel&lowbar;at]::operator()
+:relfileprefix: ../../../
+:mrdocs:
+
+Adapt a `completion&lowbar;token` to specify that the completion handler arguments should be combined into a single tuple argument&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;at&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CompletionToken&gt;
+constexpr
+xref:boost/asio/cancel_at_t.adoc[cancel&lowbar;at&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock, WaitTraits&gt;]
+operator()(CompletionToken&& completion&lowbar;token);
+----
+
+== Return Value
+
+A `completion&lowbar;token` adapter that cancels an operation at a given time&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

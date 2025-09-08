@@ -1,0 +1,44 @@
+[#boost-asio-cancellation_slot-assign]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_slot.adoc[cancellation&lowbar;slot]::assign
+:relfileprefix: ../../../
+:mrdocs:
+
+Installs a handler into the slot&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;signal&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CancellationHandler&gt;
+xref:boost/asio/decay_t.adoc[decay&lowbar;t&lt;CancellationHandler&gt;]&
+assign(CancellationHandler&& handler);
+----
+
+== Description
+
+Destroys any existing handler in the slot, then installs the new handler, constructing it as a decay&hyphen;copy of the supplied handler&period;
+
+The handler is a function object to be called when the signal is emitted&period; The signature of the handler must be
+
+[,cpp]
+----
+void handler(boost::asio::cancellation_type_t); 
+----
+== Return Value
+
+A reference to the newly installed handler&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *handler*
+| The handler to be installed&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

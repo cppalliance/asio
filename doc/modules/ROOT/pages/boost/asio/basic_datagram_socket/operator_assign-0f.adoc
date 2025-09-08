@@ -1,0 +1,43 @@
+[#boost-asio-basic_datagram_socket-operator_assign-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Move&hyphen;assign a basic&lowbar;datagram&lowbar;socket from a socket of another protocol type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;datagram&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Protocol1,
+    typename Executor1&gt;
+xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket]&
+operator&equals;(xref:boost/asio/basic_datagram_socket.adoc[basic&lowbar;datagram&lowbar;socket&lt;Protocol1, Executor1&gt;]&& other);
+----
+
+== Description
+
+This assignment operator moves a datagram socket from one object to another&period;
+
+[NOTE]
+Following the move, the moved&hyphen;from object is in the same state as if constructed using the `basic&lowbar;datagram&lowbar;socket(const` executor&lowbar;type&amp;) constructor&period;
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;datagram&lowbar;socket object from which the move will occur&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

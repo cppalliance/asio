@@ -1,0 +1,37 @@
+[#boost-asio-operator_minus-0fd]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::operator&hyphen;
+:relfileprefix: ../../
+:mrdocs:
+
+Subtraction operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffers&lowbar;iterator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator]
+operator&hyphen;(
+    xref:boost/asio/buffers_iterator.adoc[buffers&lowbar;iterator] const& iter,
+    ptrdiff&lowbar;t difference);
+----
+
+== Return Value
+
+A random access iterator over the bytes in a buffer sequence&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *iter*
+| The left operand
+| *difference*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,58 @@
+[#boost-asio-basic_socket-get_option-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::get&lowbar;option
+:relfileprefix: ../../../
+:mrdocs:
+
+Get an option from the socket&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename GettableSocketOption&gt;
+boost::system::error&lowbar;code
+get&lowbar;option(
+    GettableSocketOption& option,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to get the current value of an option on the socket&period;
+
+== Example
+Getting the value of the SOL&lowbar;SOCKET&sol;SO&lowbar;KEEPALIVE option&colon;
+
+[,cpp]
+----
+boost::asio::ip::tcp::socket socket(my_context);
+...
+boost::asio::ip::tcp::socket::keep_alive option;
+boost::system::error_code ec;
+socket.get_option(option, ec);
+if (ec)
+{
+  // An error occurred.
+}
+bool is_set = option.value();
+----
+== Return Value
+
+an option from the socket&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *option*
+| The option value to be obtained from the socket&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

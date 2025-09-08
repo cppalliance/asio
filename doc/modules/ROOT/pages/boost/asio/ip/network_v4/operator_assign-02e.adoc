@@ -1,0 +1,35 @@
+[#boost-asio-ip-network_v4-operator_assign-02e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v4&period;hpp&gt;`
+
+Assign from another network&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]&
+xref:boost/asio/ip/network_v4/operator_assign-024.adoc[operator&equals;](xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4] const& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/network_v4/operator_assign-024.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assign from another network&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]&
+xref:boost/asio/ip/network_v4/operator_assign-05.adoc[operator&equals;](xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/network_v4/operator_assign-05.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

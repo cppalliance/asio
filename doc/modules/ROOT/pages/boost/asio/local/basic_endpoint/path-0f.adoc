@@ -1,0 +1,46 @@
+[#boost-asio-local-basic_endpoint-path-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/local.adoc[local]::xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint]::path
+:relfileprefix: ../../../../
+:mrdocs:
+
+`path` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;local&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+Get the path associated with the endpoint&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+std::string
+xref:boost/asio/local/basic_endpoint/path-06.adoc[path]() const;
+----
+
+[.small]#xref:boost/asio/local/basic_endpoint/path-06.adoc[_» more&period;&period;&period;_]#
+
+Set the path associated with the endpoint&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/local/basic_endpoint/path-0c.adoc[path](std::string const& p);
+----
+
+[.small]#xref:boost/asio/local/basic_endpoint/path-0c.adoc[_» more&period;&period;&period;_]#
+
+Set the path associated with the endpoint&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+xref:boost/asio/local/basic_endpoint/path-04.adoc[path](char const* p);
+----
+
+[.small]#xref:boost/asio/local/basic_endpoint/path-04.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,47 @@
+[#boost-asio-basic_socket_acceptor-wait-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::wait
+:relfileprefix: ../../../
+:mrdocs:
+
+Wait for the acceptor to become ready to read, ready to write, or to have pending error conditions&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+wait(
+    xref:boost/asio/socket_base/wait_type.adoc[wait&lowbar;type] w,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to perform a blocking wait for an acceptor to enter a ready to read, write or error condition state&period;
+
+== Example
+Waiting for an acceptor to become readable&period;
+
+[,cpp]
+----
+boost::asio::ip::tcp::acceptor acceptor(my_context);
+...
+boost::system::error_code ec;
+acceptor.wait(boost::asio::ip::tcp::acceptor::wait_read, ec);
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *w*
+| Specifies the desired acceptor state&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

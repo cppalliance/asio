@@ -1,0 +1,34 @@
+[#boost-asio-execution-is_executor-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::is&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+The is&lowbar;executor trait detects whether a type T satisfies the execution&colon;&colon;executor concept&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct is&lowbar;executor
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Description
+
+Class template `is&lowbar;executor` is a UnaryTypeTrait that is derived from `true&lowbar;type` if the type `T` meets the concept definition for an executor, otherwise `false&lowbar;type&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

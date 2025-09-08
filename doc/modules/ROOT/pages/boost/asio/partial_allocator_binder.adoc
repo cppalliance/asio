@@ -1,0 +1,53 @@
+[#boost-asio-partial_allocator_binder]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::partial&lowbar;allocator&lowbar;binder
+:relfileprefix: ../../
+:mrdocs:
+
+A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied allocator as its associated allocator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Allocator&gt;
+struct partial&lowbar;allocator&lowbar;binder;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/partial_allocator_binder/2constructor.adoc[`partial&lowbar;allocator&lowbar;binder`]         [.small]#[constructor]#
+| Constructor that specifies associated allocator&period;
+| xref:boost/asio/partial_allocator_binder/operator_call.adoc[`operator()`] 
+| Adapt a `completion&lowbar;token` to specify that the completion handler should have the allocator as its associated allocator&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/partial_allocator_binder/allocator_.adoc[`allocator&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/bind_allocator-08e.adoc[`bind&lowbar;allocator`]
+| Create a partial completion token that associates an allocator&period;
+|===
+
+== Description
+
+May also be used directly as a completion token, in which case it adapts the asynchronous operation&apos;s default completion token (or boost&colon;&colon;asio&colon;&colon;deferred if no default is available)&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

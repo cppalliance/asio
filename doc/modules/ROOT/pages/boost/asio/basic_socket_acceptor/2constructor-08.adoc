@@ -1,0 +1,63 @@
+[#boost-asio-basic_socket_acceptor-2constructor-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::basic&lowbar;socket&lowbar;acceptor
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct an acceptor opened on the given endpoint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+basic&lowbar;socket&lowbar;acceptor(
+    ExecutionContext& context,
+    xref:boost/asio/basic_socket_acceptor/endpoint_type.adoc[endpoint&lowbar;type] const& endpoint,
+    bool reuse&lowbar;addr = true,
+    int = 0);
+----
+
+== Description
+
+This constructor creates an acceptor and automatically opens it to listen for new connections on the specified endpoint&period;
+
+[NOTE]
+This constructor is equivalent to the following code&colon;
+
+[,cpp]
+----
+basic_socket_acceptor<Protocol> acceptor(my_context);
+acceptor.open(endpoint.protocol());
+if (reuse_addr)
+  acceptor.set_option(socket_base::reuse_address(true));
+acceptor.bind(endpoint);
+acceptor.listen();
+----
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *context*
+| An execution context which provides the I&sol;O executor that the acceptor will use, by default, to dispatch handlers for any asynchronous operations performed on the acceptor&period;
+| *endpoint*
+| An endpoint on the local machine on which the acceptor will listen for new connections&period;
+| *reuse&lowbar;addr*
+| Whether the constructor should set the socket option socket&lowbar;base&colon;&colon;reuse&lowbar;address&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

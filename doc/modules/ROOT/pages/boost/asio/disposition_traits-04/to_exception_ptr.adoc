@@ -1,0 +1,18 @@
+[#boost-asio-disposition_traits-04-to_exception_ptr]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/disposition_traits-04.adoc[disposition&lowbar;traits&lt;no&lowbar;error&lowbar;t&gt;]::to&lowbar;exception&lowbar;ptr
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+std::exception&lowbar;ptr
+to&lowbar;exception&lowbar;ptr(xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t]) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

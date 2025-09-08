@@ -1,0 +1,36 @@
+[#boost-asio-recycling_allocator-0d-2constructor-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/recycling_allocator-0d.adoc[recycling&lowbar;allocator&lt;void&gt;]::recycling&lowbar;allocator
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;recycling&lowbar;allocator&period;hpp&gt;`
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/recycling_allocator-0d/2constructor-0f.adoc[recycling&lowbar;allocator]() noexcept;
+----
+
+[.small]#xref:boost/asio/recycling_allocator-0d/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+
+Converting constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+constexpr
+xref:boost/asio/recycling_allocator-0d/2constructor-04.adoc[recycling&lowbar;allocator](xref:boost/asio/recycling_allocator-02.adoc[recycling&lowbar;allocator&lt;U&gt;] const&) noexcept;
+----
+
+[.small]#xref:boost/asio/recycling_allocator-0d/2constructor-04.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

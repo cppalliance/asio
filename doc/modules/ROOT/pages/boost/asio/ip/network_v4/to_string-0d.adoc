@@ -1,0 +1,23 @@
+[#boost-asio-ip-network_v4-to_string-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/network_v4.adoc[network&lowbar;v4]::to&lowbar;string
+:relfileprefix: ../../../../
+:mrdocs:
+
+Get the network as an address in dotted decimal format&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v4&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+std::string
+to&lowbar;string() const;
+----
+
+== Return Value
+
+the network as an address in dotted decimal format&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

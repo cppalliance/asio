@@ -1,0 +1,66 @@
+[#boost-asio-windows-basic_stream_handle-write_some-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_stream_handle.adoc[basic&lowbar;stream&lowbar;handle]::write&lowbar;some
+:relfileprefix: ../../../../
+:mrdocs:
+
+Write some data to the handle&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;stream&lowbar;handle&period;hpp&gt;`
+
+Write some data to the handle&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/windows/basic_stream_handle/write_some-08.adoc[write&lowbar;some](ConstBufferSequence const& buffers);
+----
+
+[.small]#xref:boost/asio/windows/basic_stream_handle/write_some-08.adoc[_» more&period;&period;&period;_]#
+
+Write some data to the handle&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ConstBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/windows/basic_stream_handle/write_some-0d.adoc[write&lowbar;some](
+    ConstBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/windows/basic_stream_handle/write_some-0d.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; An error code of boost&colon;&colon;asio&colon;&colon;error&colon;&colon;eof indicates that the connection was closed by the peer&period;
+|===
+
+== Return Value
+
+* The number of bytes written&period;
+* The number of bytes written&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *buffers*
+| One or more data buffers to be written to the handle&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

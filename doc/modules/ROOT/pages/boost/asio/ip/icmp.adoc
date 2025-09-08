@@ -1,0 +1,80 @@
+[#boost-asio-ip-icmp]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::icmp
+:relfileprefix: ../../../
+:mrdocs:
+
+Encapsulates the flags needed for ICMP&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;icmp&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class icmp;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/icmp/endpoint.adoc[`endpoint`] 
+| The type of a ICMP endpoint&period;
+| xref:boost/asio/ip/icmp/resolver.adoc[`resolver`] 
+| The ICMP resolver type&period;
+| xref:boost/asio/ip/icmp/socket.adoc[`socket`] 
+| The ICMP socket type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/icmp/family.adoc[`family`] 
+| Obtain an identifier for the protocol family&period;
+| xref:boost/asio/ip/icmp/protocol.adoc[`protocol`] 
+| Obtain an identifier for the protocol&period;
+| xref:boost/asio/ip/icmp/type.adoc[`type`] 
+| Obtain an identifier for the type of the protocol&period;
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/icmp/v4.adoc[`v4`] 
+| Construct to represent the IPv4 ICMP protocol&period;
+| xref:boost/asio/ip/icmp/v6.adoc[`v6`] 
+| Construct to represent the IPv6 ICMP protocol&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/operator_not_eq-08.adoc[boost::asio::ip::operator!&equals;]`
+| Compare two protocols for inequality&period;
+| `xref:boost/asio/ip/operator_eq-08.adoc[boost::asio::ip::operator&equals;&equals;]`
+| Compare two protocols for equality&period;
+|===
+
+== Description
+
+The boost&colon;&colon;asio&colon;&colon;ip&colon;&colon;icmp class contains flags necessary for ICMP sockets&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Safe&period;
+
+== Concepts&colon;
+Protocol, InternetProtocol&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

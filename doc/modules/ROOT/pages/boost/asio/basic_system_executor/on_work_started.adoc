@@ -1,0 +1,23 @@
+[#boost-asio-basic_system_executor-on_work_started]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor]::on&lowbar;work&lowbar;started
+:relfileprefix: ../../../
+:mrdocs:
+
+Inform the executor that it has some outstanding work to do&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;system&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+on&lowbar;work&lowbar;started() const noexcept;
+----
+
+== Description
+
+For the system executor, this is a no&hyphen;op&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,19 @@
+[#boost-asio-read_size_helper]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read&lowbar;size&lowbar;helper
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+read&lowbar;size&lowbar;helper(
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf]& sb,
+    size&lowbar;t max&lowbar;size);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

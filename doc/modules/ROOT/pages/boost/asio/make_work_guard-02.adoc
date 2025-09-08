@@ -1,0 +1,36 @@
+[#boost-asio-make_work_guard-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::make&lowbar;work&lowbar;guard
+:relfileprefix: ../../
+:mrdocs:
+
+Create an xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] object&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;executor&lowbar;work&lowbar;guard&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;Executor&gt;]
+make&lowbar;work&lowbar;guard(
+    Executor const& ex,
+    int = 0);
+----
+
+== Return Value
+
+A work guard constructed with the specified executor&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| An executor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

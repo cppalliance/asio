@@ -1,0 +1,25 @@
+[#boost-asio-as_tuple_t-2constructor-00]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/as_tuple_t.adoc[as&lowbar;tuple&lowbar;t]::as&lowbar;tuple&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+Default constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;as&lowbar;tuple&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+as&lowbar;tuple&lowbar;t(
+    xref:boost/asio/as_tuple_t/default_constructor_tag.adoc[default&lowbar;constructor&lowbar;tag] = default&lowbar;constructor&lowbar;tag(),
+    CompletionToken token = CompletionToken());
+----
+
+== Description
+
+This constructor is only valid if the underlying completion token is default constructible and move constructible&period; The underlying completion token is itself defaulted as an argument to allow it to capture a source location&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

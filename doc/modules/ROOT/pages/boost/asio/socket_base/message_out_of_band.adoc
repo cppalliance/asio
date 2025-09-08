@@ -1,0 +1,17 @@
+[#boost-asio-socket_base-message_out_of_band]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/socket_base.adoc[socket&lowbar;base]::message&lowbar;out&lowbar;of&lowbar;band
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;socket&lowbar;base&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+static
+int const message&lowbar;out&lowbar;of&lowbar;band = BOOST&lowbar;ASIO&lowbar;OS&lowbar;DEF(MSG&lowbar;OOB);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

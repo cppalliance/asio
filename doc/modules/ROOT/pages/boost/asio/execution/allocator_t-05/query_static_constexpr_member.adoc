@@ -1,0 +1,28 @@
+[#boost-asio-execution-allocator_t-05-query_static_constexpr_member]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/allocator_t-05.adoc[allocator&lowbar;t&lt;void&gt;]::query&lowbar;static&lowbar;constexpr&lowbar;member
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+struct query&lowbar;static&lowbar;constexpr&lowbar;member
+    : xref:boost/asio/traits/query_static_constexpr_member-0098.adoc[traits::query&lowbar;static&lowbar;constexpr&lowbar;member&lt;T, allocator&lowbar;t&lt;void&gt;&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/traits/query_static_constexpr_member-0098.adoc[traits::query&lowbar;static&lowbar;constexpr&lowbar;member&lt;T, allocator&lowbar;t&lt;void&gt;&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

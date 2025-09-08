@@ -1,0 +1,23 @@
+[#boost-asio-mutable_buffer-size]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]::size
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the size of the memory range&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+size() const noexcept;
+----
+
+== Return Value
+
+the size of the memory range&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

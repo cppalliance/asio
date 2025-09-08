@@ -1,0 +1,71 @@
+[#boost-asio-windows-basic_random_access_handle-read_some_at-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::xref:boost/asio/windows/basic_random_access_handle.adoc[basic&lowbar;random&lowbar;access&lowbar;handle]::read&lowbar;some&lowbar;at
+:relfileprefix: ../../../../
+:mrdocs:
+
+Read some data from the handle at the specified offset&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;random&lowbar;access&lowbar;handle&period;hpp&gt;`
+
+Read some data from the handle at the specified offset&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/windows/basic_random_access_handle/read_some_at-0ff.adoc[read&lowbar;some&lowbar;at](
+    std::uint64&lowbar;t offset,
+    MutableBufferSequence const& buffers);
+----
+
+[.small]#xref:boost/asio/windows/basic_random_access_handle/read_some_at-0ff.adoc[_» more&period;&period;&period;_]#
+
+Read some data from the handle at the specified offset&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename MutableBufferSequence&gt;
+size&lowbar;t
+xref:boost/asio/windows/basic_random_access_handle/read_some_at-0f3.adoc[read&lowbar;some&lowbar;at](
+    std::uint64&lowbar;t offset,
+    MutableBufferSequence const& buffers,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/windows/basic_random_access_handle/read_some_at-0f3.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period; An error code of boost&colon;&colon;asio&colon;&colon;error&colon;&colon;eof indicates that the connection was closed by the peer&period;
+|===
+
+== Return Value
+
+* The number of bytes read&period;
+* The number of bytes read&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *offset*
+| The offset at which the data will be read&period;
+| *buffers*
+| One or more buffers into which the data will be read&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

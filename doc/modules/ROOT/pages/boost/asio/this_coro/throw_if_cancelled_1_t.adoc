@@ -1,0 +1,34 @@
+[#boost-asio-this_coro-throw_if_cancelled_1_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/this_coro.adoc[this&lowbar;coro]::throw&lowbar;if&lowbar;cancelled&lowbar;1&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+struct throw&lowbar;if&lowbar;cancelled&lowbar;1&lowbar;t;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/this_coro/throw_if_cancelled_1_t/2constructor.adoc[`throw&lowbar;if&lowbar;cancelled&lowbar;1&lowbar;t`]         [.small]#[constructor]#
+| Construct from `bool`
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/this_coro/throw_if_cancelled_1_t/value.adoc[`value`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

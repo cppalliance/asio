@@ -1,0 +1,28 @@
+[#boost-asio-any_completion_executor-2constructor-0ab]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]::any&lowbar;completion&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Copy constructor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+any&lowbar;completion&lowbar;executor(xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor] const& e) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The object to copy construct from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

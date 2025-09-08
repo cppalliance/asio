@@ -1,0 +1,23 @@
+[#boost-asio-buffered_read_stream-in_avail-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_read_stream.adoc[buffered&lowbar;read&lowbar;stream]::in&lowbar;avail
+:relfileprefix: ../../../
+:mrdocs:
+
+Determine the amount of data that may be read without blocking&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;read&lowbar;stream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+in&lowbar;avail(boost::system::error&lowbar;code& ec);
+----
+
+== Return Value
+
+the amount of data that may be read without blocking&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

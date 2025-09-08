@@ -1,0 +1,25 @@
+[#boost-asio-get_associated_executor-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::get&lowbar;associated&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Helper function to obtain an object&apos;s associated executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename ExecutionContext&gt;
+associated&lowbar;executor&lt;T, ExecutionContext::executor&lowbar;type&gt;::type
+get&lowbar;associated&lowbar;executor(
+    T const& t,
+    ExecutionContext& ctx,
+    int = 0) noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

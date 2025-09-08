@@ -1,0 +1,17 @@
+[#boost-asio-traits-query_free_default-08-is_valid]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/query_free_default-08.adoc[query&lowbar;free&lowbar;default&lt;T, execution::outstanding&lowbar;work&lowbar;t&gt;]::is&lowbar;valid
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;outstanding&lowbar;work&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+inline constexpr static
+bool is&lowbar;valid = true;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

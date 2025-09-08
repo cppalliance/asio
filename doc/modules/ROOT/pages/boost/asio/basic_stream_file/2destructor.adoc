@@ -1,0 +1,22 @@
+[#boost-asio-basic_stream_file-2destructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_stream_file.adoc[basic&lowbar;stream&lowbar;file]::&#126;basic&lowbar;stream&lowbar;file
+:relfileprefix: ../../../
+:mrdocs:
+
+Destroys the file&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;stream&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&#126;basic&lowbar;stream&lowbar;file();
+----
+
+== Description
+
+This function destroys the file, cancelling any outstanding asynchronous operations associated with the file as if by calling `cancel&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

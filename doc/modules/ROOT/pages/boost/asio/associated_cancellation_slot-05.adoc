@@ -1,0 +1,52 @@
+[#boost-asio-associated_cancellation_slot-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_cancellation_slot-04.adoc[associated&lowbar;cancellation&lowbar;slot]&lt;reference&lowbar;wrapper&lt;T&gt;, CancellationSlot&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+Specialisation of associated&lowbar;cancellation&lowbar;slot for `std&colon;&colon;reference&lowbar;wrapper&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename CancellationSlot&gt;
+struct xref:boost/asio/associated_cancellation_slot-04.adoc[associated&lowbar;cancellation&lowbar;slot]&lt;reference&lowbar;wrapper&lt;T&gt;, CancellationSlot&gt;
+    : &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/associated_cancellation_slot-05/type.adoc[`type`] 
+| Forwards `type` to the associator specialisation for the unwrapped type `T&period;`
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/associated_cancellation_slot-05/get-0e.adoc[`get`] 
+| Forwards the request to get the cancellation slot to the associator specialisation for the unwrapped type `T&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

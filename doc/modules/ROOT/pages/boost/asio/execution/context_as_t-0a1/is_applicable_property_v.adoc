@@ -1,0 +1,18 @@
+[#boost-asio-execution-context_as_t-0a1-is_applicable_property_v]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/context_as_t-0a1.adoc[context&lowbar;as&lowbar;t&lt;execution&lowbar;context&&gt;]::is&lowbar;applicable&lowbar;property&lowbar;v
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;context&lowbar;as&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename U&gt;
+constexpr static
+bool is&lowbar;applicable&lowbar;property&lowbar;v;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,36 @@
+[#boost-asio-io_context-run]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::run
+:relfileprefix: ../../../
+:mrdocs:
+
+Run the io&lowbar;context object&apos;s event processing loop&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/io_context/count_type.adoc[count&lowbar;type]
+run();
+----
+
+== Description
+
+The run() function blocks until all work has finished and there are no more handlers to be dispatched, or until the io&lowbar;context has been stopped&period;
+
+Multiple threads may call the run() function to set up a pool of threads from which the io&lowbar;context may execute handlers&period; All threads that are waiting in the pool are equivalent and the io&lowbar;context may choose any one of them to invoke a handler&period;
+
+A normal exit from the run() function implies that the io&lowbar;context object is stopped (the stopped() function returns `true)&period;` Subsequent calls to run(), run&lowbar;one(), poll() or poll&lowbar;one() will return immediately unless there is a prior call to restart()&period;
+
+[NOTE]
+Calling the run() function from a thread that is currently calling one of run(), run&lowbar;one(), run&lowbar;for(), run&lowbar;until(), poll() or poll&lowbar;one() on the same io&lowbar;context object may introduce the potential for deadlock&period; It is the caller&apos;s responsibility to avoid this&period;
+
+The poll() function may also be used to dispatch ready handlers, but without blocking&period;
+
+== Return Value
+
+The number of handlers that were executed&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

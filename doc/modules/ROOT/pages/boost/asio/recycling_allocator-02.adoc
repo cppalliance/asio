@@ -1,0 +1,53 @@
+[#boost-asio-recycling_allocator-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::recycling&lowbar;allocator
+:relfileprefix: ../../
+:mrdocs:
+
+An allocator that caches memory blocks in thread&hyphen;local storage for reuse&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;recycling&lowbar;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+class recycling&lowbar;allocator;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/recycling_allocator-02/rebind.adoc[`rebind`] 
+| Rebind the allocator to another value&lowbar;type&period;
+| xref:boost/asio/recycling_allocator-02/value_type.adoc[`value&lowbar;type`] 
+| The type of object allocated by the recycling allocator&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/recycling_allocator-02/2constructor-0ee.adoc[`recycling&lowbar;allocator`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/recycling_allocator-02/allocate.adoc[`allocate`] 
+| Allocate memory for the specified number of values&period;
+| xref:boost/asio/recycling_allocator-02/deallocate.adoc[`deallocate`] 
+| Deallocate memory for the specified number of values&period;
+| xref:boost/asio/recycling_allocator-02/operator_eq.adoc[`operator&equals;&equals;`] 
+| Equality operator&period; Always returns true&period;
+| xref:boost/asio/recycling_allocator-02/operator_not_eq.adoc[`operator!&equals;`] 
+| Inequality operator&period; Always returns false&period;
+|===
+
+== Description
+
+The uses a simple strategy where a limited number of small memory blocks are cached in thread&hyphen;local storage, if the current thread is running an `io&lowbar;context` or is part of a `thread&lowbar;pool&period;`
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,52 @@
+[#boost-asio-partial_redirect_error]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::partial&lowbar;redirect&lowbar;error
+:relfileprefix: ../../
+:mrdocs:
+
+A function object type that adapts a `completion&lowbar;token` to capture error&lowbar;code values to a variable&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;redirect&lowbar;error&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class partial&lowbar;redirect&lowbar;error;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/partial_redirect_error/2constructor.adoc[`partial&lowbar;redirect&lowbar;error`]         [.small]#[constructor]#
+| Constructor that specifies the variable used to capture error&lowbar;code values&period;
+| xref:boost/asio/partial_redirect_error/operator_call.adoc[`operator()`] 
+| Adapt a `completion&lowbar;token` to specify that the completion handler should capture error&lowbar;code values to a variable&period;
+|===
+
+== Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/partial_redirect_error/ec_.adoc[`ec&lowbar;`] 
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/redirect_error-00.adoc[`redirect&lowbar;error`]
+| Create a partial completion token adapter that captures error&lowbar;code values to a variable&period;
+|===
+
+== Description
+
+May also be used directly as a completion token, in which case it adapts the asynchronous operation&apos;s default completion token (or boost&colon;&colon;asio&colon;&colon;deferred if no default is available)&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

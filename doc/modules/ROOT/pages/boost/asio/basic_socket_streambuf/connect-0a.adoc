@@ -1,0 +1,37 @@
+[#boost-asio-basic_socket_streambuf-connect-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]::connect
+:relfileprefix: ../../../
+:mrdocs:
+
+Establish a connection&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]*
+connect(xref:boost/asio/basic_socket_streambuf/endpoint_type.adoc[endpoint&lowbar;type] const& endpoint);
+----
+
+== Description
+
+This function establishes a connection to the specified endpoint&period;
+
+== Return Value
+
+`this` if a connection was successfully established, a null pointer otherwise&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *endpoint*
+| The endpoint type&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

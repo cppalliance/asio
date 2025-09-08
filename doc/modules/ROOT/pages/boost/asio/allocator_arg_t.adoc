@@ -1,0 +1,16 @@
+[#boost-asio-allocator_arg_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::allocator&lowbar;arg&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;memory&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using std::allocator&lowbar;arg&lowbar;t;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

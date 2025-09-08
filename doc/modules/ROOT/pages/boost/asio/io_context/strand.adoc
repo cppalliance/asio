@@ -1,0 +1,28 @@
+[#boost-asio-io_context-strand]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/io_context.adoc[io&lowbar;context]::strand
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;io&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class strand;
+----
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/operator_not_eq-06.adoc[boost::asio::operator!&equals;]`
+| Compare two strands for inequality&period;
+| `xref:boost/asio/operator_eq-050.adoc[boost::asio::operator&equals;&equals;]`
+| Compare two strands for equality&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

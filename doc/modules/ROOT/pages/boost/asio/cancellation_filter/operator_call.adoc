@@ -1,0 +1,33 @@
+[#boost-asio-cancellation_filter-operator_call]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_filter.adoc[cancellation&lowbar;filter]::operator()
+:relfileprefix: ../../../
+:mrdocs:
+
+Returns &period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t]
+operator()(xref:boost/asio/cancellation_type_t.adoc[cancellation&lowbar;type&lowbar;t] type) const noexcept;
+----
+
+== Return Value
+
+&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *type*
+| The right operand
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-service_already_exists-2constructor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/service_already_exists.adoc[service&lowbar;already&lowbar;exists]::service&lowbar;already&lowbar;exists
+:relfileprefix: ../../../
+:mrdocs:
+
+Default constructor
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+service&lowbar;already&lowbar;exists();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

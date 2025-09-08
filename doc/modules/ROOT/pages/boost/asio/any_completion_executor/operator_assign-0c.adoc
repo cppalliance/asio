@@ -1,0 +1,33 @@
+[#boost-asio-any_completion_executor-operator_assign-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]::operator&equals;
+:relfileprefix: ../../../
+:mrdocs:
+
+Move assignment operator&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]&
+operator&equals;(xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]&& e) noexcept;
+----
+
+== Return Value
+
+Reference to the current object
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The object to move assign from
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,23 @@
+[#boost-asio-basic_file-is_open]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_file.adoc[basic&lowbar;file]::is&lowbar;open
+:relfileprefix: ../../../
+:mrdocs:
+
+Determine whether the file is open&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;file&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+is&lowbar;open() const;
+----
+
+== Return Value
+
+whether the file is open&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

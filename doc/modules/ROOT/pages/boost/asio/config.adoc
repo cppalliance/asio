@@ -1,0 +1,30 @@
+[#boost-asio-config]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::config
+:relfileprefix: ../../
+:mrdocs:
+
+Provides access to the configuration values associated with an execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;config&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+class config;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/config/2constructor-07.adoc[`config`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/config/get.adoc[`get`] 
+| Retrieve an integral configuration value&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

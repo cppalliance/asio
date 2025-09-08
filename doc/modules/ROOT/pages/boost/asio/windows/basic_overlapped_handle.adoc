@@ -1,0 +1,110 @@
+[#boost-asio-windows-basic_overlapped_handle]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/windows.adoc[windows]::basic&lowbar;overlapped&lowbar;handle
+:relfileprefix: ../../../
+:mrdocs:
+
+Provides Windows handle functionality for objects that support overlapped I&sol;O&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;windows&sol;basic&lowbar;overlapped&lowbar;handle&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;overlapped&lowbar;handle;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_overlapped_handle/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the handle type to another executor&period;
+| xref:boost/asio/windows/basic_overlapped_handle/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/windows/basic_overlapped_handle/lowest_layer_type.adoc[`lowest&lowbar;layer&lowbar;type`] 
+| An overlapped&lowbar;handle is always the lowest layer&period;
+| xref:boost/asio/windows/basic_overlapped_handle/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_overlapped_handle/2constructor-0f.adoc[`basic&lowbar;overlapped&lowbar;handle`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/windows/basic_overlapped_handle/operator_assign-00.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/windows/basic_overlapped_handle/assign-03.adoc[`assign`] 
+| 
+| xref:boost/asio/windows/basic_overlapped_handle/cancel-06.adoc[`cancel`] 
+| Cancel all asynchronous operations associated with the handle&period;
+| xref:boost/asio/windows/basic_overlapped_handle/close-05.adoc[`close`] 
+| Close the handle&period;
+| xref:boost/asio/windows/basic_overlapped_handle/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/windows/basic_overlapped_handle/is_open.adoc[`is&lowbar;open`] 
+| Determine whether the handle is open&period;
+| xref:boost/asio/windows/basic_overlapped_handle/lowest_layer-08.adoc[`lowest&lowbar;layer`] 
+| `lowest&lowbar;layer` overloads
+| xref:boost/asio/windows/basic_overlapped_handle/native_handle.adoc[`native&lowbar;handle`] 
+| Get the native handle representation&period;
+| xref:boost/asio/windows/basic_overlapped_handle/release-0e.adoc[`release`] 
+| 
+|===
+
+== Protected Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_overlapped_handle/2destructor.adoc[`&#126;basic&lowbar;overlapped&lowbar;handle`] [.small]#[destructor]#
+| Protected destructor to prevent deletion through this type&period;
+|===
+
+== Protected Data Members
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/windows/basic_overlapped_handle/impl_.adoc[`impl&lowbar;`] 
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/windows/basic_overlapped_handle.adoc[boost::asio::windows::basic&lowbar;overlapped&lowbar;handle]`
+| Provides Windows handle functionality for objects that support overlapped I&sol;O&period;
+|===
+
+== Derived Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/windows/basic_random_access_handle.adoc[`basic&lowbar;random&lowbar;access&lowbar;handle`]
+| Provides random&hyphen;access handle functionality&period;
+| xref:boost/asio/windows/basic_stream_handle.adoc[`basic&lowbar;stream&lowbar;handle`]
+| Provides stream&hyphen;oriented handle functionality&period;
+|===
+
+== Description
+
+The windows&colon;&colon;overlapped&lowbar;handle class provides the ability to wrap a Windows handle&period; The underlying object referred to by the handle must support overlapped I&sol;O&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,18 @@
+[#boost-asio-basic_socket_iostream-2constructor-067]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::basic&lowbar;socket&lowbar;iostream
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct a basic&lowbar;socket&lowbar;iostream without establishing a connection&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+basic&lowbar;socket&lowbar;iostream();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

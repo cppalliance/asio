@@ -1,0 +1,37 @@
+[#boost-asio-basic_socket_acceptor-native_non_blocking-09]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::native&lowbar;non&lowbar;blocking
+:relfileprefix: ../../../
+:mrdocs:
+
+Sets the non&hyphen;blocking mode of the native acceptor implementation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+native&lowbar;non&lowbar;blocking(
+    bool mode,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to modify the non&hyphen;blocking mode of the underlying native acceptor&period; It has no effect on the behaviour of the acceptor object&apos;s synchronous operations&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *mode*
+| If `true,` the underlying acceptor is put into non&hyphen;blocking mode and direct system calls may fail with boost&colon;&colon;asio&colon;&colon;error&colon;&colon;would&lowbar;block (or the equivalent system error)&period;
+| *ec*
+| Set to indicate what error occurred, if any&period; If the `mode` is `false,` but the current value of `non&lowbar;blocking()` is `true,` this function fails with boost&colon;&colon;asio&colon;&colon;error&colon;&colon;invalid&lowbar;argument, as the combination does not make sense&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,50 @@
+[#boost-asio-cancellation_state-2constructor-0c]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/cancellation_state.adoc[cancellation&lowbar;state]::cancellation&lowbar;state
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct and attach to a parent slot to create a new child slot&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;cancellation&lowbar;state&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename CancellationSlot,
+    typename Filter&gt;
+constexpr
+cancellation&lowbar;state(
+    CancellationSlot slot,
+    Filter filter);
+----
+
+== Description
+
+[,cpp]
+----
+boost::asio::cancellation_type_t filter(
+    boost::asio::cancellation_type_t); 
+----
+The library provides the following pre&hyphen;defined cancellation filters&colon;
+
+* boost&colon;&colon;asio&colon;&colon;disable&lowbar;cancellation
+* boost&colon;&colon;asio&colon;&colon;enable&lowbar;terminal&lowbar;cancellation
+* boost&colon;&colon;asio&colon;&colon;enable&lowbar;partial&lowbar;cancellation
+* boost&colon;&colon;asio&colon;&colon;enable&lowbar;total&lowbar;cancellation
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *slot*
+| The parent cancellation slot to which the state will be attached&period;
+| *filter*
+| A function object that is used to transform incoming cancellation signals as they are received from the parent slot&period; This function object must have the signature&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

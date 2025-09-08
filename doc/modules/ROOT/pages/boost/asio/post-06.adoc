@@ -1,0 +1,55 @@
+[#boost-asio-post-06]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::post
+:relfileprefix: ../../
+:mrdocs:
+
+Submits a completion token or function object for execution&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;post&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;ExecutionContext::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
+      declval&lt;detail&colon;&colon;initiate&lowbar;post&lowbar;with&lowbar;executor&lt;
+        typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&gt;(), token))
+post(
+    ExecutionContext& ctx,
+    NullaryToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0);
+----
+
+== Description
+
+[,cpp]
+----
+void handler(); 
+----
+== Completion Signature
+[,cpp]
+----
+void() 
+----
+== Return Value
+
+&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ctx*
+| An execution context, from which the target executor is obtained&period;
+| *token*
+| The `completion&lowbar;token` that will be used to produce a completion handler&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

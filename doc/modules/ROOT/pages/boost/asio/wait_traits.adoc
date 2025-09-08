@@ -1,0 +1,29 @@
+[#boost-asio-wait_traits]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::wait&lowbar;traits
+:relfileprefix: ../../
+:mrdocs:
+
+Wait traits suitable for use with the basic&lowbar;waitable&lowbar;timer class template&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;wait&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Clock&gt;
+struct wait&lowbar;traits;
+----
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/wait_traits/to_wait_duration-0aa.adoc[`to&lowbar;wait&lowbar;duration`] 
+| Convert a clock duration into a duration used for waiting&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

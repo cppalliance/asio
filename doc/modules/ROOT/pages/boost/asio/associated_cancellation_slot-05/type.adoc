@@ -1,0 +1,18 @@
+[#boost-asio-associated_cancellation_slot-05-type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_cancellation_slot-05.adoc[associated&lowbar;cancellation&lowbar;slot&lt;reference&lowbar;wrapper&lt;T&gt;, CancellationSlot&gt;]::type
+:relfileprefix: ../../../
+:mrdocs:
+
+Forwards `type` to the associator specialisation for the unwrapped type `T&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;associated&lowbar;cancellation&lowbar;slot&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef associated&lowbar;cancellation&lowbar;slot&lt;T, CancellationSlot&gt;::type type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

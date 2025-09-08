@@ -1,0 +1,50 @@
+[#boost-asio-make_service]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::make&lowbar;service
+:relfileprefix: ../../
+:mrdocs:
+
+Creates a service object and adds it to the execution&lowbar;context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&lowbar;context&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Service,
+    typename&period;&period;&period; Args&gt;
+Service&
+make&lowbar;service(
+    xref:boost/asio/execution_context.adoc[execution&lowbar;context]& e,
+    Args&period;&period;&period;&&&period;&period;&period; args);
+----
+
+== Description
+
+This function is used to add a service to the execution&lowbar;context&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| xref:boost/asio/service_already_exists.adoc[`boost&colon;&colon;asio&colon;&colon;service&lowbar;already&lowbar;exists`]
+| Thrown if a service of the given type is already present in the execution&lowbar;context&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| The execution&lowbar;context object that owns the service&period;
+| *args*
+| Zero or more arguments to be passed to the service constructor&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

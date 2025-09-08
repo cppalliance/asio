@@ -1,0 +1,23 @@
+[#boost-asio-dynamic_vector_buffer-capacity]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer]::capacity
+:relfileprefix: ../../../
+:mrdocs:
+
+Get the maximum size that the buffer may grow to without triggering reallocation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+capacity() const noexcept;
+----
+
+== Return Value
+
+*DynamicBuffer&lowbar;v1&colon;* The current total capacity of the buffer, i&period;e&period; for both the input sequence and output sequence&period; *DynamicBuffer&lowbar;v2&colon;* The current capacity of the underlying vector if less than max&lowbar;size()&period; Otherwise returns max&lowbar;size()&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

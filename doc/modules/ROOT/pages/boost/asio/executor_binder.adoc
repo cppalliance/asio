@@ -1,0 +1,80 @@
+[#boost-asio-executor_binder]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::executor&lowbar;binder
+:relfileprefix: ../../
+:mrdocs:
+
+A call wrapper type to bind an executor of type `Executor` to an object of type `T&period;`
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor&gt;
+class executor&lowbar;binder
+    : public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+    , public &sol;&ast; implementation-defined &ast;&sol;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+| `&sol;&ast; implementation-defined &ast;&sol;`
+| 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/executor_binder/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the associated executor&period;
+| xref:boost/asio/executor_binder/target_type.adoc[`target&lowbar;type`] 
+| The type of the target object&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/executor_binder/2constructor-0d.adoc[`executor&lowbar;binder`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/executor_binder/2destructor.adoc[`&#126;executor&lowbar;binder`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/executor_binder/get-08.adoc[`get`] 
+| Obtain a reference to the target object&period;
+| xref:boost/asio/executor_binder/get_executor.adoc[`get&lowbar;executor`] 
+| Obtain the associated executor&period;
+| xref:boost/asio/executor_binder/operator_call-0b.adoc[`operator()`] 
+| Forwarding function call operator&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/bind_executor-02.adoc[`bind&lowbar;executor`]
+| Associate an object of type `T` with an execution context&apos;s executor&period;
+| xref:boost/asio/bind_executor-03.adoc[`bind&lowbar;executor`]
+| Associate an object of type `T` with an executor of type `Executor&period;`
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

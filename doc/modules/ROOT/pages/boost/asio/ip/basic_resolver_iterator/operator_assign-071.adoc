@@ -1,0 +1,35 @@
+[#boost-asio-ip-basic_resolver_iterator-operator_assign-071]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]::operator&equals;
+:relfileprefix: ../../../../
+:mrdocs:
+
+Assignment operators
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&lowbar;iterator&period;hpp&gt;`
+
+Assignment operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]&
+xref:boost/asio/ip/basic_resolver_iterator/operator_assign-073.adoc[operator&equals;](xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator] const& other);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver_iterator/operator_assign-073.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;assignment operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]&
+xref:boost/asio/ip/basic_resolver_iterator/operator_assign-0f.adoc[operator&equals;](xref:boost/asio/ip/basic_resolver_iterator.adoc[basic&lowbar;resolver&lowbar;iterator]&& other);
+----
+
+[.small]#xref:boost/asio/ip/basic_resolver_iterator/operator_assign-0f.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

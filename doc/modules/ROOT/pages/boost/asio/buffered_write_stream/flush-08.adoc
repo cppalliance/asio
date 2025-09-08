@@ -1,0 +1,35 @@
+[#boost-asio-buffered_write_stream-flush-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/buffered_write_stream.adoc[buffered&lowbar;write&lowbar;stream]::flush
+:relfileprefix: ../../../
+:mrdocs:
+
+`flush` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;hpp&gt;`
+
+Flush all data from the buffer to the next layer&period; Returns the number of bytes written to the next layer on the last write operation&period; Throws an exception on failure&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+xref:boost/asio/buffered_write_stream/flush-0ac.adoc[flush]();
+----
+
+[.small]#xref:boost/asio/buffered_write_stream/flush-0ac.adoc[_» more&period;&period;&period;_]#
+
+Flush all data from the buffer to the next layer&period; Returns the number of bytes written to the next layer on the last write operation, or 0 if an error occurred&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+size&lowbar;t
+xref:boost/asio/buffered_write_stream/flush-0ad.adoc[flush](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/buffered_write_stream/flush-0ad.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,22 @@
+[#boost-asio-system_executor]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::system&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+An executor that uses arbitrary threads&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;system&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/basic_system_executor.adoc[basic&lowbar;system&lowbar;executor&lt;&sol;&ast; implementation-defined &ast;&sol;, &sol;&ast; implementation-defined &ast;&sol;, std::allocator&lt;void&gt;&gt;] system&lowbar;executor;
+----
+
+== Description
+
+The system executor represents an execution context where functions are permitted to run on arbitrary threads&period; When the blocking&period;never property is established, the system executor will schedule the function to run on an unspecified system thread pool&period; When either blocking&period;possibly or blocking&period;always is established, the executor invokes the function immediately&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

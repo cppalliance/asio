@@ -1,0 +1,35 @@
+[#boost-asio-associated_immediate_executor-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/associated_immediate_executor-03.adoc[associated&lowbar;immediate&lowbar;executor]&lt;xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler&lt;Signatures&period;&period;&period;&gt;], Candidate&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;handler&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename&period;&period;&period; Signatures,
+    typename Candidate&gt;
+struct xref:boost/asio/associated_immediate_executor-03.adoc[associated&lowbar;immediate&lowbar;executor]&lt;xref:boost/asio/any_completion_handler.adoc[any&lowbar;completion&lowbar;handler&lt;Signatures&period;&period;&period;&gt;], Candidate&gt;;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/associated_immediate_executor-0a/type.adoc[`type`] 
+|===
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/associated_immediate_executor-0a/get.adoc[`get`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

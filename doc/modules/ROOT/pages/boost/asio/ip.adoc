@@ -1,0 +1,142 @@
+[#boost-asio-ip]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::ip
+:relfileprefix: ../../
+:mrdocs:
+
+== Namespaces
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/multicast.adoc[`multicast`] 
+| xref:boost/asio/ip/unicast.adoc[`unicast`] 
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/address.adoc[`address`] 
+| Implements version&hyphen;independent IP addresses&period;
+| xref:boost/asio/ip/address_v4.adoc[`address&lowbar;v4`] 
+| Implements IP version 4 style addresses&period;
+| xref:boost/asio/ip/address_v6.adoc[`address&lowbar;v6`] 
+| Implements IP version 6 style addresses&period;
+| xref:boost/asio/ip/bad_address_cast.adoc[`bad&lowbar;address&lowbar;cast`] 
+| Thrown to indicate a failed address conversion&period;
+| xref:boost/asio/ip/basic_address_iterator-03.adoc[`basic&lowbar;address&lowbar;iterator`] 
+| 
+| xref:boost/asio/ip/basic_address_iterator-00.adoc[`basic&lowbar;address&lowbar;iterator&lt;address&lowbar;v4&gt;`] 
+| An input iterator that can be used for traversing IPv4 addresses&period;
+| xref:boost/asio/ip/basic_address_iterator-07.adoc[`basic&lowbar;address&lowbar;iterator&lt;address&lowbar;v6&gt;`] 
+| An input iterator that can be used for traversing IPv6 addresses&period;
+| xref:boost/asio/ip/basic_address_range-0e.adoc[`basic&lowbar;address&lowbar;range`] 
+| 
+| xref:boost/asio/ip/basic_address_range-02.adoc[`basic&lowbar;address&lowbar;range&lt;address&lowbar;v4&gt;`] 
+| Represents a range of IPv4 addresses&period;
+| xref:boost/asio/ip/basic_address_range-0b.adoc[`basic&lowbar;address&lowbar;range&lt;address&lowbar;v6&gt;`] 
+| Represents a range of IPv6 addresses&period;
+| xref:boost/asio/ip/basic_endpoint.adoc[`basic&lowbar;endpoint`] 
+| Describes an endpoint for a version&hyphen;independent IP socket&period;
+| xref:boost/asio/ip/basic_resolver.adoc[`basic&lowbar;resolver`] 
+| Provides endpoint resolution functionality&period;
+| xref:boost/asio/ip/basic_resolver_entry.adoc[`basic&lowbar;resolver&lowbar;entry`] 
+| An entry produced by a resolver&period;
+| xref:boost/asio/ip/basic_resolver_iterator.adoc[`basic&lowbar;resolver&lowbar;iterator`] 
+| An iterator over the entries produced by a resolver&period;
+| xref:boost/asio/ip/basic_resolver_query.adoc[`basic&lowbar;resolver&lowbar;query`] 
+| An query to be passed to a resolver&period;
+| xref:boost/asio/ip/basic_resolver_results.adoc[`basic&lowbar;resolver&lowbar;results`] 
+| A range of entries produced by a resolver&period;
+| xref:boost/asio/ip/icmp.adoc[`icmp`] 
+| Encapsulates the flags needed for ICMP&period;
+| xref:boost/asio/ip/network_v4.adoc[`network&lowbar;v4`] 
+| Represents an IPv4 network&period;
+| xref:boost/asio/ip/network_v6.adoc[`network&lowbar;v6`] 
+| Represents an IPv6 network&period;
+| xref:boost/asio/ip/resolver_base.adoc[`resolver&lowbar;base`] 
+| The resolver&lowbar;base class is used as a base for the basic&lowbar;resolver class templates to provide a common place to define the flag constants&period;
+| xref:boost/asio/ip/resolver_query_base.adoc[`resolver&lowbar;query&lowbar;base`] 
+| The resolver&lowbar;query&lowbar;base class is used as a base for the basic&lowbar;resolver&lowbar;query class templates to provide a common place to define the flag constants&period;
+| xref:boost/asio/ip/tcp.adoc[`tcp`] 
+| Encapsulates the flags needed for TCP&period;
+| xref:boost/asio/ip/udp.adoc[`udp`] 
+| Encapsulates the flags needed for UDP&period;
+| xref:boost/asio/ip/address_v4_iterator.adoc[`address&lowbar;v4&lowbar;iterator`] 
+| An input iterator that can be used for traversing IPv4 addresses&period;
+| xref:boost/asio/ip/address_v4_range.adoc[`address&lowbar;v4&lowbar;range`] 
+| Represents a range of IPv4 addresses&period;
+| xref:boost/asio/ip/address_v6_iterator.adoc[`address&lowbar;v6&lowbar;iterator`] 
+| An input iterator that can be used for traversing IPv6 addresses&period;
+| xref:boost/asio/ip/address_v6_range.adoc[`address&lowbar;v6&lowbar;range`] 
+| Represents a range of IPv6 addresses&period;
+| xref:boost/asio/ip/port_type.adoc[`port&lowbar;type`] 
+| Type used for storing port numbers&period;
+| xref:boost/asio/ip/scope_id_type.adoc[`scope&lowbar;id&lowbar;type`] 
+| Type used for storing IPv6 scope IDs&period;
+| xref:boost/asio/ip/v6_only.adoc[`v6&lowbar;only`] 
+| 
+|===
+
+== Enums
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/v4_mapped_t.adoc[`v4&lowbar;mapped&lowbar;t`] 
+| Tag type used for distinguishing overloads that deal in IPv4&hyphen;mapped IPv6 addresses&period;
+|===
+
+== Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/host_name-01.adoc[`host&lowbar;name`] 
+| Get the current host name&period;
+| xref:boost/asio/ip/make_address-07.adoc[`make&lowbar;address`] 
+| Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+| xref:boost/asio/ip/make_address_v4-06c.adoc[`make&lowbar;address&lowbar;v4`] 
+| `make&lowbar;address&lowbar;v4` overloads
+| xref:boost/asio/ip/make_address_v6-078.adoc[`make&lowbar;address&lowbar;v6`] 
+| `make&lowbar;address&lowbar;v6` overloads
+| xref:boost/asio/ip/make_network_v4-01c.adoc[`make&lowbar;network&lowbar;v4`] 
+| `make&lowbar;network&lowbar;v4` overloads
+| xref:boost/asio/ip/make_network_v6-0c1.adoc[`make&lowbar;network&lowbar;v6`] 
+| `make&lowbar;network&lowbar;v6` overloads
+| xref:boost/asio/ip/operator_bitand.adoc[`operator&amp;`] 
+| 
+| xref:boost/asio/ip/operator_and_eq.adoc[`operator&amp;&equals;`] 
+| 
+| xref:boost/asio/ip/operator_xor.adoc[`operator&circ;`] 
+| 
+| xref:boost/asio/ip/operator_xor_eq.adoc[`operator&circ;&equals;`] 
+| 
+| xref:boost/asio/ip/operator_bitor.adoc[`operator&verbar;`] 
+| 
+| xref:boost/asio/ip/operator_or_eq.adoc[`operator&verbar;&equals;`] 
+| 
+| xref:boost/asio/ip/operator_bitnot.adoc[`operator&#126;`] 
+| 
+| xref:boost/asio/ip/operator_lshift-09.adoc[`operator&lt;&lt;`] 
+| Stream insertion operators
+| xref:boost/asio/ip/operator_eq-0dd.adoc[`operator&equals;&equals;`] 
+| Equality operators
+| xref:boost/asio/ip/operator_not_eq-00.adoc[`operator!&equals;`] 
+| Inequality operators
+| xref:boost/asio/ip/operator_lt-07f.adoc[`operator&lt;`] 
+| Less&hyphen;than operators
+| xref:boost/asio/ip/operator_le-01.adoc[`operator&lt;&equals;`] 
+| Less&hyphen;than&hyphen;or&hyphen;equal operators
+| xref:boost/asio/ip/operator_gt-0a.adoc[`operator&gt;`] 
+| Greater&hyphen;than operators
+| xref:boost/asio/ip/operator_ge-05.adoc[`operator&gt;&equals;`] 
+| Greater&hyphen;than&hyphen;or&hyphen;equal operators
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

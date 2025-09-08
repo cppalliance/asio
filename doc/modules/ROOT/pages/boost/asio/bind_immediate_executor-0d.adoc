@@ -1,0 +1,24 @@
+[#boost-asio-bind_immediate_executor-0d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::bind&lowbar;immediate&lowbar;executor
+:relfileprefix: ../../
+:mrdocs:
+
+Create a partial completion token that associates an executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor&gt;
+xref:boost/asio/partial_immediate_executor_binder.adoc[partial&lowbar;immediate&lowbar;executor&lowbar;binder&lt;Executor&gt;]
+bind&lowbar;immediate&lowbar;executor(Executor const& ex);
+----
+
+== Return Value
+
+A function object type that adapts a `completion&lowbar;token` to specify that the completion handler should have the supplied executor as its associated immediate executor&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

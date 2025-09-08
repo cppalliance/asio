@@ -1,0 +1,38 @@
+[#boost-asio-redirect_error-08]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::redirect&lowbar;error
+:relfileprefix: ../../
+:mrdocs:
+
+`redirect&lowbar;error` overloads
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;redirect&lowbar;error&period;hpp&gt;`
+
+Create a partial completion token adapter that captures error&lowbar;code values to a variable&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/partial_redirect_error.adoc[partial&lowbar;redirect&lowbar;error]
+xref:boost/asio/redirect_error-00.adoc[redirect&lowbar;error](boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/redirect_error-00.adoc[_» more&period;&period;&period;_]#
+
+Adapt a `completion&lowbar;token` to capture error&lowbar;code values to a variable&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename CompletionToken&gt;
+xref:boost/asio/redirect_error_t.adoc[redirect&lowbar;error&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;&gt;]
+xref:boost/asio/redirect_error-04.adoc[redirect&lowbar;error](
+    CompletionToken&& completion&lowbar;token,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/redirect_error-04.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

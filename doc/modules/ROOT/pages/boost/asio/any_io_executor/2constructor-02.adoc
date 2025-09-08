@@ -1,0 +1,19 @@
+[#boost-asio-any_io_executor-2constructor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]::any&lowbar;io&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;io&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename OtherAnyExecutor&gt;
+any&lowbar;io&lowbar;executor(
+    OtherAnyExecutor e,
+    int = 0);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

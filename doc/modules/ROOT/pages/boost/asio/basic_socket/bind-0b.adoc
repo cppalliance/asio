@@ -1,0 +1,50 @@
+[#boost-asio-basic_socket-bind-0b]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket.adoc[basic&lowbar;socket]::bind
+:relfileprefix: ../../../
+:mrdocs:
+
+Bind the socket to the given local endpoint&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+boost::system::error&lowbar;code
+bind(
+    xref:boost/asio/basic_socket/endpoint_type.adoc[endpoint&lowbar;type] const& endpoint,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function binds the socket to the specified endpoint on the local machine&period;
+
+== Example
+[,cpp]
+----
+boost::asio::ip::tcp::socket socket(my_context);
+socket.open(boost::asio::ip::tcp::v4());
+boost::system::error_code ec;
+socket.bind(boost::asio::ip::tcp::endpoint(
+      boost::asio::ip::tcp::v4(), 12345), ec);
+if (ec)
+{
+  // An error occurred.
+}
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *endpoint*
+| An endpoint on the local machine to which the socket will be bound&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,86 @@
+[#boost-asio-basic_writable_pipe]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::basic&lowbar;writable&lowbar;pipe
+:relfileprefix: ../../
+:mrdocs:
+
+Provides pipe functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;writable&lowbar;pipe&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;writable&lowbar;pipe;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_writable_pipe/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the pipe type to another executor&period;
+| xref:boost/asio/basic_writable_pipe/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/basic_writable_pipe/lowest_layer_type.adoc[`lowest&lowbar;layer&lowbar;type`] 
+| A basic&lowbar;writable&lowbar;pipe is always the lowest layer&period;
+| xref:boost/asio/basic_writable_pipe/native_handle_type.adoc[`native&lowbar;handle&lowbar;type`] 
+| 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/basic_writable_pipe/2constructor-0e5.adoc[`basic&lowbar;writable&lowbar;pipe`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/basic_writable_pipe/2destructor.adoc[`&#126;basic&lowbar;writable&lowbar;pipe`] [.small]#[destructor]#
+| Destroys the pipe&period;
+| xref:boost/asio/basic_writable_pipe/operator_assign-0e.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/basic_writable_pipe/assign-06.adoc[`assign`] 
+| 
+| xref:boost/asio/basic_writable_pipe/async_write_some.adoc[`async&lowbar;write&lowbar;some`] 
+| Start an asynchronous write&period;
+| xref:boost/asio/basic_writable_pipe/cancel-0b.adoc[`cancel`] 
+| Cancel all asynchronous operations associated with the pipe&period;
+| xref:boost/asio/basic_writable_pipe/close-0d.adoc[`close`] 
+| Close the pipe&period;
+| xref:boost/asio/basic_writable_pipe/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/basic_writable_pipe/is_open.adoc[`is&lowbar;open`] 
+| Determine whether the pipe is open&period;
+| xref:boost/asio/basic_writable_pipe/lowest_layer-02.adoc[`lowest&lowbar;layer`] 
+| `lowest&lowbar;layer` overloads
+| xref:boost/asio/basic_writable_pipe/native_handle.adoc[`native&lowbar;handle`] 
+| Get the native pipe representation&period;
+| xref:boost/asio/basic_writable_pipe/release-0a.adoc[`release`] 
+| 
+| xref:boost/asio/basic_writable_pipe/write_some-02.adoc[`write&lowbar;some`] 
+| Write some data to the pipe&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/basic_writable_pipe.adoc[boost::asio::basic&lowbar;writable&lowbar;pipe]`
+| Provides pipe functionality&period;
+|===
+
+== Description
+
+The basic&lowbar;writable&lowbar;pipe class provides a wrapper over pipe functionality&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,61 @@
+[#boost-asio-read-05]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read
+:relfileprefix: ../../
+:mrdocs:
+
+Attempt to read a certain amount of data from a stream before returning&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename Allocator&gt;
+size&lowbar;t
+read(
+    SyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Description
+
+This function is used to read a certain number of bytes of data from a stream&period; The call will block until one of the following conditions is true&colon;
+
+* The supplied buffer is full (that is, it has reached maximum size)&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the stream&apos;s read&lowbar;some function&period;
+
+[NOTE]
+This overload is equivalent to calling&colon;
+
+[,cpp]
+----
+boost::asio::read(
+    s, b,
+    boost::asio::transfer_all(), ec); 
+----
+== Return Value
+
+The number of bytes transferred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream from which the data is to be read&period; The type must support the SyncReadStream concept&period;
+| *b*
+| The basic&lowbar;streambuf object into which the data will be read&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

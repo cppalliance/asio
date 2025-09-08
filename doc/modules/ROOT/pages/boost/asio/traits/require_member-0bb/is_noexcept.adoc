@@ -1,0 +1,18 @@
+[#boost-asio-traits-require_member-0bb-is_noexcept]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::xref:boost/asio/traits/require_member-0bb.adoc[require&lowbar;member&lt;&sol;&ast; implementation-defined &ast;&sol;, &sol;&ast; implementation-defined &ast;&sol;&gt;]::is&lowbar;noexcept
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;blocking&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+inline constexpr static
+bool is&lowbar;noexcept = is&lowbar;nothrow&lowbar;require&lt;const Executor&amp;,
+      execution&colon;&colon;detail&colon;&colon;blocking&colon;&colon;never&lowbar;t&lt;I&gt;&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

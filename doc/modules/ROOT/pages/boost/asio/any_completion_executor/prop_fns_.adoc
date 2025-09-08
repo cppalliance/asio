@@ -1,0 +1,16 @@
+[#boost-asio-any_completion_executor-prop_fns_]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_completion_executor.adoc[any&lowbar;completion&lowbar;executor]::prop&lowbar;fns&lowbar;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;any&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+&sol;&ast; implementation-defined &ast;&sol; const* prop&lowbar;fns&lowbar;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

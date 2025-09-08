@@ -1,0 +1,61 @@
+[#boost-asio-basic_socket_acceptor-io_control-01]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_acceptor.adoc[basic&lowbar;socket&lowbar;acceptor]::io&lowbar;control
+:relfileprefix: ../../../
+:mrdocs:
+
+Perform an IO control command on the acceptor&period;
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;acceptor&period;hpp&gt;`
+
+Perform an IO control command on the acceptor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename IoControlCommand&gt;
+void
+xref:boost/asio/basic_socket_acceptor/io_control-0e.adoc[io&lowbar;control](IoControlCommand& command);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/io_control-0e.adoc[_» more&period;&period;&period;_]#
+
+Perform an IO control command on the acceptor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename IoControlCommand&gt;
+boost::system::error&lowbar;code
+xref:boost/asio/basic_socket_acceptor/io_control-02.adoc[io&lowbar;control](
+    IoControlCommand& command,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/basic_socket_acceptor/io_control-02.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *command*
+| The IO control command to be performed on the acceptor&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

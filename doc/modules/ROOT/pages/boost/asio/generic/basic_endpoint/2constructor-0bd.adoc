@@ -1,0 +1,67 @@
+[#boost-asio-generic-basic_endpoint-2constructor-0bd]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/generic.adoc[generic]::xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint]::basic&lowbar;endpoint
+:relfileprefix: ../../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;generic&sol;basic&lowbar;endpoint&period;hpp&gt;`
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/generic/basic_endpoint/2constructor-0f7.adoc[basic&lowbar;endpoint]() noexcept;
+----
+
+[.small]#xref:boost/asio/generic/basic_endpoint/2constructor-0f7.adoc[_» more&period;&period;&period;_]#
+
+Copy constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/generic/basic_endpoint/2constructor-00.adoc[basic&lowbar;endpoint](xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint] const& other);
+----
+
+[.small]#xref:boost/asio/generic/basic_endpoint/2constructor-00.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/generic/basic_endpoint/2constructor-0bf.adoc[basic&lowbar;endpoint](xref:boost/asio/generic/basic_endpoint.adoc[basic&lowbar;endpoint]&& other);
+----
+
+[.small]#xref:boost/asio/generic/basic_endpoint/2constructor-0bf.adoc[_» more&period;&period;&period;_]#
+
+Construct an endpoint from the specific endpoint type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Endpoint&gt;
+xref:boost/asio/generic/basic_endpoint/2constructor-0fa.adoc[basic&lowbar;endpoint](Endpoint const& endpoint);
+----
+
+[.small]#xref:boost/asio/generic/basic_endpoint/2constructor-0fa.adoc[_» more&period;&period;&period;_]#
+
+Construct an endpoint from the specified socket address&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/generic/basic_endpoint/2constructor-0e.adoc[basic&lowbar;endpoint](
+    void const* socket&lowbar;address,
+    size&lowbar;t socket&lowbar;address&lowbar;size,
+    int socket&lowbar;protocol = 0);
+----
+
+[.small]#xref:boost/asio/generic/basic_endpoint/2constructor-0e.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,30 @@
+[#boost-asio-any_io_executor-2constructor-0c0]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]::any&lowbar;io&lowbar;executor
+:relfileprefix: ../../../
+:mrdocs:
+
+Construct to point to the same target as another any&lowbar;executor&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;io&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+any&lowbar;io&lowbar;executor(
+    std::nothrow&lowbar;t,
+    xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor] const& e) noexcept;
+----
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| Polymorphic executor type for use with I&sol;O objects&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

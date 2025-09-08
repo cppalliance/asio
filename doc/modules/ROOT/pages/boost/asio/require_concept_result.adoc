@@ -1,0 +1,27 @@
+[#boost-asio-require_concept_result]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::require&lowbar;concept&lowbar;result
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;require&lowbar;concept&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Property&gt;
+struct require&lowbar;concept&lowbar;result;
+----
+
+== Types
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/require_concept_result/type.adoc[`type`] 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

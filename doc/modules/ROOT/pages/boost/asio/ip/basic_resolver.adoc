@@ -1,0 +1,97 @@
+[#boost-asio-ip-basic_resolver]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::basic&lowbar;resolver
+:relfileprefix: ../../../
+:mrdocs:
+
+Provides endpoint resolution functionality&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename InternetProtocol,
+    typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class basic&lowbar;resolver
+    : public xref:boost/asio/ip/resolver_base.adoc[resolver&lowbar;base]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/resolver_base.adoc[resolver&lowbar;base]`
+| The resolver&lowbar;base class is used as a base for the basic&lowbar;resolver class templates to provide a common place to define the flag constants&period;
+|===
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver/rebind_executor.adoc[`rebind&lowbar;executor`] 
+| Rebinds the resolver type to another executor&period;
+| xref:boost/asio/ip/basic_resolver/endpoint_type.adoc[`endpoint&lowbar;type`] 
+| The endpoint type&period;
+| xref:boost/asio/ip/basic_resolver/executor_type.adoc[`executor&lowbar;type`] 
+| The type of the executor associated with the object&period;
+| xref:boost/asio/ip/basic_resolver/protocol_type.adoc[`protocol&lowbar;type`] 
+| The protocol type&period;
+| xref:boost/asio/ip/basic_resolver/results_type.adoc[`results&lowbar;type`] 
+| The results type&period;
+|===
+
+== Enums
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/ip/resolver_base/flags.adoc[`flags`] 
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/ip/basic_resolver/2constructor-07.adoc[`basic&lowbar;resolver`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/ip/basic_resolver/2destructor.adoc[`&#126;basic&lowbar;resolver`] [.small]#[destructor]#
+| Destroys the resolver&period;
+| xref:boost/asio/ip/basic_resolver/operator_assign-0e.adoc[`operator&equals;`] 
+| Move&hyphen;assign a basic&lowbar;resolver from another&period;
+| xref:boost/asio/ip/basic_resolver/async_resolve-05.adoc[`async&lowbar;resolve`] 
+| `async&lowbar;resolve` overloads
+| xref:boost/asio/ip/basic_resolver/cancel.adoc[`cancel`] 
+| Cancel any asynchronous operations that are waiting on the resolver&period;
+| xref:boost/asio/ip/basic_resolver/get_executor.adoc[`get&lowbar;executor`] 
+| Get the executor associated with the object&period;
+| xref:boost/asio/ip/basic_resolver/resolve-00.adoc[`resolve`] 
+| `resolve` overloads
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/ip/basic_resolver.adoc[boost::asio::ip::basic&lowbar;resolver]`
+| Provides endpoint resolution functionality&period;
+|===
+
+== Description
+
+The basic&lowbar;resolver class template provides the ability to resolve a query to a list of endpoints&period;
+
+== Thread Safety
+_Distinct_ _objects&colon;_ Safe&period; _Shared_ _objects&colon;_ Unsafe&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

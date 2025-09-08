@@ -1,0 +1,20 @@
+[#boost-asio-any_io_executor-require-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]::xref:boost/asio/any_io_executor/require-08.adoc[require]&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;io&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;&gt;
+xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]
+xref:boost/asio/any_io_executor/require-08.adoc[require]&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;(
+    &sol;&ast; implementation-defined &ast;&sol; const&,
+    int = 0) const;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

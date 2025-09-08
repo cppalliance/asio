@@ -1,0 +1,18 @@
+[#boost-asio-thread_pool-2constructor-02]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::thread&lowbar;pool
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructs a pool with an automatically determined number of threads&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+thread&lowbar;pool();
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

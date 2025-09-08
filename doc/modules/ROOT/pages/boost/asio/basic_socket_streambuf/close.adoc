@@ -1,0 +1,23 @@
+[#boost-asio-basic_socket_streambuf-close]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]::close
+:relfileprefix: ../../../
+:mrdocs:
+
+Close the connection&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;streambuf&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_socket_streambuf.adoc[basic&lowbar;socket&lowbar;streambuf]*
+close();
+----
+
+== Return Value
+
+`this` if a connection was successfully established, a null pointer otherwise&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

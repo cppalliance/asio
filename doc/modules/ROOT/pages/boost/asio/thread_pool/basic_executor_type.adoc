@@ -1,0 +1,73 @@
+[#boost-asio-thread_pool-basic_executor_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/thread_pool.adoc[thread&lowbar;pool]::basic&lowbar;executor&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+Executor implementation type used to submit functions to a thread pool&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;thread&lowbar;pool&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Allocator,
+    unsigned int Bits&gt;
+class basic&lowbar;executor&lowbar;type;
+----
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/thread_pool/basic_executor_type/2constructor-07.adoc[`basic&lowbar;executor&lowbar;type`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/thread_pool/basic_executor_type/2destructor.adoc[`&#126;basic&lowbar;executor&lowbar;type`] [.small]#[destructor]#
+| Destructor&period;
+| xref:boost/asio/thread_pool/basic_executor_type/operator_assign-0e.adoc[`operator&equals;`] 
+| Assignment operators
+| xref:boost/asio/thread_pool/basic_executor_type/context.adoc[`context`] 
+| Obtain the underlying execution context&period;
+| xref:boost/asio/thread_pool/basic_executor_type/defer.adoc[`defer`] 
+| Request the thread pool to invoke the given function object&period;
+| xref:boost/asio/thread_pool/basic_executor_type/dispatch.adoc[`dispatch`] 
+| Request the thread pool to invoke the given function object&period;
+| xref:boost/asio/thread_pool/basic_executor_type/execute.adoc[`execute`] 
+| Execution function&period;
+| xref:boost/asio/thread_pool/basic_executor_type/on_work_finished.adoc[`on&lowbar;work&lowbar;finished`] 
+| Inform the thread pool that some work is no longer outstanding&period;
+| xref:boost/asio/thread_pool/basic_executor_type/on_work_started.adoc[`on&lowbar;work&lowbar;started`] 
+| Inform the thread pool that it has some outstanding work to do&period;
+| xref:boost/asio/thread_pool/basic_executor_type/post.adoc[`post`] 
+| Request the thread pool to invoke the given function object&period;
+| xref:boost/asio/thread_pool/basic_executor_type/running_in_this_thread.adoc[`running&lowbar;in&lowbar;this&lowbar;thread`] 
+| Determine whether the thread pool is running in the current thread&period;
+|===
+
+== Friends
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/thread_pool/basic_executor_type.adoc[boost::asio::thread&lowbar;pool::basic&lowbar;executor&lowbar;type]`
+| Executor implementation type used to submit functions to a thread pool&period;
+| `xref:boost/asio/thread_pool.adoc[boost::asio::thread&lowbar;pool]`
+| A simple fixed&hyphen;size thread pool&period;
+| `xref:boost/asio/operator_not_eq-0b7.adoc[boost::asio::operator!&equals;]`
+| Compare two executors for inequality&period;
+| `xref:boost/asio/operator_eq-01d.adoc[boost::asio::operator&equals;&equals;]`
+| Compare two executors for equality&period;
+| `boost&lowbar;asio&lowbar;query&lowbar;fn::impl`
+| 
+| `boost&lowbar;asio&lowbar;prefer&lowbar;fn::impl`
+| 
+| `boost&lowbar;asio&lowbar;require&lowbar;fn::impl`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

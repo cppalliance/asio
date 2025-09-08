@@ -1,0 +1,33 @@
+[#boost-asio-basic_socket_iostream-expires_after]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_socket_iostream.adoc[basic&lowbar;socket&lowbar;iostream]::expires&lowbar;after
+:relfileprefix: ../../../
+:mrdocs:
+
+Set the stream&apos;s expiry time relative to now&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;socket&lowbar;iostream&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+void
+expires&lowbar;after(xref:boost/asio/basic_socket_iostream/duration.adoc[duration] const& expiry&lowbar;time);
+----
+
+== Description
+
+This function sets the expiry time associated with the stream&period; Stream operations performed after this time (where the operations cannot be completed using the internal buffers) will fail with the error boost&colon;&colon;asio&colon;&colon;error&colon;&colon;operation&lowbar;aborted&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *expiry&lowbar;time*
+| The expiry time to be used for the timer&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -1,0 +1,16 @@
+[#boost-asio-any_io_executor-supportable_properties_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]::supportable&lowbar;properties&lowbar;type
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;any&lowbar;io&lowbar;executor&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef void supportable&lowbar;properties&lowbar;type(xref:boost/asio/execution/context_as_t-0aa.adoc[execution::context&lowbar;as&lowbar;t&lt;execution&lowbar;context&&gt;], &sol;&ast; implementation-defined &ast;&sol;, xref:boost/asio/execution/prefer_only.adoc[execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;], xref:boost/asio/execution/prefer_only.adoc[execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;], xref:boost/asio/execution/prefer_only.adoc[execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;], xref:boost/asio/execution/prefer_only.adoc[execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;], xref:boost/asio/execution/prefer_only.adoc[execution::prefer&lowbar;only&lt;&sol;&ast; implementation-defined &ast;&sol;&gt;]);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

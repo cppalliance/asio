@@ -1,0 +1,29 @@
+[#boost-asio-register_buffers-0f]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::register&lowbar;buffers
+:relfileprefix: ../../
+:mrdocs:
+
+Register buffers with an execution context&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&lowbar;registration&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename MutableBufferSequence&gt;
+xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence&gt;]
+register&lowbar;buffers(
+    Executor const& ex,
+    MutableBufferSequence const& buffer&lowbar;sequence,
+    int = 0);
+----
+
+== Return Value
+
+Automatically registers and unregistered buffers with an execution context&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

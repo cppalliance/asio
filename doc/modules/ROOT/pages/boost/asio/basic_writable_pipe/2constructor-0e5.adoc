@@ -1,0 +1,112 @@
+[#boost-asio-basic_writable_pipe-2constructor-0e5]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]::basic&lowbar;writable&lowbar;pipe
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;basic&lowbar;writable&lowbar;pipe&period;hpp&gt;`
+
+Move&hyphen;construct a basic&lowbar;writable&lowbar;pipe from another&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_writable_pipe/2constructor-01.adoc[basic&lowbar;writable&lowbar;pipe](xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe]&& other);
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/2constructor-01.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;writable&lowbar;pipe without opening it&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+explicit
+xref:boost/asio/basic_writable_pipe/2constructor-0d5f.adoc[basic&lowbar;writable&lowbar;pipe](xref:boost/asio/basic_writable_pipe/executor_type.adoc[executor&lowbar;type] const& ex);
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/2constructor-0d5f.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;writable&lowbar;pipe on an existing native pipe&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/basic_writable_pipe/2constructor-05.adoc[basic&lowbar;writable&lowbar;pipe](
+    xref:boost/asio/basic_writable_pipe/executor_type.adoc[executor&lowbar;type] const& ex,
+    xref:boost/asio/basic_writable_pipe/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;pipe);
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/2constructor-05.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;writable&lowbar;pipe without opening it&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_writable_pipe/2constructor-02.adoc[basic&lowbar;writable&lowbar;pipe](
+    ExecutionContext& context,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/2constructor-02.adoc[_» more&period;&period;&period;_]#
+
+Move&hyphen;construct a basic&lowbar;writable&lowbar;pipe from a pipe of another executor type&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor1&gt;
+xref:boost/asio/basic_writable_pipe/2constructor-0d5a.adoc[basic&lowbar;writable&lowbar;pipe](
+    xref:boost/asio/basic_writable_pipe.adoc[basic&lowbar;writable&lowbar;pipe&lt;Executor1&gt;]&& other,
+    xref:boost/asio/defaulted_constraint.adoc[defaulted&lowbar;constraint] = defaulted&lowbar;constraint());
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/2constructor-0d5a.adoc[_» more&period;&period;&period;_]#
+
+Construct a basic&lowbar;writable&lowbar;pipe on an existing native pipe&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename ExecutionContext&gt;
+xref:boost/asio/basic_writable_pipe/2constructor-0ed.adoc[basic&lowbar;writable&lowbar;pipe](
+    ExecutionContext& context,
+    xref:boost/asio/basic_writable_pipe/native_handle_type.adoc[native&lowbar;handle&lowbar;type] const& native&lowbar;pipe,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/basic_writable_pipe/2constructor-0ed.adoc[_» more&period;&period;&period;_]#
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *other*
+| The other basic&lowbar;writable&lowbar;pipe object from which the move will occur&period;
+| *ex*
+| The I&sol;O executor that the pipe will use, by default, to dispatch handlers for any asynchronous operations performed on the pipe&period;
+| *native&lowbar;pipe*
+| A native pipe&period;
+| *context*
+| An execution context which provides the I&sol;O executor that the pipe will use, by default, to dispatch handlers for any asynchronous operations performed on the pipe&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

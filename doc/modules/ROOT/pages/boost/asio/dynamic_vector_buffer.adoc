@@ -1,0 +1,77 @@
+[#boost-asio-dynamic_vector_buffer]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::dynamic&lowbar;vector&lowbar;buffer
+:relfileprefix: ../../
+:mrdocs:
+
+Adapt a vector to the DynamicBuffer requirements&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Elem,
+    typename Allocator&gt;
+class dynamic&lowbar;vector&lowbar;buffer;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/dynamic_vector_buffer/const_buffers_type.adoc[`const&lowbar;buffers&lowbar;type`] 
+| The type used to represent a sequence of constant buffers that refers to the underlying memory&period;
+| xref:boost/asio/dynamic_vector_buffer/mutable_buffers_type.adoc[`mutable&lowbar;buffers&lowbar;type`] 
+| The type used to represent a sequence of mutable buffers that refers to the underlying memory&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/dynamic_vector_buffer/2constructor-071.adoc[`dynamic&lowbar;vector&lowbar;buffer`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/dynamic_vector_buffer/capacity.adoc[`capacity`] 
+| Get the maximum size that the buffer may grow to without triggering reallocation&period;
+| xref:boost/asio/dynamic_vector_buffer/commit.adoc[`commit`] 
+| *DynamicBuffer&lowbar;v1&colon;* Move bytes from the output sequence to the input sequence&period;
+| xref:boost/asio/dynamic_vector_buffer/consume.adoc[`consume`] 
+| *DynamicBuffer&lowbar;v1&colon;* Remove characters from the input sequence&period; *DynamicBuffer&lowbar;v2&colon;* Consume the specified number of bytes from the beginning of the underlying memory&period;
+| xref:boost/asio/dynamic_vector_buffer/data-00b.adoc[`data`] 
+| `data` overloads
+| xref:boost/asio/dynamic_vector_buffer/grow.adoc[`grow`] 
+| *DynamicBuffer&lowbar;v2&colon;* Grow the underlying memory by the specified number of bytes&period;
+| xref:boost/asio/dynamic_vector_buffer/max_size.adoc[`max&lowbar;size`] 
+| Get the maximum size of the dynamic buffer&period;
+| xref:boost/asio/dynamic_vector_buffer/prepare.adoc[`prepare`] 
+| *DynamicBuffer&lowbar;v1&colon;* Get a list of buffers that represents the output sequence, with the given size&period;
+| xref:boost/asio/dynamic_vector_buffer/shrink.adoc[`shrink`] 
+| *DynamicBuffer&lowbar;v2&colon;* Shrink the underlying memory by the specified number of bytes&period;
+| xref:boost/asio/dynamic_vector_buffer/size.adoc[`size`] 
+| *DynamicBuffer&lowbar;v1&colon;* Get the size of the input sequence&period; *DynamicBuffer&lowbar;v2&colon;* Get the current size of the underlying memory&period;
+|===
+
+== Non-Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/dynamic_buffer-03.adoc[`dynamic&lowbar;buffer`]
+| Create a new dynamic buffer that represents the given vector&period;
+| xref:boost/asio/dynamic_buffer-0e.adoc[`dynamic&lowbar;buffer`]
+| Create a new dynamic buffer that represents the given vector&period;
+|===
+
+== Description
+
+Requires that &period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#
