@@ -1,0 +1,16 @@
+[#boost-asio-use_awaitable]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::use&lowbar;awaitable
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;awaitable&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+inline constexpr xref:boost/asio/use_awaitable_t.adoc[use&lowbar;awaitable&lowbar;t] use&lowbar;awaitable = use&lowbar;awaitable(0, 0, 0);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

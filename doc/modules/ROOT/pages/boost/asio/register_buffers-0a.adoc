@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;buffer&lowbar;registration&period;hpp&gt;`
 template&lt;
     typename ExecutionContext,
     typename MutableBufferSequence&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence&gt;]
 register&lowbar;buffers(
     ExecutionContext& ctx,

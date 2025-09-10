@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;
 template&lt;
     typename CancellationSlot,
     typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, CancellationSlot&gt;]
 bind&lowbar;cancellation&lowbar;slot(
     CancellationSlot const& s,

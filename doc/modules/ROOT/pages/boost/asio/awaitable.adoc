@@ -1,0 +1,55 @@
+[#boost-asio-awaitable]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::awaitable
+:relfileprefix: ../../
+:mrdocs:
+
+The return type of a coroutine or asynchronous operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;awaitable&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+class awaitable;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/awaitable/executor_type.adoc[`executor&lowbar;type`] 
+| The executor type that will be used for the coroutine&period;
+| xref:boost/asio/awaitable/value_type.adoc[`value&lowbar;type`] 
+| The type of the awaited value&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/awaitable/2constructor-022.adoc[`awaitable`]         [.small]#[constructor]#
+| Constructors
+| xref:boost/asio/awaitable/2destructor.adoc[`&#126;awaitable`] [.small]#[destructor]#
+| Destructor
+| xref:boost/asio/awaitable/operator_assign.adoc[`operator&equals;`] 
+| Move assignment&period;
+| xref:boost/asio/awaitable/await_ready.adoc[`await&lowbar;ready`] 
+| 
+| xref:boost/asio/awaitable/await_resume.adoc[`await&lowbar;resume`] 
+| 
+| xref:boost/asio/awaitable/await_suspend.adoc[`await&lowbar;suspend`] 
+| 
+| xref:boost/asio/awaitable/valid.adoc[`valid`] 
+| Checks if the awaitable refers to a future result&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

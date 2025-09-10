@@ -1,0 +1,17 @@
+[#boost-asio-disposition]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::disposition
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+concept disposition = is&lowbar;disposition&lt;T&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
 template&lt;
     typename PodType,
     size&lowbar;t N&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
 buffer(std::array&lt;PodType, N&gt;& data) noexcept;
 ----

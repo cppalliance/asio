@@ -1,0 +1,20 @@
+[#boost-asio-execution-prefer_only-static_query]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/prefer_only.adoc[prefer&lowbar;only]::static&lowbar;query
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;prefer&lowbar;only&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+constexpr
+static
+traits::static&lowbar;query&lt;T, InnerProperty&gt;::result&lowbar;type
+static&lowbar;query() noexcept(traits&colon;&colon;static&lowbar;query&lt;T, InnerProperty&gt;&colon;&colon;is&lowbar;noexcept);
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

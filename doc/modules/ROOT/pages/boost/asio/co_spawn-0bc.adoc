@@ -1,0 +1,93 @@
+[#boost-asio-co_spawn-0bc]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::co&lowbar;spawn
+:relfileprefix: ../../
+:mrdocs:
+
+Spawn a new coroutined&hyphen;based thread of execution&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;co&lowbar;spawn&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename ExecutionContext,
+    typename T,
+    typename AwaitableExecutor,
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(std::exception&lowbar;ptr, T)&gt;] CompletionToken = boost::asio::default&lowbar;completion&lowbar;token&lt;ExecutionContext::executor&lowbar;type&gt;::type&gt;
+auto
+co&lowbar;spawn(
+    ExecutionContext& ctx,
+    xref:boost/asio/awaitable.adoc[awaitable&lt;T, AwaitableExecutor&gt;] a,
+    CompletionToken&& token,
+    int = 0);
+----
+
+== Description
+
+[,cpp]
+----
+void handler(std::exception_ptr); 
+----
+== Completion Signature
+[,cpp]
+----
+void(std::exception_ptr, T) 
+----
+== Example
+[,cpp]
+----
+boost::asio::awaitable<std::size_t> echo(tcp::socket socket)
+{
+  std::size_t bytes_transferred = 0;
+
+  try
+  {
+    char data[1024];
+    for (;;)
+    {
+      std::size_t n = co_await socket.async_read_some(
+          boost::asio::buffer(data), boost::asio::use_awaitable);
+
+      co_await boost::asio::async_write(socket,
+          boost::asio::buffer(data, n), boost::asio::use_awaitable);
+
+      bytes_transferred += n;
+    }
+  }
+  catch (const std::exception&)
+  {
+  }
+
+  co_return bytes_transferred;
+}
+
+// ...
+
+boost::asio::co_spawn(my_io_context,
+  echo(std::move(my_tcp_socket)),
+  [](std::exception_ptr e, std::size_t n)
+  {
+    std::cout << "transferred " << n << "\n";
+  });
+----
+== Per&hyphen;Operation Cancellation
+The new thread of execution is created with a cancellation state that supports `cancellation&lowbar;type&colon;&colon;terminal` values only&period; To change the cancellation state, call boost&colon;&colon;asio&colon;&colon;this&lowbar;coro&colon;&colon;reset&lowbar;cancellation&lowbar;state&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ctx*
+| An execution context that will provide the executor to be used to schedule the new thread of execution&period;
+| *a*
+| The boost&colon;&colon;asio&colon;&colon;awaitable object that is the result of calling the coroutine&apos;s entry point function&period;
+| *token*
+| The `completion&lowbar;token` that will handle the notification that the thread of execution has completed&period; The function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

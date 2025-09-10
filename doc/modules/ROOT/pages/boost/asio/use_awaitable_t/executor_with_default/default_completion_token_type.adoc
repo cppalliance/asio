@@ -1,0 +1,18 @@
+[#boost-asio-use_awaitable_t-executor_with_default-default_completion_token_type]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/use_awaitable_t.adoc[use&lowbar;awaitable&lowbar;t]::xref:boost/asio/use_awaitable_t/executor_with_default.adoc[executor&lowbar;with&lowbar;default]::default&lowbar;completion&lowbar;token&lowbar;type
+:relfileprefix: ../../../../
+:mrdocs:
+
+Specify `use&lowbar;awaitable&lowbar;t` as the default completion token type&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;awaitable&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+typedef xref:boost/asio/use_awaitable_t.adoc[use&lowbar;awaitable&lowbar;t] default&lowbar;completion&lowbar;token&lowbar;type;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

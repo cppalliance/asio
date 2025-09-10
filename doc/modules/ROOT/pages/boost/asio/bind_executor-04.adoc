@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename ExecutionContext&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_executor_binder.adoc[partial&lowbar;executor&lowbar;binder&lt;ExecutionContext::executor&lowbar;type&gt;]
 bind&lowbar;executor(
     ExecutionContext& ctx,

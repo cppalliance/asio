@@ -17,6 +17,7 @@ template&lt;
     typename Executor,
     typename Rep,
     typename Period&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_cancel_after_timer.adoc[partial&lowbar;cancel&lowbar;after&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]
 cancel&lowbar;after(
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,

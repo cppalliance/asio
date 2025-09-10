@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;buffer&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
 buffer(
     T& data,

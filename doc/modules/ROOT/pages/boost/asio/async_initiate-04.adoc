@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
 ----
 template&lt;
     typename CompletionToken,
-    typename&period;&period;&period; Signatures,
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures,
     typename Initiation,
     typename&period;&period;&period; Args&gt;
 decltype(enable&lowbar;if&lowbar;t&lt;

@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;as&lowbar;tuple&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/partial_as_tuple.adoc[partial&lowbar;as&lowbar;tuple] as&lowbar;tuple = as&lowbar;tuple;
+inline constexpr xref:boost/asio/partial_as_tuple.adoc[partial&lowbar;as&lowbar;tuple] as&lowbar;tuple = as&lowbar;tuple;
 ----
 
 == Description

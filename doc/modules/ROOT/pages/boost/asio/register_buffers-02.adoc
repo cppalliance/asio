@@ -17,6 +17,7 @@ Register buffers with an execution context&period;
 template&lt;
     typename ExecutionContext,
     typename MutableBufferSequence&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence&gt;]
 xref:boost/asio/register_buffers-0a.adoc[register&lowbar;buffers](
     ExecutionContext& ctx,
@@ -34,6 +35,7 @@ Register buffers with an execution context&period;
 template&lt;
     typename Executor,
     typename MutableBufferSequence&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence&gt;]
 xref:boost/asio/register_buffers-0f.adoc[register&lowbar;buffers](
     Executor const& ex,
@@ -52,6 +54,7 @@ template&lt;
     typename ExecutionContext,
     typename MutableBufferSequence,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence, Allocator&gt;]
 xref:boost/asio/register_buffers-03.adoc[register&lowbar;buffers](
     ExecutionContext& ctx,
@@ -71,6 +74,7 @@ template&lt;
     typename Executor,
     typename MutableBufferSequence,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence, Allocator&gt;]
 xref:boost/asio/register_buffers-09.adoc[register&lowbar;buffers](
     Executor const& ex,

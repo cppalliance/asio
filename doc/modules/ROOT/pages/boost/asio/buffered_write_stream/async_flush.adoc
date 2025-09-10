@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;write&lowbar;stream&period;h
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename WriteHandler = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+template&lt;xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] WriteHandler = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;WriteHandler,
         void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
           declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;buffered&lowbar;flush&lt;Stream&gt;&gt;(),

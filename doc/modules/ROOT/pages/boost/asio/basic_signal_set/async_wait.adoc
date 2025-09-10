@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;basic&lowbar;signal&lowbar;set&period;hpp&gt
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename SignalToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+template&lt;xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, int)&gt;] SignalToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;SignalToken, void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, int)&gt;(
         declval&lt;initiate&lowbar;async&lowbar;wait&gt;(), token))
 async&lowbar;wait(SignalToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;());
@@ -57,7 +57,7 @@ Unlike the POSIX function `signal,` `async&lowbar;wait` executes its completion 
 | Name
 | Description
 | *token*
-| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the wait completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the wait completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], xref:boost/asio/use_awaitable.adoc[`use&lowbar;awaitable`], `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
 |===
 
 

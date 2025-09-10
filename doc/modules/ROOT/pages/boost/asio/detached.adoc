@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;detached&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/detached_t.adoc[detached&lowbar;t] detached = detached;
+inline constexpr xref:boost/asio/detached_t.adoc[detached&lowbar;t] detached = detached;
 ----
 
 == Description

@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;defer&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename NullaryToken&gt;
+template&lt;xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void()&gt;] NullaryToken&gt;
 decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
       declval&lt;detail&colon;&colon;initiate&lowbar;defer&gt;(), token))
 defer(NullaryToken&& token);

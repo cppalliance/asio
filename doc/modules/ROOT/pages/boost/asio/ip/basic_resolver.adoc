@@ -72,7 +72,7 @@ class basic&lowbar;resolver
 | Cancel any asynchronous operations that are waiting on the resolver&period;
 | xref:boost/asio/ip/basic_resolver/get_executor.adoc[`get&lowbar;executor`] 
 | Get the executor associated with the object&period;
-| xref:boost/asio/ip/basic_resolver/resolve-00.adoc[`resolve`] 
+| xref:boost/asio/ip/basic_resolver/resolve-003.adoc[`resolve`] 
 | `resolve` overloads
 |===
 

@@ -70,11 +70,15 @@ class address;
 | Description
 | xref:boost/asio/ip/make_address-00.adoc[`make&lowbar;address`]
 | Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+| xref:boost/asio/ip/make_address-04.adoc[`make&lowbar;address`]
+| Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
 | xref:boost/asio/ip/make_address-09.adoc[`make&lowbar;address`]
 | Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
 | xref:boost/asio/ip/make_address-0a.adoc[`make&lowbar;address`]
 | Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
 | xref:boost/asio/ip/make_address-0c.adoc[`make&lowbar;address`]
+| Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+| xref:boost/asio/ip/make_address-0d.adoc[`make&lowbar;address`]
 | Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
 | xref:boost/asio/ip/operator_lshift-08.adoc[`operator&lt;&lt;`]
 | Output an address as a string&period;

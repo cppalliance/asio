@@ -66,6 +66,8 @@ class network&lowbar;v4;
 | Description
 | xref:boost/asio/ip/make_network_v4-019.adoc[`make&lowbar;network&lowbar;v4`]
 | Create an IPv4 network from an address and prefix length&period;
+| xref:boost/asio/ip/make_network_v4-02.adoc[`make&lowbar;network&lowbar;v4`]
+| Create an IPv4 network from a string containing IP address and prefix length&period;
 | xref:boost/asio/ip/make_network_v4-03.adoc[`make&lowbar;network&lowbar;v4`]
 | Create an IPv4 network from a string containing IP address and prefix length&period;
 | xref:boost/asio/ip/make_network_v4-078.adoc[`make&lowbar;network&lowbar;v4`]
@@ -75,6 +77,8 @@ class network&lowbar;v4;
 | xref:boost/asio/ip/make_network_v4-0b3.adoc[`make&lowbar;network&lowbar;v4`]
 | Create an IPv4 network from a string containing IP address and prefix length&period;
 | xref:boost/asio/ip/make_network_v4-0be.adoc[`make&lowbar;network&lowbar;v4`]
+| Create an IPv4 network from a string containing IP address and prefix length&period;
+| xref:boost/asio/ip/make_network_v4-0e.adoc[`make&lowbar;network&lowbar;v4`]
 | Create an IPv4 network from a string containing IP address and prefix length&period;
 |===
 

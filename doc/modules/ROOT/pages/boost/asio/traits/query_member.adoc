@@ -1,0 +1,31 @@
+[#boost-asio-traits-query_member]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::query&lowbar;member
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;traits&sol;query&lowbar;member&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Property,
+    typename = void&gt;
+struct query&lowbar;member
+    : xref:boost/asio/traits/query_member_default.adoc[query&lowbar;member&lowbar;default&lt;T, Property&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/traits/query_member_default.adoc[query&lowbar;member&lowbar;default&lt;T, Property&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

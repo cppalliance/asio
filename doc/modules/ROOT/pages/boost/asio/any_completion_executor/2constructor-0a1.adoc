@@ -76,7 +76,7 @@ xref:boost/asio/any_completion_executor/2constructor-000.adoc[any&lowbar;complet
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename Executor&gt;
+template&lt;xref:boost/asio/execution/executor.adoc[boost::asio::execution::executor] Executor&gt;
 xref:boost/asio/any_completion_executor/2constructor-02.adoc[any&lowbar;completion&lowbar;executor](
     Executor e,
     int = 0);
@@ -98,7 +98,7 @@ xref:boost/asio/any_completion_executor/2constructor-002.adoc[any&lowbar;complet
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename Executor&gt;
+template&lt;xref:boost/asio/execution/executor.adoc[boost::asio::execution::executor] Executor&gt;
 xref:boost/asio/any_completion_executor/2constructor-0cb.adoc[any&lowbar;completion&lowbar;executor](
     std::nothrow&lowbar;t,
     Executor e,

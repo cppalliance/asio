@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;after&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_after_t.adoc[cancel&lowbar;after&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock, WaitTraits&gt;]
 operator()(CompletionToken&& completion&lowbar;token);
 ----

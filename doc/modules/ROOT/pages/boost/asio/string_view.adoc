@@ -1,0 +1,16 @@
+[#boost-asio-string_view]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::string&lowbar;view
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;string&lowbar;view&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+using std::string&lowbar;view;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

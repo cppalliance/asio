@@ -33,7 +33,7 @@ struct query&lowbar;member&lowbar;default
 |===
 | Name
 | Description
-| xref:boost/asio/traits/query_member-07a.adoc[`query&lowbar;member`]
+| xref:boost/asio/traits/query_member.adoc[`query&lowbar;member`]
 | 
 |===
 

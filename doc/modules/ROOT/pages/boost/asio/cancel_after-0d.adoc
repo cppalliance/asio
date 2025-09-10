@@ -18,6 +18,7 @@ template&lt;
     typename Rep,
     typename Period,
     typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_after_timer.adoc[cancel&lowbar;after&lowbar;timer&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock, WaitTraits, Executor&gt;]
 cancel&lowbar;after(
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,

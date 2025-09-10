@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;allocator&period;hpp&gt;`
 ----
 template&lt;typename T&gt;
 struct query&lowbar;static&lowbar;constexpr&lowbar;member
-    : xref:boost/asio/traits/query_static_constexpr_member-0098.adoc[traits::query&lowbar;static&lowbar;constexpr&lowbar;member&lt;T, allocator&lowbar;t&gt;]
+    : xref:boost/asio/traits/query_static_constexpr_member.adoc[traits::query&lowbar;static&lowbar;constexpr&lowbar;member&lt;static&lowbar;proxy&lt;T&gt;::type, allocator&lowbar;t&gt;]
 ----
 
 == Base Classes
@@ -20,7 +20,7 @@ struct query&lowbar;static&lowbar;constexpr&lowbar;member
 |===
 | Name
 | Description
-| `xref:boost/asio/traits/query_static_constexpr_member-0098.adoc[traits::query&lowbar;static&lowbar;constexpr&lowbar;member&lt;T, allocator&lowbar;t&gt;]`
+| `xref:boost/asio/traits/query_static_constexpr_member.adoc[traits::query&lowbar;static&lowbar;constexpr&lowbar;member&lt;static&lowbar;proxy&lt;T&gt;::type, allocator&lowbar;t&gt;]`
 | 
 |===
 

@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/this_coro/cancellation_state_t.adoc[cancellation&lowbar;state&lowbar;t] cancellation&lowbar;state = cancellation&lowbar;state;
+inline constexpr xref:boost/asio/this_coro/cancellation_state_t.adoc[cancellation&lowbar;state&lowbar;t] cancellation&lowbar;state = cancellation&lowbar;state;
 ----
 
 == Description

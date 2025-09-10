@@ -9,6 +9,17 @@
 
 Declared in `&lt;boost&sol;asio&sol;ip&sol;address&lowbar;v4&period;hpp&gt;`
 
+Create an IPv4 address from an IP address string in dotted decimal form&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]
+xref:boost/asio/ip/make_address_v4-08.adoc[make&lowbar;address&lowbar;v4](std::string&lowbar;view str);
+----
+
+[.small]#xref:boost/asio/ip/make_address_v4-08.adoc[_» more&period;&period;&period;_]#
+
 Create an IPv4 address from an unsigned integer in host byte order&period;
 
 
@@ -52,6 +63,19 @@ xref:boost/asio/ip/make_address_v4-0d.adoc[make&lowbar;address&lowbar;v4](char c
 ----
 
 [.small]#xref:boost/asio/ip/make_address_v4-0d.adoc[_» more&period;&period;&period;_]#
+
+Create an IPv4 address from an IP address string in dotted decimal form&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address_v4.adoc[address&lowbar;v4]
+xref:boost/asio/ip/make_address_v4-05.adoc[make&lowbar;address&lowbar;v4](
+    std::string&lowbar;view str,
+    boost::system::error&lowbar;code& ec) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/make_address_v4-05.adoc[_» more&period;&period;&period;_]#
 
 Create an IPv4 address from a IPv4&hyphen;mapped IPv6 address&period;
 

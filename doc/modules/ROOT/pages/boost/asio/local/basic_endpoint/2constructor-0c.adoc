@@ -34,10 +34,20 @@ Move constructor&period;
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-xref:boost/asio/local/basic_endpoint/2constructor-0f.adoc[basic&lowbar;endpoint](xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint]&& other) noexcept;
+xref:boost/asio/local/basic_endpoint/2constructor-0f2.adoc[basic&lowbar;endpoint](xref:boost/asio/local/basic_endpoint.adoc[basic&lowbar;endpoint]&& other) noexcept;
 ----
 
-[.small]#xref:boost/asio/local/basic_endpoint/2constructor-0f.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/local/basic_endpoint/2constructor-0f2.adoc[_» more&period;&period;&period;_]#
+
+Construct an endpoint using the specified path name&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/local/basic_endpoint/2constructor-0fd.adoc[basic&lowbar;endpoint](std::string&lowbar;view path&lowbar;name);
+----
+
+[.small]#xref:boost/asio/local/basic_endpoint/2constructor-0fd.adoc[_» more&period;&period;&period;_]#
 
 Construct an endpoint using the specified path name&period;
 

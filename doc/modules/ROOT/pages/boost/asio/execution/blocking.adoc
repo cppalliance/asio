@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;blocking&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/execution/blocking_t.adoc[blocking&lowbar;t] blocking = blocking;
+inline constexpr xref:boost/asio/execution/blocking_t.adoc[blocking&lowbar;t] blocking = blocking;
 ----
 
 

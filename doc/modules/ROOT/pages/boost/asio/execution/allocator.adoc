@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;allocator&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/execution/allocator_t-05.adoc[allocator&lowbar;t&lt;void&gt;] allocator = allocator;
+inline constexpr xref:boost/asio/execution/allocator_t-05.adoc[allocator&lowbar;t&lt;void&gt;] allocator = allocator;
 ----
 
 

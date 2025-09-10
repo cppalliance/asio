@@ -90,6 +90,50 @@ xref:boost/asio/operator_not_eq-02.adoc[operator!&equals;](
 
 [.small]#xref:boost/asio/operator_not_eq-02.adoc[_» more&period;&period;&period;_]#
 
+Inequality operator, returns true if the disposition contains an error&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;xref:boost/asio/disposition.adoc[boost::asio::disposition] Disposition&gt;
+constexpr
+bool
+xref:boost/asio/operator_not_eq-08.adoc[operator!&equals;](
+    Disposition const& d,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-08.adoc[_» more&period;&period;&period;_]#
+
+Inequality operator, returns true if the disposition contains an error&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;xref:boost/asio/disposition.adoc[boost::asio::disposition] Disposition&gt;
+constexpr
+bool
+xref:boost/asio/operator_not_eq-045.adoc[operator!&equals;](
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    Disposition const& d) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-045.adoc[_» more&period;&period;&period;_]#
+
+Inequality operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_not_eq-0fe.adoc[operator!&equals;](
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_not_eq-0fe.adoc[_» more&period;&period;&period;_]#
+
 Compare two executors for inequality&period;
 
 
@@ -128,50 +172,6 @@ xref:boost/asio/operator_not_eq-0be.adoc[operator!&equals;](
 ----
 
 [.small]#xref:boost/asio/operator_not_eq-0be.adoc[_» more&period;&period;&period;_]#
-
-Inequality operator, returns true if the disposition contains an error&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-template&lt;typename Disposition&gt;
-constexpr
-bool
-xref:boost/asio/operator_not_eq-08.adoc[operator!&equals;](
-    Disposition const& d,
-    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
-----
-
-[.small]#xref:boost/asio/operator_not_eq-08.adoc[_» more&period;&period;&period;_]#
-
-Inequality operator, returns true if the disposition contains an error&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-template&lt;typename Disposition&gt;
-constexpr
-bool
-xref:boost/asio/operator_not_eq-045.adoc[operator!&equals;](
-    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
-    Disposition const& d) noexcept;
-----
-
-[.small]#xref:boost/asio/operator_not_eq-045.adoc[_» more&period;&period;&period;_]#
-
-Inequality operator&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-constexpr
-bool
-xref:boost/asio/operator_not_eq-0fe.adoc[operator!&equals;](
-    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
-    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
-----
-
-[.small]#xref:boost/asio/operator_not_eq-0fe.adoc[_» more&period;&period;&period;_]#
 
 Compare two executors for inequality&period;
 

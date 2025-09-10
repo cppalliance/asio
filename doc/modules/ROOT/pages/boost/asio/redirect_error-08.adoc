@@ -14,6 +14,7 @@ Create a partial completion token adapter that captures error&lowbar;code values
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_redirect_error.adoc[partial&lowbar;redirect&lowbar;error]
 xref:boost/asio/redirect_error-00.adoc[redirect&lowbar;error](boost::system::error&lowbar;code& ec);
 ----
@@ -26,6 +27,7 @@ Adapt a `completion&lowbar;token` to capture error&lowbar;code values to a varia
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/redirect_error_t.adoc[redirect&lowbar;error&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;&gt;]
 xref:boost/asio/redirect_error-04.adoc[redirect&lowbar;error](
     CompletionToken&& completion&lowbar;token,

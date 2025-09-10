@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename CompletionToken&gt;
+template&lt;xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;Signature&gt;] CompletionToken&gt;
 decltype(this&hyphen;&gt;const&lowbar;invoke&lowbar;helper(
         static&lowbar;cast&lt;CompletionToken&amp;&amp;&gt;(token),
         detail&colon;&colon;index&lowbar;sequence&lowbar;for&lt;InitArgs&period;&period;&period;&gt;()))

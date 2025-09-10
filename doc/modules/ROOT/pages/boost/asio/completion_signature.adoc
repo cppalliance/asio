@@ -1,0 +1,17 @@
+[#boost-asio-completion_signature]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::completion&lowbar;signature
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename T&gt;
+concept completion&lowbar;signature = detail&colon;&colon;is&lowbar;completion&lowbar;signature&lt;T&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

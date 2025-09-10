@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;buffered&lowbar;stream&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename ReadHandler = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+template&lt;xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadHandler = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
 decltype(declval&lt;buffered&lowbar;read&lowbar;stream&lt;
         buffered&lowbar;write&lowbar;stream&lt;Stream&gt;&gt;&amp;&gt;()&period;async&lowbar;fill(
           static&lowbar;cast&lt;ReadHandler&amp;&amp;&gt;(handler)))

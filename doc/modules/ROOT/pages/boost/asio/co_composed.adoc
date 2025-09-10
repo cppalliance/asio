@@ -1,0 +1,124 @@
+[#boost-asio-co_composed]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::co&lowbar;composed
+:relfileprefix: ../../
+:mrdocs:
+
+Creates an initiation function object that may be used to launch a coroutine&hyphen;based composed asynchronous operation&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;co&lowbar;composed&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures,
+    typename Implementation,
+    typename&period;&period;&period; IoObjectsOrExecutors&gt;
+auto
+co&lowbar;composed(
+    Implementation&& implementation,
+    IoObjectsOrExecutors&period;&period;&period;&&&period;&period;&period; io&lowbar;objects&lowbar;or&lowbar;executors);
+----
+
+== Description
+
+The co&lowbar;composed utility simplifies the implementation of composed asynchronous operations by automatically adapting a coroutine to be an initiation function object for use with `async&lowbar;initiate&period;` When awaiting asynchronous operations, the coroutine automatically uses a conforming intermediate completion handler&period;
+
+== Per&hyphen;Operation Cancellation
+By default, terminal per&hyphen;operation cancellation is enabled for composed operations that use co&lowbar;composed&period; To disable cancellation for the composed operation, or to alter its supported cancellation types, call the state&apos;s `reset&lowbar;cancellation&lowbar;state` function&period;
+
+== Examples
+The following example illustrates manual error handling and explicit checks for cancellation&period; The completion handler is invoked via a `co&lowbar;yield` to the state&apos;s `complete` function, which never returns&period;
+
+[,cpp]
+----
+template <typename CompletionToken>
+auto async_echo(tcp::socket& socket,
+    CompletionToken&& token)
+{
+  return boost::asio::async_initiate<
+    CompletionToken, void(boost::system::error_code)>(
+      boost::asio::co_composed(
+        [](auto state, tcp::socket& socket) -> void
+        {
+          state.reset_cancellation_state(
+            boost::asio::enable_terminal_cancellation());
+
+          while (!state.cancelled())
+          {
+            char data[1024];
+            auto [e1, n1] =
+              co_await socket.async_read_some(
+                boost::asio::buffer(data));
+
+            if (e1)
+              co_yield state.complete(e1);
+
+            if (!!state.cancelled())
+              co_yield state.complete(
+                make_error_code(boost::asio::error::operation_aborted));
+
+            auto [e2, n2] =
+              co_await boost::asio::async_write(socket,
+                boost::asio::buffer(data, n1));
+
+            if (e2)
+              co_yield state.complete(e2);
+          }
+        }, socket),
+      token, std::ref(socket));
+} 
+----
+This next example shows exception&hyphen;based error handling and implicit checks for cancellation&period; The completion handler is invoked after returning from the coroutine via `co&lowbar;return&period;` Valid `co&lowbar;return` values are specified using completion signatures passed to the `co&lowbar;composed` function&period;
+
+[,cpp]
+----
+template <typename CompletionToken>
+auto async_echo(tcp::socket& socket,
+    CompletionToken&& token)
+{
+  return boost::asio::async_initiate<
+    CompletionToken, void(boost::system::error_code)>(
+      boost::asio::co_composed<
+        void(boost::system::error_code)>(
+          [](auto state, tcp::socket& socket) -> void
+          {
+            try
+            {
+              state.throw_if_cancelled(true);
+              state.reset_cancellation_state(
+                boost::asio::enable_terminal_cancellation());
+
+              for (;;)
+              {
+                char data[1024];
+                std::size_t n = co_await socket.async_read_some(
+                    boost::asio::buffer(data));
+
+                co_await boost::asio::async_write(socket,
+                    boost::asio::buffer(data, n));
+              }
+            }
+            catch (const boost::system::system_error& e)
+            {
+              co_return {e.code()};
+            }
+          }, socket),
+      token, std::ref(socket));
+} 
+----
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *implementation*
+| A function object that contains the coroutine&hyphen;based implementation of the composed asynchronous operation&period; The first argument to the function object represents the state of the operation, and may be used to test for cancellation&period; The remaining arguments are those passed to `async&lowbar;initiate` after the completion token&period;
+| *io&lowbar;objects&lowbar;or&lowbar;executors*
+| Zero or more I&sol;O objects or I&sol;O executors for which outstanding work must be maintained while the operation is incomplete&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;mapping&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/execution/mapping_t.adoc[mapping&lowbar;t] mapping = mapping;
+inline constexpr xref:boost/asio/execution/mapping_t.adoc[mapping&lowbar;t] mapping = mapping;
 ----
 
 

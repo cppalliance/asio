@@ -1,0 +1,119 @@
+[#boost-asio-co_spawn-0c8]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::co&lowbar;spawn
+:relfileprefix: ../../
+:mrdocs:
+
+Spawn a new coroutined&hyphen;based thread of execution&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;co&lowbar;spawn&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename Executor,
+    typename F,
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;&sol;&ast; implementation-defined &ast;&sol;::type&gt;] CompletionToken = boost::asio::default&lowbar;completion&lowbar;token&lt;Executor&gt;::type&gt;
+auto
+co&lowbar;spawn(
+    Executor const& ex,
+    F&& f,
+    CompletionToken&& token,
+    int = 0);
+----
+
+== Description
+
+[,cpp]
+----
+void handler(std::exception_ptr); 
+----
+Otherwise, the function signature of the completion handler must be&colon;
+
+[,cpp]
+----
+void handler(std::exception_ptr, R); 
+----
+== Completion Signature
+[,cpp]
+----
+void(std::exception_ptr, R) 
+----
+where `R` is the first template argument to the `awaitable` returned by the supplied function object `F&colon;`
+
+[,cpp]
+----
+boost::asio::awaitable<R, AwaitableExecutor> F() 
+----
+== Example
+[,cpp]
+----
+boost::asio::awaitable<std::size_t> echo(tcp::socket socket)
+{
+  std::size_t bytes_transferred = 0;
+
+  try
+  {
+    char data[1024];
+    for (;;)
+    {
+      std::size_t n = co_await socket.async_read_some(
+          boost::asio::buffer(data), boost::asio::use_awaitable);
+
+      co_await boost::asio::async_write(socket,
+          boost::asio::buffer(data, n), boost::asio::use_awaitable);
+
+      bytes_transferred += n;
+    }
+  }
+  catch (const std::exception&)
+  {
+  }
+
+  co_return bytes_transferred;
+}
+
+// ...
+
+boost::asio::co_spawn(my_executor,
+  [socket = std::move(my_tcp_socket)]() mutable
+    -> boost::asio::awaitable<void>
+  {
+    try
+    {
+      char data[1024];
+      for (;;)
+      {
+        std::size_t n = co_await socket.async_read_some(
+            boost::asio::buffer(data), boost::asio::use_awaitable);
+
+        co_await boost::asio::async_write(socket,
+            boost::asio::buffer(data, n), boost::asio::use_awaitable);
+      }
+    }
+    catch (const std::exception& e)
+    {
+      std::cerr << "Exception: " << e.what() << "\n";
+    }
+  }, boost::asio::detached);
+----
+== Per&hyphen;Operation Cancellation
+The new thread of execution is created with a cancellation state that supports `cancellation&lowbar;type&colon;&colon;terminal` values only&period; To change the cancellation state, call boost&colon;&colon;asio&colon;&colon;this&lowbar;coro&colon;&colon;reset&lowbar;cancellation&lowbar;state&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *ex*
+| The executor that will be used to schedule the new thread of execution&period;
+| *f*
+| A nullary function object with a return type of the form `boost&colon;&colon;asio&colon;&colon;awaitable&lt;R,E&gt;` that will be used as the coroutine&apos;s entry point&period;
+| *token*
+| The `completion&lowbar;token` that will handle the notification that the thread of execution has completed&period; If `R` is `void,` the function signature of the completion handler must be&colon;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

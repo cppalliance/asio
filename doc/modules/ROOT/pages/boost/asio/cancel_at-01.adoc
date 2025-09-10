@@ -15,6 +15,7 @@ template&lt;
     typename CompletionToken,
     typename Clock,
     typename Duration&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_at_t.adoc[cancel&lowbar;at&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock&gt;]
 cancel&lowbar;at(
     chrono::time&lowbar;point&lt;Clock, Duration&gt; const& expiry,

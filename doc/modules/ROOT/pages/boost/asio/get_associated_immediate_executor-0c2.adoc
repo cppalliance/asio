@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;associated&lowbar;immediate&lowbar;executor&
 template&lt;
     typename T,
     typename ExecutionContext&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 associated&lowbar;immediate&lowbar;executor&lt;T, ExecutionContext::executor&lowbar;type&gt;::type
 get&lowbar;associated&lowbar;immediate&lowbar;executor(
     T const& t,

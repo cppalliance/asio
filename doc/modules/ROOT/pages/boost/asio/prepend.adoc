@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;prepend&period;hpp&gt;`
 template&lt;
     typename CompletionToken,
     typename&period;&period;&period; Values&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/prepend_t.adoc[prepend&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, decay&lowbar;t&lt;Values&gt;&period;&period;&period;&gt;]
 prepend(

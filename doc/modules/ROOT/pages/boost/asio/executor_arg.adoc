@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;uses&lowbar;executor&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/executor_arg_t.adoc[executor&lowbar;arg&lowbar;t] executor&lowbar;arg = executor&lowbar;arg;
+inline constexpr xref:boost/asio/executor_arg_t.adoc[executor&lowbar;arg&lowbar;t] executor&lowbar;arg = executor&lowbar;arg;
 ----
 
 == Description

@@ -44,6 +44,8 @@ class const&lowbar;buffer;
 | Create a new non&hyphen;modifiable buffer from a contiguous container&period;
 | xref:boost/asio/buffer-002a.adoc[`buffer`]
 | Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-014.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given string&lowbar;view&period;
 | xref:boost/asio/buffer-025.adoc[`buffer`]
 | Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
 | xref:boost/asio/buffer-02f.adoc[`buffer`]
@@ -54,6 +56,8 @@ class const&lowbar;buffer;
 | Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
 | xref:boost/asio/buffer-065.adoc[`buffer`]
 | Create a new non&hyphen;modifiable buffer that represents the given POD array&period;
+| xref:boost/asio/buffer-073.adoc[`buffer`]
+| Create a new non&hyphen;modifiable buffer that represents the given string&period;
 | xref:boost/asio/buffer-076.adoc[`buffer`]
 | Create a new non&hyphen;modifiable buffer that represents the given memory range&period;
 | xref:boost/asio/buffer-07f2.adoc[`buffer`]

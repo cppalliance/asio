@@ -1,0 +1,19 @@
+[#boost-asio-awaitable-valid]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/awaitable.adoc[awaitable]::valid
+:relfileprefix: ../../../
+:mrdocs:
+
+Checks if the awaitable refers to a future result&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;awaitable&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+valid() const noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

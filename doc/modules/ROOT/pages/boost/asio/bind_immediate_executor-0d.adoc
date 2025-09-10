@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;bind&lowbar;immediate&lowbar;executor&period
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename Executor&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_immediate_executor_binder.adoc[partial&lowbar;immediate&lowbar;executor&lowbar;binder&lt;Executor&gt;]
 bind&lowbar;immediate&lowbar;executor(Executor const& ex);
 ----

@@ -17,6 +17,7 @@ Create a partial completion token adapter that cancels an operation if not compl
 template&lt;
     typename Clock,
     typename Duration&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_cancel_at.adoc[partial&lowbar;cancel&lowbar;at&lt;Clock&gt;]
 xref:boost/asio/cancel_at-0d.adoc[cancel&lowbar;at](
     chrono::time&lowbar;point&lt;Clock, Duration&gt; const& expiry,
@@ -34,6 +35,7 @@ template&lt;
     typename CompletionToken,
     typename Clock,
     typename Duration&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_at_t.adoc[cancel&lowbar;at&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock&gt;]
 xref:boost/asio/cancel_at-01.adoc[cancel&lowbar;at](
     chrono::time&lowbar;point&lt;Clock, Duration&gt; const& expiry,
@@ -51,6 +53,7 @@ template&lt;
     typename CompletionToken,
     typename Clock,
     typename Duration&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_at_t.adoc[cancel&lowbar;at&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock&gt;]
 xref:boost/asio/cancel_at-07.adoc[cancel&lowbar;at](
     chrono::time&lowbar;point&lt;Clock, Duration&gt; const& expiry,
@@ -70,6 +73,7 @@ template&lt;
     typename WaitTraits,
     typename Executor,
     typename Duration&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_cancel_at_timer.adoc[partial&lowbar;cancel&lowbar;at&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]
 xref:boost/asio/cancel_at-0b.adoc[cancel&lowbar;at](
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,
@@ -90,6 +94,7 @@ template&lt;
     typename WaitTraits,
     typename Executor,
     typename Duration&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_at_timer.adoc[cancel&lowbar;at&lowbar;timer&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock, WaitTraits, Executor&gt;]
 xref:boost/asio/cancel_at-03.adoc[cancel&lowbar;at](
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,
@@ -110,6 +115,7 @@ template&lt;
     typename WaitTraits,
     typename Executor,
     typename Duration&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_at_timer.adoc[cancel&lowbar;at&lowbar;timer&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock, WaitTraits, Executor&gt;]
 xref:boost/asio/cancel_at-05.adoc[cancel&lowbar;at](
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,

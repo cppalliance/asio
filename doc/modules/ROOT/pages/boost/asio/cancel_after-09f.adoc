@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;cancel&lowbar;after&period;hpp&gt;`
 template&lt;
     typename Rep,
     typename Period&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_cancel_after.adoc[partial&lowbar;cancel&lowbar;after&lt;std::chrono::steady&lowbar;clock&gt;]
 cancel&lowbar;after(
     chrono::duration&lt;Rep, Period&gt; const& timeout,

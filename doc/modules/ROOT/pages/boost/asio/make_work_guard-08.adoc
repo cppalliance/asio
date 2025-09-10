@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;executor&lowbar;work&lowbar;guard&period;hpp
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/executor_work_guard-05.adoc[executor&lowbar;work&lowbar;guard&lt;associated&lowbar;executor&lt;T&gt;::type&gt;]
 make&lowbar;work&lowbar;guard(T const& t);
 ----

@@ -40,7 +40,7 @@ class mutable&lowbar;registered&lowbar;buffer;
 |===
 | Name
 | Description
-| `xref:boost/asio/buffer-01.adoc[boost::asio::buffer]`
+| `xref:boost/asio/buffer-01d.adoc[boost::asio::buffer]`
 | Obtain a buffer representing part of a registered buffer&period;
 |===
 

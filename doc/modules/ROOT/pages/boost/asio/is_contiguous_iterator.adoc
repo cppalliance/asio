@@ -13,7 +13,7 @@ Declared in `&lt;boost&sol;asio&sol;is&lowbar;contiguous&lowbar;iterator&period;
 ----
 template&lt;typename T&gt;
 struct is&lowbar;contiguous&lowbar;iterator
-    : is&lowbar;pointer&lt;T&gt;
+    : integral&lowbar;constant&lt;bool, std&colon;&colon;contiguous&lowbar;iterator&lt;T&gt;&gt;
 ----
 
 == Base Classes
@@ -22,7 +22,7 @@ struct is&lowbar;contiguous&lowbar;iterator
 |===
 | Name
 | Description
-| `is&lowbar;pointer&lt;T&gt;`
+| `integral&lowbar;constant&lt;bool, std&colon;&colon;contiguous&lowbar;iterator&lt;T&gt;&gt;`
 | 
 |===
 

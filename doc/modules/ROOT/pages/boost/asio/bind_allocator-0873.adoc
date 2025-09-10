@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
 template&lt;
     typename Allocator,
     typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Allocator&gt;]
 bind&lowbar;allocator(
     Allocator const& s,

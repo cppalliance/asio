@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;associated&lowbar;executor&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 associated&lowbar;executor&lt;T&gt;::type
 get&lowbar;associated&lowbar;executor(T const& t) noexcept;
 ----

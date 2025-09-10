@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;any&lowbar;completion&lowbar;executor&period
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename Executor&gt;
+template&lt;xref:boost/asio/execution/executor.adoc[boost::asio::execution::executor] Executor&gt;
 any&lowbar;completion&lowbar;executor(
     std::nothrow&lowbar;t,
     Executor e,

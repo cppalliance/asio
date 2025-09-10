@@ -15,6 +15,7 @@ template&lt;
     typename Elem,
     typename Traits,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer&lt;Elem, Traits, Allocator&gt;]
 dynamic&lowbar;buffer(std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data) noexcept;
 ----

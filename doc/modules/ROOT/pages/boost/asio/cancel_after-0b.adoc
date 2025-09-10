@@ -15,6 +15,7 @@ template&lt;
     typename Rep,
     typename Period,
     typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_after_t.adoc[cancel&lowbar;after&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, std::chrono::steady&lowbar;clock&gt;]
 cancel&lowbar;after(
     chrono::duration&lt;Rep, Period&gt; const& timeout,

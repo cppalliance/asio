@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
 ----
 template&lt;
     typename CompletionToken,
-    typename&period;&period;&period; Signatures&gt;
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures&gt;
 class async&lowbar;result
     : public xref:boost/asio/conditional_t.adoc[conditional&lowbar;t&lt;detail&colon;&colon;are&lowbar;any&lowbar;lvalue&lowbar;completion&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;&colon;&colon;value &verbar;&verbar; !detail&colon;&colon;are&lowbar;any&lowbar;rvalue&lowbar;completion&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;&colon;&colon;value, &sol;&ast; implementation-defined &ast;&sol;, async&lowbar;result&lt;CompletionToken, &sol;&ast; implementation-defined &ast;&sol;::type&period;&period;&period;&gt;&gt;]
 ----

@@ -14,7 +14,7 @@ Submits a completion token or function object for execution&period;
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename NullaryToken&gt;
+template&lt;xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void()&gt;] NullaryToken&gt;
 decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
       declval&lt;detail&colon;&colon;initiate&lowbar;defer&gt;(), token))
 xref:boost/asio/defer-0e.adoc[defer](NullaryToken&& token);
@@ -29,7 +29,7 @@ Submits a completion token or function object for execution&period;
 ----
 template&lt;
     typename ExecutionContext,
-    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;ExecutionContext::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void()&gt;] NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;ExecutionContext::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
       declval&lt;detail&colon;&colon;initiate&lowbar;defer&lowbar;with&lowbar;executor&lt;
         typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&gt;(), token))
@@ -48,7 +48,7 @@ Submits a completion token or function object for execution&period;
 ----
 template&lt;
     typename Executor,
-    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void()&gt;] NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;Executor&gt;]&gt;
 decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
       declval&lt;detail&colon;&colon;initiate&lowbar;defer&lowbar;with&lowbar;executor&lt;Executor&gt;&gt;(), token))
 xref:boost/asio/defer-0cc.adoc[defer](

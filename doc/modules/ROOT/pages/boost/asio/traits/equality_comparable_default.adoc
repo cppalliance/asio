@@ -32,7 +32,7 @@ struct equality&lowbar;comparable&lowbar;default
 |===
 | Name
 | Description
-| xref:boost/asio/traits/equality_comparable-0a0.adoc[`equality&lowbar;comparable`]
+| xref:boost/asio/traits/equality_comparable.adoc[`equality&lowbar;comparable`]
 | 
 |===
 

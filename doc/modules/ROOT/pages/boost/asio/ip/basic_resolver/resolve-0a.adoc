@@ -1,0 +1,47 @@
+[#boost-asio-ip-basic_resolver-resolve-0a]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]::resolve
+:relfileprefix: ../../../../
+:mrdocs:
+
+Perform reverse resolution of an endpoint to a list of entries&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver/results_type.adoc[results&lowbar;type]
+resolve(xref:boost/asio/ip/basic_resolver/endpoint_type.adoc[endpoint&lowbar;type] const& e);
+----
+
+== Description
+
+This function is used to resolve an endpoint into a list of endpoint entries&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+A range object representing the list of endpoint entries&period; A successful call to this function is guaranteed to return a non&hyphen;empty range&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *e*
+| An endpoint object that determines what endpoints will be returned&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

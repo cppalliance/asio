@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-template&lt;typename Disposition&gt;
+template&lt;xref:boost/asio/disposition.adoc[boost::asio::disposition] Disposition&gt;
 constexpr
 bool
 operator!&equals;(

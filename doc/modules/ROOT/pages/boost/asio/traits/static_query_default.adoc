@@ -33,7 +33,7 @@ struct static&lowbar;query&lowbar;default
 |===
 | Name
 | Description
-| xref:boost/asio/traits/static_query-0c5.adoc[`static&lowbar;query`]
+| xref:boost/asio/traits/static_query.adoc[`static&lowbar;query`]
 | 
 |===
 

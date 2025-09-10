@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;outstanding&lowbar;work&period
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/execution/outstanding_work_t.adoc[outstanding&lowbar;work&lowbar;t] outstanding&lowbar;work = outstanding&lowbar;work;
+inline constexpr xref:boost/asio/execution/outstanding_work_t.adoc[outstanding&lowbar;work&lowbar;t] outstanding&lowbar;work = outstanding&lowbar;work;
 ----
 
 

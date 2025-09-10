@@ -16,18 +16,6 @@ Forwarding function call operator&period;
 ----
 template&lt;typename&period;&period;&period; Args&gt;
 xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;)&gt;]
-xref:boost/asio/allocator_binder/operator_call-09.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
-----
-
-[.small]#xref:boost/asio/allocator_binder/operator_call-09.adoc[_» more&period;&period;&period;_]#
-
-Forwarding function call operator&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-template&lt;typename&period;&period;&period; Args&gt;
-xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;)&gt;]
 xref:boost/asio/allocator_binder/operator_call-08.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
 ----
 
@@ -40,10 +28,22 @@ Forwarding function call operator&period;
 ----
 template&lt;typename&period;&period;&period; Args&gt;
 xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;)&gt;]
-xref:boost/asio/allocator_binder/operator_call-00.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
+xref:boost/asio/allocator_binder/operator_call-0d.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
 ----
 
-[.small]#xref:boost/asio/allocator_binder/operator_call-00.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/allocator_binder/operator_call-0d.adoc[_» more&period;&period;&period;_]#
+
+Forwarding function call operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename&period;&period;&period; Args&gt;
+xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;)&gt;]
+xref:boost/asio/allocator_binder/operator_call-0c.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
+----
+
+[.small]#xref:boost/asio/allocator_binder/operator_call-0c.adoc[_» more&period;&period;&period;_]#
 
 
 [.small]#Created with https://www.mrdocs.com[MrDocs]#

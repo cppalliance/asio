@@ -15,6 +15,7 @@ Create a partial completion token that associates an executor&period;
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename Executor&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_immediate_executor_binder.adoc[partial&lowbar;immediate&lowbar;executor&lowbar;binder&lt;Executor&gt;]
 xref:boost/asio/bind_immediate_executor-0d.adoc[bind&lowbar;immediate&lowbar;executor](Executor const& ex);
 ----
@@ -29,6 +30,7 @@ Associate an object of type `T` with a immediate executor of type `Executor&peri
 template&lt;
     typename Executor,
     typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/immediate_executor_binder.adoc[immediate&lowbar;executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Executor&gt;]
 xref:boost/asio/bind_immediate_executor-07.adoc[bind&lowbar;immediate&lowbar;executor](
     Executor const& e,

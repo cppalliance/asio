@@ -40,12 +40,21 @@ struct prefer&lowbar;only
 | Construct from `InnerProperty`
 |===
 
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/prefer_only/static_query.adoc[`static&lowbar;query`] 
+|===
+
 == Static Data Members
 
 [cols=1]
 |===
 | Name
 | xref:boost/asio/execution/prefer_only/is_requirable.adoc[`is&lowbar;requirable`] 
+| xref:boost/asio/execution/prefer_only/static_query_v.adoc[`static&lowbar;query&lowbar;v`] 
 |===
 
 == Friends

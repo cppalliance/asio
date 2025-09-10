@@ -15,6 +15,7 @@ Create a partial completion token that associates a cancellation slot&period;
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename CancellationSlot&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_cancellation_slot_binder.adoc[partial&lowbar;cancellation&lowbar;slot&lowbar;binder&lt;CancellationSlot&gt;]
 xref:boost/asio/bind_cancellation_slot-06.adoc[bind&lowbar;cancellation&lowbar;slot](CancellationSlot const& ex);
 ----
@@ -29,6 +30,7 @@ Associate an object of type `T` with a cancellation slot of type `CancellationSl
 template&lt;
     typename CancellationSlot,
     typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancellation_slot_binder.adoc[cancellation&lowbar;slot&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, CancellationSlot&gt;]
 xref:boost/asio/bind_cancellation_slot-00.adoc[bind&lowbar;cancellation&lowbar;slot](
     CancellationSlot const& s,

@@ -104,6 +104,8 @@ class address&lowbar;v6;
 | Description
 | xref:boost/asio/ip/make_address_v6-00.adoc[`make&lowbar;address&lowbar;v6`]
 | Create an IPv6 address from an IP address string&period;
+| xref:boost/asio/ip/make_address_v6-04.adoc[`make&lowbar;address&lowbar;v6`]
+| Create an IPv6 address from an IP address string&period;
 | xref:boost/asio/ip/make_address_v6-079.adoc[`make&lowbar;address&lowbar;v6`]
 | Create an IPv6 address from raw bytes and scope ID&period;
 | xref:boost/asio/ip/make_address_v6-07a.adoc[`make&lowbar;address&lowbar;v6`]
@@ -113,6 +115,8 @@ class address&lowbar;v6;
 | xref:boost/asio/ip/make_address_v6-0d.adoc[`make&lowbar;address&lowbar;v6`]
 | Create an IPv4&hyphen;mapped IPv6 address from an IPv4 address&period;
 | xref:boost/asio/ip/make_address_v6-0e.adoc[`make&lowbar;address&lowbar;v6`]
+| Create an IPv6 address from an IP address string&period;
+| xref:boost/asio/ip/make_address_v6-0f.adoc[`make&lowbar;address&lowbar;v6`]
 | Create an IPv6 address from an IP address string&period;
 | xref:boost/asio/ip/make_network_v6-03.adoc[`make&lowbar;network&lowbar;v6`]
 | Create an IPv6 network from an address and prefix length&period;

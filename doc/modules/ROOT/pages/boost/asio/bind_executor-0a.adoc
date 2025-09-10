@@ -15,6 +15,7 @@ Create a partial completion token that associates an execution context&apos;s ex
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename ExecutionContext&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_executor_binder.adoc[partial&lowbar;executor&lowbar;binder&lt;ExecutionContext::executor&lowbar;type&gt;]
 xref:boost/asio/bind_executor-04.adoc[bind&lowbar;executor](
     ExecutionContext& ctx,
@@ -29,6 +30,7 @@ Create a partial completion token that associates an executor&period;
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename Executor&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_executor_binder.adoc[partial&lowbar;executor&lowbar;binder&lt;Executor&gt;]
 xref:boost/asio/bind_executor-05.adoc[bind&lowbar;executor](
     Executor const& ex,
@@ -45,6 +47,7 @@ Associate an object of type `T` with an execution context&apos;s executor&period
 template&lt;
     typename ExecutionContext,
     typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, ExecutionContext::executor&lowbar;type&gt;]
 xref:boost/asio/bind_executor-02.adoc[bind&lowbar;executor](
     ExecutionContext& ctx,
@@ -62,6 +65,7 @@ Associate an object of type `T` with an executor of type `Executor&period;`
 template&lt;
     typename Executor,
     typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Executor&gt;]
 xref:boost/asio/bind_executor-03.adoc[bind&lowbar;executor](
     Executor const& ex,

@@ -15,6 +15,17 @@ Create an IPv6 network from a string containing IP address and prefix length&per
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 xref:boost/asio/ip/network_v6.adoc[network&lowbar;v6]
+xref:boost/asio/ip/make_network_v6-0f.adoc[make&lowbar;network&lowbar;v6](std::string&lowbar;view str);
+----
+
+[.small]#xref:boost/asio/ip/make_network_v6-0f.adoc[_» more&period;&period;&period;_]#
+
+Create an IPv6 network from a string containing IP address and prefix length&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v6.adoc[network&lowbar;v6]
 xref:boost/asio/ip/make_network_v6-0cd.adoc[make&lowbar;network&lowbar;v6](std::string const& str);
 ----
 
@@ -30,6 +41,19 @@ xref:boost/asio/ip/make_network_v6-08.adoc[make&lowbar;network&lowbar;v6](char c
 ----
 
 [.small]#xref:boost/asio/ip/make_network_v6-08.adoc[_» more&period;&period;&period;_]#
+
+Create an IPv6 network from a string containing IP address and prefix length&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v6.adoc[network&lowbar;v6]
+xref:boost/asio/ip/make_network_v6-0e.adoc[make&lowbar;network&lowbar;v6](
+    std::string&lowbar;view str,
+    boost::system::error&lowbar;code& ec);
+----
+
+[.small]#xref:boost/asio/ip/make_network_v6-0e.adoc[_» more&period;&period;&period;_]#
 
 Create an IPv6 network from an address and prefix length&period;
 

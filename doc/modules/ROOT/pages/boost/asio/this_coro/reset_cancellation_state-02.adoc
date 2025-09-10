@@ -10,6 +10,7 @@ Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/this_coro/reset_cancellation_state_0_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;0&lowbar;t]
 xref:boost/asio/this_coro/reset_cancellation_state-0b.adoc[reset&lowbar;cancellation&lowbar;state]();
@@ -21,6 +22,7 @@ xref:boost/asio/this_coro/reset_cancellation_state-0b.adoc[reset&lowbar;cancella
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename Filter&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/this_coro/reset_cancellation_state_1_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;1&lowbar;t&lt;decay&lowbar;t&lt;Filter&gt;&gt;]
 xref:boost/asio/this_coro/reset_cancellation_state-05.adoc[reset&lowbar;cancellation&lowbar;state](Filter&& filter);
@@ -34,6 +36,7 @@ xref:boost/asio/this_coro/reset_cancellation_state-05.adoc[reset&lowbar;cancella
 template&lt;
     typename InFilter,
     typename OutFilter&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/this_coro/reset_cancellation_state_2_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;2&lowbar;t&lt;decay&lowbar;t&lt;InFilter&gt;, decay&lowbar;t&lt;OutFilter&gt;&gt;]
 xref:boost/asio/this_coro/reset_cancellation_state-09.adoc[reset&lowbar;cancellation&lowbar;state](

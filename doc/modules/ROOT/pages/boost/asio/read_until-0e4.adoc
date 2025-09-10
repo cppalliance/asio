@@ -1,0 +1,60 @@
+[#boost-asio-read_until-0e4]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::read&lowbar;until
+:relfileprefix: ../../
+:mrdocs:
+
+Read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;read&lowbar;until&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename SyncReadStream,
+    typename DynamicBuffer&lowbar;v1&gt;
+size&lowbar;t
+read&lowbar;until(
+    SyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    std::string&lowbar;view delim,
+    boost::system::error&lowbar;code& ec,
+    int = 0,
+    int = 0);
+----
+
+== Description
+
+This function is used to read data into the specified dynamic buffer sequence until the dynamic buffer sequence&apos;s get area contains the specified delimiter&period; The call will block until one of the following conditions is true&colon;
+
+* The get area of the dynamic buffer sequence contains the specified delimiter&period;
+* An error occurred&period;
+
+This operation is implemented in terms of zero or more calls to the stream&apos;s read&lowbar;some function&period; If the dynamic buffer sequence&apos;s get area already contains the delimiter, the function returns immediately&period;
+
+[NOTE]
+After a successful read&lowbar;until operation, the dynamic buffer sequence may contain additional data beyond the delimiter&period; An application will typically leave that data in the dynamic buffer sequence for a subsequent read&lowbar;until operation to examine&period;
+
+== Return Value
+
+The number of bytes in the dynamic buffer sequence&apos;s get area up to and including the delimiter&period; Returns 0 if an error occurred&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *s*
+| The stream from which the data is to be read&period; The type must support the SyncReadStream concept&period;
+| *buffers*
+| The dynamic buffer sequence into which the data will be read&period;
+| *delim*
+| The delimiter string&period;
+| *ec*
+| Set to indicate what error occurred, if any&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

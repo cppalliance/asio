@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;associated&lowbar;allocator&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 associated&lowbar;allocator&lt;T&gt;::type
 get&lowbar;associated&lowbar;allocator(T const& t) noexcept;
 ----

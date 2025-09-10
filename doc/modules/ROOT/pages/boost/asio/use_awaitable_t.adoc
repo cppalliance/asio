@@ -1,0 +1,65 @@
+[#boost-asio-use_awaitable_t]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::use&lowbar;awaitable&lowbar;t
+:relfileprefix: ../../
+:mrdocs:
+
+A `completion&lowbar;token` that represents the currently executing coroutine&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;awaitable&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename Executor = xref:boost/asio/any_io_executor.adoc[any&lowbar;io&lowbar;executor]&gt;
+struct use&lowbar;awaitable&lowbar;t;
+----
+
+== Types
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/use_awaitable_t/executor_with_default.adoc[`executor&lowbar;with&lowbar;default`] 
+| Adapts an executor to add the `use&lowbar;awaitable&lowbar;t` completion token as the default&period;
+| xref:boost/asio/use_awaitable_t/as_default_on_t.adoc[`as&lowbar;default&lowbar;on&lowbar;t`] 
+| Type alias to adapt an I&sol;O object to use `use&lowbar;awaitable&lowbar;t` as its default completion token type&period;
+|===
+
+== Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/use_awaitable_t/2constructor-0af.adoc[`use&lowbar;awaitable&lowbar;t`]         [.small]#[constructor]#
+| Constructors
+|===
+
+== Static Member Functions
+
+[cols=2]
+|===
+| Name
+| Description
+| xref:boost/asio/use_awaitable_t/as_default_on.adoc[`as&lowbar;default&lowbar;on`] 
+| Function helper to adapt an I&sol;O object to use `use&lowbar;awaitable&lowbar;t` as its default completion token type&period;
+|===
+
+== Description
+
+The `use&lowbar;awaitable&lowbar;t` class, with its value `use&lowbar;awaitable,` is used to represent the currently executing coroutine&period; This completion token may be passed as a handler to an asynchronous operation&period; For example&colon;
+
+[,cpp]
+----
+awaitable<void> my_coroutine()
+{
+  std::size_t n = co_await my_socket.async_read_some(buffer, use_awaitable);
+  ...
+} 
+----
+When used with co&lowbar;await, the initiating function (`async&lowbar;read&lowbar;some` in the above example) suspends the current coroutine&period; The coroutine is resumed when the asynchronous operation completes, and the result of the operation is returned&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

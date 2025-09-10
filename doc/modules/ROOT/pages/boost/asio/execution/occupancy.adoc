@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;occupancy&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/execution/occupancy_t.adoc[occupancy&lowbar;t] occupancy = occupancy;
+inline constexpr xref:boost/asio/execution/occupancy_t.adoc[occupancy&lowbar;t] occupancy = occupancy;
 ----
 
 

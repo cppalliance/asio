@@ -17,6 +17,7 @@ template&lt;
     size&lowbar;t&gt; typename Span,
     typename T,
     size&lowbar;t Extent&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/mutable_buffer.adoc[mutable&lowbar;buffer]
 buffer(
     Span&lt;T, Extent&gt; const& span,

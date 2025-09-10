@@ -1,0 +1,30 @@
+[#boost-asio-traits-equality_comparable]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::equality&lowbar;comparable
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;traits&sol;equality&lowbar;comparable&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename = void&gt;
+struct equality&lowbar;comparable
+    : xref:boost/asio/traits/equality_comparable_default.adoc[equality&lowbar;comparable&lowbar;default&lt;T&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/traits/equality_comparable_default.adoc[equality&lowbar;comparable&lowbar;default&lt;T&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

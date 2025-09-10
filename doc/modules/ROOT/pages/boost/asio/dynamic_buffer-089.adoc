@@ -17,6 +17,7 @@ Create a new dynamic buffer that represents the given vector&period;
 template&lt;
     typename Elem,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer&lt;Elem, Allocator&gt;]
 xref:boost/asio/dynamic_buffer-03.adoc[dynamic&lowbar;buffer](std::vector&lt;Elem, Allocator&gt;& data) noexcept;
 ----
@@ -32,6 +33,7 @@ template&lt;
     typename Elem,
     typename Traits,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer&lt;Elem, Traits, Allocator&gt;]
 xref:boost/asio/dynamic_buffer-08a.adoc[dynamic&lowbar;buffer](std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data) noexcept;
 ----
@@ -46,6 +48,7 @@ Create a new dynamic buffer that represents the given vector&period;
 template&lt;
     typename Elem,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/dynamic_vector_buffer.adoc[dynamic&lowbar;vector&lowbar;buffer&lt;Elem, Allocator&gt;]
 xref:boost/asio/dynamic_buffer-0e.adoc[dynamic&lowbar;buffer](
     std::vector&lt;Elem, Allocator&gt;& data,
@@ -63,6 +66,7 @@ template&lt;
     typename Elem,
     typename Traits,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/dynamic_string_buffer.adoc[dynamic&lowbar;string&lowbar;buffer&lt;Elem, Traits, Allocator&gt;]
 xref:boost/asio/dynamic_buffer-0a.adoc[dynamic&lowbar;buffer](
     std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt;& data,

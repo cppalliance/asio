@@ -1,0 +1,31 @@
+[#boost-asio-traits-prefer_member]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/traits.adoc[traits]::prefer&lowbar;member
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;traits&sol;prefer&lowbar;member&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename Property,
+    typename = void&gt;
+struct prefer&lowbar;member
+    : xref:boost/asio/traits/prefer_member_default.adoc[prefer&lowbar;member&lowbar;default&lt;T, Property&gt;]
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `xref:boost/asio/traits/prefer_member_default.adoc[prefer&lowbar;member&lowbar;default&lt;T, Property&gt;]`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

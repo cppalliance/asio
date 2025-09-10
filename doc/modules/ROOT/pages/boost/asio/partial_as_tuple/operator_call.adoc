@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;as&lowbar;tuple&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/as_tuple_t.adoc[as&lowbar;tuple&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;&gt;]
 operator()(CompletionToken&& completion&lowbar;token);

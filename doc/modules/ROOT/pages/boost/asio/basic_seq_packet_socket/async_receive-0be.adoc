@@ -16,7 +16,7 @@ Start an asynchronous receive&period;
 ----
 template&lt;
     typename MutableBufferSequence,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
         void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
           declval&lt;initiate&lowbar;async&lowbar;receive&lowbar;with&lowbar;flags&gt;(), token,
@@ -36,7 +36,7 @@ Start an asynchronous receive&period;
 ----
 template&lt;
     typename MutableBufferSequence,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
         void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
           declval&lt;initiate&lowbar;async&lowbar;receive&lowbar;with&lowbar;flags&gt;(),
@@ -61,7 +61,7 @@ xref:boost/asio/basic_seq_packet_socket/async_receive-0b9.adoc[async&lowbar;rece
 | *out&lowbar;flags*
 | Once the asynchronous operation completes, contains flags associated with the received data&period; For example, if the socket&lowbar;base&colon;&colon;message&lowbar;end&lowbar;of&lowbar;record bit is set then the received data marks the end of a record&period; The caller must guarantee that the referenced variable remains valid until the completion handler is called&period;
 | *token*
-| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the receive completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the receive completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], xref:boost/asio/use_awaitable.adoc[`use&lowbar;awaitable`], `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
 | *in&lowbar;flags*
 | Flags specifying how the receive call is to be made&period;
 |===

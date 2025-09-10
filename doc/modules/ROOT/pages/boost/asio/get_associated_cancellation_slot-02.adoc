@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;associated&lowbar;cancellation&lowbar;slot&p
 template&lt;
     typename T,
     typename CancellationSlot&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 decltype(associated&lowbar;cancellation&lowbar;slot&lt;T, CancellationSlot&gt;&colon;&colon;get(t, st))
 get&lowbar;associated&lowbar;cancellation&lowbar;slot(
     T const& t,

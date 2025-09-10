@@ -17,7 +17,32 @@ Start an asynchronous operation to read data into a streambuf until it contains 
 template&lt;
     typename AsyncReadStream,
     typename Allocator,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;ReadToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;string&lowbar;v1&lt;
+          AsyncReadStream&gt;&gt;(),
+        token, basic&lowbar;streambuf&lowbar;ref&lt;Allocator&gt;(b),
+        static&lowbar;cast&lt;std&colon;&colon;string&gt;(delim)))
+xref:boost/asio/async_read_until-045.adoc[async&lowbar;read&lowbar;until](
+    AsyncReadStream& s,
+    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
+    std::string&lowbar;view delim,
+    ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename AsyncReadStream&colon;&colon;executor&lowbar;type&gt;());
+----
+
+[.small]#xref:boost/asio/async_read_until-045.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous operation to read data into a streambuf until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename AsyncReadStream,
+    typename Allocator,
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;v1&lt;AsyncReadStream&gt;&gt;(),
@@ -32,31 +57,6 @@ xref:boost/asio/async_read_until-03cd.adoc[async&lowbar;read&lowbar;until](
 
 [.small]#xref:boost/asio/async_read_until-03cd.adoc[_» more&period;&period;&period;_]#
 
-Start an asynchronous operation to read data into a streambuf until it contains a specified delimiter&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-template&lt;
-    typename AsyncReadStream,
-    typename Allocator,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
-decltype(async&lowbar;initiate&lt;ReadToken,
-      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
-        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;string&lowbar;v1&lt;
-          AsyncReadStream&gt;&gt;(),
-        token, basic&lowbar;streambuf&lowbar;ref&lt;Allocator&gt;(b),
-        static&lowbar;cast&lt;std&colon;&colon;string&gt;(delim)))
-xref:boost/asio/async_read_until-015.adoc[async&lowbar;read&lowbar;until](
-    AsyncReadStream& s,
-    xref:boost/asio/basic_streambuf.adoc[boost::asio::basic&lowbar;streambuf&lt;Allocator&gt;]& b,
-    std::string const& delim,
-    ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
-      typename AsyncReadStream&colon;&colon;executor&lowbar;type&gt;());
-----
-
-[.small]#xref:boost/asio/async_read_until-015.adoc[_» more&period;&period;&period;_]#
-
 Start an asynchronous operation to read data into a streambuf until some part of its data matches a regular expression&period;
 
 
@@ -66,7 +66,7 @@ template&lt;
     typename AsyncReadStream,
     typename Allocator,
     typename Traits,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;expr&lowbar;v1&lt;AsyncReadStream&gt;&gt;(),
@@ -89,21 +89,23 @@ Start an asynchronous operation to read data into a dynamic buffer sequence unti
 template&lt;
     typename AsyncReadStream,
     typename DynamicBuffer&lowbar;v2,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
-        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;v2&lt;AsyncReadStream&gt;&gt;(),
-        token, static&lowbar;cast&lt;DynamicBuffer&lowbar;v2&amp;&amp;&gt;(buffers), delim))
-xref:boost/asio/async_read_until-04.adoc[async&lowbar;read&lowbar;until](
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;string&lowbar;v2&lt;
+          AsyncReadStream&gt;&gt;(),
+        token, static&lowbar;cast&lt;DynamicBuffer&lowbar;v2&amp;&amp;&gt;(buffers),
+        static&lowbar;cast&lt;std&colon;&colon;string&gt;(delim)))
+xref:boost/asio/async_read_until-0c.adoc[async&lowbar;read&lowbar;until](
     AsyncReadStream& s,
     DynamicBuffer&lowbar;v2 buffers,
-    char delim,
+    std::string&lowbar;view delim,
     ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
       typename AsyncReadStream&colon;&colon;executor&lowbar;type&gt;(),
     int = 0);
 ----
 
-[.small]#xref:boost/asio/async_read_until-04.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/async_read_until-0c.adoc[_» more&period;&period;&period;_]#
 
 Start an asynchronous operation to read data into a dynamic buffer sequence until it contains a specified delimiter&period;
 
@@ -113,23 +115,21 @@ Start an asynchronous operation to read data into a dynamic buffer sequence unti
 template&lt;
     typename AsyncReadStream,
     typename DynamicBuffer&lowbar;v2,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
-        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;string&lowbar;v2&lt;
-          AsyncReadStream&gt;&gt;(),
-        token, static&lowbar;cast&lt;DynamicBuffer&lowbar;v2&amp;&amp;&gt;(buffers),
-        static&lowbar;cast&lt;std&colon;&colon;string&gt;(delim)))
-xref:boost/asio/async_read_until-066.adoc[async&lowbar;read&lowbar;until](
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;v2&lt;AsyncReadStream&gt;&gt;(),
+        token, static&lowbar;cast&lt;DynamicBuffer&lowbar;v2&amp;&amp;&gt;(buffers), delim))
+xref:boost/asio/async_read_until-043.adoc[async&lowbar;read&lowbar;until](
     AsyncReadStream& s,
     DynamicBuffer&lowbar;v2 buffers,
-    std::string const& delim,
+    char delim,
     ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
       typename AsyncReadStream&colon;&colon;executor&lowbar;type&gt;(),
     int = 0);
 ----
 
-[.small]#xref:boost/asio/async_read_until-066.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/async_read_until-043.adoc[_» more&period;&period;&period;_]#
 
 Start an asynchronous operation to read data into a dynamic buffer sequence until some part of its data matches a regular expression&period;
 
@@ -140,7 +140,7 @@ template&lt;
     typename AsyncReadStream,
     typename DynamicBuffer&lowbar;v2,
     typename Traits,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;expr&lowbar;v2&lt;AsyncReadStream&gt;&gt;(),
@@ -165,7 +165,7 @@ template&lt;
     typename AsyncReadStream,
     typename Allocator,
     typename MatchCondition,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;match&lowbar;v1&lt;AsyncReadStream&gt;&gt;(),
@@ -189,7 +189,34 @@ Start an asynchronous operation to read data into a dynamic buffer sequence unti
 template&lt;
     typename AsyncReadStream,
     typename DynamicBuffer&lowbar;v1,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+decltype(async&lowbar;initiate&lt;ReadToken,
+      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
+        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;string&lowbar;v1&lt;
+          AsyncReadStream&gt;&gt;(),
+        token, static&lowbar;cast&lt;DynamicBuffer&lowbar;v1&amp;&amp;&gt;(buffers),
+        static&lowbar;cast&lt;std&colon;&colon;string&gt;(delim)))
+xref:boost/asio/async_read_until-031.adoc[async&lowbar;read&lowbar;until](
+    AsyncReadStream& s,
+    DynamicBuffer&lowbar;v1&& buffers,
+    std::string&lowbar;view delim,
+    ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
+      typename AsyncReadStream&colon;&colon;executor&lowbar;type&gt;(),
+    int = 0,
+    int = 0);
+----
+
+[.small]#xref:boost/asio/async_read_until-031.adoc[_» more&period;&period;&period;_]#
+
+Start an asynchronous operation to read data into a dynamic buffer sequence until it contains a specified delimiter&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename AsyncReadStream,
+    typename DynamicBuffer&lowbar;v1,
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;v1&lt;AsyncReadStream&gt;&gt;(),
@@ -206,33 +233,6 @@ xref:boost/asio/async_read_until-02.adoc[async&lowbar;read&lowbar;until](
 
 [.small]#xref:boost/asio/async_read_until-02.adoc[_» more&period;&period;&period;_]#
 
-Start an asynchronous operation to read data into a dynamic buffer sequence until it contains a specified delimiter&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-template&lt;
-    typename AsyncReadStream,
-    typename DynamicBuffer&lowbar;v1,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
-decltype(async&lowbar;initiate&lt;ReadToken,
-      void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
-        declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;delim&lowbar;string&lowbar;v1&lt;
-          AsyncReadStream&gt;&gt;(),
-        token, static&lowbar;cast&lt;DynamicBuffer&lowbar;v1&amp;&amp;&gt;(buffers),
-        static&lowbar;cast&lt;std&colon;&colon;string&gt;(delim)))
-xref:boost/asio/async_read_until-0c.adoc[async&lowbar;read&lowbar;until](
-    AsyncReadStream& s,
-    DynamicBuffer&lowbar;v1&& buffers,
-    std::string const& delim,
-    ReadToken&& token = default&lowbar;completion&lowbar;token&lowbar;t&lt;
-      typename AsyncReadStream&colon;&colon;executor&lowbar;type&gt;(),
-    int = 0,
-    int = 0);
-----
-
-[.small]#xref:boost/asio/async_read_until-0c.adoc[_» more&period;&period;&period;_]#
-
 Start an asynchronous operation to read data into a dynamic buffer sequence until a function object indicates a match&period;
 
 
@@ -242,7 +242,7 @@ template&lt;
     typename AsyncReadStream,
     typename DynamicBuffer&lowbar;v2,
     typename MatchCondition,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;match&lowbar;v2&lt;AsyncReadStream&gt;&gt;(),
@@ -268,12 +268,12 @@ template&lt;
     typename AsyncReadStream,
     typename DynamicBuffer&lowbar;v1,
     typename Traits,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;expr&lowbar;v1&lt;AsyncReadStream&gt;&gt;(),
         token, static&lowbar;cast&lt;DynamicBuffer&lowbar;v1&amp;&amp;&gt;(buffers), expr))
-xref:boost/asio/async_read_until-012.adoc[async&lowbar;read&lowbar;until](
+xref:boost/asio/async_read_until-01.adoc[async&lowbar;read&lowbar;until](
     AsyncReadStream& s,
     DynamicBuffer&lowbar;v1&& buffers,
     boost::basic&lowbar;regex&lt;char, Traits&gt; const& expr,
@@ -283,7 +283,7 @@ xref:boost/asio/async_read_until-012.adoc[async&lowbar;read&lowbar;until](
     int = 0);
 ----
 
-[.small]#xref:boost/asio/async_read_until-012.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/async_read_until-01.adoc[_» more&period;&period;&period;_]#
 
 Start an asynchronous operation to read data into a dynamic buffer sequence until a function object indicates a match&period;
 
@@ -294,7 +294,7 @@ template&lt;
     typename AsyncReadStream,
     typename DynamicBuffer&lowbar;v1,
     typename MatchCondition,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncReadStream::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;until&lowbar;match&lowbar;v1&lt;AsyncReadStream&gt;&gt;(),
@@ -324,9 +324,9 @@ xref:boost/asio/async_read_until-03c4.adoc[async&lowbar;read&lowbar;until](
 | *b*
 | A streambuf object into which the data will be read&period; Ownership of the streambuf is retained by the caller, which must guarantee that it remains valid until the completion handler is called&period;
 | *delim*
-| The delimiter character&period;
+| The delimiter string&period;
 | *token*
-| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the read completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the read completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], xref:boost/asio/use_awaitable.adoc[`use&lowbar;awaitable`], `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
 | *expr*
 | The regular expression&period;
 | *buffers*

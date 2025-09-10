@@ -1,0 +1,20 @@
+[#boost-asio-execution-allocator_t-05-static_proxy-type-query]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/allocator_t-05.adoc[allocator&lowbar;t&lt;void&gt;]::xref:boost/asio/execution/allocator_t-05/static_proxy.adoc[static&lowbar;proxy]::xref:boost/asio/execution/allocator_t-05/static_proxy/type.adoc[type]::query
+:relfileprefix: ../../../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;allocator&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;typename P&gt;
+constexpr
+static
+decltype(conditional&lowbar;t&lt;true, T, P&gt;&colon;&colon;query(static&lowbar;cast&lt;P&amp;&amp;&gt;(p)))
+query(P&& p) noexcept(noexcept(conditional&lowbar;t&lt;true, T, P&gt;&colon;&colon;query(static&lowbar;cast&lt;P &amp;&amp;&gt;(p))));
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

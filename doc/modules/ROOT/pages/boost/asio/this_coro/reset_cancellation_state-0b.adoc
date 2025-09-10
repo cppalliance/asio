@@ -9,6 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/this_coro/reset_cancellation_state_0_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;0&lowbar;t]
 reset&lowbar;cancellation&lowbar;state();

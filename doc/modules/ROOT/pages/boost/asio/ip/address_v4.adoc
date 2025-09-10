@@ -94,6 +94,8 @@ class address&lowbar;v4;
 | Create an IPv4 address from an IP address string in dotted decimal form&period;
 | xref:boost/asio/ip/make_address_v4-01.adoc[`make&lowbar;address&lowbar;v4`]
 | Create an IPv4 address from an IP address string in dotted decimal form&period;
+| xref:boost/asio/ip/make_address_v4-05.adoc[`make&lowbar;address&lowbar;v4`]
+| Create an IPv4 address from an IP address string in dotted decimal form&period;
 | xref:boost/asio/ip/make_address_v4-062.adoc[`make&lowbar;address&lowbar;v4`]
 | Create an IPv4 address from an IP address string in dotted decimal form&period;
 | xref:boost/asio/ip/make_address_v4-072.adoc[`make&lowbar;address&lowbar;v4`]
@@ -102,6 +104,8 @@ class address&lowbar;v4;
 | Create an IPv4 address from an unsigned integer in host byte order&period;
 | xref:boost/asio/ip/make_address_v4-07a.adoc[`make&lowbar;address&lowbar;v4`]
 | Create an IPv4 address from raw bytes in network order&period;
+| xref:boost/asio/ip/make_address_v4-08.adoc[`make&lowbar;address&lowbar;v4`]
+| Create an IPv4 address from an IP address string in dotted decimal form&period;
 | xref:boost/asio/ip/make_address_v4-0d.adoc[`make&lowbar;address&lowbar;v4`]
 | Create an IPv4 address from an IP address string in dotted decimal form&period;
 | xref:boost/asio/ip/make_network_v4-019.adoc[`make&lowbar;network&lowbar;v4`]

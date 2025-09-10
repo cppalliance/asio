@@ -12,7 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;composed&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;
-    typename&period;&period;&period; Signatures,
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures,
     typename Implementation,
     typename&period;&period;&period; IoObjectsOrExecutors&gt;
 decltype(detail&colon;&colon;make&lowbar;initiate&lowbar;composed&lt;Signatures&period;&period;&period;&gt;(

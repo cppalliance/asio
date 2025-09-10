@@ -15,7 +15,7 @@ template&lt;
     typename AsyncRandomAccessWriteDevice,
     typename ConstBufferSequence,
     typename CompletionCondition,
-    typename WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessWriteDevice::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] WriteToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessWriteDevice::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;WriteToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;write&lowbar;at&lt;
@@ -106,7 +106,7 @@ if they are also supported by the `AsyncRandomAccessWriteDevice` type&apos;s asy
 | *completion&lowbar;condition*
 | The function object to be called to determine whether the write operation is complete&period; The signature of the function object must be&colon;
 | *token*
-| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the write completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the write completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], xref:boost/asio/use_awaitable.adoc[`use&lowbar;awaitable`], `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
 |===
 
 

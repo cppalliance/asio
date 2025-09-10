@@ -33,7 +33,7 @@ struct prefer&lowbar;member&lowbar;default
 |===
 | Name
 | Description
-| xref:boost/asio/traits/prefer_member-09.adoc[`prefer&lowbar;member`]
+| xref:boost/asio/traits/prefer_member.adoc[`prefer&lowbar;member`]
 | 
 |===
 

@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/this_coro/executor_t.adoc[executor&lowbar;t] executor = executor;
+inline constexpr xref:boost/asio/this_coro/executor_t.adoc[executor&lowbar;t] executor = executor;
 ----
 
 

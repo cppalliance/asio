@@ -9,6 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/this_coro/throw_if_cancelled_0_t.adoc[throw&lowbar;if&lowbar;cancelled&lowbar;0&lowbar;t]
 throw&lowbar;if&lowbar;cancelled();

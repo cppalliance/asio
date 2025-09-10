@@ -1,0 +1,34 @@
+[#boost-asio-awaitable-2constructor-022]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/awaitable.adoc[awaitable]::awaitable
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;awaitable&period;hpp&gt;`
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/awaitable/2constructor-01.adoc[awaitable]() noexcept;
+----
+
+[.small]#xref:boost/asio/awaitable/2constructor-01.adoc[_» more&period;&period;&period;_]#
+
+Move constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/awaitable/2constructor-025.adoc[awaitable](xref:boost/asio/awaitable.adoc[awaitable]&& other) noexcept;
+----
+
+[.small]#xref:boost/asio/awaitable/2constructor-025.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

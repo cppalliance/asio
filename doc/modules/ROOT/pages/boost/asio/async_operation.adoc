@@ -1,0 +1,19 @@
+[#boost-asio-async_operation]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::async&lowbar;operation
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Args&gt;
+concept async&lowbar;operation = is&lowbar;async&lowbar;operation&lt;T, Args&period;&period;&period;&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

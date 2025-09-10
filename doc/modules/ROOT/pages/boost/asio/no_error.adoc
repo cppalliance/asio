@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;disposition&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] no&lowbar;error = no&lowbar;error;
+inline constexpr xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] no&lowbar;error = no&lowbar;error;
 ----
 
 

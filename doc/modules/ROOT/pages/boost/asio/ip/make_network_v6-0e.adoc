@@ -1,0 +1,25 @@
+[#boost-asio-ip-make_network_v6-0e]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::make&lowbar;network&lowbar;v6
+:relfileprefix: ../../../
+:mrdocs:
+
+Create an IPv6 network from a string containing IP address and prefix length&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;network&lowbar;v6&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/network_v6.adoc[network&lowbar;v6]
+make&lowbar;network&lowbar;v6(
+    std::string&lowbar;view str,
+    boost::system::error&lowbar;code& ec);
+----
+
+== Return Value
+
+Represents an IPv6 network&period;
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

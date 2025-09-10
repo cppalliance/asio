@@ -33,7 +33,7 @@ struct require&lowbar;member&lowbar;default
 |===
 | Name
 | Description
-| xref:boost/asio/traits/require_member-09c.adoc[`require&lowbar;member`]
+| xref:boost/asio/traits/require_member.adoc[`require&lowbar;member`]
 | 
 |===
 

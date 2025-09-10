@@ -70,6 +70,10 @@ class network&lowbar;v6;
 | Create an IPv6 network from a string containing IP address and prefix length&period;
 | xref:boost/asio/ip/make_network_v6-0cd.adoc[`make&lowbar;network&lowbar;v6`]
 | Create an IPv6 network from a string containing IP address and prefix length&period;
+| xref:boost/asio/ip/make_network_v6-0e.adoc[`make&lowbar;network&lowbar;v6`]
+| Create an IPv6 network from a string containing IP address and prefix length&period;
+| xref:boost/asio/ip/make_network_v6-0f.adoc[`make&lowbar;network&lowbar;v6`]
+| Create an IPv6 network from a string containing IP address and prefix length&period;
 |===
 
 == Description

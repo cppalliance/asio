@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;blocking&lowbar;adaptation&per
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/execution/blocking_adaptation_t.adoc[blocking&lowbar;adaptation&lowbar;t] blocking&lowbar;adaptation = blocking&lowbar;adaptation;
+inline constexpr xref:boost/asio/execution/blocking_adaptation_t.adoc[blocking&lowbar;adaptation&lowbar;t] blocking&lowbar;adaptation = blocking&lowbar;adaptation;
 ----
 
 

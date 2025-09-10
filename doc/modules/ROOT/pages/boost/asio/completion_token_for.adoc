@@ -1,0 +1,25 @@
+[#boost-asio-completion_token_for]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::completion&lowbar;token&lowbar;for
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Signatures&gt;
+concept completion&lowbar;token&lowbar;for = detail&colon;&colon;are&lowbar;completion&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;&colon;&colon;value
+  &amp;&amp;
+  requires(T&amp;&amp; t)
+  &lcub;
+    async&lowbar;initiate&lt;T, Signatures&period;&period;&period;&gt;(
+        detail&colon;&colon;initiation&lowbar;archetype&lt;Signatures&period;&period;&period;&gt;&lcub;&rcub;, t)&semi;
+  &rcub;;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

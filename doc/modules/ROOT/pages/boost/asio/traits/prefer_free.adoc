@@ -14,7 +14,7 @@ template&lt;
     typename Property,
     typename = void&gt;
 struct prefer&lowbar;free
-    : xref:boost/asio/traits/prefer_free_default-01.adoc[prefer&lowbar;free&lowbar;default&lt;T, Property&gt;]
+    : xref:boost/asio/traits/prefer_free_default.adoc[prefer&lowbar;free&lowbar;default&lt;T, Property&gt;]
 ----
 
 == Base Classes
@@ -23,7 +23,7 @@ struct prefer&lowbar;free
 |===
 | Name
 | Description
-| `xref:boost/asio/traits/prefer_free_default-01.adoc[prefer&lowbar;free&lowbar;default&lt;T, Property&gt;]`
+| `xref:boost/asio/traits/prefer_free_default.adoc[prefer&lowbar;free&lowbar;default&lt;T, Property&gt;]`
 | 
 |===
 

@@ -15,6 +15,7 @@ template&lt;
     typename Elem,
     typename Traits,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/const_buffer.adoc[const&lowbar;buffer]
 buffer(
     std::basic&lowbar;string&lt;Elem, Traits, Allocator&gt; const& data,

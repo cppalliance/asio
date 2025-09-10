@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
 template&lt;
     typename InFilter,
     typename OutFilter&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/this_coro/reset_cancellation_state_2_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;2&lowbar;t&lt;decay&lowbar;t&lt;InFilter&gt;, decay&lowbar;t&lt;OutFilter&gt;&gt;]
 reset&lowbar;cancellation&lowbar;state(

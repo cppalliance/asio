@@ -13,7 +13,7 @@ Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
 ----
 template&lt;
     typename CompletionToken,
-    typename&period;&period;&period; Signatures&gt;
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures&gt;
 struct async&lowbar;completion;
 ----
 

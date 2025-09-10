@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;bind&lowbar;cancellation&lowbar;slot&period;
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename CancellationSlot&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_cancellation_slot_binder.adoc[partial&lowbar;cancellation&lowbar;slot&lowbar;binder&lt;CancellationSlot&gt;]
 bind&lowbar;cancellation&lowbar;slot(CancellationSlot const& ex);
 ----

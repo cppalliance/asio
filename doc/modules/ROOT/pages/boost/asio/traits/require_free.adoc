@@ -14,7 +14,7 @@ template&lt;
     typename Property,
     typename = void&gt;
 struct require&lowbar;free
-    : xref:boost/asio/traits/require_free_default-000.adoc[require&lowbar;free&lowbar;default&lt;T, Property&gt;]
+    : xref:boost/asio/traits/require_free_default.adoc[require&lowbar;free&lowbar;default&lt;T, Property&gt;]
 ----
 
 == Base Classes
@@ -23,7 +23,7 @@ struct require&lowbar;free
 |===
 | Name
 | Description
-| `xref:boost/asio/traits/require_free_default-000.adoc[require&lowbar;free&lowbar;default&lt;T, Property&gt;]`
+| `xref:boost/asio/traits/require_free_default.adoc[require&lowbar;free&lowbar;default&lt;T, Property&gt;]`
 | 
 |===
 

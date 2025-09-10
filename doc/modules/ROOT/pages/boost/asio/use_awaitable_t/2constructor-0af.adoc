@@ -1,0 +1,38 @@
+[#boost-asio-use_awaitable_t-2constructor-0af]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/use_awaitable_t.adoc[use&lowbar;awaitable&lowbar;t]::use&lowbar;awaitable&lowbar;t
+:relfileprefix: ../../../
+:mrdocs:
+
+Constructors
+
+== Synopses
+
+Declared in `&lt;boost&sol;asio&sol;use&lowbar;awaitable&period;hpp&gt;`
+
+Default constructor&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/use_awaitable_t/2constructor-0a0.adoc[use&lowbar;awaitable&lowbar;t]();
+----
+
+[.small]#xref:boost/asio/use_awaitable_t/2constructor-0a0.adoc[_» more&period;&period;&period;_]#
+
+Constructor used to specify file name, line, and function name&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+xref:boost/asio/use_awaitable_t/2constructor-08.adoc[use&lowbar;awaitable&lowbar;t](
+    char const* file&lowbar;name,
+    int line,
+    char const* function&lowbar;name);
+----
+
+[.small]#xref:boost/asio/use_awaitable_t/2constructor-08.adoc[_» more&period;&period;&period;_]#
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

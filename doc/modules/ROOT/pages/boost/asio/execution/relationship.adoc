@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;relationship&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/execution/relationship_t.adoc[relationship&lowbar;t] relationship = relationship;
+inline constexpr xref:boost/asio/execution/relationship_t.adoc[relationship&lowbar;t] relationship = relationship;
 ----
 
 

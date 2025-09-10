@@ -1,0 +1,30 @@
+[#boost-asio-result_of-03]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/result_of-06.adoc[result&lowbar;of]&lt;F(Args&period;&period;&period;)&gt;
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename F,
+    typename&period;&period;&period; Args&gt;
+struct xref:boost/asio/result_of-06.adoc[result&lowbar;of]&lt;F(Args&period;&period;&period;)&gt;
+    : std::invoke&lowbar;result&lt;F, Args&period;&period;&period;&gt;
+----
+
+== Base Classes
+
+[cols=2]
+|===
+| Name
+| Description
+| `std::invoke&lowbar;result&lt;F, Args&period;&period;&period;&gt;`
+| 
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

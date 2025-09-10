@@ -33,7 +33,7 @@ struct execute&lowbar;member&lowbar;default
 |===
 | Name
 | Description
-| xref:boost/asio/traits/execute_member-0b5.adoc[`execute&lowbar;member`]
+| xref:boost/asio/traits/execute_member.adoc[`execute&lowbar;member`]
 | 
 |===
 

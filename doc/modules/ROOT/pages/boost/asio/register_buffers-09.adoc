@@ -15,6 +15,7 @@ template&lt;
     typename Executor,
     typename MutableBufferSequence,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/buffer_registration.adoc[buffer&lowbar;registration&lt;MutableBufferSequence, Allocator&gt;]
 register&lowbar;buffers(
     Executor const& ex,

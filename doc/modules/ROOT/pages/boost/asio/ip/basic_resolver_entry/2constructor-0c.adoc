@@ -24,13 +24,13 @@ Construct with specified endpoint, host name and service name&period;
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-xref:boost/asio/ip/basic_resolver_entry/2constructor-03.adoc[basic&lowbar;resolver&lowbar;entry](
+xref:boost/asio/ip/basic_resolver_entry/2constructor-0d.adoc[basic&lowbar;resolver&lowbar;entry](
     xref:boost/asio/ip/basic_resolver_entry/endpoint_type.adoc[endpoint&lowbar;type] const& ep,
-    std::string const& host,
-    std::string const& service);
+    std::string&lowbar;view host,
+    std::string&lowbar;view service);
 ----
 
-[.small]#xref:boost/asio/ip/basic_resolver_entry/2constructor-03.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/ip/basic_resolver_entry/2constructor-0d.adoc[_» more&period;&period;&period;_]#
 
 
 [.small]#Created with https://www.mrdocs.com[MrDocs]#

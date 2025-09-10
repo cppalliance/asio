@@ -15,6 +15,7 @@ Helper function to obtain an object&apos;s associated allocator&period;
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 associated&lowbar;allocator&lt;T&gt;::type
 xref:boost/asio/get_associated_allocator-0e.adoc[get&lowbar;associated&lowbar;allocator](T const& t) noexcept;
 ----
@@ -29,6 +30,7 @@ Helper function to obtain an object&apos;s associated allocator&period;
 template&lt;
     typename T,
     typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 decltype(associated&lowbar;allocator&lt;T, Allocator&gt;&colon;&colon;get(t, a))
 xref:boost/asio/get_associated_allocator-01.adoc[get&lowbar;associated&lowbar;allocator](
     T const& t,

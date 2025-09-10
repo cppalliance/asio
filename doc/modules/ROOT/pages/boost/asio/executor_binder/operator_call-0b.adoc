@@ -16,10 +16,10 @@ Forwarding function call operator&period;
 ----
 template&lt;typename&period;&period;&period; Args&gt;
 xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;)&gt;]
-xref:boost/asio/executor_binder/operator_call-09a.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
+xref:boost/asio/executor_binder/operator_call-06.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
 ----
 
-[.small]#xref:boost/asio/executor_binder/operator_call-09a.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/executor_binder/operator_call-06.adoc[_» more&period;&period;&period;_]#
 
 Forwarding function call operator&period;
 
@@ -28,10 +28,10 @@ Forwarding function call operator&period;
 ----
 template&lt;typename&period;&period;&period; Args&gt;
 xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;)&gt;]
-xref:boost/asio/executor_binder/operator_call-0e.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
+xref:boost/asio/executor_binder/operator_call-0c.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
 ----
 
-[.small]#xref:boost/asio/executor_binder/operator_call-0e.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/executor_binder/operator_call-0c.adoc[_» more&period;&period;&period;_]#
 
 Forwarding function call operator&period;
 
@@ -40,10 +40,10 @@ Forwarding function call operator&period;
 ----
 template&lt;typename&period;&period;&period; Args&gt;
 xref:boost/asio/result_of_t.adoc[result&lowbar;of&lowbar;t&lt;T(Args&period;&period;&period;)&gt;]
-xref:boost/asio/executor_binder/operator_call-09b.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
+xref:boost/asio/executor_binder/operator_call-08.adoc[operator()](Args&period;&period;&period;&&&period;&period;&period; args);
 ----
 
-[.small]#xref:boost/asio/executor_binder/operator_call-09b.adoc[_» more&period;&period;&period;_]#
+[.small]#xref:boost/asio/executor_binder/operator_call-08.adoc[_» more&period;&period;&period;_]#
 
 
 [.small]#Created with https://www.mrdocs.com[MrDocs]#

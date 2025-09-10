@@ -33,7 +33,7 @@ struct query&lowbar;static&lowbar;constexpr&lowbar;member&lowbar;default
 |===
 | Name
 | Description
-| xref:boost/asio/traits/query_static_constexpr_member-0098.adoc[`query&lowbar;static&lowbar;constexpr&lowbar;member`]
+| xref:boost/asio/traits/query_static_constexpr_member.adoc[`query&lowbar;static&lowbar;constexpr&lowbar;member`]
 | 
 |===
 

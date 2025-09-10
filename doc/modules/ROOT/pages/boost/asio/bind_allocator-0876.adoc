@@ -15,6 +15,7 @@ Create a partial completion token that associates an allocator&period;
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_allocator_binder.adoc[partial&lowbar;allocator&lowbar;binder&lt;Allocator&gt;]
 xref:boost/asio/bind_allocator-08e.adoc[bind&lowbar;allocator](Allocator const& ex);
 ----
@@ -29,6 +30,7 @@ Associate an object of type `T` with an allocator of type `Allocator&period;`
 template&lt;
     typename Allocator,
     typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Allocator&gt;]
 xref:boost/asio/bind_allocator-0873.adoc[bind&lowbar;allocator](
     Allocator const& s,

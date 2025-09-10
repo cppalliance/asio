@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;deferred&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/deferred_t.adoc[deferred&lowbar;t] deferred = deferred;
+inline constexpr xref:boost/asio/deferred_t.adoc[deferred&lowbar;t] deferred = deferred;
 ----
 
 == Description

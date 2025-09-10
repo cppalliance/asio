@@ -89,7 +89,7 @@
 | 
 | xref:boost/asio/associator-0f7.adoc[`associator&lt;Associator, cancellation&lowbar;slot&lowbar;binder&lt;T, CancellationSlot&gt;, DefaultCandidate&gt;`] 
 | 
-| xref:boost/asio/associator-07.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| xref:boost/asio/associator-07f.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
 | 
 | xref:boost/asio/associator-0be.adoc[`associator&lt;Associator, executor&lowbar;binder&lt;T, Executor&gt;, DefaultCandidate&gt;`] 
 | 
@@ -104,6 +104,8 @@
 | xref:boost/asio/associator-020.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
 | 
 | xref:boost/asio/associator-08.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
+| 
+| xref:boost/asio/associator-07c.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
 | 
 | xref:boost/asio/associator-044.adoc[`associator&lt;Associator, &sol;&ast; implementation-defined &ast;&sol;, DefaultCandidate&gt;`] 
 | 
@@ -139,6 +141,8 @@
 | 
 | xref:boost/asio/async_result-0f.adoc[`async&lowbar;result&lt;immediate&lowbar;executor&lowbar;binder&lt;T, Executor&gt;, Signature&gt;`] 
 | 
+| xref:boost/asio/awaitable.adoc[`awaitable`] 
+| The return type of a coroutine or asynchronous operation&period;
 | xref:boost/asio/bad_executor.adoc[`bad&lowbar;executor`] 
 | Exception thrown when trying to access an empty polymorphic executor&period;
 | xref:boost/asio/basic_datagram_socket.adoc[`basic&lowbar;datagram&lowbar;socket`] 
@@ -295,9 +299,9 @@
 | A call wrapper type to bind an executor of type `Executor` to an object of type `T&period;`
 | xref:boost/asio/executor_work_guard-05.adoc[`executor&lowbar;work&lowbar;guard`] 
 | 
-| xref:boost/asio/executor_work_guard-0a.adoc[`executor&lowbar;work&lowbar;guard&lt;Executor&gt;`] 
-| 
 | xref:boost/asio/executor_work_guard-00.adoc[`executor&lowbar;work&lowbar;guard&lt;Executor&gt;`] 
+| 
+| xref:boost/asio/executor_work_guard-0a.adoc[`executor&lowbar;work&lowbar;guard&lt;Executor&gt;`] 
 | 
 | xref:boost/asio/file_base.adoc[`file&lowbar;base`] 
 | The file&lowbar;base class is used as a base for the basic&lowbar;stream&lowbar;file and basic&lowbar;random&lowbar;access&lowbar;file class templates so that we have a common place to define flags&period;
@@ -413,6 +417,10 @@
 | 
 | xref:boost/asio/require_result.adoc[`require&lowbar;result`] 
 | 
+| xref:boost/asio/result_of-06.adoc[`result&lowbar;of`] 
+| 
+| xref:boost/asio/result_of-03.adoc[`result&lowbar;of&lt;F(Args&period;&period;&period;)&gt;`] 
+| 
 | xref:boost/asio/serial_port_base.adoc[`serial&lowbar;port&lowbar;base`] 
 | The serial&lowbar;port&lowbar;base class is used as a base for the basic&lowbar;serial&lowbar;port class template so that we have a common place to define the serial port options&period;
 | xref:boost/asio/service_already_exists.adoc[`service&lowbar;already&lowbar;exists`] 
@@ -429,6 +437,8 @@
 | A simple fixed&hyphen;size thread pool&period;
 | xref:boost/asio/type_identity.adoc[`type&lowbar;identity`] 
 | 
+| xref:boost/asio/use_awaitable_t.adoc[`use&lowbar;awaitable&lowbar;t`] 
+| A `completion&lowbar;token` that represents the currently executing coroutine&period;
 | xref:boost/asio/use_future_t.adoc[`use&lowbar;future&lowbar;t`] 
 | A `completion&lowbar;token` type that causes an asynchronous operation to return a future&period;
 | xref:boost/asio/uses_executor-0e.adoc[`uses&lowbar;executor`] 
@@ -601,6 +611,10 @@
 | `cancel&lowbar;after` overloads
 | xref:boost/asio/cancel_at-08.adoc[`cancel&lowbar;at`] 
 | `cancel&lowbar;at` overloads
+| xref:boost/asio/co_composed.adoc[`co&lowbar;composed`] 
+| Creates an initiation function object that may be used to launch a coroutine&hyphen;based composed asynchronous operation&period;
+| xref:boost/asio/co_spawn-07.adoc[`co&lowbar;spawn`] 
+| Spawn a new coroutined&hyphen;based thread of execution&period;
 | xref:boost/asio/composed.adoc[`composed`] 
 | Creates an initiation function object that may be used to launch an asynchronous operation with a stateful implementation&period;
 | xref:boost/asio/connect-07d.adoc[`connect`] 
@@ -733,8 +747,22 @@
 | 
 | xref:boost/asio/no_error.adoc[`no&lowbar;error`] 
 | A special value used to indicate the absence of an error&period;
+| xref:boost/asio/use_awaitable.adoc[`use&lowbar;awaitable`] 
+| 
 | xref:boost/asio/use_future.adoc[`use&lowbar;future`] 
 | A `completion&lowbar;token` object that causes an asynchronous operation to return a future&period;
+|===
+
+== Concepts
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/async_operation.adoc[`async&lowbar;operation`] 
+| xref:boost/asio/completion_handler_for.adoc[`completion&lowbar;handler&lowbar;for`] 
+| xref:boost/asio/completion_signature.adoc[`completion&lowbar;signature`] 
+| xref:boost/asio/completion_token_for.adoc[`completion&lowbar;token&lowbar;for`] 
+| xref:boost/asio/disposition.adoc[`disposition`] 
 |===
 
 == Using Declarations
@@ -746,6 +774,7 @@
 | xref:boost/asio/add_lvalue_reference.adoc[`add&lowbar;lvalue&lowbar;reference`] 
 | xref:boost/asio/alignment_of.adoc[`alignment&lowbar;of`] 
 | xref:boost/asio/allocator_arg_t.adoc[`allocator&lowbar;arg&lowbar;t`] 
+| xref:boost/asio/basic_string_view.adoc[`basic&lowbar;string&lowbar;view`] 
 | xref:boost/asio/conditional.adoc[`conditional`] 
 | xref:boost/asio/decay.adoc[`decay`] 
 | xref:boost/asio/declval.adoc[`declval`] 
@@ -787,7 +816,7 @@
 | xref:boost/asio/remove_cv.adoc[`remove&lowbar;cv`] 
 | xref:boost/asio/remove_pointer.adoc[`remove&lowbar;pointer`] 
 | xref:boost/asio/remove_reference.adoc[`remove&lowbar;reference`] 
-| xref:boost/asio/result_of.adoc[`result&lowbar;of`] 
+| xref:boost/asio/string_view.adoc[`string&lowbar;view`] 
 | xref:boost/asio/true_type.adoc[`true&lowbar;type`] 
 | xref:boost/asio/uint16_t.adoc[`uint16&lowbar;t`] 
 | xref:boost/asio/uint32_t.adoc[`uint32&lowbar;t`] 

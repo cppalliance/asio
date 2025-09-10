@@ -90,6 +90,50 @@ xref:boost/asio/operator_eq-0d.adoc[operator&equals;&equals;](
 
 [.small]#xref:boost/asio/operator_eq-0d.adoc[_» more&period;&period;&period;_]#
 
+Equality operator, returns true if the disposition does not contain an error&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;xref:boost/asio/disposition.adoc[boost::asio::disposition] Disposition&gt;
+constexpr
+bool
+xref:boost/asio/operator_eq-04.adoc[operator&equals;&equals;](
+    Disposition const& d,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-04.adoc[_» more&period;&period;&period;_]#
+
+Equality operator, returns true if the disposition does not contain an error&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;xref:boost/asio/disposition.adoc[boost::asio::disposition] Disposition&gt;
+constexpr
+bool
+xref:boost/asio/operator_eq-07f.adoc[operator&equals;&equals;](
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    Disposition const& d) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-07f.adoc[_» more&period;&period;&period;_]#
+
+Equality operator&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+constexpr
+bool
+xref:boost/asio/operator_eq-034.adoc[operator&equals;&equals;](
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
+    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
+----
+
+[.small]#xref:boost/asio/operator_eq-034.adoc[_» more&period;&period;&period;_]#
+
 Compare two executors for equality&period;
 
 
@@ -128,50 +172,6 @@ xref:boost/asio/operator_eq-014.adoc[operator&equals;&equals;](
 ----
 
 [.small]#xref:boost/asio/operator_eq-014.adoc[_» more&period;&period;&period;_]#
-
-Equality operator, returns true if the disposition does not contain an error&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-template&lt;typename Disposition&gt;
-constexpr
-bool
-xref:boost/asio/operator_eq-04.adoc[operator&equals;&equals;](
-    Disposition const& d,
-    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
-----
-
-[.small]#xref:boost/asio/operator_eq-04.adoc[_» more&period;&period;&period;_]#
-
-Equality operator, returns true if the disposition does not contain an error&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-template&lt;typename Disposition&gt;
-constexpr
-bool
-xref:boost/asio/operator_eq-07f.adoc[operator&equals;&equals;](
-    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
-    Disposition const& d) noexcept;
-----
-
-[.small]#xref:boost/asio/operator_eq-07f.adoc[_» more&period;&period;&period;_]#
-
-Equality operator&period;
-
-
-[source,cpp,subs="verbatim,replacements,macros,-callouts"]
-----
-constexpr
-bool
-xref:boost/asio/operator_eq-034.adoc[operator&equals;&equals;](
-    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& lhs,
-    xref:boost/asio/no_error_t.adoc[no&lowbar;error&lowbar;t] const& rhs) noexcept;
-----
-
-[.small]#xref:boost/asio/operator_eq-034.adoc[_» more&period;&period;&period;_]#
 
 Compare two executors for equality&period;
 

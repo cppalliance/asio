@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/allocator_binder.adoc[allocator&lowbar;binder&lt;decay&lowbar;t&lt;CompletionToken&gt;, Allocator&gt;]
 operator()(CompletionToken&& completion&lowbar;token);

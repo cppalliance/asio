@@ -1,0 +1,17 @@
+[#boost-asio-awaitable-await_ready]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/awaitable.adoc[awaitable]::await&lowbar;ready
+:relfileprefix: ../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;awaitable&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+bool
+await&lowbar;ready() const noexcept;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

@@ -17,6 +17,7 @@ Create a partial completion token adapter that cancels an operation if not compl
 template&lt;
     typename Rep,
     typename Period&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_cancel_after.adoc[partial&lowbar;cancel&lowbar;after&lt;std::chrono::steady&lowbar;clock&gt;]
 xref:boost/asio/cancel_after-09f.adoc[cancel&lowbar;after](
     chrono::duration&lt;Rep, Period&gt; const& timeout,
@@ -34,6 +35,7 @@ template&lt;
     typename Rep,
     typename Period,
     typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_after_t.adoc[cancel&lowbar;after&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, std::chrono::steady&lowbar;clock&gt;]
 xref:boost/asio/cancel_after-095.adoc[cancel&lowbar;after](
     chrono::duration&lt;Rep, Period&gt; const& timeout,
@@ -51,6 +53,7 @@ template&lt;
     typename Rep,
     typename Period,
     typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_after_t.adoc[cancel&lowbar;after&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;, std::chrono::steady&lowbar;clock&gt;]
 xref:boost/asio/cancel_after-0b.adoc[cancel&lowbar;after](
     chrono::duration&lt;Rep, Period&gt; const& timeout,
@@ -71,6 +74,7 @@ template&lt;
     typename Executor,
     typename Rep,
     typename Period&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_cancel_after_timer.adoc[partial&lowbar;cancel&lowbar;after&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]
 xref:boost/asio/cancel_after-02.adoc[cancel&lowbar;after](
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,
@@ -92,6 +96,7 @@ template&lt;
     typename Rep,
     typename Period,
     typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_after_timer.adoc[cancel&lowbar;after&lowbar;timer&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock, WaitTraits, Executor&gt;]
 xref:boost/asio/cancel_after-0d.adoc[cancel&lowbar;after](
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,
@@ -113,6 +118,7 @@ template&lt;
     typename Rep,
     typename Period,
     typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_after_timer.adoc[cancel&lowbar;after&lowbar;timer&lt;decay&lowbar;t&lt;CompletionToken&gt;, std::chrono::steady&lowbar;clock&gt;]
 xref:boost/asio/cancel_after-00.adoc[cancel&lowbar;after](
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,

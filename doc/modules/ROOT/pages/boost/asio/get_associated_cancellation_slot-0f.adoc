@@ -15,6 +15,7 @@ Helper function to obtain an object&apos;s associated cancellation&lowbar;slot&p
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 associated&lowbar;cancellation&lowbar;slot&lt;T&gt;::type
 xref:boost/asio/get_associated_cancellation_slot-0c.adoc[get&lowbar;associated&lowbar;cancellation&lowbar;slot](T const& t) noexcept;
 ----
@@ -29,6 +30,7 @@ Helper function to obtain an object&apos;s associated cancellation&lowbar;slot&p
 template&lt;
     typename T,
     typename CancellationSlot&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 decltype(associated&lowbar;cancellation&lowbar;slot&lt;T, CancellationSlot&gt;&colon;&colon;get(t, st))
 xref:boost/asio/get_associated_cancellation_slot-02.adoc[get&lowbar;associated&lowbar;cancellation&lowbar;slot](
     T const& t,

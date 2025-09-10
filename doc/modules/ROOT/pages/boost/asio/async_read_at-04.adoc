@@ -17,7 +17,7 @@ Start an asynchronous operation to read a certain amount of data at the specifie
 template&lt;
     typename AsyncRandomAccessReadDevice,
     typename Allocator,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessReadDevice::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessReadDevice::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;at&lowbar;streambuf&lt;
@@ -42,7 +42,7 @@ Start an asynchronous operation to read a certain amount of data at the specifie
 template&lt;
     typename AsyncRandomAccessReadDevice,
     typename MutableBufferSequence,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessReadDevice::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessReadDevice::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;at&lt;AsyncRandomAccessReadDevice&gt;&gt;(),
@@ -67,7 +67,7 @@ template&lt;
     typename AsyncRandomAccessReadDevice,
     typename Allocator,
     typename CompletionCondition,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessReadDevice::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessReadDevice::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;at&lowbar;streambuf&lt;
@@ -95,7 +95,7 @@ template&lt;
     typename AsyncRandomAccessReadDevice,
     typename MutableBufferSequence,
     typename CompletionCondition,
-    typename ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessReadDevice::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void(boost::system::error&lowbar;code, size&lowbar;t)&gt;] ReadToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;AsyncRandomAccessReadDevice::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;ReadToken,
       void (boost&colon;&colon;system&colon;&colon;error&lowbar;code, std&colon;&colon;size&lowbar;t)&gt;(
         declval&lt;detail&colon;&colon;initiate&lowbar;async&lowbar;read&lowbar;at&lt;AsyncRandomAccessReadDevice&gt;&gt;(),
@@ -126,7 +126,7 @@ xref:boost/asio/async_read_at-01.adoc[async&lowbar;read&lowbar;at](
 | *b*
 | A basic&lowbar;streambuf object into which the data will be read&period; Ownership of the streambuf is retained by the caller, which must guarantee that it remains valid until the completion handler is called&period;
 | *token*
-| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the read completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], `use&lowbar;awaitable`, `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
+| The `completion&lowbar;token` that will be used to produce a completion handler, which will be called when the read completes&period; Potential completion tokens include xref:boost/asio/use_future.adoc[`use&lowbar;future`], xref:boost/asio/use_awaitable.adoc[`use&lowbar;awaitable`], `yield&lowbar;context`, or a function object with the correct completion signature&period; The function signature of the completion handler must be&colon;
 | *buffers*
 | One or more buffers into which the data will be read&period; The sum of the buffer sizes indicates the maximum number of bytes to read from the device&period; Although the buffers object may be copied as necessary, ownership of the underlying memory blocks is retained by the caller, which must guarantee that they remain valid until the completion handler is called&period;
 | *completion&lowbar;condition*

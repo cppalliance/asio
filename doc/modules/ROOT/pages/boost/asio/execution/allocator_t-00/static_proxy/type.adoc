@@ -9,8 +9,16 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;allocator&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-typedef T type;
+struct type;
 ----
+
+== Static Member Functions
+
+[cols=1]
+|===
+| Name
+| xref:boost/asio/execution/allocator_t-00/static_proxy/type/query.adoc[`query`] 
+|===
 
 
 [.small]#Created with https://www.mrdocs.com[MrDocs]#

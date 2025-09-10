@@ -17,6 +17,7 @@ Helper function to obtain an object&apos;s associated executor&period;
 template&lt;
     typename T,
     typename ExecutionContext&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 associated&lowbar;immediate&lowbar;executor&lt;T, ExecutionContext::executor&lowbar;type&gt;::type
 xref:boost/asio/get_associated_immediate_executor-0c2.adoc[get&lowbar;associated&lowbar;immediate&lowbar;executor](
     T const& t,
@@ -34,6 +35,7 @@ Helper function to obtain an object&apos;s associated executor&period;
 template&lt;
     typename T,
     typename Executor&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 decltype(associated&lowbar;immediate&lowbar;executor&lt;T, Executor&gt;&colon;&colon;get(t, ex))
 xref:boost/asio/get_associated_immediate_executor-0ce.adoc[get&lowbar;associated&lowbar;immediate&lowbar;executor](
     T const& t,

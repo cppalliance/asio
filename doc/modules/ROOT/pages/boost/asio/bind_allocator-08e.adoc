@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;bind&lowbar;allocator&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename Allocator&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/partial_allocator_binder.adoc[partial&lowbar;allocator&lowbar;binder&lt;Allocator&gt;]
 bind&lowbar;allocator(Allocator const& ex);
 ----

@@ -60,7 +60,7 @@ class immediate&lowbar;executor&lowbar;binder
 | Obtain a reference to the target object&period;
 | xref:boost/asio/immediate_executor_binder/get_immediate_executor.adoc[`get&lowbar;immediate&lowbar;executor`] 
 | Obtain the associated immediate executor&period;
-| xref:boost/asio/immediate_executor_binder/operator_call-04.adoc[`operator()`] 
+| xref:boost/asio/immediate_executor_binder/operator_call-04a.adoc[`operator()`] 
 | Forwarding function call operator&period;
 |===
 

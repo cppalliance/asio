@@ -17,6 +17,7 @@ template&lt;
     typename WaitTraits,
     typename Executor,
     typename Duration&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/cancel_at_timer.adoc[cancel&lowbar;at&lowbar;timer&lt;decay&lowbar;t&lt;CompletionToken&gt;, Clock, WaitTraits, Executor&gt;]
 cancel&lowbar;at(
     xref:boost/asio/basic_waitable_timer.adoc[basic&lowbar;waitable&lowbar;timer&lt;Clock, WaitTraits, Executor&gt;]& timer,

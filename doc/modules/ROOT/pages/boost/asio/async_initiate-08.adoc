@@ -12,7 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
 ----
 template&lt;
     typename CompletionToken,
-    typename&period;&period;&period; Signatures,
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures,
     typename Initiation,
     typename&period;&period;&period; Args&gt;
 async&lowbar;result&lt;decay&lowbar;t&lt;CompletionToken&gt;, Signatures&period;&period;&period;&gt;::return&lowbar;type
@@ -29,7 +29,7 @@ xref:boost/asio/async_initiate-0f.adoc[async&lowbar;initiate](
 ----
 template&lt;
     typename CompletionToken,
-    typename&period;&period;&period; Signatures,
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures,
     typename Initiation,
     typename&period;&period;&period; Args&gt;
 decltype(enable&lowbar;if&lowbar;t&lt;
@@ -53,7 +53,7 @@ xref:boost/asio/async_initiate-04.adoc[async&lowbar;initiate](
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;
-    typename&period;&period;&period; Signatures,
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures,
     typename CompletionToken,
     typename Initiation,
     typename&period;&period;&period; Args&gt;
@@ -70,7 +70,7 @@ xref:boost/asio/async_initiate-01.adoc[async&lowbar;initiate](
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;
-    typename&period;&period;&period; Signatures,
+    xref:boost/asio/completion_signature.adoc[boost::asio::completion&lowbar;signature]&period;&period;&period; Signatures,
     typename CompletionToken,
     typename Initiation,
     typename&period;&period;&period; Args&gt;

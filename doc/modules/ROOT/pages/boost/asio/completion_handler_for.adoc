@@ -1,0 +1,20 @@
+[#boost-asio-completion_handler_for]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::completion&lowbar;handler&lowbar;for
+:relfileprefix: ../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;async&lowbar;result&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename T,
+    typename&period;&period;&period; Signatures&gt;
+concept completion&lowbar;handler&lowbar;for = detail&colon;&colon;are&lowbar;completion&lowbar;signatures&lt;Signatures&period;&period;&period;&gt;&colon;&colon;value
+    &amp;&amp; detail&colon;&colon;is&lowbar;completion&lowbar;handler&lowbar;for&lt;T, Signatures&period;&period;&period;&gt;&colon;&colon;value;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

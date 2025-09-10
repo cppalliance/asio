@@ -9,7 +9,7 @@ Declared in `&lt;boost&sol;asio&sol;execution&sol;context&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/execution/context_t.adoc[context&lowbar;t] context = context;
+inline constexpr xref:boost/asio/execution/context_t.adoc[context&lowbar;t] context = context;
 ----
 
 

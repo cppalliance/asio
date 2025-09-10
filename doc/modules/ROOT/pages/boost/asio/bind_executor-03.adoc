@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;bind&lowbar;executor&period;hpp&gt;`
 template&lt;
     typename Executor,
     typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/executor_binder.adoc[executor&lowbar;binder&lt;decay&lowbar;t&lt;T&gt;, Executor&gt;]
 bind&lowbar;executor(
     Executor const& ex,

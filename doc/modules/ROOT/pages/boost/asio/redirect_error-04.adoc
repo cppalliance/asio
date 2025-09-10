@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;redirect&lowbar;error&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename CompletionToken&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 xref:boost/asio/redirect_error_t.adoc[redirect&lowbar;error&lowbar;t&lt;decay&lowbar;t&lt;CompletionToken&gt;&gt;]
 redirect&lowbar;error(
     CompletionToken&& completion&lowbar;token,

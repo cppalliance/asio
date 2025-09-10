@@ -10,6 +10,7 @@ Declared in `&lt;boost&sol;asio&sol;this&lowbar;coro&period;hpp&gt;`
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename Filter&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 constexpr
 xref:boost/asio/this_coro/reset_cancellation_state_1_t.adoc[reset&lowbar;cancellation&lowbar;state&lowbar;1&lowbar;t&lt;decay&lowbar;t&lt;Filter&gt;&gt;]
 reset&lowbar;cancellation&lowbar;state(Filter&& filter);

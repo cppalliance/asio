@@ -13,7 +13,7 @@ Declared in `&lt;boost&sol;asio&sol;dispatch&period;hpp&gt;`
 ----
 template&lt;
     typename ExecutionContext,
-    typename NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;ExecutionContext::executor&lowbar;type&gt;]&gt;
+    xref:boost/asio/completion_token_for.adoc[boost::asio::completion&lowbar;token&lowbar;for&lt;void()&gt;] NullaryToken = xref:boost/asio/default_completion_token_t.adoc[default&lowbar;completion&lowbar;token&lowbar;t&lt;ExecutionContext::executor&lowbar;type&gt;]&gt;
 decltype(async&lowbar;initiate&lt;NullaryToken, void()&gt;(
       declval&lt;detail&colon;&colon;initiate&lowbar;dispatch&lowbar;with&lowbar;executor&lt;
         typename ExecutionContext&colon;&colon;executor&lowbar;type&gt;&gt;(), token))

@@ -1,0 +1,20 @@
+[#boost-asio-execution-context_as_t-0a1-static_query_v]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/execution.adoc[execution]::xref:boost/asio/execution/context_as_t-0a1.adoc[context&lowbar;as&lowbar;t&lt;execution&lowbar;context&&gt;]::static&lowbar;query&lowbar;v
+:relfileprefix: ../../../../
+:mrdocs:
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;execution&sol;context&lowbar;as&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+template&lt;
+    typename E,
+    typename U = decltype(context&lowbar;as&lowbar;t&colon;&colon;static&lowbar;query&lt;E&gt;())&gt;
+constexpr static
+U static&lowbar;query&lowbar;v;
+----
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#

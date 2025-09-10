@@ -15,6 +15,17 @@ Create an address from an IPv4 address string in dotted decimal form, or from an
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 xref:boost/asio/ip/address.adoc[address]
+xref:boost/asio/ip/make_address-04.adoc[make&lowbar;address](std::string&lowbar;view str);
+----
+
+[.small]#xref:boost/asio/ip/make_address-04.adoc[_» more&period;&period;&period;_]#
+
+Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]
 xref:boost/asio/ip/make_address-00.adoc[make&lowbar;address](std::string const& str);
 ----
 
@@ -30,6 +41,19 @@ xref:boost/asio/ip/make_address-0a.adoc[make&lowbar;address](char const* str);
 ----
 
 [.small]#xref:boost/asio/ip/make_address-0a.adoc[_» more&period;&period;&period;_]#
+
+Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
+
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/address.adoc[address]
+xref:boost/asio/ip/make_address-0d.adoc[make&lowbar;address](
+    std::string&lowbar;view str,
+    boost::system::error&lowbar;code& ec) noexcept;
+----
+
+[.small]#xref:boost/asio/ip/make_address-0d.adoc[_» more&period;&period;&period;_]#
 
 Create an address from an IPv4 address string in dotted decimal form, or from an IPv6 address in hexadecimal notation&period;
 

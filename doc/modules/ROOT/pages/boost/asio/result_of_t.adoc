@@ -10,7 +10,7 @@ Declared in `&lt;boost&sol;asio&sol;detail&sol;type&lowbar;traits&period;hpp&gt;
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename T&gt;
-using result&lowbar;of&lowbar;t = std::result&lowbar;of&lt;T&gt;::type;
+using result&lowbar;of&lowbar;t = result&lowbar;of&lt;T&gt;::type;
 ----
 
 

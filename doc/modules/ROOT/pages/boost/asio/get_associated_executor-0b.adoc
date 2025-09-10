@@ -14,6 +14,7 @@ Declared in `&lt;boost&sol;asio&sol;associated&lowbar;executor&period;hpp&gt;`
 template&lt;
     typename T,
     typename Executor&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 decltype(associated&lowbar;executor&lt;T, Executor&gt;&colon;&colon;get(t, ex))
 get&lowbar;associated&lowbar;executor(
     T const& t,

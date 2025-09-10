@@ -11,7 +11,7 @@ Declared in `&lt;boost&sol;asio&sol;use&lowbar;future&period;hpp&gt;`
 
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
-constexpr xref:boost/asio/use_future_t.adoc[use&lowbar;future&lowbar;t] use&lowbar;future = use&lowbar;future;
+inline constexpr xref:boost/asio/use_future_t.adoc[use&lowbar;future&lowbar;t] use&lowbar;future = use&lowbar;future;
 ----
 
 == Description

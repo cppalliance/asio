@@ -12,6 +12,7 @@ Declared in `&lt;boost&sol;asio&sol;associated&lowbar;cancellation&lowbar;slot&p
 [source,cpp,subs="verbatim,replacements,macros,-callouts"]
 ----
 template&lt;typename T&gt;
+&lsqb;&lsqb;nodiscard&rsqb;&rsqb;
 associated&lowbar;cancellation&lowbar;slot&lt;T&gt;::type
 get&lowbar;associated&lowbar;cancellation&lowbar;slot(T const& t) noexcept;
 ----

@@ -1,0 +1,59 @@
+[#boost-asio-ip-basic_resolver-resolve-00d]
+= xref:boost.adoc[boost]::xref:boost/asio.adoc[asio]::xref:boost/asio/ip.adoc[ip]::xref:boost/asio/ip/basic_resolver.adoc[basic&lowbar;resolver]::resolve
+:relfileprefix: ../../../../
+:mrdocs:
+
+Perform forward resolution of a query to a list of entries&period;
+
+== Synopsis
+
+Declared in `&lt;boost&sol;asio&sol;ip&sol;basic&lowbar;resolver&period;hpp&gt;`
+
+[source,cpp,subs="verbatim,replacements,macros,-callouts"]
+----
+xref:boost/asio/ip/basic_resolver/results_type.adoc[results&lowbar;type]
+resolve(
+    std::string&lowbar;view host,
+    std::string&lowbar;view service,
+    xref:boost/asio/ip/resolver_base/flags.adoc[resolver&lowbar;base::flags] resolve&lowbar;flags);
+----
+
+== Description
+
+This function is used to resolve host and service names into a list of endpoint entries&period;
+
+[NOTE]
+On POSIX systems, host names may be locally defined in the file &period; On Windows, host names may be defined in the file &period; Remote host name resolution is performed using DNS&period; Operating systems may use additional locations when resolving host names (such as NETBIOS names on Windows)&period;
+
+On POSIX systems, service names are typically defined in the file &period; On Windows, service names may be found in the file &period; Operating systems may use additional locations when resolving service names&period;
+
+== Exceptions
+
+[cols=2]
+|===
+| Name
+| Thrown on
+| `boost&colon;&colon;system&colon;&colon;system&lowbar;error`
+| Thrown on failure&period;
+|===
+
+== Return Value
+
+A range object representing the list of endpoint entries&period; A successful call to this function is guaranteed to return a non&hyphen;empty range&period;
+
+== Parameters
+
+[cols=2]
+|===
+| Name
+| Description
+| *host*
+| A string identifying a location&period; May be a descriptive name or a numeric address string&period; If an empty string and the passive flag has been specified, the resolved endpoints are suitable for local service binding&period; If an empty string and passive is not specified, the resolved endpoints will use the loopback address&period;
+| *service*
+| A string identifying the requested service&period; This may be a descriptive name or a numeric string corresponding to a port number&period; May be an empty string, in which case all resolved endpoints will have a port number of 0&period;
+| *resolve&lowbar;flags*
+| A set of flags that determine how name resolution should be performed&period; The default flags are suitable for communication with remote hosts&period; See the xref:boost/asio/ip/resolver_base.adoc[`resolver&lowbar;base`] documentation for the set of available flags&period;
+|===
+
+
+[.small]#Created with https://www.mrdocs.com[MrDocs]#
